@@ -3,7 +3,7 @@ static_galaxy_scenario = {
     name = "PartZN WarWorld"
     default = no
     priority = 0
-    num_empires = { min = 1 max = 5 }
+    num_empires = { min = 1 max = 25 }
     num_empire_default = 5
     marauder_empire_default = 1
     marauder_empire_max = 4
@@ -11,15 +11,15 @@ static_galaxy_scenario = {
     advanced_empire_default = 1
     core_radius = 0
     primitive_odds = 1
-    crisis_strength = 1
-    random_hyperlanes = no
+    crisis_strength = 0.75
+ 	extra_crisis_strength = { 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10 11 12 13 14 15 17.5 20 22.5 25 30 35 40 45 50}
     num_wormhole_pairs = { min = 1 max = 30 }
     num_wormhole_pairs_default = 1
     num_gateways = { min = 1 max = 20 }
     num_gateways_default = 1
     random_hyperlanes = no
 
-system = { id = "0" name = "Terra" position = { x = 231.6181 y = -22.70811 } initializer = retalyx_random_spawn spawn_weight = { base = 1 }  }
+system = { id = "0" name = "Terra" position = { x = 231.6181 y = -22.70811 }  }
 system = { id = "1" name = "Cadia" position = { x = 280.4395 y = -162.3602 }  }
 system = { id = "2" name = "Agripinaa" position = { x = 278.1688 y = -133.9756 }  }
 system = { id = "3" name = "Ingiga" position = { x = 255.4611 y = -118.0803 }  }
@@ -114,7 +114,7 @@ system = { id = "91" name = "Rapture" position = { x = -2.27074 y = 292.9283 }  
 system = { id = "92" name = "Mortant" position = { x = -1.13536 y = 254.3253 }  }
 system = { id = "93" name = "Montsegnur" position = { x = -29.51993 y = 274.7622 }  }
 system = { id = "94" name = "Lyriax" position = { x = 95.37215 y = 349.6974 }  }
-system = { id = "95" name = "Terror Eye" position = { x = 311.0948 y = -193.0155 } initializer = retalyx_random_spawn spawn_weight = { base = 1 }  }
+system = { id = "95" name = "Terror Eye" position = { x = 311.0948 y = -193.0155 }  }
 system = { id = "96" name = "Teroeyso" position = { x = 294.0641 y = -181.6617 }  }
 system = { id = "97" name = "Teroeyweso" position = { x = 320.1779 y = -177.1202 }  }
 system = { id = "98" name = "Teroeyweno" position = { x = 332.6671 y = -199.8279 }  }
@@ -246,7 +246,7 @@ system = { id = "223" name = "Methusela" position = { x = -70.39371 y = 205.5038
 system = { id = "224" name = "Endragiga" position = { x = -70.39371 y = 227.0761 }  }
 system = { id = "225" name = "San Leor" position = { x = -86.28905 y = 244.1069 }  }
 system = { id = "226" name = "Indiga" position = { x = -124.8921 y = 280.4391 }  }
-system = { id = "227" name = "Alaitoc" position = { x = -146.4643 y = 279.3037 } initializer = retalyx_random_spawn spawn_weight = { base = 1 }  }
+system = { id = "227" name = "Alaitoc" position = { x = -146.4643 y = 279.3037 }  }
 system = { id = "228" name = "Agrax" position = { x = -103.3198 y = 269.0853 }  }
 system = { id = "229" name = "Solemnace" position = { x = -172.5781 y = 269.0853 }  }
 system = { id = "230" name = "Gheden" position = { x = -199.8273 y = 267.9499 }  }
@@ -354,7 +354,7 @@ system = { id = "331" name = "Gartuli" position = { x = -39.73839 y = 49.95641 }
 system = { id = "332" name = "Viridia" position = { x = -36.33224 y = -0.0004302691 }  }
 system = { id = "333" name = "Phargos" position = { x = -47.68607 y = 28.38414 }  }
 system = { id = "334" name = "Zantragorra" position = { x = -68.12295 y = 86.28865 }  }
-system = { id = "335" name = "Trakonn" position = { x = -114.6736 y = 51.0918 } initializer = retalyx_random_spawn spawn_weight = { base = 1 }  }
+system = { id = "335" name = "Trakonn" position = { x = -114.6736 y = 51.0918 }  }
 system = { id = "336" name = "Moebius" position = { x = -139.6521 y = -12.48963 }  }
 system = { id = "337" name = "Cirillo" position = { x = -132.8398 y = 27.24876 }  }
 system = { id = "338" name = "Randorun" position = { x = -106.726 y = 18.1657 }  }
@@ -403,7 +403,7 @@ system = { id = "380" name = "Anuari" position = { x = -289.5226 y = 197.5562 } 
 system = { id = "381" name = "Ichar" position = { x = -257.7318 y = 206.6392 }  }
 system = { id = "382" name = "Pavonis" position = { x = -252.0549 y = 178.2547 }  }
 system = { id = "383" name = "Nepthys" position = { x = -283.8456 y = 172.5777 }  }
-system = { id = "384" name = "Tau" position = { x = -313.3656 y = 140.787 } initializer = Tau_Empire_homeworld spawn_weight = { base = 0 modifier = { add = 100000 has_country_flag = Tau_Empire_gos } }
+system = { id = "384" name = "Tau" position = { x = -313.3656 y = 140.787 }  }
 system = { id = "385" name = "Viorla" position = { x = -295.1995 y = 126.0271 }  }
 system = { id = "386" name = "Firios" position = { x = -314.501 y = 114.6732 }  }
 system = { id = "387" name = "Kelshan" position = { x = -337.2086 y = 138.5163 }  }
@@ -459,7 +459,7 @@ system = { id = "436" name = "Dacia" position = { x = -422.3624 y = -208.9108 } 
 system = { id = "437" name = "Kalleth" position = { x = -443.9347 y = -233.8892 }  }
 system = { id = "438" name = "Rhidhol" position = { x = -390.5717 y = -246.3784 }  }
 system = { id = "439" name = "Desperation" position = { x = -439.3932 y = -273.6277 }  }
-system = { id = "440" name = "Thex" position = { x = -439.3932 y = -321.3138 } initializer = retalyx_random_spawn spawn_weight = { base = 1 }  }
+system = { id = "440" name = "Thex" position = { x = -439.3932 y = -321.3138 }  }
 system = { id = "441" name = "Stygia" position = { x = -405.3317 y = -339.4798 }  }
 system = { id = "442" name = "Drazak" position = { x = -375.8117 y = -364.4583 }  }
 system = { id = "443" name = "Cegorachi" position = { x = -368.9994 y = -320.1783 }  }
