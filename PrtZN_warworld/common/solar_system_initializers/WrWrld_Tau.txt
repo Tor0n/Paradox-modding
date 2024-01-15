@@ -1,0 +1,144 @@
+Tau_initializer = {
+	name = "T'au"
+
+	flags = { empire_home_system }
+
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Anvan"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Tig'ka"
+		class = "random"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+		init_effect = {
+			set_planet_entity = {
+				entity = molten_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
+	}
+
+	planet = {
+		name = "Loqipa"
+		class = "random"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 17
+		has_ring = no
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
+	}
+
+	planet = {
+		name = "T'au"
+		class = "pc_arid"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 18
+		starting_planet = yes
+		has_ring = no
+		#entity = "continental_planet_earth_entity"
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			#save_global_event_target_as = sol_system_earth
+
+			prevent_anomaly = yes
+		}
+	}
+
+
+	planet = {
+		name = "Gerka"
+		class = "random"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+		entity = "barren_planet_mars_entity"
+
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
+	}
+
+	planet = {
+		name = "Verpra"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "Arghi"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		change_orbit = 4
+
+		moon = {
+			name = "Bira"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_neptune_entity
+				atmosphere_color = hsv { 0.626 0.782 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
+	}
+
+	planet = {
+		name = "Pavtin"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+
+}

@@ -69,7 +69,7 @@
 	advisor_voice_type="l_xenophobe"
 	planet_name=
 	{
-		key="Терра"
+		key="Terra"
 		literal=yes
 	}
 	planet_class="pc_continental"
@@ -78,7 +78,10 @@
 		key="Сол"
 		literal=yes
 	}
-	initializer=""
+	
+	initializer="Terra_initializer"
+	flags={ Imperium_start }
+	
 	graphical_culture="nemesis_01"
 	city_graphical_culture="humanoid_01"
 	empire_flag=
@@ -219,7 +222,10 @@
 		key="Салгастина"
 		literal=yes
 	}
+	
 	initializer=""
+	flags={ Orc_start }
+	
 	graphical_culture="toxoid_01"
 	city_graphical_culture="molluscoid_01"
 	empire_flag=
@@ -382,7 +388,10 @@
 		key="Око Ужаса"
 		literal=yes
 	}
+	
 	initializer=""
+	flags={ Chaos_start }
+	
 	graphical_culture="necroid_01"
 	city_graphical_culture="necroid_01"
 	empire_flag=
@@ -515,7 +524,7 @@
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Алайток"
+		key="Зандрос"
 		literal=yes
 	}
 	planet_class="pc_continental"
@@ -524,7 +533,10 @@
 		key="Майден"
 		literal=yes
 	}
+	
 	initializer="void_dweller_system"
+	flags={ Eldar_start }
+	
 	graphical_culture="humanoid_01"
 	city_graphical_culture="avian_01"
 	empire_flag=
@@ -667,7 +679,10 @@
 		key="Экзода"
 		literal=yes
 	}
+	
 	initializer=""
+	flags={ Aldari_start Aldari_gos }
+	
 	graphical_culture="molluscoid_01"
 	city_graphical_culture="avian_01"
 	empire_flag=
@@ -807,7 +822,10 @@
 		key="Агрин"
 		literal=yes
 	}
+	
 	initializer=""
+	flags={ Commorragh_start }
+	
 	graphical_culture="necroid_01"
 	city_graphical_culture="necroid_01"
 	empire_flag=
@@ -925,16 +943,19 @@
 	government="gov_communal_parity"
 	planet_name=
 	{
-		key="Т'ау"
+		key="T'au"
 		literal=yes
 	}
 	planet_class="pc_arid"
 	system_name=
 	{
-		key="Анван"
+		key="Anvan"
 		literal=yes
 	}
-	initializer=""
+	
+	#initializer="Tau_initializer"
+	flags={ Tau_start }
+	
 	graphical_culture="reptilian_01"
 	city_graphical_culture="reptilian_01"
 	empire_flag=
@@ -1084,16 +1105,19 @@
 	government="gov_criminal_syndicate"
 	planet_name=
 	{
-		key="Имгарл"
+		key="Исис"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Хоратор"
+		key="Имгарл"
 		literal=yes
 	}
+	
 	initializer=""
+	flags={ Corinis_start }
+	
 	graphical_culture="fungoid_01"
 	city_graphical_culture="molluscoid_01"
 	empire_flag=
@@ -1149,8 +1173,1269 @@
 	civics=
 	{
 		"civic_criminal_heritage"
-		"civic_private_healthcare_corporate"
 		"civic_corporate_toxic_baths"
+		"civic_media_conglomerate"
 	}
 	origin="origin_necrophage"
+}
+"Царство Токт"=
+{
+	key="Царство Токт"
+	ship_prefix=
+	{
+		key="Токт."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="aqu_machine"
+		species_name=
+		{
+			key="Токт"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Токты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Токтск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+		trait="trait_robot_emotion_emulators"
+	}
+	name=
+	{
+		key="Царство Токт"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Токт."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_research"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Мегхошта"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Заманевкор"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Tokt_start }
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="blocky"
+			file="flag_blocky_10.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors=
+		{
+			"blue"
+			"shadow_blue"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Онрикс"
+				literal=yes
+			}
+		}
+		portrait="aqu_machine"
+		texture=1
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="trait_ruler_feedback_loop"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="toxoids_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_upkeep_twister"
+		"civic_machine_delegated_functions"
+		"civic_machine_introspective"
+	}
+	origin="origin_default"
+}
+"Царство Агдагат"=
+{
+	key="Царство Агдагат"
+	ship_prefix=
+	{
+		key="Агдагат."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="tox_machine"
+		species_name=
+		{
+			key="Агдагат"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Агдагаты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Агдагатск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+		trait="trait_robot_emotion_emulators"
+	}
+	secondary_species=
+	{
+		class="NECROID"
+		portrait="nec2"
+		species_name=
+		{
+			key="Некронтир"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Некронтиры"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Некронтирск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_nonadaptive"
+		trait="trait_weak"
+		trait="trait_fleeting"
+		trait="trait_decadent"
+		trait="trait_unruly"
+		trait="trait_solitary"
+		trait="trait_repugnant"
+		trait="trait_nomadic"
+		trait="trait_conformists"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Царство Агдагат"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Агдагат."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_servitor"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Тур"
+		literal=yes
+	}
+	planet_class="pc_tundra"
+	system_name=
+	{
+		key="Тир"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Agdagat_start }
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="spherical"
+			file="flag_spherical_3.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="inverted_v.dds"
+		}
+		colors=
+		{
+			"orange"
+			"red_orange"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="%LEADER_2%"
+				variables=
+				{
+					
+					{
+						key="1"
+						value=
+						{
+							key="NECROID2_CHR_Tekh"
+						}
+					}
+ 
+					{
+						key="2"
+						value=
+						{
+							key="NECROID2_CHR_om-Akut"
+						}
+					}
+ 
+				}
+			}
+			use_full_regnal_name=yes
+		}
+		portrait="tox_machine"
+		texture=0
+		attachment=0
+		clothes=1
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="trait_ruler_industrialist"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="toxoids_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_servitor"
+		"civic_machine_ota_updates"
+		"civic_machine_memorialist"
+	}
+	origin="origin_default"
+}
+"Царство Саутех"=
+{
+	key="Царство Саутех"
+	ship_prefix=
+	{
+		key="Саутех."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="default_robot"
+		species_name=
+		{
+			key="Саутех"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Саутехи"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Саутехск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+		trait="trait_robot_durable"
+	}
+	name=
+	{
+		key="Царство Саутех"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Саутех."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_industrial"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Мандрагора"
+		literal=yes
+	}
+	planet_class="pc_tropical"
+	system_name=
+	{
+		key="Мандрейк"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Sayteh_start }
+	
+	graphical_culture="nemesis_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="ornate"
+			file="flag_ornate_9.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"dark_green"
+			"shadow_green"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Имотех"
+				literal=yes
+			}
+		}
+		portrait="default_robot"
+		texture=1
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="toxoids_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_factory_overclock"
+		"civic_machine_warbots"
+		"civic_machine_replication"
+	}
+	origin="origin_default"
+}
+"Царство Нигилах"=
+{
+	key="Царство Нигилах"
+	ship_prefix=
+	{
+		key="Нигилах."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_rep_robot"
+		species_name=
+		{
+			key="Нигилах"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Нигилахи"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Нигилахск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+		trait="trait_robot_high_maintenance"
+		trait="trait_robot_superconductive"
+	}
+	name=
+	{
+		key="Царство Нигилах"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Нигилах."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_industrial"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Геден"
+		literal=yes
+	}
+	planet_class="pc_arctic"
+	system_name=
+	{
+		key="Касол"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Nigilah_start }
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="aquatic_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="blocky"
+			file="flag_blocky_8.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"mist_blue"
+			"dark_teal"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Криспех"
+				literal=yes
+			}
+		}
+		portrait="sd_rep_robot"
+		texture=1
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="leader_trait_spark_of_genius"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="aquatics_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_memory_vault_machine"
+		"civic_machine_builder"
+		"civic_machine_rockbreakers"
+	}
+	origin="origin_default"
+}
+"Царство Карденат"=
+{
+	key="Царство Карденат"
+	ship_prefix=
+	{
+		key="Карденат."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_mam_robot"
+		species_name=
+		{
+			key="Карденат"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Карденаты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Карденатск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+	}
+	name=
+	{
+		key="Царство Карденат"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Карденат."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_terminator"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Нагатхар"
+		literal=yes
+	}
+	planet_class="pc_desert"
+	system_name=
+	{
+		key="Друзгуми"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Kardenat_start }
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="blocky"
+			file="flag_blocky_1.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_17.dds"
+		}
+		colors=
+		{
+			"ochre_brown"
+			"light_grey"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Аканабекх"
+				literal=yes
+			}
+		}
+		portrait="sd_mam_robot"
+		texture=2
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_terminator"
+		"civic_machine_warbots"
+		"civic_machine_replication"
+	}
+	origin="origin_default"
+}
+"Царство Орускар"=
+{
+	key="Царство Орускар"
+	ship_prefix=
+	{
+		key="Орускар."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="sd_mol_robot"
+		species_name=
+		{
+			key="Орускар"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Орускары"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Орускарск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+		trait="trait_robot_logic_engines"
+		trait="trait_robot_high_maintenance"
+	}
+	name=
+	{
+		key="Царство Орускар"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Орускар."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_research"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Танатос"
+		literal=yes
+	}
+	planet_class="pc_ocean"
+	system_name=
+	{
+		key="Цери"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Oryskar_start }
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="blocky"
+			file="flag_blocky_12.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="double_hemispheres.dds"
+		}
+		colors=
+		{
+			"purple"
+			"light_indigo"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Хакмекхпхетпх"
+				literal=yes
+			}
+		}
+		portrait="sd_mol_robot"
+		texture=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="leader_trait_spark_of_genius"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="gilded_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_ascensionists"
+		"civic_machine_predictive_analysis"
+		"civic_memory_vault_machine"
+	}
+	origin="origin_default"
+}
+"Царство Мефрит"=
+{
+	key="Царство Мефрит"
+	ship_prefix=
+	{
+		key="Мефрит."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="default_robot"
+		species_name=
+		{
+			key="Мефрит"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Мефриты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Мефритск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+	}
+	name=
+	{
+		key="Царство Мефрит"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Мефрит."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_empire"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Пердита"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Каваш"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Mefrit_start }
+	
+	graphical_culture="necroid_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="necroid"
+			file="necroid_01.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="stripe.dds"
+		}
+		colors=
+		{
+			"swamp_green"
+			"light_orange"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Анубитар"
+				literal=yes
+			}
+		}
+		portrait="default_robot"
+		texture=2
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="trait_ruler_eye_for_talent"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="toxoids_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_warbots"
+		"civic_machine_catalytic_processing"
+		"civic_machine_zero_waste_protocols"
+	}
+	origin="origin_default"
+}
+"Царство Нефрех"=
+{
+	key="Царство Нефрех"
+	ship_prefix=
+	{
+		key="Нефрех."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="aqu_machine"
+		species_name=
+		{
+			key="Нефрех"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Нефрехи"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Нефрехск"
+			literal=yes
+		}
+		name_list="NECROID2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_enhanced_memory"
+		trait="trait_robot_learning_algorithms"
+		trait="trait_robot_luxurious"
+		trait="trait_robot_custom_made"
+		trait="trait_robot_high_bandwidth"
+		trait="trait_robot_efficient_processors"
+	}
+	name=
+	{
+		key="Царство Нефрех"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Царство Нефрех."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_research"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Моебиус"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Конора"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Nefrekh_start }
+	
+	graphical_culture="reptilian_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="ornate"
+			file="flag_ornate_7.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="v.dds"
+		}
+		colors=
+		{
+			"light_turquoise"
+			"dark_teal"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Сильфек"
+				literal=yes
+			}
+		}
+		portrait="aqu_machine"
+		texture=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Царь"
+			literal=yes
+		}
+		trait="trait_ruler_charismatic"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="toxoids_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_unitary_cohesion"
+		"civic_machine_predictive_analysis"
+		"civic_machine_exploration_protocol"
+	}
+	origin="origin_default"
+}
+"Империя Саркон"=
+{
+	key="Империя Саркон"
+	ship_prefix=
+	{
+		key="Саркон."
+		literal=yes
+	}
+	species=
+	{
+		class="MACHINE"
+		portrait="nec_machine"
+		species_name=
+		{
+			key="Сарконит"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Саркониты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Сарконитск"
+			literal=yes
+		}
+		name_list="MACHINE2"
+		gender=not_set
+		trait="trait_machine_unit"
+		trait="trait_robot_durable"
+		trait="trait_robot_mass_produced"
+		trait="trait_robot_recycled"
+		trait="trait_robot_repurposed_hardware"
+		trait="trait_robot_uncanny"
+		trait="trait_robot_bulky"
+		trait="trait_robot_high_bandwidth"
+	}
+	name=
+	{
+		key="Империя Саркон"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Империя Саркон."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_machine_intelligence"
+	government="gov_machine_terminator"
+	advisor_voice_type="l_machine"
+	planet_name=
+	{
+		key="Саркон"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Ампра"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Sarkoni_start }
+	
+	graphical_culture="mammalian_01"
+	city_graphical_culture="toxoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="legion"
+			file="flag_mp_beta_05.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"black"
+			"dark_grey"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Саркони"
+				literal=yes
+			}
+		}
+		portrait="nec_machine"
+		texture=2
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Император"
+			literal=yes
+		}
+		trait="trait_ruler_industrialist"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_machine_terminator"
+		"civic_machine_rockbreakers"
+		"civic_machine_replication"
+	}
+	origin="origin_default"
 }
