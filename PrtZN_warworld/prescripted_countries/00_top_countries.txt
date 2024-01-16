@@ -69,7 +69,7 @@
 	advisor_voice_type="l_xenophobe"
 	planet_name=
 	{
-		key="Terra"
+		key="Терра"
 		literal=yes
 	}
 	planet_class="pc_continental"
@@ -943,13 +943,13 @@
 	government="gov_communal_parity"
 	planet_name=
 	{
-		key="T'au"
+		key="Т'ау"
 		literal=yes
 	}
 	planet_class="pc_arid"
 	system_name=
 	{
-		key="Anvan"
+		key="Анван"
 		literal=yes
 	}
 	
@@ -2299,7 +2299,7 @@
 	{
 		"civic_machine_unitary_cohesion"
 		"civic_machine_predictive_analysis"
-		"civic_machine_exploration_protocol"
+		"civic_machine_maintenance_protocols"
 	}
 	origin="origin_default"
 }
@@ -2436,6 +2436,539 @@
 		"civic_machine_terminator"
 		"civic_machine_rockbreakers"
 		"civic_machine_replication"
+	}
+	origin="origin_default"
+}
+"Тексианская Империя"=
+{
+	key="Тексианская Империя"
+	ship_prefix=
+	{
+		key="Тексиан."
+		literal=yes
+	}
+	species=
+	{
+		class="TOX"
+		portrait="tox14"
+		species_name=
+		{
+			key="Тексианец"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Тексианцы"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Тексианск"
+			literal=yes
+		}
+		name_list="AVI2"
+		gender=not_set
+		trait="trait_thrifty"
+		trait="trait_ingenious"
+		trait="trait_very_strong"
+		trait="trait_solitary"
+		trait="trait_quarrelsome"
+		trait="trait_repugnant"
+		trait="trait_unruly"
+		trait="trait_resilient"
+	}
+	name=
+	{
+		key="Тексианская Империя"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Тексианская Империя."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_military_dictatorship"
+	advisor_voice_type="l_slick_corp"
+	planet_name=
+	{
+		key="Текс"
+		literal=yes
+	}
+	planet_class="pc_desert"
+	system_name=
+	{
+		key="Текс Прайм"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Texian_start }
+	
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="arthropoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="aquatic"
+			file="aquatic_09.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_15.dds"
+		}
+		colors=
+		{
+			"dark_brown"
+			"dark_orange"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Локсатетль"
+				literal=yes
+			}
+		}
+		portrait="tox14"
+		texture=2
+		attachment=0
+		clothes=0
+		trait="leader_trait_spycraft"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_decadent_hierarchy_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_shadow_council"
+		"civic_cutthroat_politics"
+		"civic_merchant_guilds"
+	}
+	origin="origin_default"
+}
+"Рой Кв'Орлов"=
+{
+	key="Рой Кв'Орлов"
+	ship_prefix=
+	{
+		key="Кв'Орл."
+		literal=yes
+	}
+	species=
+	{
+		class="ART"
+		portrait="art13"
+		species_name=
+		{
+			key="Кв'Орл"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Кв'Орлы"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Кв'Орлск"
+			literal=yes
+		}
+		name_list="ART4"
+		gender=female
+		trait="trait_hive_mind"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_resilient"
+		trait="trait_strong"
+		trait="trait_extremely_adaptive"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_solitary"
+		trait="trait_unruly"
+	}
+	name=
+	{
+		key="Рой Кв'Орлов"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Рой Кв'Орлов."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	government="gov_hive_mind"
+	planet_name=
+	{
+		key="Локиит"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Локит"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Qorl_start }
+	
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="zoological"
+			file="flag_zoological_1.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"beige"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Хагрида"
+				literal=yes
+			}
+		}
+		portrait="art13"
+		texture=3
+		attachment=0
+		clothes=0
+		ruler_title_female=
+		{
+			key="Королева"
+			literal=yes
+		}
+		trait="trait_ruler_eye_for_talent"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_cordyceptic_drones"
+		"civic_hive_upkeep_twister"
+	}
+	origin="origin_progenitor_hive"
+}
+"Территория Слогтов"=
+{
+	key="Территория Слогтов"
+	ship_prefix=
+	{
+		key="Слогт."
+		literal=yes
+	}
+	species=
+	{
+		class="FUN"
+		portrait="fun9"
+		species_name=
+		{
+			key="Слогт"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Слогты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Слогтск"
+			literal=yes
+		}
+		name_list="FUN3"
+		gender=indeterminable
+		trait="trait_survivor"
+		trait="trait_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_nomadic"
+		trait="trait_repugnant"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Территория Слогтов"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Территория Слогтов."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_bandit_kingdom"
+	advisor_voice_type="l_evil_corp"
+	planet_name=
+	{
+		key="Рамейн"
+		literal=yes
+	}
+	planet_class="pc_tundra"
+	system_name=
+	{
+		key="Ремайн"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ Slogth_start }
+	
+	graphical_culture="necroid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="toxoid"
+			file="toxoid_02.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="diagonal.dds"
+		}
+		colors=
+		{
+			"shadow_steel"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Ув'Ив"
+				literal=yes
+			}
+		}
+		portrait="fun9"
+		texture=1
+		attachment=0
+		clothes=1
+		trait="leader_trait_fleet_organizer"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="runic_room"
+	spawn_enabled=always
+	ethic="ethic_authoritarian"
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_barbaric_despoilers"
+		"civic_scavengers"
+		"civic_memory_vault"
+	}
+	origin="origin_post_apocalyptic"
+}
+"Территория Рак'Голов"=
+{
+	key="Территория Рак'Голов"
+	ship_prefix=
+	{
+		key="Рак'Гол."
+		literal=yes
+	}
+	species=
+	{
+		class="PLANT"
+		portrait="pla12"
+		species_name=
+		{
+			key="Рак'Гол"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Рак'Голы"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Рак'Голск"
+			literal=yes
+		}
+		name_list="PLANT4"
+		gender=not_set
+		trait="trait_incubator"
+		trait="trait_noxious"
+		trait="trait_very_strong"
+		trait="trait_unruly"
+		trait="trait_quarrelsome"
+		trait="trait_repugnant"
+		trait="trait_resilient"
+	}
+	name=
+	{
+		key="Территория Рак'Голов"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Территория Рак'Голов."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_oligarchic"
+	government="gov_purification_committee"
+	planet_name=
+	{
+		key="Апполлония"
+		literal=yes
+	}
+	planet_class="pc_desert"
+	system_name=
+	{
+		key="Апсилов"
+		literal=yes
+	}
+	
+	initializer=""
+	flags={ RakGol_start }
+	
+	graphical_culture="fungoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="aquatic"
+			file="aquatic_01.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_45.dds"
+		}
+		colors=
+		{
+			"ochre_brown"
+			"shadow_steel"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Ризта'Петрек"
+				literal=yes
+			}
+		}
+		portrait="pla12"
+		texture=4
+		attachment=0
+		clothes=0
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="crystalline_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_militarist"
+	ethic="ethic_materialist"
+	civics=
+	{
+		"civic_fanatic_purifiers"
+		"civic_warrior_culture"
+		"civic_distinguished_admiralty"
 	}
 	origin="origin_default"
 }

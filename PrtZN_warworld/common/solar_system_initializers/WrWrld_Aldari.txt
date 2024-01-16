@@ -11,7 +11,6 @@
 
 ### Hauer System
 Syph_initializer = {
-	#name = "NAME_Wenkwort"
 	class = "rl_starting_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -43,7 +42,6 @@ Syph_initializer = {
 	}
 
 	planet = {
-		#name = "NAME_wenkwort_prime"
 		class = "pc_tropical"
 
 		orbit_distance = 65
@@ -60,17 +58,24 @@ Syph_initializer = {
 		
 		#возможно кусок с хэштегами выше не даёт загрузить карту
 		
-		#init_effect = {
-		#	#prevent_anomaly = yes
-		#	random_country = { limit = { has_country_flag = Aldari_gos }
-		#		save_global_event_target_as = Aldari_gos
-		#	}
-		#	set_owner = event_target:Aldari_gos
-		#	generate_owner_pops = { AMOUNT = 4 }
-		#}
+		init_effect = {
+			prevent_anomaly = yes
+			#generate_home_system_resources = yes
+			#generate_empire_home_planet = yes
+			#random_country = { limit = { has_country_flag = Aldari_gos }
+			#	save_global_event_target_as = Aldari_gos
+			#}
+			#set_owner = event_target:Aldari_gos
+			#save_event_target_as = Aldari_gos
+			#limit = { has_planet_flag = Aldari_gos }
+			#set_owner = event_target:Aldari_gos
+			#owner = event_target:Aldari_gos
+			#add_building = building_colony_shelter
+			#generate_owner_pops = { AMOUNT = 4 }
+			set_star_flag = Syph_system
+		} 
 
 		moon = {
-			#name = "NAME_wenkwort_moon"
 			class = "pc_barren_cold"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
@@ -78,7 +83,6 @@ Syph_initializer = {
 	}
 
 	planet = {
-		#name = "NAME_wenkwort_2"
 		class = "pc_barren"
 
 		orbit_distance = 45
@@ -90,7 +94,6 @@ Syph_initializer = {
 	}
 
 	planet = {
-		#name = "NAME_wenkwort_asteroid"
 		class = "pc_asteroid"
 
 		orbit_distance = 28
@@ -102,7 +105,6 @@ Syph_initializer = {
 	}
 
 	planet = {
-		#name = "NAME_wenkwort_3"
 		class = "pc_toxic"
 
 		orbit_distance = 30
@@ -114,7 +116,6 @@ Syph_initializer = {
 	}
 
 	planet = {
-		#name = "NAME_wenkwort_4"
 		class = "pc_gas_giant"
 
 		orbit_distance = 30
