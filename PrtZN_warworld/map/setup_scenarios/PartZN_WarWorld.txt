@@ -4,13 +4,15 @@ static_galaxy_scenario = {
     default = no
     priority = 0
     num_empires = { min = 1 max = 25 }
-    num_empire_default = 17
-    marauder_empire_default = 1
+    num_empire_default = 20
+    marauder_empire_default = 0
     marauder_empire_max = 4
-    fallen_empire_max = 4
-    advanced_empire_default = 1
+    fallen_empire_default = 0
+    fallen_empire_max = 5
+    advanced_empire_default = 0
     core_radius = 0
-    primitive_odds = 1
+	colonizable_planet_odds = 0
+    primitive_odds = 0
     crisis_strength = 0.75
  	extra_crisis_strength = { 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10 11 12 13 14 15 17.5 20 22.5 25 30 35 40 45 50}
     num_wormhole_pairs = { min = 1 max = 30 }
