@@ -788,8 +788,8 @@ country_event = {
 	immediate = {
 		add_resource = { energy = 100	}
 		add_resource = { minerals = 100	}
-		add_resource = { alloys = 100	}
-		add_resource = { influence = 100 }
+		add_resource = { alloys = 1000	}
+		add_resource = { influence = 1000 }
 
 		if = {
 			limit = {
@@ -858,6 +858,24 @@ country_event = {
 			}
 			give_technology = { message = yes tech = tech_wormhole_stabilization }
 		}
+		#тест
+		# random_system = {
+			# limit = {
+				# has_star_flag = Imperium_gos
+				# has_owner = no
+			# }
+			# set_owner = Imperium
+			# random_system_planet = { limit = { is_star = yes }
+				# set_name = "Кадия Да"
+			# }
+			# create_starbase = {
+				# owner = set_owner = Imperium
+				# size = starbase_outpost
+			# }
+			# random_system_planet = { limit = { is_colonizable = yes }
+				# set_name = "Dromund Fels"
+			# }
+		# }
 	}
 
 	# Additional resources that may be changed by subspecies are granted in generate_start_buildings_and_districts
@@ -3026,49 +3044,6 @@ country_event = {
 					set_council_position = councilor_fanatic_purifiers
 				}
 			}
-		}
-	}
-}
-
-country_event = {
-	id = WrWrld.1
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		any_country = {
-			has_country_flag = Aldari_gos
-		}
-	}
-
-	immediate = {
-		owner_main_species = {
-			save_event_target_as = Aldari_gos
-		}
-		random_playable_country = {
-		#	limit = {
-		#		OR = { 
-		#			is_galactic_custodian = yes
-		#			is_galactic_emperor = yes
-		#		}
-		#	}
-			save_event_target_as = Aldari_gos
-		}
-		random_galaxy_planet = {
-			limit = {
-				set_star_flag = Syph_system		
-			}
-			#change_pc = event_target:Aldari_gos
-			solar_system = {
-				create_starbase = {
-					size = starbase_starport
-					owner = event_target:Aldari_gos
-				}
-			}
-			set_owner = event_target:Aldari_gos
-			generate_start_pops = yes
-			generate_start_buildings_and_districts = yes
-			#set_capital = yes
 		}
 	}
 }

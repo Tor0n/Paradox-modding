@@ -1,0 +1,25 @@
+namespace = WrWrld_game_start
+
+country_event = {
+	id = WrWrld_game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Imperium_gos
+	}
+	immediate = {
+		every_system = {
+			limit = {
+				has_star_flag = Imperium_gos
+			}
+			create_starbase = {
+				owner = ROOT
+				size = starbase_starport
+			}
+			random_system_planet = { limit = { is_colonizable = yes }
+				set_name = "Dromund Fels"
+			}
+		}
+	}
+}

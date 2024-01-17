@@ -1,20 +1,8 @@
 Terra_initializer = {
 	name = "Сол"
-
 	class = "sc_g"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 145
-	}
-	asteroid_belt = {
-		type = icy_asteroid_belt
-		radius = 290
-	}
-
 	flags = { empire_home_system sol_system sol }
-
 	usage = custom_empire
-
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -23,6 +11,15 @@ Terra_initializer = {
 			}
 		}
 		generate_home_system_resources = yes
+	}
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 290
 	}
 
 	planet = {
@@ -313,4 +310,36 @@ Terra_initializer = {
 	#	hyperlane_jumps = { min = 1 max = @jumps }
 	#	initializer = "sol_neighbor_t1_no_guaranteed_colony"
 	#}
+}
+
+Cadia_initializer = {
+	name = "Кадия"
+	class = "sc_g"
+	flags = { Imperium_gos }
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 60
+	}
+	
+	planet = {
+		name = "Кадия"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Кадия"
+		class = "pc_tundra"
+		orbit_distance = 40
+		orbit_angle = 55
+		size = 20
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
 }

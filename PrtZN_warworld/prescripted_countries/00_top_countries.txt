@@ -2,150 +2,81 @@
 #### Major Empires ####
 #######################
 
-
-
-
-"Империум Человечества"=
-{
-	key="Империум Человечества"
-	ship_prefix=
-	{
-		key="Имп."
-		literal=yes
-	}
-	species=
-	{
-		class="HUM"
-		portrait="human_legacy"
-		species_name=
-		{
-			key="Человек"
-			literal=yes
-		}
-		species_plural=
-		{
-			key="Люди"
-			literal=yes
-		}
-		species_adjective=
-		{
-			key="Человеческ"
-			literal=yes
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		trait="trait_perfected_genes"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Империум Человечества"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Империум Человечества."
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
-	government="gov_purity_order"
-	advisor_voice_type="l_xenophobe"
-	planet_name=
-	{
-		key="Терра"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Сол"
-		literal=yes
+Imperium = {
+	name = "Imperium"
+	adjective = "Imperium"
+	spawn_enabled = always
+	ignore_portrait_duplication = yes
+	
+	ship_prefix = "ship_prefix_Imperium"
+	
+	species = {
+		class = "HUM"
+		portrait = "human_legacy"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
 	
-	initializer="Terra_initializer"
+	room = "personality_democratic_crusaders_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_philosopher_king" }
+	government = gov_purity_order
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_fanatic_xenophobe"
+	
+	origin = "origin_legendary_leader"
 	flags={ Imperium_start Imperium_gos }
 	
-	graphical_culture="nemesis_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="human"
-			file="flag_human_4.dds"
+	planet_name = "Терра"
+	planet_class = "pc_continental"
+	initializer = "Terra_initializer"
+	system_name = "Солнце"
+	
+	graphical_culture = "nemesis_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag= {
+		icon = {
+			category = "human"
+			file = "flag_human_4.dds"
 		}
-		background=
-		{
-			category="backgrounds"
-			file="v.dds"
+		background = {
+			category = "backgrounds"
+			file = "v.dds"
 		}
-		colors=
-		{
+		colors = {
 			"shadow_green"
 			"black"
 			"black"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Неот"
-				literal=yes
-			}
-		}
-		portrait="human_legacy_male_03"
-		texture=0
-		attachment=15
-		clothes=6
-		ruler_title=
-		{
-			key="Император"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Императрица"
-			literal=yes
-		}
-		leader_class="commander"
+	ruler = {
+		name = "Неот"
+		gender = male
+		portrait = "human_legacy_male_03"
+		texture = 0
+		attachment = 15
+		clothes = 6
+		ruler_title = "Император"
+		ruler_title_female = "Императрица"
+		leader_class = "commander"
 	}
 	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_democratic_crusaders_room"
-	spawn_enabled=always
-	ethic="ethic_fanatic_authoritarian"
-	ethic="ethic_fanatic_xenophobe"
-	civics=
-	{
-		"civic_dystopian_society"
-		"civic_fanatic_purifiers"
-		"civic_philosopher_king"
-	}
-	origin="origin_legendary_leader"
+	advisor_voice_type = "l_xenophobe"
 }
-"Орочья территория"=
+"Орочья территория" =
 {
 	key="Орочья территория"
 	ship_prefix=

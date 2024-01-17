@@ -22,7 +22,7 @@ static_galaxy_scenario = {
     random_hyperlanes = no
 
 system = { id = "0" name = "Terra" position = { x = 231.6181 y = -22.70811 } initializer = Terra_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Imperium_start } } }
-system = { id = "1" name = "Cadia" position = { x = 280.4395 y = -162.3602 }  }
+system = { id = "1" name = "Cadia" position = { x = 280.4395 y = -162.3602 } initializer = Cadia_initializer }
 system = { id = "2" name = "Agripinaa" position = { x = 278.1688 y = -133.9756 }  }
 system = { id = "3" name = "Ingiga" position = { x = 255.4611 y = -118.0803 }  }
 system = { id = "4" name = "Yarant" position = { x = 247.5134 y = -102.1849 }  }
