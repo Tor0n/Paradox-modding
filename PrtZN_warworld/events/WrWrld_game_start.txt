@@ -15,11 +15,154 @@ country_event = {
 			}
 			create_starbase = {
 				owner = ROOT
-				size = starbase_starport
+				size = starbase_outpost
 			}
-			random_system_planet = { limit = { is_colonizable = yes }
-				set_name = "Dromund Fels"
+			every_system_planet = { 
+			    if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Civilised_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    add_building = building_capital   					
+				    while = {
+				    	count = 8
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Industrial_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    add_building = building_capital 
+				    while = {
+				    	count = 8
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    add_building = building_capital   	
+				    add_building = building_mineral_purification_plant 	
+				    add_building = building_precinct_house 					
+				    while = {
+				    	count = 28
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 16
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 					
+				    while = {
+				    	count = 28
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+					while = {
+						count = 16
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
 			}
 		}
 	}
 }
+ 

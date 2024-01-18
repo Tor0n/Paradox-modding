@@ -62,9 +62,9 @@ Syph_initializer = {
 			prevent_anomaly = yes
 			#generate_home_system_resources = yes
 			#generate_empire_home_planet = yes
-			#random_country = { limit = { has_country_flag = Aldari_gos }
-			#	save_global_event_target_as = Aldari_gos
-			#}
+			random_country = { limit = { has_country_flag = Aldari_gos }
+				save_global_event_target_as = Aldari_gos_t
+			}
 			#set_owner = event_target:Aldari_gos
 			#save_event_target_as = Aldari_gos
 			#limit = { has_planet_flag = Aldari_gos }
@@ -72,7 +72,13 @@ Syph_initializer = {
 			#owner = event_target:Aldari_gos
 			#add_building = building_colony_shelter
 			#generate_owner_pops = { AMOUNT = 4 }
-			set_star_flag = Syph_system
+			#set_star_flag = Syph_system
+			create_colony = {
+				owner = Aldari_gos_t
+				generate_owner_pops = { AMOUNT = 4 }
+				#species = <target / key>
+				#ethos = <random / target / { ethic = <key> ethic = <key> }>
+		    }
 		} 
 
 		moon = {
@@ -125,5 +131,140 @@ Syph_initializer = {
 		change_orbit = 12
 
 		home_planet = no
+	}
+}
+Athelaq_initializer = {
+	class = "sc_f"
+	flags = { starting_system }
+	init_effect = {
+		save_global_event_target_as = Aldari_gos
+		generate_home_system_resources = yes
+	}
+	usage = custom_empire
+	max_instances = 1
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		size = { min = 30 max = 35 }
+	}
+	change_orbit = @base_planet_dist
+	planet = {
+		class = pc_molten
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_barren #mangrove before now barren because of balance
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 17 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_continental
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = @capital_size
+		has_ring = no
+		starting_planet = yes
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			#set_planet_flag = lotor_important_planet
+			#save_global_event_target_as = coruscant_planet
+			#set_planet_flag = planet_coruscant
+
+			#check_human_player = yes
+			#if = { limit = { any_country = { has_country_flag = startingempire_coruscantiiunion } } # is player
+			#	random_country = { limit = { has_country_flag = startingempire_coruscantiiunion }
+			#		save_global_event_target_as = empire_of_coruscant
+			#	}
+			#}
+			#else = {
+			#	create_coruscantii_union_country = yes
+			#}
+
+			#set_capital = yes
+			set_owner = event_target:Aldari_gos
+			set_name = "Athelaq"
+			if = { limit = { owner = { has_country_flag = Aldari_gos } } generate_starting_pops = { AMOUNT = 32 } }
+			generate_start_deposits_and_blockers = yes
+			generate_normal_buildings = yes
+		}
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_gas_giant
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 30 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_gas_giant
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 30 }
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_frozen
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 420
+	}
+	change_orbit = @base_planet_dist
+	planet = {
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = no
+		change_orbit = @base_moon_dist
+	}
+	planet = {
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = yes
+		change_orbit = @base_moon_dist
 	}
 }
