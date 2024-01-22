@@ -9,6 +9,97 @@ country_event = {
 		has_country_flag = Imperium_gos
 	}
 	immediate = {
+	    hidden_effect = { 
+			#Соц наука
+			#give_technology = { tech = tech_industrial_farming } #
+			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
+			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
+			
+			give_technology = { tech = tech_gene_seed_purification } #Космодесант
+			give_technology = { tech = tech_jump_drive_1 } #Прыжковый двигатель #tech_psi_jump_drive_1
+			give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
+			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
+			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy } #Баф бюрократии + постройка
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 } #Лазеры
+			give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power } #Реактор 3
+			give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 } #Щиты 2
+			
+			give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
+			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
+			give_technology = { tech = tech_destroyers } #Эсминец
+			give_technology = { tech = tech_cruisers } #Крейсер
+			give_technology = { tech = tech_battleships } #Линкор
+			give_technology = { tech = tech_titans } #Титан
+			give_technology = { tech = tech_ship_armor_2 } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 } #Броня корабля
+			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
+			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_5 } #Космическая база новый уровень
+			
+			give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
+			give_technology = { tech = tech_exotic_gases } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes } #Создание пылинок
+			#give_technology = { tech = tech_archaeo_refinery }
+		}
 		every_system = {
 			limit = {
 				has_star_flag = Imperium_gos
@@ -34,12 +125,12 @@ country_event = {
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_city
+					#	}
+					#}
 					while = {
 						count = 1
 						add_district_and_planet_size_if_needed_effect = {
@@ -74,7 +165,8 @@ country_event = {
 				    	owner = ROOT
 		    	    }
 				    #add_building = building_colony_shelter
-				    add_building = building_capital 
+				    add_building = building_capital
+				    add_building = building_chemical_plant					
 				    while = {
 				    	count = 8
 				    	create_pop = {
@@ -107,23 +199,23 @@ country_event = {
 				    add_building = building_mineral_purification_plant 	
 				    add_building = building_precinct_house 					
 				    while = {
-				    	count = 28
+				    	count = 34
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 4
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
 					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
 					while = {
 						count = 16
 						add_district_and_planet_size_if_needed_effect = {
@@ -141,7 +233,8 @@ country_event = {
 		    	    }
 				    #add_building = building_colony_shelter
 				    add_building = building_capital   	
-				    add_building = building_precinct_house 					
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
 				    while = {
 				    	count = 28
 				    	create_pop = {
@@ -149,13 +242,428 @@ country_event = {
 				    	}
 					}
 					while = {
-						count = 4
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
 					}
 					while = {
 						count = 16
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world_desert			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+					add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm					
+				    add_building = building_food_processing_center 					
+				    while = {
+				    	count = 28
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Frontier_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_colony_shelter 					
+				    while = {
+				    	count = 1
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_hall_judgment 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    add_building = building_research_lab_2
+					add_building = building_resource_silo
+					#add_building = building_bio_reactor
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    while = {
+				    	count = 130
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_housing
+					#	}
+					#}
+					while = {
+						count = 15
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_arms_industry
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_civilian_industry
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_administrative
+					#	}
+					#}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_research_lab_2
+					add_building = building_fortress
+					add_building = building_fortress	
+					add_building = building_chemical_plant 					
+				    while = {
+				    	count = 54
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_grid 
+					add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					add_building = building_refinery
+					add_building = building_chemical_plant
+					add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 54
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					#add_building = building_mote_harvesters
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_chemical_plant
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 66
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 9
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 	
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_refinery
+					add_building = building_refinery
+					add_building = building_crystal_plant
+					add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 50
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_housing
+						}
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_arms_industry
+						}
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_civilian_industry
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_administrative
+						}
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_hall_judgment
+				    add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 145
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Aldari_gos
+	}
+	immediate = {
+		every_system = {
+			limit = {
+				has_star_flag = Aldari_gos
+			}
+			create_starbase = {
+				owner = ROOT
+				size = starbase_outpost
+			}
+			every_system_planet = { 
+			    if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Aldari_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    add_building = building_capital 
+				    add_building = building_ranger_lodge  					
+				    while = {
+				    	count = 19
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_city
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}

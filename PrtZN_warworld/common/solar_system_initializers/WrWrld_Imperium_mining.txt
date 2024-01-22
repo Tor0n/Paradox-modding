@@ -34,7 +34,7 @@ Dulmalin_initializer = {
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 19
+		size = 23
 		has_ring = no
 		change_orbit = 4
 		
@@ -42,6 +42,1899 @@ Dulmalin_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Mordant_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Kastorel_Novem_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_ocean"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Deliverance_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_tundra"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Chinchare_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_arctic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Iniquity_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_nuked"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Keopsis_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Guryan_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Balor_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_arctic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 29
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Khymara_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_arid"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Larsa_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_savannah"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Kyro_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Molochii_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Haephos_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Ghosar_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_arid"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Pavonis_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_tundra"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Newseam_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Legatus_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Devlan_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Ventrillia_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_tropical"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 28
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Mining_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_mineral_fields #Минеральные поля 1
 		} 
 
 		moon = {

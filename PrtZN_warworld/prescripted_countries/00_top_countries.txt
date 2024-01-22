@@ -3,7 +3,7 @@
 #######################
 
 Imperium = {
-	name = "Imperium"
+	name = "Name_Imperium"
 	adjective = "Imperium"
 	spawn_enabled = always
 	ignore_portrait_duplication = yes
@@ -676,8 +676,8 @@ Tsardom_Thokt = {
 	room = "toxoids_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_machine_upkeep_twister" "civic_machine_delegated_functions" "civic_machine_introspective" }
-	government = "gov_machine_research"
+	civics = { "civic_machine_upkeep_twister" "civic_machine_delegated_functions" "civic_machine_terminator" } #civic_machine_introspective
+	government = "gov_machine_terminator"
 	
 	ethic="ethic_gestalt_consciousness"
 	
@@ -743,30 +743,30 @@ Tsardom_Agdagath = {
 		trait = "trait_robot_custom_made"
 		trait = "trait_robot_emotion_emulators"
 	}
-	secondary_species = {
-		class = "NECROID"
-		portrait = "nec2"
-		name = "Некронтир"
-		plural = "Некронтиры"
-		adjective = "Некронтирск"
-		name_list = "NECROID2"
-		trait = "trait_nonadaptive"
-		trait = "trait_weak"
-		trait = "trait_fleeting"
-		trait = "trait_decadent"
-		trait = "trait_unruly"
-		trait = "trait_solitary"
-		trait = "trait_repugnant"
-		trait = "trait_nomadic"
-		trait = "trait_conformists"
-		trait = "trait_traditional"
-	}
+	#secondary_species = {
+	#	class = "NECROID"
+	#	portrait = "nec2"
+	#	name = "Некронтир"
+	#	plural = "Некронтиры"
+	#	adjective = "Некронтирск"
+	#	name_list = "NECROID2"
+	#	trait = "trait_nonadaptive"
+	#	trait = "trait_weak"
+	#	trait = "trait_fleeting"
+	#	trait = "trait_decadent"
+	#	trait = "trait_unruly"
+	#	trait = "trait_solitary"
+	#	trait = "trait_repugnant"
+	#	trait = "trait_nomadic"
+	#	trait = "trait_conformists"
+	#	trait = "trait_traditional"
+	#}
 	
 	room =  "toxoids_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_machine_servitor" "civic_machine_ota_updates" "civic_machine_memorialist" }
-	government = "gov_machine_servitor"
+	civics = { "civic_machine_terminator" "civic_machine_ota_updates" "civic_machine_maintenance_protocols" } #civic_machine_servitor #civic_machine_memorialist
+	government = "gov_machine_terminator"
 	
 	ethic = "ethic_gestalt_consciousness"
 	
@@ -838,8 +838,8 @@ Tsardom_Sautekh = {
 	room = "toxoids_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_machine_factory_overclock" "civic_machine_warbots" "civic_machine_replication" }
-	government = "gov_machine_industrial"
+	civics = { "civic_machine_terminator" "civic_machine_warbots" "civic_machine_replication" } #civic_machine_factory_overclock
+	government = "gov_machine_terminator"
 	
 	ethic = "ethic_gestalt_consciousness"
 	
@@ -910,8 +910,8 @@ Tsardom_Nihilakh = {
 	room = "aquatics_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_memory_vault_machine" "civic_machine_builder" "civic_machine_rockbreakers" }
-	government = "gov_machine_industrial"
+	civics = { "civic_memory_vault_machine" "civic_machine_builder" "civic_machine_terminator" } #civic_machine_rockbreakers
+	government = "gov_machine_terminator"
 	
 	ethic = "ethic_gestalt_consciousness"
 	
@@ -1053,8 +1053,8 @@ Tsardom_Oruscar = {
 	room = "gilded_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_machine_ascensionists" "civic_machine_predictive_analysis" "civic_memory_vault_machine" }
-	government = "gov_machine_research"
+	civics = { "civic_machine_ascensionists" "civic_machine_terminator" "civic_memory_vault_machine" } #civic_machine_predictive_analysis
+	government = "gov_machine_terminator"
 	
 	ethic = "ethic_gestalt_consciousness"
 	
@@ -1124,8 +1124,8 @@ Tsardom_Mephrit = {
 	room="toxoids_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_machine_warbots" "civic_machine_catalytic_processing" "civic_machine_zero_waste_protocols" }
-	government = "gov_machine_empire"
+	civics = { "civic_machine_terminator" "civic_machine_catalytic_processing" "civic_machine_zero_waste_protocols" } #civic_machine_warbots
+	government = "gov_machine_terminator"
 	
 	ethic = "ethic_gestalt_consciousness"
 	
@@ -1197,8 +1197,8 @@ Tsardom_Nephrekh = {
 	room = "toxoids_room"
 	
 	authority = "auth_machine_intelligence"
-	civics = { "civic_machine_unitary_cohesion" "civic_machine_predictive_analysis" "civic_machine_maintenance_protocols" }
-	government = "gov_machine_research"
+	civics = { "civic_machine_unitary_cohesion" "civic_machine_predictive_analysis" "civic_machine_terminator" } #civic_machine_maintenance_protocols
+	government = "gov_machine_terminator"
 	
 	ethic = "ethic_gestalt_consciousness"
 	

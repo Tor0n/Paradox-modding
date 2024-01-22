@@ -34,7 +34,7 @@ Dentor_initializer = {
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 19
+		size = 23
 		has_ring = no
 		change_orbit = 4
 		
@@ -42,6 +42,1659 @@ Dentor_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Chiros_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_ocean"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			#add_deposit = d_black_soil #чернозём 6
+			add_deposit = d_teeming_reef #рифы какие-то 3
+			add_deposit = d_teeming_reef #рифы какие-то 3
+			add_deposit = d_teeming_reef #рифы какие-то 3
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Polando_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Madrigal_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Khai_Zahn_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Ntharis_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Zavarich_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Colcha_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Rynn_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+San_Leor_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_tropical"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			#add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Fleishgate_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Jollov_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Numinal_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Viridia_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Masali_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world_desert }
+		
+		init_effect = {
+			prevent_anomaly = yes 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Quintari_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Tarentus_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world_desert }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Asylus_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Agri_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			#add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			#add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			#add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_fertile_lands #плодородные земли 4 
 		} 
 
 		moon = {
