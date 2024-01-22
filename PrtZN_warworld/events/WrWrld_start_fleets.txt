@@ -1,0 +1,16 @@
+namespace = WrWrld_start_fleet
+
+country_event = {
+	id = WrWrld_start_fleet.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Imperium_gos
+	}
+	immediate = {
+		capital_scope = {
+			create_fallen_empire_reinforcements = yes
+		}
+	}
+}

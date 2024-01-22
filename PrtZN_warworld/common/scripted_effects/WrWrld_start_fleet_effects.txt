@@ -1,0 +1,52 @@
+create_Imperium_starting_navy = {
+	create_Imperium_corvette_fleet = yes
+	create_Imperium_corvette_fleet = yes
+}
+create_Imperium_corvette_fleet = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = 10
+				create_Imperium_Corvette = yes
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+create_Imperium_Corvette = {
+	create_ship = {
+		name = random
+		design = "NAME_TESTNAME_Imperium"
+		graphical_culture = owner
+	}
+}
