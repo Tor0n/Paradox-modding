@@ -1,0 +1,44 @@
+add_solar_system = {
+	create_starbase = {
+		owner = Империум Человечества
+		size = starbase_starport
+	}
+}
+create_fringe_colony = {
+	random_system_planet = {
+		limit = { is_colony = no is_colonizable = yes }
+	}
+	clear_blockers = yes
+	prevent_anomaly = yes
+	set_owner = prev
+	while = {
+		count = 3
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_city
+		}
+	}
+	while = {
+		count = 2
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_generator
+		}
+	}
+	while = {
+		count = 2
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_mining
+		}
+	}
+	while = {
+		count = 2
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_farming
+		}
+	}
+	while = {
+		count = 20
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+}
