@@ -304,35 +304,3 @@ Terra_initializer = {
 		has_ring = no
 	}
 }
-
-Cadia_initializer = {
-	name = "Кадия"
-	class = "sc_g"
-	flags = { Imperium_gos }
-	
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 60
-	}
-	
-	planet = {
-		name = "Кадия"
-		class = "pc_g_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-	}
-
-	planet = {
-		name = "Кадия"
-		class = "pc_toxic"
-		orbit_distance = 40
-		orbit_angle = 55
-		size = 20
-		has_ring = no
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-}
