@@ -1,37 +1,16 @@
-
-@distance = 50
-@jumps = 3
-@planet_min_size = 10
-@planet_max_size = 25
-@base_moon_distance = 10
-@moon_min_size = 6
-@moon_max_size = 10
-@homeworld_min_size = 18
-@homeworld_max_size = 21
-
-### Hauer System
 Ursulia_initializer = {
 	class = "rl_starting_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
+		radius = 135
 	}
+	
+	flags = { Eldar_gos }
 
-	usage = misc_system_init	#The game can pick this initialiser randomly for misc. purposes, i.e those which have not been initialised by empires or fallen empires
-	usage_odds = {
-		base = 1
-		modifier = {
-			factor = 0
-			OR = {
-				is_fe_cluster = yes
-				is_marauder_cluster = yes
-				has_star_flag = empire_cluster
-			}
-		}
-	}
 	max_instances = 1
-	init_effect = { }
-
+	init_effect = {
+	}
+	
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -39,68 +18,58 @@ Ursulia_initializer = {
 			prevent_anomaly = yes
 		}
 	}
+	
+    planet = {
+		class = "pc_molten"
 
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
 	planet = {
 		class = "pc_gaia"
 
 		orbit_distance = 65
-		orbit_angle = 145
-		size = 19
-		has_ring = yes
+		orbit_angle = { min = 90 max = 270 }
+		size = 24
+		has_ring = no
 		change_orbit = 4
-
-		#home_planet = no
-		#size = {
-		#	min = @medium_planet_min_size
-		#	max = @medium_planet_max_size
-		#}
+		deposit_blockers = none
+		modifiers = none
 		
-		#возможно кусок с хэштегами выше не даёт загрузить карту
+		flags = { Eldar_world }
 		
-		#init_effect = {
-		#	#prevent_anomaly = yes
-		#	random_country = { limit = { has_country_flag = Aldari_gos }
-		#		save_global_event_target_as = Aldari_gos
-		#	}
-		#	set_owner = event_target:Aldari_gos
-		#	generate_owner_pops = { AMOUNT = 4 }
-		#}
+		init_effect = {
+			prevent_anomaly = yes
+		} 
 
 		moon = {
-			#name = "NAME_wenkwort_moon"
-			class = "pc_barren_cold"
+			class = "pc_habitat"
 			orbit_distance = 15
-			size = { min = 8 max = 12 }
+			size = 15
 		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
-		orbit_angle = 135
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = yes
-	}
-
-	planet = {
-		class = "pc_asteroid"
-
 		orbit_distance = 28
-		orbit_angle = 20
+		orbit_angle = { min = 90 max = 270 }
 		size = { min = 2 max = 4 }
 		has_ring = no
 
-		home_planet = yes
+		home_planet = no
 	}
 
 	planet = {
-		class = "random"
+		class = "pc_barren_cold"
 
 		orbit_distance = 30
-		orbit_angle = -55
+		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = no
 
@@ -108,11 +77,11 @@ Ursulia_initializer = {
 	}
 
 	planet = {
-		class = "random"
+		class = "pc_barren_cold"
 
 		orbit_distance = 30
-		orbit_angle = 20
-		size = { min = 25 max = 50 }
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
 		has_ring = no
 		change_orbit = 12
 
@@ -123,24 +92,15 @@ Iathglas_initializer = {
 	class = "rl_starting_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
+		radius = 135
 	}
+	
+	flags = { Eldar_gos }
 
-	usage = misc_system_init	#The game can pick this initialiser randomly for misc. purposes, i.e those which have not been initialised by empires or fallen empires
-	usage_odds = {
-		base = 1
-		modifier = {
-			factor = 0
-			OR = {
-				is_fe_cluster = yes
-				is_marauder_cluster = yes
-				has_star_flag = empire_cluster
-			}
-		}
-	}
 	max_instances = 1
-	init_effect = { }
-
+	init_effect = {
+	}
+	
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -148,67 +108,58 @@ Iathglas_initializer = {
 			prevent_anomaly = yes
 		}
 	}
+	
+    planet = {
+		class = "pc_molten"
 
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
 	planet = {
 		class = "pc_gaia"
 
 		orbit_distance = 65
-		orbit_angle = 45
-		size = 19
+		orbit_angle = { min = 90 max = 270 }
+		size = 24
+		has_ring = no
 		change_orbit = 4
-
-		#home_planet = no
-		#size = {
-		#	min = @medium_planet_min_size
-		#	max = @medium_planet_max_size
-		#}
+		deposit_blockers = none
+		modifiers = none
 		
-		#возможно кусок с хэштегами выше не даёт загрузить карту
+		flags = { Eldar_world }
 		
-		#init_effect = {
-		#	#prevent_anomaly = yes
-		#	random_country = { limit = { has_country_flag = Aldari_gos }
-		#		save_global_event_target_as = Aldari_gos
-		#	}
-		#	set_owner = event_target:Aldari_gos
-		#	generate_owner_pops = { AMOUNT = 4 }
-		#}
+		init_effect = {
+			prevent_anomaly = yes
+		} 
 
 		moon = {
-			#name = "NAME_wenkwort_moon"
-			class = "pc_barren_cold"
+			class = "pc_habitat"
 			orbit_distance = 15
-			size = { min = 8 max = 12 }
+			size = 15
 		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
-		orbit_angle = -135
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = yes
-	}
-
-	planet = {
-		class = "pc_asteroid"
-
 		orbit_distance = 28
-		orbit_angle = -120
+		orbit_angle = { min = 90 max = 270 }
 		size = { min = 2 max = 4 }
 		has_ring = no
 
-		home_planet = yes
+		home_planet = no
 	}
 
 	planet = {
-		class = "pc_toxic"
+		class = "pc_barren_cold"
 
 		orbit_distance = 30
-		orbit_angle = -35
+		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = no
 
@@ -216,14 +167,114 @@ Iathglas_initializer = {
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_barren_cold"
 
 		orbit_distance = 30
-		orbit_angle = 155
-		size = { min = 25 max = 50 }
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
 		has_ring = no
 		change_orbit = 12
 
 		home_planet = no
+	}
+}
+
+#*---------------*#
+#* Миры хабитаты *#
+#*---------------*#
+
+Upsilon_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = { min = 105 max 195 }
+	}
+	
+	flags = { Eldar_gos }
+
+	max_instances = 1
+	init_effect = {
+	}
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			spawn_megastructure = {
+				type = habitat_central_complex
+				owner = ROOT
+			}
+		}
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 14 max = 25 }
+		has_ring = no
+
+		home_planet = no
+		
+		init_effect = {
+			spawn_megastructure = {
+				type = major_orbital
+				owner = ROOT
+				create_colony = {
+					owner = ROOT
+				}
+			}
+		}
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+		
+		init_effect = {
+			spawn_megastructure = {
+				type = major_orbital
+				owner = ROOT
+			}
+		}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+		
+		moon = {
+			class = "pc_habitat"
+			orbit_distance = 15
+			size = 6
+		}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+		
+		moon = {
+			class = "pc_habitat"
+			orbit_distance = 15
+			size = 6
+		}
 	}
 }

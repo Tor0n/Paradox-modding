@@ -833,16 +833,8 @@ country_event = {
 			give_technology = { message = no tech = tech_starbase_3 }
 		}
 		##*--------------*##
-		##warWorld origins##
+		##warWorld origins## удалить позже
 		##*--------------*##
-		if = { ### Start for Imperium
-			limit = {
-				has_origin = origin_Imperium
-			}
-			give_technology = { message = yes tech = tech_jump_drive_1 }
-			give_technology = { message = no tech = tech_habitat_1 }
-			give_technology = { message = no tech = tech_planetary_shield_generator }
-		}
 		if = { ### Start event for Eldari
 			limit = {
 				has_origin = origin_Eldari
@@ -852,30 +844,6 @@ country_event = {
 			give_technology = { message = no tech = tech_habitat_2 }
 			give_technology = { message = no tech = tech_habitat_3 }
 		}
-		if = { ### Start for Drukhari
-			limit = {
-				has_origin = origin_Drukhari
-			}
-			give_technology = { message = yes tech = tech_wormhole_stabilization }
-		}
-		#тест
-		# random_system = {
-			# limit = {
-				# has_star_flag = Imperium_gos
-				# has_owner = no
-			# }
-			# set_owner = Imperium
-			# random_system_planet = { limit = { is_star = yes }
-				# set_name = "Кадия Да"
-			# }
-			# create_starbase = {
-				# owner = set_owner = Imperium
-				# size = starbase_outpost
-			# }
-			# random_system_planet = { limit = { is_colonizable = yes }
-				# set_name = "Dromund Fels"
-			# }
-		# }
 	}
 
 	# Additional resources that may be changed by subspecies are granted in generate_start_buildings_and_districts

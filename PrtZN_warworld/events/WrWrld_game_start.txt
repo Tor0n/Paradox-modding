@@ -3,7 +3,7 @@ namespace = WrWrld_game_start
 #переменные, попытка внедрения
 @create_pop_watch_fort_station = 9
 
-country_event = {
+country_event = { #Imperium
 	id = WrWrld_game_start.1
 	hide_window = yes
 	is_triggered_only = yes
@@ -139,7 +139,7 @@ country_event = {
 				    	owner = ROOT
 		    	    }
 				    #add_building = building_colony_shelter
-				    add_building = building_capital   					
+				    add_building = building_capital
 				    while = {
 				    	count = 8
 				    	create_pop = {
@@ -178,7 +178,7 @@ country_event = {
 					}
 				}
 				if = {
-				    limit = { 
+				    limit = {
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
@@ -216,9 +216,9 @@ country_event = {
 				    	owner = ROOT
 		    	    }
 				    #add_building = building_colony_shelter
-				    add_building = building_capital   	
-				    add_building = building_mineral_purification_plant 	
-				    add_building = building_precinct_house 					
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
 				    while = {
 				    	count = 34
 				    	create_pop = {
@@ -710,7 +710,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Chaos
 	id = WrWrld_game_start.2
 	hide_window = yes
 	is_triggered_only = yes
@@ -952,7 +952,237 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Eldar
+	id = WrWrld_game_start.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Eldar_gos
+	}
+	immediate = {
+		add_resource = { energy = 12000	}
+		add_resource = { minerals = 4000 }
+		add_resource = { food = 7500 }
+		hidden_effect = {
+			#Соц наука
+			#give_technology = { tech = tech_industrial_farming } #
+			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
+			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
+			
+			give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
+			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
+			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 } #Лазеры
+			give_technology = { tech = tech_lasers_3 }
+			give_technology = { tech = tech_lasers_4 }
+			give_technology = { tech = tech_lasers_5 }
+			give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
+			give_technology = { tech = tech_disruptors_1 } #Дезинтеграторы
+			give_technology = { tech = tech_disruptors_2 }
+			give_technology = { tech = tech_disruptors_3 }
+			give_technology = { tech = tech_fusion_power } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power } #Реактор 3
+			give_technology = { tech = tech_antimatter_power } #Реактор 4
+			give_technology = { tech = tech_zero_point_power } #Реактор 5
+			give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 } #Щиты
+			give_technology = { tech = tech_shields_3 }
+			give_technology = { tech = tech_shields_4 }
+			give_technology = { tech = tech_shields_5 }
+			give_technology = { tech = tech_shield_rechargers_1 }
+			give_technology = { tech = tech_shield_hardeners_1 }
+			give_technology = { tech = tech_sensors_2 } #Сенсоры
+			give_technology = { tech = tech_sensors_3 }
+			give_technology = { tech = tech_sensors_4 }
+			
+			give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_power_hub_2 }
+			give_technology = { tech = tech_power_plant_2 } #+Энергия
+			give_technology = { tech = tech_power_plant_3 }
+			give_technology = { tech = tech_power_plant_4 }
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
+			give_technology = { tech = tech_mass_drivers_3 } #Ускорители материи
+			give_technology = { tech = tech_mass_drivers_4 }
+			give_technology = { tech = tech_mass_drivers_5 } 
+			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
+			give_technology = { tech = tech_kinetic_artillery_2 }
+			give_technology = { tech = tech_flak_batteries_2 } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
+			give_technology = { tech = tech_destroyers } #Эсминец
+			give_technology = { tech = tech_cruisers } #Крейсер
+			give_technology = { tech = tech_battleships } #Линкор
+			give_technology = { tech = tech_titans } #Титан
+			give_technology = { tech = tech_juggernaut } #Джагернаут
+			give_technology = { tech = tech_corvette_build_speed } #Скорость строительства корветов
+			give_technology = { tech = tech_ship_armor_2 } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 } #Броня корабля
+			give_technology = { tech = tech_ship_armor_5 }
+			give_technology = { tech = tech_crystal_armor_1 } #Кристальная броня
+			give_technology = { tech = tech_crystal_armor_2 }
+			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
+			give_technology = { tech = tech_thrusters_3 }
+			give_technology = { tech = tech_thrusters_4 }
+			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_5 } #Космическая база новый уровень
+			
+			give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_habitat_2 }
+			give_technology = { tech = tech_habitat_3 }
+			give_technology = { tech = tech_modular_engineering } # Modular Engineering
+			give_technology = { tech = tech_alloys_1 } #Бонус производства ТМС
+			give_technology = { tech = tech_alloys_2 }
+			give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_2 }
+			give_technology = { tech = tech_luxuries_1 } #Улучшеное здание на тмс
+			give_technology = { tech = tech_luxuries_2 }
+			give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
+			give_technology = { tech = tech_mineral_purification_2 }
+			give_technology = { tech = tech_mining_1 } #+Минералы
+			give_technology = { tech = tech_mining_2 }
+			give_technology = { tech = tech_mining_3 }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
+			give_technology = { tech = tech_exotic_gases } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery }
+			
+			#Мегаструктуры
+			give_technology = { tech = tech_mega_engineering }
+			give_technology = { tech = tech_gateway_activation }
+			give_technology = { tech = tech_science_nexus }
+			give_technology = { tech = tech_sentry_array }
+			give_technology = { tech = tech_strategic_coordination }
+			give_technology = { tech = tech_mega_art }
+			#Галактические чудеса
+			give_technology = { tech = tech_dyson_sphere }
+		}
+		every_system = {
+			limit = {
+				has_star_flag = Eldar_gos
+			}
+			create_starbase = {
+				owner = ROOT
+				size = starbase_starport
+			}
+			hidden_effect = {
+				spawn_megastructure = {
+					type = gateway_final
+					#name = <string>
+					owner = ROOT
+					#planet = <planet/star target>
+					#coords_from = <target> (use this or 'planet' to set the location)
+					#graphical_culture = ROOT
+					orbit_distance = 300
+					orbit_angle = 360
+				}
+			}
+			
+			every_system_planet = {
+			    if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Eldar_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_class_4_singularity
+					add_building = building_archaeo_refinery
+					add_building = building_production_center
+					add_building = building_ministry_production
+					add_building = building_foundry_3
+					add_building = building_mineral_purification_hub
+				    while = {
+				    	count = 50
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Aldari
 	id = WrWrld_game_start.4
 	hide_window = yes
 	is_triggered_only = yes
@@ -1025,7 +1255,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Orc
 	id = WrWrld_game_start.7
 	hide_window = yes
 	is_triggered_only = yes
@@ -1183,7 +1413,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Tokt
 	id = WrWrld_game_start.9
 	hide_window = yes
 	is_triggered_only = yes
@@ -1269,7 +1499,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Agdagat
 	id = WrWrld_game_start.10
 	hide_window = yes
 	is_triggered_only = yes
@@ -1355,7 +1585,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Sayteh
 	id = WrWrld_game_start.11
 	hide_window = yes
 	is_triggered_only = yes
@@ -1441,7 +1671,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Nigilah
 	id = WrWrld_game_start.12
 	hide_window = yes
 	is_triggered_only = yes
@@ -1527,7 +1757,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Kardenat
 	id = WrWrld_game_start.13
 	hide_window = yes
 	is_triggered_only = yes
@@ -1613,7 +1843,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Oryskar
 	id = WrWrld_game_start.14
 	hide_window = yes
 	is_triggered_only = yes
@@ -1699,7 +1929,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Mefrit
 	id = WrWrld_game_start.15
 	hide_window = yes
 	is_triggered_only = yes
@@ -1785,7 +2015,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Nephrekh
 	id = WrWrld_game_start.16
 	hide_window = yes
 	is_triggered_only = yes
@@ -1871,7 +2101,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Sarkoni
 	id = WrWrld_game_start.17
 	hide_window = yes
 	is_triggered_only = yes

@@ -213,8 +213,8 @@ Eldar_Empire = {
 	ethic = "ethic_spiritualist"
 	
 	origin = "origin_void_dwellers"
-	flags={ Eldar_start }
-	
+	flags={ Eldar_start Eldar_gos class_4_singularity_can_build }
+	#class_4_singularity_can_build для здания на 250 энергии
 	planet_name = "Зандрос"
 	planet_class = "pc_continental"
 	initializer = "void_dweller_system"
