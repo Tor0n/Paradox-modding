@@ -115,10 +115,24 @@ country_event = { #Imperium
 			limit = {
 				has_star_flag = Imperium_gos
 			}
-			create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+			if = {
+				limit = {
+					has_star_flag = Imperium_gos_station
+				}
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starport
+					module = shipyard
+					module = shipyard
+					building = crew_quarters
+				}
 			}
+			else = {
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+					}
+			}\
 			#limit = {
 			#	has_star_flag = Imperium_gos_station
 			#}
