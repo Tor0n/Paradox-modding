@@ -70,7 +70,7 @@ system = { id = "45" name = "Anphelion" position = { x = 297.4703 y = 191.8792 }
 system = { id = "46" name = "Khreak" position = { x = 346.2917 y = 95.37167 } initializer = Khreak_initializer }
 system = { id = "47" name = "Loriar" position = { x = 379.2178 y = 153.2762 }  }
 system = { id = "48" name = "Chiros" position = { x = 371.2701 y = 127.1624 } initializer = Chiros_initializer } 
-system = { id = "49" name = "Commorragh" position = { x = -2.2917 y = 476.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Commorragh_start } } }
+system = { id = "49" name = "Commorragh" position = { x = -467.2917 y = 467.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Commorragh_start } } }
 system = { id = "50" name = "Kimdaria" position = { x = 328.1256 y = 153.2762 }  }
 system = { id = "51" name = "Infernus" position = { x = 297.4703 y = 256.596 } initializer = Infernus_initializer }
 system = { id = "52" name = "Caspalen" position = { x = 287.2519 y = 290.6575 }  }
@@ -658,7 +658,7 @@ system = { id = "510" name = "Sveen" position = { x = 451.707 y = -343.3445 }  }
  add_hyperlane = { from = "98" to = "97" }
  add_hyperlane = { from = "97" to = "96" }
  add_hyperlane = { from = "96" to = "100" }
- add_hyperlane = { from = "98" to = "105" }
+ add_hyperlane = { from = "133" to = "105" }
  add_hyperlane = { from = "106" to = "105" }
  add_hyperlane = { from = "106" to = "107" }
  add_hyperlane = { from = "100" to = "101" }

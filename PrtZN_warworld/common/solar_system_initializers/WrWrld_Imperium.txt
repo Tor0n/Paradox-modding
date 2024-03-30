@@ -1,15 +1,16 @@
 Terra_initializer = {
 	name = "Сол"
 	class = "sc_g"
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system Imperium_gos }
 	usage = custom_empire
+	#flags = { Imperium_gos }
 	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
+		#every_neighbor_system = {
+		#	#set_star_flag = empire_cluster
+		#	#every_neighbor_system = {
+		#	#	set_star_flag = empire_cluster
+		#	#}
+		#}
 		generate_home_system_resources = yes
 	}
 	
@@ -27,7 +28,7 @@ Terra_initializer = {
 		class = "pc_g_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 30
+		size = 35
 		has_ring = no
 	}
 
@@ -36,7 +37,7 @@ Terra_initializer = {
 		class = "pc_molten"
 		orbit_distance = 40
 		orbit_angle = 15
-		size = 10
+		size = 11
 		has_ring = no
 		init_effect = {
 			set_planet_entity = {
@@ -53,7 +54,7 @@ Terra_initializer = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 17
+		size = 19
 		has_ring = no
 		init_effect = {
 			set_planet_entity = {
@@ -67,19 +68,17 @@ Terra_initializer = {
 
 	planet = {
 		name = "Terra"
-		class = "pc_continental"
+		class = "pc_city"
 		orbit_distance = 25
 		orbit_angle = 120
-		size = 18
+		size = 25 #18
 		starting_planet = yes
 		has_ring = no
-		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_earth }
 
 		init_effect = {
-			save_global_event_target_as = sol_system_earth
+			#save_global_event_target_as = sol_system_earth
 
 			prevent_anomaly = yes
 			#add_building = building_stronghold
@@ -88,12 +87,12 @@ Terra_initializer = {
 
 		moon = {
 			name = "NAME_Luna"
-			class = "pc_barren_cold"
+			class = "pc_arctic"
 			size = 5
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
-			entity = "cold_barren_planet_luna_entity"
+			flags = { Imperium_Moon_world }	
 		}
 	}
 
@@ -103,10 +102,9 @@ Terra_initializer = {
 		class = "pc_city"
 		orbit_distance = 25
 		orbit_angle = 60
-		size = 13
+		size = 16 #13
 		has_ring = no
-		entity = "barren_planet_mars_entity"
-		flags = { planet_mars }
+		flags = { Imperium_Forge_Ecumenopolis }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -119,7 +117,6 @@ Terra_initializer = {
 			orbit_distance = 12
 			orbit_angle = -85
 			has_ring = no
-			#entity = "cold_barren_planet_luna_entity"
 		}
 	}
 
@@ -206,7 +203,7 @@ Terra_initializer = {
 	planet = {
 		name = "NAME_Saturn"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 29
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
@@ -226,7 +223,7 @@ Terra_initializer = {
 	planet = {
 		name = "NAME_Uranus"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 29
 		orbit_angle = 125
 		size = 20
 		has_ring = no
@@ -243,7 +240,7 @@ Terra_initializer = {
 	planet = {
 		name = "NAME_Neptune"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 29
 		orbit_angle = -195
 		size = 20
 		has_ring = no
