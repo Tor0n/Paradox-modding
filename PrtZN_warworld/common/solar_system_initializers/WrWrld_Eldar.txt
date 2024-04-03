@@ -1,14 +1,15 @@
 Ursulia_initializer = {
 	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135
-	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 135
+	#}
 	
 	flags = { Eldar_gos }
 
 	max_instances = 1
 	init_effect = {
+		generate_home_system_resources = yes
 	}
 	
 	planet = {
@@ -47,11 +48,11 @@ Ursulia_initializer = {
 			prevent_anomaly = yes
 		} 
 
-		moon = {
-			class = "pc_habitat"
-			orbit_distance = 15
-			size = 15
-		}
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 15
+		#}
 	}
 
 	planet = {
@@ -59,7 +60,7 @@ Ursulia_initializer = {
 
 		orbit_distance = 28
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -81,7 +82,7 @@ Ursulia_initializer = {
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 		change_orbit = 12
 
@@ -90,15 +91,16 @@ Ursulia_initializer = {
 }
 Iathglas_initializer = {
 	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135
-	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 135
+	#}
 	
 	flags = { Eldar_gos }
 
 	max_instances = 1
 	init_effect = {
+		generate_home_system_resources = yes
 	}
 	
 	planet = {
@@ -137,11 +139,11 @@ Iathglas_initializer = {
 			prevent_anomaly = yes
 		} 
 
-		moon = {
-			class = "pc_habitat"
-			orbit_distance = 15
-			size = 15
-		}
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 15
+		#}
 	}
 
 	planet = {
@@ -149,7 +151,7 @@ Iathglas_initializer = {
 
 		orbit_distance = 28
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -171,7 +173,7 @@ Iathglas_initializer = {
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 		change_orbit = 12
 
@@ -185,96 +187,107 @@ Iathglas_initializer = {
 
 Upsilon_initializer = {
 	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = { min = 105 max 195 }
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
 	}
 	
 	flags = { Eldar_gos }
 
-	max_instances = 1
-	init_effect = {
-	}
+	#max_instances = 1
 	
 	planet = {
 		class = star
 		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-			spawn_megastructure = {
-				type = habitat_central_complex
-				owner = ROOT
-			}
-		}
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#	spawn_megastructure = {
+		#		type = habitat_central_complex
+		#		owner = ROOT
+		#	}
+		#}
 	}
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 14 max = 25 }
+		size = { min = 10 max = 17 }
 		has_ring = no
 
 		home_planet = no
 		
-		init_effect = {
-			spawn_megastructure = {
-				type = major_orbital
-				owner = ROOT
-				create_colony = {
-					owner = ROOT
-				}
-			}
-		}
+		#init_effect = {
+		#	spawn_megastructure = {
+		#		type = major_orbital
+		#		owner = ROOT
+		#		create_colony = {
+		#			owner = ROOT
+		#		}
+		#	}
+		#}
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+		
+		#init_effect = {
+		#	spawn_megastructure = {
+		#		type = major_orbital
+		#		owner = ROOT
+		#	}
+		#}
 	}
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 28
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 15 max = 24 }
 		has_ring = no
 
 		home_planet = no
 		
-		init_effect = {
-			spawn_megastructure = {
-				type = major_orbital
-				owner = ROOT
-			}
-		}
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 30
+		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
+		size = { min = 12 max = 18 }
 		has_ring = no
 
 		home_planet = no
 		
-		moon = {
-			class = "pc_habitat"
-			orbit_distance = 15
-			size = 6
-		}
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
 	}
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_gas_giant"
 
-		orbit_distance = 30
+		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-		change_orbit = 12
+		size = { min = 25 max = 45 }
+		has_ring = yes
 
 		home_planet = no
-		
-		moon = {
-			class = "pc_habitat"
-			orbit_distance = 15
-			size = 6
-		}
 	}
 }

@@ -1180,8 +1180,18 @@ country_event = { #Eldar
 					#planet = <planet/star target>
 					#coords_from = <target> (use this or 'planet' to set the location)
 					#graphical_culture = ROOT
-					orbit_distance = 300
-					orbit_angle = 360
+					orbit_distance = 265
+					orbit_angle = { min = 10 max = 360 }
+				}
+				spawn_megastructure = {
+					type = habitat_central_complex
+					#name = <string>
+					owner = ROOT
+					#planet = <planet/star target>
+					#coords_from = <target> (use this or 'planet' to set the location)
+					#graphical_culture = ROOT
+					#orbit_distance = 150
+					orbit_angle = { min = 10 max = 360 }
 				}
 			}
 			
