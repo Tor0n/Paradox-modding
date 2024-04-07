@@ -141,7 +141,7 @@ country_event = { #Imperium
 					#building = offworld_trading_company
 				}
 			}
-			every_system_planet = { 
+			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
 				    limit = { 
 			            is_colonizable = no		
@@ -1172,32 +1172,33 @@ country_event = { #Eldar
 				owner = ROOT
 				size = starbase_starport
 			}
-			hidden_effect = {
-				spawn_megastructure = {
-					type = gateway_final
+			#save_event_target_as = Eldar_system
+			#hidden_effect = {
+				#spawn_megastructure = {
+					#type = habitat_central_complex
 					#name = <string>
-					owner = ROOT
-					#planet = <planet/star target>
-					#coords_from = <target> (use this or 'planet' to set the location)
-					#graphical_culture = ROOT
-					orbit_distance = 265
-					orbit_angle = { min = 10 max = 360 }
-				}
-				spawn_megastructure = {
-					type = habitat_central_complex
-					#name = <string>
-					owner = ROOT
+					#owner = ROOT
 					#planet = <planet/star target>
 					#coords_from = <target> (use this or 'planet' to set the location)
 					#graphical_culture = ROOT
 					#orbit_distance = 150
-					orbit_angle = { min = 10 max = 360 }
-				}
+					#orbit_angle = { min = 10 max = 360 }
+				#}
+			#}
+			random_system_planet = {
+				limit = { is_star = yes }
+				save_event_target_as = habitat_planet
 			}
-			
+			spawn_megastructure = {
+				type = "habitat_central_complex"
+				planet = event_target:habitat_planet
+				coords_from = event_target:habitat_planet
+				owner = ROOT
+				graphical_culture = ROOT
+			}
 			every_system_planet = {
 			    if = {
-				    limit = { 
+				    limit = {
 			            is_colonizable = yes
                         has_planet_flag = Eldar_world
 			        }
@@ -1205,10 +1206,16 @@ country_event = { #Eldar
 				    	owner = ROOT
 		    	    }
 					while = {
-						count = 6
+						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
+					}
+					while = {
+				    	count = 50
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 				    add_building = building_system_capital
 					add_building = building_planetary_shield_generator
@@ -1219,12 +1226,7 @@ country_event = { #Eldar
 					add_building = building_ministry_production
 					add_building = building_foundry_3
 					add_building = building_mineral_purification_hub
-				    while = {
-				    	count = 50
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
+				    
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = {
@@ -1232,23 +1234,56 @@ country_event = { #Eldar
 						}
 					}
 					while = {
-						count = 3
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
 					}
 					while = {
-						count = 4
+						count = 6
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_mining
 						}
 					}
 					while = {
-						count = 3
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
 					}
+				}
+				else = {
+					limit = { 
+			            is_colonizable = yes
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+				    	count = 25
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hab_housing
+						}
+					}
+					add_building = building_hab_system_capital
+				}
+			}
+			hidden_effect = {
+				spawn_megastructure = {
+					type = gateway_final
+					#name = <string>
+					#owner = ROOT
+					#planet = <planet/star target>
+					#coords_from = <target> (use this or 'planet' to set the location)
+					graphical_culture = ROOT
+					orbit_distance = 265
+					#orbit_angle = { min = 10 max = 360 }
 				}
 			}
 		}
