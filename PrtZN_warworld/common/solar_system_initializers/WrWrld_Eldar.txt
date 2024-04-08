@@ -185,7 +185,90 @@ Iathglas_initializer = {
 #* Миры хабитаты *#
 #*---------------*#
 
-Upsilon_initializer = {
+Zandros_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { empire_home_system Eldar_gos }
+	usage = custom_empire
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Kaelor_initializer = {
 	class = "rl_starting_stars"
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -203,13 +286,6 @@ Upsilon_initializer = {
 	planet = {
 		class = star
 		orbit_distance = 0
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#	spawn_megastructure = {
-		#		type = habitat_central_complex
-		#		owner = ROOT
-		#	}
-		#}
 	}
     planet = {
 		class = "pc_molten"
@@ -220,16 +296,6 @@ Upsilon_initializer = {
 		has_ring = no
 
 		home_planet = no
-		
-		#init_effect = {
-		#	spawn_megastructure = {
-		#		type = major_orbital
-		#		owner = ROOT
-		#		create_colony = {
-		#			owner = ROOT
-		#		}
-		#	}
-		#}
 	}
 	planet = {
 		class = "pc_toxic"
@@ -240,13 +306,498 @@ Upsilon_initializer = {
 		has_ring = no
 
 		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
 		
-		#init_effect = {
-		#	spawn_megastructure = {
-		#		type = major_orbital
-		#		owner = ROOT
-		#	}
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
 		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Ilkaithe_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Alaitoc_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Iyanden_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Mymeara_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Lugganath_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "habitat_central_complex"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_habitat"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+
+		home_planet = no
+	}
+}
+Illustries_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		home_planet = no
 	}
 	planet = {
 		class = "pc_barren"
