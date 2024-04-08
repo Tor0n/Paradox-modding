@@ -1,6 +1,5 @@
 namespace = WrWrld_game_start
 
-#переменные, попытка внедрения
 @create_pop_watch_fort_station = 9
 
 country_event = { #Imperium
@@ -112,6 +111,9 @@ country_event = { #Imperium
 			give_technology = { tech = tech_archaeo_refinery }
 		}
 		every_system = {
+			limit = {
+				has_star_flag = Imperium_gos
+			}
 			if = {
 				limit = {
 				    has_star_flag = Imperium_gos
@@ -1172,29 +1174,21 @@ country_event = { #Eldar
 				owner = ROOT
 				size = starbase_starport
 			}
-			#save_event_target_as = Eldar_system
-			#hidden_effect = {
-				#spawn_megastructure = {
-					#type = habitat_central_complex
-					#name = <string>
-					#owner = ROOT
-					#planet = <planet/star target>
-					#coords_from = <target> (use this or 'planet' to set the location)
-					#graphical_culture = ROOT
-					#orbit_distance = 150
-					#orbit_angle = { min = 10 max = 360 }
-				#}
-			#}
-			random_system_planet = {
-				limit = { is_star = yes }
-				save_event_target_as = habitat_planet
-			}
-			spawn_megastructure = {
-				type = "habitat_central_complex"
-				planet = event_target:habitat_planet
-				coords_from = event_target:habitat_planet
-				owner = ROOT
-				graphical_culture = ROOT
+			if = {
+				limit = {
+					has_star_flag = Eldar_Habitat
+				}
+				random_system_planet = {
+					limit = { is_star = yes }
+					save_event_target_as = habitat_planet
+				}
+				spawn_megastructure = {
+					type = "habitat_central_complex"
+					planet = event_target:habitat_planet
+					coords_from = event_target:habitat_planet
+					owner = ROOT
+					graphical_culture = ROOT
+				}
 			}
 			every_system_planet = {
 			    if = {
@@ -1277,13 +1271,8 @@ country_event = { #Eldar
 			hidden_effect = {
 				spawn_megastructure = {
 					type = gateway_final
-					#name = <string>
-					#owner = ROOT
-					#planet = <planet/star target>
-					#coords_from = <target> (use this or 'planet' to set the location)
 					graphical_culture = ROOT
 					orbit_distance = 265
-					#orbit_angle = { min = 10 max = 360 }
 				}
 			}
 		}

@@ -79,7 +79,7 @@ system = { id = "54" name = "Barbarus" position = { x = 263.4088 y = 273.6268 } 
 system = { id = "55" name = "Lavantia" position = { x = 244.1073 y = 291.7929 } initializer = Lavantia_initializer } 
 system = { id = "56" name = "Targus" position = { x = 229.3473 y = 312.2297 } initializer = Targus_initializer } 
 system = { id = "57" name = "Illustries" position = { x = 265.6795 y = 320.1774 } initializer = Illustries_initializer } #МИР ЭЛЬДАР
-system = { id = "58" name = "Trikster" position = { x = 238.4304 y = 340.6143 }  }
+system = { id = "58" name = "Trikster" position = { x = 238.4304 y = 340.6143 } initializer = Trikster_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "59" name = "Stormvald" position = { x = 169.172 y = 99.91324 } initializer = Stormvald_initializer }
 system = { id = "60" name = "Inwit" position = { x = 156.6828 y = 118.0794 }  }
 system = { id = "61" name = "Omega Mao" position = { x = 173.7136 y = 136.2455 } initializer = Omega_Mao_initializer } #ПАДШИЙ_МИР_ХАОСА
@@ -170,7 +170,7 @@ system = { id = "145" name = "Footfall" position = { x = 392.8424 y = -311.0953 
 system = { id = "146" name = "Tanika" position = { x = 383.7593 y = -237.2955 } initializer = Tanika_initializer }
 system = { id = "147" name = "Kinbriar" position = { x = 398.5193 y = -211.1817 } initializer = Kinbriar_initializer } 
 system = { id = "148" name = "Kaelor" position = { x = 411.0085 y = -239.5662 } initializer = Kaelor_initializer } #МИР ЭЛЬДАР
-system = { id = "149" name = "Haltmoat" position = { x = 412.1439 y = -265.6801 }  }
+system = { id = "149" name = "Haltmoat" position = { x = 412.1439 y = -265.6801 } initializer = Haltmoat_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "150" name = "Daxos Gemini" position = { x = 211.1812 y = -316.7722 } initializer = Daxos_Gemini_initializer } #ПАДШИЙ_МИР_ХАОСА
 system = { id = "151" name = "Atenii" position = { x = 193.015 y = -340.6153 } initializer = Atenii_initializer }
 system = { id = "152" name = "Cilix" position = { x = 217.9935 y = -384.8952 } initializer = Cilix_initializer }
@@ -247,9 +247,9 @@ system = { id = "222" name = "Jornv" position = { x = -74.93523 y = 255.4607 }  
 system = { id = "223" name = "Methusela" position = { x = -70.39371 y = 205.5038 } initializer = Methusela_initializer } 
 system = { id = "224" name = "Endragiga" position = { x = -70.39371 y = 227.0761 } initializer = Endragiga_initializer }
 system = { id = "225" name = "San Leor" position = { x = -86.28905 y = 244.1069 } initializer = San_Leor_initializer } 
-system = { id = "226" name = "Indiga" position = { x = -124.8921 y = 280.4391 }  }
+system = { id = "226" name = "Indiga" position = { x = -124.8921 y = 280.4391 } initializer = Indiga_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "227" name = "Alaitoc" position = { x = -146.4643 y = 279.3037 } initializer = Alaitoc_initializer } #МИР ЭЛЬДАР
-system = { id = "228" name = "Agrax" position = { x = -103.3198 y = 269.0853 }  }
+system = { id = "228" name = "Agrax" position = { x = -103.3198 y = 269.0853 } initializer = Agrax_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "229" name = "Solemnace" position = { x = -172.5781 y = 269.0853 } initializer = Solemnace_initializer } 
 system = { id = "230" name = "Gheden" position = { x = -199.8273 y = 267.9499 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Nigilah_start } } } 
 system = { id = "231" name = "Carnac" position = { x = -185.0674 y = 240.7007 } initializer = Carnac_initializer } 
@@ -393,7 +393,7 @@ system = { id = "368" name = "Bellus" position = { x = -322.4487 y = -4.541936 }
 system = { id = "369" name = "Iyanden" position = { x = -256.5964 y = 267.9499 } initializer = Iyanden_initializer } #МИР ЭЛЬДАР
 system = { id = "370" name = "Dlackreach" position = { x = -291.7933 y = 278.1684 } initializer = Dlackreach_initializer }
 system = { id = "371" name = "Ghosar" position = { x = -321.3132 y = 305.4175 } initializer = Ghosar_initializer } 
-system = { id = "372" name = "Talasa" position = { x = -279.3041 y = 244.1069 }  }
+system = { id = "372" name = "Talasa" position = { x = -279.3041 y = 244.1069 } initializer = Talasa_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "373" name = "Masali" position = { x = -296.3348 y = 225.9408 } initializer = Masali_initializer } 
 system = { id = "374" name = "Quintari" position = { x = -321.3133 y = 237.2946 } initializer = Quintari_initializer } 
 system = { id = "375" name = "Tarentus" position = { x = -313.3656 y = 206.6392 } initializer = Tarentus_initializer } 
@@ -491,7 +491,7 @@ system = { id = "466" name = "Devlan" position = { x = -412.1439 y = 183.9316 } 
 system = { id = "467" name = "Cancri" position = { x = -413.2793 y = 219.1285 } initializer = Cancri_initializer }
 system = { id = "468" name = "Mirienh" position = { x = -449.6115 y = 207.7746 } initializer = Mirienh_initializer }
 system = { id = "469" name = "Iathglas" position = { x = -347.4271 y = 252.0545 } initializer = Iathglas_initializer } 
-system = { id = "470" name = "Circe" position = { x = -337.2086 y = 282.7099 }  }
+system = { id = "470" name = "Circe" position = { x = -337.2086 y = 282.7099 } initializer = Circe_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "471" name = "Ruin" position = { x = -364.4578 y = 283.8452 } initializer = Ruin_initializer } #МИР_ДЕМОНОВ_ХАОСА
 system = { id = "472" name = "Oliel" position = { x = -381.4885 y = 316.7713 } initializer = Oliel_initializer }
 system = { id = "473" name = "Valos" position = { x = -420.0915 y = 311.0944 } initializer = Valos_initializer }
