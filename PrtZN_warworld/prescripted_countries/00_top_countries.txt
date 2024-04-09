@@ -574,44 +574,25 @@ Ownerships_Corinis = {
 		adjective = "Кориниск"
 		name_list = "FUN2"
 		gender = male
-		trait = "trait_necrophage"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_talented"
-		trait = "trait_quick_learners"
-		trait = "trait_slow_breeders"
-		trait = "trait_repugnant"
-		trait = "trait_wasteful"
-		trait = "trait_strong"
-	}
-	secondary_species = {
-		class = "NECROID"
-		portrait = "nec14"
-		name = "Имгарлит"
-		plural = "Имгарлиты"
-		adjective = "Имгарлитск"
-		name_list = "ART2"
-		gender = indeterminable
-		trait = "trait_extremely_adaptive"
-		trait = "trait_slow_learners"
-		trait = "trait_nomadic"
-		trait = "trait_strong"
-		trait = "trait_repugnant"
-		trait = "trait_fleeting"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_resilient"
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
 	}
 	
 	room = "organic_room"
 	
-	authority = "auth_corporate"
-	civics = { "civic_criminal_heritage" "civic_corporate_toxic_baths" "civic_media_conglomerate" }
-	government = "gov_criminal_syndicate"
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_upkeep_twister" }
+	government = "gov_devouring_swarm"
 	
-	ethic = "ethic_authoritarian"
-	ethic = "ethic_fanatic_xenophobe"
-	ethic = "ethic_militarist"
+	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_necrophage"
+	origin = "origin_progenitor_hive"
 	flags =  { Corinis_start }
 	
 	planet_name= "Исис"
@@ -649,6 +630,7 @@ Ownerships_Corinis = {
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
+	advisor_voice_type="l_hivemind"
 	spawn_as_fallen = no
 }
 Tsardom_Thokt = {
@@ -1394,7 +1376,7 @@ Texian_Empire = {
 	advisor_voice_type = "l_slick_corp"
 	spawn_as_fallen = no
 }
-Hive_Q'Orl = {
+Hive_Q_Orl = {
 	name = "Рой Кв'Орлов"
 	adjective = "Рой Кв'Орлов."
 	spawn_enabled = always
@@ -1469,7 +1451,7 @@ Hive_Q'Orl = {
 	}
 	spawn_as_fallen = no	
 }
-Slogtov_Territory = {
+Slogt_Territory = {
 	name = "Территория Слогтов"
 	adjective =  "Территория Слогтов."
 	spawn_enabled = always
@@ -1545,7 +1527,7 @@ Slogtov_Territory = {
 	advisor_voice_type = "l_evil_corp"
 	spawn_as_fallen = no
 }
-Rak'Gol_Territory = {
+Rak_Gol_Territory = {
 	name = "Территория Рак'Голов"
 	adjective = "Территория Рак'Голов."
 	spawn_enabled = always
@@ -1618,7 +1600,7 @@ Rak'Gol_Territory = {
 	}
 	spawn_as_fallen = no
 }
-"State Barghesi"=
+"State_Barghesi"=
 {
 	#key="State Barghesi"
 	ship_prefix=
@@ -1747,4 +1729,261 @@ Rak'Gol_Territory = {
 		"civic_anglers"
 	}
 	origin="origin_ocean_paradise"
+}
+"Конфедерация Стриксис"=
+{
+	key="Конфедерация Стриксис"
+	ship_prefix=
+	{
+		key="Стриксис."
+		literal=yes
+	}
+	species=
+	{
+		class="MAM"
+		portrait="mam5"
+		species_name=
+		{
+			key="Стриксис"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Стриксисы"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Стриксиск"
+			literal=yes
+		}
+		name_list="MAM2"
+		gender=indeterminable
+		trait="trait_survivor"
+		trait="trait_thrifty"
+		trait="trait_slow_breeders"
+		trait="trait_nomadic"
+		trait="trait_wasteful"
+		trait="trait_charismatic"
+	}
+	name=
+	{
+		key="Конфедерация Стриксис"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Конфедерация Стриксис."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_corporate"
+	government="gov_criminal_syndicate"
+	planet_name=
+	{
+		key="Стрикс"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Абусс"
+		literal=yes
+	}
+	
+	flags = { Strixis_start }
+	initializer=""
+	
+	graphical_culture="toxoid_01"
+	city_graphical_culture="arthropoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="toxoid"
+			file="toxoid_09.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"toxic_green"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Бирм Ден Сакр"
+				literal=yes
+			}
+		}
+		portrait="mam5"
+		texture=0
+		attachment=0
+		clothes=1
+		trait="leader_trait_spark_of_genius"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_peaceful_traders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_xenophile"
+	ethic="ethic_pacifist"
+	ethic="ethic_spiritualist"
+	civics=
+	{
+		"civic_criminal_heritage"
+		"civic_corporate_scavengers"
+		"civic_corporate_dimensional_worship"
+	}
+	origin="origin_post_apocalyptic"
+}
+"Государство Сардонитов"=
+{
+	key="Государство Сардонитов"
+	ship_prefix=
+	{
+		key="Сардонит."
+		literal=yes
+	}
+	species=
+	{
+		class="REP"
+		portrait="rep4"
+		species_name=
+		{
+			key="Сардонит"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Сардониты"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Сардонитск"
+			literal=yes
+		}
+		name_list="REP3"
+		gender=not_set
+		trait="trait_communal"
+		trait="trait_conservational"
+		trait="trait_natural_engineers"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Государство Сардонитов"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Государство Сардонитов."
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_oligarchic"
+	government="gov_science_directorate"
+	planet_name=
+	{
+		key="Сардия"
+		literal=yes
+	}
+	planet_class="pc_tropical"
+	system_name=
+	{
+		key="Амфрелия"
+		literal=yes
+	}
+	
+	flags = { Sardonit_start }
+	initializer=""
+	
+	graphical_culture="plantoid_01"
+	city_graphical_culture="plantoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="plantoid"
+			file="plantoid_04.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors=
+		{
+			"shadow_teal"
+			"shadow_green"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Фарглекс"
+				literal=yes
+			}
+		}
+		portrait="rep4"
+		texture=2
+		attachment=0
+		clothes=2
+		trait="leader_trait_spark_of_genius"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_decadent_hierarchy_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_fanatic_materialist"
+	civics=
+	{
+		"civic_technocracy"
+		"civic_meritocracy"
+		"civic_memorialist"
+	}
+	origin="origin_default"
 }

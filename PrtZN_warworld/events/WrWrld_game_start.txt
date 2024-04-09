@@ -1223,42 +1223,42 @@ country_event = { #Eldar
 					orbit_distance = 265
 				}
 			}
-			else = {
-				limit = {
-					has_star_flag = Eldar_Habitat
-			    }
-				create_starbase = {
-					owner = ROOT
-					size = starbase_starfortress
-					module = shipyard
-					module = shipyard
-					module = gun_battery
-					module = gun_battery
-					#module = trading_hub
-					#module = detection_array #or: anchorage
-					
-					building = crew_quarters
-					#building = fleet_academy
-					#building = listening_post
-					#building = offworld_trading_company
-				}
-				random_system_planet = {
-					limit = { is_star = yes }
-					save_event_target_as = habitat_planet
-				}
-				spawn_megastructure = {
-					type = "habitat_central_complex"
-					planet = event_target:habitat_planet
-					coords_from = event_target:habitat_planet
-					owner = ROOT
-					graphical_culture = ROOT
-				}
-				spawn_megastructure = {
-					type = gateway_final
-					graphical_culture = ROOT
-					orbit_distance = 265
-				}
-			}
+			#else = {
+			#	limit = {
+			#		has_star_flag = Eldar_Habitat
+			#    }
+			#	create_starbase = {
+			#		owner = ROOT
+			#		size = starbase_starfortress
+			#		module = shipyard
+			#		module = shipyard
+			#		module = gun_battery
+			#		module = gun_battery
+			#		#module = trading_hub
+			#		#module = detection_array #or: anchorage
+			#		
+			#		building = crew_quarters
+			#		#building = fleet_academy
+			#		#building = listening_post
+			#		#building = offworld_trading_company
+			#	}
+			#	random_system_planet = {
+			#		limit = { is_star = yes }
+			#		save_event_target_as = habitat_planet
+			#	}
+			#	spawn_megastructure = {
+			#		type = "habitat_central_complex"
+			#		planet = event_target:habitat_planet
+			#		coords_from = event_target:habitat_planet
+			#		owner = ROOT
+			#		graphical_culture = ROOT
+			#	}
+			#	spawn_megastructure = {
+			#		type = gateway_final
+			#		graphical_culture = ROOT
+			#		orbit_distance = 265
+			#	}
+			#}
 			every_system_planet = {
 			    if = {
 				    limit = {
