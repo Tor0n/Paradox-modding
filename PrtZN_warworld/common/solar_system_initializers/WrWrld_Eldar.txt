@@ -184,7 +184,7 @@ Zandros_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_gos Eldar_Habitat } #empire_home_system
+	flags = { Eldar_gos Eldar_Habitat Eldar_Capital }
 	usage = custom_empire
 
 	#max_instances = 1
@@ -222,12 +222,6 @@ Zandros_initializer = {
 		has_ring = no
 
 		home_planet = no
-		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -238,12 +232,6 @@ Zandros_initializer = {
 		has_ring = no
 
 		home_planet = no
-		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
