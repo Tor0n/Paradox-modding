@@ -528,7 +528,7 @@ system = { id = "503" name = "Appollonia" position = { x = 96.27989 y = -462.852
 system = { id = "504" name = "Voss Prime" position = { x = 216.8581 y = -121.4864 } initializer = VossPrime_initializer }
 system = { id = "505" name = "Shedim" position = { x = 162.1197 y = 54.7481 } initializer = Shedim_initializer } 
 system = { id = "506" name = "Grendel" position = { x = -385.1655 y = 247.2854 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Barghesi_start } } }
-system = { id = "507" name = "Nortaie" position = { x = -397.1655 y = 279.2854 }  }
+system = { id = "507" name = "Nortaie" position = { x = -397.1655 y = 279.2854 } initializer = Nortaie_initializer }
 system = { id = "508" name = "Illisk" position = { x = 421.707 y = -341.3445 }  }
 system = { id = "509" name = "Kaledon" position = { x = 434.407 y = -357.0045 } initializer = Kaledon_initializer }
 system = { id = "510" name = "Sveen" position = { x = 451.707 y = -343.3445 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Slogth_start } } }
