@@ -217,7 +217,8 @@ Eldar_Empire = {
 	#class_4_singularity_can_build для здания на 250 энергии
 	planet_name = "Зандрос"
 	planet_class = "pc_continental"
-	initializer = "void_dweller_system"
+	initializer = "Zandros_initializer"
+	#initializer = "void_dweller_system"
 	system_name = "Майден"
 	
 	graphical_culture = "humanoid_01"

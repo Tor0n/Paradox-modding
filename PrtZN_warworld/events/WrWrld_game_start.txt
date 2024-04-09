@@ -112,7 +112,10 @@ country_event = { #Imperium
 		}
 		every_system = {
 			limit = {
-				has_star_flag = Imperium_gos
+				or = {
+					has_star_flag = Imperium_gos
+					has_star_flag = Imperium_gos_station
+				}
 			}
 			if = {
 				limit = {
@@ -1167,16 +1170,77 @@ country_event = { #Eldar
 			give_technology = { tech = tech_dyson_sphere }
 		}
 		every_system = {
+			#limit = {
+			#	has_star_flag = Eldar_gos
+			#}
+			#create_starbase = {
+			#	owner = ROOT
+			#	size = starbase_starport
+			#}
+			#if = {
+			#	limit = {
+			#		has_star_flag = Eldar_Habitat
+			#	}
+			#}
 			limit = {
-				has_star_flag = Eldar_gos
-			}
-			create_starbase = {
-				owner = ROOT
-				size = starbase_starport
+				or = {
+					has_star_flag = Eldar_gos
+					has_star_flag = Eldar_empty
+					has_star_flag = Eldar_Habitat
+				}
 			}
 			if = {
 				limit = {
+				    has_star_flag = Eldar_empty 
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Eldar_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
+			else = {
+				limit = {
 					has_star_flag = Eldar_Habitat
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 				random_system_planet = {
 					limit = { is_star = yes }
@@ -1188,6 +1252,11 @@ country_event = { #Eldar
 					coords_from = event_target:habitat_planet
 					owner = ROOT
 					graphical_culture = ROOT
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
 				}
 			}
 			every_system_planet = {
@@ -1268,13 +1337,13 @@ country_event = { #Eldar
 					add_building = building_hab_system_capital
 				}
 			}
-			hidden_effect = {
-				spawn_megastructure = {
-					type = gateway_final
-					graphical_culture = ROOT
-					orbit_distance = 265
-				}
-			}
+			#hidden_effect = {
+			#	spawn_megastructure = {
+			#		type = gateway_final
+			#		graphical_culture = ROOT
+			#		orbit_distance = 265
+			#	}
+			#}
 		}
 	}
 }
