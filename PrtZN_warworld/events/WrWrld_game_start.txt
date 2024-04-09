@@ -1170,95 +1170,54 @@ country_event = { #Eldar
 			give_technology = { tech = tech_dyson_sphere }
 		}
 		every_system = {
-			#limit = {
-			#	has_star_flag = Eldar_gos
-			#}
-			#create_starbase = {
-			#	owner = ROOT
-			#	size = starbase_starport
-			#}
-			#if = {
-			#	limit = {
-			#		has_star_flag = Eldar_Habitat
-			#	}
-			#}
-			limit = {
-				or = {
-					has_star_flag = Eldar_gos
-					has_star_flag = Eldar_empty
-					has_star_flag = Eldar_Habitat
-				}
-			}
+			limit = { has_star_flag = Eldar_gos }
+			#*-/ звездные базы \-*#
 			if = {
 				limit = {
-				    has_star_flag = Eldar_empty 
-			    }
-				create_starbase = {
-					owner = ROOT
-					size = starbase_outpost
+					OR = {
+						has_star_flag = Eldar_Habitat
+						has_star_flag = Eldar_gaia
+					}
 				}
-			}
-			else = {
-				limit = {
-					has_star_flag = Eldar_gos
-			    }
 				create_starbase = {
 					owner = ROOT
 					size = starbase_starfortress
 					module = shipyard
 					module = shipyard
-					module = gun_battery
-					module = gun_battery
+					#module = gun_battery
+					#module = gun_battery
 					#module = trading_hub
 					#module = detection_array #or: anchorage
 					
-					building = crew_quarters
+					#building = crew_quarters
 					#building = fleet_academy
 					#building = listening_post
 					#building = offworld_trading_company
 				}
-				spawn_megastructure = {
-					type = gateway_final
-					graphical_culture = ROOT
-					orbit_distance = 265
+			}
+			else = {
+				#limit = { has_star_flag = Eldar_empty }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
 				}
 			}
-			#else = {
-			#	limit = {
-			#		has_star_flag = Eldar_Habitat
-			#    }
-			#	create_starbase = {
-			#		owner = ROOT
-			#		size = starbase_starfortress
-			#		module = shipyard
-			#		module = shipyard
-			#		module = gun_battery
-			#		module = gun_battery
-			#		#module = trading_hub
-			#		#module = detection_array #or: anchorage
-			#		
-			#		building = crew_quarters
-			#		#building = fleet_academy
-			#		#building = listening_post
-			#		#building = offworld_trading_company
-			#	}
-			#	random_system_planet = {
-			#		limit = { is_star = yes }
-			#		save_event_target_as = habitat_planet
-			#	}
-			#	spawn_megastructure = {
-			#		type = "habitat_central_complex"
-			#		planet = event_target:habitat_planet
-			#		coords_from = event_target:habitat_planet
-			#		owner = ROOT
-			#		graphical_culture = ROOT
-			#	}
-			#	spawn_megastructure = {
-			#		type = gateway_final
-			#		graphical_culture = ROOT
-			#		orbit_distance = 265
-			#	}
-			#}
+			#*-/ хабитаты \-*#
+			if = {
+				limit = { has_star_flag = Eldar_Habitat }
+				random_system_planet = {
+					limit = { is_star = yes }
+					save_event_target_as = habitat_planet
+				}
+				spawn_megastructure = {
+					type = "habitat_central_complex"
+					planet = event_target:habitat_planet
+					coords_from = event_target:habitat_planet
+					owner = ROOT
+					graphical_culture = ROOT
+				}
+			}
+			#*-/ колонизация \-*#
 			every_system_planet = {
 			    if = {
 				    limit = {
@@ -1337,13 +1296,20 @@ country_event = { #Eldar
 					add_building = building_hab_system_capital
 				}
 			}
-			#hidden_effect = {
-			#	spawn_megastructure = {
-			#		type = gateway_final
-			#		graphical_culture = ROOT
-			#		orbit_distance = 265
-			#	}
-			#}
+			#*-/ врата \-*#
+			if = {
+				limit = {
+					OR = {
+						has_star_flag = Eldar_Habitat
+						has_star_flag = Eldar_gaia
+					}
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
 		}
 	}
 }

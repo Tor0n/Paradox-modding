@@ -5,7 +5,7 @@ Ursulia_initializer = {
 	#	radius = 135
 	#}
 	
-	flags = { Eldar_gos }
+	flags = { Eldar_gos Eldar_gaia }
 
 	max_instances = 1
 	init_effect = {
@@ -46,13 +46,7 @@ Ursulia_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
-
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 15
-		#}
+		}
 	}
 
 	planet = {
@@ -96,7 +90,7 @@ Iathglas_initializer = {
 	#	radius = 135
 	#}
 	
-	flags = { Eldar_gos }
+	flags = { Eldar_gos Eldar_gaia }
 
 	max_instances = 1
 	init_effect = {
@@ -137,13 +131,7 @@ Iathglas_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
-
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 15
-		#}
+		}
 	}
 
 	planet = {
@@ -196,7 +184,7 @@ Zandros_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { empire_home_system Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat } #empire_home_system
 	usage = custom_empire
 
 	#max_instances = 1
@@ -279,7 +267,7 @@ Kaelor_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat }
 
 	#max_instances = 1
 	
@@ -361,7 +349,7 @@ Ilkaithe_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat }
 
 	#max_instances = 1
 	
@@ -443,7 +431,7 @@ Alaitoc_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat }
 
 	#max_instances = 1
 	
@@ -525,7 +513,7 @@ Iyanden_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat }
 
 	#max_instances = 1
 	
@@ -607,7 +595,7 @@ Mymeara_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat }
 
 	#max_instances = 1
 	
@@ -689,7 +677,7 @@ Lugganath_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat }
+	flags = { Eldar_gos Eldar_Habitat }
 
 	#max_instances = 1
 	
@@ -771,7 +759,7 @@ Illustries_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_Habitat}
+	flags = { Eldar_gos Eldar_Habitat}
 
 	#max_instances = 1
 	
