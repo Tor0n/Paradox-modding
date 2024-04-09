@@ -83,3 +83,136 @@ Kaledon_initializer = {
 	}
 	
 }
+Nortaie_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	#flags = { 1 }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 17 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+        home_planet = no
+		
+		#moon = {
+		#	class = "pc_toxic"
+		#	orbit_distance = 15
+		#	size = 10
+		#}
+		#moon = {
+		#	class = "pc_barren_cold"
+		#	orbit_distance = 25
+		#	size = 6
+		#}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = yes
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 20 }
+		has_ring = yes
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 20 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 17 }
+		has_ring = no
+
+		home_planet = no
+		
+		#moon = {
+		#	class = "pc_asteroid"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 40 }
+		has_ring = yes
+		
+		#moon = {
+		#	class = "pc_crystal_asteroid"
+		#	orbit_distance = 15
+		#	size = 6
+		#}
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 9 max = 14 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+}
