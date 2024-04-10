@@ -247,7 +247,7 @@ ChancherVale_initializer = {
 	}
 
 	planet = {
-		class = "pc_alpine"
+		class = "pc_ocean"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -457,7 +457,7 @@ Methalor_initializer = {
 	}
 
 	planet = {
-		class = "pc_nuked"
+		class = "pc_continental" #pc_nuked
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -657,7 +657,7 @@ Enothis_initializer = {
 	}
 
 	planet = {
-		class = "pc_alpine"
+		class = "pc_continental"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -757,7 +757,7 @@ Lavantia_initializer = {
 	}
 
 	planet = {
-		class = "pc_tundra"
+		class = "pc_continental"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -957,7 +957,7 @@ Boucherin_initializer = {
 	}
 
 	planet = {
-		class = "pc_savannah"
+		class = "pc_continental"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1057,7 +1057,7 @@ Methusela_initializer = {
 	}
 
 	planet = {
-		class = "pc_arctic"
+		class = "pc_ocean"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1158,6 +1158,206 @@ NeoBaku_initializer = {
 
 	planet = {
 		class = "pc_desert"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Hive_civ_world }	
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_dust_caverns 
+			add_deposit = d_bubbling_swamp
+			add_deposit = d_crystalline_caverns
+		} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Targus_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	flags = { Imperium_gos }
+	
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 60
+	#}
+	
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Hive_civ_world }	
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_deposit = d_dust_caverns 
+			add_deposit = d_bubbling_swamp
+			add_deposit = d_crystalline_caverns
+		} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Lastrati_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	flags = { Imperium_gos }
+	
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 60
+	#}
+	
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_relic"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1355,7 +1555,7 @@ Coronis_initializer = {
 	}
 
 	planet = {
-		class = "pc_desert"
+		class = "pc_tropical"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1550,103 +1750,6 @@ Formaprime_initializer = {
 
 	planet = {
 		class = "pc_tropical"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = 23
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Hive_merch_world }	
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Targus_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	flags = { Imperium_gos }
-	
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 60
-	#}
-	
-	
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-
-	planet = {
-		class = "pc_molten"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-
-	planet = {
-		class = "pc_continental"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -2045,7 +2148,7 @@ CruachMhorn_initializer = {
 	}
 
 	planet = {
-		class = "pc_desert"
+		class = "pc_ocean"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -2589,103 +2692,6 @@ Fortmav_initializer = {
 	}
 }
 Ichar_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	flags = { Imperium_gos }
-	
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 60
-	#}
-	
-	
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-
-	planet = {
-		class = "pc_molten"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-
-	planet = {
-		class = "pc_city"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Hive_ecumenopolis_world }	
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Lastrati_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes

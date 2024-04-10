@@ -1,9 +1,6 @@
-#ИНДУСТРИАЛЬНЫЕ МИРЫ
-Pintax_initializer = {
+#МИРЫ СМЕРТИ
+Krieg_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -34,19 +31,19 @@ Pintax_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 11
+		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Industrial_world }
+		flags = { Imperium_dead_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
+		}
 
 		moon = {
 			class = "pc_barren_cold"
@@ -67,7 +64,7 @@ Pintax_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -89,11 +86,8 @@ Pintax_initializer = {
 		home_planet = no
 	}
 }
-Piscina_initializer = {
+Catachan_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -124,19 +118,19 @@ Piscina_initializer = {
 	}
 	
 	planet = {
-		class = "pc_ocean"
+		class = "pc_tropical"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 11
+		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Industrial_world }
+		flags = { Imperium_dead_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
+		}
 
 		moon = {
 			class = "pc_barren_cold"
@@ -157,7 +151,7 @@ Piscina_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -179,11 +173,8 @@ Piscina_initializer = {
 		home_planet = no
 	}
 }
-Vostroya_initializer = {
+Luther_Mcintyre_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -214,19 +205,19 @@ Vostroya_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tundra"
+		class = "pc_desert"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 11
+		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Industrial_world }
+		flags = { Imperium_dead_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
+		}
 
 		moon = {
 			class = "pc_barren_cold"
@@ -247,7 +238,7 @@ Vostroya_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -269,11 +260,95 @@ Vostroya_initializer = {
 		home_planet = no
 	}
 }
-Brycantia_initializer = {
+Nocturne_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
 	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_arid"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_dead_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		moon = {
+			class = "pc_broken"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_shattered"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shattered"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Kragadam_initializer = {
+	class = "rl_starting_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -304,19 +379,19 @@ Brycantia_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 11
+		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Industrial_world }
+		flags = { Imperium_dead_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
+		}
 
 		moon = {
 			class = "pc_barren_cold"
@@ -337,7 +412,7 @@ Brycantia_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -359,11 +434,8 @@ Brycantia_initializer = {
 		home_planet = no
 	}
 }
-Atenii_initializer = {
+Praxetl_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -394,19 +466,19 @@ Atenii_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_desert"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 11
+		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Industrial_world }
+		flags = { Imperium_dead_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
+		}
 
 		moon = {
 			class = "pc_barren_cold"
@@ -427,7 +499,7 @@ Atenii_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -449,191 +521,8 @@ Atenii_initializer = {
 		home_planet = no
 	}
 }
-Cantaix_initializer = {
+Sycorax_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_continental"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 11
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Industrial_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Nimbosa_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_continental"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 11
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Industrial_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Zarnov_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -668,15 +557,15 @@ Zarnov_initializer = {
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = 11
+		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Industrial_world }
+		flags = { Imperium_dead_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
+		}
 
 		moon = {
 			class = "pc_barren_cold"
@@ -697,7 +586,268 @@ Zarnov_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_frozen"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Jjojos_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_ocean"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_dead_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Loriar_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_relic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_dead_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Jucha_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Imperium_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_dead_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }

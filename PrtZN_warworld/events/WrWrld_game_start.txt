@@ -1,6 +1,6 @@
 namespace = WrWrld_game_start
 
-@create_pop_watch_fort_station = 9
+@create_pop_watch_fort_station = 12
 
 country_event = { #Imperium
 	id = WrWrld_game_start.1
@@ -188,23 +188,23 @@ country_event = { #Imperium
 					#	}
 					#}
 					while = {
-						count = 1
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
 					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_mining
+					#	}
+					#}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
 				}
 				if = {
 				    limit = {
@@ -254,12 +254,12 @@ country_event = { #Imperium
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_city
+					#	}
+					#}
 					#while = {
 					#	count = 1
 					#	add_district_and_planet_size_if_needed_effect = {
@@ -291,12 +291,12 @@ country_event = { #Imperium
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_city
+					#	}
+					#}
 					while = {
 						count = 16
 						add_district_and_planet_size_if_needed_effect = {
@@ -361,21 +361,21 @@ country_event = { #Imperium
 		    	    }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
-					add_building = building_fortress
+					add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
 					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
 				    add_building = building_foundry_2
 				    add_building = building_factory_2
 				    add_building = building_ministry_production  
-				    add_building = building_research_lab_2
+				    #add_building = building_research_lab_2
 					add_building = building_resource_silo
 					#add_building = building_bio_reactor
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
 				    while = {
-				    	count = 87
+				    	count = 65
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -387,7 +387,7 @@ country_event = { #Imperium
 					#	}
 					#}
 					while = {
-						count = 10
+						count = 7
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_arcology_arms_industry
 						}
@@ -414,7 +414,7 @@ country_event = { #Imperium
 				    	owner = ROOT
 		    	    }
 					while = {
-						count = 3
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
@@ -423,19 +423,19 @@ country_event = { #Imperium
 				    add_building = building_precinct_house 	
 				    add_building = building_foundry_1 #building_factory_1
 					add_building = building_ministry_production
-					add_building = building_research_lab_2
+					#add_building = building_research_lab_2
 					add_building = building_fortress
 					add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
-				    	count = 33
+				    	count = 27
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 6
+						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
 						}
@@ -456,7 +456,7 @@ country_event = { #Imperium
 				    	owner = ROOT
 		    	    }
 					while = {
-						count = 5
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
@@ -468,20 +468,20 @@ country_event = { #Imperium
 					add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
-					add_building = building_commercial_zone
-					add_building = building_hydroponics_farm
+					#add_building = building_commercial_zone
+					#add_building = building_hydroponics_farm
 					add_building = building_gas_extractors
 					add_building = building_mote_harvesters
 					add_building = building_crystal_mines
 					#add_building = building_archaeo_refinery  					
 				    while = {
-				    	count = 37
+				    	count = 29
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 6
+						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
 						}
@@ -559,7 +559,7 @@ country_event = { #Imperium
 				    	owner = ROOT
 		    	    }
 					while = {
-						count = 7
+						count = 8
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
@@ -607,14 +607,14 @@ country_event = { #Imperium
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_housing
+					#	}
+					#}
 					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_arcology_housing
-						}
-					}
-					while = {
-						count = 5
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_arcology_arms_industry
 						}
@@ -633,20 +633,20 @@ country_event = { #Imperium
 					#}
 				    add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
-				    add_building = building_hall_judgment
-				    add_building = building_precinct_house					
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
 				    add_building = building_foundry_1
 				    add_building = building_factory_1
 					add_building = building_fortress
 					add_building = building_fortress		
 					add_building = building_planetary_shield_generator #building_research_lab_2
 					add_building = building_commercial_zone
-					add_building = building_commercial_zone
+					add_building = building_ministry_production
 					add_building = building_autochthon_monument
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
 				    while = {
-				    	count = 99
+				    	count = 73
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -667,7 +667,7 @@ country_event = { #Imperium
 						}
 					}
 				    add_building = building_major_capital   	
-				    add_building = building_hall_judgment
+				    add_building = building_precinct_house
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
@@ -679,7 +679,7 @@ country_event = { #Imperium
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
 				    while = {
-				    	count = 36
+				    	count = 33
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -718,10 +718,10 @@ country_event = { #Imperium
 						}
 					}
 				    add_building = building_hab_capital
-				    add_building = building_hall_judgment
+				    add_building = building_precinct_house
 				    add_building = building_planetary_shield_generator
 					add_building = building_fortress
-					add_building = building_fortress
+					add_building = building_energy_nexus
 				    while = {
 				    	count = @create_pop_watch_fort_station
 				    	create_pop = {
@@ -762,6 +762,48 @@ country_event = { #Imperium
 				    		species = owner_main_species
 				    	}
 					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house					
+					#add_building = building_stronghold	
+				    while = {
+				    	count = 18
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_mining
+					#	}
+					#}
+					while = {
+						count = 7 #3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
 				}
 			}
 		}
@@ -870,15 +912,15 @@ country_event = { #Chaos
 						}
 					}
 				    add_building = building_capital 
-				    add_building = building_hall_judgment					
+				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress	
+					#add_building = building_fortress	
 					add_building = building_dread_encampment					
 				    add_building = building_factory_1	
-					add_building = building_necrophage_house_of_apotheosis
-					add_building = building_holotemple					
+					add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple					
 				    while = {
-				    	count = 51
+				    	count = 40
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -917,14 +959,14 @@ country_event = { #Chaos
 				    	owner = ROOT
 		    	    }
 				    while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
 					}
 				    add_building = building_capital 
-				    add_building = building_hall_judgment					
-				    add_building = building_planetary_shield_generator 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
 					add_building = building_fortress  
 					add_building = building_dread_encampment					
 					add_building = building_necrophage_elevation_chamber
@@ -933,7 +975,7 @@ country_event = { #Chaos
 					add_building = building_mineral_purification_plant	
 					add_building = building_energy_grid			
 				    while = {
-				    	count = 50
+				    	count = 42
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -978,15 +1020,15 @@ country_event = { #Chaos
 						}
 					}
 				    add_building = building_capital 
-				    add_building = building_hall_judgment					
+				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress  
 					add_building = building_dread_encampment
 				    add_building = building_foundry_1
-				    add_building = building_necrophage_house_of_apotheosis 	
+				    add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
 					add_building = building_temple						
 				    while = {
-				    	count = 27
+				    	count = 29
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}

@@ -477,95 +477,7 @@ Vanaheim_initializer = {
 	}
 	
 	planet = {
-		class = "pc_arctic"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Forge_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-			add_deposit = d_dust_caverns 
-		}
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Paramar_initializer = {
-	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_arid"
+		class = "pc_arctic" #pc_arctic
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -653,7 +565,7 @@ Phaeton_initializer = {
 	}
 	
 	planet = {
-		class = "pc_desert"
+		class = "pc_relic" #pc_desert
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1061,94 +973,6 @@ Lathes_initializer = {
 		home_planet = no
 	}
 }
-Synford_initializer = {
-	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_ocean"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Forge_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-			add_deposit = d_dust_caverns 
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 Lucius_initializer = {
 	class = "rl_starting_stars"
 	asteroid_belt = {
@@ -1181,7 +1005,7 @@ Lucius_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tundra"
+		class = "pc_continental"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1445,7 +1269,7 @@ Artemia_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tropical"
+		class = "pc_continental"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1885,95 +1709,7 @@ Mkhand_initializer = {
 	}
 	
 	planet = {
-		class = "pc_nuked"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Forge_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-			add_deposit = d_dust_caverns 
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Cantoii_initializer = {
-	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_arctic"
+		class = "pc_continental"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -2061,7 +1797,7 @@ Incaladion_initializer = {
 	}
 	
 	planet = {
-		class = "pc_savannah"
+		class = "pc_relic"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -2325,7 +2061,7 @@ Gulgoradh_initializer = {
 	}
 	
 	planet = {
-		class = "pc_arctic"
+		class = "pc_savannah"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }

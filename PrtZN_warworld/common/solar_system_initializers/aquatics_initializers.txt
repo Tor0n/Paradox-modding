@@ -22,16 +22,16 @@ ocean_paradise_start = {
 		#	}
 		#}
 		generate_home_system_resources = yes
-		if = {
-			limit = {
-				is_inside_nebula = no
-			}
-			create_nebula = {
-				radius = 45
-				effect = { nebula_cloaking_effect = yes }
-			}
-			set_star_flag = ocean_paradise_nebula
-		}
+		#if = {
+		#	limit = {
+		#		is_inside_nebula = no
+		#	}
+		#	create_nebula = {
+		#		radius = 45
+		#		effect = { nebula_cloaking_effect = yes }
+		#	}
+		#	set_star_flag = ocean_paradise_nebula
+		#}
 	}
 
 	# Star
