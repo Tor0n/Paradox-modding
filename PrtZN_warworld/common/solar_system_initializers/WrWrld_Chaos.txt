@@ -1,0 +1,172 @@
+#Столичный сектор и пустые системы
+Terror_Eye_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 135 #Distance from system centre
+	#}
+	
+	flags = { empire_home_system shroudwalker_enclave_system enclave }
+
+	max_instances = 1
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		class = pc_b_star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			#create_nebula = {
+			#	radius = 45
+			#	effect = { nebula_cloaking_effect = yes }
+			#}
+			create_ambient_object = {
+				type = "nebula_L10_entity"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 46
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_zro_deposit_4
+		}
+	}
+	
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = yes
+
+		home_planet = no
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_zro_deposit_5
+		}
+	}
+	
+	planet = {
+		class = "pc_tundra"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		has_ring = no
+		starting_planet = yes
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+			    clear_deposits = yes
+			    prevent_anomaly = yes
+			    add_deposit = d_zro_deposit_2
+		    }
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+		home_planet = no
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_zro_deposit_5
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = yes
+
+		home_planet = no
+		
+		init_effect = {
+			set_planet_flag = shroudwalker_enclave_planet
+			save_event_target_as = shroudwalker_enclave_planet
+			clear_deposits = yes
+			prevent_anomaly = yes
+			if = {
+				limit = {
+					NOT = {
+						exists = event_target:shroudwalker_enclave_country
+					}
+				}
+				create_species = {
+					homeworld = this
+					name = random
+					class = SHROUDWALKER
+					namelist = NECROID1
+					portrait = random
+					traits = {
+						ideal_planet_class = pc_habitat
+						trait = trait_psionic
+						trait = random_traits
+					}
+				}
+				last_created_species = {
+					save_event_target_as = shroudwalker_enclave_species
+				}
+				create_shroudwalker_enclave_country = yes
+				solar_system = {
+					save_global_event_target_as = shroudwalker_enclave_system
+				}
+			}
+			else = {
+				event_target:shroudwalker_enclave_country = {
+					create_shroudwalker_enclave_starbase = yes
+				}
+			}
+			add_deposit = d_zro_deposit_5
+		}
+	}
+
+	#planet = {
+	#	class = "pc_gas_giant"
+#
+	#	orbit_distance = 35
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = { min = 25 max = 50 }
+	#	has_ring = yes
+	#	change_orbit = 12
+#
+	#	home_planet = no
+	#}
+}

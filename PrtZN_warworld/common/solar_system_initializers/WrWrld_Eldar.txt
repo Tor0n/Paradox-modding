@@ -214,6 +214,16 @@ Zandros_initializer = {
 		home_planet = no
 	}
 	planet = {
+		class = "pc_gaia"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { 23 }
+		has_ring = yes
+		home_planet = yes
+		starting_planet = yes
+	}
+	planet = {
 		class = "pc_barren"
 
 		orbit_distance = 45

@@ -1798,12 +1798,12 @@ Rak_Gol_Territory = {
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Абусс"
+		key="Ланорра"
 		literal=yes
 	}
 	
 	flags = { Strixis_start }
-	initializer=""
+	initializer = "Lanorra_initializer"
 	
 	graphical_culture="toxoid_01"
 	city_graphical_culture="arthropoid_01"
