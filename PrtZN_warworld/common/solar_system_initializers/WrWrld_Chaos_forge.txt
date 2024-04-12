@@ -1,15 +1,15 @@
-# НЕКРОНСКИЕ МИРЫ
-Zapennec_initializer = {
+#МИРЫ КУЗНИ
+Maelstro_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
 	
-	flags = { Tokt_gos }
+	flags = { Chaos_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -25,50 +25,42 @@ Zapennec_initializer = {
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 35
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_city"
 
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		#change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-	
-	planet = {
-		class = "pc_nuked"
-
-		orbit_distance = 45
+		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
-		flags = { Tokt_world }
+		change_orbit = 4
+		
+		flags = { Chaos_forge_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
 		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
+		orbit_distance = 48
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -77,37 +69,37 @@ Zapennec_initializer = {
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { min = 10 max = 20 }
 		has_ring = no
 		change_orbit = 12
 
 		home_planet = no
 	}
 }
-Tamar_initializer = {
+Samech_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
 	
-	flags = { Tokt_gos }
+	flags = { Chaos_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -123,50 +115,42 @@ Tamar_initializer = {
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 35
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_city"
 
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		#change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-	
-	planet = {
-		class = "pc_desert"
-
-		orbit_distance = 45
+		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
-		flags = { Tokt_world }
+		change_orbit = 4
+		
+		flags = { Chaos_forge_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
 		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
+		orbit_distance = 48
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -175,37 +159,37 @@ Tamar_initializer = {
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { min = 10 max = 20 }
 		has_ring = no
 		change_orbit = 12
 
 		home_planet = no
 	}
 }
-Nervkor_initializer = {
+Tremert_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
 	
-	flags = { Tokt_gos }
+	flags = { Chaos_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -221,50 +205,42 @@ Nervkor_initializer = {
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 35
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_city"
 
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		#change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-	
-	planet = {
-		class = "pc_relic"
-
-		orbit_distance = 45
+		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
-		flags = { Tokt_world }
+		change_orbit = 4
+		
+		flags = { Chaos_forge_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
 		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
+		orbit_distance = 48
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -273,37 +249,37 @@ Nervkor_initializer = {
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { min = 10 max = 20 }
 		has_ring = no
 		change_orbit = 12
 
 		home_planet = no
 	}
 }
-Perun_initializer = {
+Cyclothrathe_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
 	
-	flags = { Tokt_gos }
+	flags = { Chaos_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -319,35 +295,42 @@ Perun_initializer = {
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 35
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_city"
 
-		orbit_distance = 45
+		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = 21
 		has_ring = no
-		#change_orbit = 4
+		change_orbit = 4
 		
+		flags = { Chaos_forge_world }
 		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
+		orbit_distance = 48
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -356,37 +339,37 @@ Perun_initializer = {
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { min = 10 max = 20 }
 		has_ring = no
-		#change_orbit = 12
+		change_orbit = 12
 
 		home_planet = no
 	}
 }
-Xor_initializer = {
+Gargon_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
 	
-	flags = { Tokt_gos }
+	flags = { Chaos_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -402,35 +385,42 @@ Xor_initializer = {
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 35
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_city"
 
-		orbit_distance = 45
+		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = 21
 		has_ring = no
-		#change_orbit = 4
+		change_orbit = 4
 		
+		flags = { Chaos_forge_world }
 		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
+		orbit_distance = 48
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -439,37 +429,37 @@ Xor_initializer = {
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { min = 10 max = 20 }
 		has_ring = no
-		#change_orbit = 12
+		change_orbit = 12
 
 		home_planet = no
 	}
 }
-Warfunnel_initializer = {
+Olfix_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
 	
-	flags = { Tokt_gos }
+	flags = { Chaos_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -485,35 +475,42 @@ Warfunnel_initializer = {
     planet = {
 		class = "pc_molten"
 
-		orbit_distance = 35
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_city"
 
-		orbit_distance = 45
+		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = 21
 		has_ring = no
-		#change_orbit = 4
+		change_orbit = 4
 		
+		flags = { Chaos_forge_world }
 		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 45
+		orbit_distance = 48
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
@@ -522,22 +519,22 @@ Warfunnel_initializer = {
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 15 max = 30 }
 		has_ring = no
 
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { min = 10 max = 20 }
 		has_ring = no
-		#change_orbit = 12
+		change_orbit = 12
 
 		home_planet = no
 	}

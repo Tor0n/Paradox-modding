@@ -913,26 +913,26 @@ country_event = { #Chaos
 					}
 				    add_building = building_capital 
 				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
+				    #add_building = building_planetary_shield_generator 
 					#add_building = building_fortress	
 					add_building = building_dread_encampment					
 				    add_building = building_factory_1	
 					add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
 					add_building = building_temple #building_holotemple					
 				    while = {
-				    	count = 40
+				    	count = 41
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
 						}
 					}
 					while = {
-						count = 4
+						count = 6
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
@@ -944,7 +944,7 @@ country_event = { #Chaos
 						}
 					}
 					while = {
-						count = 4
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
@@ -967,8 +967,8 @@ country_event = { #Chaos
 				    add_building = building_capital 
 				    add_building = building_precinct_house					
 				    #add_building = building_planetary_shield_generator 
-					add_building = building_fortress  
-					add_building = building_dread_encampment					
+					#add_building = building_fortress  
+					#add_building = building_dread_encampment					
 					add_building = building_necrophage_elevation_chamber
 					add_building = building_temple	
 					add_building = building_food_processing_center	
@@ -987,19 +987,19 @@ country_event = { #Chaos
 					#	}
 					#}
 					while = {
-						count = 4
+						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
 					}
 					while = {
-						count = 5
+						count = 6
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_mining
 						}
 					}
 					while = {
-						count = 5
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
@@ -1028,13 +1028,13 @@ country_event = { #Chaos
 				    add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
 					add_building = building_temple						
 				    while = {
-				    	count = 29
+				    	count = 18
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 5
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
 						}
@@ -1051,11 +1051,64 @@ country_event = { #Chaos
 					#		district = district_mining
 					#	}
 					#}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+				if = {                                         ### КУЗНЯ ХАОСА ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_forge_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_housing
+					#	}
+					#}
 					while = {
-						count = 1
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
+							district = district_arcology_arms_industry
 						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_civilian_industry
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_administrative
+					#	}
+					#}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_dread_encampment		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_necrophage_elevation_chamber
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 53
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 				}
 			}
