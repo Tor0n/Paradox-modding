@@ -1554,6 +1554,115 @@ country_event = { #Aldari
 		}
 	}
 }
+country_event = { #Commorragh
+	id = WrWrld_game_start.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Commorragh_gos
+	}
+	immediate = {
+		add_resource = { energy = 12000	}
+		add_resource = { minerals = 4000 }
+		add_resource = { food = 7500 }
+		hidden_effect = {
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
+			give_technology = { tech = tech_exotic_gases } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
+			give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
+		}
+		every_system = {
+			limit = { has_star_flag = Commorragh }
+			# spawn_natural_wormhole = {
+				# bypass_type = wormhole
+				# orbit_distance = 100
+				# orbit_angle = 90
+			# }
+			save_event_target_as = Commorragh_City
+			create_starbase = {
+				owner = ROOT
+				size = starbase_outpost
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    create_mining_station = {
+				    	owner = ROOT
+		    	    }
+					create_research_station = {
+				    	owner = ROOT
+		    	    }
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Commorragh_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    #add_building = building_colony_shelter
+				    add_building = building_capital					
+				    while = {
+				    	count = 19
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_city
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+			}
+		}
+		#Соединение червоточин
+		every_system = {
+			limit = { has_star_flag = wormhole }
+			spawn_natural_wormhole = {
+				bypass_type = wormhole
+				# orbit_distance = 100
+				# orbit_angle = 90
+			}
+			link_wormholes = event_target:Commorragh_City
+		}
+	}
+}
 country_event = { #Orc
 	id = WrWrld_game_start.7
 	hide_window = yes
