@@ -1,93 +1,9 @@
 #МИРЫ ВОЙНЫ
-Carpathia_initializer = { #Мир лабиринт
-	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Chaos_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_relic"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 16
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_war_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 Dreska_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -175,6 +91,9 @@ Dreska_initializer = {
 }
 Malefactis_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -262,6 +181,9 @@ Malefactis_initializer = {
 }
 Sangua_Terra_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -349,6 +271,9 @@ Sangua_Terra_initializer = {
 }
 Vigilus_initializer = { #Мир-улий, мир войны, мир-Страж
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -436,6 +361,9 @@ Vigilus_initializer = { #Мир-улий, мир войны, мир-Страж
 }
 Coheria_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -523,6 +451,9 @@ Coheria_initializer = {
 }
 Zayth_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -610,6 +541,9 @@ Zayth_initializer = {
 }
 Crux_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -697,6 +631,9 @@ Crux_initializer = {
 }
 New_Hope_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -784,6 +721,9 @@ New_Hope_initializer = {
 }
 Xendu_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -871,6 +811,9 @@ Xendu_initializer = {
 }
 Ath-Ethon_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -958,6 +901,9 @@ Ath-Ethon_initializer = {
 }
 Rigant_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1045,6 +991,9 @@ Rigant_initializer = {
 }
 Purgatoria_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1132,6 +1081,9 @@ Purgatoria_initializer = {
 }
 Gildarift_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1219,6 +1171,9 @@ Gildarift_initializer = {
 }
 Balcarhsa_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1306,6 +1261,9 @@ Balcarhsa_initializer = {
 }
 Basts_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1393,6 +1351,9 @@ Basts_initializer = {
 }
 Deltao_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1480,6 +1441,9 @@ Deltao_initializer = {
 }
 Prestigus_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1567,6 +1531,9 @@ Prestigus_initializer = {
 }
 Sorrowfall_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1654,6 +1621,9 @@ Sorrowfall_initializer = {
 }
 Haytor_initializer = {
 	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre

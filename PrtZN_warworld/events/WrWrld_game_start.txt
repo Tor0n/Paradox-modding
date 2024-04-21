@@ -81,6 +81,7 @@ country_event = { #Imperium
 			
 			#Инж наука
 			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 }
 			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
 			give_technology = { tech = tech_flak_batteries_2 } #зенитки 
 			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
@@ -92,6 +93,7 @@ country_event = { #Imperium
 			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
 			give_technology = { tech = tech_ship_armor_4 } #Броня корабля
 			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -110,7 +112,7 @@ country_event = { #Imperium
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
-			#give_technology = { tech_mine_betharian }
+			give_technology = { tech = tech_mine_betharian }
 		}
 		every_system = {
 			limit = {
@@ -894,6 +896,8 @@ country_event = { #Chaos
 		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
 		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
 		
+		give_technology = { tech = tech_gene_seed_purification } #Космодесант
+		give_technology = { tech = tech_jump_drive_1 } #Прыжковый двигатель
 		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
 		give_technology = { tech = tech_combat_training } #Усиление обычной армии
 		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
@@ -936,6 +940,43 @@ country_event = { #Chaos
 		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
 		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 		give_technology = { tech = tech_volatile_motes } #Создание пылинок
+		give_technology = { tech = tech_mine_betharian }
+		give_technology = { tech = tech_mine_zro }
+		give_technology = { tech = tech_mine_dark_matter }
+		
+		#ОРУЖИЕ
+		give_technology = { tech = tech_lasers_2 } #Лазеры
+		give_technology = { tech = tech_lasers_3 }
+		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
+		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
+		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
+		give_technology = { tech = tech_fusion_power } #Реактор 2
+		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
+		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
+		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
+		give_technology = { tech = tech_shields_2 } #Щиты 2
+		give_technology = { tech = tech_shields_3 }
+		
+		give_technology = { tech = tech_strike_craft_2 }
+		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
+		give_technology = { tech = tech_mass_drivers_3 }
+		give_technology = { tech = tech_energy_lance_1 }
+		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
+		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
+		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
+		give_technology = { tech = tech_destroyers } #Эсминец
+		give_technology = { tech = tech_cruisers } #Крейсер
+		give_technology = { tech = tech_battleships } #Линкор
+		give_technology = { tech = tech_titans } #Титан
+		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
+		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
+		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
+		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
+		give_technology = { tech = tech_thrusters_3 }
+		give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
+		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
+		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
+		give_technology = { tech = tech_starbase_5 } #Космическая база новый уровень
 		
 		every_system = {
 			limit = {
@@ -980,17 +1021,17 @@ country_event = { #Chaos
 					add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
 					add_building = building_temple #building_holotemple					
 				    while = {
-				    	count = 41
+				    	count = 35
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
 					while = {
 						count = 6
 						add_district_and_planet_size_if_needed_effect = {
@@ -1019,7 +1060,7 @@ country_event = { #Chaos
 				    	owner = ROOT
 		    	    }
 				    while = {
-						count = 4
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
@@ -1035,7 +1076,7 @@ country_event = { #Chaos
 					add_building = building_mineral_purification_plant	
 					add_building = building_energy_grid			
 				    while = {
-				    	count = 42
+				    	count = 33
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1084,11 +1125,11 @@ country_event = { #Chaos
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress  
 					add_building = building_dread_encampment
-				    add_building = building_foundry_1
+				    #add_building = building_foundry_1
 				    add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
 					add_building = building_temple						
 				    while = {
-				    	count = 18
+				    	count = 16
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1133,7 +1174,7 @@ country_event = { #Chaos
 					#	}
 					#}
 					while = {
-						count = 3
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_arcology_arms_industry
 						}
@@ -1165,7 +1206,7 @@ country_event = { #Chaos
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
 				    while = {
-				    	count = 53
+				    	count = 43
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1691,6 +1732,7 @@ country_event = { #Orc
 			#give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
 			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
 			
+			give_technology = { tech = tech_jump_drive_1 } #Прыжковый двигатель
 			give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
 			give_technology = { tech = tech_combat_training } #Усиление обычной армии
 			give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
@@ -1719,11 +1761,10 @@ country_event = { #Orc
 			#give_technology = { tech = tech_galactic_bureaucracy } #Баф бюрократии + постройка
 			
 			#Псих наука
-			give_technology = { tech = tech_lasers_2 } #Лазеры
 			give_technology = { tech = tech_fusion_power } #Реактор 2
 			give_technology = { tech = tech_cold_fusion_power } #Реактор 3
 			give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-			give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
+			#give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
 			give_technology = { tech = tech_shields_2 } #Щиты 2
 			
 			give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
@@ -1732,20 +1773,34 @@ country_event = { #Orc
 			
 			#Инж наука
 			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-			#give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
+			give_technology = { tech = tech_mass_drivers_3 } #2 пушки или как их там
+			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
 			#give_technology = { tech = tech_flak_batteries_2 } #зенитки 
+			give_technology = { tech = tech_strike_craft_2 }
+			give_technology = { tech = tech_mass_accelerator_1 }
+			give_technology = { tech = tech_autocannons_1 }
+			give_technology = { tech = tech_missiles_2 }
+			give_technology = { tech = tech_swarmer_missiles_1 }
+			give_technology = { tech = tech_torpedoes_2 }
 			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
 			give_technology = { tech = tech_destroyers } #Эсминец
 			give_technology = { tech = tech_cruisers } #Крейсер
 			give_technology = { tech = tech_battleships } #Линкор
 			give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-			#give_technology = { tech = tech_ship_armor_3 } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
 			#give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
+			give_technology = { tech = tech_corvette_build_speed }
+			#give_technology = { tech = tech_corvette_hull_1 }
+			give_technology = { tech = tech_destroyer_build_speed }
+			#give_technology = { tech = tech_destroyer_hull_1 }
+			give_technology = { tech = tech_cruiser_build_speed }
+			#give_technology = { tech = tech_cruiser_hull_1 }
+			give_technology = { tech = tech_battleship_build_speed }
+			#give_technology = { tech = tech_battleship_hull_1 }
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-			give_technology = { tech = tech_starbase_5 } #Космическая база новый уровень
+			#give_technology = { tech = tech_starbase_5 } #Космическая база новый уровень
 			
 			give_technology = { tech = tech_alloys_1 } #Бонус производства стали
 			give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
@@ -1937,7 +1992,6 @@ country_event = { #Tokt
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -1965,6 +2019,10 @@ country_event = { #Tokt
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -2148,7 +2206,6 @@ country_event = { #Agdagat
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -2176,6 +2233,10 @@ country_event = { #Agdagat
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -2359,7 +2420,6 @@ country_event = { #Sayteh
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -2387,6 +2447,10 @@ country_event = { #Sayteh
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		#establish_contact = { 
 		#	who = ROOT 
@@ -2579,7 +2643,6 @@ country_event = { #Nigilah
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -2607,6 +2670,10 @@ country_event = { #Nigilah
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -2790,7 +2857,6 @@ country_event = { #Kardenat
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -2818,6 +2884,10 @@ country_event = { #Kardenat
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -3001,7 +3071,6 @@ country_event = { #Oryskar
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -3029,6 +3098,10 @@ country_event = { #Oryskar
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -3212,7 +3285,6 @@ country_event = { #Mefrit
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -3240,6 +3312,10 @@ country_event = { #Mefrit
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -3423,7 +3499,6 @@ country_event = { #Nephrekh
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -3451,6 +3526,10 @@ country_event = { #Nephrekh
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {
@@ -3634,7 +3713,6 @@ country_event = { #Sarkoni
 			give_technology = { tech = tech_thrusters_3 }
 			give_technology = { tech = tech_thrusters_4 }
 			give_technology = { tech = tech_dark_matter_propulsion }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 			give_technology = { tech = tech_starbase_2 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -3662,6 +3740,10 @@ country_event = { #Sarkoni
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_betharian }
+			give_technology = { tech = tech_mine_living_metal }
+		    give_technology = { tech = tech_nanite_transmutation }
+		    give_technology = { tech = tech_mine_dark_matter }
         }
 		every_system = {
 			limit = {

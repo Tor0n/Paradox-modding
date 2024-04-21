@@ -69,7 +69,7 @@ Terror_Eye_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tundra"
+		class = "pc_gaia"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -79,6 +79,47 @@ Terror_Eye_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			add_deposit = d_zro_deposit_5
+			add_deposit = d_zro_deposit_5
+			add_deposit = d_zro_deposit_5
+			add_deposit = d_zro_deposit_5
+			add_deposit = d_zro_deposit_5
+			
+			add_deposit = d_natural_farmland
+			add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_bountiful_plains #изобильные равнины 1
+			add_deposit = d_rugged_woods #суровый лес 3
+			add_deposit = d_green_hills #зелёные холмы 1
+			add_deposit = d_boggy_fens #вязкие топи 1
+			add_deposit = d_nutritious_mudland #питательные грязи 1
+			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_black_soil #чернозём 6
+			add_deposit = d_teeming_reef #рифы какие-то 3
+			
+			add_deposit = d_mineral_striations
+			add_deposit = d_mineral_fields #Минеральные поля 1
+			add_deposit = d_veiny_cliffs #Залежи на склонах 1
+			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+			add_deposit = d_prosperous_mesa #Плато с рудой 2
+			add_deposit = d_rich_mountain #Богатая гора 3
+			add_deposit = d_submerged_ore_veins #Подводные залежи 3
+			
+			add_deposit = d_buzzing_plains
+			add_deposit = d_arid_highlands
+			add_deposit = d_hot_springs
+			add_deposit = d_rushing_waterfalls
+			add_deposit = d_searing_desert
+			add_deposit = d_frozen_gas_lake
+			add_deposit = d_geothermal_vent
+			add_deposit = d_underwater_vent
+			add_deposit = d_tempestous_mountain
+			
+			add_deposit = d_dust_caverns
+			add_deposit = d_dust_desert
+			add_deposit = d_bubbling_swamp
+			add_deposit = d_fuming_bog
+			add_deposit = d_crystalline_caverns
+			add_deposit = d_crystal_forest
 		} 
 
 		moon = {
@@ -444,6 +485,96 @@ Croatoa_initializer = {
 	}
 }
 Pablos_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Chaos_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Olfix_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
@@ -1344,6 +1475,96 @@ Boras_initializer = {
 	}
 }
 Volurilis_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Chaos_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Carpathia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
