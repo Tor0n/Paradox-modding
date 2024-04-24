@@ -1658,6 +1658,9 @@ Oliel_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		spawn_natural_wormhole = {
+			bypass_type = wormhole
+		}
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt

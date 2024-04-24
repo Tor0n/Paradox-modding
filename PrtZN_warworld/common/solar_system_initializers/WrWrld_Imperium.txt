@@ -80,22 +80,7 @@ Terra_initializer = {
 		flags = { Imperium_Terra_world }
 
 		init_effect = {
-			#save_global_event_target_as = sol_system_earth
-
 			prevent_anomaly = yes
-			#remove_all_districts = yes
-			#remove_all_buildings = yes
-			#change_pc = pc_city
-			#generate_start_deposits_and_blockers = no
-			#clear_blockers = yes
-			#generate_start_buildings_and_districts = no
-			
-			#add_building = building_stronghold
-			#add_building = building_system_capital
-			#add_building = building_military_academy
-			#add_building = building_stronghold
-			#add_building = building_planetary_shield_generator
-			#add_building = building_hall_judgment
 		}
 
 		moon = {
