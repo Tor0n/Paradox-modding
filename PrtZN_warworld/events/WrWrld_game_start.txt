@@ -50,8 +50,8 @@ country_event = { #Imperium
 			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
 			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
 			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
+			#give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
 			
 			give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
 			give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
@@ -1071,7 +1071,7 @@ country_event = { #Chaos
 					#add_building = building_fortress  
 					#add_building = building_dread_encampment					
 					add_building = building_necrophage_elevation_chamber
-					add_building = building_temple	
+					#add_building = building_temple	
 					add_building = building_food_processing_center	
 					add_building = building_mineral_purification_plant	
 					add_building = building_energy_grid			
@@ -1776,6 +1776,7 @@ country_event = { #Orc
 			give_technology = { tech = tech_mass_drivers_3 } #2 пушки или как их там
 			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
 			#give_technology = { tech = tech_flak_batteries_2 } #зенитки 
+			give_technology = { tech = tech_strike_craft_1 }
 			give_technology = { tech = tech_strike_craft_2 }
 			give_technology = { tech = tech_mass_accelerator_1 }
 			give_technology = { tech = tech_autocannons_1 }
@@ -1816,11 +1817,38 @@ country_event = { #Orc
 		}		
 		every_system = {
 			limit = {
-				has_star_flag = Orc_gos
+				or = {
+					has_star_flag = Orc_gos
+					has_star_flag = Orc_gos_station
+				}
 			}
-			create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+			if = {
+				limit = {
+				    has_star_flag = Orc_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Orc_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					building = hydroponics_bay
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -1857,7 +1885,7 @@ country_event = { #Orc
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 64                            #было 73, 30 03 2024 было 67
+				    	count = 63                            #было 73, 30 03 2024 было 67
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}

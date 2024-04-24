@@ -92,7 +92,7 @@ system = { id = "67" name = "Morda Prime" position = { x = 229.3473 y = 254.3253
 system = { id = "68" name = "Ophellia" position = { x = 244.1073 y = 164.63 } initializer = Ophellia_initializer }
 system = { id = "69" name = "Pintax" position = { x = 221.3996 y = 132.8393 } initializer = Pintax_initializer }
 system = { id = "70" name = "Taras" position = { x = 256.5965 y = 124.8916 } initializer = Taras_initializer }
-system = { id = "71" name = "Jurn" position = { x = 126.0275 y = 225.9407 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Orc_start } } }
+system = { id = "71" name = "Jurn" position = { x = 126.0275 y = 225.9407 } initializer = Jurn_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Orc_start } } }
 system = { id = "72" name = "Adransa" position = { x = 97.64293 y = 256.596 } initializer = Adransa_initializer }
 system = { id = "73" name = "Aleusis" position = { x = 136.2459 y = 194.15 } initializer = Aleusis_initializer } #ВРАТА ПОСТАВИТЬ
 system = { id = "74" name = "Somonor" position = { x = 77.20604 y = 236.1591 } initializer = Somonor_initializer } 
