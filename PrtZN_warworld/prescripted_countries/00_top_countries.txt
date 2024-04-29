@@ -370,7 +370,7 @@ Commorragh = {
 	ethic = "ethic_fanatic_militarist"
 	
 	origin = "origin_remnants"
-	flags = { Commorragh_start Commorragh_gos }
+	flags = { Commorragh_start }
 	
 	planet_name = "Коморра"
 	planet_class = "pc_continental"
@@ -592,8 +592,8 @@ Ownerships_Corinis = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_progenitor_hive"
-	flags =  { Corinis_start }
+	origin = "origin_default" #origin_progenitor_hive
+	flags =  { Corinis_start Corinis_gos }
 	
 	planet_name= "Исис"
 	planet_class = "pc_alpine"

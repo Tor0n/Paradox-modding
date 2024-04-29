@@ -4,10 +4,13 @@ Commorragh_initializer = {
 	flags = { Commorragh }
 	usage = custom_empire
 
+	max_instances = 1
 	init_effect = {
 		generate_home_system_resources = yes
 		spawn_natural_wormhole = {
 			bypass_type = wormhole
+			# orbit_distance = 100
+			# orbit_angle = 90
 		}
 	}
 	
@@ -26,6 +29,8 @@ Commorragh_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 18 max = 25 }
 		has_ring = no
+
+		home_planet = no
 	}
 	
 	planet = {
@@ -34,7 +39,6 @@ Commorragh_initializer = {
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 24
-		starting_planet = yes
 		has_ring = no
 		change_orbit = 4
 		deposit_blockers = none
@@ -46,7 +50,7 @@ Commorragh_initializer = {
 			prevent_anomaly = yes
 		}
 		
-		home_planet = yes
+		#home_planet = yes
 	}
 
 	planet = {
@@ -56,6 +60,8 @@ Commorragh_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = no
+
+		home_planet = no
 	}
 
 	planet = {
@@ -65,6 +71,8 @@ Commorragh_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = no
+
+		home_planet = no
 	}
 
 	planet = {
@@ -75,5 +83,7 @@ Commorragh_initializer = {
 		size = { min = 15 max = 30 }
 		has_ring = no
 		change_orbit = 12
+
+		home_planet = no
 	}
 }

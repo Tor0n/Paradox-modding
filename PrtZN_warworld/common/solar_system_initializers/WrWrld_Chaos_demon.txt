@@ -1708,7 +1708,7 @@ Khardoom_initializer = {
 		home_planet = no
 	}
 }
-Arkadia_initializer = {
+Aggaros_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
@@ -1798,7 +1798,7 @@ Arkadia_initializer = {
 		home_planet = no
 	}
 }
-Aggaros_initializer = {
+Sicarus_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
@@ -1833,7 +1833,7 @@ Aggaros_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_relic"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
