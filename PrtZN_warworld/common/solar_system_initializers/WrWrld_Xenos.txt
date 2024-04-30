@@ -85,9 +85,9 @@ Lanorra_initializer = {
 			clear_deposits = yes
 			add_deposit = d_minerals_4
 			if = {
-				limit = {
-					NOT = { exists = event_target:salvager_enclave_country }
-				}
+				#limit = {
+				#	NOT = { exists = event_target:salvager_enclave_country }
+				#}
 				save_global_event_target_as = salvager_enclave_planet
 				create_species = {
 					homeworld = this

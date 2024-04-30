@@ -1790,6 +1790,123 @@ country_event = { #Commorragh
 		}
 	}
 }
+country_event = { #Tau
+	id = WrWrld_game_start.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Tau_gos
+	}
+	immediate = {
+		hidden_effect = { 
+			#Соц наука
+			#give_technology = { tech = tech_industrial_farming } #
+		}		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Tau_gos
+					has_star_flag = Tau_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Tau_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Tau_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    create_mining_station = {
+				    	owner = ROOT
+		    	    }
+					create_research_station = {
+				    	owner = ROOT
+		    	    }
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tau_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    #add_building = building_hive_capital 
+				    #add_building = building_spawning_pool
+				    #add_building = building_toxic_bath_hive 
+				    #add_building = building_hive_warren                #building_hive_node
+				    #add_building = building_sentinel_posts
+				    #add_building = building_stronghold
+				    #add_building = building_food_processing_center	
+				    #add_building = building_chemical_plant					
+				    while = {
+				    	count = 23                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+			}
+		}
+	}
+}
 country_event = { #Orc
 	id = WrWrld_game_start.7
 	hide_window = yes
