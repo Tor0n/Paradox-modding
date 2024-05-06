@@ -370,7 +370,7 @@ Commorragh = {
 	ethic = "ethic_fanatic_militarist"
 	
 	origin = "origin_remnants"
-	flags = { Commorragh_start }
+	flags = { Commorragh_start Commorragh_gos }
 	
 	planet_name = "Коморра"
 	planet_class = "pc_continental"
@@ -1337,7 +1337,7 @@ Texian_Empire = {
 	ethic = "ethic_militarist"
 	
 	origin = "origin_default"
-	flags = { Texian_start }
+	flags = { Texian_start Texian_gos }
 	
 	planet_name = "Текс"
 	planet_class = "pc_desert"
@@ -1412,7 +1412,7 @@ Hive_Q_Orl = {
 	ethic = "ethic_gestalt_consciousness"
 	
 	origin = "origin_progenitor_hive"
-	flags={ Qorl_start }
+	flags={ Qorl_start Qorl_gos }
 	
 	planet_name = "Локиит"
 	planet_class = "pc_alpine"
@@ -1488,7 +1488,7 @@ Slogt_Territory = {
 	ethic = "ethic_militarist"
 	
 	origin = "origin_post_apocalyptic"
-	flags = { Slogth_start }
+	flags = { Slogth_start Slogth_gos }
 	
 	planet_name = "Рамейн"
 	planet_class = "pc_tundra"
@@ -1562,7 +1562,7 @@ Rak_Gol_Territory = {
 	ethic = "ethic_materialist"
 	
 	origin = "origin_default"
-	flags = { RakGol_start }
+	flags = { RakGol_start RakGol_gos }
 	
 	planet_name = "Апполлония"
 	planet_class = "pc_desert"
@@ -1674,7 +1674,7 @@ Rak_Gol_Territory = {
 	}
 	
 	initializer="ocean_paradise_start"
-	flags = { Barghesi_start }
+	flags = { Barghesi_start Barghesi_gos }
 	
 	graphical_culture="avian_01"
 	city_graphical_culture="necroid_01"
@@ -1802,7 +1802,7 @@ Rak_Gol_Territory = {
 		literal=yes
 	}
 	
-	flags = { Strixis_start }
+	flags = { Strixis_start Strixis_gos }
 	initializer = "Lanorra_initializer"
 	
 	graphical_culture="toxoid_01"
@@ -1930,7 +1930,7 @@ Rak_Gol_Territory = {
 		literal=yes
 	}
 	
-	flags = { Sardonit_start }
+	flags = { Sardonit_start Sardonit_gos }
 	initializer=""
 	
 	graphical_culture="plantoid_01"

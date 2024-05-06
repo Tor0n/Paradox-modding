@@ -11,7 +11,64 @@ country_event = { #Imperium
 		has_country_flag = Imperium_gos
 	}
 	immediate = {
-	    add_resource = { energy = 50000	}
+	    save_global_event_target_as = Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Slogth_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barghesi_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		add_resource = { energy = 50000	}
 		add_resource = { minerals = 50000 }
 		add_resource = { food = 50000 }
 		add_resource = { alloys = 27000	}
@@ -37,8 +94,11 @@ country_event = { #Imperium
 			#give_technology = { tech = tech_tracking_implants } # Эдикт на отслеживаемые импланты
 			give_technology = { tech = tech_neural_implants } #Просто импланты
 			give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-			give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
 			give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
 			
 			give_technology = { tech = tech_gene_seed_purification } #Космодесант
 			give_technology = { tech = tech_jump_drive_1 } #Прыжковый двигатель #tech_psi_jump_drive_1
@@ -135,6 +195,47 @@ country_event = { #Imperium
 			give_technology = { tech = tech_archaeo_refinery }
 			give_technology = { tech = tech_mine_betharian }
 		}
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
 		every_system = {
 			limit = {
 				or = {
@@ -900,6 +1001,64 @@ country_event = { #Chaos
 		has_country_flag = Chaos_gos
 	}
 	immediate = {
+		save_global_event_target_as = Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		#
 		#add_resource = { energy = 12000	}
 		#add_resource = { minerals = 4000 }
 		#add_resource = { food = 7500 }
@@ -921,6 +1080,9 @@ country_event = { #Chaos
 		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
 		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
 		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
+		
+		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
 
 		give_technology = { tech = tech_gene_seed_purification } #Космодесант
 		give_technology = { tech = tech_jump_drive_1 } #Прыжковый двигатель
@@ -977,6 +1139,7 @@ country_event = { #Chaos
 		give_technology = { tech = tech_space_mining_1 }
 		give_technology = { tech = tech_space_mining_2 }
 		give_technology = { tech = tech_space_mining_3 }
+		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
 		give_technology = { tech = tech_mining_1 }
 		give_technology = { tech = tech_mining_2 }
 
@@ -1021,13 +1184,89 @@ country_event = { #Chaos
 		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 		give_technology = { tech = tech_thrusters_3 }
 		
+		
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_psionics_adopt
+		add_tradition = tr_psionics_mind_readers     #Псионика
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
 		every_system = {
 			limit = {
-				has_star_flag = Chaos_gos
+				or = {
+					has_star_flag = Chaos_gos
+					has_star_flag = Chaos_gos_station
+				}
 			}
-			create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+			if = {
+				limit = {
+				    has_star_flag = Chaos_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Chaos_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -1065,7 +1304,7 @@ country_event = { #Chaos
 					add_building = building_temple #building_holotemple	
 					add_building = building_energy_grid					
 				    while = {
-				    	count = 35
+				    	count = 34
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1119,7 +1358,7 @@ country_event = { #Chaos
 					add_building = building_food_processing_center	
 					add_building = building_mineral_purification_plant				
 				    while = {
-				    	count = 33
+				    	count = 30
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1249,7 +1488,7 @@ country_event = { #Chaos
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
 				    while = {
-				    	count = 43
+				    	count = 42
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1268,6 +1507,60 @@ country_event = { #Eldar
 		has_country_flag = Eldar_gos
 	}
 	immediate = {
+		save_global_event_target_as = Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Nigilah_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Sarkoni_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		
 		add_resource = { energy = 12000	}
 		add_resource = { minerals = 4000 }
 		add_resource = { food = 7500 }
@@ -1450,6 +1743,54 @@ country_event = { #Eldar
 			#Галактические чудеса
 			give_technology = { tech = tech_dyson_sphere }
 		}
+		
+		add_tradition = tr_harmony_finish           #Гармония
+		add_tradition = tr_harmony_the_greater_good
+		add_tradition = tr_harmony_kinship
+		add_tradition = tr_harmony_utopian_dream
+		add_tradition = tr_harmony_harmonious_directives
+		add_tradition = tr_harmony_mind_and_body
+		
+		add_tradition = tr_adaptability_finish           #Адаптация
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		
+		add_tradition = tr_aptitude_finish           #Одарённость (про лидеров)
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_psychological_profiling
+		add_tradition = tr_aptitude_healthcare_program
+		add_tradition = tr_aptitude_champions_of_the_empire
+		
+		add_tradition = tr_statecraft_finish           #Директивы совета
+		add_tradition = tr_statecraft_constitutional_focus
+		add_tradition = tr_statecraft_inspiring_agendas
+		add_tradition = tr_statecraft_immutable_directives
+		add_tradition = tr_statecraft_amongst_peers
+		add_tradition = tr_statecraft_shared_benefits
+		
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish           #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish           #Упорство
+		
+		add_tradition = tr_prosperity_adopt           #Процветание
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_interstellar_franchising
+		
 		every_system = {
 			limit = { has_star_flag = Eldar_gos }
 			#*-/ звездные базы \-*#
@@ -1606,9 +1947,61 @@ country_event = { #Aldari
 		has_country_flag = Aldari_gos
 	}
 	immediate = {
+		save_global_event_target_as = Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
 		add_resource = { energy = 12000	}
 		add_resource = { minerals = 4000 }
 		add_resource = { food = 7500 }
+		
+		add_tradition = tr_harmony_finish           #Гармония
+		add_tradition = tr_harmony_the_greater_good
+		add_tradition = tr_harmony_kinship
+		add_tradition = tr_harmony_utopian_dream
+		add_tradition = tr_harmony_harmonious_directives
+		add_tradition = tr_harmony_mind_and_body
+		
+		add_tradition = tr_adaptability_finish           #Адаптация
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		
+		add_tradition = tr_aptitude_finish           #Одарённость (про лидеров)
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_psychological_profiling
+		add_tradition = tr_aptitude_healthcare_program
+		add_tradition = tr_aptitude_champions_of_the_empire
+		
+		add_tradition = tr_statecraft_finish           #Директивы совета
+		add_tradition = tr_statecraft_constitutional_focus
+		add_tradition = tr_statecraft_inspiring_agendas
+		add_tradition = tr_statecraft_immutable_directives
+		add_tradition = tr_statecraft_amongst_peers
+		add_tradition = tr_statecraft_shared_benefits
+		
+		add_tradition = tr_expansion_adopt           #Расширение
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		
+		add_tradition = tr_unyielding_adopt           #Упорство
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		
+		add_tradition = tr_prosperity_adopt
+		
 		every_system = {
 			limit = {
 				has_star_flag = Aldari_gos
@@ -1690,6 +2083,23 @@ country_event = { #Commorragh
 		has_country_flag = Commorragh_gos
 	}
 	immediate = {
+		save_global_event_target_as = Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 12000	}
 		add_resource = { minerals = 4000 }
 		add_resource = { food = 7500 }
@@ -1705,6 +2115,41 @@ country_event = { #Commorragh
 			give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
 			#give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
 		}
+		
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish           #Превосходство
+		
+		add_tradition = tr_aptitude_finish           #Одарённость (про лидеров)
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_psychological_profiling
+		add_tradition = tr_aptitude_healthcare_program
+		add_tradition = tr_aptitude_champions_of_the_empire
+		
+		add_tradition = tr_adaptability_finish           #Адаптация
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_mercantile_adopt
+		add_tradition = tr_mercantile_trickle_up_economics
+		
+		add_tradition = tr_enmity_adopt
+		add_tradition = tr_politics_adopt
+		
 		every_system = {
 			limit = { has_star_flag = Commorragh }
 			# spawn_natural_wormhole = {
@@ -1799,10 +2244,96 @@ country_event = { #Tau
 		has_country_flag = Tau_gos
 	}
 	immediate = {
+		save_global_event_target_as = Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
 		hidden_effect = { 
 			#Соц наука
 			#give_technology = { tech = tech_industrial_farming } #
 		}		
+		
+		add_tradition = tr_expansion_galactic_ambition
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		add_tradition = tr_expansion_courier_network
+		add_tradition = tr_expansion_reach_for_the_stars
+		add_tradition = tr_expansion_finish     #Расширение
+		
+		add_tradition = tr_discovery_adopt     #Изучение
+		add_tradition = tr_discovery_science_division
+		add_tradition = tr_discovery_polytechnic_education
+		add_tradition = tr_discovery_faith_in_science
+		
+		add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		#add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		#add_tradition = tr_supremacy_great_game
+		#add_tradition = tr_supremacy_finish     #Превосходство
+		
+		#add_tradition = tr_prosperity_adopt
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		#add_tradition = tr_adaptability_recycling
+		#add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_harmony_adopt     #Гармония
+		add_tradition = tr_harmony_mind_and_body
+		add_tradition = tr_harmony_the_greater_good
+		add_tradition = tr_harmony_utopian_dream
+		
+		#add_tradition = tr_unyielding_resistance_is_frugal
+		#add_tradition = tr_unyielding_never_surrender
+		#add_tradition = tr_unyielding_bulwark_of_harmony
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_diplomacy_adopt     #Дипломатия
+		
+		#declare_war = {
+		#	target = event_target:Imperium_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		#}
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		
 		every_system = {
 			limit = {
 				or = {
@@ -1903,6 +2434,60 @@ country_event = { #Tau
 						}
 					}
 				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tau_fourth_sphere_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_stronghold
+				    add_building = building_planetary_shield_generator 
+				    #add_building = building_hive_warren                #building_hive_node
+				    #add_building = building_sentinel_posts
+				    #add_building = building_stronghold
+				    #add_building = building_food_processing_center	
+				    #add_building = building_chemical_plant					
+				    while = {
+				    	count = 11                            
+				    	create_pop = {
+				    		species = owner_main_species
+							ethos = { ethic = "ethic_xenophobe" }
+				    	}
+					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1916,6 +2501,118 @@ country_event = { #Orc
 		has_country_flag = Orc_gos
 	}
 	immediate = {
+		save_global_event_target_as = Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Oryskar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Nigilah_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Mefrit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Kardenat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sarkoni_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 		hidden_effect = { 
 			#Соц наука
 			#give_technology = { tech = tech_industrial_farming } #
@@ -1931,6 +2628,16 @@ country_event = { #Orc
 			#give_technology = { tech = tech_colonization_5 } #Приспособляемость
 			#give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
 			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
+			
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
 			
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_collective_production_methods } #Только для органических гештальтов
@@ -1999,13 +2706,13 @@ country_event = { #Orc
 			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
 			#give_technology = { tech = tech_ship_armor_4 } #Броня корабля
 			give_technology = { tech = tech_corvette_build_speed }
-			#give_technology = { tech = tech_corvette_hull_1 }
+			give_technology = { tech = tech_corvette_hull_1 }
 			give_technology = { tech = tech_destroyer_build_speed }
-			#give_technology = { tech = tech_destroyer_hull_1 }
+			give_technology = { tech = tech_destroyer_hull_1 }
 			give_technology = { tech = tech_cruiser_build_speed }
-			#give_technology = { tech = tech_cruiser_hull_1 }
+			give_technology = { tech = tech_cruiser_hull_1 }
 			give_technology = { tech = tech_battleship_build_speed }
-			#give_technology = { tech = tech_battleship_hull_1 }
+			give_technology = { tech = tech_battleship_hull_1 }
 			
 			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
 			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
@@ -2029,6 +2736,39 @@ country_event = { #Orc
 			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
 			give_technology = { tech = tech_volatile_motes } #Создание пылинок
 		}		
+		
+		add_tradition = tr_expansion_galactic_ambition
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		add_tradition = tr_expansion_courier_network
+		add_tradition = tr_expansion_reach_for_the_stars
+		add_tradition = tr_expansion_finish     #Расширение
+		
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_synchronicity_adopt
+		add_tradition = tr_prosperity_adopt
+		
 		every_system = {
 			limit = {
 				or = {
@@ -2142,6 +2882,58 @@ country_event = { #Genestealer - Коринис
 		has_country_flag = Corinis_gos
 	}
 	immediate = {
+		save_global_event_target_as = Corinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
 		hidden_effect = { 
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
@@ -2161,6 +2953,9 @@ country_event = { #Genestealer - Коринис
 			#give_technology = { tech = tech_neural_implants } #Просто импланты
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_collective_production_methods } #Только для органических гештальтов
+			
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
 			
 			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
 			give_technology = { tech = tech_jump_drive_1 } #Прыжковый двигатель #tech_psi_jump_drive_1
@@ -2259,6 +3054,40 @@ country_event = { #Genestealer - Коринис
 			give_technology = { tech = tech_archaeo_refinery }
 			give_technology = { tech = tech_mine_betharian }
 		}		
+		
+		add_tradition = tr_expansion_galactic_ambition
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		add_tradition = tr_expansion_courier_network
+		add_tradition = tr_expansion_reach_for_the_stars
+		add_tradition = tr_expansion_finish     #Расширение
+		
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_synchronicity_adopt     #Синхронность
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_cloned_organs
+		
+		add_tradition = tr_supremacy_adopt     #Превосходство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_aptitude_adopt     #Про лидеров
+		
+		add_tradition = tr_unyielding_adopt     #Упорство
+		
 		every_system = {
 			limit = {
 				or = {
@@ -2372,6 +3201,27 @@ country_event = { #Tokt
 		has_country_flag = Tokt_gos
 	}
 	immediate = {
+		save_global_event_target_as = Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		#establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -2396,6 +3246,16 @@ country_event = { #Tokt
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -2526,6 +3386,92 @@ country_event = { #Tokt
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_psychological_profiling
+		add_tradition = tr_aptitude_healthcare_program
+		add_tradition = tr_aptitude_champions_of_the_empire
+		add_tradition = tr_aptitude_finish     #Одарённость(это про лидеров)
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Tokt_gos
@@ -2616,6 +3562,22 @@ country_event = { #Agdagat
 		has_country_flag = Agdagat_gos
 	}
 	immediate = {
+		save_global_event_target_as = Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -2640,6 +3602,16 @@ country_event = { #Agdagat
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -2770,6 +3742,91 @@ country_event = { #Agdagat
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Agdagat_gos
@@ -2860,6 +3917,23 @@ country_event = { #Sayteh
 		has_country_flag = Sayteh_gos
 	}
 	immediate = {
+		save_global_event_target_as = Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -2884,6 +3958,16 @@ country_event = { #Sayteh
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -3014,15 +4098,96 @@ country_event = { #Sayteh
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
-		#establish_contact = { 
-		#	who = ROOT 
-		#	location = Terror Eye 
-		#}
-		#declare_war = {
-		#	target = Chaos_gos
-		#	#name = <optional war name>
-		#	attacker_war_goal = cb_purification #cb_containment #cb_purification 
-		#}
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_diplomacy_the_federation
+		add_tradition = tr_diplomacy_entente_coordination
+		add_tradition = tr_diplomacy_diplomatic_networking
+		add_tradition = tr_diplomacy_direct_diplomacy
+		add_tradition = tr_diplomacy_eminent_diplomats
+		add_tradition = tr_diplomacy_finish     #Дипломатия
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Sayteh_gos
@@ -3113,6 +4278,23 @@ country_event = { #Nigilah
 		has_country_flag = Nigilah_gos
 	}
 	immediate = {
+		save_global_event_target_as = Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -3137,6 +4319,16 @@ country_event = { #Nigilah
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -3267,6 +4459,91 @@ country_event = { #Nigilah
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_expansion_galactic_ambition
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		add_tradition = tr_expansion_courier_network
+		add_tradition = tr_expansion_reach_for_the_stars
+		add_tradition = tr_expansion_finish     #Расширение
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Nigilah_gos
@@ -3357,6 +4634,24 @@ country_event = { #Kardenat
 		has_country_flag = Kardenat_gos
 	}
 	immediate = {
+		save_global_event_target_as = Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		#establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		#establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -3381,6 +4676,16 @@ country_event = { #Kardenat
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -3511,6 +4816,86 @@ country_event = { #Kardenat
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Kardenat_gos
@@ -3601,6 +4986,22 @@ country_event = { #Oryskar
 		has_country_flag = Oryskar_gos
 	}
 	immediate = {
+		save_global_event_target_as = Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -3625,6 +5026,16 @@ country_event = { #Oryskar
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -3755,6 +5166,96 @@ country_event = { #Oryskar
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_statecraft_inspiring_agendas
+		add_tradition = tr_statecraft_constitutional_focus
+		add_tradition = tr_statecraft_immutable_directives
+		add_tradition = tr_statecraft_amongst_peers
+		add_tradition = tr_statecraft_shared_benefits
+		add_tradition = tr_statecraft_finish     #Управление через совет
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Oryskar_gos
@@ -3845,6 +5346,22 @@ country_event = { #Mefrit
 		has_country_flag = Mefrit_gos
 	}
 	immediate = {
+		save_global_event_target_as = Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -3869,6 +5386,16 @@ country_event = { #Mefrit
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -3999,6 +5526,86 @@ country_event = { #Mefrit
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Mefrit_gos
@@ -4089,6 +5696,22 @@ country_event = { #Nephrekh
 		has_country_flag = Nephrekh_gos
 	}
 	immediate = {
+		save_global_event_target_as = Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -4113,6 +5736,16 @@ country_event = { #Nephrekh
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -4242,6 +5875,86 @@ country_event = { #Nephrekh
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Nephrekh_gos
@@ -4332,6 +6045,23 @@ country_event = { #Sarkoni
 		has_country_flag = Sarkoni_gos
 	}
 	immediate = {
+		save_global_event_target_as = Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		add_resource = { food = 14000 }
@@ -4356,6 +6086,16 @@ country_event = { #Sarkoni
 			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
 			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
 			give_technology = { tech = tech_resource_processing_algorithms } #Только для роботов гештальтов
+			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
+			give_technology = { tech = tech_climate_restoration } #Нужен для перка на миры Машин
 			
 			give_technology = { tech = tech_archaeo_point_defence }
 			give_technology = { tech = tech_archaeo_lasers }
@@ -4485,6 +6225,101 @@ country_event = { #Sarkoni
 		    give_technology = { tech = tech_nanite_transmutation }
 		    give_technology = { tech = tech_mine_dark_matter }
         }
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_versatility_universal_compatibility
+		add_tradition = tr_versatility_adaptive_programming
+		add_tradition = tr_versatility_spatial_optimization
+		add_tradition = tr_versatility_material_analysis
+		add_tradition = tr_versatility_operational_proxies
+		add_tradition = tr_versatility_finish     #Многогранность
+		
+		add_tradition = tr_synthetics_maintenance_protocols
+		add_tradition = tr_synthetics_optimization_algorithms
+		add_tradition = tr_synthetics_synthetic_age
+		add_tradition = tr_synthetics_prefabricated_components
+		add_tradition = tr_synthetics_solid_state_actuators
+		add_tradition = tr_synthetics_finish     #Синтетики
+		
+		add_tradition = tr_synchronicity_integrated_preservation
+		add_tradition = tr_synchronicity_kinship_gestalt
+		add_tradition = tr_synchronicity_collective_reasoning
+		add_tradition = tr_synchronicity_harmonious_directives
+		add_tradition = tr_synchronicity_cloned_organs
+		add_tradition = tr_synchronicity_finish     #Синхронность
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Orc_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Korinis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:Strixis_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Slogth_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		
 		every_system = {
 			limit = {
 				has_star_flag = Sarkoni_gos
@@ -4564,5 +6399,201 @@ country_event = { #Sarkoni
 				}
 			}
 		}
+	}
+}
+country_event = { #Xenos Texian
+	id = WrWrld_game_start.18
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Texian_gos
+	}
+	immediate = {
+		save_global_event_target_as = Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_mercantile_trickle_up_economics
+		add_tradition = tr_mercantile_adaptive_economic_policies
+		add_tradition = tr_mercantile_commercial_enterprise
+		add_tradition = tr_mercantile_marketplace_of_better_ideas
+		add_tradition = tr_mercantile_insider_trading
+		add_tradition = tr_mercantile_finish     #Меркантилизм
+	}
+}
+country_event = { #Xenos Qorl
+	id = WrWrld_game_start.19
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Qorl_gos
+	}
+	immediate = {
+		save_global_event_target_as = Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_synchronicity_adopt
+		#add_tradition = tr_synchronicity_adopt
+		#add_tradition = tr_synchronicity_adopt
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Xenos Slogth
+	id = WrWrld_game_start.20
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Slogth_gos
+	}
+	immediate = {
+		save_global_event_target_as = Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_domination_adopt
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Xenos Rak'Gol
+	id = WrWrld_game_start.21
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = RakGol_gos
+	}
+	immediate = {
+		save_global_event_target_as = RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_cybernetics_adopt
+		add_tradition = tr_supremacy_adopt
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Xenos Barghesi
+	id = WrWrld_game_start.22
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Barghesi_gos
+	}
+	immediate = {
+		save_global_event_target_as = Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_cybernetics_adopt
+		add_tradition = tr_supremacy_adopt
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Xenos Strixis
+	id = WrWrld_game_start.23
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Strixis_gos
+	}
+	immediate = {
+		save_global_event_target_as = Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_mercantile_trickle_up_economics
+		add_tradition = tr_mercantile_adaptive_economic_policies
+		add_tradition = tr_mercantile_commercial_enterprise
+		add_tradition = tr_mercantile_marketplace_of_better_ideas
+		add_tradition = tr_mercantile_insider_trading
+		add_tradition = tr_mercantile_finish     #Меркантилизм
+	}
+}
+country_event = { #Xenos Sardonit
+	id = WrWrld_game_start.24
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Sardonit_gos
+	}
+	immediate = {
+		save_global_event_target_as = Sardonit_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		#
+		#add_resource = { energy = 25000	}
+		#hidden_effect = { 
+		#	#Соц наука
+		#	#give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
+        #}
+		add_tradition = tr_discovery_adopt
 	}
 }

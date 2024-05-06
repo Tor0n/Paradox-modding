@@ -53,10 +53,11 @@ Yovai_initializer = {
 		#change_orbit = 4
 
 		moon = {
+			#name = "NAME_Yo'Vai"
 			class = "pc_savannah"
 			orbit_distance = 28
 			size = 19
-			flags = { Tau_world }
+			flags = { Tau_fourth_sphere_world }
 		
 			init_effect = {
 				prevent_anomaly = yes
@@ -121,15 +122,15 @@ Kortal_initializer = {
 	}
 	
 	planet = {
+		#name = "Kor'Tal"
 		class = "pc_arid"
-
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Tau_world }
+		flags = { Tau_fourth_sphere_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -210,15 +211,15 @@ Fesaan_initializer = {
 	}
 	
 	planet = {
+		#name = "Fe'Saan"
 		class = "pc_alpine"
-
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Tau_world }
+		flags = { Tau_fourth_sphere_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
