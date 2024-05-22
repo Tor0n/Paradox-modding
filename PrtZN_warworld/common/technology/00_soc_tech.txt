@@ -182,6 +182,8 @@ tech_eco_simulation = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -200,6 +202,10 @@ tech_eco_simulation = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -248,6 +254,8 @@ tech_gene_crops = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -266,6 +274,10 @@ tech_gene_crops = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -315,6 +327,8 @@ tech_nano_vitality_crops = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -333,6 +347,10 @@ tech_nano_vitality_crops = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -386,6 +404,8 @@ tech_nutrient_replication = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -404,6 +424,10 @@ tech_nutrient_replication = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -462,6 +486,8 @@ tech_hydroponics = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -480,6 +506,10 @@ tech_hydroponics = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -509,6 +539,8 @@ tech_food_processing_1 = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -527,6 +559,10 @@ tech_food_processing_1 = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -583,6 +619,8 @@ tech_food_processing_2 = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				is_individual_machine = yes
+				has_origin = origin_synthetic_fertility
 			}
 			NOR = {
 				has_country_flag = non_lithoid_subspecies
@@ -601,6 +639,10 @@ tech_food_processing_2 = {
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
+				AND = {
+					is_individual_machine = yes
+					NOT = { has_country_flag = non_lithoid_subspecies }
+				}
 			}
 		}
 		modifier = {
@@ -631,143 +673,200 @@ tech_food_processing_2 = {
 # Biolab and Colonization
 # ##################
 
-# Biodiversity Studies
-tech_society_1 = {
-	cost = @tier1cost1
-	area = society
-	tier = 1
-	category = { biology }
-	weight = @tier1weight1
-
-	modifier = {
-		planet_researchers_society_research_produces_mult = 0.2
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 5
-			is_ai = yes
-		}
-		modifier = {
-			factor = 2
-			years_passed > 5
-		}
-		modifier = {
-			factor = 2
-			years_passed > 10
-		}
-		modifier = {
-			factor = 2
-			years_passed > 15
-		}
-		modifier = {
-			factor = 2
-			years_passed > 20
-		}
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = scholarium }
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		factor = @society_research_ai_factor
-	}
-}
-
-# Xenobiology
-tech_society_2 = {
-	cost = @tier2cost3
-	area = society
-	tier = 2
-	category = { biology }
-	prerequisites = { "tech_society_1" }
-	weight = @tier2weight3
-
-	modifier = {
-		planet_researchers_society_research_produces_mult = 0.2
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			years_passed > 5
-		}
-		modifier = {
-			factor = 2
-			years_passed > 10
-		}
-		modifier = {
-			factor = 2
-			years_passed > 15
-		}
-		modifier = {
-			factor = 2
-			years_passed > 20
-		}
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = scholarium }
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		factor = @society_research_ai_factor
-	}
-}
-
-# Secrets of Life
-tech_society_3 = {
-	cost = @tier4cost2
-	area = society
-	tier = 4
-	category = { biology }
-	prerequisites = { "tech_society_2" }
-	weight = @tier4weight2
-
-	modifier = {
-		planet_researchers_society_research_produces_mult = 0.2
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			years_passed > 25
-		}
-		modifier = {
-			factor = 2
-			years_passed > 30
-		}
-		modifier = {
-			factor = 2
-			years_passed > 35
-		}
-		modifier = {
-			factor = 2
-			years_passed > 40
-		}
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = scholarium }
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		factor = @society_research_ai_factor
-	}
-}
+# Standardized Interstellar Timekeeping Removed after having their function made redundant, flavor text exists if we ever find a spot for them.
+#tech_society_1 = {
+#	cost = {
+#		factor = @tier1breakthrough
+#	}
+#	area = society
+#	tier = 2
+#	category = { new_worlds }
+#	is_breakthrough = yes
+#	weight = @tier1weightbreakthrough
+#
+#	modifier = {
+#		custom_tooltip = breakthrough_society_unlock_tooltip
+#	}
+#
+#	weight_modifier = {
+#		modifier = {
+#			factor = 5
+#			is_ai = yes
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 5
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 10
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 15
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 20
+#		}
+#		modifier = {
+#			factor = 1.5
+#			is_specialist_subject_type = { TYPE = scholarium }
+#		}
+#		modifier = {
+#			factor = 2
+#			has_relic = r_pox_sample
+#		}
+#	}
+#
+#	ai_weight = {
+#		factor = @ai_society_tech_speed_factor
+#	}
+#}
+#
+## Xenobiology
+#tech_society_2 = {
+#	cost = {
+#		factor = @tier2breakthrough
+#	}
+#	area = society
+#	tier = 3
+#	category = { biology }
+#	prerequisites = { "tech_society_1" }
+#	is_breakthrough = yes
+#	weight = @tier2weightbreakthrough
+#
+#	modifier = {
+#		custom_tooltip = breakthrough_society_unlock_tooltip
+#	}
+#
+#	weight_modifier = {
+#		modifier = {
+#			factor = 2
+#			years_passed > 5
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 10
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 15
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 20
+#		}
+#		modifier = {
+#			factor = 1.5
+#			is_specialist_subject_type = { TYPE = scholarium }
+#		}
+#		modifier = {
+#			factor = 2
+#			has_relic = r_pox_sample
+#		}
+#	}
+#
+#	ai_weight = {
+#		factor = @ai_society_tech_speed_factor
+#	}
+#}
+#
+## Exoplanetary Logistics
+#tech_society_3 = {
+#	cost = {
+#		factor = @tier3breakthrough
+#	}
+#	area = society
+#	tier = 4
+#	category = { statecraft }
+#	prerequisites = { "tech_society_2" }
+#	is_breakthrough = yes
+#	weight = @tier3weightbreakthrough
+#
+#	modifier = {
+#		custom_tooltip = breakthrough_society_unlock_tooltip
+#	}
+#
+#	weight_modifier = {
+#		modifier = {
+#			factor = 2
+#			years_passed > 25
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 30
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 35
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 40
+#		}
+#		modifier = {
+#			factor = 1.5
+#			is_specialist_subject_type = { TYPE = scholarium }
+#		}
+#		modifier = {
+#			factor = 2
+#			has_relic = r_pox_sample
+#		}
+#	}
+#
+#	ai_weight = {
+#		factor = @ai_society_tech_speed_factor
+#	}
+#}
+#
+## Origins of Sapience
+#tech_society_4 = {
+#	cost = {
+#		factor = @tier4breakthrough
+#	}
+#	area = society
+#	tier = 5
+#	category = { biology }
+#	prerequisites = { "tech_society_3" }
+#	is_breakthrough = yes
+#	weight = @tier4weightbreakthrough
+#
+#	modifier = {
+#		custom_tooltip = breakthrough_society_unlock_tooltip
+#	}
+#
+#	weight_modifier = {
+#		modifier = {
+#			factor = 2
+#			years_passed > 25
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 30
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 35
+#		}
+#		modifier = {
+#			factor = 2
+#			years_passed > 40
+#		}
+#		modifier = {
+#			factor = 1.5
+#			is_specialist_subject_type = { TYPE = scholarium }
+#		}
+#		modifier = {
+#			factor = 2
+#			has_relic = r_pox_sample
+#		}
+#	}
+#
+#	ai_weight = {
+#		factor = @ai_society_tech_speed_factor
+#	}
+#}
 
 #Xenology
 tech_alien_life_studies = {
@@ -805,7 +904,7 @@ tech_alien_life_studies = {
 		}
 		modifier = {
 			factor = 0
-			NOT = {
+			NOR = {
 				any_owned_planet = {
 					OR = {
 						has_deposit = d_alien_pets_deposit
@@ -818,6 +917,10 @@ tech_alien_life_studies = {
 					}
 				}
 			}
+		}
+		modifier = {
+			factor = 0
+			is_guided_sapience_empire = yes
 		}
 		modifier = {
 			factor = 2
@@ -892,23 +995,8 @@ tech_colonization_2 = {
 		pop_environment_tolerance = 0.05
 	}
 
-	potential = {
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
-	}
-
 	weight_modifier = {
 
-		modifier = {
-			factor = 0.7
-			OR = {
-				has_civic = civic_machine_servitor
-				has_civic = civic_machine_assimilator
-			}
-		}
 	}
 
 	ai_weight = {
@@ -929,23 +1017,8 @@ tech_colonization_3 = {
 		pop_environment_tolerance = 0.05
 	}
 
-	potential = {
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
-	}
-
 	weight_modifier = {
 
-		modifier = {
-			factor = 0.7
-			OR = {
-				has_civic = civic_machine_servitor
-				has_civic = civic_machine_assimilator
-			}
-		}
 	}
 
 	ai_weight = {
@@ -966,23 +1039,8 @@ tech_colonization_4 = {
 		pop_environment_tolerance = 0.05
 	}
 
-	potential = {
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
-	}
-
 	weight_modifier = {
 
-		modifier = {
-			factor = 0.7
-			OR = {
-				has_civic = civic_machine_servitor
-				has_civic = civic_machine_assimilator
-			}
-		}
 	}
 
 	ai_weight = {
@@ -1003,23 +1061,8 @@ tech_colonization_5 = {
 		pop_environment_tolerance = 0.05
 	}
 
-	potential = {
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
-	}
-
 	weight_modifier = {
 
-		modifier = {
-			factor = 0.7
-			OR = {
-				has_civic = civic_machine_servitor
-				has_civic = civic_machine_assimilator
-			}
-		}
 	}
 
 	ai_weight = {
@@ -1039,14 +1082,6 @@ tech_tomb_world_adaption = {
 
 	modifier = {
 		pc_nuked_habitability = 0.2
-	}
-
-	potential = {
-		OR = {
-			is_machine_empire = no
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
 	}
 
 	weight_modifier = {
@@ -1081,11 +1116,12 @@ tech_frontier_health = {
 	area = society
 	tier = 1
 	category = { biology }
-	prerequisites = { "tech_genome_mapping" "tech_colonization_1" }
+	prerequisites = { "tech_genome_mapping" }
 	weight = @tier1weight2
 
 	potential = {
 		is_regular_empire = yes
+		is_individual_machine = no
 	}
 
 	weight_modifier = {
@@ -1116,6 +1152,7 @@ tech_frontier_hospital = {
 
 	potential = {
 		is_gestalt = no
+		is_individual_machine = no
 	}
 
 	weight_modifier = {
@@ -1707,6 +1744,10 @@ tech_terrestrial_sculpting = {
 		}
 		modifier = {
 			factor = 1.25
+			has_trait = trait_robot_aquatic
+		}
+		modifier = {
+			factor = 1.25
 			has_origin = origin_life_seeded
 		}
 
@@ -1717,13 +1758,16 @@ tech_terrestrial_sculpting = {
 
 		modifier = {
 			factor = 2
-			is_xenophobe = yes
+			OR = {
+				is_xenophobe = yes
+				is_hive_empire = yes
+			}
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				has_origin = origin_shattered_ring
-				has_origin = origin_void_dwellers
+				has_void_dweller_origin = yes
 			}
 			is_ai = yes
 		}
@@ -1742,6 +1786,10 @@ tech_terrestrial_sculpting = {
 		modifier = { #Hydrocentric is really good and needs this
 			factor = 1000
 			has_trait = trait_aquatic
+		}
+		modifier = {
+			factor = 1000
+			has_trait = trait_robot_aquatic
 		}
 		modifier = {
 			factor = 100
@@ -1780,7 +1828,10 @@ tech_ecological_adaptation = {
 
 		modifier = {
 			factor = 2
-			is_xenophobe = yes
+			OR = {
+				is_xenophobe = yes
+				is_hive_empire = yes
+			}
 		}
 		modifier = {
 			factor = 5
@@ -1839,6 +1890,14 @@ tech_climate_restoration = {
 		factor = @terraforming_tech_ai_factor
 
 		modifier = {
+			factor = 2
+			OR = {
+				is_xenophobe = yes
+				is_hive_empire = yes
+			}
+		}
+
+		modifier = {
 			factor = 5
 			has_origin = origin_life_seeded
 		}
@@ -1876,6 +1935,7 @@ tech_genome_mapping = {
 			NOT = { has_authority = auth_machine_intelligence }
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
+			has_civic = civic_machine_guided_sapience
 		}
 	}
 
@@ -1892,6 +1952,26 @@ tech_genome_mapping = {
 		modifier = {
 			factor = 2
 			has_relic = r_pox_sample
+		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_origin = origin_synthetic_fertility
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				OR = {
+					is_individual_machine = yes
+					has_origin = origin_synthetic_fertility
+				}
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
 		}
 	}
 
@@ -1934,6 +2014,23 @@ tech_vitality_boosters = {
 			factor = 2
 			has_relic = r_pox_sample
 		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_origin = origin_synthetic_fertility
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				is_individual_machine = yes
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
+		}
 	}
 
 	ai_weight = {
@@ -1954,15 +2051,17 @@ tech_epigenetic_triggers = {
 	}
 
 	potential = {
-		NOT = {
+		NOR = {
 			has_valid_civic = civic_fanatic_purifiers
 			#has_valid_civic = civic_machine_terminator # covered by not being machine
 			#has_valid_civic = civic_hive_devouring_swarm # can uplift to make delicious
+			is_natural_design_empire = yes
 		}
 		OR = {
 			NOT = { has_authority = auth_machine_intelligence }
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
+			has_civic = civic_machine_guided_sapience
 		}
 	}
 
@@ -1993,6 +2092,27 @@ tech_epigenetic_triggers = {
 		modifier = {
 			factor = 2
 			has_relic = r_pox_sample
+		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_origin = origin_synthetic_fertility
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				is_individual_machine = yes
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			is_guided_sapience_empire = yes
 		}
 		modifier = {
 			factor = 0
@@ -2045,6 +2165,7 @@ tech_cloning = {
 			NOT = { has_authority = auth_machine_intelligence }
 			has_civic = civic_machine_assimilator
 		}
+		is_natural_design_empire = no
 	}
 
 	weight_modifier = {
@@ -2060,6 +2181,23 @@ tech_cloning = {
 		modifier = {
 			factor = 2
 			has_relic = r_pox_sample
+		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_origin = origin_synthetic_fertility
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				is_individual_machine = yes
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
 		}
 	}
 
@@ -2083,6 +2221,7 @@ tech_gene_banks = {
 			NOT = { has_authority = auth_machine_intelligence }
 			has_civic = civic_machine_assimilator
 		}
+		is_natural_design_empire = no
 	}
 
 	weight_modifier = {
@@ -2090,6 +2229,19 @@ tech_gene_banks = {
 		modifier = {
 			factor = 1.25
 			has_authority = auth_hive_mind
+		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				is_individual_machine = yes
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
 		}
 		modifier = {
 			factor = 0.20
@@ -2119,7 +2271,11 @@ tech_gene_seed_purification = {
 	# unlocks gene-warrior armies
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+		NOR = {
+			has_authority = auth_machine_intelligence
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2160,6 +2316,19 @@ tech_gene_seed_purification = {
 				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
 			}
 		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				is_individual_machine = yes
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
+		}
 	}
 }
 
@@ -2175,7 +2344,11 @@ tech_morphogenetic_field_mastery = {
 	# unlocks xeno-armies
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+		NOR = {
+			has_authority = auth_machine_intelligence
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2226,7 +2399,7 @@ tech_morphogenetic_field_mastery = {
 }
 
 #Gene Tailoring
-@tech_gene_tailoring_POINTS = 1
+@tech_gene_tailoring_POINTS = 2
 tech_gene_tailoring = {
 	cost = @tier3cost1
 	area = society
@@ -2256,6 +2429,7 @@ tech_gene_tailoring = {
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
+		is_natural_design_empire = no
 	}
 
 	weight_modifier = {
@@ -2276,6 +2450,15 @@ tech_gene_tailoring = {
 		modifier = {
 			factor = 2
 			has_relic = r_pox_sample
+		}
+		modifier = {
+			factor = 0
+			is_individual_machine = yes
+			NOT = {
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
 		}
 	}
 
@@ -2307,6 +2490,7 @@ tech_glandular_acclimation = {
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
+		is_natural_design_empire = no
 	}
 
 	weight_modifier = {
@@ -2323,6 +2507,19 @@ tech_glandular_acclimation = {
 		modifier = {
 			factor = 2
 			has_relic = r_pox_sample
+		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				is_individual_machine = yes
+				any_owned_species = {
+					is_organic_species = yes
+				}
+			}
 		}
 	}
 
@@ -2582,19 +2779,25 @@ tech_gene_expressions = {
 	prerequisites = { "tech_gene_tailoring" }
 	weight = @tier3weight3
 
-	modifier = {
-		description = tech_gene_expressions_modifier_desc
-		description_parameters = {
-			POINTS = @tech_gene_expressions_POINTS
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_GENE_EXPRESSIONS_TITLE"
+			desc = "TECH_UNLOCK_GENE_EXPRESSIONS_DESC"
 		}
-		BIOLOGICAL_species_trait_points_add = @tech_gene_expressions_POINTS
 	}
 
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOR = {
+				has_authority = auth_machine_intelligence
+				is_individual_machine = yes
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
+		}
+		NOR = {
+			has_valid_civic = civic_natural_design
+			has_valid_civic = civic_hive_natural_design
 		}
 	}
 
@@ -2639,7 +2842,9 @@ tech_selected_lineages = {
 	# Modifiers from this tech is added through a policy-option
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
 	}
 
 	weight_modifier = {
@@ -2673,6 +2878,13 @@ tech_selected_lineages = {
 			factor = 2
 			has_relic = r_pox_sample
 		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+			any_owned_species = {
+				is_organic_species = no
+			}
+		}
 	}
 
 	ai_weight = {
@@ -2696,7 +2908,10 @@ tech_capacity_boosters = {
 	# Modifiers from this tech is added through a policy-option
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
+		NOR = {
+			has_authority = auth_machine_intelligence
+			is_natural_design_empire = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2726,6 +2941,13 @@ tech_capacity_boosters = {
 			factor = 2
 			has_relic = r_pox_sample
 		}
+		modifier = {
+			factor = 0.5
+			is_individual_machine = yes
+			any_owned_species = {
+				is_organic_species = no
+			}
+		}
 	}
 
 	ai_weight = {
@@ -2753,11 +2975,11 @@ tech_regenerative_hull_tissue = {
 
 #Doctrine: Space Combat
 tech_doctrine_fleet_size_1 = {
-	cost = @tier2cost1
+	cost = @tier1cost1
 	area = society
-	tier = 2
+	tier = 1
 	category = { military_theory }
-	weight = @tier2weight1
+	weight = @tier1weight1
 
 	modifier = {
 		command_limit_add = 20
@@ -2876,12 +3098,12 @@ tech_doctrine_fleet_size_4 = {
 
 #Doctrine: Armada Battle Formation
 tech_doctrine_fleet_size_5 = {
-	cost = @tier4cost3
+	cost = @tier5cost3
 	area = society
-	tier = 4
+	tier = 5
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_fleet_size_4" }
-	weight = @tier4weight3
+	weight = @tier5weight3
 
 	modifier = {
 		command_limit_add = 20
@@ -2911,7 +3133,6 @@ tech_interstellar_fleet_traditions = {
 	area = society
 	tier = 2
 	category = { military_theory }
-	prerequisites = {}
 	weight = @tier2weight2
 
 	weight_modifier = {
@@ -2997,15 +3218,14 @@ tech_command_matrix = {
 
 #Doctrine: Fleet Support
 tech_doctrine_navy_size_1 = {
-	cost = @tier2cost2
+	cost = @tier1cost2
 	area = society
-	tier = 2
+	tier = 1
 	category = { military_theory }
-	prerequisites = {}
-	weight = @tier2weight2
+	weight = @tier1weight2
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 25
 	}
 
 	weight_modifier = {
@@ -3028,15 +3248,15 @@ tech_doctrine_navy_size_1 = {
 
 # Doctrine: Support Vessels
 tech_doctrine_navy_size_2 = {
-	cost = @tier3cost2
+	cost = @tier2cost2
 	area = society
-	tier = 3
+	tier = 2
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_navy_size_1" }
-	weight = @tier3weight2
+	weight = @tier2weight2
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 25
 	}
 
 	weight_modifier = {
@@ -3059,15 +3279,15 @@ tech_doctrine_navy_size_2 = {
 
 # Doctrine: Interstellar Logistics
 tech_doctrine_navy_size_3 = {
-	cost = @tier4cost1
+	cost = @tier3cost1
 	area = society
-	tier = 4
+	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_navy_size_2" }
-	weight = @tier4weight1
+	weight = @tier3weight1
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 25
 	}
 
 	weight_modifier = {
@@ -3098,7 +3318,7 @@ tech_doctrine_navy_size_4 = {
 	weight = @tier4weight3
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 25
 	}
 
 	weight_modifier = {
@@ -4057,6 +4277,7 @@ tech_subdermal_stimulation = {
 		NOR = {
 			has_ethic = ethic_gestalt_consciousness
 			has_civic = civic_dystopian_society
+			is_individual_machine = yes
 		}
 	}
 
@@ -4332,7 +4553,7 @@ tech_living_state = {
 	}
 
 	modifier = {
-		pop_factions_unity_produces_mult = 0.1
+		pop_factions_produces_mult = 0.1
 	}
 
 	weight_modifier = {
@@ -4581,7 +4802,7 @@ tech_artificial_moral_codes = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	weight = @tier2weight3
+	weight = @tier2weight2
 
 	modifier = {
 		planet_crime_mult = -0.15
@@ -4869,7 +5090,7 @@ tech_autocurating_vault = {
 	area = society
 	category = { statecraft }
 	tier = 3
-	prerequisites = { "tech_administrative_ai" "tech_colonial_centralization"}
+	prerequisites = { "tech_administrative_ai" "tech_colonial_centralization" }
 	weight = @tier3weight1
 
 	potential = {
@@ -5041,12 +5262,12 @@ tech_hive_confluence = {
 # ##################
 tech_ascension_theory = {
 	area = society
-	cost = @tier5cost2
-	tier = 5
+	cost = @tier4cost2
+	tier = 4
 	category = { statecraft }
 	ai_update_type = all
 	is_rare = yes
-	weight = @tier5weight2
+	weight = @tier4weight2
 
 	modifier = {
 		ascension_perks_add = 1
@@ -5070,11 +5291,14 @@ tech_ascension_theory = {
 			script = technologies/rare_technologies_weight_modifiers
 			TECHNOLOGY = tech_ascension_theory
 		}
+		modifier = {
+			factor = 0
+			num_ascension_perk_slots < 6
+		}
 	}
 
 	ai_weight = {
 		factor = 5 #more ascension perks are good
-
 	}
 }
 
@@ -5162,31 +5386,19 @@ tech_penal_colonies = {
 
 # Resort Colonies
 tech_resort_colonies = {
-	cost = @tier3cost1
+	cost = @tier2cost3
 	area = society
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_artificial_moral_codes" }
-	weight = @tier3weight1
-	is_rare = yes
+	weight = @tier2weight3
 
 	potential = {
 		is_gestalt = no
 	}
 
 	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-			}
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_resort_colonies
-		}
+		factor = 1.5
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
@@ -5941,6 +6153,71 @@ tech_node_culling_3 = {
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
 			TECHNOLOGY = tech_node_culling_3
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# ##################
+# Bio Reactor
+# ##################
+tech_bio_reactor = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_industrial_farming" }
+	weight = @tier1weight1
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 20
+			OR = {
+				is_catalytic_empire = yes
+				is_machine_empire = yes
+				is_mechanical_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_bio_reactor
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_bio_reactor_2 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_bio_reactor" }
+	weight = @tier2weight1
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 20
+			OR = {
+				is_catalytic_empire = yes
+				is_machine_empire = yes
+				is_mechanical_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_bio_reactor_2
 		}
 	}
 
