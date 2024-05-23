@@ -7,11 +7,6 @@ Commorragh_initializer = {
 	max_instances = 1
 	init_effect = {
 		generate_home_system_resources = yes
-		spawn_natural_wormhole = {
-			bypass_type = wormhole
-			# orbit_distance = 100
-			# orbit_angle = 90
-		}
 	}
 	
 	planet = {
@@ -50,7 +45,7 @@ Commorragh_initializer = {
 			prevent_anomaly = yes
 		}
 		
-		#home_planet = yes
+		home_planet = yes
 	}
 
 	planet = {
