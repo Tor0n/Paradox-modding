@@ -9,16 +9,9 @@ country_event = {
 		has_country_flag = Commorragh_gos
 	}
 	immediate = {
-		#event_target:wormhole_1 = {
-			#link_wormholes = event_target:wormhole_2
-			#link_wormholes = random_system = { limit = { has_star_flag = wormhole } }
-		#}
-		# event_target:wormhole_2 = {
-			# link_wormholes = event_target:wormhole_1
-		# }
 		every_system = {
-			limit = { has_star_flag = wormhole }
-			link_wormholes = event_target:wormhole_1
+			limit = { has_star_flag = Commorragh }
+			link_wormholes = event_target:wormhole_2
 		}
 	}
 }

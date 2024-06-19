@@ -923,68 +923,46 @@ country_event = { #Imperium
 					#	}
 					#}
 				}
-				#if = {
-				    #limit = {
-			            #is_colonizable = yes
-                        #has_planet_flag = Imperium_Terra_world
-			        #}
-					#remove_district = {
-					#    district = district_generator
-					#}
-					#remove_all_districts = yes
-			        #remove_all_buildings = yes
-					#change_pc = pc_city
-					#while = {
-					#	count = 6
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_arcology_housing
-					#	}
-					#}
-					#while = {
-					#	count = 2
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_arcology_arms_industry
-					#	}
-					#}
-					#while = {
-					#	count = 4
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_arcology_civilian_industry
-					#	}
-					#}
-					#while = {
-					#	count = 6
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_arcology_administrative
-					#	}
-					#}
-				    #add_building = building_major_capital   	
-				    #add_building = building_hall_judgment 
-				    #add_building = building_precinct_house
-				    #add_building = building_precinct_house					
-				    #add_building = building_foundry_1
-				    #add_building = building_factory_1
-					#add_building = building_fortress
-					#add_building = building_fortress		
-					#add_building = building_planetary_shield_generator #building_research_lab_2
-					#add_building = building_commercial_zone
-					#add_building = building_ministry_production
-					#add_building = building_autochthon_monument
-					#add_building = building_chemical_plant
-					#add_building = building_archaeo_refinery  					
-				    #while = {
-				    #	count = 63
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-				#}
 				if = {
 					limit = {
 						is_capital = yes
 					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_administrative }
+					}
+					while = {
+						count = 63
+						create_pop = {species = owner_main_species}
+					}
+					add_building = building_major_capital
+				    add_building = building_hall_judgment
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold	
+					add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					add_building = building_chemical_plant
+					add_building = building_archaeo_refinery
 				}
 			}
 			#owner.capital_scope.solar_system = {}
@@ -2025,12 +2003,11 @@ country_event = { #Aldari
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Aldari_world			
+                        has_planet_flag = Aldari_world
 			        }
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
-				    #add_building = building_colony_shelter
 				    add_building = building_capital 
 				    add_building = building_ranger_lodge  					
 				    while = {
@@ -2071,11 +2048,11 @@ country_event = { #Aldari
 					}
 				}
 			}
-			if = {
-				limit = { has_star_flag = wormhole }
-				save_global_event_target_as = wormhole_2
-				spawn_natural_wormhole = { bypass_type = wormhole }
-			}
+			# if = {
+				# limit = { has_star_flag = wormhole }
+				# #save_global_event_target_as = wormhole_2
+				# #spawn_natural_wormhole = { bypass_type = wormhole }
+			# }
 		}
 	}
 }
@@ -2110,13 +2087,13 @@ country_event = { #Commorragh
 		add_resource = { food = 7500 }
 		hidden_effect = {
 			#Прочие науки
-			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-			give_technology = { tech = tech_exotic_gases } #Создание газа
-			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-			give_technology = { tech = tech_volatile_motes } #Создание пылинок
-			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery  message = no }
 			give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
 		}
 		
@@ -2156,13 +2133,13 @@ country_event = { #Commorragh
 		
 		every_system = {
 			limit = { has_star_flag = Commorragh }
-			create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
-			}
+			# create_starbase = {
+				# owner = ROOT
+				# size = starbase_outpost
+			# }
 			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
+				    limit = {
 			            is_colonizable = no		
 			        }
 				    create_mining_station = {
@@ -2180,7 +2157,6 @@ country_event = { #Commorragh
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
-				    #add_building = building_colony_shelter
 				    add_building = building_capital					
 				    while = {
 				    	count = 19
@@ -2220,11 +2196,11 @@ country_event = { #Commorragh
 					}
 				}
 			}
-			save_global_event_target_as = wormhole_1
+			#save_global_event_target_as = wormhole_1
 			spawn_natural_wormhole = { bypass_type = wormhole }
-			add_seen_bypass_type = wormhole
-			add_seen_bypass = wormhole_1
+			
 		}
+		add_seen_bypass_type = wormhole
 	}
 }
 country_event = { #Tau
