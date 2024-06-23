@@ -1545,171 +1545,171 @@ country_event = { #Eldar
 		hidden_effect = {
 			#Соц наука
 			#give_technology = { tech = tech_industrial_farming } #
-			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-			give_technology = { tech = tech_nano_vitality_crops } #Бонус производительности для фермеров 4
-			give_technology = { tech = tech_nutrient_replication } #Бонус производительности для фермеров 5 - уникальный для Эльдар
-			give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-			give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-			give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-			give_technology = { tech = tech_frontier_health } #Госпиталь 1
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_nano_vitality_crops message = no } #Бонус производительности для фермеров 4
+			give_technology = { tech = tech_nutrient_replication message = no } #Бонус производительности для фермеров 5 - уникальный для Эльдар
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			give_technology = { tech = tech_frontier_health message = no } #Госпиталь 1
 			give_technology = { tech = tech_frontier_hospital } #Госпиталь 2
 			
-			give_technology = { tech = tech_colonization_2 } #Приспособляемость
-			give_technology = { tech = tech_colonization_3 } #Приспособляемость
-			give_technology = { tech = tech_colonization_4 } #Приспособляемость
-			give_technology = { tech = tech_colonization_5 } #Приспособляемость
-			give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-			give_technology = { tech = tech_mountain_range } #Очистка квадратов и тд
-			give_technology = { tech = tech_volcano } #Очистка квадратов и тд
-			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-			give_technology = { tech = tech_quicksand_basin } #Очистка квадратов и тд
-			give_technology = { tech = tech_noxious_swamp } #Очистка квадратов и тд
-			give_technology = { tech = tech_massive_glacier } #Очистка квадратов и тд
-			give_technology = { tech = tech_toxic_kelp } #Очистка квадратов и тд
-			give_technology = { tech = tech_deep_sinkhole } #Очистка квадратов и тд
-			give_technology = { tech = tech_terrestrial_sculpting } #Терраформинг и тд
-			give_technology = { tech = tech_ecological_adaptation } #Терраформинг и тд
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			give_technology = { tech = tech_mountain_range message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_volcano message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_quicksand_basin message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_noxious_swamp message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_massive_glacier message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_toxic_kelp message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_deep_sinkhole message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_terrestrial_sculpting message = no } #Терраформинг и тд
+			give_technology = { tech = tech_ecological_adaptation message = no } #Терраформинг и тд
 			give_technology = { tech = tech_climate_restoration } #Терраформинг и тд
 			
-			give_technology = { tech = tech_neural_implants } #Просто импланты
-			give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-			give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
 			
-			give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-			give_technology = { tech = tech_combat_training } #Усиление обычной армии
-			give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-			give_technology = { tech = tech_centralized_command } #Военная академия
-			give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
 			
-			give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-			give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-			give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-			give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-			give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
 			
 			#Псих наука
-			give_technology = { tech = tech_lasers_2 } #Лазеры
-			give_technology = { tech = tech_lasers_3 }
-			give_technology = { tech = tech_lasers_4 }
-			give_technology = { tech = tech_lasers_5 }
-			give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-			give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-			give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-			give_technology = { tech = tech_disruptors_1 } #Дезинтеграторы
-			give_technology = { tech = tech_disruptors_2 }
-			give_technology = { tech = tech_disruptors_3 }
-			give_technology = { tech = tech_fusion_power } #Реактор 2
-			give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-			give_technology = { tech = tech_antimatter_power } #Реактор 4
-			give_technology = { tech = tech_zero_point_power } #Реактор 5
-			give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-			give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-			give_technology = { tech = tech_shields_2 } #Щиты
-			give_technology = { tech = tech_shields_3 }
-			give_technology = { tech = tech_shields_4 }
-			give_technology = { tech = tech_shields_5 }
-			give_technology = { tech = tech_shield_rechargers_1 }
-			give_technology = { tech = tech_shield_hardeners_1 }
-			give_technology = { tech = tech_sensors_2 } #Сенсоры
-			give_technology = { tech = tech_sensors_3 }
-			give_technology = { tech = tech_sensors_4 }
+			give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+			give_technology = { tech = tech_lasers_3 message = no }
+			give_technology = { tech = tech_lasers_4 message = no }
+			give_technology = { tech = tech_lasers_5 message = no }
+			give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+			give_technology = { tech = tech_disruptors_1 message = no } #Дезинтеграторы
+			give_technology = { tech = tech_disruptors_2 message = no }
+			give_technology = { tech = tech_disruptors_3 message = no }
+			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_antimatter_power message = no } #Реактор 4
+			give_technology = { tech = tech_zero_point_power message = no } #Реактор 5
+			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 message = no } #Щиты
+			give_technology = { tech = tech_shields_3 message = no }
+			give_technology = { tech = tech_shields_4 message = no }
+			give_technology = { tech = tech_shields_5 message = no }
+			give_technology = { tech = tech_shield_rechargers_1 message = no }
+			give_technology = { tech = tech_shield_hardeners_1 message = no }
+			give_technology = { tech = tech_sensors_2 message = no } #Сенсоры
+			give_technology = { tech = tech_sensors_3 message = no }
+			give_technology = { tech = tech_sensors_4 message = no }
 			
-			give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
 			give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-			give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-			give_technology = { tech = tech_power_hub_2 }
-			give_technology = { tech = tech_power_plant_2 } #+Энергия
-			give_technology = { tech = tech_power_plant_3 }
-			give_technology = { tech = tech_power_plant_4 }
-			give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-			give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-			give_technology = { tech = tech_space_science_3 } # Наука от космических станций
-			give_technology = { tech = tech_space_science_4 } # Наука от космических станций
-			give_technology = { tech = tech_encryption_1 } 
-			give_technology = { tech = tech_encryption_2 }
-			give_technology = { tech = tech_decryption_1 }
-			give_technology = { tech = tech_decryption_2 }
-			give_technology = { tech = tech_decryption_3 }
-			give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-			give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-			give_technology = { tech = tech_power_plant_4 } #Увеличение добычи энергетиками
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_power_hub_2 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #+Энергия
+			give_technology = { tech = tech_power_plant_3 message = no }
+			give_technology = { tech = tech_power_plant_4 message = no }
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_3 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_4 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_encryption_2 message = no }
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_decryption_2 message = no }
+			give_technology = { tech = tech_decryption_3 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+			give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			give_technology = { tech = tech_power_plant_4 message = no } #Увеличение добычи энергетиками
 			
 			#Инж наука
-			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-			give_technology = { tech = tech_mass_drivers_3 } #Ускорители материи
-			give_technology = { tech = tech_mass_drivers_4 }
-			give_technology = { tech = tech_mass_drivers_5 } 
-			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-			give_technology = { tech = tech_kinetic_artillery_2 }
-			give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-			give_technology = { tech = tech_destroyers } #Эсминец
-			give_technology = { tech = tech_cruisers } #Крейсер
-			give_technology = { tech = tech_battleships } #Линкор
-			give_technology = { tech = tech_titans } #Титан
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_mass_drivers_3 message = no } #Ускорители материи
+			give_technology = { tech = tech_mass_drivers_4 message = no }
+			give_technology = { tech = tech_mass_drivers_5 message = no } 
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_kinetic_artillery_2 message = no }
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
 			give_technology = { tech = tech_juggernaut } #Джагернаут
-			give_technology = { tech = tech_corvette_build_speed } #Скорость строительства корветов
-			give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_5 }
-			give_technology = { tech = tech_crystal_armor_1 } #Кристальная броня
-			give_technology = { tech = tech_crystal_armor_2 }
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-			give_technology = { tech = tech_thrusters_3 }
-			give_technology = { tech = tech_thrusters_4 }
+			give_technology = { tech = tech_corvette_build_speed message = no } #Скорость строительства корветов
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_5 message = no }
+			give_technology = { tech = tech_crystal_armor_1 message = no } #Кристальная броня
+			give_technology = { tech = tech_crystal_armor_2 message = no }
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			give_technology = { tech = tech_thrusters_3 message = no }
+			give_technology = { tech = tech_thrusters_4 message = no }
 			
-			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-			give_technology = { tech = tech_starbase_5 } # Цитадель
-			give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-			give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-			give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-			give_technology = { tech = tech_space_mining_1 }
-			give_technology = { tech = tech_space_mining_2 }
-			give_technology = { tech = tech_space_mining_3 }
-			give_technology = { tech = tech_space_mining_4 }
-			give_technology = { tech = tech_mining_1 }
-			give_technology = { tech = tech_mining_2 }
-			give_technology = { tech = tech_mining_3 }
+			give_technology = { tech = tech_starbase_3 message = no } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_4 message = no } #Космическая база новый уровень
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			give_technology = { tech = tech_modular_engineering message = no  } #Удешевление строительства
+			give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_space_mining_4 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			give_technology = { tech = tech_mining_3 message = no }
 			
-			give_technology = { tech = tech_habitat_1 } #Хабитат
-			give_technology = { tech = tech_habitat_2 }
+			give_technology = { tech = tech_habitat_1 message = no } #Хабитат
+			give_technology = { tech = tech_habitat_2 message = no }
 			give_technology = { tech = tech_habitat_3 }
-			give_technology = { tech = tech_housing_1 }
-			give_technology = { tech = tech_housing_2 }
-			give_technology = { tech = tech_alloys_1 } #Бонус производства ТМС
-			give_technology = { tech = tech_alloys_2 }
-			give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-			give_technology = { tech = tech_advanced_metallurgy_2 }
-			give_technology = { tech = tech_luxuries_1 } #Улучшеное здание на тмс
-			give_technology = { tech = tech_luxuries_2 }
-			give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-			give_technology = { tech = tech_mineral_purification_2 }
+			give_technology = { tech = tech_housing_1 message = no }
+			give_technology = { tech = tech_housing_2 message = no }
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства ТМС
+			give_technology = { tech = tech_alloys_2 message = no }
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_2 message = no }
+			give_technology = { tech = tech_luxuries_1 message = no } #Улучшеное здание на тмс
+			give_technology = { tech = tech_luxuries_2 message = no }
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Усилитель эффективности шахтёров
+			give_technology = { tech = tech_mineral_purification_2 message = no }
 			
 			#Прочие науки
-			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-			give_technology = { tech = tech_exotic_gases } #Создание газа
-			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
 			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-			give_technology = { tech = tech_volatile_motes } #Создание пылинок
-			give_technology = { tech = tech_archaeo_refinery }
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
 			
 			#Мегаструктуры
 			give_technology = { tech = tech_mega_engineering }
@@ -1784,15 +1784,6 @@ country_event = { #Eldar
 					size = starbase_starfortress
 					module = shipyard
 					module = shipyard
-					#module = gun_battery
-					#module = gun_battery
-					#module = trading_hub
-					#module = detection_array #or: anchorage
-					
-					#building = crew_quarters
-					#building = fleet_academy
-					#building = listening_post
-					#building = offworld_trading_company
 				}
 			}
 			else = {
@@ -1802,39 +1793,54 @@ country_event = { #Eldar
 					size = starbase_outpost
 				}
 			}
-			#*-/ хабитаты \-*#
-			if = {
-				limit = {
-					has_star_flag = Eldar_Habitat
-					NOT = { has_star_flag = Eldar_Capital }
-				}
-				random_system_planet = {
-					limit = { is_star = yes }
-					save_event_target_as = habitat_planet
-				}
-				spawn_megastructure = {
-					type = "habitat_central_complex"
-					planet = event_target:habitat_planet
-					coords_from = event_target:habitat_planet
-					owner = ROOT
-					graphical_culture = ROOT
-				}
-			}
+			#*-/ хабитаты \-*# временно убрано
+			# if = {
+				# limit = {
+					# has_star_flag = Eldar_Habitat
+					# NOT = { has_star_flag = Eldar_Capital }
+				# }
+				# random_system_planet = {
+					# limit = { is_star = yes }
+					# save_event_target_as = habitat_planet
+				# }
+				# spawn_megastructure = {
+					# type = "habitat_central_complex"
+					# planet = event_target:habitat_planet
+					# coords_from = event_target:habitat_planet
+					# owner = ROOT
+					# graphical_culture = ROOT
+				# }
+			# }
 			#*-/ колонизация \-*#
 			every_system_planet = {
 			    if = {
 				    limit = {
 			            is_colonizable = yes
                         has_planet_flag = Eldar_world
+						NOT = { has_planet_flag = habitat }
 			        }
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 					while = {
 				    	count = 50
@@ -1842,7 +1848,7 @@ country_event = { #Eldar
 				    		species = owner_main_species
 				    	}
 					}
-				    add_building = building_system_capital
+					add_building = building_system_capital
 					add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_class_4_singularity
@@ -1851,53 +1857,50 @@ country_event = { #Eldar
 					add_building = building_ministry_production
 					add_building = building_foundry_3
 					add_building = building_mineral_purification_hub
-				    
-					while = {
-						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
 				}
-				else = {
-					limit = { 
-			            is_colonizable = yes
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				else_if = {
+					limit = { has_planet_flag = habitat }
 					while = {
-				    	count = 25
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_hab_housing }
+					}
+					while = {
+				    	count = 50
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_hab_housing
-						}
-					}
 					add_building = building_hab_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_class_4_singularity
+					add_building = building_archaeo_refinery
+					add_building = building_production_center
+					add_building = building_ministry_production
+					add_building = building_foundry_3
+					add_building = building_mineral_purification_hub
 				}
+				# else = {
+					# limit = { 
+			            # is_colonizable = yes
+			        # }
+				    # create_colony = {
+				    	# owner = ROOT
+		    	    # }
+					# while = {
+				    	# count = 25
+				    	# create_pop = {
+				    		# species = owner_main_species
+				    	# }
+					# }
+					# while = {
+						# count = 3
+						# add_district_and_planet_size_if_needed_effect = {
+							# district = district_hab_housing
+						# }
+					# }
+					# add_building = building_hab_system_capital
+				# }
 			}
 			#*-/ врата \-*#
 			if = {
@@ -3197,7 +3200,7 @@ country_event = { #Tokt
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
-		hidden_effect = { 
+		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
@@ -3442,13 +3445,20 @@ country_event = { #Tokt
 		
 		every_system = {
 			limit = {
-				has_star_flag = Tokt_gos
+				OR = {
+					has_star_flag = Tokt_gos
+					AND = { owner = { has_country_flag = Tokt_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
-			every_system_planet = { 
+			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
 				    limit = { 
 			            is_colonizable = no		
@@ -3463,19 +3473,35 @@ country_event = { #Tokt
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Tokt_world			
+                        has_planet_flag = Tokt_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-				    #add_building = building_colony_shelter
-				    add_building = building_machine_major_capital          # building_machine_system_capital
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
 					add_building = building_fortress
@@ -3486,17 +3512,20 @@ country_event = { #Tokt
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 61
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -3506,16 +3535,25 @@ country_event = { #Tokt
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -3797,13 +3835,20 @@ country_event = { #Agdagat
 		
 		every_system = {
 			limit = {
-				has_star_flag = Agdagat_gos
+				OR = {
+					has_star_flag = Agdagat_gos
+					AND = { owner = { has_country_flag = Agdagat_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
-			every_system_planet = { 
+			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
 				    limit = { 
 			            is_colonizable = no		
@@ -3825,11 +3870,26 @@ country_event = { #Agdagat
 		    	    }
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-				    #add_building = building_colony_shelter
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+				    	count = 59
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -3841,17 +3901,20 @@ country_event = { #Agdagat
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 59
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -3861,16 +3924,25 @@ country_event = { #Agdagat
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -4158,13 +4230,20 @@ country_event = { #Sayteh
 		
 		every_system = {
 			limit = {
-				has_star_flag = Sayteh_gos
+				OR = {
+					has_star_flag = Sayteh_gos
+					AND = { owner = { has_country_flag = Sayteh_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
-			every_system_planet = { 
+			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
 				    limit = { 
 			            is_colonizable = no		
@@ -4190,7 +4269,12 @@ country_event = { #Sayteh
 							district = district_nexus
 						}
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 66
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -4202,17 +4286,32 @@ country_event = { #Sayteh
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 66
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -4222,16 +4321,25 @@ country_event = { #Sayteh
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -4514,11 +4622,18 @@ country_event = { #Nigilah
 		
 		every_system = {
 			limit = {
-				has_star_flag = Nigilah_gos
+				OR = {
+					has_star_flag = Nigilah_gos
+					AND = { owner = { has_country_flag = Nigilah_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -4535,18 +4650,22 @@ country_event = { #Nigilah
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Nigilah_world			
+                        has_planet_flag = Nigilah_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 59
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -4558,17 +4677,32 @@ country_event = { #Nigilah
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 59
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -4578,16 +4712,25 @@ country_event = { #Nigilah
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -4627,7 +4770,7 @@ country_event = { #Kardenat
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
-		hidden_effect = { 
+		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
@@ -4866,11 +5009,18 @@ country_event = { #Kardenat
 		
 		every_system = {
 			limit = {
-				has_star_flag = Kardenat_gos
+				OR = {
+					has_star_flag = Kardenat_gos
+					AND = { owner = { has_country_flag = Kardenat_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -4887,18 +5037,22 @@ country_event = { #Kardenat
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Kardenat_world			
+                        has_planet_flag = Kardenat_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 59
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -4910,17 +5064,32 @@ country_event = { #Kardenat
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 59
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -4930,16 +5099,25 @@ country_event = { #Kardenat
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -4977,7 +5155,7 @@ country_event = { #Oryskar
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
-		hidden_effect = { 
+		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
@@ -5226,11 +5404,18 @@ country_event = { #Oryskar
 		
 		every_system = {
 			limit = {
-				has_star_flag = Oryskar_gos
+				OR = {
+					has_star_flag = Oryskar_gos
+					AND = { owner = { has_country_flag = Oryskar_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -5247,7 +5432,8 @@ country_event = { #Oryskar
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Oryskar_world			
+                        has_planet_flag = Oryskar_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
@@ -5258,7 +5444,12 @@ country_event = { #Oryskar
 							district = district_nexus
 						}
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 59
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -5270,17 +5461,32 @@ country_event = { #Oryskar
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 59
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -5290,16 +5496,25 @@ country_event = { #Oryskar
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -5337,7 +5552,7 @@ country_event = { #Mefrit
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
-		hidden_effect = { 
+		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
@@ -5576,11 +5791,18 @@ country_event = { #Mefrit
 		
 		every_system = {
 			limit = {
-				has_star_flag = Mefrit_gos
+				OR = {
+					has_star_flag = Mefrit_gos
+					AND = { owner = { has_country_flag = Mefrit_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -5597,7 +5819,8 @@ country_event = { #Mefrit
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Mefrit_world			
+                        has_planet_flag = Mefrit_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
@@ -5608,7 +5831,12 @@ country_event = { #Mefrit
 							district = district_nexus
 						}
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 50
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -5620,36 +5848,64 @@ country_event = { #Mefrit
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_food_processing_center
-				    while = {
-				    	count = 50
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
 					}
 					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -5687,7 +5943,7 @@ country_event = { #Nephrekh
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
-		hidden_effect = { 
+		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
@@ -5925,11 +6181,18 @@ country_event = { #Nephrekh
 		
 		every_system = {
 			limit = {
-				has_star_flag = Nephrekh_gos
+				OR = {
+					has_star_flag = Nephrekh_gos
+					AND = { owner = { has_country_flag = Nephrekh_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -5946,7 +6209,8 @@ country_event = { #Nephrekh
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Nephrekh_world			
+                        has_planet_flag = Nephrekh_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
@@ -5957,7 +6221,12 @@ country_event = { #Nephrekh
 							district = district_nexus
 						}
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 36
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -5969,17 +6238,32 @@ country_event = { #Nephrekh
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
-				    while = {
-				    	count = 36
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -5989,16 +6273,25 @@ country_event = { #Nephrekh
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}
@@ -6037,7 +6330,7 @@ country_event = { #Sarkoni
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
-		hidden_effect = { 
+		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
@@ -6290,11 +6583,18 @@ country_event = { #Sarkoni
 		
 		every_system = {
 			limit = {
-				has_star_flag = Sarkoni_gos
+				OR = {
+					has_star_flag = Sarkoni_gos
+					AND = { owner = { has_country_flag = Sarkoni_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+				}
+				
 			}
-			create_starbase = {
+			if = {
+				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				create_starbase = {
 				owner = ROOT
 				size = starbase_outpost
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -6311,18 +6611,22 @@ country_event = { #Sarkoni
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Sarkoni_world			
+                        has_planet_flag = Sarkoni_world
+						is_capital = no
 			        }
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-				    #add_building = building_colony_shelter
+					while = {
+				    	count = 56
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
 				    add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
@@ -6335,16 +6639,31 @@ country_event = { #Sarkoni
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
 				    while = {
-				    	count = 56
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				else_if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 5
@@ -6354,16 +6673,25 @@ country_event = { #Sarkoni
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					#while = {
-					#	count = 7
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
+					while = {
+				    	count = 61
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 			}
 		}

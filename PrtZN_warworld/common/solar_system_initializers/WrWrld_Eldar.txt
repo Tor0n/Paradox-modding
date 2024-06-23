@@ -1,9 +1,5 @@
 Ursulia_initializer = {
 	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 135
-	#}
 	
 	flags = { Eldar_gos Eldar_gaia }
 
@@ -27,8 +23,6 @@ Ursulia_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 18 max = 25 }
 		has_ring = no
-
-		home_planet = no
 	}
 	
 	planet = {
@@ -57,7 +51,7 @@ Ursulia_initializer = {
 		size = { min = 15 max = 30 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 
 	planet = {
@@ -68,7 +62,7 @@ Ursulia_initializer = {
 		size = { min = 15 max = 30 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 
 	planet = {
@@ -80,15 +74,11 @@ Ursulia_initializer = {
 		has_ring = no
 		change_orbit = 12
 
-		home_planet = no
+		
 	}
 }
 Iathglas_initializer = {
 	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 135
-	#}
 	
 	flags = { Eldar_gos Eldar_gaia }
 
@@ -113,7 +103,7 @@ Iathglas_initializer = {
 		size = { min = 18 max = 25 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	
 	planet = {
@@ -142,7 +132,7 @@ Iathglas_initializer = {
 		size = { min = 15 max = 30 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 
 	planet = {
@@ -153,7 +143,7 @@ Iathglas_initializer = {
 		size = { min = 15 max = 30 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 
 	planet = {
@@ -165,73 +155,80 @@ Iathglas_initializer = {
 		has_ring = no
 		change_orbit = 12
 
-		home_planet = no
+		
 	}
 }
 
 #*---------------*#
 #* Миры хабитаты *#
 #*---------------*#
-
+#взято из federations_initializers инициализатор void_dweller_system
+#используется эвент void_dweller_home_planet_setup из папки scripted_effects, файл 01_start_of_game_effects
 Zandros_initializer = {
-	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = { min = 105 max 195 }
-	#}
+	class = rl_starting_stars
+	#usage = origin
+	flags = { empire_home_system Eldar_gos Eldar_Habitat Eldar_Capital }
 	
 	init_effect = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_gos Eldar_Habitat Eldar_Capital }
 	usage = custom_empire
-
-	#max_instances = 1
 	
 	planet = {
 		class = star
 		orbit_distance = 0
 	}
     planet = {
-		class = "pc_molten"
+		class = pc_molten
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 10 max = 17 }
+		flags = { ignore_startup_effect habitat_2_planet has_megastructure }
 		has_ring = no
-
-		home_planet = no
+		
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
 	}
 	planet = {
-		class = "pc_toxic"
+		class = pc_toxic
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 20 }
 		has_ring = no
-
-		home_planet = no
 	}
 	planet = {
-		class = "pc_gaia"
+		class = random_non_colonizable #Был идеальный мир
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { 23 }
-		has_ring = yes
-		home_planet = yes
-		starting_planet = yes
+		size = 23
+		flags = { ignore_startup_effect has_megastructure habitat_1_planet }
+		
+		init_effect = {
+			set_deposit = d_physics_3
+		}
+		#взято из federations_initializers инициализатор void_dweller_system
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			starting_planet = yes
+			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat } #Центральный хабитат тут
+			deposit_blockers = none
+		}
 	}
 	planet = {
-		class = "pc_barren"
+		class = pc_barren
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		home_planet = no
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -240,8 +237,6 @@ Zandros_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
-		home_planet = no
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -249,25 +244,22 @@ Zandros_initializer = {
 		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 25 max = 45 }
+		flags = { ignore_startup_effect habitat_3_planet has_megastructure }
 		has_ring = yes
-
-		home_planet = no
+		
+		init_effect = {
+			set_deposit = d_energy_4
+		}
 	}
 }
 Kaelor_initializer = {
 	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = { min = 105 max 195 }
-	#}
 	
 	init_effect = {
 		generate_home_system_resources = yes
 	}
 	
 	flags = { Eldar_gos Eldar_Habitat }
-
-	#max_instances = 1
 	
 	planet = {
 		class = star
@@ -281,7 +273,7 @@ Kaelor_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -291,7 +283,7 @@ Kaelor_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -301,13 +293,7 @@ Kaelor_initializer = {
 		size = { min = 15 max = 24 }
 		has_ring = no
 
-		home_planet = no
 		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -317,13 +303,7 @@ Kaelor_initializer = {
 		size = { min = 12 max = 18 }
 		has_ring = no
 
-		home_planet = no
 		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -333,7 +313,7 @@ Kaelor_initializer = {
 		size = { min = 25 max = 45 }
 		has_ring = yes
 
-		home_planet = no
+		
 	}
 }
 Ilkaithe_initializer = {
@@ -363,7 +343,7 @@ Ilkaithe_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -373,7 +353,7 @@ Ilkaithe_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -383,13 +363,7 @@ Ilkaithe_initializer = {
 		size = { min = 15 max = 24 }
 		has_ring = no
 
-		home_planet = no
 		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -398,14 +372,6 @@ Ilkaithe_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -414,8 +380,6 @@ Ilkaithe_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 25 max = 45 }
 		has_ring = yes
-
-		home_planet = no
 	}
 }
 Alaitoc_initializer = {
@@ -445,7 +409,7 @@ Alaitoc_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -455,7 +419,7 @@ Alaitoc_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -464,14 +428,6 @@ Alaitoc_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -480,14 +436,6 @@ Alaitoc_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -497,15 +445,11 @@ Alaitoc_initializer = {
 		size = { min = 25 max = 45 }
 		has_ring = yes
 
-		home_planet = no
+		
 	}
 }
 Iyanden_initializer = {
 	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = { min = 105 max 195 }
-	#}
 	
 	init_effect = {
 		generate_home_system_resources = yes
@@ -527,7 +471,7 @@ Iyanden_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -537,7 +481,7 @@ Iyanden_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -546,14 +490,6 @@ Iyanden_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -562,14 +498,6 @@ Iyanden_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -579,7 +507,7 @@ Iyanden_initializer = {
 		size = { min = 25 max = 45 }
 		has_ring = yes
 
-		home_planet = no
+		
 	}
 }
 Mymeara_initializer = {
@@ -609,7 +537,7 @@ Mymeara_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -619,7 +547,7 @@ Mymeara_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -628,14 +556,6 @@ Mymeara_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -644,14 +564,6 @@ Mymeara_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -661,7 +573,7 @@ Mymeara_initializer = {
 		size = { min = 25 max = 45 }
 		has_ring = yes
 
-		home_planet = no
+		
 	}
 }
 Lugganath_initializer = {
@@ -691,7 +603,7 @@ Lugganath_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -701,7 +613,7 @@ Lugganath_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -710,14 +622,6 @@ Lugganath_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -727,7 +631,7 @@ Lugganath_initializer = {
 		size = { min = 12 max = 18 }
 		has_ring = no
 
-		home_planet = no
+		
 		
 		#moon = {
 		#	class = "pc_habitat"
@@ -743,7 +647,7 @@ Lugganath_initializer = {
 		size = { min = 25 max = 45 }
 		has_ring = yes
 
-		home_planet = no
+		
 	}
 }
 Illustries_initializer = {
@@ -773,7 +677,7 @@ Illustries_initializer = {
 		size = { min = 10 max = 17 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_toxic"
@@ -783,7 +687,7 @@ Illustries_initializer = {
 		size = { min = 12 max = 20 }
 		has_ring = no
 
-		home_planet = no
+		
 	}
 	planet = {
 		class = "pc_barren"
@@ -792,14 +696,6 @@ Illustries_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "habitat_central_complex"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -808,14 +704,6 @@ Illustries_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
-		home_planet = no
-		
-		#moon = {
-		#	class = "pc_habitat"
-		#	orbit_distance = 15
-		#	size = 6
-		#}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -825,6 +713,6 @@ Illustries_initializer = {
 		size = { min = 25 max = 45 }
 		has_ring = yes
 
-		home_planet = no
+		
 	}
 }
