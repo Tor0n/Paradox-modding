@@ -1,5 +1,7 @@
 @rw_cost = 1000
 @rw_industrial_cost = 200
+@rw_gen_cost = 20
+@rw_farm_cost = 100
 @rw_cost_sr = 50
 @rw_maintenance = 5
 @rw_maintenance_sr = 2
@@ -337,6 +339,7 @@ district_rw_generator = {
 		category = planet_districts_rw_generator
 		cost = {
 			minerals = @rw_cost
+			alloys = @rw_gen_cost
 			rare_crystals = @rw_cost_sr
 		}
 		upkeep = {
@@ -659,6 +662,7 @@ district_rw_farming = {
 		category = planet_districts_rw_farming
 		cost = {
 			minerals = @rw_cost
+			food = @rw_gen_cost
 			volatile_motes = @rw_cost_sr
 		}
 		upkeep = {

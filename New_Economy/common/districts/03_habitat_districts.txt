@@ -1,5 +1,7 @@
 @hab_cost = 500
 @hab_industrial_cost = 50
+@hab_gen_cost = 5
+@hab_mine_cost = 5
 @hab_maintenance = 2
 @low_hab_maintenance = 0.2
 @hab_time = 240
@@ -419,6 +421,7 @@ district_hab_energy = {
 		category = planet_districts_hab_energy
 		cost = {
 			minerals = @hab_cost
+			alloys = @hab_gen_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance
@@ -523,6 +526,7 @@ district_hab_mining = {
 		category = planet_districts_hab_mining
 		cost = {
 			minerals = @hab_cost
+			alloys = @hab_mine_cost
 		}
 		upkeep = {
 			energy = @hab_maintenance

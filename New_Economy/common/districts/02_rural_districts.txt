@@ -1,5 +1,8 @@
 @base_cost = 300
 @city_cost = 500
+@gen_cost = 10
+@mine_cost = 10
+@farm_cost = 50
 
 district_generator = {
 	expansion_planner = yes
@@ -48,6 +51,7 @@ district_generator = {
 		category = planet_districts_generator
 		cost = {
 			minerals = @base_cost
+			alloys = @gen_cost
 		}
 		upkeep = {
 			energy = 1
@@ -181,6 +185,7 @@ district_mining = {
 		category = planet_districts_mining
 		cost = {
 			minerals = @base_cost
+			alloys = @mine_cost
 		}
 		upkeep = {
 			energy = 1
@@ -323,6 +328,7 @@ district_farming = {
 		category = planet_districts_farming
 		cost = {
 			minerals = @base_cost
+			food = @farm_cost
 		}
 		# Anglers Civic cost effect
 		cost = {
