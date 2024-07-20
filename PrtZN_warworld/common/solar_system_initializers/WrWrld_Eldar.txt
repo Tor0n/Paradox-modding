@@ -302,7 +302,14 @@ Kaelor_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			deposit_blockers = none
+		}
 		
 	}
 	planet = {
@@ -362,8 +369,14 @@ Ilkaithe_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 24 }
 		has_ring = no
-
-		
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			deposit_blockers = none
+		}
 	}
 	planet = {
 		class = "pc_barren_cold"
@@ -418,8 +431,19 @@ Alaitoc_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 20 }
 		has_ring = no
-
-		
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			deposit_blockers = none
+			#init_effect = {
+			#	prevent_anomaly = yes
+			#	#add_deposit = d_lichen_fields #лишайниковые поля 1
+			#	add_deposit = d_bountiful_plains #изобильные равнины 1
+		    #}
+		}
 	}
 	planet = {
 		class = "pc_barren"
@@ -498,6 +522,14 @@ Iyanden_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			deposit_blockers = none
+		}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -546,8 +578,17 @@ Mymeara_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 20 }
 		has_ring = no
-
-		
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			#init_effect = {
+			#	prevent_anomaly = yes
+			#	add_deposit = d_hab_dark_matter_3 
+		    #}
+		}
 	}
 	planet = {
 		class = "pc_barren"
@@ -646,8 +687,17 @@ Lugganath_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 25 max = 45 }
 		has_ring = yes
-
-		
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			init_effect = {
+				prevent_anomaly = yes
+				add_deposit = d_payback_habitat_research 
+		    }
+		}
 	}
 }
 Illustries_initializer = {
@@ -676,8 +726,19 @@ Illustries_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 10 max = 17 }
 		has_ring = no
-
-		
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { habitat }
+			deposit_blockers = none
+			#init_effect = {
+			#	prevent_anomaly = yes
+			#	#add_deposit = d_lichen_fields #лишайниковые поля 1
+			#	add_deposit = d_bountiful_plains #изобильные равнины 1
+		    #}
+		}
 	}
 	planet = {
 		class = "pc_toxic"
