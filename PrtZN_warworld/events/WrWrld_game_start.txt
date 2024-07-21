@@ -947,9 +947,13 @@ country_event = { #Chaos
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		#add_resource = { energy = 12000	}
-		#add_resource = { minerals = 4000 }
-		#add_resource = { food = 7500 }
+		add_resource = { energy = 45000	}
+		add_resource = { minerals = 12500 }
+		add_resource = { food = 12500 }
+		add_resource = { alloys = 12500	}
+		add_resource = { volatile_motes = 2500 }
+		add_resource = { rare_crystals = 700 }
+		add_resource = { exotic_gases = 100 }
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -1188,7 +1192,8 @@ country_event = { #Chaos
 					#add_building = building_fortress	
 					add_building = building_dread_encampment					
 				    add_building = building_factory_1	
-					add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
 					add_building = building_temple #building_holotemple	
 					add_building = building_energy_grid					
 				    while = {
@@ -1241,10 +1246,11 @@ country_event = { #Chaos
 				    #add_building = building_planetary_shield_generator 
 					#add_building = building_fortress  
 					#add_building = building_dread_encampment					
-					add_building = building_necrophage_elevation_chamber
+					#add_building = building_necrophage_elevation_chamber
 					#add_building = building_temple	
 					add_building = building_food_processing_center	
-					add_building = building_mineral_purification_plant				
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
 				    while = {
 				    	count = 30
 				    	create_pop = {
@@ -1295,8 +1301,8 @@ country_event = { #Chaos
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress  
 					add_building = building_dread_encampment
-				    #add_building = building_foundry_1
-				    add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
 					add_building = building_temple						
 				    while = {
 				    	count = 16
@@ -1344,7 +1350,7 @@ country_event = { #Chaos
 					#	}
 					#}
 					while = {
-						count = 2
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_arcology_arms_industry
 						}
@@ -1363,20 +1369,18 @@ country_event = { #Chaos
 					#}
 				    add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
-				    add_building = building_precinct_house
-				    #add_building = building_precinct_house					
+				    add_building = building_precinct_house					
 				    add_building = building_foundry_1
 				    add_building = building_factory_1
 					add_building = building_fortress
 					add_building = building_dread_encampment		
 					add_building = building_planetary_shield_generator #building_research_lab_2
-					add_building = building_necrophage_elevation_chamber
-					#add_building = building_ministry_production
+					#add_building = building_necrophage_elevation_chamber
 					#add_building = building_autochthon_monument
-					#add_building = building_chemical_plant
-					#add_building = building_archaeo_refinery  					
+					add_building = building_chemical_plant 	
+					add_building = building_ministry_production					
 				    while = {
-				    	count = 42
+				    	count = 48
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1667,6 +1671,17 @@ country_event = { #Eldar
 					# graphical_culture = ROOT
 				# }
 			# }
+			if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    create_mining_station = {
+				    	owner = ROOT
+		    	    }
+					create_research_station = {
+				    	owner = ROOT
+		    	    }
+				}
 			#*-/ колонизация \-*#
 			every_system_planet = {
 			    if = {
@@ -2933,6 +2948,10 @@ country_event = { #Orc
 		owner = {
 			country_event = { id = WrWrld_game_start.102 days = 1 }
 		}
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 12500 }
+		add_resource = { food = 12500 }
+		add_resource = { alloys = 12500	}
 		hidden_effect = { 
 			#Соц наука
 			#give_technology = { tech = tech_industrial_farming } #
@@ -3215,6 +3234,10 @@ country_event = { #Genestealer - Коринис
 		owner = {
 			country_event = { id = WrWrld_game_start.103 days = 1 }
 		}
+		add_resource = { energy = 20000	}
+		add_resource = { minerals = 12500 }
+		add_resource = { food = 12500 }
+		add_resource = { alloys = 12500	}
 		hidden_effect = { 
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
