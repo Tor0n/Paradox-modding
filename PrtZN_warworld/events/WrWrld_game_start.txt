@@ -1189,7 +1189,7 @@ country_event = { #Chaos
 				    add_building = building_capital 
 				    add_building = building_precinct_house					
 				    #add_building = building_planetary_shield_generator 
-					#add_building = building_fortress	
+					add_building = building_fortress	
 					add_building = building_dread_encampment					
 				    add_building = building_factory_1	
 					add_building = building_foundry_1
@@ -1197,13 +1197,13 @@ country_event = { #Chaos
 					add_building = building_temple #building_holotemple	
 					add_building = building_energy_grid					
 				    while = {
-				    	count = 34
+				    	count = 39
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 1
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
 						}
@@ -1215,7 +1215,7 @@ country_event = { #Chaos
 						}
 					}
 					while = {
-						count = 2
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_mining
 						}
@@ -1244,7 +1244,7 @@ country_event = { #Chaos
 				    add_building = building_capital 
 				    add_building = building_precinct_house					
 				    #add_building = building_planetary_shield_generator 
-					#add_building = building_fortress  
+					add_building = building_stronghold  
 					#add_building = building_dread_encampment					
 					#add_building = building_necrophage_elevation_chamber
 					#add_building = building_temple	
@@ -2403,7 +2403,10 @@ country_event = { #Tau
 		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
 		#establish_communications_no_message = event_target:Aldari_evnt_trgt_country
 		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		add_resource = { alloys = 7000	}
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 12500 }
+		add_resource = { food = 12500 }
+		add_resource = { alloys = 12000	}
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -2652,19 +2655,19 @@ country_event = { #Tau
 					add_building = building_fortress
 					add_building = building_commercial_zone					
 				    while = {
-				    	count = 25
+				    	count = 29
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 1
+						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
 						}
 					}
 					while = {
-						count = 2
+						count = 3
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_mining
 						}
@@ -2909,7 +2912,7 @@ country_event = { #Tau
 						}
 					}
 					while = {
-						count = 10
+						count = 14
 						create_pop = {species = owner_main_species}
 					}
 					#add_building = building_system_capital
@@ -3176,7 +3179,7 @@ country_event = { #Orc
 				    add_building = building_toxic_bath_hive 
 				    add_building = building_hive_warren                #building_hive_node
 				    add_building = building_sentinel_posts
-				    add_building = building_stronghold
+				    add_building = building_fortress
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
@@ -6279,7 +6282,7 @@ country_event = { #Nephrekh
 				    add_building = building_sentinel_posts
 					add_building = building_energy_nexus
 					while = {
-						count = 3
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
@@ -6316,7 +6319,7 @@ country_event = { #Nephrekh
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
-				    	count = 61
+				    	count = 36
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -7696,6 +7699,51 @@ country_event = { #Genestealer
 		#	#name = <optional war name>
 		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		#}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Oryskar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Kardenat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Nigilah_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Mefrit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sarkoni_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 	}
 }
 country_event = { #Commorragh
@@ -7931,6 +7979,11 @@ country_event = { #Nigilah
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 	}
 }
 country_event = { #Kardenat
@@ -7969,6 +8022,16 @@ country_event = { #Kardenat
 		}
 		declare_war = {
 			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Oryskar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}

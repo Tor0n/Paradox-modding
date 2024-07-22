@@ -1660,13 +1660,13 @@ Oliel_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Aldari_gos wormhole }
+	flags = { Aldari_gos }
 
 	max_instances = 1
-	init_effect = { 
-		save_global_event_target_as = wormhole_2
-		spawn_natural_wormhole = { bypass_type = wormhole }
-	}
+	#init_effect = { 
+	#	save_global_event_target_as = wormhole_2
+	#	spawn_natural_wormhole = { bypass_type = wormhole }
+	#}
 
 	planet = {
 		class = star

@@ -2,7 +2,7 @@
 Pranagar_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -34,7 +34,7 @@ Pranagar_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_arctic"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -51,6 +51,11 @@ Pranagar_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -91,7 +96,7 @@ Pranagar_initializer = {
 Grisgrease_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -123,7 +128,7 @@ Grisgrease_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_tundra"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -141,6 +146,11 @@ Grisgrease_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -181,7 +191,7 @@ Grisgrease_initializer = {
 Syban_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -213,7 +223,7 @@ Syban_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_desert"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -231,6 +241,11 @@ Syban_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -271,7 +286,7 @@ Syban_initializer = {
 Sanctia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -303,7 +318,7 @@ Sanctia_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -321,6 +336,11 @@ Sanctia_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -361,7 +381,7 @@ Sanctia_initializer = {
 Crystallax_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -393,7 +413,7 @@ Crystallax_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_alpine"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -411,6 +431,11 @@ Crystallax_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -451,7 +476,7 @@ Crystallax_initializer = {
 Kantakkha_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -483,7 +508,7 @@ Kantakkha_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_arid"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -501,6 +526,11 @@ Kantakkha_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -541,7 +571,7 @@ Kantakkha_initializer = {
 Sabatine_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -591,6 +621,11 @@ Sabatine_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -631,7 +666,7 @@ Sabatine_initializer = {
 Sherilax_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -663,7 +698,7 @@ Sherilax_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_tundra"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -681,6 +716,11 @@ Sherilax_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -721,7 +761,7 @@ Sherilax_initializer = {
 Ghonis_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -753,7 +793,7 @@ Ghonis_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_ocean"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -771,6 +811,11 @@ Ghonis_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -811,7 +856,7 @@ Ghonis_initializer = {
 Sortiarius_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -843,7 +888,7 @@ Sortiarius_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_desert"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -861,6 +906,11 @@ Sortiarius_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -901,7 +951,7 @@ Sortiarius_initializer = {
 Garagos_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -951,6 +1001,11 @@ Garagos_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -991,7 +1046,7 @@ Garagos_initializer = {
 Thranix_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1023,7 +1078,7 @@ Thranix_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_savannah"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1041,6 +1096,11 @@ Thranix_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -1081,7 +1141,7 @@ Thranix_initializer = {
 Nepthys_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1113,7 +1173,7 @@ Nepthys_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_tropical"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1131,6 +1191,11 @@ Nepthys_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -1171,7 +1236,7 @@ Nepthys_initializer = {
 Drathonis_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1203,7 +1268,7 @@ Drathonis_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_tundra"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1221,6 +1286,11 @@ Drathonis_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -1261,7 +1331,7 @@ Drathonis_initializer = {
 Exotia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1293,7 +1363,7 @@ Exotia_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_tropical"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1311,6 +1381,11 @@ Exotia_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -1351,7 +1426,7 @@ Exotia_initializer = {
 Gladius_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1401,6 +1476,11 @@ Gladius_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
@@ -1441,367 +1521,7 @@ Gladius_initializer = {
 Ruin_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Chaos_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_continental"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_demon_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_shrouded"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Mortarius_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Chaos_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_continental"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_demon_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_shrouded"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Khardoom_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Chaos_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_continental"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_demon_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_shrouded"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Aggaros_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Chaos_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_continental"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_demon_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_shrouded"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Sicarus_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1851,6 +1571,391 @@ Sicarus_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Mortarius_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Chaos_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_demon_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Khardoom_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Chaos_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_alpine"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_demon_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Aggaros_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Chaos_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_arctic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_demon_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Sicarus_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Chaos_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_relic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_demon_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
 		}
 	}
 
