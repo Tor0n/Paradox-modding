@@ -10,7 +10,7 @@ Terror_Eye_initializer = {
 
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 
 	planet = {
@@ -43,8 +43,8 @@ Terror_Eye_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 18 max = 25 }
 		has_ring = no
-
 		home_planet = no
+		flags = { ignore_startup_effect }
 		init_effect = {
 			clear_deposits = yes
 			prevent_anomaly = yes
@@ -59,8 +59,8 @@ Terror_Eye_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = yes
-
 		home_planet = no
+		flags = { ignore_startup_effect }
 		init_effect = {
 			clear_deposits = yes
 			prevent_anomaly = yes
@@ -76,14 +76,10 @@ Terror_Eye_initializer = {
 		size = 35
 		has_ring = no
 		starting_planet = yes
-		
+		flags = { ignore_startup_effect }
 		init_effect = {
+			clear_deposits = yes
 			prevent_anomaly = yes
-			add_deposit = d_zro_deposit_5
-			add_deposit = d_zro_deposit_5
-			add_deposit = d_zro_deposit_5
-			add_deposit = d_zro_deposit_5
-			add_deposit = d_zro_deposit_5
 			
 			add_deposit = d_natural_farmland
 			add_deposit = d_lichen_fields #лишайниковые поля 1
@@ -126,6 +122,7 @@ Terror_Eye_initializer = {
 			class = "pc_shrouded"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
+			flags = { ignore_startup_effect }
 			init_effect = {
 			    clear_deposits = yes
 			    prevent_anomaly = yes
@@ -142,6 +139,7 @@ Terror_Eye_initializer = {
 		size = { min = 15 max = 30 }
 		has_ring = no
 		home_planet = no
+		flags = { ignore_startup_effect }
 		init_effect = {
 			clear_deposits = yes
 			prevent_anomaly = yes
@@ -156,9 +154,8 @@ Terror_Eye_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = yes
-
 		home_planet = no
-		
+		flags = { ignore_startup_effect }
 		init_effect = {
 			set_planet_flag = shroudwalker_enclave_planet
 			save_event_target_as = shroudwalker_enclave_planet
