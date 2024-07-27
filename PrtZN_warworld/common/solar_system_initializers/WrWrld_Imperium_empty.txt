@@ -1670,18 +1670,15 @@ Zephyr_initializer = {
 }
 Necris_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
 	flags = { Imperium_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Necris
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star
@@ -5735,18 +5732,15 @@ Synford_initializer = {
 }
 Daeconc_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
 	flags = { Imperium_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Daeconc
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star
@@ -7505,18 +7499,15 @@ Phargos_initializer = {
 }
 Preyspire_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
 	flags = { Imperium_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Preyspire
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star

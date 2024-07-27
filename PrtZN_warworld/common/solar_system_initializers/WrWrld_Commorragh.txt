@@ -7,6 +7,7 @@ Commorragh_initializer = {
 	max_instances = 1
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Commorragh
 	}
 	
 	planet = {
@@ -43,7 +44,6 @@ Commorragh_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			#save_global_event_target_as = wormhole_1
 		}
 		
 		home_planet = yes
@@ -87,13 +87,10 @@ Sorrow_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Sorrow
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
-	flags = { Chaos_gos }
+	flags = { Commorragh }
 
 	max_instances = 1
 	init_effect = { }
@@ -139,7 +136,6 @@ Sorrow_initializer = {
 		home_planet = no
 		init_effect = {
 			prevent_anomaly = yes
-			save_global_event_target_as = wormhole_1
 		}
 	}
 
@@ -181,13 +177,10 @@ Zero_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Zero
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
-	flags = { Chaos_gos }
+	flags = { Commorragh }
 
 	max_instances = 1
 	init_effect = { }
@@ -271,13 +264,10 @@ Elindrhakh_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Elindrhakh
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
-	flags = { Chaos_gos }
+	flags = { Commorragh }
 
 	max_instances = 1
 	init_effect = { }
@@ -361,13 +351,10 @@ Adversity_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Adversity
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
-	flags = { Chaos_gos }
+	flags = { Commorragh }
 
 	max_instances = 1
 	init_effect = { }
@@ -451,13 +438,10 @@ Woe_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Woe
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
-	flags = { Chaos_gos }
+	flags = { Commorragh }
 
 	max_instances = 1
 	init_effect = { }
@@ -541,13 +525,10 @@ Pain_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Pain
 	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
 	
-	flags = { Chaos_gos }
+	flags = { Commorragh }
 
 	max_instances = 1
 	init_effect = { }

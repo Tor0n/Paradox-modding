@@ -274,6 +274,8 @@ Daxos_Gemini_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Daxos_Gemini
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt

@@ -2110,11 +2110,6 @@ country_event = { #Aldari
 					}
 				}
 			}
-			# if = {
-				# limit = { has_star_flag = wormhole }
-				# #save_global_event_target_as = wormhole_2
-				# #spawn_natural_wormhole = { bypass_type = wormhole }
-			# }
 		}
 	}
 }
@@ -2340,14 +2335,19 @@ country_event = { #Commorragh
 		
 		every_system = {
 			limit = { has_star_flag = Commorragh }
-			# create_starbase = {
-				# owner = ROOT
-				# size = starbase_outpost
-			# }
+			if = {
+				limit = {
+					has_star_flag = Commorragh
+				}
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
 			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
 				    limit = {
-			            is_colonizable = no		
+			            is_colonizable = no
 			        }
 				    create_mining_station = {
 				    	owner = ROOT
@@ -2403,7 +2403,6 @@ country_event = { #Commorragh
 					}
 				}
 			}
-			#save_global_event_target_as = wormhole_1
 			spawn_natural_wormhole = { bypass_type = wormhole }
 			
 		}
