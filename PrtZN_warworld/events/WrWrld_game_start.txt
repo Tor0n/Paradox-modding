@@ -602,7 +602,7 @@ country_event = { #Imperium
 					#add_building = building_archaeo_refinery  	
 					add_building = building_energy_nexus					
 				    while = {
-				    	count = 40
+				    	count = 42
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -620,7 +620,7 @@ country_event = { #Imperium
 						}
 					}
 					while = {
-						count = 3
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
@@ -3664,7 +3664,7 @@ country_event = { #Tokt
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		#add_resource = { food = 14000 }
-		add_resource = { alloys = 14000	}
+		add_resource = { alloys = 10000	}
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -4016,7 +4016,7 @@ country_event = { #Agdagat
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 11000 }
 		#add_resource = { food = 11000 }
-		add_resource = { alloys = 11000	}
+		add_resource = { alloys = 10000	}
 		add_resource = { volatile_motes = 800 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
