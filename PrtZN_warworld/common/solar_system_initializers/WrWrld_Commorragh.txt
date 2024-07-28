@@ -19,13 +19,13 @@ Commorragh_initializer = {
 	}
 	
     planet = {
-		class = "pc_molten"
+		class = "pc_relic"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 18 max = 25 }
 		has_ring = no
-
+        flags = { Commorragh_world }
 		home_planet = no
 	}
 	
@@ -50,24 +50,24 @@ Commorragh_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren"
+		class = "pc_relic"
 
 		orbit_distance = 28
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
-		has_ring = no
-
+		has_ring = yes
+        flags = { Commorragh_world }
 		home_planet = no
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_relic"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 30 }
 		has_ring = no
-
+        flags = { Commorragh_world }
 		home_planet = no
 	}
 
@@ -351,10 +351,10 @@ Adversity_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Adversity
+		#save_global_event_target_as = wormhole_Adversity
 	}
 	
-	flags = { Commorragh }
+	flags = { Commorragh_portal }
 
 	max_instances = 1
 	init_effect = { }

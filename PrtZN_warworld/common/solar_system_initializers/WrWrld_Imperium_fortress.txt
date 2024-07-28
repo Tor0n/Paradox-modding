@@ -955,21 +955,21 @@ Prescience_initializer = {
 		#} 
 	}
 
-	planet = {
-		class = "pc_habitat"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = 6
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Fortress_station }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-	}
+	#planet = {
+	#	class = "pc_habitat"
+#
+	#	orbit_distance = 45
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = 6
+	#	has_ring = no
+	#	change_orbit = 4
+	#	
+	#	flags = { Imperium_Fortress_station }
+	#	
+	#	init_effect = {
+	#		prevent_anomaly = yes
+	#	} 
+	#}
 
 	planet = {
 		class = "pc_barren"
@@ -1046,21 +1046,21 @@ Talon_Aegis_initializer = {
 		#} 
 	}
 
-	planet = {
-		class = "pc_habitat"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = 6
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Fortress_station }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-	}
+	#planet = {
+	#	class = "pc_habitat"
+#
+	#	orbit_distance = 45
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = 6
+	#	has_ring = no
+	#	change_orbit = 4
+	#	
+	#	flags = { Imperium_Fortress_station }
+	#	
+	#	init_effect = {
+	#		prevent_anomaly = yes
+	#	} 
+	#}
 
 	planet = {
 		class = "pc_barren"
