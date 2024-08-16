@@ -17,7 +17,7 @@ Imperium = {
 		plural = "PRESCRIPTED_species_plural_humans1"
 		adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
-		trait = "trait_perfected_genes"
+		# trait = "trait_perfected_genes"
 		trait = "trait_extremely_adaptive"
 		trait = "trait_unruly"
 		trait = "trait_deviants"
@@ -35,7 +35,8 @@ Imperium = {
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_fanatic_xenophobe"
 	
-	origin = "origin_legendary_leader"
+	# origin = "origin_legendary_leader"
+	oriin = "origin_imperium"
 	flags={ Imperium_start Imperium_gos }
 	
 	planet_name = "Терра"
@@ -132,7 +133,8 @@ Land_Chaos = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	origin = "origin_necrophage"
+	# origin = "origin_necrophage"
+	origin = "origin_chaos"
 	flags = { Chaos_start Chaos_gos }
 	
 	planet_name = "Тхилтх"
@@ -189,7 +191,7 @@ Eldar_Empire = {
 		plural = "Эльдары"
 		adjective = "Эльдарск"
 		name_list = "HUM1"
-		trait = "trait_void_dweller_1"
+		# trait = "trait_void_dweller_1"
 		trait = "trait_intelligent"
 		trait = "trait_nonadaptive"
 		trait = "trait_talented"
@@ -212,7 +214,8 @@ Eldar_Empire = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_spiritualist"
 	
-	origin = "origin_void_dwellers"
+	# origin = "origin_void_dwellers"
+	origin = "origin_eldar"
 	flags={ Eldar_start Eldar_gos class_4_singularity_can_build }
 	#class_4_singularity_can_build для здания на 250 энергии
 	planet_name = "Зандрос"
@@ -292,7 +295,8 @@ Worlds_Aldari = {
 	ethic = "ethic_pacifist"
 	ethic = "ethic_spiritualist"
 	
-	origin = "origin_default"
+	#origin = "origin_default"
+	origin = "origin_aldari"
 	flags = { Aldari_start Aldari_gos }
 	
 	planet_name = "Тиратхейн"
@@ -369,7 +373,8 @@ Commorragh = {
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_militarist"
 	
-	origin = "origin_remnants"
+	#origin = "origin_remnants"
+	origin = "origin_commorragh"
 	flags = { Commorragh_start Commorragh_gos }
 	
 	planet_name = "Коморра"
@@ -442,7 +447,8 @@ Tau_Federation = {
 	ethic = "ethic_xenophile"
 	ethic = "ethic_materialist"
 	
-	origin = "origin_default"
+	#origin = "origin_default"
+	origin = "origin_greatergood"
 	flags = { Tau_start Tau_gos }
 	
 	planet_name = "Т'ау"
@@ -519,7 +525,8 @@ Ork_territory = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_ork"
 	flags = { Orc_start Orc_gos }
 	
 	planet_name= "Барак"
@@ -592,7 +599,8 @@ Ownerships_Corinis = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default" #origin_progenitor_hive
+	# origin = "origin_default" #origin_progenitor_hive
+	origin = "origin_Corinis"
 	flags =  { Corinis_start Corinis_gos }
 	
 	planet_name= "Исис"
@@ -664,7 +672,8 @@ Tsardom_Thokt = {
 	
 	ethic="ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Tokt_start Tokt_gos }
 	
 	planet_name = "Мегхошта"
@@ -753,7 +762,8 @@ Tsardom_Agdagath = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Agdagat_start Agdagat_gos }
 	
 	planet_name = "Тур"
@@ -826,7 +836,8 @@ Tsardom_Sautekh = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Sayteh_start Sayteh_gos }
 	
 	planet_name = "Мандрагора"
@@ -898,7 +909,8 @@ Tsardom_Nihilakh = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Nigilah_start Nigilah_gos }
 	
 	planet_name = "Геден"
@@ -969,7 +981,8 @@ Tsardom_Kardenath = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Kardenat_start Kardenat_gos }
 	
 	planet_name = "Нагатхар"
@@ -1041,7 +1054,8 @@ Tsardom_Oruscar = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Oryskar_start Oryskar_gos }
 	
 	planet_name = "Танатос"
@@ -1112,7 +1126,8 @@ Tsardom_Mephrit = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Mefrit_start Mefrit_gos }
 	
 	planet_name = "Пердита"
@@ -1185,7 +1200,8 @@ Tsardom_Nephrekh = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Nefrekh_start Nephrekh_gos }
 	
 	planet_name = "Моебиус"
@@ -1258,7 +1274,8 @@ Empire_Sarkoni = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	origin = "origin_default"
+	# origin = "origin_default"
+	origin = "origin_necron"
 	flags = { Sarkoni_start Sarkoni_gos }
 	
 	planet_name = "Саркон"

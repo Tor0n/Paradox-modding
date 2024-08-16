@@ -1,0 +1,335 @@
+# Imperium
+origin_imperium = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { Imp_origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+# Land_Chaos
+origin_chaos = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { Chaos_origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	traits = { trait = trait_necrophage }
+	
+	has_secondary_species = {
+		title = civic_necrophage_secondary_species
+		# traits = { trait = trait_xxx trait = trait_yyy }
+	}
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_eldar = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_void_dwellers.dds"
+	picture = GFX_origin_void_dwellers
+	
+	starting_colony = pc_habitat
+	habitability_preference = pc_habitat
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	modifier = {
+		megastructures_habitat_cost_mult = -0.25
+		habitat_districts_building_slots_add = 0.25
+		habitat_max_districts_add = 2
+		habitat_district_jobs_add = 1
+	}
+
+	description = ""
+	
+	#traits = { trait = trait_void_dweller_1 }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_aldari = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	#traits = {  }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_commorragh = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	starting_colony = pc_relic
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	#traits = {  }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+# Tau
+origin_greatergood = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_greatergood.dds"
+	picture = GFX_evt_greatergood
+	# max_once_global = yes
+	playable = { has_utopia = yes }
+	possible = {
+		# value = auth_tau # WH40K
+		ethics = {
+			OR = {
+				value = ethic_fanatic_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+			OR = {
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+		}
+	}
+	starting_colony = pc_gaia
+	habitability_preference = pc_tropical
+	preferred_planet_class_neighbor = no
+	modifier = {
+		# pop_amenities_usage_mult = -0.1
+		# planet_pops_consumer_goods_upkeep_mult = -0.1
+		# colony_start_num_pops_add = -1
+		country_leader_pool_size = -1
+		country_subject_technology_sharing_mult = 0.75
+		external_leader_pool_add = 1
+		force_disparity_fire_rate_mult = 0.5
+		country_produces_mult = 0.1
+		country_unity_produces_mult = 0.1
+		# pop_factions_produces_mult = 0.1
+		diplo_weight_mult = 0.25
+		diplomacy_upkeep_mult = -1
+		pop_happiness = 0.1 # Compare broken_shackles_war_03
+		pop_government_ethic_attraction = 0.25
+		country_border_friction_mult = -1
+		monthly_trades_energy_produces_add = 1
+		trade_value_mult = 0.02
+		country_trade_fee = -0.01
+		country_trade_attractiveness = 1
+	}
+	# traits = { trait = trait_tau } TODO
+	# has_secondary_species = {
+		# title = civic_syncretic_evolution_secondary_species
+		# traits = {
+			# # trait = trait_syncretic_proles
+			# #trait = trait_unruly
+		# }
+	# }
+	#description = "origin_tooltip_greatergood_effects"
+	description = ""
+	flags = { "custom_start_screen" "humanoid" "tau_empire" }
+	advanced_start = no
+	random_weight = { base = 0.5 }
+}
+origin_ork = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	#traits = {  }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_corinis = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	#traits = {  }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+# Некроны
+origin_necron = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	#traits = {  }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+# Шаблон, этот копируй и дописывай
+origin_ = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	#traits = {  }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
