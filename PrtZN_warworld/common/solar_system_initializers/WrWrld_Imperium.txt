@@ -3,14 +3,7 @@ Terra_initializer = {
 	class = "sc_g"
 	flags = { empire_home_system Imperium_gos }
 	usage = custom_empire
-	#flags = { Imperium_gos }
 	init_effect = {
-		#every_neighbor_system = {
-		#	#set_star_flag = empire_cluster
-		#	#every_neighbor_system = {
-		#	#	set_star_flag = empire_cluster
-		#	#}
-		#}
 		generate_home_system_resources = yes
 	}
 	
@@ -80,22 +73,7 @@ Terra_initializer = {
 		flags = { Imperium_Terra_world }
 
 		init_effect = {
-			#save_global_event_target_as = sol_system_earth
-
 			prevent_anomaly = yes
-			#remove_all_districts = yes
-			#remove_all_buildings = yes
-			#change_pc = pc_city
-			#generate_start_deposits_and_blockers = no
-			#clear_blockers = yes
-			#generate_start_buildings_and_districts = no
-			
-			#add_building = building_stronghold
-			#add_building = building_system_capital
-			#add_building = building_military_academy
-			#add_building = building_stronghold
-			#add_building = building_planetary_shield_generator
-			#add_building = building_hall_judgment
 		}
 
 		moon = {
@@ -117,20 +95,11 @@ Terra_initializer = {
 		orbit_angle = 60
 		size = 16 #13
 		has_ring = no
-		flags = { Imperium_Forge_Ecumenopolis }
+		flags = { Imperium_Forge_Ecumenopolis Mars }
 
 		init_effect = {
 			prevent_anomaly = yes
 		}
-		
-		#moon = {
-		#	name = "Deimos"
-		#	class = "pc_arctic"
-		#	size = 7
-		#	orbit_distance = 12
-		#	orbit_angle = -85
-		#	has_ring = no
-		#}
 	}
 
 	planet = {
