@@ -1,0 +1,187 @@
+﻿l_russian:
+ #Specialist level up
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_agrarian_TITLE: "Новый уровень специалиста-агрария"
+ MESSAGE_WE_LEVEL_UP_specialist_agrarian_TITLE: "Аграрий $MESSAGE_WE_LEVEL_UP_TITLE$"
+ ESSAGE_SUBJECT_LEVEL_UP_specialist_extractorium_TITLE: "Новый уровень специалиста-экстракториума"
+ MESSAGE_WE_LEVEL_UP_specialist_extractorium_TITLE: "Экстракториум $MESSAGE_WE_LEVEL_UP_TITLE$"
+ #Specialist modifiers
+ specialist_bulwark_overlord_modifier: "Советы бастиона"
+ specialist_bulwark_overlord_modifier_desc: "§LСоветники из наших бастионов помогают нам в укреплении собственной обороны.§!"
+ #Specialist Leader Traits
+ leader_trait_agrarian_agronome: "Агроном агрария"
+ leader_trait_agrarian_agronome_desc: ""
+ leader_trait_agrarian_planter: "Плантатор агрария"
+ leader_trait_agrarian_planter_desc: ""
+ #Custom tooltips for traits.
+ leader_trait_agrarian_agronome_tooltip: "$t$§L$leader_trait_agrarian_agronome$§!\n$tt$$mod_planet_jobs_food_produces_mult$: §G+20%§!\n$tt$$mod_planet_jobs_energy_produces_mult$: §G+5%§!\n$tt$$mod_planet_jobs_minerals_produces_mult$: §G+5%§!"
+ leader_trait_agrarian_planter_tooltip: "$t$§L$leader_trait_agrarian_planter$§!\n$tt$$mod_planet_farmers_consumer_goods_produces_add$: §G+0.5§!\n$tt$$mod_planet_farmers_energy_produces_add$: §G+1§!"
+ #Specialist types
+ specialist_agrarian: "Аграрий"
+ specialist_agrarian_desc: "Подданный сосредоточится на выращивании пищи в ущерб науке и промышленности."
+ specialist_agrarian_summary: "$text_icon_preset_agrarian$ Аграрии специализируются на выращивании пищи в ущерб науке и промышленности."
+ specialist_extractorium: "Экстракториум"
+ specialist_extractorium_desc: "Подданный сосредоточится на добыче минералов и выработке энергии в ущерб науке, что создают слабую неконкурентоспособную промышленность."
+ specialist_extractorium_summary: "$text_icon_preset_extractorium$ Экстракториумы специализируются на добыче минералов и выработке энергии в ущерб науке и промышленности."
+ specialist_state_corporation: "Госкорпорация"
+ specialist_state_corporation_desc: "Подконтрольная корпорация, чья задача развитие торговли на территории страны и извлечение энергокредитов за ее пределами."
+ specialist_state_corporation_summary: "$text_icon_preset_state_corporation$ Госкорпорации специализируются на торговле и располагаются, как правило, на небольшой территории."
+ specialist_industrialist: "Индустриалист"
+ specialist_industrialist_desc: "Подданный сосредоточится на производстве сплавов и товаров массового спроса в ущерб добывающей отрасли."
+ specialist_industrialist_summary: "$text_icon_preset_industrialist$ Индустриалисты специализируются на производстве сплавов и товаров массового спроса в ущерб добывающей отрасли."
+ specialist_space_marines: "Космодесант"
+ specialist_space_marines_desc: "Подданный сосредоточится на нападении в ущерб производству ресурсов."
+ specialist_space_marines_summary: "$text_icon_preset_space_marines$ Космодесанты специализируются на нападении в ущерб производству ресурсов."
+ specialist_holy_order: "Священный Орден"
+ specialist_holy_order_desc: "Подконтрольный священный орден, чья задача помощь в войне с еретиками и охрана паломников."
+ specialist_holy_order_summary: "$text_icon_preset_holy_orderr$ Священные ордена специализируются на нападении и священном едистве."
+ specialist_inquisition: "Инквизиция"
+ specialist_inquisition_desc: "Подконтрольная инквизиция станет надежной твердыней веры и новой святыней."
+ specialist_inquisition_summary: "$text_icon_preset_inquisition$ Инквизиции специализируются на обороне и священном едистве."
+ #Preset names
+ preset_agrarian: "Аграрий"
+ preset_extractorium: "Экстракториум"
+ preset_state_corporation: "Госкорпорация"
+ preset_industrialist: "Индустриалист"
+ preset_space_marines: "Космодесант"
+ preset_holy_order: "Священный Орден"
+ preset_inquisition: "Инквизиция"
+ #Preset AI
+ 
+ #Preset blocked terms
+ not_allowed_for_agrarian: "$TRIGGER_FAIL$Недоступно для §Yаграриев§!."
+ not_allowed_for_extractorium: "$TRIGGER_FAIL$Недоступно для §Yэкстракториумов§!."
+ not_allowed_for_state_corporation: "$TRIGGER_FAIL$Недоступно для §Yгоскорпораций§!."
+ not_allowed_for_industrialist: "$TRIGGER_FAIL$Недоступно для §Yиндустриалистов§!."
+ not_allowed_for_space_marines: "$TRIGGER_FAIL$Недоступно для §Yкосмодесантников§!."
+ not_allowed_for_holy_order: "$TRIGGER_FAIL$Недоступно для §Yсвященных орденов§!."
+ not_allowed_for_inquisition: "$TRIGGER_FAIL$Недоступно для §Yинквизиций§!."
+ #Preset text icons
+ text_icon_preset_agrarian: "£agrarian£"
+ text_icon_preset_extractorium: "£extractorium£"
+ text_icon_preset_state_corporation: "£state_corporation£"
+ text_icon_preset_industrialist: "£industrialist£"
+ text_icon_preset_space_marines: "£space_marines£"
+ text_icon_preset_holy_order: "£holy_orderr£"
+ text_icon_preset_inquisition: "£inquisition£"
+ #Holdings
+ 
+ #Deposits
+ 
+ #Neighbor planet modifiers
+ specialist_agrarian_neighbor: "Поставки агрария"
+ specialist_agrarian_neighbor_desc: "Близость богатого пищевыми ресурсами агрария снабжает планету едой на любой вкус."
+ specialist_extractorium_neighbor: "Поставки экстракториума"
+ specialist_extractorium_neighbor_desc: "Близость богатого рудой и энергоресурсами экстракториума стимулирует промышленность планеты."
+ 
+ #Modifiers
+ 
+ #Auras
+
+ #Resource subsidies groups
+ 
+ #Decisions
+ 
+ #Trade Actions
+ 
+ 
+ 
+ #Specialist Perks
+ agrarian_1_modifier: "Бонусы агрария I"
+ agrarian_1_penalties: "Штрафы агрария I"
+ agrarian_1_farming_tech: "Фермерские технологии агрария I"
+ agrarian_1_farming_tech_desc: "§EПолучена технология:§!\n$t$£society£ $tech_eco_simulation$\n§EДоступно для изучения: §!\n$t$£society£ $tech_hydroponics$\n$t$£society£ $tech_food_processing_1$"
+ agrarian_1_overlord_modifier: "Советы агрария"
+ agrarian_1_neighbor_bonuses: "$specialist_agrarian_neighbor$"
+ agrarian_1_neighbor_bonuses_desc: "$bulwark_1_neighbor_bonuses_desc$"
+ agrarian_2_modifier: "Бонусы агрария II"
+ agrarian_2_penalties: "Штрафы агрария II"
+ agrarian_2_farming_tech: "Фермерские технологии агрария II"
+ agrarian_2_farming_tech_desc: "§EПолучена технология:§!\n$t$£society£ $tech_gene_crops$\n§EДоступно для изучения: §!\n$t$£society£ $tech_nano_vitality_crops$\n$t$£society£ $tech_food_processing_2$"
+ agrarian_2_leaders: "Чиновники агрария"Получена технология:
+ agrarian_2_leaders_desc: "§EПередать лидера:§!\n$t$$official_plural_with_icon$ с чертой агрария могут быть переданы сюзерену."
+ agrarian_2_traits: "Черты агрария"
+ agrarian_2_traits_desc: "§E$official_plural_with_icon$ получают одну случайную черту:§!\n$leader_trait_agrarian_agronome_tooltip$\n$leader_trait_agrarian_planter_tooltip$"
+ agrarian_3_modifier: "Бонусы агрария III"
+ agrarian_3_penalties: "Штрафы агрария III"
+ agrarian_3_farming_tech: "Фермерские технологии агрария III"
+ agrarian_3_consumer_goods_industry: "Потребительская индустрия агрария I"
+ extractorium_1_modifier: "Бонусы экстракториума I"
+ extractorium_1_penalties: "Штрафы экстракториума I"
+ extractorium_1_overlord_modifier: "Советы экстракториума"
+ extractorium_1_neighbor_bonuses: "$specialist_extractorium_neighbor$"
+ extractorium_1_neighbor_bonuses_desc: "$bulwark_1_neighbor_bonuses_desc$"
+ extractorium_2_modifier: "Бонусы экстракториума II"
+ extractorium_2_penalties: "Штрафы экстракториума II"
+ extractorium_2_neighbor_bonuses: "$specialist_extractorium_neighbor$"
+ extractorium_2_neighbor_bonuses_desc: "$bulwark_1_neighbor_bonuses_desc$"
+ extractorium_3_modifier: "Бонусы экстракториума III"
+ extractorium_3_penalties: "Штрафы экстракториума III"
+ extractorium_3_neighbor_bonuses: "$specialist_extractorium_neighbor$"
+ extractorium_3_neighbor_bonuses_desc: "$bulwark_1_neighbor_bonuses_desc$"
+ state_corporation_1_modifier: "Бонусы госкорпорации I"
+ state_corporation_1_penalties: "Штрафы госкорпорации I"
+ state_corporation_2_modifier: "Бонусы госкорпорации II"
+ state_corporation_2_penalties: "Штрафы госкорпорации II"
+ state_corporation_3_modifier: "Бонусы госкорпорации III"
+ state_corporation_3_penalties: "Штрафы госкорпорации III"
+ industrialist_1_modifier: "Бонусы индустриалиста I"
+ industrialist_1_penalties: "Штрафы индустриалиста I"
+ industrialist_2_modifier: "Бонусы индустриалиста II"
+ industrialist_2_penalties: "Штрафы индустриалиста II"
+ industrialist_3_modifier: "Бонусы индустриалиста III"
+ industrialist_3_penalties: "Штрафы индустриалиста III"
+ space_marines_1_modifier: "Бонусы космодесанта I"
+ space_marines_1_penalties: "Штрафы космодесанта I"
+ space_marines_2_modifier: "Бонусы космодесанта II"
+ space_marines_2_penalties: "Штрафы космодесанта II"
+ space_marines_3_modifier: "Бонусы космодесанта III"
+ space_marines_3_penalties: "Штрафы космодесанта III"
+ holy_order_1_modifier: "Бонусы священного ордена I"
+ holy_order_1_penalties: "Штрафы священного ордена I"
+ holy_order_2_modifier: "Бонусы священного ордена II"
+ holy_order_2_penalties: "Штрафы священного ордена II"
+ holy_order_3_modifier: "Бонусы священного ордена III"
+ holy_order_3_penalties: "Штрафы священного ордена III"
+ inquisition_1_modifier: "Бонусы инквизиции I"
+ inquisition_1_penalties: "Штрафы инквизиции I"
+ inquisition_2_modifier: "Бонусы инквизиции II"
+ inquisition_2_penalties: "Штрафы инквизиции II"
+ inquisition_3_modifier: "Бонусы инквизиции III"
+ inquisition_3_penalties: "Штрафы инквизиции III"
+ 
+ #Subject presets descriptions
+ preset_agrarian_desc: "Аграрий — это подданный-специалист, пожертвовавший наукой и промышленностью ради выращивания пищи."
+ preset_extractorium_desc: "Экстракториум — это подданный-специалист, пожертвовавший наукой и промышленностью ради добычи ископаемых и выработки энергии."
+ preset_state_corporation_desc: "Госкорпорация — это подданный-специалист, представляющий собой подконтрольную корпорацию."
+ preset_industrialist_desc: "Индустриалист — это подданный-специалист, занимающийся производством промышленных ресурсов в ущерб добывающей отрасли."
+ preset_space_marines_desc: "Космодесант — это подданный-специалист, сконцентрированный на военном деле в ущерб производству базовых ресурсов."
+ preset_holy_order_desc: "Священный Орден — это подданный-специалист, сконцентрированный на вере и ее защите за пределами государства в ущерб производству базовых ресурсов."
+ preset_inquisition_desc: "Инквизиция — это подданный-специалист, сконцентрированный на вере и ее защите в ущерб производству базовых ресурсов."
+ #Subject presets flavor text
+ preset_agrarian_flavor_desc: "Этот подданный специализируется на пище. Деиндустриализация позволяет сосредоточить все усилия и пространство на многочисленных плантациях, полях и пастбищах."
+ preset_extractorium_flavor_desc: "Этот подданный специализируется на минералах и энергии."
+ preset_state_corporation_flavor_desc: "Этот подданный - корпорация, получившая в арену владения территории для продвижения своей деятельности."
+ preset_industrialist_flavor_desc: "Этот подданный специализируется на промышленности."
+ preset_space_marines_flavor_desc: "Этот подданный специализируется на военных вопросах и отлично разбирается в вопросах нападения, предоставляя сюзерену знания и помогая в войнах. Из-за подобной узконаправленности государство сильно зависит от материальной поддержки."
+ preset_holy_order_flavor_desc: "Этот подданный ставит главной целью вопрос распространения веры, помогая в праведных войнах сюзерена. Это относительно самостоятельный экономически подданный, но все же может нуждаться в материальной поддержке."
+ preset_inquisition_flavor_desc: "Этот подданный занимается защитой веры от еретиков и внешний угроз, предоставляя сюзерену знания и защищая его. Это относительно самостоятельный экономически подданный, но все же может нуждаться в материальной поддержке."
+ #Specialist subject fail texts.
+ subject_is_agrarian: "$TRIGGER_FAIL$§RПодданный должен быть аграрием.§!"
+ subject_is_extractorium: "$TRIGGER_FAIL$§RПодданный должен быть экстракториумом.§!"
+ subject_is_state_corporation: "$TRIGGER_FAIL$§RПодданный должен быть госкорпорацией.§!"
+ subject_is_industrialist: "$TRIGGER_FAIL$§RПодданный должен быть индустриалистом.§!"
+ subject_is_space_marines: "$TRIGGER_FAIL$§RПодданный должен быть космодесантом.§!"
+ subject_is_holy_order: "$TRIGGER_FAIL$§RПодданный должен быть священным орденом.§!"
+ subject_is_inquisition: "$TRIGGER_FAIL$§RПодданный должен быть инквизицией.§!"
+ 
+ 
+ ########
+ #Jobs #
+ ########
+ 
+ #Resource subsidies groups
+ resource_subsidies_energy: "Энергетические"
+ resource_subsidies_food: "Пищевые"
+ resource_subsidies_alloys: "Военные"
+ resource_subsidies_unity: "Административные"
+ 

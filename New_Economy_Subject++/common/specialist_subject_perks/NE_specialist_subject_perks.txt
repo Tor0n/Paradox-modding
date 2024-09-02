@@ -1,0 +1,1012 @@
+#######################
+# AGRARIAN SPECIALIST #
+#######################
+
+agrarian_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_food_produces_mult = 0.1
+		pop_cat_ruler_happiness = 0.025
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+agrarian_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = -0.4
+		country_exotic_gases_produces_mult = -0.4
+		country_rare_crystals_produces_mult = -0.4
+		country_volatile_motes_produces_mult = -0.4
+		country_physics_research_produces_mult = -0.3
+		country_society_research_produces_mult = -0.1
+		country_engineering_research_produces_mult = -0.3
+		pop_cat_specialist_happiness = -0.05
+		#description = agrarian_1_penalties_desc
+	}
+}
+
+agrarian_1_farming_tech = {
+	icon = "GFX_specialist_perk_agrarian_1_farming_tech"
+	activate_effect = {
+		target = {
+			if = {
+				limit = { NOT = { has_technology = tech_eco_simulation } }
+				give_technology = {
+					tech = tech_eco_simulation
+					message = yes
+				}
+			}
+			append_technology = { TECH = hydroponics }
+			append_technology = { TECH = food_processing_1 }
+		}
+	}
+	
+	desc = {
+		description = agrarian_1_farming_tech_desc
+	}
+}
+
+agrarian_1_overlord_modifier = {
+	icon = "GFX_specialist_perk_agrarian_1_overlord_modifier"
+	overlord_modifier = {
+		country_food_produces_mult = 0.1
+	}
+}
+
+agrarian_1_neighbor_bonuses = {
+	icon = "GFX_specialist_perk_agrarian_1_neighbor_bonuses"
+
+	overlord_relay_network_modifier = {
+		specialist_agrarian_neighbor = 1
+	}
+
+	desc = { description = agrarian_1_neighbor_bonuses_desc }
+}
+
+agrarian_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_food_produces_mult = 0.2
+		pop_cat_ruler_happiness = 0.05
+	}
+}
+
+agrarian_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = -0.5
+		country_exotic_gases_produces_mult = -0.5
+		country_rare_crystals_produces_mult = -0.5
+		country_volatile_motes_produces_mult = -0.5
+		country_physics_research_produces_mult = -0.4
+		country_society_research_produces_mult = -0.2
+		country_engineering_research_produces_mult = -0.4
+		pop_cat_specialist_happiness = -0.075
+		#description = agrarian_2_penalties_desc
+	}
+}
+
+agrarian_2_farming_tech = {
+	icon = "GFX_specialist_perk_agrarian_2_farming_tech"
+	activate_effect = {
+		target = {
+			if = {
+				limit = { NOT = { has_technology = tech_gene_crops } }
+				give_technology = {
+					tech = tech_gene_crops
+					message = yes
+				}
+			}
+			append_technology = { TECH = nano_vitality_crops }
+			append_technology = { TECH = food_processing_2 }
+		}
+	}
+	
+	desc = {
+		description = agrarian_2_farming_tech_desc
+	}
+}
+
+agrarian_2_leaders = {
+	icon = "GFX_specialist_perk_agrarian_2_leaders"
+	subject_modifier = {
+		country_official_cap_add = 1
+		official_initial_skill = 1
+	}
+
+	activate_effect = {
+		target = {
+			add_specialist_leaders = {
+				TYPE = agrarian
+				CLASS = official
+			}
+		}
+	}
+
+	deactivate_effect = {
+		target = {
+			remove_specialist_leaders = {
+				TYPE = agrarian
+				CLASS = official
+			}
+		}
+	}
+
+	desc = {
+		description = agrarian_2_leaders_desc
+	}
+}
+
+agrarian_2_traits = {
+	icon = "GFX_specialist_perk_agrarian_2_traits"
+	desc = {
+		description = agrarian_2_traits_desc
+	}
+}
+
+agrarian_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_food_produces_mult = 0.3
+		country_energy_produces_mult = 0.1
+		country_minerals_produces_mult = 0.1
+		pop_cat_ruler_happiness = 0.075
+	}
+}
+
+agrarian_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = -0.6
+		country_consumer_goods_produces_mult = -0.1
+		country_exotic_gases_produces_mult = -0.6
+		country_rare_crystals_produces_mult = -0.6
+		country_volatile_motes_produces_mult = -0.6
+		country_physics_research_produces_mult = -0.5
+		country_society_research_produces_mult = -0.2
+		country_engineering_research_produces_mult = -0.5
+		pop_cat_specialist_happiness = -0.1
+	}
+}
+
+agrarian_3_farming_tech = {
+	icon = "GFX_specialist_perk_agrarian_3_farming_tech"
+	activate_effect = {
+		target = {
+			append_technology = { TECH = mine_zro }
+		}
+	}
+}
+
+agrarian_3_consumer_goods_industry = {
+	icon = "GFX_specialist_perk_agrarian_3_consumer_goods_industry"
+	subject_modifier = {
+		planet_artisans_minerals_upkeep_add = -2
+		planet_artisans_food_upkeep_add = 2
+		planet_artisans_consumer_goods_produces_add = -1
+	}
+}
+
+###########################
+# EXTRACTORIUM SPECIALIST #
+###########################
+
+extractorium_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = 0.1
+		country_minerals_produces_mult = 0.1
+		pop_cat_ruler_happiness = 0.010
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+extractorium_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.1
+		country_alloys_produces_mult = -0.1
+		country_exotic_gases_produces_mult = -0.2
+		country_rare_crystals_produces_mult = -0.2
+		country_volatile_motes_produces_mult = -0.2
+		country_physics_research_produces_mult = -0.3
+		country_society_research_produces_mult = -0.3
+		country_engineering_research_produces_mult = -0.3
+		pop_cat_specialist_happiness = -0.05
+	}
+}
+
+extractorium_1_overlord_modifier = {
+	icon = "GFX_specialist_perk_extractorium_1_overlord_modifier"
+	overlord_modifier = {
+		station_gatherers_cost_mult = -0.2
+		shipclass_mining_station_build_speed_mult = 0.2
+	}
+}
+
+extractorium_1_neighbor_bonuses = {
+	icon = "GFX_specialist_perk_extractorium_1_neighbor_bonuses"
+
+	overlord_relay_network_modifier = {
+		specialist_extractorium_neighbor = 1
+	}
+
+	desc = {
+		description = extractorium_1_neighbor_bonuses_desc
+	}
+}
+
+extractorium_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = 0.2
+		country_minerals_produces_mult = 0.2
+		pop_cat_ruler_happiness = 0.015
+	}
+}
+
+extractorium_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.2
+		country_alloys_produces_mult = -0.2
+		country_exotic_gases_produces_mult = -0.3
+		country_rare_crystals_produces_mult = -0.3
+		country_volatile_motes_produces_mult = -0.3
+		country_physics_research_produces_mult = -0.4
+		country_society_research_produces_mult = -0.4
+		country_engineering_research_produces_mult = -0.4
+		pop_cat_specialist_happiness = -0.075
+	}
+}
+
+extractorium_2_neighbor_bonuses = {
+	icon = "GFX_specialist_perk_extractorium_1_neighbor_bonuses"
+
+	overlord_relay_network_modifier = {
+		specialist_extractorium_neighbor = 2
+	}
+
+	desc = {
+		description = extractorium_1_neighbor_bonuses_desc
+	}
+}
+
+extractorium_2_leaders = {
+	icon = "GFX_specialist_perk_extractorium_2_leaders"
+	subject_modifier = {
+		country_official_cap_add = 1
+		official_initial_skill = 1
+	}
+
+	activate_effect = {
+		target = {
+			add_specialist_leaders = {
+				TYPE = extractorium
+				CLASS = official
+			}
+		}
+	}
+
+	deactivate_effect = {
+		target = {
+			remove_specialist_leaders = {
+				TYPE = extractorium
+				CLASS = official
+			}
+		}
+	}
+
+	desc = {
+		description = extractorium_2_leaders_desc
+	}
+}
+
+extractorium_2_traits = {
+	icon = "GFX_specialist_perk_extractorium_2_traits"
+	desc = {
+		description = extractorium_2_traits_desc
+	}
+}
+
+extractorium_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = 0.3
+		country_minerals_produces_mult = 0.3
+		pop_cat_ruler_happiness = 0.03
+	}
+}
+
+extractorium_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.3
+		country_alloys_produces_mult = -0.3
+		country_exotic_gases_produces_mult = -0.4
+		country_rare_crystals_produces_mult = -0.4
+		country_volatile_motes_produces_mult = -0.4
+		country_physics_research_produces_mult = -0.5
+		country_society_research_produces_mult = -0.5
+		country_engineering_research_produces_mult = -0.5
+		pop_cat_specialist_happiness = -0.1
+	}
+}
+
+extractorium_3_neighbor_bonuses = {
+	icon = "GFX_specialist_perk_extractorium_1_neighbor_bonuses"
+
+	overlord_relay_network_modifier = {
+		specialist_extractorium_neighbor = 3
+	}
+
+	desc = {
+		description = extractorium_1_neighbor_bonuses_desc
+	}
+}
+
+################################
+# STATE CORPORATION SPECIALIST #
+################################
+
+state_corporation_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		pop_job_trade_mult = 0.1
+		trade_value_mult = 0.025
+		commercial_pact_mult = 0.05
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+state_corporation_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		empire_size_colonies_mult = 0.15
+		country_naval_cap_mult = -0.1
+		ship_military_cost_mult = 0.1
+		ship_military_upkeep_mult = 0.1
+	}
+}
+
+state_corporation_1_econ_tech = {
+	icon = "GFX_specialist_perk_state_corporation_1_econ_tech"
+	activate_effect = {
+		target = {
+			if = {
+				limit = { NOT = { has_technology = tech_space_trading } }
+				give_technology = {
+					tech = tech_space_trading
+					message = yes
+				}
+			}
+			append_technology = { TECH = interstellar_economics } #strike_craft_1
+		}
+	}
+	# desc = {
+		# description = state_corporation_1_econ_tech_desc
+	# }
+}
+
+state_corporation_1_overlord_modifier = {
+	icon = "GFX_specialist_perk_state_corporation_1_overlord_modifier"
+	overlord_modifier = {
+		pop_job_trade_mult = 0.1
+	}
+}
+
+state_corporation_1_neighbor_bonuses = {
+	icon = "GFX_specialist_perk_state_corporation_1_neighbor_bonuses"
+
+	overlord_relay_network_modifier = {
+		specialist_state_corporation_neighbor = 1
+	}
+
+	desc = { description = state_corporation_1_neighbor_bonuses_desc }
+}
+
+state_corporation_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		pop_job_trade_mult = 0.2
+		trade_value_mult = 0.05
+		commercial_pact_mult = 0.1
+	}
+}
+
+state_corporation_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		empire_size_colonies_mult = 0.3
+		country_naval_cap_mult = -0.2
+		ship_military_cost_mult = 0.2
+		ship_military_upkeep_mult = 0.2
+	}
+}
+
+state_corporation_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		pop_job_trade_mult = 0.3
+		trade_value_mult = 0.1
+		commercial_pact_mult = 0.2
+	}
+}
+
+state_corporation_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		empire_size_colonies_mult = 0.5
+		country_naval_cap_mult = -0.3
+		ship_military_cost_mult = 0.3
+		ship_military_upkeep_mult = 0.3
+	}
+}
+
+############################
+# INDUSTRIALIST SPECIALIST #
+############################
+
+industrialist_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = 0.1
+		country_alloys_produces_mult = 0.1
+		country_exotic_gases_produces_mult = 0.1
+		country_rare_crystals_produces_mult = 0.1
+		country_volatile_motes_produces_mult = 0.1
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+industrialist_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.15
+		country_physics_research_produces_mult = -0.05
+		country_society_research_produces_mult = -0.05
+		country_engineering_research_produces_mult = -0.05
+	}
+}
+
+industrialist_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = 0.2
+		country_alloys_produces_mult = 0.2
+		country_exotic_gases_produces_mult = 0.2
+		country_rare_crystals_produces_mult = 0.2
+		country_volatile_motes_produces_mult = 0.2
+	}
+}
+
+industrialist_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.2
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.2
+		country_physics_research_produces_mult = -0.05
+		country_society_research_produces_mult = -0.05
+		country_engineering_research_produces_mult = -0.05
+	}
+}
+
+industrialist_2_leaders = {
+	icon = "GFX_specialist_perk_industrialist_2_leaders"
+	subject_modifier = {
+		country_official_cap_add = 1
+		official_initial_skill = 1
+	}
+
+	activate_effect = {
+		target = {
+			add_specialist_leaders = {
+				TYPE = industrialist
+				CLASS = official
+			}
+		}
+	}
+
+	deactivate_effect = {
+		target = {
+			remove_specialist_leaders = {
+				TYPE = industrialist
+				CLASS = official
+			}
+		}
+	}
+
+	desc = {
+		description = industrialist_2_leaders_desc
+	}
+}
+
+industrialist_2_traits = {
+	icon = "GFX_specialist_perk_industrialist_2_traits"
+	desc = {
+		description = industrialist_2_traits_desc
+	}
+}
+
+industrialist_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = 0.3
+		country_alloys_produces_mult = 0.3
+		country_exotic_gases_produces_mult = 0.3
+		country_rare_crystals_produces_mult = 0.3
+		country_volatile_motes_produces_mult = 0.3
+	}
+}
+
+industrialist_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.3
+		country_minerals_produces_mult = -0.3
+		country_food_produces_mult = -0.3
+		country_physics_research_produces_mult = -0.01
+		country_society_research_produces_mult = -0.01
+		country_engineering_research_produces_mult = -0.01
+	}
+}
+
+############################
+# SPACE MARINES SPECIALIST #
+############################
+
+space_marines_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = 0.1
+		#ship_weapon_damage = 1
+		ship_fire_rate_mult = 0.1
+		ship_orbital_bombardment_army_damage_mult = 0.05
+		ship_starting_experience_add = 100
+		ship_experience_gain_mult = 0.1
+		army_starting_experience_add = 100
+		army_attack_damage_mult = 0.1
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+space_marines_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.1
+		country_energy_produces_mult = -0.2
+		country_minerals_produces_mult = -0.1
+		country_food_produces_mult = -0.2
+		empire_size_colonies_mult = 1
+	}
+}
+
+space_marines_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = 0.15
+		ship_fire_rate_mult = 0.15
+		ship_orbital_bombardment_army_damage_mult = 0.1
+		ship_starting_experience_add = 150
+		ship_experience_gain_mult = 0.15
+		army_starting_experience_add = 150
+		army_attack_damage_mult = 0.15
+	}
+}
+
+space_marines_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.2
+		country_energy_produces_mult = -0.35
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.35
+		empire_size_colonies_mult = 1.1
+	}
+}
+
+space_marines_2_leaders = {
+	icon = "GFX_specialist_perk_space_marines_2_leaders"
+	subject_modifier = {
+		country_commander_cap_add = 1
+		commander_initial_skill = 1
+	}
+
+	activate_effect = {
+		target = {
+			add_specialist_leaders = {
+				TYPE = space_marines
+				CLASS = commander
+			}
+		}
+	}
+
+	deactivate_effect = {
+		target = {
+			remove_specialist_leaders = {
+				TYPE = space_marines
+				CLASS = commander
+			}
+		}
+	}
+
+	desc = {
+		description = space_marines_2_leaders_desc
+	}
+}
+
+space_marines_2_traits = {
+	icon = "GFX_specialist_perk_space_marines_2_traits"
+	desc = {
+		description = space_marines_2_traits_desc
+	}
+}
+
+space_marines_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = 0.2
+		ship_fire_rate_mult = 0.3
+		ship_orbital_bombardment_army_damage_mult = 0.20
+		ship_starting_experience_add = 250
+		ship_experience_gain_mult = 0.2
+		army_starting_experience_add = 250
+		army_attack_damage_mult = 0.2
+	}
+}
+
+space_marines_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.3
+		country_energy_produces_mult = -0.5
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.5
+		empire_size_colonies_mult = 1.25
+	}
+}
+
+#########################
+# HOLY ORDER SPECIALIST #
+#########################
+
+holy_order_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.15
+		ship_fire_rate_mult = 0.1
+		ship_orbital_bombardment_army_damage_mult = 0.05
+		ship_starting_experience_add = 50
+		ship_experience_gain_mult = 0.1
+		army_starting_experience_add = 50
+		army_attack_damage_mult = 0.15
+		army_morale_damage_taken_mult = 0.1
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+holy_order_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.1
+		country_minerals_produces_mult = -0.1
+		country_food_produces_mult = -0.1
+	}
+}
+
+holy_order_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.3
+		ship_fire_rate_mult = 0.15
+		ship_orbital_bombardment_army_damage_mult = 0.075
+		ship_starting_experience_add = 100
+		ship_experience_gain_mult = 0.15
+		army_starting_experience_add = 100
+		army_attack_damage_mult = 0.2
+		army_morale_damage_taken_mult = 0.2
+	}
+}
+
+holy_order_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.15
+	}
+}
+
+holy_order_2_leaders = {
+	icon = "GFX_specialist_perk_holy_order_2_leaders"
+	subject_modifier = {
+		country_commander_cap_add = 1
+		commander_initial_skill = 1
+	}
+
+	activate_effect = {
+		target = {
+			add_specialist_leaders = {
+				TYPE = holy_order
+				CLASS = commander
+			}
+		}
+	}
+
+	deactivate_effect = {
+		target = {
+			remove_specialist_leaders = {
+				TYPE = holy_order
+				CLASS = commander
+			}
+		}
+	}
+
+	desc = {
+		description = holy_order_2_leaders_desc
+	}
+}
+
+holy_order_2_traits = {
+	icon = "GFX_specialist_perk_holy_order_2_traits"
+	desc = {
+		description = holy_order_2_traits_desc
+	}
+}
+
+holy_order_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.45
+		ship_fire_rate_mult = 0.2
+		ship_orbital_bombardment_army_damage_mult = 0.1
+		ship_starting_experience_add = 150
+		ship_experience_gain_mult = 0.2
+		army_starting_experience_add = 150
+		army_attack_damage_mult = 0.25
+		army_morale_damage_taken_mult = 0.3
+	}
+}
+
+holy_order_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.2
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.2
+	}
+}
+
+############################
+# INQUISITION SPECIALIST #
+############################
+
+inquisition_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.15
+		shipclass_military_station_damage_mult = 0.5
+		shipclass_military_station_hull_mult = 0.5
+		starbase_defense_platform_capacity_add = 2
+		shipclass_starbase_damage_mult = 0.5
+		shipclass_starbase_hull_mult = 0.5
+		ship_shield_hardening_add = 0.05
+		ship_armor_hardening_add = 0.05
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+inquisition_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.1
+		country_minerals_produces_mult = -0.1
+		country_food_produces_mult = -0.1
+	}
+}
+
+inquisition_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.3
+		shipclass_military_station_damage_mult = 0.75
+		shipclass_military_station_hull_mult = 0.75
+		starbase_defense_platform_capacity_add = 5
+		shipclass_starbase_damage_mult = 0.5
+		shipclass_starbase_hull_mult = 0.5
+		ship_shield_hardening_add = 0.15
+		ship_armor_hardening_add = 0.15
+	}
+}
+
+inquisition_2_leaders = {
+	icon = "GFX_specialist_perk_inquisition_2_leaders"
+	subject_modifier = {
+		country_commander_cap_add = 1
+		commander_initial_skill = 1
+	}
+
+	activate_effect = {
+		target = {
+			add_specialist_leaders = {
+				TYPE = inquisition
+				CLASS = commander
+			}
+		}
+	}
+
+	deactivate_effect = {
+		target = {
+			remove_specialist_leaders = {
+				TYPE = inquisition
+				CLASS = commander
+			}
+		}
+	}
+
+	desc = {
+		description = inquisition_2_leaders_desc
+	}
+}
+
+inquisition_2_traits = {
+	icon = "GFX_specialist_perk_inquisition_2_traits"
+	desc = {
+		description = inquisition_2_traits_desc
+	}
+}
+
+inquisition_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.15
+	}
+}
+
+inquisition_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.45
+		shipclass_military_station_damage_mult = 1
+		shipclass_military_station_hull_mult = 1
+		starbase_defense_platform_capacity_add = 8
+		shipclass_starbase_damage_mult = 0.75
+		shipclass_starbase_hull_mult = 0.75
+		ship_shield_hardening_add = 0.25
+		ship_armor_hardening_add = 0.25
+	}
+}
+
+inquisition_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.2
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.2
+	}
+}

@@ -1,0 +1,764 @@
+@protectorate_tech_threshold = 0.4
+@protectorate_tech_switch = 0.5
+
+@specialist_base_acceptance_value = 50
+@specialist_subject_base_acceptance_value = 50
+@specialist_aligned_ethics_value = 50
+@specialist_unaligned_ethics_value = -50
+@specialist_aligned_civics_value = 75
+@specialist_unaligned_civics_value = -75
+
+preset_agrarian = {
+	specialist_type = specialist_agrarian
+	term_data = {
+		resource_terms = {
+			{
+				key = resource_subsidies_research
+				value = -0.3
+			}
+		}
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_agrarian
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_pacifist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			add = @specialist_unaligned_civics_value
+			FROM = { has_civic = civic_mining_guilds }
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = agrarian }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = agrarian } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = agrarian } }
+		}
+	}
+
+	subject_weight = {
+		base = 25
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_pacifist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_agrarian_idyll
+		}
+		modifier = {
+			add = @specialist_unaligned_civics_value
+			has_civic = civic_mining_guilds
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_militarist = yes
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = agrarian }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+	}
+}
+
+preset_extractorium = {
+	specialist_type = specialist_extractorium
+	term_data = {
+		resource_terms = {
+			{
+				key = resource_subsidies_research
+				value = -0.3
+			}
+		}
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_extractorium
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_authoritarian = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_mining_guilds }
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_slaver_guilds }
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = extractorium }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = extractorium } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = extractorium } }
+		}
+	}
+
+	subject_weight = {
+		base = 23
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_authoritarian = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_mining_guilds
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_slaver_guilds
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_militarist = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_egalitarian = yes
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = extractorium }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+	}
+}
+
+preset_state_corporation = {
+	specialist_type = specialist_state_corporation
+	term_data = {
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_state_corporation
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_xenophile = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = state_corporation }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = state_corporation } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = state_corporation } }
+		}
+	}
+
+	subject_weight = {
+		base =  @specialist_subject_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_xenophile = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_xenophobe = yes
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = state_corporation }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+	}
+}
+
+preset_industrialist = {
+	specialist_type = specialist_industrialist
+	term_data = {
+		resource_terms = {
+			{
+				key = resource_subsidies_basic
+				value = -0.3
+			}
+		}
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_industrialist
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_pacifist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_egalitarian = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_relentless_industrialists }
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = industrialist }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = industrialist } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = industrialist } }
+		}
+	}
+
+	subject_weight = {
+		base =  @specialist_subject_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_pacifist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_relentless_industrialists
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_militarist = yes
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = industrialist }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+	}
+}
+
+preset_space_marines = {
+	specialist_type = specialist_space_marines
+	term_data = {
+		resource_terms = {
+			{
+				key = resource_subsidies_basic
+				value = -0.30
+			}
+			{
+				key = resource_subsidies_food
+				value = -0.15
+			}
+			{
+				key = resource_subsidies_energy
+				value = -0.15
+			}
+		}
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_space_marines
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_not_do_diplomacy
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_offensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_militarist = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_pacifist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_distinguished_admiralty }
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = space_marines }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = space_marines } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = space_marines } }
+		}
+	}
+
+	subject_weight = {
+		base =  @specialist_subject_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_militarist = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_pacifist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_distinguished_admiralty
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = space_marines }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+	}
+}
+
+preset_holy_order = {
+	specialist_type = specialist_holy_order
+	term_data = {
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_holy_order
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_spiritualist = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_materialist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_crusader_spirit }
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = holy_order }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = holy_order } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = holy_order } }
+		}
+	}
+
+	subject_weight = {
+		base =  @specialist_subject_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_spiritualist = yes
+		}
+		modifier = {
+			add = -200
+			is_materialist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_crusader_spirit
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = holy_order }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+		FROM = { is_spiritualist = yes }
+	}
+}
+
+preset_inquisition = {
+	specialist_type = specialist_inquisition
+	term_data = {
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_inquisition
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_defensive
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_spiritualist = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_materialist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			FROM = { has_civic = civic_crusader_spirit }
+		}
+		modifier = {
+			factor = 0.5
+			has_specialist_subject_type = { TYPE = inquisition }
+			NOT = { FROM = { is_specialist_subject_type = { TYPE = inquisition } } }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = inquisition } }
+		}
+	}
+
+	subject_weight = {
+		base =  @specialist_subject_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_spiritualist = yes
+		}
+		modifier = {
+			add = -200
+			is_materialist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_civics_value
+			has_civic = civic_crusader_spirit
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		NOR = {
+			has_civic = civic_inwards_perfection
+			FROM = { has_civic = civic_inwards_perfection }
+		}
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = inquisition }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+		FROM = { is_spiritualist = yes }
+	}
+}

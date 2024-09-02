@@ -1,0 +1,303 @@
+@level_2_xp_cost = 1200 # 10 years at 100 Loyalty.
+@level_3_xp_cost = 3600 # 30 years at 100 Loyalty.
+
+@specialist_base_conversion_time = 2 #30
+
+specialist_agrarian = {
+	icon = "GFX_diplomacy_specialist_subject_agrarian"
+	icon_large = "GFX_diplomacy_specialist_subject_agrarian_large"
+	preferred_ethic = ethic_pacifist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				agrarian_1_modifier
+				agrarian_1_penalties
+				agrarian_1_farming_tech
+				agrarian_1_overlord_modifier
+				agrarian_1_neighbor_bonuses
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				agrarian_2_modifier
+				agrarian_2_penalties
+				agrarian_2_farming_tech
+				agrarian_2_traits
+				agrarian_2_leaders
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				agrarian_3_modifier
+				agrarian_3_penalties
+				agrarian_3_farming_tech
+				agrarian_3_consumer_goods_industry
+			}
+		}
+	}
+}
+
+specialist_extractorium = {
+	icon = "GFX_diplomacy_specialist_subject_extractorium"
+	icon_large = "GFX_diplomacy_specialist_subject_extractorium_large"
+	preferred_ethic = ethic_authoritarian
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				extractorium_1_modifier
+				extractorium_1_penalties
+				extractorium_1_overlord_modifier
+				extractorium_1_neighbor_bonuses
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				extractorium_2_modifier
+				extractorium_2_penalties
+				extractorium_2_neighbor_bonuses
+				extractorium_2_traits
+				extractorium_2_leaders
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				extractorium_3_modifier
+				extractorium_3_penalties
+				extractorium_3_neighbor_bonuses
+			}
+		}
+	}
+}
+
+specialist_state_corporation = {
+	icon = "GFX_diplomacy_specialist_subject_state_corporation"
+	icon_large = "GFX_diplomacy_specialist_subject_state_corporation_large"
+	preferred_ethic = ethic_xenophile
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+		target = {
+			change_government = {
+				authority = auth_corporate
+				civics = { civic = civic_free_traders civic = random }
+				cooldown = yes
+				remove_invalid_civics = yes
+			}
+		}
+	}
+	
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				state_corporation_1_modifier
+				state_corporation_1_penalties
+				state_corporation_1_overlord_modifier
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				state_corporation_2_modifier
+				state_corporation_2_penalties
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				state_corporation_3_modifier
+				state_corporation_3_penalties
+			}
+		}
+	}
+}
+
+specialist_industrialist = {
+	icon = "GFX_diplomacy_specialist_subject_industrialist"
+	icon_large = "GFX_diplomacy_specialist_subject_industrialist_large"
+	preferred_ethic = ethic_egalitarian
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+		target = {
+			change_government = {
+				authority = auth_corporate
+				civics = {  }
+				cooldown = yes
+				remove_invalid_civics = yes
+			}
+		}
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				industrialist_1_modifier
+				industrialist_1_penalties
+				
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				industrialist_2_modifier
+				industrialist_2_penalties
+				industrialist_2_traits
+				industrialist_2_leaders
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				industrialist_3_modifier
+				industrialist_3_penalties
+				
+			}
+		}
+	}
+}
+
+specialist_space_marines = {
+	icon = "GFX_diplomacy_specialist_subject_space_marines"
+	icon_large = "GFX_diplomacy_specialist_subject_space_marines_large"
+	preferred_ethic = ethic_militarist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				space_marines_1_modifier
+				space_marines_1_penalties
+				
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				space_marines_2_modifier
+				space_marines_2_penalties
+				space_marines_2_traits
+				space_marines_2_leaders
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				space_marines_3_modifier
+				space_marines_3_penalties
+				
+			}
+		}
+	}
+}
+
+specialist_holy_order = {
+	icon = "GFX_diplomacy_specialist_subject_holy_order"
+	icon_large = "GFX_diplomacy_specialist_subject_holy_order_large"
+	preferred_ethic = ethic_spiritualist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				holy_order_1_modifier
+				holy_order_1_penalties
+				
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				holy_order_2_modifier
+				holy_order_2_penalties
+				holy_order_2_traits
+				holy_order_2_leaders
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				holy_order_3_modifier
+				holy_order_3_penalties
+				
+			}
+		}
+	}
+}
+
+specialist_inquisition = {
+	icon = "GFX_diplomacy_specialist_subject_inquisition"
+	icon_large = "GFX_diplomacy_specialist_subject_inquisition_large"
+	preferred_ethic = ethic_spiritualist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				inquisition_1_modifier
+				inquisition_1_penalties
+				
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				inquisition_2_modifier
+				inquisition_2_penalties
+				inquisition_2_traits
+				inquisition_2_leaders
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				inquisition_3_modifier
+				inquisition_3_penalties
+				
+			}
+		}
+	}
+}

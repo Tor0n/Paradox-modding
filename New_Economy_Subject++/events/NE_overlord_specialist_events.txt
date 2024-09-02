@@ -1,0 +1,165 @@
+@BaseResourceLow = 500
+@BaseResourceLowBoosted = 750
+@BaseResourceMedium = 1000
+@BaseResourceMediumBoosted = 1500
+@BaseResourceHigh = 1500
+@BaseResourceHighBoosted = 2250
+@AlloysResourceLow = 150
+@AlloysResourceLowBoosted = 225
+@AlloysResourceMedium = 300
+@AlloysResourceMediumBoosted = 450
+@AlloysResourceHigh = 450
+@AlloysResourceHighBoosted = 675
+@AdvancedResourceLow = 50
+@AdvancedResourceLowBoosted = 75
+@AdvancedResourceMedium = 100
+@AdvancedResourceMediumBoosted = 150
+@AdvancedResourceHigh = 150
+@AdvancedResourceHighBoosted = 225
+@RareResourceLow = 25
+@RareResourceLowBoosted = 37.5
+@RareResourceMedium = 50
+@RareResourceMediumBoosted = 75
+@RareResourceHigh = 75
+@RareResourceHighBoosted = 112.5
+
+namespace = specialist
+
+# On leader spawned.
+country_event = {
+	id = specialist.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { is_specialist_subject = yes }
+			if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = bulwark
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = bulwark
+						CLASS = commander
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = scholarium
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = scholarium
+						CLASS = scientist
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = prospectorium
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = prospectorium
+						CLASS = official
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = agrarian
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = agrarian
+						CLASS = official
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = extractorium
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = extractorium
+						CLASS = official
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = industrialist
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = industrialist
+						CLASS = official
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = space_marines
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = space_marines
+						CLASS = commander
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = holy_order
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = holy_order
+						CLASS = commander
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_specialist_subject_tier = {
+						TYPE = inquisition
+						TIER = 2
+					}
+				}
+				FROM = {
+					add_specialist_trait_to_leader_in_pool = {
+						TYPE = inquisition
+						CLASS = commander
+					}
+				}
+			}
+		}
+	}
+}

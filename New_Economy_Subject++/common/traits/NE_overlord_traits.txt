@@ -1,0 +1,51 @@
+# ----------------------------------------
+# Overlord Specialist Empire Leader Traits
+# ----------------------------------------
+
+leader_trait_agrarian_agronome = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = official
+		ICON = "GFX_leader_trait_agrarian_agronome"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		planet_jobs_food_produces_mult = 0.2
+		planet_jobs_energy_produces_mult = 0.05
+		planet_jobs_minerals_produces_mult = 0.05
+	}
+	sector_modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.01
+		planet_jobs_minerals_produces_mult = 0.01
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_agrarian_planter = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = official
+		ICON = "GFX_leader_trait_agrarian_planter"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		planet_farmers_consumer_goods_produces_add = 0.5
+		planet_farmers_energy_produces_add = 1
+	}
+	sector_modifier = {
+		planet_farmers_consumer_goods_produces_add = 0.25
+		planet_farmers_energy_produces_add = 0.5
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}

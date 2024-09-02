@@ -1,0 +1,1006 @@
+#######################
+# SPECIALIST SUBJECTS #
+#######################
+
+specialist_agrarian = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_pacifist = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 25
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_authoritarian = yes }
+		}
+		loyalty_change = 10
+		ai_acceptance = {
+			subject = 25
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { has_civic = civic_agrarian_idyll }
+		}
+		loyalty_change = 20
+		ai_acceptance = {
+			subject = 50
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_agrarian
+	}
+	potential = {
+		agreement_preset = preset_agrarian
+	}
+}
+
+specialist_extractorium = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_pacifist = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 15
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_authoritarian = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { has_civic = civic_mining_guilds }
+		}
+		loyalty_change = 20
+		ai_acceptance = {
+			subject = 50
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_extractorium
+	}
+	potential = {
+		agreement_preset = preset_extractorium
+	}
+}
+
+specialist_state_corporation = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_egalitarian = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 5
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_xenophile = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_state_corporation
+	}
+	potential = {
+		agreement_preset = preset_state_corporation
+	}
+}
+
+specialist_industrialist = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_pacifist = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 20
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_egalitarian = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { has_civic = civic_relentless_industrialists }
+		}
+		loyalty_change = 20
+		ai_acceptance = {
+			subject = 50
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_industrialist
+	}
+	potential = {
+		agreement_preset = preset_industrialist
+	}
+}
+
+specialist_space_marines = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_militarist = yes }
+		}
+		loyalty_change = 10
+		ai_acceptance = {
+			subject = 25
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { has_civic = civic_distinguished_admiralty }
+		}
+		loyalty_change = 20
+		ai_acceptance = {
+			subject = 50
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_space_marines
+	}
+	potential = {
+		agreement_preset = preset_space_marines
+	}
+}
+
+specialist_holy_order = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_militarist = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 10
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_spiritualist = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { has_civic = civic_crusader_spirit }
+		}
+		loyalty_change = 20
+		ai_acceptance = {
+			subject = 50
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_holy_order
+	}
+	potential = {
+		agreement_preset = preset_holy_order
+	}
+}
+
+specialist_inquisition = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_spiritualist = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { has_civic = civic_crusader_spirit }
+		}
+		loyalty_change = 20
+		ai_acceptance = {
+			subject = 50
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_inquisition
+	}
+	potential = {
+		agreement_preset = preset_inquisition
+	}
+}
+
+#########################
+# RESOURCE CONTRIBUTION #
+#########################
+
+@subsidy_multiplier_basic = 0.16 			# 0.5
+@subsidy_multiplier_advanced = 0.16 		# 0.5
+@subsidy_multiplier_research = 1
+@subsidy_multiplier_strategic = 1.5
+
+@subsidy_monthly_multiplier_basic = 1.6 	# 5
+@subsidy_monthly_multiplier_advanced = 1.6 	# 5
+@subsidy_monthly_multiplier_research = 5
+@subsidy_monthly_multiplier_strategic = 5
+
+@subsidy_minimum = -0.75
+@subsidy_maximum = 0.75
+
+@set_factor_0 = 0.15
+@set_factor_0_neg = -0.15
+@set_factor_1 = 0.30
+@set_factor_1_neg = -0.30
+@set_factor_2 = 0.45
+@set_factor_2_neg = -0.45
+@set_factor_3 = 0.60
+@set_factor_3_neg = -0.60
+
+resource_subsidies_basic = {
+	term = resource_subsidies
+	resources = { minerals }
+
+	subsidy_multiplier = @subsidy_multiplier_basic
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_basic
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = @set_factor_1
+			OR = {
+				agreement_preset = preset_prospectorium
+				agreement_preset = preset_tributary
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_relic_satrapy
+				
+				agreement_preset = preset_extractorium
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				
+				agreement_preset = preset_state_corporation
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_0_neg
+			agreement_preset = preset_space_marines
+		}
+		
+		modifier = {
+			set = @set_factor_1_neg
+			agreement_preset = preset_bulwark
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			agreement_preset = preset_bulwark
+			has_active_specialization = specialist_bulwark
+			specialist_tier = 2
+		}
+
+		modifier = {
+			set = @set_factor_3_neg
+			agreement_preset = preset_bulwark
+			has_active_specialization = specialist_bulwark
+			specialist_tier = 3
+		}
+
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_protectorate
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_1
+			OR = {
+				agreement_preset = preset_agrarian
+				agreement_preset = preset_state_corporation
+			}
+		}
+	}
+}
+
+resource_subsidies_energy = {
+	term = resource_subsidies
+	resources = { energy }
+
+	subsidy_multiplier = @subsidy_multiplier_basic
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_basic
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = @set_factor_1
+			OR = {
+				agreement_preset = preset_prospectorium
+				agreement_preset = preset_tributary
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_relic_satrapy
+				
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_1_neg
+			OR = {
+				agreement_preset = preset_bulwark
+				agreement_preset = preset_industrialist
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			agreement_preset = preset_bulwark
+			has_active_specialization = specialist_bulwark
+			specialist_tier = 2
+		}
+
+		modifier = {
+			set = @set_factor_3_neg
+			agreement_preset = preset_bulwark
+			has_active_specialization = specialist_bulwark
+			specialist_tier = 3
+		}
+
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_protectorate
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_1
+			OR = {
+				agreement_preset = preset_agrarian
+			}
+		}
+	}
+}
+
+resource_subsidies_food = {
+	term = resource_subsidies
+	resources = { food }
+
+	subsidy_multiplier = @subsidy_multiplier_basic
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_basic
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = @set_factor_1
+			OR = {
+				agreement_preset = preset_tributary
+				agreement_preset = preset_relic_satrapy
+				
+				agreement_preset = preset_agrarian
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_prospectorium
+				
+				agreement_preset = preset_extractorium
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_0_neg
+			agreement_preset = preset_industrialist
+		}
+		
+		modifier = {
+			set = @set_factor_1_neg
+			agreement_preset = preset_bulwark
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			agreement_preset = preset_bulwark
+			has_active_specialization = specialist_bulwark
+			specialist_tier = 2
+		}
+
+		modifier = {
+			set = @set_factor_3_neg
+			agreement_preset = preset_bulwark
+			has_active_specialization = specialist_bulwark
+			specialist_tier = 3
+		}
+
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_protectorate
+				agreement_preset = preset_prospectorium
+				
+				agreement_preset = preset_extractorium
+			}
+		}
+	}
+}
+
+resource_subsidies_advanced = {
+	term = resource_subsidies
+
+	resources = {
+		consumer_goods
+	}
+
+	subsidy_multiplier = @subsidy_multiplier_advanced
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_advanced
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = @set_factor_0
+			agreement_preset = preset_industrialist
+		}
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_tributary
+				agreement_preset = preset_relic_satrapy
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_prospectorium
+				
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_protectorate
+				agreement_preset = preset_bulwark
+				
+				agreement_preset = preset_agrarian
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_relic_satrapy
+				
+				AND = {
+					agreement_preset = preset_agrarian
+					has_active_specialization = specialist_agrarian
+					specialist_tier = 3
+				}
+			}
+		}
+		
+		modifier = {
+			set = @set_factor_3
+			agreement_preset = preset_state_corporation
+		}
+	}
+}
+
+resource_subsidies_alloys = {
+	term = resource_subsidies
+
+	resources = { alloys }
+
+	subsidy_multiplier = @subsidy_multiplier_advanced
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_advanced
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = @set_factor_0
+			OR = {
+				agreement_preset = preset_prospectorium
+				agreement_preset = preset_industrialist
+			}
+			
+		}
+		
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_tributary
+				agreement_preset = preset_relic_satrapy
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_protectorate
+				agreement_preset = preset_bulwark
+				
+				agreement_preset = preset_agrarian
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_relic_satrapy
+				
+				agreement_preset = preset_space_marines
+			}
+		}
+	}
+}
+
+resource_subsidies_research = {
+	term = resource_subsidies
+
+	resources = {
+		physics_research
+		society_research
+		engineering_research
+	}
+
+	subsidy_multiplier = @subsidy_multiplier_research
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_research
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_tributary
+				agreement_preset = preset_relic_satrapy
+			}
+		}
+
+		modifier = {
+			set = @set_factor_1
+			agreement_preset = preset_scholarium
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_bulwark
+				
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_industrialist
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_protectorate
+				agreement_preset = preset_relic_satrapy
+			}
+		}
+
+		modifier = {
+			set = @set_factor_1_neg
+			OR = {
+				agreement_preset = preset_prospectorium
+				
+				agreement_preset = preset_agrarian
+				agreement_preset = preset_extractorium
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				AND = {
+					agreement_preset = preset_prospectorium
+					has_active_specialization = specialist_prospectorium
+					specialist_tier = 2
+				}
+				AND = {
+					agreement_preset = preset_agrarian
+					has_active_specialization = specialist_agrarian
+					specialist_tier = 2
+				}
+				AND = {
+					agreement_preset = preset_extractorium
+					has_active_specialization = specialist_extractorium
+					specialist_tier = 2
+				}
+			}
+		}
+
+		modifier = {
+			set = @set_factor_3_neg
+			OR = {
+				AND = {
+					agreement_preset = preset_prospectorium
+					has_active_specialization = specialist_prospectorium
+					specialist_tier = 3
+				}
+				AND = {
+					agreement_preset = preset_agrarian
+					has_active_specialization = specialist_agrarian
+					specialist_tier = 3
+				}
+				AND = {
+					agreement_preset = preset_extractorium
+					has_active_specialization = specialist_extractorium
+					specialist_tier = 3
+				}
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_bulwark
+				
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_industrialist
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+	}
+}
+
+resource_subsidies_strategic = {
+	term = resource_subsidies
+	resources = {
+		volatile_motes
+		exotic_gases
+		rare_crystals
+	}
+	subsidy_multiplier = @subsidy_multiplier_strategic
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_strategic
+
+	resource_min = {
+		base = @subsidy_minimum
+		
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_tributary
+				agreement_preset = preset_prospectorium
+				agreement_preset = preset_relic_satrapy
+				
+				agreement_preset = preset_industrialist
+			}
+		}
+
+		modifier = {
+			set = @set_factor_1
+			AND = {
+				agreement_preset = preset_prospectorium
+				has_active_specialization = specialist_prospectorium
+				OR = {
+					specialist_tier = 2
+					specialist_tier = 3
+				}
+			}
+		}
+
+		modifier = {
+			set = @set_factor_2_neg
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_bulwark
+				
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_space_marines
+			}
+		}
+	}
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_protectorate
+				
+				agreement_preset = preset_agrarian
+			}
+		}
+
+		modifier = {
+			set = @set_factor_1
+			agreement_preset = preset_relic_satrapy
+			
+			agreement_preset = preset_space_marines
+		}
+
+		modifier = {
+			set = @set_factor_2
+			OR = {
+				agreement_preset = preset_vassal
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_bulwark
+				
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_space_marines
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+	}
+}
+
+resource_subsidies_unity = {
+	term = resource_subsidies
+
+	resources = { unity }
+
+	subsidy_multiplier = @subsidy_multiplier_research
+	subsidy_monthly_multiplier = @subsidy_monthly_multiplier_research
+
+	resource_min = {
+		base = @subsidy_minimum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_tributary
+				agreement_preset = preset_protectorate
+				agreement_preset = preset_scion
+				agreement_preset = preset_satrapy
+				agreement_preset = preset_relic_satrapy
+				agreement_preset = preset_dominion
+				agreement_preset = preset_satellite
+				agreement_preset = preset_signatory
+				
+				agreement_preset = preset_bulwark
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_prospectorium
+				agreement_preset = preset_agrarian
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_industrialist
+			}
+		}
+
+		modifier = {
+			set = @set_factor_1_neg
+			agreement_preset = preset_vassal
+		}
+		
+		modifier = {
+			set = @set_factor_0_neg
+			agreement_preset = preset_space_marines
+		}
+		
+		modifier = {
+			set = @set_factor_1
+			OR = {
+				agreement_preset = preset_holy_order
+				agreement_preset = preset_inquisition
+			}
+		}
+	}
+
+	resource_max = {
+		base = @subsidy_maximum
+
+		modifier = {
+			set = 0.0
+			OR = {
+				agreement_preset = preset_subsidiary
+				agreement_preset = preset_tributary
+				agreement_preset = preset_protectorate
+				agreement_preset = preset_scion
+				agreement_preset = preset_satrapy
+				agreement_preset = preset_relic_satrapy
+				agreement_preset = preset_dominion
+				agreement_preset = preset_satellite
+				agreement_preset = preset_signatory
+				
+				agreement_preset = preset_bulwark
+				agreement_preset = preset_scholarium
+				agreement_preset = preset_prospectorium
+				agreement_preset = preset_agrarian
+				agreement_preset = preset_extractorium
+				agreement_preset = preset_state_corporation
+				agreement_preset = preset_industrialist
+				agreement_preset = preset_space_marines
+			}
+		}
+
+		modifier = {
+			set = @set_factor_1
+			agreement_preset = preset_vassal
+		}
+	}
+}
+
+##########
+# OTHERS #
+##########
+
+subject_does_not_get_sensors = {
+	term = subject_sensors
+	loyalty_change = -5
+	ai_acceptance = {
+		overlord = 10
+		subject = -5
+	}
+	activate_effect = {
+		set_rule_subject_has_sensors = no
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = not_allowed_for_franchising
+			NOT = {
+				owner = { has_civic = civic_franchising }
+			}
+		}
+		custom_tooltip = {
+			fail_text = not_allowed_for_galcom_resolution
+			not_allowed_for_galcom_resolution_trigger = { RESOLUTION = resolution_bureaucraticsurveillance_borderless_authority }
+		}
+		custom_tooltip = {
+			fail_text = not_allowed_for_luminarium
+			NOT = {
+				agreement_preset = preset_luminarium
+			}
+		}
+		custom_tooltip = {
+			fail_text = not_allowed_for_space_marines
+			NOT = {
+				agreement_preset = preset_space_marines
+			}
+		}
+	}
+}
