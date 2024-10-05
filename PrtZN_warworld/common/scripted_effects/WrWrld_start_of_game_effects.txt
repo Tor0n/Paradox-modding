@@ -1,0 +1,17 @@
+create_deposits_stations = {
+	optimize_memory
+	if = {
+		limit = {
+			is_colonizable = no
+			has_deposit_for = shipclass_mining_station
+		}
+		create_mining_station = { owner = ROOT }
+	}
+	else_if = {
+		limit = {
+			is_colonizable = no
+			has_deposit_for = shipclass_research_station
+		}
+		create_research_station = { owner = ROOT }
+	}
+}

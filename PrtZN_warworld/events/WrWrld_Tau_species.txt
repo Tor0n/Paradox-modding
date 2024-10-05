@@ -1,0 +1,29 @@
+namespace = WrWrld_Tau_species
+
+country_event = {
+	id = WrWrld_Tau_species.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		#has_planet_flag = Vespid_World
+		has_country_flag = Tau_gos
+	}
+	immediate = {
+		create_species = {
+			name = vespid
+			plural = vespids
+			class = random_non_machine #<species class key>/random/random_non_machine/scope
+			portrait = random
+			homeworld = event_target:Vespid_World
+			traits = random
+			sapient = yes
+			is_mod = no
+			immortal = no
+			can_be_modified  = yes
+			gender = not_set
+			namelist = random
+			effect = { save_global_event_target_as = vespid_species }
+		}
+	}
+}

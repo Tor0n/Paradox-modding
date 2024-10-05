@@ -6,7 +6,7 @@ Imperium = {
 	name = "Name_Imperium"
 	adjective = "Imperium"
 	spawn_enabled = always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	ship_prefix = "ship_prefix_Imperium"
 	
@@ -37,7 +37,7 @@ Imperium = {
 	
 	# origin = "origin_legendary_leader"
 	origin = "origin_imperium"
-	flags={ Imperium_start Imperium_gos }
+	flags = { Imperium_start Imperium_gos }
 	
 	planet_name = "Терра"
 	planet_class = "pc_continental"

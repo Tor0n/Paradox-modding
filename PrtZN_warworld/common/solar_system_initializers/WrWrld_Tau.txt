@@ -624,12 +624,8 @@ Tolku_initializer = {
 }
 Vespid_initializer = {
 	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 135 #Distance from system centre
-	#}
 	
-	flags = { Tau_gos }
+	flags = { Tau_gos Vespid_World }
 
 	max_instances = 1
 	init_effect = {
@@ -684,7 +680,6 @@ Vespid_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 40 max = 50 }
 		has_ring = no
-		#change_orbit = 12
 
 		home_planet = no
 		
@@ -692,9 +687,10 @@ Vespid_initializer = {
 			class = "pc_tropical"        #Готово
 			orbit_distance = 27
 			size = 18 
-			flags = { Tau_world }
+			flags = { Tau_world Vespid_World }
 		
 		    init_effect = {
+				save_global_event_target_as = Vespid_World
 			    prevent_anomaly = yes
 		    }
 		}

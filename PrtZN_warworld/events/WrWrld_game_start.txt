@@ -273,12 +273,13 @@ country_event = { #Imperium
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = {
@@ -295,6 +296,7 @@ country_event = { #Imperium
 				    		species = owner_main_species
 				    	}
 					}
+					#last_created_pop = { save_event_target_as = human }
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -802,6 +804,7 @@ country_event = { #Imperium
 					PREV = {
 						spawn_megastructure = {
 							type = orbital_ring
+							name = "NAME_Mars"
 							owner = root
 							planet = event_target:Mars
 						}
@@ -1074,12 +1077,13 @@ country_event = { #Chaos
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {                                         ### МИР ДЕМОНОВ ###
 				    limit = { 
@@ -1217,6 +1221,12 @@ country_event = { #Chaos
 				    	count = 16
 				    	create_pop = {
 				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 1
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
 					while = {
@@ -1606,19 +1616,21 @@ country_event = { #Eldar
 					# graphical_culture = ROOT
 				# }
 			# }
-			if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
-				}
+			
 			#*-/ колонизация \-*#
 			every_system_planet = {
+				if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+					limit = {
+						is_colonizable = no		
+					}
+					# create_mining_station = {
+						# owner = ROOT
+					# }
+					# create_research_station = {
+						# owner = ROOT
+					# }
+					create_deposits_stations = yes
+				}
 			    if = {
 				    limit = {
 			            is_colonizable = yes
@@ -1990,12 +2002,13 @@ country_event = { #Aldari
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -2285,12 +2298,13 @@ country_event = { #Commorragh
 				    limit = {
 			            is_colonizable = no
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -2360,6 +2374,9 @@ country_event = { #Tau
 	}
 	immediate = {
 		save_global_event_target_as = Tau_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_Tau_species.1 }
+		}
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
 		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
@@ -2590,17 +2607,229 @@ country_event = { #Tau
 					#building = hydroponics_bay
 				}
 			}
-			every_system_planet = { 
+			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
 				    limit = { 
-			            is_colonizable = no		
+			            is_colonizable = no
 			        }
-				    create_mining_station = {
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tau_fourth_sphere_world			
+			        }
+				    create_colony = {
 				    	owner = ROOT
 		    	    }
-					create_research_station = {
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_capital
+				    add_building = building_fortress
+				    add_building = building_planetary_shield_generator				
+				    while = {
+				    	count = 10                            
+				    	create_pop = {
+				    		species = owner_main_species
+							ethos = { ethic = "ethic_xenophobe" }
+				    	}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tolku_world			
+			        }
+				    create_colony = {
 				    	owner = ROOT
 		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+                    add_building = building_commercial_zone
+					add_building = building_bureaucratic_1
+					add_building = building_bureaucratic_1
+					add_building = building_autochthon_monument		
+                    add_building = building_research_lab_1
+                    add_building = building_research_lab_1					
+					add_building = building_chemical_plant					
+				    while = {
+				    	count = 25                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Vespid_World			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_system_capital 
+				    add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_commercial_zone					
+				    while = {
+				    	count = 10 #29
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 19 #29
+				    	create_pop = {
+				    		species = event_target:vespid_species
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Kelshan_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_factory_1	
+					add_building = building_chemical_plant
+                    add_building = building_research_lab_1
+				    while = {
+				    	count = 25                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Firios_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_foundry_1	
+					add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Viorla_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_military_academy
+				    add_building = building_foundry_1	
+					add_building = building_chemical_plant					
+				    while = {
+				    	count = 34                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
 				}
 				if = {
 				    limit = { 
@@ -2628,229 +2857,15 @@ country_event = { #Tau
 					}
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Firios_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_system_capital
-					add_building = building_planetary_shield_generator
-					add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_foundry_1	
-					add_building = building_chemical_plant					
-				    while = {
-				    	count = 32                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Viorla_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_system_capital
-					add_building = building_planetary_shield_generator
-					add_building = building_fortress
-					add_building = building_military_academy
-				    add_building = building_foundry_1	
-					add_building = building_chemical_plant					
-				    while = {
-				    	count = 34                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Kelshan_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_system_capital
-					add_building = building_planetary_shield_generator
-					add_building = building_fortress
-					add_building = building_factory_1	
-					add_building = building_chemical_plant
-                    add_building = building_research_lab_1
-				    while = {
-				    	count = 25                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Tolku_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_system_capital
-					add_building = building_planetary_shield_generator
-					add_building = building_fortress
-                    add_building = building_commercial_zone
-					add_building = building_bureaucratic_1
-					add_building = building_bureaucratic_1
-					add_building = building_autochthon_monument		
-                    add_building = building_research_lab_1
-                    add_building = building_research_lab_1					
-					add_building = building_chemical_plant					
-				    while = {
-				    	count = 25                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Tau_fourth_sphere_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_capital 
-				    add_building = building_fortress
-				    add_building = building_planetary_shield_generator 
-				    #add_building = building_hive_warren                #building_hive_node
-				    #add_building = building_sentinel_posts
-				    #add_building = building_stronghold
-				    #add_building = building_food_processing_center	
-				    #add_building = building_chemical_plant					
-				    while = {
-				    	count = 10                            
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_xenophobe" }
-				    	}
-					}
-					#while = {
-					#	count = 3
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_industrial
-					#	}
-					#}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 				if = {
@@ -2861,33 +2876,23 @@ country_event = { #Tau
 					#remove_all_buildings = yes
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 					while = {
 						count = 18
@@ -3131,12 +3136,13 @@ country_event = { #Orc
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -3413,12 +3419,13 @@ country_event = { #Genestealer - Коринис
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -3732,12 +3739,13 @@ country_event = { #Tokt
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -4083,12 +4091,13 @@ country_event = { #Agdagat
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -4442,12 +4451,13 @@ country_event = { #Sayteh
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -4797,12 +4807,13 @@ country_event = { #Nigilah
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -5151,12 +5162,13 @@ country_event = { #Kardenat
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -5506,12 +5518,13 @@ country_event = { #Oryskar
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -5864,12 +5877,13 @@ country_event = { #Mefrit
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -6226,12 +6240,13 @@ country_event = { #Nephrekh
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
@@ -6585,12 +6600,13 @@ country_event = { #Sarkoni
 				    limit = { 
 			            is_colonizable = no		
 			        }
-				    create_mining_station = {
-				    	owner = ROOT
-		    	    }
-					create_research_station = {
-				    	owner = ROOT
-		    	    }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
 				}
 				if = {
 				    limit = { 
