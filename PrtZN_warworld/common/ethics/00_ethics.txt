@@ -834,7 +834,7 @@ ethic_fanatic_xenophobe = {
 
 	country_modifier = {
 		country_starbase_influence_cost_mult = -0.4
-		pop_growth_speed = 0.20
+		founder_species_growth_mult = 0.20
 	}
 
 	random_weight = {
@@ -866,7 +866,7 @@ ethic_xenophobe = {
 
 	country_modifier = {
 		country_starbase_influence_cost_mult = -0.2
-		pop_growth_speed = 0.10
+		founder_species_growth_mult = 0.10
 	}
 
 	random_weight = {
@@ -2995,6 +2995,7 @@ ethic_spiritualist = {
 		modifier = {
 			factor = 0.25
 			is_robot_pop = yes
+			owner = { is_individual_machine = no }
 		}
 		modifier = {
 			factor = 2
