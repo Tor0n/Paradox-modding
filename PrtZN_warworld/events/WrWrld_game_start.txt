@@ -1165,9 +1165,15 @@ country_event = { #Chaos
 					add_building = building_mineral_purification_plant
 					add_building = building_foundry_1					
 				    while = {
-				    	count = 34
+				    	count = 27
 				    	create_pop = {
 				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 7
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
 					#while = {
@@ -1218,13 +1224,13 @@ country_event = { #Chaos
 				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
 					add_building = building_temple						
 				    while = {
-				    	count = 16
+				    	count = 4
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-				    	count = 1
+				    	count = 12
 				    	create_pop = {
 				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}

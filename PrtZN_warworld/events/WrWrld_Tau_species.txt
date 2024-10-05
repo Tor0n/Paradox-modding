@@ -11,18 +11,23 @@ country_event = {
 	}
 	immediate = {
 		create_species = {
-			name = vespid
-			plural = vespids
-			class = random_non_machine #<species class key>/random/random_non_machine/scope
-			portrait = random
+			name = Веспид
+			plural = Веспиды
+			adjective = Веспидск
+			class = ART
+			portrait = art1
 			homeworld = event_target:Vespid_World
-			traits = random
+			#trait = trait_docile 
+			#trait = trait_communal 
+			#trait = trait_fleeting 
+			#trait = trait_slow_learners 
+			#trait = trait_strong 
 			sapient = yes
 			is_mod = no
 			immortal = no
 			can_be_modified  = yes
 			gender = not_set
-			namelist = random
+			namelist = ART3
 			effect = { save_global_event_target_as = vespid_species }
 		}
 	}
