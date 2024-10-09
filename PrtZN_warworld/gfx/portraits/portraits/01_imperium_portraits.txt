@@ -1,0 +1,445 @@
+portraits = {
+	# Imperium Original
+	imperium_female_01 = {	
+	      entity = "portrait_human_female_01_entity"	clothes_selector = "humanoid_imperium_female_clothes_01" attachment_selector = "imperium_female_hair_01"	greeting_sound = "human_female_greetings_03"}
+	imperium_female_02 = {	
+	      entity = "portrait_human_female_02_entity"	clothes_selector = "humanoid_imperium_female_clothes_01" attachment_selector = "imperium_female_hair_01"	greeting_sound = "human_female_greetings_04"}
+	imperium_female_03 = {	
+	      entity = "portrait_human_female_03_entity"	clothes_selector = "humanoid_imperium_female_clothes_01" attachment_selector = "imperium_female_hair_01"	greeting_sound = "human_female_greetings_05"}	
+	imperium_female_04 = {	
+	      entity = "portrait_human_female_04_entity"	clothes_selector = "humanoid_imperium_female_clothes_01" 	attachment_selector = "imperium_female_hair_01"	greeting_sound = "human_female_greetings_01"}
+	imperium_female_05 = {	
+	      entity = "portrait_human_female_05_entity"	clothes_selector = "humanoid_imperium_female_clothes_01" 	attachment_selector = "imperium_female_hair_01"	greeting_sound = "human_female_greetings_02"}
+	imperium_male_01 = {	
+	      entity = "portrait_human_male_01_entity"	clothes_selector = "humanoid_imperium_male_clothes_01" attachment_selector = "imperium_male_hair_01"	greeting_sound = "human_male_greetings_03" }	
+	imperium_male_02 = {	
+	      entity = "portrait_human_male_02_entity"	clothes_selector = "humanoid_imperium_male_clothes_01" attachment_selector = "imperium_male_hair_01"	greeting_sound = "human_male_greetings_04" }
+	imperium_male_03 = {	
+	      entity = "portrait_human_male_03_entity"	clothes_selector = "humanoid_imperium_male_clothes_01" attachment_selector = "imperium_male_hair_01"	greeting_sound = "human_male_greetings_05" }		
+	imperium_male_04 = {	
+	      entity = "portrait_human_male_04_entity"			clothes_selector = "humanoid_imperium_male_clothes_01" 	attachment_selector = "imperium_male_hair_01"	greeting_sound = "human_male_greetings_01" }
+	imperium_male_05 = {	
+	      entity = "portrait_human_male_05_entity"			clothes_selector = "humanoid_imperium_male_clothes_01" 	attachment_selector = "imperium_male_hair_01"	greeting_sound = "human_male_greetings_02" }
+
+	# Imperium New
+	#female
+	new_imperium_female_01 = {	entity = "portrait_human_female_entity"	clothes_selector = "humanoid_new_imperium_female_clothes_01" attachment_selector = "imperium_new_female_hair_01"	greeting_sound = "human_female_greetings_03"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_female_body_latina_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_latina_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_latina_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_latina_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_latina_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_female_02 = {	entity = "portrait_human_female_entity"	clothes_selector = "humanoid_new_imperium_female_clothes_01" attachment_selector = "imperium_new_female_hair_01"	greeting_sound = "human_female_greetings_04"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_female_body_asian_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_asian_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_asian_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_asian_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_asian_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_female_03 = {	entity = "portrait_human_female_entity"	clothes_selector = "humanoid_new_imperium_female_clothes_01" attachment_selector = "imperium_new_female_hair_01"	greeting_sound = "human_female_greetings_05"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_female_body_mideastern_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_mideastern_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_mideastern_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_mideastern_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_mideastern_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_female_04 = {	entity = "portrait_human_female_entity"			clothes_selector = "humanoid_new_imperium_female_clothes_01" 	attachment_selector = "imperium_new_female_hair_01"	greeting_sound = "human_female_greetings_01"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_female_body_caucasian_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_caucasian_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_caucasian_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_caucasian_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_caucasian_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_female_05 = {	entity = "portrait_human_female_entity"			clothes_selector = "humanoid_new_imperium_female_clothes_01" 	attachment_selector = "imperium_new_female_hair_01"	greeting_sound = "human_female_greetings_02"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_female_body_african_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_african_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_african_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_african_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_female_body_african_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+
+	#male
+	new_imperium_male_01 = {	entity = "portrait_human_male_entity"	clothes_selector = "humanoid_new_imperium_male_clothes_01" attachment_selector = "imperium_new_male_hair_01"	greeting_sound = "human_male_greetings_03"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_male_body_latino_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_latino_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_latino_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_latino_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_latino_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_male_02 = {	entity = "portrait_human_male_entity"	clothes_selector = "humanoid_new_imperium_male_clothes_01" attachment_selector = "imperium_new_male_hair_01"	greeting_sound = "human_male_greetings_04"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_male_body_asian_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_asian_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_asian_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_asian_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_asian_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_male_03 = {	entity = "portrait_human_male_entity"	clothes_selector = "humanoid_new_imperium_male_clothes_01" attachment_selector = "imperium_new_male_hair_01"	greeting_sound = "human_male_greetings_05"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_male_body_mideastern_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_mideastern_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_mideastern_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_mideastern_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_mideastern_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_male_04 = {	entity = "portrait_human_male_entity"			clothes_selector = "humanoid_new_imperium_male_clothes_01"	attachment_selector = "imperium_new_male_hair_01"	greeting_sound = "human_male_greetings_01"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_male_body_caucasian_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_caucasian_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_caucasian_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_caucasian_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_caucasian_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	new_imperium_male_05 = {	entity = "portrait_human_male_entity"			clothes_selector = "humanoid_new_imperium_male_clothes_01"	attachment_selector = "imperium_new_male_hair_01"	greeting_sound = "human_male_greetings_02"
+	character_textures = {
+		"gfx/models/portraits/human/new_human/human_male_body_african_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_african_light_brown_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_african_green_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_african_blue_eyes.dds"
+		"gfx/models/portraits/human/new_human/human_male_body_african_hazel_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	}
+
+
+portrait_groups = {
+	imperium = {
+		default = imperium_male_04
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					imperium_male_01
+					imperium_male_02
+					imperium_male_03
+					imperium_male_04
+					imperium_male_05
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					imperium_female_01
+					imperium_female_02
+					imperium_female_03
+					imperium_female_04
+					imperium_female_05
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					imperium_female_01
+					imperium_female_02
+					imperium_female_03
+					imperium_female_04
+					imperium_female_05
+					imperium_male_01
+					imperium_male_02
+					imperium_male_03
+					imperium_male_04
+					imperium_male_05
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					imperium_female_01
+					imperium_female_02
+					imperium_female_03
+					imperium_female_04
+					imperium_female_05
+					imperium_male_01
+					imperium_male_02
+					imperium_male_03
+					imperium_male_04
+					imperium_male_05
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					imperium_female_01
+					imperium_female_02
+					imperium_female_03
+					imperium_female_04
+					imperium_female_05
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					imperium_male_01
+					imperium_male_02
+					imperium_male_03
+					imperium_male_04
+					imperium_male_05
+				}
+			}
+		}
+		
+        # leader = generals
+		# 	add = {
+		# 		trigger = {
+		# 			gender = male
+		# 		}
+		# 		portraits = {
+		# 			imperium_male_01
+		# 			imperium_male_02
+		# 			imperium_male_03
+		# 			imperium_male_04
+		# 			imperium_male_05
+		# 		}
+		# 	}
+		# }
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					imperium_female_01
+					imperium_female_02
+					imperium_female_03
+					imperium_female_04
+					imperium_female_05
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					imperium_male_01
+					imperium_male_02
+					imperium_male_03
+					imperium_male_04
+					imperium_male_05
+				}
+			}
+		}
+	}
+	
+	#New Imperium
+	new_imperium = {
+		default = new_imperium_male_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					new_imperium_male_01
+					new_imperium_male_02
+					new_imperium_male_03
+					new_imperium_male_04
+					new_imperium_male_05
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					new_imperium_female_01
+					new_imperium_female_02
+					new_imperium_female_03
+					new_imperium_female_04
+					new_imperium_female_05
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}
+	
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					new_imperium_female_01
+					new_imperium_female_02
+					new_imperium_female_03
+					new_imperium_female_04
+					new_imperium_female_05
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					new_imperium_male_01
+					new_imperium_male_02
+					new_imperium_male_03
+					new_imperium_male_04
+					new_imperium_male_05
+				}
+			}
+		}
+	
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					new_imperium_female_01
+					new_imperium_female_02
+					new_imperium_female_03
+					new_imperium_female_04
+					new_imperium_female_05
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					new_imperium_male_01
+					new_imperium_male_02
+					new_imperium_male_03
+					new_imperium_male_04
+					new_imperium_male_05
+				}
+			}
+		}
+	
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					new_imperium_female_01
+					new_imperium_female_02
+					new_imperium_female_03
+					new_imperium_female_04
+					new_imperium_female_05
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					new_imperium_male_01
+					new_imperium_male_02
+					new_imperium_male_03
+					new_imperium_male_04
+					new_imperium_male_05
+				}
+			}
+		}
+	
+		#leader scope
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					new_imperium_female_01
+					new_imperium_female_02
+					new_imperium_female_03
+					new_imperium_female_04
+					new_imperium_female_05
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					new_imperium_male_01
+					new_imperium_male_02
+					new_imperium_male_03
+					new_imperium_male_04
+					new_imperium_male_05
+				}
+			}
+		}
+	}
+}		
