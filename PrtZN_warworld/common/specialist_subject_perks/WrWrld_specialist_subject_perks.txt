@@ -1,0 +1,87 @@
+#########################
+# MECHANICUS SPECIALIST #
+#########################
+
+mechanicus_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = 0.15
+		country_alloys_produces_mult = 0.15
+		country_exotic_gases_produces_mult = 0.1
+		country_rare_crystals_produces_mult = 0.1
+		country_volatile_motes_produces_mult = 0.1
+		country_physics_research_produces_mult = 0.15
+		country_society_research_produces_mult = 0.15
+		country_engineering_research_produces_mult = 0.15
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+mechanicus_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.2
+	}
+}
+
+mechanicus_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = 0.2
+		country_alloys_produces_mult = 0.25
+		country_exotic_gases_produces_mult = 0.2
+		country_rare_crystals_produces_mult = 0.2
+		country_volatile_motes_produces_mult = 0.2
+		country_physics_research_produces_mult = 0.25
+		country_society_research_produces_mult = 0.25
+		country_engineering_research_produces_mult = 0.25
+	}
+}
+
+mechanicus_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.3
+	}
+}
+
+mechanicus_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = 0.3
+		country_alloys_produces_mult = 0.40
+		country_exotic_gases_produces_mult = 0.3
+		country_rare_crystals_produces_mult = 0.3
+		country_volatile_motes_produces_mult = 0.3
+		country_physics_research_produces_mult = 0.30
+		country_society_research_produces_mult = 0.30
+		country_engineering_research_produces_mult = 0.30
+	}
+}
+
+mechanicus_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_minerals_produces_mult = -0.3
+		country_food_produces_mult = -0.40
+	}
+}

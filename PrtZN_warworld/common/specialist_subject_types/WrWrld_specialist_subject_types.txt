@@ -1,0 +1,41 @@
+@level_2_xp_cost = 1200 # 10 years at 100 Loyalty.
+@level_3_xp_cost = 3600 # 30 years at 100 Loyalty.
+
+@specialist_base_conversion_time = 2 #30
+
+specialist_mechanicus = {
+	icon = "GFX_diplomacy_specialist_subject_mechanicus"
+	icon_large = "GFX_diplomacy_specialist_subject_mechanicus_large"
+	preferred_ethic = ethic_spiritualist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				mechanicus_1_modifier
+				mechanicus_1_penalties
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				mechanicus_2_modifier
+				mechanicus_2_penalties
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				mechanicus_3_modifier
+				mechanicus_3_penalties
+				
+			}
+		}
+	}
+}

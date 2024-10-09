@@ -141,14 +141,6 @@ specialist_industrialist = {
 	base_conversion_time = @specialist_base_conversion_time
 	
 	on_progress_complete = {
-		target = {
-			change_government = {
-				authority = auth_corporate
-				civics = {  }
-				cooldown = yes
-				remove_invalid_civics = yes
-			}
-		}
 	}
 
 	levels = {
