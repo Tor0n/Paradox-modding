@@ -3,8 +3,8 @@ static_galaxy_scenario = {
     name = "PartZN WarWorld"
     default = no
     priority = 0
-    num_empires = { min = 22 max = 25 }
-    num_empire_default = 23
+    num_empires = { min = 22 max = 29 }
+    num_empire_default = 25
     marauder_empire_default = 0
     marauder_empire_max = 4
     fallen_empire_default = 0
@@ -89,7 +89,7 @@ system = { id = "64" name = "Vrun" position = { x = 172.5782 y = 181.6608 } init
 system = { id = "65" name = "Solstice" position = { x = 240.7011 y = 227.0761 } initializer = Solstice_initializer }
 system = { id = "66" name = "Raikan" position = { x = 248.6488 y = 195.2854 } initializer = Raikan_initializer }
 system = { id = "67" name = "Morda Prime" position = { x = 229.3473 y = 254.3253 } initializer = Morda_Prime_initializer } #ПАДШИЙ_МИР_ХАОСА
-system = { id = "68" name = "Ophellia" position = { x = 244.1073 y = 164.63 } initializer = Ophellia_initializer }
+system = { id = "68" name = "Ophellia" position = { x = 244.1073 y = 164.63 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ecclesiarchy_start } } }
 system = { id = "69" name = "Pintax" position = { x = 221.3996 y = 132.8393 } initializer = Pintax_initializer }
 system = { id = "70" name = "Taras" position = { x = 256.5965 y = 124.8916 } initializer = Taras_initializer }
 system = { id = "71" name = "Jurn" position = { x = 126.0275 y = 225.9407 } initializer = Jurn_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Orc_start } } }
@@ -525,7 +525,7 @@ system = { id = "500" name = "Salem" position = { x = -345.1563 y = 339.479 } in
 system = { id = "501" name = "Repentance" position = { x = -324.7194 y = 381.4881 } initializer = Repentance_initializer }
 system = { id = "502" name = "Isstvan" position = { x = 67.99989 y = -454.8521 }  }
 system = { id = "503" name = "Appollonia" position = { x = 96.27989 y = -462.8521 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = RakGol_start } } }
-system = { id = "504" name = "Voss Prime" position = { x = 216.8581 y = -121.4864 } initializer = VossPrime_initializer }
+system = { id = "504" name = "Voss Prime" position = { x = 216.8581 y = -121.4864 } initializer = VossPrime_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Mechanicus_start } } }
 system = { id = "505" name = "Shedim" position = { x = 162.1197 y = 54.7481 } initializer = Shedim_initializer } 
 system = { id = "506" name = "Grendel" position = { x = -385.1655 y = 247.2854 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Barghesi_start } } }
 system = { id = "507" name = "Nortaie" position = { x = -397.1655 y = 279.2854 } initializer = Nortaie_initializer }
@@ -542,6 +542,8 @@ system = { id = "517" name = "Elindrhakh" position = { x = -462.2917 y = 455.848
 #system = { id = "518" name = "Adversity" position = { x = -456.2917 y = 467.8485 } initializer = Adversity_initializer }
 system = { id = "519" name = "Woe" position = { x = -462.2917 y = 462.8485 } initializer = Woe_initializer }
 system = { id = "520" name = "Pain" position = { x = -467.2917 y = 462.8485 } initializer = Pain_initializer }
+system = { id = "521" name = "Astorgius" position = { x = -220.0006 y = -77.04032 } initializer = Astorgius_initializer } 
+system = { id = "522" name = "Pax Argentius" position = { x = -30.82148 y = -193.7755 } initializer = PaxArgentius_initializer }
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
@@ -1211,4 +1213,8 @@ system = { id = "520" name = "Pain" position = { x = -467.2917 y = 462.8485 } in
 # add_hyperlane = { from = "49" to = "518" }
  add_hyperlane = { from = "49" to = "519" }
  add_hyperlane = { from = "49" to = "520" }
+ add_hyperlane = { from = "521" to = "348" }
+ add_hyperlane = { from = "521" to = "347" }
+ add_hyperlane = { from = "522" to = "276" }
+ add_hyperlane = { from = "522" to = "285" }
 }

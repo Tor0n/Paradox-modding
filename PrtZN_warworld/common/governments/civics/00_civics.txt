@@ -1611,11 +1611,15 @@ civic_fanatic_purifiers = {
 	}
 	possible = {
 		ethics = {
-			value = ethic_fanatic_xenophobe
+			#value = ethic_fanatic_xenophobe
 			#OR = {
 			#	value = ethic_militarist
 			#	value = ethic_spiritualist
 			#}
+			OR = {
+				value = ethic_fanatic_xenophobe
+				value = ethic_xenophobe
+			}
 		}
 		civics = {
 			NOR = {
@@ -2464,8 +2468,8 @@ civic_relentless_industrialists = {
 		ethics = {
 			OR = {
 				text = civic_tooltip_materialist
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
+				#value = ethic_materialist
+				#value = ethic_fanatic_materialist
 			}
 		}
 		origin = { NOT = { value = origin_life_seeded } }
