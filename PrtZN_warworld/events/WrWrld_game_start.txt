@@ -863,6 +863,12 @@ country_event = { #Mechanicus
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 1000 }
 		add_resource = { exotic_gases = 1000 }
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Imperium_evnt_trgt_country
+			preset = preset_mechanicus
+		}
+		
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -1203,6 +1209,11 @@ country_event = { #Ecclesiarchy
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 1000 }
 		add_resource = { exotic_gases = 1000 }
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Imperium_evnt_trgt_country
+			preset = preset_ecclesiarchy
+		}
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2

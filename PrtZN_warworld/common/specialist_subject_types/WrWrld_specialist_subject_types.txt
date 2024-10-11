@@ -1,7 +1,81 @@
 @level_2_xp_cost = 1200 # 10 years at 100 Loyalty.
 @level_3_xp_cost = 3600 # 30 years at 100 Loyalty.
 
-@specialist_base_conversion_time = 2 #30
+@specialist_base_conversion_time = 0
+
+specialist_astartes = {
+	icon = "GFX_diplomacy_specialist_subject_astartes"
+	icon_large = "GFX_diplomacy_specialist_subject_astartes_large"
+	preferred_ethic = ethic_spiritualist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				astartes_1_modifier
+				astartes_1_penalties
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				astartes_2_modifier
+				astartes_2_penalties
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				astartes_3_modifier
+				astartes_3_penalties
+				
+			}
+		}
+	}
+}
+
+specialist_ecclesiarchy = {
+	icon = "GFX_diplomacy_specialist_subject_Ecclesiarchy"
+	icon_large = "GFX_diplomacy_specialist_subject_Ecclesiarchy_large"
+	preferred_ethic = ethic_spiritualist
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				Ecclesiarchy_1_modifier
+				Ecclesiarchy_1_penalties
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				Ecclesiarchy_2_modifier
+				Ecclesiarchy_2_penalties
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				Ecclesiarchy_3_modifier
+				Ecclesiarchy_3_penalties
+				
+			}
+		}
+	}
+}
 
 specialist_mechanicus = {
 	icon = "GFX_diplomacy_specialist_subject_mechanicus"

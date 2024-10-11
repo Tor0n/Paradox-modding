@@ -2,6 +2,62 @@
 # SPECIALIST SUBJECTS #
 #######################
 
+specialist_astartes = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_militarist = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 20
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_spiritualist = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_astartes
+	}
+	potential = {
+		agreement_preset = preset_astartes
+	}
+}
+
+specialist_ecclesiarchy = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_militarist = yes }
+		}
+		loyalty_change = 5
+		ai_acceptance = {
+			subject = 20
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_spiritualist = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_ecclesiarchy
+	}
+	potential = {
+		agreement_preset = preset_ecclesiarchy
+	}
+}
+
 specialist_mechanicus = {
 	term = specialist_type
 	triggered_loyalty_change = {

@@ -1,3 +1,189 @@
+#######################
+# ASTARTES SPECIALIST #
+#######################
+
+astartes_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = 0.1
+		#ship_weapon_damage = 1
+		ship_fire_rate_mult = 0.1
+		ship_orbital_bombardment_army_damage_mult = 0.05
+		ship_starting_experience_add = 100
+		ship_experience_gain_mult = 0.1
+		army_starting_experience_add = 100
+		army_attack_damage_mult = 0.1
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+astartes_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.1
+		country_energy_produces_mult = -0.2
+		country_minerals_produces_mult = -0.1
+		country_food_produces_mult = -0.2
+		empire_size_colonies_mult = 1
+	}
+}
+
+astartes_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = 0.15
+		ship_fire_rate_mult = 0.15
+		ship_orbital_bombardment_army_damage_mult = 0.1
+		ship_starting_experience_add = 150
+		ship_experience_gain_mult = 0.15
+		army_starting_experience_add = 150
+		army_attack_damage_mult = 0.15
+	}
+}
+
+astartes_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.2
+		country_energy_produces_mult = -0.35
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.35
+		empire_size_colonies_mult = 1.1
+	}
+}
+
+astartes_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_alloys_produces_mult = 0.2
+		ship_fire_rate_mult = 0.3
+		ship_orbital_bombardment_army_damage_mult = 0.20
+		ship_starting_experience_add = 250
+		ship_experience_gain_mult = 0.2
+		army_starting_experience_add = 250
+		army_attack_damage_mult = 0.2
+	}
+}
+
+astartes_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_consumer_goods_produces_mult = -0.3
+		country_energy_produces_mult = -0.5
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.5
+		empire_size_colonies_mult = 1.25
+	}
+}
+
+###########################
+# ECCLESIARCHY SPECIALIST #
+###########################
+
+ecclesiarchy_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.15
+		ship_fire_rate_mult = 0.1
+		ship_orbital_bombardment_army_damage_mult = 0.05
+		ship_starting_experience_add = 50
+		ship_experience_gain_mult = 0.1
+		army_starting_experience_add = 50
+		army_attack_damage_mult = 0.15
+		army_morale_damage_taken_mult = 0.1
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+ecclesiarchy_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.1
+		country_minerals_produces_mult = -0.1
+		country_food_produces_mult = -0.1
+	}
+}
+
+ecclesiarchy_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.3
+		ship_fire_rate_mult = 0.15
+		ship_orbital_bombardment_army_damage_mult = 0.075
+		ship_starting_experience_add = 100
+		ship_experience_gain_mult = 0.15
+		army_starting_experience_add = 100
+		army_attack_damage_mult = 0.2
+		army_morale_damage_taken_mult = 0.2
+	}
+}
+
+ecclesiarchy_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_food_produces_mult = -0.15
+	}
+}
+
+ecclesiarchy_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_unity_produces_mult = 0.45
+		ship_fire_rate_mult = 0.2
+		ship_orbital_bombardment_army_damage_mult = 0.1
+		ship_starting_experience_add = 150
+		ship_experience_gain_mult = 0.2
+		army_starting_experience_add = 150
+		army_attack_damage_mult = 0.25
+		army_morale_damage_taken_mult = 0.3
+	}
+}
+
+ecclesiarchy_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		country_energy_produces_mult = -0.2
+		country_minerals_produces_mult = -0.2
+		country_food_produces_mult = -0.2
+	}
+}
+
 #########################
 # MECHANICUS SPECIALIST #
 #########################
