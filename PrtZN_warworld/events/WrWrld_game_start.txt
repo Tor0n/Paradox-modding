@@ -1086,21 +1086,14 @@ country_event = { #Mechanicus
 				    add_building = building_ministry_production  
 				    #add_building = building_research_lab_2
 					add_building = building_resource_silo
-					#add_building = building_bio_reactor
+					add_building = building_coordinated_fulfillment_center_2
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
 				    while = {
-				    	count = 35
+				    	count = 65
 				    	create_pop = {
 				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 30
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_materialist" }
 				    	}
 					}
 					while = {
@@ -1127,18 +1120,12 @@ country_event = { #Mechanicus
 					add_building = building_fortress
 					add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
-				    add_building = building_planetary_shield_generator					
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 14
+				    	count = 27
 				    	create_pop = {
 				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 13
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_materialist" }
 				    	}
 					}
 					while = {
@@ -1148,6 +1135,109 @@ country_event = { #Mechanicus
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 30
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 13
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 25
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 13
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    while = {
+				    	count = 45
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
 					}
 				}
 			}

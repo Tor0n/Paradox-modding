@@ -9,7 +9,7 @@ Metalica_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -99,7 +99,7 @@ Accatran_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -221,6 +221,7 @@ VossPrime_initializer = {
 		size = 19
 		has_ring = no
 		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Mechanicus_Forge_Ecumenopolis }
 		
@@ -628,7 +629,7 @@ Graia_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -716,7 +717,7 @@ Zhao_Arkkad_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -804,7 +805,7 @@ Cypra_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos_station }
+	flags = { Mechanicus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2036,7 +2037,7 @@ Gulgoradh_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -2124,7 +2125,7 @@ Triplex_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Mechanicus_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }

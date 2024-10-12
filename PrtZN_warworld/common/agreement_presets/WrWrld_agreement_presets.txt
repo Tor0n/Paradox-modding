@@ -256,11 +256,35 @@ preset_mechanicus = {
 		resource_terms = {
 			{
 				key = resource_subsidies_basic
-				value = -0.5
+				value = -0.75
+			}
+			{
+				key = resource_subsidies_energy
+				value = -0.75
+			}
+			{
+				key = resource_subsidies_food
+				value = -0.75
+			}
+			{
+				key = resource_subsidies_advanced
+				value = -0.15
 			}
 			{
 				key = resource_subsidies_alloys
-				value = 0.75
+				value = 0.65
+			}
+			{
+				key = resource_subsidies_research 
+				value = 0.45
+			}
+			{
+				key = resource_subsidies_strategic 
+				value = -0.75
+			}
+			{
+				key = resource_subsidies_unity
+				value = -0.30
 			}
 		}
 		discrete_terms = {
