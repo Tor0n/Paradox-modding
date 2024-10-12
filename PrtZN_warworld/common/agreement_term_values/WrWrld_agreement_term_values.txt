@@ -138,7 +138,7 @@ resource_subsidies_basic = {
 				agreement_preset = preset_vassal
 				agreement_preset = preset_scholarium
 				
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 		
@@ -197,7 +197,7 @@ resource_subsidies_energy = {
 		modifier = {
 			set = @set_factor_0
 			OR = {
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 		
@@ -226,7 +226,7 @@ resource_subsidies_energy = {
 		modifier = {
 			set = 0.0
 			OR = {
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 		
@@ -286,8 +286,6 @@ resource_subsidies_food = {
 				agreement_preset = preset_vassal
 				agreement_preset = preset_scholarium
 				agreement_preset = preset_prospectorium
-				
-				agreement_preset = preset_mechanicus
 			}
 		}
 	}
@@ -307,7 +305,6 @@ resource_subsidies_food = {
 		
 		modifier = {
 			set = @set_factor_0_neg
-			agreement_preset = preset_mechanicus
 		}
 		
 		modifier = {
@@ -356,7 +353,6 @@ resource_subsidies_advanced = {
 
 		modifier = {
 			set = @set_factor_0
-			agreement_preset = preset_mechanicus
 		}
 
 		modifier = {
@@ -391,7 +387,8 @@ resource_subsidies_advanced = {
 			set = @set_factor_2
 			agreement_preset = preset_vassal
 			agreement_preset = preset_scholarium
-			agreement_preset = preset_relic_satrapy		}
+			agreement_preset = preset_relic_satrapy		
+		}
 	}
 }
 
@@ -411,7 +408,7 @@ resource_subsidies_alloys = {
 			OR = {
 				agreement_preset = preset_prospectorium
 				
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 			
 		}
@@ -485,7 +482,7 @@ resource_subsidies_research = {
 			OR = {
 				agreement_preset = preset_scholarium
 				
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 
@@ -561,7 +558,7 @@ resource_subsidies_strategic = {
 				agreement_preset = preset_prospectorium
 				agreement_preset = preset_relic_satrapy
 				
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 
@@ -636,7 +633,7 @@ resource_subsidies_unity = {
 				agreement_preset = preset_satellite
 				agreement_preset = preset_signatory
 				
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 
@@ -662,7 +659,7 @@ resource_subsidies_unity = {
 				agreement_preset = preset_satellite
 				agreement_preset = preset_signatory
 				
-				agreement_preset = preset_mechanicus
+				#agreement_preset = preset_mechanicus
 			}
 		}
 

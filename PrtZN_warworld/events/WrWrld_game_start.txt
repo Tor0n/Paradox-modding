@@ -75,9 +75,10 @@ country_event = { #Imperium
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
 		add_resource = { alloys = 3000	}
-		add_resource = { volatile_motes = 100 }
-		add_resource = { rare_crystals = 100 }
-		add_resource = { exotic_gases = 100 }
+		add_resource = { volatile_motes = 200 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		add_resource = { influence = 100 }
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -1634,7 +1635,7 @@ country_event = { #Ultramarines
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
-			preset = specialist_astartes
+			preset = preset_astartes
 		}
 		hidden_effect = {
 			#Соц наука
@@ -1971,7 +1972,7 @@ country_event = { #Imperial_Fists
 		add_resource = { exotic_gases = 1000 }
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
-			preset = specialist_astartes
+			preset = preset_astartes
 		}
 		hidden_effect = {
 			#Соц наука
@@ -2270,7 +2271,7 @@ country_event = { #Blood_Angels
 		add_resource = { exotic_gases = 1000 }
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
-			preset = specialist_astartes
+			preset = preset_astartes
 		}
 		hidden_effect = {
 			#Соц наука
@@ -2569,7 +2570,7 @@ country_event = { #Salamanders
 		add_resource = { exotic_gases = 1000 }
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
-			preset = specialist_astartes
+			preset = preset_astartes
 		}
 		hidden_effect = {
 			#Соц наука
@@ -2868,7 +2869,7 @@ country_event = { #Space_Wolves
 		add_resource = { exotic_gases = 1000 }
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
-			preset = specialist_astartes
+			preset = preset_astartes
 		}
 		hidden_effect = {
 			#Соц наука
