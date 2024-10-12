@@ -41,8 +41,8 @@ specialist_astartes = {
 }
 
 specialist_ecclesiarchy = {
-	icon = "GFX_diplomacy_specialist_subject_Ecclesiarchy"
-	icon_large = "GFX_diplomacy_specialist_subject_Ecclesiarchy_large"
+	icon = "GFX_diplomacy_specialist_subject_ecclesiarchy"
+	icon_large = "GFX_diplomacy_specialist_subject_ecclesiarchy_large"
 	preferred_ethic = ethic_spiritualist
 	base_conversion_time = @specialist_base_conversion_time
 	
@@ -54,23 +54,23 @@ specialist_ecclesiarchy = {
 		{
 			experience_needed_for_next_level = @level_2_xp_cost
 			perks = {
-				Ecclesiarchy_1_modifier
-				Ecclesiarchy_1_penalties
+				ecclesiarchy_1_modifier
+				ecclesiarchy_1_penalties
 			}
 		}
 		# Level 2
 		{
 			experience_needed_for_next_level = @level_3_xp_cost
 			perks = {
-				Ecclesiarchy_2_modifier
-				Ecclesiarchy_2_penalties
+				ecclesiarchy_2_modifier
+				ecclesiarchy_2_penalties
 			}
 		}
 		# Level 3
 		{
 			perks = {
-				Ecclesiarchy_3_modifier
-				Ecclesiarchy_3_penalties
+				ecclesiarchy_3_modifier
+				ecclesiarchy_3_penalties
 				
 			}
 		}

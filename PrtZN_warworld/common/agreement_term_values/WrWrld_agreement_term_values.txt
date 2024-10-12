@@ -133,16 +133,6 @@ resource_subsidies_basic = {
 		}
 
 		modifier = {
-			set = @set_factor_1_neg
-			OR = {
-				agreement_preset = preset_vassal
-				agreement_preset = preset_scholarium
-				
-				#agreement_preset = preset_mechanicus
-			}
-		}
-		
-		modifier = {
 			set = @set_factor_2_neg
 			OR = {
 				agreement_preset = preset_vassal
@@ -195,13 +185,6 @@ resource_subsidies_energy = {
 		base = @subsidy_minimum
 
 		modifier = {
-			set = @set_factor_0
-			OR = {
-				#agreement_preset = preset_mechanicus
-			}
-		}
-		
-		modifier = {
 			set = @set_factor_1
 			OR = {
 				agreement_preset = preset_prospectorium
@@ -223,13 +206,6 @@ resource_subsidies_energy = {
 	resource_max = {
 		base = @subsidy_maximum
 
-		modifier = {
-			set = 0.0
-			OR = {
-				#agreement_preset = preset_mechanicus
-			}
-		}
-		
 		modifier = {
 			set = @set_factor_1_neg
 			OR = {
@@ -294,20 +270,6 @@ resource_subsidies_food = {
 		base = @subsidy_maximum
 
 		modifier = {
-			set = 0.0
-			OR = {
-				agreement_preset = preset_state_corporation
-				agreement_preset = preset_space_marines
-				agreement_preset = preset_holy_order
-				agreement_preset = preset_inquisition
-			}
-		}
-		
-		modifier = {
-			set = @set_factor_0_neg
-		}
-		
-		modifier = {
 			set = @set_factor_1_neg
 			agreement_preset = preset_bulwark
 		}
@@ -350,10 +312,6 @@ resource_subsidies_advanced = {
 
 	resource_min = {
 		base = @subsidy_minimum
-
-		modifier = {
-			set = @set_factor_0
-		}
 
 		modifier = {
 			set = 0.0
@@ -403,16 +361,6 @@ resource_subsidies_alloys = {
 	resource_min = {
 		base = @subsidy_minimum
 
-		modifier = {
-			set = @set_factor_0
-			OR = {
-				agreement_preset = preset_prospectorium
-				
-				#agreement_preset = preset_mechanicus
-			}
-			
-		}
-		
 		modifier = {
 			set = 0.0
 			OR = {
@@ -474,15 +422,6 @@ resource_subsidies_research = {
 				agreement_preset = preset_subsidiary
 				agreement_preset = preset_tributary
 				agreement_preset = preset_relic_satrapy
-			}
-		}
-
-		modifier = {
-			set = @set_factor_1
-			OR = {
-				agreement_preset = preset_scholarium
-				
-				#agreement_preset = preset_mechanicus
 			}
 		}
 
@@ -557,8 +496,6 @@ resource_subsidies_strategic = {
 				agreement_preset = preset_tributary
 				agreement_preset = preset_prospectorium
 				agreement_preset = preset_relic_satrapy
-				
-				#agreement_preset = preset_mechanicus
 			}
 		}
 
@@ -632,8 +569,6 @@ resource_subsidies_unity = {
 				agreement_preset = preset_dominion
 				agreement_preset = preset_satellite
 				agreement_preset = preset_signatory
-				
-				#agreement_preset = preset_mechanicus
 			}
 		}
 
@@ -658,8 +593,6 @@ resource_subsidies_unity = {
 				agreement_preset = preset_dominion
 				agreement_preset = preset_satellite
 				agreement_preset = preset_signatory
-				
-				#agreement_preset = preset_mechanicus
 			}
 		}
 
