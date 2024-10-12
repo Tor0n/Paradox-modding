@@ -1197,13 +1197,13 @@ country_event = { #Ecclesiarchy
 		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		add_resource = { energy = 4500 }
+		add_resource = { energy = 15000 }
 		add_resource = { minerals = 4500 }
-		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 1000 }
-		add_resource = { exotic_gases = 1000 }
+		add_resource = { food = 5500 }
+		add_resource = { alloys = 13000	}
+		add_resource = { volatile_motes = 1500 }
+		add_resource = { rare_crystals = 750 }
+		add_resource = { exotic_gases = 750 }
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
@@ -1419,6 +1419,46 @@ country_event = { #Ecclesiarchy
 					create_deposits_stations = yes
 				}
 				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					while = {
+						count = 17
+						create_pop = {species = owner_main_species}
+					}
+					add_building = building_major_capital   	
+					add_building = building_autochthon_monument
+					add_building = building_temple #building_holotemple 
+					add_building = building_fortress
+				    add_building = building_planetary_shield_generator
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+				    #add_building = building_ministry_production
+				}
+				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Ecclesiarchy_Cardinal	
@@ -1426,33 +1466,31 @@ country_event = { #Ecclesiarchy
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
 				    add_building = building_major_capital   	
+					add_building = building_autochthon_monument
+					add_building = building_temple #building_holotemple 
 					add_building = building_fortress
-					add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
-					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
-				    add_building = building_foundry_2
-				    add_building = building_factory_2
-				    add_building = building_ministry_production  
-				    #add_building = building_research_lab_2
-					add_building = building_resource_silo
-					#add_building = building_bio_reactor
-					#add_building = building_production_center 
-				    #add_building = building_coordinated_fulfillment_center_2 
-				    #add_building = building_archaeo_refinery				
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+				    #add_building = building_ministry_production  			
 				    while = {
-				    	count = 35
+				    	count = 27
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 				}
@@ -1469,33 +1507,30 @@ country_event = { #Ecclesiarchy
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_foundry_1 #building_factory_1
-					add_building = building_ministry_production
-					add_building = building_fortress
-					add_building = building_stronghold	
-					add_building = building_mote_harvesters 	
+				    add_building = building_autochthon_monument
+					add_building = building_temple #building_holotemple 
+					add_building = building_precinct_house 	
+				    #add_building = building_foundry_1 #building_factory_1
+					#add_building = building_ministry_production
+					add_building = building_stronghold		
 				    add_building = building_planetary_shield_generator					
 				    while = {
-				    	count = 14
+				    	count = 25
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 13
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_materialist" }
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 				if = {

@@ -89,7 +89,7 @@ system = { id = "64" name = "Vrun" position = { x = 172.5782 y = 181.6608 } init
 system = { id = "65" name = "Solstice" position = { x = 240.7011 y = 227.0761 } initializer = Solstice_initializer }
 system = { id = "66" name = "Raikan" position = { x = 248.6488 y = 195.2854 } initializer = Raikan_initializer }
 system = { id = "67" name = "Morda Prime" position = { x = 229.3473 y = 254.3253 } initializer = Morda_Prime_initializer } #ПАДШИЙ_МИР_ХАОСА
-system = { id = "68" name = "Ophellia" position = { x = 244.1073 y = 164.63 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ecclesiarchy_start } } }
+system = { id = "68" name = "Ophellia" position = { x = 244.1073 y = 164.63 } initializer = Ophellia_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ecclesiarchy_start } } }
 system = { id = "69" name = "Pintax" position = { x = 221.3996 y = 132.8393 } initializer = Pintax_initializer }
 system = { id = "70" name = "Taras" position = { x = 256.5965 y = 124.8916 } initializer = Taras_initializer }
 system = { id = "71" name = "Jurn" position = { x = 126.0275 y = 225.9407 } initializer = Jurn_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Orc_start } } }

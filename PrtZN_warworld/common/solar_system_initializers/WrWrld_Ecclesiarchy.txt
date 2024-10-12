@@ -1,10 +1,10 @@
 #МИРЫ ХРАМЫ И ТД
-Macharia_initializer = {
+Ophellia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Ecclesiarchy_gos }
+	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
 		class = star
@@ -41,7 +41,99 @@ Macharia_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_arid"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+		change_orbit = 4
+		starting_planet = yes
+		
+		flags = { Ecclesiarchy_Cardinal }	
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Macharia_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	flags = { Ecclesiarchy_gos_station }
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+	planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_relic"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -132,7 +224,7 @@ Ultimacharia_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -223,7 +315,7 @@ PaxArgentius_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_arctic"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -277,7 +369,7 @@ Avignor_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Ecclesiarchy_gos }
+	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
 		class = star
@@ -314,7 +406,7 @@ Avignor_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_savannah"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -368,7 +460,7 @@ Dimmamar_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Ecclesiarchy_gos }
+	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
 		class = star
@@ -405,7 +497,7 @@ Dimmamar_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_tropical"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -459,7 +551,7 @@ Heletine_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Ecclesiarchy_gos }
+	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
 		class = star
@@ -641,7 +733,7 @@ Astorgius_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Ecclesiarchy_gos }
+	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
 		class = star
@@ -678,7 +770,7 @@ Astorgius_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_alpine"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -732,7 +824,7 @@ Prassium_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Ecclesiarchy_gos }
+	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
 		class = star
@@ -769,7 +861,7 @@ Prassium_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_ocean"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
