@@ -81,7 +81,7 @@ system = { id = "56" name = "Targus" position = { x = 229.3473 y = 312.2297 } in
 system = { id = "57" name = "Illustries" position = { x = 265.6795 y = 320.1774 } initializer = Illustries_initializer } #МИР ЭЛЬДАР
 system = { id = "58" name = "Trikster" position = { x = 238.4304 y = 340.6143 } initializer = Trikster_initializer } #БУФЕР ЭЛЬДАР
 system = { id = "59" name = "Stormvald" position = { x = 169.172 y = 99.91324 } initializer = Stormvald_initializer }
-system = { id = "60" name = "Inwit" position = { x = 156.6828 y = 118.0794 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Imperial_Fists_start } } } #Астартес Inwit_initializer
+system = { id = "60" name = "Inwit" position = { x = 156.6828 y = 118.0794 } initializer = Inwit_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Imperial_Fists_start } } } #Астартес
 system = { id = "61" name = "Omega Mao" position = { x = 173.7136 y = 136.2455 } initializer = Omega_Mao_initializer } #ПАДШИЙ_МИР_ХАОСА
 system = { id = "62" name = "Luther Mcintyre" position = { x = 190.7443 y = 158.9531 } initializer = Luther_Mcintyre_initializer }
 system = { id = "63" name = "Trantis" position = { x = 213.452 y = 185.0669 } initializer = Trantis_initializer } 
@@ -232,7 +232,7 @@ system = { id = "207" name = "Menazoid" position = { x = 446.2054 y = 116.9439 }
 system = { id = "208" name = "Warfunnel" position = { x = 443.9346 y = 88.55937 } initializer = Warfunnel_initializer }
 system = { id = "209" name = "Nervkor" position = { x = 467.7777 y = 95.37167 } initializer = Nervkor_initializer } 
 system = { id = "210" name = "Credence" position = { x = 17.03076 y = 170.307 } initializer = Credence_initializer } #ПАДШИЙ_МИР_ХАОСА
-system = { id = "211" name = "Nocturne" position = { x = 34.06149 y = 148.7347 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Salamanders_start } } } #Астартес initializer = Nocturne_initializer
+system = { id = "211" name = "Nocturne" position = { x = 34.06149 y = 148.7347 } initializer = Nocturne_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Salamanders_start } } } #Астартес
 system = { id = "212" name = "Boras" position = { x = 5.676926 y = 138.5163 } initializer = Boras_initializer }
 system = { id = "213" name = "Volurilis" position = { x = -20.43688 y = 129.4332 } initializer = Volurilis_initializer }
 system = { id = "214" name = "Seidon" position = { x = 17.03075 y = 113.5378 } initializer = Seidon_initializer } 
@@ -545,7 +545,7 @@ system = { id = "520" name = "Pain" position = { x = -467.2917 y = 462.8485 } in
 system = { id = "521" name = "Astorgius" position = { x = -220.0006 y = -77.04032 } initializer = Astorgius_initializer } 
 system = { id = "522" name = "Pax Argentius" position = { x = -30.82148 y = -193.7755 } initializer = PaxArgentius_initializer }
 system = { id = "523" name = "Fenris" position = { x = 170.2413 y = -160.4294 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Space_Wolves_start } } } #Астартес
-system = { id = "524" name = "Macragge" position = { x = -317.0133 y = 259.2946 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ultramarines_start } } } #Астартес
+system = { id = "524" name = "Macragge" position = { x = -317.0133 y = 259.2946 } initializer = Macragge_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ultramarines_start } } } #Астартес
 system = { id = "525" name = "Talassar" position = { x = -301.8796 y = 246.6392 } initializer = Talassar_initializer } 
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
