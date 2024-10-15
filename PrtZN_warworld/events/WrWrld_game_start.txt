@@ -40,9 +40,9 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_game_start.100 days = 1 }
 		}
-		owner = {
-			country_event = { id = WrWrld_Imperium_species.1 }
-		}
+		# owner = {
+			# country_event = { id = WrWrld_Imperium_species.1 }
+		# }
 		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -242,6 +242,13 @@ country_event = { #Imperium
 		add_tradition = tr_aptitude_specialist_training
 		
 		add_tradition = tr_statecraft_adopt
+		
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_nerve_stapled
+			remove_trait = trait_perfected_genes
+			effect = { save_global_event_target_as = servitor_species }
+		}
 		
 		every_system = {
 			limit = {
