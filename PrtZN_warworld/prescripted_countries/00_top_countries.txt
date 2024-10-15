@@ -923,6 +923,7 @@ Space_Wolves = {
 		name_list="HUMAN3"
 		gender=male
 		trait="trait_perfected_genes"
+		trait="trait_storm_touched"
 		trait="trait_extremely_adaptive"
 		trait="trait_unruly"
 		trait="trait_deviants"
@@ -952,9 +953,9 @@ Space_Wolves = {
  
 		}
 	}
-	authority="auth_oligarchic"
+	authority="auth_dictatorial"
 	flags = { Space_Wolves_start Space_Wolves_gos }
-	government="gov_purification_committee"
+	government="gov_purity_order"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
@@ -1030,7 +1031,144 @@ Space_Wolves = {
 	{
 		"civic_fanatic_purifiers"
 		"civic_warrior_culture"
-		"civic_citizen_service"
+		"civic_storm_callers"
+	}
+	origin="origin_imperium"
+}
+Manachean_Commonwealth = {
+	key="Манахейское Содружество"
+	ship_prefix=
+	{
+		key="Манахей."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_perfected_genes"
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Манахейское Содружество"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Манахейское Содружествоск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	flags = { Manachean_Commonwealth_start Manachean_Commonwealth_gos }
+	government="gov_purity_order"
+	advisor_voice_type="l_xenophobe"
+	planet_name=
+	{
+		key="Манахея"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Манахея"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="wain_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="zoological"
+			file="flag_zoological_24.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors=
+		{
+			"dark_blue"
+			"yellow"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Прокул Офаний"
+				literal=yes
+			}
+		}
+		portrait="imperium_male_02"
+		texture=0
+		evolution_mask=0
+		attachment=31
+		clothes=11
+		ruler_title=
+		{
+			key="Правитель"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Правительница"
+			literal=yes
+		}
+		trait="trait_ruler_charismatic"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_peaceful_traders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_dystopian_society"
+		"civic_fanatic_purifiers"
+		"civic_merchant_guilds"
 	}
 	origin="origin_imperium"
 }

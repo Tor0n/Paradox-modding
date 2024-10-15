@@ -68,7 +68,9 @@ Macragge_initializer = {
 		has_ring = no
 		starting_planet = yes
 
-		home_planet = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
 	}
 
 	planet = {
@@ -483,7 +485,9 @@ Inwit_initializer = {
 		has_ring = no
 		starting_planet = yes
 
-		home_planet = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
 	}
 
 	planet = {
