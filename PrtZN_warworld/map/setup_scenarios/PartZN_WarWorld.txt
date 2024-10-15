@@ -554,6 +554,10 @@ system = { id = "529" name = "Jerober" position = { x = -462.3825 y = 243.6611 }
 system = { id = "530" name = "Nune" position = { x = -434.3825 y = 249.0011 } }
 system = { id = "531" name = "Fatypireon" position = { x = -373.1655 y = 265.2854 } }
 system = { id = "532" name = "Arsta" position = { x = -392.2997 y = 222.2854 } }
+system = { id = "533" name = "Barf" position = { x = -390.0435 y = -322.2002 } }
+system = { id = "534" name = "Siat" position = { x = -385.0286 y = -283.5609 } }
+system = { id = "535" name = "Deme" position = { x = -415.7286 y = -264.0571 } }
+system = { id = "536" name = "Kallia" position = { x = -420.7216 y = -300.7573 } }
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
@@ -1248,4 +1252,16 @@ system = { id = "532" name = "Arsta" position = { x = -392.2997 y = 222.2854 } }
  add_hyperlane = { from = "526" to = "468" }
  add_hyperlane = { from = "526" to = "467" }
  add_hyperlane = { from = "527" to = "475" }
+ add_hyperlane = { from = "533" to = "441" }
+ add_hyperlane = { from = "533" to = "443" }
+ add_hyperlane = { from = "533" to = "534" }
+ add_hyperlane = { from = "533" to = "536" }
+ add_hyperlane = { from = "534" to = "444" }
+ add_hyperlane = { from = "534" to = "533" }
+ add_hyperlane = { from = "534" to = "535" }
+ add_hyperlane = { from = "535" to = "438" }
+ add_hyperlane = { from = "535" to = "439" }
+ add_hyperlane = { from = "535" to = "534" }
+ add_hyperlane = { from = "535" to = "536" }
+ add_hyperlane = { from = "536" to = "440" }
 }

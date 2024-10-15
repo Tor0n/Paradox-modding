@@ -1,0 +1,26 @@
+namespace = WrWrld_Imperium_species
+
+country_event = {
+	id = WrWrld_Imperium_species.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = { has_country_flag = Imperium_gos }
+	immediate = {
+		create_species = {
+			name = servitor
+			plural = servitor_plural
+			class = ART
+			portrait = imperium
+			#homeworld = 
+			traits = { trait_pc_continental_preference trait_zombie }
+			sapient = yes
+			is_mod = no
+			immortal = no
+			can_be_modified  = yes
+			gender = not_set
+			namelist = HUMAN3
+			effect = { save_global_event_target_as = servitor_species }
+		}
+	}
+}

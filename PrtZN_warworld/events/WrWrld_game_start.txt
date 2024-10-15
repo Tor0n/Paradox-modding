@@ -40,6 +40,9 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_game_start.100 days = 1 }
 		}
+		owner = {
+			country_event = { id = WrWrld_Imperium_species.1 }
+		}
 		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -277,16 +280,9 @@ country_event = { #Imperium
 				}
 			}
 			every_system_planet = {
-			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
+				### ПОСТРОЙКА СТАНЦИЙ ###
+			    if = {
+				    limit = { is_colonizable = no }
 					create_deposits_stations = yes
 				}
 				if = {
@@ -294,17 +290,12 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 				    add_building = building_colony_shelter
 				    while = {
 				    	count = 4
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
-					#last_created_pop = { save_event_target_as = human }
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -315,15 +306,11 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 				    add_building = building_colony_shelter				
 				    while = {
 				    	count = 4
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 						count = 1
@@ -335,17 +322,13 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
 				    while = {
 				    	count = 26
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 						count = 13
@@ -357,17 +340,13 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
 				    while = {
 				    	count = 25
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 						count = 13
@@ -379,15 +358,11 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 				    add_building = building_colony_shelter 					
 				    while = {
 				    	count = 1
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 				}
 				if = {
@@ -395,9 +370,7 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Forge_Ecumenopolis			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
 					add_building = building_stronghold
@@ -415,9 +388,7 @@ country_event = { #Imperium
 				    #add_building = building_archaeo_refinery				
 				    while = {
 				    	count = 35
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 				    	count = 30
@@ -436,9 +407,7 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Forge_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
@@ -453,9 +422,7 @@ country_event = { #Imperium
 				    add_building = building_planetary_shield_generator					
 				    while = {
 				    	count = 14
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 				    	count = 13
@@ -463,6 +430,10 @@ country_event = { #Imperium
 				    		species = owner_main_species
 							ethos = { ethic = "ethic_materialist" }
 				    	}
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
 					}
 					while = {
 						count = 5
@@ -478,9 +449,7 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Hive_civ_world
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT }
 					while = {
 						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
@@ -5097,6 +5066,7 @@ country_event = { #Tau
 				    create_colony = {
 				    	owner = ROOT
 		    	    }
+					save_global_event_target_as = Vespid_World
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
