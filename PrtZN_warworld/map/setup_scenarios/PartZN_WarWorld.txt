@@ -311,7 +311,7 @@ system = { id = "286" name = "Valhalla" position = { x = -45.41533 y = -239.5662
 system = { id = "287" name = "Gildarift" position = { x = -69.25837 y = -244.1077 } initializer = Gildarift_initializer } #МИР_ВОЙНЫ_ХАОСА
 system = { id = "288" name = "Matarakh" position = { x = -94.23679 y = -249.7846 } initializer = Matarakh_initializer } #ПАДШИЙ_МИР_ХАОСА
 system = { id = "289" name = "Garagos" position = { x = -104.4552 y = -225.9416 } initializer = Garagos_initializer } #МИР_ДЕМОНОВ_ХАОСА
-system = { id = "290" name = "Baal" position = { x = -116.9444 y = -206.6401 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Blood_Angels_start } } } #Астартес Baal_initializer
+system = { id = "290" name = "Baal" position = { x = -116.9444 y = -206.6401 } initializer = Baal_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Blood_Angels_start } } } #Астартес
 system = { id = "291" name = "Aspen" position = { x = -84.01834 y = -277.0338 } initializer = Aspen_initializer }
 system = { id = "292" name = "Vacuna" position = { x = -113.5383 y = -275.8984 } initializer = Vacuna_initializer }
 system = { id = "293" name = "Molochii" position = { x = -139.6521 y = -279.3046 } initializer = Molochii_initializer }
@@ -544,7 +544,7 @@ system = { id = "519" name = "Woe" position = { x = -462.2917 y = 462.8485 } ini
 system = { id = "520" name = "Pain" position = { x = -467.2917 y = 467.8485 } initializer = Pain_initializer }
 system = { id = "521" name = "Astorgius" position = { x = -220.0006 y = -77.04032 } initializer = Astorgius_initializer } 
 system = { id = "522" name = "Pax Argentius" position = { x = -30.82148 y = -193.7755 } initializer = PaxArgentius_initializer }
-system = { id = "523" name = "Fenris" position = { x = 170.2413 y = -160.4294 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Space_Wolves_start } } } #Астартес
+system = { id = "523" name = "Fenris" position = { x = 170.2413 y = -160.4294 } initializer = Fenris_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Space_Wolves_start } } } #Астартес
 system = { id = "524" name = "Macragge" position = { x = -317.0133 y = 259.2946 } initializer = Macragge_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ultramarines_start } } } #Астартес
 system = { id = "525" name = "Talassar" position = { x = -301.8796 y = 246.6392 } initializer = Talassar_initializer } 
 system = { id = "526" name = "Mackense" position = { x = -445.3015 y = 229.7746 } }

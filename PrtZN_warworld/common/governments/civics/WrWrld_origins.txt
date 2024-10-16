@@ -28,6 +28,38 @@ origin_imperium = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
+origin_astartes = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { Astartes_origin_start }
+	modifier = {
+		monthly_trades_energy_produces_add = 175
+		monthly_trades_alloys_produces_add = 120
+	}
+
+	description = ""
+	
+	traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
 # Land_Chaos
 origin_chaos = {
 	is_origin = yes

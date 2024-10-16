@@ -38,7 +38,7 @@ selective = {
 		}
 	}
 
-	default = yes
+	default = no
 
 	stop_when_armies_dead = yes
 	accept_surrender = yes
@@ -70,7 +70,7 @@ indiscriminate = {
 		}
 	}
 
-	default = no
+	default = yes
 
 	stop_when_armies_dead = no
 	accept_surrender = yes
@@ -88,17 +88,17 @@ indiscriminate = {
 	# from = planet
 	ai_weight = {
 		weight = 5
-		modifier = {
-			factor = 0.01
-			exists = from
-			from = {
-				owner = { NOT = { is_hostile = root.owner } }
-				NAND = {
-					controller = { is_crisis_faction = yes }
-					planet_garrison_strength > 0
-				}
-			}
-		}
+		#modifier = {
+		#	factor = 0.01
+		#	exists = from
+		#	from = {
+		#		owner = { NOT = { is_hostile = root.owner } }
+		#		NAND = {
+		#			controller = { is_crisis_faction = yes }
+		#			planet_garrison_strength > 0
+		#		}
+		#	}
+		#}
 	}
 }
 
@@ -128,6 +128,7 @@ armageddon = {
 	default = no
 
 	stop_when_armies_dead = no
+	accept_surrender = yes
 	abduct_pops = no
 
 	planet_damage = 1.5
@@ -136,25 +137,25 @@ armageddon = {
 	kill_pop_chance = {
 		base = 1.0
 	}
-	min_pops_to_kill_pop = 0
+	min_pops_to_kill_pop = 5
 
 	# root = fleet
 	# from = planet
 	ai_weight = {
 		weight = 10
-		modifier = {
-			factor = 0.01
-			exists = from
-			from = {
-				owner = { NOT = { is_hostile = root.owner } }
-				NAND = {
-					controller = { is_crisis_faction = yes }
-					planet_garrison_strength > 0
-				}
-			}
-			exists = owner
-			owner = { is_crisis_faction = no }
-		}
+		#modifier = {
+		#	factor = 0.01
+		#	exists = from
+		#	from = {
+		#		owner = { NOT = { is_hostile = root.owner } }
+		#		NAND = {
+		#			controller = { is_crisis_faction = yes }
+		#			planet_garrison_strength > 0
+		#		}
+		#	}
+		#	exists = owner
+		#	owner = { is_crisis_faction = no }
+		#}
 	}
 }
 
