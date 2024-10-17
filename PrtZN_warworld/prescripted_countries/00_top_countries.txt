@@ -1180,42 +1180,37 @@ Land_Chaos = {
 	
 	ship_prefix = "Хаос."
 	
-	species= {
-		class = "NECROID"
-		portrait = "nec6"
-		name = "Отродье Хаоса"
-		plural = "Отродья Хаоса"
-		adjective = "Хаоситск"
-		name_list = "NECROID4"
-		trait = "trait_necrophage"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_slow_breeders"
-		trait = "trait_solitary"
-		trait = "trait_repugnant"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_talented"
-		trait = "trait_quick_learners"
-		trait = "trait_deviants"
-		trait = "trait_venerable"
-	}
-	secondary_species = {
-		class = "HUM"
-		portrait = "humanoid_hp_01"
-		name = "Демон"
-		plural = "Демоны"
-		adjective = "Демонск"
-		name_list = "HUM1"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_quarrelsome"
-		trait = "trait_unruly"
-		trait = "trait_strong"
-		trait = "trait_nomadic"
-		trait = "trait_repugnant"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_humanoid_existential_iteroparity"
-		trait = "trait_humanoid_jinxed"
+	species=
+	{
+		class="HUM"
+		portrait="xevil"
+		species_name=
+		{
+			key="Хаосит"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Хаоситы"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Хаоситск"
+			literal=yes
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_extremely_adaptive"
+		trait="trait_deviants"
+		trait="trait_unruly"
+		trait="trait_decadent"
+		trait="trait_wasteful"
+		trait="trait_resilient"
+		trait="trait_nomadic"
+		trait="trait_quick_learners"
+		trait="trait_humanoid_jinxed"
+		trait="trait_traditional"
 	}
 	
 	room = "personality_evangelizing_zealots_room"
