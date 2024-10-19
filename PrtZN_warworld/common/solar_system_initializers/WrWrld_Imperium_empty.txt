@@ -910,89 +910,6 @@ Khoraj_initializer = {
 		home_planet = no
 	}
 }
-Raikan_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Ecclesiarchy_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 Montsegnur_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -3239,7 +3156,7 @@ Vargas_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Manachean_Commonwealth_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -4972,89 +4889,6 @@ Jujya_initializer = {
 		home_planet = no
 	}
 }
-Aspen_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		#change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
 Synford_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -5228,7 +5062,7 @@ Cantoii_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Manachean_Commonwealth_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5394,7 +5228,7 @@ Mkhand_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Manachean_Commonwealth_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -6678,7 +6512,7 @@ Olverach_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Manachean_Commonwealth_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -8776,7 +8610,7 @@ Jollov_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Manachean_Commonwealth_gos_station }
 
 	max_instances = 1
 	init_effect = { }

@@ -1,0 +1,247 @@
+﻿KEMETIC = {
+	category = "Kemetic"
+	randomized = no
+	alias = "Zem"
+
+	ship_names = {
+
+		generic = { 
+		    Abedju Abu Behdet Bahariya Baki Buhen Bubastis Dahshur Dakhla Dunqul Djedu Farafra Henen-nesw Heh Iken Itjtawy Kharga Kerma Kyrene Lunet Meidum Men-nefer Nekhen Nubt On 
+			Perwadjyt Pwenet Qadesh Rostja Saqqara "Serabit Khadim" Sauty Sawu Selima Shaat Sharuhen Timna Thinis Toshka Waset 
+		}
+
+		corvette = {
+		}
+
+		destroyer = {
+		}
+
+		cruiser = {
+		}
+
+		battleship = {
+		}
+
+		titan = {
+		}
+
+		colossus = {
+		}
+
+		juggernaut = {
+		}
+
+		constructor = {
+		}
+
+		colonizer = {
+		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+		}
+
+		science = {
+		}
+
+		transport = {
+		}
+
+		military_station_small = {
+		}
+
+		ion_cannon = {
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+			
+		}
+		sequential_name = KEMETIC_xxFLEET_ORD
+	}
+	
+	army_names = {
+
+		generic = {
+			sequential_name = KEMETIC_xxDEFENCEARMY_ORD
+		}
+
+		machine_defense = {
+			sequential_name = KEMETIC_xxMACHINEDEFENCEARMY_ORD
+		}
+
+		machine_assault_1 = {
+			sequential_name = KEMETIC_xxMACHINEASSAULTONEARMY_ORD
+		}
+
+		machine_assault_2 = {
+			sequential_name = KEMETIC_xxMACHINEASSAULTTWOARMY_ORD
+		}
+
+		machine_assault_3 = {
+			sequential_name = KEMETIC_xxMACHINEASSAULTTHREEARMY_ORD
+		}
+
+		defense_army = {
+			sequential_name = KEMETIC_xxDEFENCEARMY_ORD
+		}
+
+		assault_army = {
+			sequential_name = KEMETIC_xxASSAULTARMY_ORD
+		}
+
+		slave_army = {
+			sequential_name = KEMETIC_xxSLAVEARMY_ORD
+		}
+
+		clone_army = {
+			sequential_name = KEMETIC_xxCLONEARMY_ORD
+		}
+
+		undead_army = {
+			sequential_name = KEMETIC_xxUNDEADARMY_ORD
+		}
+
+		robotic_army = {
+			sequential_name = KEMETIC_xxROBOTICARMY_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = KEMETIC_xxROBOTICDEFENDEARMY_ORD
+		}
+
+		psionic_army = {
+			sequential_name = KEMETIC_xxPSIONICARMY_ORD
+		}
+
+		xenomorph_army = {
+			sequential_name = KEMETIC_xxXENOMORPHARMY_ORD
+		}
+
+		gene_warrior_army = {
+			sequential_name = KEMETIC_xxGENEWARRIORARMY_ORD
+		}
+
+		occupation_army = {
+			sequential_name = KEMETIC_xxOCCUPATIONARMY_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = KEMETIC_xxROBOTICOCCUPATIONARMY_ORD
+		}
+
+		primitive_army = {
+			sequential_name = KEMETIC_PRIMITIVEARMY_xxSEQ
+		}
+		industrial_army = {
+			sequential_name = KEMETIC_INDUSTRIALARMY_xxSEQ
+		}
+		postatomic_army = {
+			sequential_name = KEMETIC_POSTATOMICARMY_xxSEQ
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				Inebu-hedj Khepesh Imentet "Nit Resu" "Nit Mehtet" "Khasu'u" "Hui-ges Imenti" "Hui-ges Iabti" Andjeti Kem-Ur Hesbu Tjeb-Netjer Heka-Redj Khenti-Iabti Djehuti "Hat Mehit" Behdet
+                "Imty Khenti" "Imty Pehu" Sepdju Ta-Seti Wetjes-Her Nekhen Waset Netjerui Meseh Bat Ta-Wer Menu Uadjyt Sha Dju-fet "Nedjfet Khentet" "Nedjfet Pehtet" Uenet Ma-Hedj Input Nemti Uabwi "N'aret Khentet" "N'aret Pehtet" Mednit
+			}
+		}
+
+		pc_desert = {
+			names = {
+			}
+		}
+
+		pc_arid = {
+			names = {
+			}
+		}
+
+		pc_tropical = {
+			names = {
+			}
+		}
+
+		pc_continental = {
+			names = {
+			}
+		}
+
+		pc_gaia = {
+			names = {
+			}
+		}
+
+		pc_ocean = {
+			names = {
+			}
+		}
+
+		pc_tundra = {
+			names = {
+			}
+		}
+
+		pc_arctic = {
+			names = {
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+
+	}
+
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = {
+			}
+			
+			# Always combined with a second name
+			first_names_male = {
+			    Aahotepre Ahmes Ahmose Akhenaten Amasis Amenemhat Amenemnisu Amenemope Amenhotep Chephren Cheops Dedumose Hakor Hor Hori 
+			    Inkaef Intef Iuput Kagemni Khafra Khety Khnumhotep Khufu Mentuhotep Minkhaf Neferhotep Neferkare Nefermaat Nepherites 
+			    Osorkon Prehotep Psusennes Rahotep Ramesses Senusret Seti Sobekhotep Thutmose Userkaf Yakareb  
+			}
+			first_names_female = {
+				Aat Abar Ahhotep Ahmose Ankhesenpepi Arsinoe Aya Baketwernel Bastet Henuttawy Henutsen Hetepheres 
+			    Iput Iset Isetnofret Karomama Khamerernebty Khentkaus Khuit Kiya Maatkare Meketaten Menhet Meresankh Meritamen Meritites 
+			    Nefertari Nefertkau Nofret Takhat Takahatenamun Tentamun Tiaa Tiye 
+			}
+			
+			# Always combined with a first name
+			second_names = {
+			    "" 
+			}
+			
+			regnal_first_names_male = {
+				Seka Khayu Tiu Thesh Neheb Wazner Mekh Sekhen Serqer Narmer Djer Djet Den Semerkhet "Qa'a" Sneferka Raneb Nynetjer Senedj Neferkara Hudjefa Djoser 
+				Sekhemkhet Sanakht Khaba Huni Sneferu Khufu Khafre Djdefre Menkaure Thamphtis Userkaf Sahure Neferefre Shepseskare Nyuserre Unas Teti "Dejkadre Shemai" Neferkare Merenhor Nikare 
+				Intef Mentuhotep Menkare Segerseni Senusret Nerikare Sonbef Sebkay Sobekhotep Dedumose Sheeshi Nehesy Sheneh Semenre Rahotep "Nebpehtire Ahmose" Amenhotep Thutmose  
+				Akhenaten Tutankhamun Ramesses Herihor Piankh Pinedjem Masaharta Menkheperre Smendes Pinedjem 
+			}
+			
+			regnal_first_names_female = {
+				Hatshepsut Tentamun Nitocris Neit Neferneferuaten Nefertiti  
+			}
+			
+			regnal_second_names = {
+				THUTMOSID THINISID NARMERID SENEDJID NYNETJERID SANAKHTID SNEFERID KUFRID KHAFRID SHEPSESKAFID MENKAURID UNASID USERKAFID ABUSIRID PEPID TETID MENKARID MERENHORID NIKARID NEFERKAURID WADJKARID SETUTID MERYHATHORID INTEFID RAMESSID
+			}
+		}
+	}
+}

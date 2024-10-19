@@ -1,0 +1,57 @@
+# This is a template which multiple species can use. 
+
+druchii_male_clothes_01 = {
+	default = "gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_1.dds"
+	
+	game_setup = {#will run with a limited country scope. species and government is set but the country does not actually exist
+		default = "gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_1.dds"
+		
+		#random = {
+		#	trigger = { always = yes }
+		#	list = {
+		#		"gfx/models/portraits/druchii/druchii_male_clothes_govenor_04.dds"
+		#		"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_3.dds"
+		#		"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_4.dds"
+		#		"gfx/models/portraits/druchii/druchii_male_clothes_govenor_02.dds"
+		#	}
+		#}
+	}
+	
+	#species scope
+	species = { #generic portrait for a species
+		default = "gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_1.dds"
+	}
+	
+	#pop scope
+	pop = { #for a specific pop
+		default = "gfx/models/portraits/druchii/druchii_male_clothes_govenor_01.dds"
+		
+		"gfx/models/portraits/druchii/druchii_male_clothes_lower_armor.dds"	= { OR = { is_pop_category = worker is_pop_category = slave is_pop_category = simple_drone }  }
+		"gfx/models/portraits/druchii/druchii_male_clothes_govenor_04.dds"		= { OR = { is_pop_category = specialist is_pop_category = complex_drone } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_2.dds" 	= { is_pop_category = ruler }
+	}
+	#leader scope
+	leader = { #scientists, generals, admirals, governor
+	"gfx/models/portraits/druchii/druchii_male_clothes_govenor_04.dds" = { leader_class = scientist }
+	"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_4.dds" = { leader_class = general }
+	"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_5.dds"  = { leader_class = admiral }
+	"gfx/models/portraits/druchii/druchii_male_clothes_govenor_03.dds"  = { leader_class = governor }
+	}
+
+	#leader scope 
+	ruler = { #for rulers
+		default = "gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_1.dds"
+
+		"gfx/models/portraits/druchii/druchii_male_clothes_govenor_01.dds" = { owner = { has_generic_government = yes NOT = { has_authority = auth_imperial } } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_3.dds" = { owner = { has_militarist_government = yes NOT = { has_authority = auth_imperial } } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_lower_armor.dds" = { owner = { has_spiritualist_government = yes NOT = { has_authority = auth_imperial } } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_govenor_02.dds"  = { owner = { has_pacifist_government = yes NOT = { has_authority = auth_imperial } } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_lower_armor.dds"  = { owner = { has_primitive_government = yes NOT = { has_authority = auth_imperial } } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_govenor_04.dds" = { owner = { has_materialist_government = yes NOT = { has_authority = auth_imperial } } }
+		"gfx/models/portraits/druchii/druchii_male_clothes_ruler_armor_5.dds" = { owner = { has_authority = auth_imperial } }
+	}
+}
+
+druchii_male_hair_1 = { 
+	default = "gfx/models/portraits/druchii/druchii_male_hair_black_crewcut.dds"
+}

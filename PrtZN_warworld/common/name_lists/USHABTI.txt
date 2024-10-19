@@ -1,0 +1,244 @@
+#Undead Tomb Keeper-like robots
+USHABTI = {
+	category = "Kemetic"
+	ship_names = {
+
+		generic = { 
+            Scythe Jackal Shroud Khopesh Cairn Sepulchre Tomb Pyramid Canopus Duat Sarcophagus Temple Nefer Vulture Hyena Scarab Dirge Crypt Necropolis Mausoleum Catacomb
+            "Keeper of the Dead" "Guardian of Duat" "Restless Soul" Ammit "He Who Lost His Name" "Feather of Ma'at" Immortal Imhotep "The Silent King" Ihtamnet "Cobra's Bite"
+            "Eternal Warrior" Shadow			
+		}
+
+		corvette = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+		}
+
+		titan = {
+		}
+
+		colossus = {
+		}
+		
+		science = {
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		transport = {
+		}
+	
+		military_station_small = {
+		}
+
+		ion_cannon = {
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+				
+		}
+		sequential_name = USHABTI_xxFLEET_ORD
+	}
+		
+	army_names = {
+
+		machine_defense = {
+			sequential_name = NEHEKHARAN_xxMACHINEDEFENCEARMY_ORD
+		}
+		
+		machine_assault_1 = {
+			sequential_name = NEHEKHARAN_xxMACHINEASSAULTONE_ARMY_ORD
+		}
+		
+		machine_assault_2 = {
+			sequential_name = NEHEKHARAN_xxMACHINEASSAULTTWOARMY_ORD
+		}
+		
+		machine_assault_3 = {
+			sequential_name = NEHEKHARAN_xxMACHINEASSAULTTHREEARMY_ORD
+		}
+		
+		defense_army = {
+			sequential_name = NEHEKHARAN_xxDEFENCEARMY_ORD
+		}
+			
+		assault_army = {
+			sequential_name = NEHEKHARAN_xxASSAULTARMY_ORD
+		}
+		
+		slave_army = {
+			sequential_name = NEHEKHARAN_xxSLAVEARMY_ORD
+		}
+		
+		clone_army = { 
+			sequential_name = NEHEKHARAN_xxCLONEARMY_ORD
+		}
+		
+		undead_army = {
+			sequential_name = NEHEKHARAN_xxUNDEADARMY_ORD
+		}
+
+		robotic_army = {
+			sequential_name = NEHEKHARAN_xxROBOTICARMY_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = NEHEKHARAN_xxROBOTICDEFENDEARMY_ORD
+		}
+		
+		psionic_army = { 
+			sequential_name = NEHEKHARAN_xxPSIONICARMY_ORD
+		}
+		
+		xenomorph_army = {
+			sequential_name = NEHEKHARAN_xxXENOMORPHARMY_ORD
+		}
+		
+		gene_warrior_army = {
+			sequential_name = NEHEKHARAN_xxGENEWARRIORARMY_ORD
+		}
+
+		occupation_army = {
+			sequential_name = NEHEKHARAN_xxOCCUPATIONARMY_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = NEHEKHARAN_xxROBOTICOCCUPATIONARMY_ORD
+		}
+
+		primitive_army = {
+			sequential_name = NEHEKHARAN_PRIMITIVEARMYxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = NEHEKHARAN_INDUSTRIALARMYxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = NEHEKHARAN_POSTATOMICARMYxx_SEQ
+		}
+	}
+
+	### PLANETS
+
+	planet_names = {
+
+		generic = {
+			names = { 
+				Per-Jhed Pyramid Tower Cairn Fortress Tekhenu Tomb Sphere Crypt Mausoleum Catacombs Palace Shrine Shield Spear Khopesh Temple Harbor
+			}
+		}
+		
+		pc_desert = {
+			names = { 
+				"Desert Per-Jhed" "Desert Pyramid" "Desert Tower" "Desert Cairn" "Desert Fortress" "Desert Tekhenu" "Desert Tomb" "Desert Sphere" "Desert Crypt" "Desert Mausoleum" "Desert Catacombs" "Desert Palace" "Desert Shrine" "Desert Shield" "Desert Spear" "Desert Khopesh" "Desert Temple" "Desert Harbor"
+			}
+		}
+		
+		pc_tropical = {
+			names = { 
+				"Green Per-Jhed" "Green Pyramid" "Green Tower" "Green Cairn" "Green Fortress" "Green Tekhenu" "Green Tomb" "Green Sphere" "Green Crypt" "Green Mausoleum" "Green Catacombs" "Green Palace" "Green Shrine" "Green Shield" "Green Spear" "Green Khopesh" "Green Temple" "Green Harbor"
+			}
+		}
+		
+		pc_arid = {
+			names = { 
+				"Arid Per-Jhed" "Arid Pyramid" "Arid Tower" "Arid Cairn" "Arid Fortress" "Arid Tekhenu" "Arid Tomb" "Arid Sphere" "Arid Crypt" "Arid Mausoleum" "Arid Catacombs" "Arid Palace" "Arid Shrine" "Arid Shield" "Arid Spear" "Arid Khopesh" "Arid Temple" "Arid Harbor"
+			}
+		}
+		
+		pc_continental = {
+			names = { 
+				"River Per-Jhed" "River Pyramid" "River Tower" "River Cairn" "River Fortress" "River Tekhenu" "River Tomb" "River Sphere" "River Crypt" "River Mausoleum" "River Catacombs" "River Palace" "River Shrine" "River Shield" "River Spear" "River Khopesh" "River Temple" "River Harbor"
+			}
+		}
+		
+		pc_ocean = {
+			names = { 
+				"Sea Per-Jhed" "Sea Pyramid" "Sea Tower" "Sea Cairn" "Sea Fortress" "Sea Tekhenu" "Sea Tomb" "Sea Sphere" "Sea Crypt" "Sea Mausoleum" "Sea Catacombs" "Sea Palace" "Liquid Shrine" "Sea Shield" "Sea Spear" "Liquid Khopesh" "Sea Temple" "Liquid Harbor"
+			}
+		}
+		
+		pc_tundra = {
+			names = { 
+				"Cold Per-Jhed" "Cold Pyramid" "Cold Tower" "Cold Cairn" "Cold Fortress" "Cold Tekhenu" "Cold Tomb" "Cold Sphere" "Cold Crypt" "Cold Mausoleum" "Cold Catacombs" "Cold Palace" "Cold Shrine" "Cold Shield" "Cold Spear" "Cold Khopesh" "Cold Temple" "Cold Harbor"
+			}
+		}
+		
+		pc_arctic = {
+			names = { 
+				"White Sand Per-Jhed" "White Sand Pyramid" "Frozen Tower" "White Sand Cairn" "Frozen Fortress" "White Sand Tekhenu" "Frozen Tomb" "White Sand Sphere" "White Sand Crypt" "Frozen Mausoleum" "Frozen Catacombs" "Frozen Palace" "White Sand Shrine" "Frozen Shield" "White Sand Spear" "White Sand Khopesh" "White Sand Temple" "White Sand Harbor"
+			}
+		}
+
+		pc_savannah = {
+			names = { 
+				"Arid Per-Jhed" "Arid Pyramid" "Arid Tower" "Arid Cairn" "Arid Fortress" "Arid Tekhenu" "Arid Tomb" "Arid Sphere" "Arid Crypt" "Arid Mausoleum" "Arid Catacombs" "Arid Palace" "Arid Shrine" "Arid Shield" "Arid Spear" "Arid Khopesh" "Arid Temple" "Arid Harbor"
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+				"Mountain Per-Jhed" "Mountain Pyramid" "Mountain Tower" "Mountain Cairn" "Mountain Fortress" "Mountain Tekhenu" "Mountain Tomb" "Mountain Sphere" "Mountain Crypt" "Mountain Mausoleum" "Mountain Catacombs" "Mountain Palace" "Mountain Shrine" "Mountain Shield" "Mountain Spear" "Mountain Khopesh" "Mountain Temple" "Mountain Harbor"
+			}
+		}
+
+		pc_nuked = {
+			names = { 
+				"Lost Per-Jhed" "Lost Pyramid" "Lost Tower" "Lost Cairn" "Lost Fortress" "Lost Tekhenu" "Lost Tomb" "Lost Sphere" "Lost Crypt" "Lost Mausoleum" "Lost Catacombs" "Lost Palace" "Lost Shrine" "Lost Shield" "Lost Spear" "Lost Khopesh" "Lost Temple" "Lost Harbor"
+			}
+		}
+		
+	}
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = { 
+			}
+			
+			# Always combined with a second name
+			first_names = {
+			Servant Priest Sholastic Acolyte Warden Stalker Sacrificer Cairn Guardian Arhitect	
+			}
+			
+			# Always combined with a first name
+			second_names = {
+			Alfa-1 Vita-1 Ghamma-1 Delta-1 Ei-1 Soou-1 Zita-1 Ita-1 Thita-1 Yota-1 Kapa-1 Lavla-1 Mi-1 Ni-1 Exi-1 Omicron-1 Pi-1 Fai-1 Ro-1 Seema-1 Tav-1 Epsilon-1 Fi-1 Ki-1 Epsi-1 Omega-1 Sampi-1 Shai-1 Khai-1 Hoori-1 Janja-1 Cheema-1 Ti-1
+			Alfa-2 Vita-2 Ghamma-2 Delta-2 Ei-2 Soou-2 Zita-2 Ita-2 Thita-2 Yota-2 Kapa-2 Lavla-2 Mi-2 Ni-2 Exi-2 Omicron-2 Pi-2 Fai-2 Ro-2 Seema-2 Tav-2 Epsilon-2 Fi-2 Ki-2 Epsi-2 Omega-2 Sampi-2 Shai-2 Khai-2 Hoori-2 Janja-2 Cheema-2 Ti-2
+			Alfa-3 Vita-3 Ghamma-3 Delta-3 Ei-3 Soou-3 Zita-3 Ita-3 Thita-3 Yota-3 Kapa-3 Lavla-3 Mi-3 Ni-3 Exi-3 Omicron-3 Pi-3 Fai-3 Ro-3 Seema-3 Tav-3 Epsilon-3 Fi-3 Ki-3 Epsi-3 Omega-3 Sampi-3 Shai-3 Khai-3 Hoori-3 Janja-3 Cheema-3 Ti-3
+			Alfa-4 Vita-4 Ghamma-4 Delta-4 Ei-4 Soou-4 Zita-4 Ita-4 Thita-4 Yota-4 Kapa-4 Lavla-4 Mi-4 Ni-4 Exi-4 Omicron-4 Pi-4 Fai-4 Ro-4 Seema-4 Tav-4 Epsilon-4 Fi-4 Ki-4 Epsi-4 Omega-4 Sampi-4 Shai-4 Khai-4 Hoori-4 Janja-4 Cheema-4 Ti-4
+			Alfa-5 Vita-5 Ghamma-5 Delta-5 Ei-5 Soou-5 Zita-5 Ita-5 Thita-5 Yota-5 Kapa-5 Lavla-5 Mi-5 Ni-5 Exi-5 Omicron-5 Pi-5 Fai-5 Ro-5 Seema-5 Tav-5 Epsilon-5 Fi-5 Ki-5 Epsi-5 Omega-5 Sampi-5 Shai-5 Khai-5 Hoori-5 Janja-5 Cheema-5 Ti-5
+			Alfa-6 Vita-6 Ghamma-6 Delta-6 Ei-6 Soou-6 Zita-6 Ita-6 Thita-6 Yota-6 Kapa-6 Lavla-6 Mi-6 Ni-6 Exi-6 Omicron-6 Pi-6 Fai-6 Ro-6 Seema-6 Tav-6 Epsilon-6 Fi-6 Ki-6 Epsi-6 Omega-6 Sampi-6 Shai-6 Khai-6 Hoori-6 Janja-6 Cheema-6 Ti-6
+			Alfa-7 Vita-7 Ghamma-7 Delta-7 Ei-7 Soou-7 Zita-7 Ita-7 Thita-7 Yota-7 Kapa-7 Lavla-7 Mi-7 Ni-7 Exi-7 Omicron-7 Pi-7 Fai-7 Ro-7 Seema-7 Tav-7 Epsilon-7 Fi-7 Ki-7 Epsi-7 Omega-7 Sampi-7 Shai-7 Khai-7 Hoori-7 Janja-7 Cheema-7 Ti-7
+			Alfa-8 Vita-8 Ghamma-8 Delta-8 Ei-8 Soou-8 Zita-8 Ita-8 Thita-8 Yota-8 Kapa-8 Lavla-8 Mi-8 Ni-8 Exi-8 Omicron-8 Pi-8 Fai-8 Ro-8 Seema-8 Tav-8 Epsilon-8 Fi-8 Ki-8 Epsi-8 Omega-8 Sampi-8 Shai-8 Khai-8 Hoori-8 Janja-8 Cheema-8 Ti-8
+			Alfa-9 Vita-9 Ghamma-9 Delta-9 Ei-9 Soou-9 Zita-9 Ita-9 Thita-9 Yota-9 Kapa-9 Lavla-9 Mi-9 Ni-9 Exi-9 Omicron-9 Pi-9 Fai-9 Ro-9 Seema-9 Tav-9 Epsilon-9 Fi-9 Ki-9 Epsi-9 Omega-9 Sampi-9 Shai-9 Khai-9 Hoori-9 Janja-9 Cheema-9 Ti-9
+			}
+			
+			regnal_first_names = {
+			}
+			
+			regnal_second_names = {
+			}
+		}
+	}
+	
+	ruler_names = {
+		default = {
+			full_names = {
+                Maat Anubis Ammit Usir Thoth Horus Hathor Atum Shu Tefnut Geb Nut Isis Set Nephthys Asaph Basth Djaf Geheb Khsar Neru Phakth Ptra Qu'aph Sakhmet Sokth Tahoth Ualatp Usirian 
+			}
+		}
+	}
+}

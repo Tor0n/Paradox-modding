@@ -1,0 +1,17 @@
+ELDR = {
+	archetype = BIOLOGICAL
+	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+	portraits = {
+    "eldar"
+	}
+	non_randomized_portraits = {
+    "eldar"
+	}
+	
+	#leader_age_min = 60
+	#leader_age_max = 90
+
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

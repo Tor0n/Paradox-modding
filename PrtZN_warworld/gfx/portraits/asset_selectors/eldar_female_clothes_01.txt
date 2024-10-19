@@ -1,0 +1,108 @@
+# This is a template which multiple species can use.
+eldar_female_clothes_01 = {
+	default = "gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+	game_setup = {#will run with a limited country scope. species and government is set but the country does not actually exist
+		default = "gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+		random = {
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_governer.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_admiral.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_general.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+				# NOTE: eldar_female_clothes is a duplicate of eldar_female_clothes_ruler, so it is not used
+			}
+		}
+	}
+	#species scope
+	species = { #generic portrait for a species
+		random = {
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_governer.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_admiral.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_general.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+				# NOTE: eldar_female_clothes is a duplicate of eldar_female_clothes_ruler, so it is not used
+			}
+		}
+	}
+	#pop scope
+	pop = { #for a specific pop
+		random = {
+			trigger = {
+				cm_shared_pop_is_assembly_type = no
+				cm_shared_pop_is_military_type = no
+				cm_shared_pop_is_science_type = no
+			}
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_governer.dds"
+			}
+		}
+		random = {
+			trigger = { cm_shared_pop_is_military_type = yes }
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_admiral.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes_general.dds"
+			}
+		}
+		random = {
+			trigger = {
+				OR = {
+					cm_shared_pop_is_science_type = yes
+					cm_shared_pop_is_assembly_type = yes
+				}
+			}
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_scientist.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes2.dds"
+			}
+		}
+	}
+	#leader scope
+	leader = { #scientists, generals, admirals, governors, envoys
+		random = {
+			trigger = { leader_class = scientist }
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_scientist.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes2.dds"
+			}
+		}
+		"gfx/models/portraits/eldar/eldar_female_clothes_general.dds" = { leader_class = general }
+		"gfx/models/portraits/eldar/eldar_female_clothes_admiral.dds" = { leader_class = admiral }
+		"gfx/models/portraits/eldar/eldar_female_clothes_governer.dds" = {
+			OR = {
+				leader_class = governor
+				leader_class = envoy
+			}
+		}
+	}
+	#leader scope 
+	ruler = { #for rulers
+		default = "gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+		random = {
+			trigger = {
+				owner = {
+					OR = {
+						has_generic_government = yes
+						has_spiritualist_government = yes
+					}
+				}
+			}
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_ruler.dds"
+			}
+		}
+		"gfx/models/portraits/eldar/eldar_female_clothes_admiral.dds" = { owner = { has_militarist_government = yes } }
+		"gfx/models/portraits/eldar/eldar_female_clothes_governer.dds" = { owner = { has_pacifist_government = yes } }
+		"gfx/models/portraits/eldar/eldar_female_clothes_general.dds" = { owner = { has_primitive_government = yes } }
+		random = {
+			trigger = {
+				owner = { has_materialist_government = yes }
+			}
+			list = {
+				"gfx/models/portraits/eldar/eldar_female_clothes_scientist.dds"
+				"gfx/models/portraits/eldar/eldar_female_clothes2.dds"
+			}
+		}
+	}
+}

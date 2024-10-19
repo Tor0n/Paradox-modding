@@ -1,0 +1,20 @@
+category = {
+ name = "Voice"
+ soundeffects = {
+	####### Portrait
+	automaton_greetings
+	automaton_female_greetings
+	automaton_male_greetings
+ }
+ 
+ compressor = 
+ {
+ enabled = yes
+ pregain = 4.0
+ postgain = -2.2
+ ratio = 3.0
+ threshold = -25
+ attacktime = 0.30
+ releasetime = 0.8
+ }
+}

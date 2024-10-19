@@ -4,7 +4,7 @@ static_galaxy_scenario = {
     default = no
     priority = 0
     num_empires = { min = 22 max = 55 }
-    num_empire_default = 31
+    num_empire_default = 38
     marauder_empire_default = 0
     marauder_empire_max = 4
     fallen_empire_default = 0
@@ -197,7 +197,7 @@ system = { id = "172" name = "Jujya" position = { x = 19.30148 y = -303.1476 } i
 system = { id = "173" name = "Gethsamaine" position = { x = 34.06145 y = -323.5846 } initializer = Gethsamaine_initializer }
 system = { id = "174" name = "Dimmamar" position = { x = 6.812265 y = -362.1875 } initializer = Dimmamar_initializer }
 system = { id = "175" name = "Keopsis" position = { x = 22.70762 y = -398.5198 } initializer = Keopsis_initializer }
-system = { id = "176" name = "Vargas" position = { x = -27.24922 y = -342.886 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } } #Vargas_initializer
+system = { id = "176" name = "Vargas" position = { x = -27.24922 y = -342.886 } initializer = Vargas_initializer }
 system = { id = "177" name = "Fortmav" position = { x = -61.3107 y = -328.1261 } initializer = Fortmav_initializer }
 system = { id = "178" name = "Kantakkha" position = { x = 42.00914 y = -244.1078 } initializer = Kantakkha_initializer } #МИР_ДЕМОНОВ_ХАОСА
 system = { id = "179" name = "Tamar" position = { x = 370.1347 y = -28.38504 }initializer = Tamar_initializer  } 
@@ -558,6 +558,19 @@ system = { id = "533" name = "Barf" position = { x = -390.0435 y = -322.2002 } }
 system = { id = "534" name = "Siat" position = { x = -385.0286 y = -283.5609 } }
 system = { id = "535" name = "Deme" position = { x = -415.7286 y = -264.0571 } }
 system = { id = "536" name = "Kallia" position = { x = -420.7216 y = -300.7573 } }
+system = { id = "537" name = "Warp I" position = { x = 467.2917 y = 467.8485 } } #Хаос
+system = { id = "538" name = "Warp II" position = { x = 462.2917 y = 467.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Black_Legion_start } } }
+system = { id = "539" name = "Warp III" position = { x = 467.2917 y = 462.8485 } } #Тзинч
+system = { id = "540" name = "Warp IV" position = { x = 462.2917 y = 462.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Thousand_Sons_start } } }
+system = { id = "541" name = "Warp V" position = { x = 457.2917 y = 467.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Emperors_Children_start } } }
+system = { id = "542" name = "Warp VI" position = { x = 467.2917 y = 457.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Word_Bearers_start } } }
+system = { id = "543" name = "Warp VII" position = { x = 457.2917 y = 457.8485 } } #Нургл
+system = { id = "544" name = "Warp VIII" position = { x = 462.2917 y = 457.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Alpha_Legion_start } } } 
+system = { id = "545" name = "Warp IX" position = { x = 457.2917 y = 462.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Death_Guard_start } } } 
+system = { id = "546" name = "Warp X" position = { x = 452.2917 y = 462.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = World_Eaters_start } } }
+system = { id = "547" name = "Warp XI" position = { x = 452.2917 y = 457.8485 } } #Кхорн
+system = { id = "548" name = "Warp XII" position = { x = 452.2917 y = 467.8485 } } #Слаанеш
+system = { id = "549" name = "Manachea" position = { x = -44.3107 y = -334.5061 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } }
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
@@ -763,8 +776,10 @@ system = { id = "536" name = "Kallia" position = { x = -420.7216 y = -300.7573 }
  add_hyperlane = { from = "159" to = "152" }
  add_hyperlane = { from = "152" to = "161" }
  add_hyperlane = { from = "158" to = "162" }
- add_hyperlane = { from = "177" to = "176" }
+ #add_hyperlane = { from = "177" to = "176" }
  add_hyperlane = { from = "176" to = "174" }
+ add_hyperlane = { from = "549" to = "176" }
+ add_hyperlane = { from = "549" to = "177" }
  add_hyperlane = { from = "171" to = "174" }
  add_hyperlane = { from = "174" to = "175" }
  add_hyperlane = { from = "171" to = "170" }
@@ -1264,4 +1279,23 @@ system = { id = "536" name = "Kallia" position = { x = -420.7216 y = -300.7573 }
  add_hyperlane = { from = "535" to = "534" }
  add_hyperlane = { from = "535" to = "536" }
  add_hyperlane = { from = "536" to = "440" }
+ add_hyperlane = { from = "538" to = "537" }
+ add_hyperlane = { from = "538" to = "540" }
+ add_hyperlane = { from = "537" to = "540" }
+ add_hyperlane = { from = "537" to = "539" }
+ add_hyperlane = { from = "542" to = "540" }
+ add_hyperlane = { from = "542" to = "544" }
+ add_hyperlane = { from = "541" to = "538" }
+ add_hyperlane = { from = "541" to = "548" }
+ add_hyperlane = { from = "545" to = "541" }
+ add_hyperlane = { from = "545" to = "540" }
+ add_hyperlane = { from = "545" to = "546" }
+ add_hyperlane = { from = "545" to = "543" }
+ add_hyperlane = { from = "547" to = "543" }
+ add_hyperlane = { from = "547" to = "546" }
+ add_hyperlane = { from = "544" to = "543" }
+ add_hyperlane = { from = "544" to = "545" }
+ add_hyperlane = { from = "544" to = "540" }
+ add_hyperlane = { from = "539" to = "540" }
+ add_hyperlane = { from = "539" to = "542" }
 }

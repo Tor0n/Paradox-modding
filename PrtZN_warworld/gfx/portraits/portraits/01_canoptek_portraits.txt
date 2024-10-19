@@ -1,0 +1,154 @@
+portraits = {
+
+# Usheti
+
+	canoptek_male_01 = {
+		entity = "old_portrait_human_male_01_entity"	clothes_selector = "no_texture"	attachment_selector = "no_texture"	greeting_sound = "canoptek_greetings"
+		character_textures = {
+			"gfx/models/portraits/egyptians/nezem_male_body_01.dds"
+		}
+	}
+	
+	canoptek_female_01 = {
+		entity = "old_portrait_human_female_01_entity"	clothes_selector = "no_texture"	attachment_selector = "no_texture"	greeting_sound = "canoptek_greetings"
+		character_textures = {
+			"gfx/models/portraits/egyptians/nezem_female_body_01.dds"
+		}
+	}
+}
+	
+portrait_groups = {
+    canoptek_01 = {
+		default = canoptek_male_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					canoptek_male_01
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					canoptek_female_01
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {					
+					canoptek_male_01					
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {					
+					canoptek_female_01					
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					canoptek_female_01									
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {					
+					canoptek_male_01					
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					canoptek_female_01					
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					canoptek_male_01					
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					canoptek_female_01					
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					canoptek_male_01					
+				}
+			}
+		}
+	}
+}	

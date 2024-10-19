@@ -1,0 +1,240 @@
+#Ptolemaic Egypt. Mix of egyptian and greek names.
+PTOLEMEAN = {
+	category = "Kemetic"
+	ship_names = {
+
+		generic = { 
+		    Abedju Abu Behdet Bahariya Baki Buhen Bubastis Dahshur Dakhla Dunqul Djedu Farafra Henen-nesw Heh Iken Itjtawy Kharga Kerma Kyrene Lunet Meidum Men-nefer Nekhen Nubt On 
+			Perwadjyt Pwenet Qadesh Rostja Saqqara "Serabit Khadim" Sauty Sawu Selima Shaat Sharuhen Timna Thinis Toshka Waset
+            Aglaia Agreuousa Aktis Andreia Anthera Anysis Apobasis Ariste Asklepias Aura Boetheia Charis Delphis Delphis Dikaiosyne Doxa 
+			Dynamis Eleusis Eleutheria Epideixis Eucharis Eudaimonia Eueteria Euia Eukarpia Eunoia Euphemia Euphrainousa Euporia Eutychia Gnome Gnoste 
+			Hebe Hegemone Hegemonia Hiera Hikane Hippia Homonoia Hygieia Kallixena Kouphotate Kratiste Kratousa Leontis Megiste Naukratousa Nemeas Nike Nikosa 
+			Okeia Olympias Ortheia Panoplia Paralia Parataxis Parrhesia Peristera Petomene Philotimia Potone Pronoia Proplous Prote Seiren Soizousa Stephanephoria 
+			Stephanoumene Stephanousa Stilbousa Strategis Symmachia Syntaxis Takheia Theoris Thera			
+		}
+
+		corvette = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+		}
+
+		titan = {
+		}
+
+		colossus = {
+		}
+		
+		science = {
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		transport = {
+		}
+	
+		military_station_small = {
+		}
+
+		ion_cannon = {
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+				
+		}
+		sequential_name = "$O$ Solar Ships"
+	}
+		
+	army_names = {
+		
+		generic = { 
+			sequential_name = "Peltastes $R$"
+		}
+		
+		machine_defense = {
+			sequential_name = "Tomb Guards $R$"
+		}
+		
+		machine_assault_1 = {
+			sequential_name = "Ushebti $R$"
+		}
+		
+		machine_assault_2 = {
+			sequential_name = "Ushebti $R$"
+		}
+		
+		machine_assault_3 = {
+			sequential_name = "Ushebti $R$"
+		}
+		
+        assault_army = {
+			sequential_name = "Phalagites $R$"
+		}
+		
+		slave_army = {
+			sequential_name = "Heilotes $R$"
+		}
+		
+		clone_army = {
+			sequential_name = "Spartoi $R$"
+		}
+		
+		undead_army = {
+			sequential_name = "Phalagites of Anubis $R$"
+		}
+		
+		robotic_army = {
+			sequential_name = "Ushebti $R$"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Ushebti $R$"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Hemiteos $R$"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Sphinxes $R$"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Heroes $R$"
+		}
+
+		occupation_army = {
+			sequential_name = "Perioicoi $R$"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Ushebti $R$"
+		}
+
+		primitive_army = {
+			sequential_name = HUMAN3_PRIMITIVEARMYxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = HUMAN3_INDUSTRIALARMYxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = HUMAN3_POSTATOMICARMYxx_SEQ
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				Alexandria Ptolemais Memphis Heliopolis Heroopolis Bubastis Leontonpolis Tanis Pelusium Daphnai Letopolis Naucratis "Hermopolis Mikra" Serapis Canopus "Babylon Aigyptiai"
+				Krokodeilopolis Herakleopolis Lykopolis Panopolis "Ptolemais Hermeiou" Koptos Luxor Siwa Takyris Hermopolis "Hermopolis Magna" Pharbaithos
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+		
+	}
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = {
+			}
+			
+			# Always combined with a second name
+			first_names_male = {
+			    Amyrteos Ankhmachis Anemhor Aratos Arganos Charias Djedhor Ezena Horemakhet Isocrates Khabbabash Leonippus Lydiadas Manetho Massiva
+ 		        Nakhthoreb Naravas Nefaarud Neferibre Nesisti Nicias Nicodemus Oezalces Oxyntas Pedubast Peneus Perdiccas Philocrates 
+		        Philotheos Polyperchon Psherenamun Psherenptah Psammuthes Ptolemy Theocritus Therapon Timoleon Xanthos Xenon Zeteres Zosimus Ahmes
+		        Ahmose Alarus Amasus Ameny Bakenrenef Cleomenes Euclid Harsiotef Henut Ibi Khabash Lagus Nectanebo Kheperkare Neferkare Nehi Osorkon Pami
+		        Petubastis Teos					
+			}
+			first_names_female = {
+				Agape Agathoclea Amanishabheto Antigone Apame Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna
+		        Demetria Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Hypatia Nysa Oenanthe Olympia Phila Phile Sostrate Stratonice Thais
+		        Theophila Thetima Thessaloniki Thorakis Timo Arsinoe Lysandra Kiya Qelhata
+			}
+			
+			# Always combined with a first name
+			second_names = {
+			    Ahmid Galestus Kenamus Naravid Penamus Senuid Setnid Arganid Psammid Philothid Timolid	
+				Zosid Phileid Nicodemid Nefarid Bastid Xeneid Naravid Ezanid Ahmid Alarus Harsiotes Henus Ibus Khabbash Amasus Nectanebo Petubast Djedhid Tachys Mago
+			}
+			
+			regnal_first_names_male = {
+				Amyrteos Ankhmachis Anemhor Aratos Arganos Charias Djedhor Ezena Horemakhet Isocrates Khabbabash Leonippus Lydiadas Manetho Massiva
+ 		        Nakhthoreb Naravas Nefaarud Neferibre Nesisti Nicias Nicodemus Oezalces Oxyntas Pedubast Peneus Perdiccas Philocrates 
+		        Philotheos Polyperchon Psherenamun Psherenptah Psammuthes Ptolemy Theocritus Therapon Timoleon Xanthos Xenon Zeteres Zosimus Ahmes
+		        Ahmose Alarus Amasus Ameny Bakenrenef Cleomenes Euclid Harsiotef Henut Ibi Khabash Lagus Nectanebo Kheperkare Neferkare Nehi Osorkon Pami
+		        Petubastis Teos		
+			}
+			
+			regnal_first_names_female = {
+				Agape Agathoclea Amanishabheto Antigone Apame Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna
+		        Demetria Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Hypatia Nysa Oenanthe Olympia Phila Phile Sostrate Stratonice Thais
+		        Theophila Thetima Thessaloniki Thorakis Timo Arsinoe Lysandra Kiya Qelhata
+			}
+			
+			regnal_second_names = {
+				Ahmid Galestus Kenamus Naravid Penamus Senuid Setnid Arganid Psammid Philothid Timolid	
+				Zosid Phileid Nicodemid Nefarid Bastid Xeneid Naravid Ezanid Ahmid Alarus Harsiotes Henus Ibus Khabbash Amasus Nectanebo Petubast Djedhid Tachys Mago
+			}
+		}
+	}
+}
+

@@ -1,0 +1,17 @@
+humans = {
+	species_class = HUM
+
+	portraits = {
+		"eldar"
+	}
+
+	conditional_portraits = {
+		portraits = {
+			#"sectoid_naked"
+		}
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+	}
+}

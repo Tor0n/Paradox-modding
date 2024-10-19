@@ -1,0 +1,12 @@
+room_selector = {
+	
+	default = "default_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	game_setup = {
+		"zem_room"									= { always = yes }
+	}
+	
+	ruler = {
+		"zem_room"	= { exists = owner owner = { space_egyptians_portrait = yes } }
+	}
+}

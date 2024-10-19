@@ -1,0 +1,286 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+
+	# Druchii
+
+	#female
+	druchii_female_01 = {	entity = "portrait_human_female_entity"	clothes_selector = "druchii_female_clothes_01" attachment_selector = "druchii_female_hair_01"	greeting_sound = "human_female_greetings_01"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_female_body_1_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_1_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_1_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_1_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_1_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_1_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	druchii_female_02 = {	entity = "portrait_human_female_entity"	clothes_selector = "druchii_female_clothes_01" attachment_selector = "druchii_female_hair_01"	greeting_sound = "human_female_greetings_05"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_female_body_2_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_2_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_2_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_2_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_2_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_2_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	druchii_female_03 = {	entity = "portrait_human_female_entity"	clothes_selector = "druchii_female_clothes_01" attachment_selector = "druchii_female_hair_01"	greeting_sound = "human_female_greetings_03"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_female_body_3_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_3_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_3_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_3_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_3_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_3_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	druchii_female_04 = {	entity = "portrait_human_female_entity"			clothes_selector = "druchii_female_clothes_01" 	attachment_selector = "druchii_female_hair_01"	greeting_sound = "human_female_greetings_04"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_female_body_4_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_4_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_4_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_4_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_4_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_4_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+
+	druchii_female_05 = {	entity = "portrait_human_female_entity"			clothes_selector = "druchii_female_clothes_01" 	attachment_selector = "druchii_female_hair_01"	greeting_sound = "human_female_greetings_01"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_female_body_5_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_5_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_5_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_5_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_5_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_female_body_5_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+
+	#male
+	druchii_male_01 = {	entity = "portrait_human_male_entity"	clothes_selector = "druchii_male_clothes_01" attachment_selector = "druchii_male_hair_01"	greeting_sound = "human_male_greetings_01"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_male_body_1_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_1_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_1_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_1_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_1_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_1_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	druchii_male_02 = {	entity = "portrait_human_male_entity"	clothes_selector = "druchii_male_clothes_01" attachment_selector = "druchii_male_hair_01"	greeting_sound = "human_male_greetings_05"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_male_body_2_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_2_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_2_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_2_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_2_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_2_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	druchii_male_03 = {	entity = "portrait_human_male_entity"	clothes_selector = "druchii_male_clothes_01" attachment_selector = "druchii_male_hair_01"	greeting_sound = "human_male_greetings_03"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_male_body_3_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_3_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_3_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_3_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_3_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_3_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+	druchii_male_04 = {	entity = "portrait_human_male_entity"			clothes_selector = "druchii_male_clothes_01"	attachment_selector = "druchii_male_hair_01"	greeting_sound = "human_male_greetings_04"
+	character_textures = {
+		"gfx/models/portraits/druchii/druchii_male_body_4_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_4_light_brown_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_4_green_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_4_blue_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_4_hazel_eyes.dds"
+		"gfx/models/portraits/druchii/druchii_male_body_4_purple_eyes.dds"
+	}
+	custom_attachment_label = "HAIR_STYLE"
+}
+}
+
+portrait_groups = {
+	druchii = {
+		default = druchii_male_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					druchii_male_01
+					druchii_male_02
+					druchii_male_03
+					druchii_male_04
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					druchii_female_01
+					druchii_female_02
+					druchii_female_03
+					druchii_female_04
+					druchii_female_05
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					druchii_female_01
+					druchii_female_02
+					druchii_female_03
+					druchii_female_04
+					druchii_female_05
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					druchii_male_01
+					druchii_male_02
+					druchii_male_03
+					druchii_male_04
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					druchii_female_01
+					druchii_female_02
+					druchii_female_03
+					druchii_female_04
+					druchii_female_05
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					druchii_male_01
+					druchii_male_02
+					druchii_male_03
+					druchii_male_04
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					druchii_female_01
+					druchii_female_02
+					druchii_female_03
+					druchii_female_04
+					druchii_female_05
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					druchii_male_01
+					druchii_male_02
+					druchii_male_03
+					druchii_male_04
+				}
+			}
+		}
+
+
+		#leader scope
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					druchii_female_01
+					druchii_female_02
+					druchii_female_03
+					druchii_female_04
+					druchii_female_05
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					druchii_male_01
+					druchii_male_02
+					druchii_male_03
+					druchii_male_04
+				}
+			}
+		}
+	}

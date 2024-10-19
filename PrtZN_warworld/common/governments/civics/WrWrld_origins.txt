@@ -116,10 +116,20 @@ origin_eldar = {
 		habitat_districts_building_slots_add = 0.25
 		habitat_max_districts_add = 2
 		habitat_district_jobs_add = 1
+		ship_sensor_range_add = 2
+		ship_speed_mult = 0.20	
+		country_naval_cap_mult = 0.33
+		leader_lifespan_add = 350
+		#BIOLOGICAL_species_trait_picks_add = 2
+		#BIOLOGICAL_species_trait_points_add = 2
 	}
 
 	description = ""
 	
+	traits = { 
+		trait = trait_psionic 
+		#trait = trait_venerable
+	}
 	#traits = { trait = trait_void_dweller_1 }
 	
 	# has_secondary_species = {  }
@@ -145,11 +155,18 @@ origin_aldari = {
 	}
 	
 	flags = { origin_start }
-	#modifier = {  }
+	modifier = { 
+		leader_lifespan_add = 350
+	#planet_sensor_range_add = 2
+		ship_speed_mult = 0.1	
+	}
 
 	description = ""
 	
-	#traits = {  }
+	traits = { 
+		trait = trait_psionic 
+		#trait = trait_venerable
+	}
 	
 	# has_secondary_species = {  }
 
@@ -174,11 +191,15 @@ origin_commorragh = {
 	}
 	
 	flags = { origin_start }
-	#modifier = {  }
+	modifier = { 
+		ship_sensor_range_add = 1
+		ship_speed_mult = 0.25	
+		leader_lifespan_add = 40
+	}
 
 	description = ""
 	
-	#traits = {  }
+	traits = { trait = trait_venerable }
 	
 	# has_secondary_species = {  }
 

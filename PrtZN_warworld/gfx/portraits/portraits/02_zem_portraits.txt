@@ -1,0 +1,212 @@
+portraits = {
+# zem
+	zem_female_01 = {	
+	      entity = "old_portrait_human_female_01_entity"	clothes_selector = "zem_female_clothes_01" attachment_selector = "zem_female_hair_01"	greeting_sound = "automaton_female_greetings"
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_female_body_01.dds"
+		    }
+		  }
+	zem_female_02 = {	
+	      entity = "old_portrait_human_female_01_entity"	clothes_selector = "zem_female_clothes_01" attachment_selector = "zem_female_hair_01"	greeting_sound = "automaton_female_greetings"
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_female_body_02.dds"
+		    }
+		  }	
+	zem_female_03 = {	
+	      entity = "old_portrait_human_female_01_entity"			clothes_selector = "zem_female_clothes_01" 	attachment_selector = "zem_female_hair_01"	greeting_sound = "automaton_female_greetings"
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_female_body_03.dds"
+		    }
+		  }
+	zem_female_04 = {	
+	      entity = "old_portrait_human_female_01_entity"			clothes_selector = "zem_female_clothes_01" 	attachment_selector = "zem_female_hair_01"	greeting_sound = "automaton_female_greetings"
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_female_body_04.dds"
+		    }
+		  }	  
+	zem_male_01 = {	
+	      entity = "old_portrait_human_male_01_entity"	clothes_selector = "zem_male_clothes_01" attachment_selector = "zem_male_hair_01"	greeting_sound = "automaton_male_greetings" 
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_male_body_01.dds"
+		    }
+		  }	
+	zem_male_02 = {	
+	      entity = "old_portrait_human_male_01_entity"	clothes_selector = "zem_male_clothes_01" attachment_selector = "zem_male_hair_01"	greeting_sound = "automaton_male_greetings" 
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_male_body_02.dds"
+		    }
+		  }		
+	zem_male_03 = {	
+	      entity = "old_portrait_human_male_01_entity"			clothes_selector = "zem_male_clothes_01" 	attachment_selector = "zem_male_hair_01"	greeting_sound = "automaton_male_greetings" 
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_male_body_03.dds"
+		    }
+		  }
+	zem_male_04 = {	
+	      entity = "old_portrait_human_male_01_entity"			clothes_selector = "zem_male_clothes_01" 	attachment_selector = "zem_male_hair_01"	greeting_sound = "automaton_male_greetings" 
+		  character_textures = {
+			"gfx/models/portraits/egyptians/zem_male_body_04.dds"
+		    }
+		  }	  
+}
+
+portrait_groups = {
+    zem = {
+		default = zem_male_03
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					zem_male_01
+					zem_male_02
+					zem_male_03
+					zem_male_04
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					zem_female_01
+					zem_female_02
+					zem_female_03
+					zem_female_04	
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					zem_male_01
+					zem_male_02
+					zem_male_03
+					zem_male_04
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					zem_female_01
+					zem_female_02
+					zem_female_03
+					zem_female_04	
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					zem_male_01
+					zem_male_02
+					zem_male_03
+					zem_male_04
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					zem_female_01
+					zem_female_02
+					zem_female_03
+					zem_female_04	
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					zem_male_01
+					zem_male_02
+					zem_male_03
+					zem_male_04
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					zem_female_01
+					zem_female_02
+					zem_female_03
+					zem_female_04	
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					zem_male_01
+					zem_male_02
+					zem_male_03
+					zem_male_04
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					zem_female_01
+					zem_female_02
+					zem_female_03
+					zem_female_04	
+				}
+			}
+		}
+	}
+}

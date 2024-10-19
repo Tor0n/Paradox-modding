@@ -1,0 +1,282 @@
+# This is a template which multiple species can use. 
+  
+druchii_female_hair_01 = {
+	default = "gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+	
+	game_setup = {#will run with a limited country scope. species and government is set but the country does not actually exist
+		default = "gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+	}
+	
+	#species scope
+	species = { #generic portrait for a species
+		default = "gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+	}
+	
+	#pop scope
+	pop = { #for a specific pop
+	
+		default = "gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+
+		random = {
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+
+
+			}
+		}	
+	}
+	
+	
+	
+	
+	#leader scope
+	leader = { #scientists, generals, admirals, governor
+	
+		random = {
+			trigger = { leader_class = general }
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}		
+		
+		random = {
+			trigger = { leader_class = admiral }
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}	
+		
+		random = {
+			trigger = { leader_class = scientist }
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_higher.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_higher.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}		
+		
+		random = {
+			trigger = { leader_class = governor }
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_higher.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_higher.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}
+	}
+  
+	#leader scope 
+	ruler = { #for rulers
+		
+		random = {
+			trigger = {
+				owner = { has_militarist_government = yes }
+			}
+				
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}		
+		
+		random = {
+			trigger = {
+				owner = { has_spiritualist_government = yes }
+			}
+			
+			list = {
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_2_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_black_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_helmet_3_white_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_higher.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_higher.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}		
+		
+		random = {
+			trigger = {
+				owner = {
+					OR = {
+						has_authority = auth_oligarchic
+						has_authority = auth_democratic
+						has_authority = auth_imperial
+						has_authority = auth_dictatorial
+						has_primitive_government = yes
+						has_government = gov_stagnant_ascendancy
+					}
+				}
+			}
+			
+			list = {
+			
+
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_low.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_high.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_low.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_white_ponytail_higher.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_black_ponytail_higher.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides.dds"
+				
+				"gfx/models/portraits/druchii/druchii_female_hair_black_bun_shaved_sides_piercing.dds"
+				"gfx/models/portraits/druchii/druchii_female_hair_white_bun_shaved_sides_piercing.dds"
+			}
+		}
+	}
+}
