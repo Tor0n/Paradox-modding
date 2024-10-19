@@ -160,7 +160,7 @@ system = { id = "135" name = "Lathes" position = { x = 386.0301 y = -281.5754 } 
 system = { id = "136" name = "Synford" position = { x = 370.1347 y = -296.3354 } initializer = Synford_initializer } 
 system = { id = "137" name = "Avignor" position = { x = 354.2394 y = -303.1477 } initializer = Avignor_initializer }
 system = { id = "138" name = "Ophidia" position = { x = 312.2302 y = -323.5846 } initializer = Ophidia_initializer } #ВРАТА ПОСТАВИТЬ
-system = { id = "139" name = "Sarum" position = { x = 345.1563 y = -326.9907 } initializer = Sarum_initializer } 
+system = { id = "139" name = "Sarum" position = { x = 345.1563 y = -326.9907 } initializer = Sarum_initializer }
 system = { id = "140" name = "Burnscour" position = { x = 372.4055 y = -321.3138 } initializer = Burnscour_initializer }
 system = { id = "141" name = "Zayth" position = { x = 391.707 y = -338.3445 } initializer = Zayth_initializer } #МИР_ВОЙНЫ_ХАОСА
 system = { id = "142" name = "Ntharis" position = { x = 407.6024 y = -322.4492 } initializer = Ntharis_initializer } 
@@ -571,6 +571,21 @@ system = { id = "546" name = "Warp X" position = { x = 452.2917 y = 462.8485 } s
 system = { id = "547" name = "Warp XI" position = { x = 452.2917 y = 457.8485 } } #Кхорн
 system = { id = "548" name = "Warp XII" position = { x = 452.2917 y = 467.8485 } } #Слаанеш
 system = { id = "549" name = "Manachea" position = { x = -44.3107 y = -334.5061 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } }
+
+system = { id = "551" name = "Cociaminus"	position = { x = 427.0000 y = 169.0000 } } # x = 415.5500 y = 154.4116
+system = { id = "552" name = "Gereon"		position = { x = 460.0000 y = 153.0000 } } # x = 445.0700 y = 143.0577
+system = { id = "553" name = "Atar Median"	position = { x = 458.0000 y = 113.0000 } } # x = 446.2054 y = 116.9439
+system = { id = "554" name = "Sapiencia"	position = { x = 465.0000 y = 131.0000 } } # x = 446.2054 y = 116.9439
+
+system = { id = "555" name = "Praedis"		position = { x = -459.0000 y = -20.0000 } } # x = -467.7777 y = -38.6034
+system = { id = "556" name = "Crenax"		position = { x = -444.0000 y = -4.0000 } } # x = -433.7162 y = 10.2180
+
+system = { id = "557" name = "Naduesh"		position = { x = 387.0000 y = -350.0000 } } # x = 391.7070 y = -338.3445
+system = { id = "558" name = "Vessor"		position = { x = 375.0000 y = -340.0000 } } # x = 372.4055 y = -321.3138
+system = { id = "559" name = "Vraks"		position = { x = 354.0000 y = -342.0000 } } # x = 345.1563 y = -326.9907
+system = { id = "560" name = "Thracia"		position = { x = 328.0000 y = -343.0000 } } # x = 312.2302 y = -323.5846
+system = { id = "561" name = "Sevoms"		position = { x = 406.0000 y = -354.0000 } } # x = 421.7070 y = -341.3445
+
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
@@ -1298,4 +1313,26 @@ system = { id = "549" name = "Manachea" position = { x = -44.3107 y = -334.5061 
  add_hyperlane = { from = "544" to = "540" }
  add_hyperlane = { from = "539" to = "540" }
  add_hyperlane = { from = "539" to = "542" }
+ 
+ add_hyperlane = { from = "551" to = "205" }
+ add_hyperlane = { from = "551" to = "206" }
+ add_hyperlane = { from = "551" to = "552" }
+ add_hyperlane = { from = "552" to = "206" }
+ add_hyperlane = { from = "552" to = "554" }
+ add_hyperlane = { from = "553" to = "207" }
+ add_hyperlane = { from = "553" to = "554" }
+ 
+ add_hyperlane = { from = "555" to = "430" }
+ add_hyperlane = { from = "555" to = "556" }
+ add_hyperlane = { from = "556" to = "418" }
+ 
+ add_hyperlane = { from = "557" to = "141" }
+ add_hyperlane = { from = "557" to = "558" }
+ add_hyperlane = { from = "557" to = "561" }
+ add_hyperlane = { from = "558" to = "140" }
+ add_hyperlane = { from = "558" to = "141" }
+ add_hyperlane = { from = "558" to = "559" }
+ add_hyperlane = { from = "559" to = "139" }
+ add_hyperlane = { from = "560" to = "138" }
+ add_hyperlane = { from = "560" to = "139" }
 }
