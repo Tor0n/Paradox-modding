@@ -10,8 +10,15 @@ action_negotiate_existing_agreement = {
 		NOT = { is_at_war_with = FROM }
 		NOT = {
 			OR = {
-				overlord = { has_country_flag = Imperor_Alive }
-				has_country_flag = Imperor_Alive
+				AND = {
+					is_overlord = yes
+					has_country_flag = Imperor_Alive
+				}
+				AND = {
+					has_any_overlord = yes
+					overlord = { has_country_flag = Imperor_Alive }
+				}
+				
 			}
 		}
 	}

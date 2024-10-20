@@ -2,7 +2,7 @@
 static_galaxy_scenario = {
     name = "PartZN WarWorld"
     default = no
-    priority = 0
+    priority = 5
     num_empires = { min = 22 max = 55 }
     num_empire_default = 38
     marauder_empire_default = 0
@@ -516,16 +516,16 @@ system = { id = "491" name = "Myr" position = { x = 153.2767 y = 363.322 } initi
 system = { id = "492" name = "Tremert" position = { x = 188.4735 y = 404.1957 } initializer = Tremert_initializer }
 system = { id = "493" name = "Mortarius" position = { x = 236.1596 y = 434.8511 } initializer = Mortarius_initializer } #МИР_ДЕМОНОВ_ХАОСА
 system = { id = "494" name = "Sternmost" position = { x = 302.0118 y = 446.2049 } initializer = Sternmost_initializer }
-system = { id = "495" name = "Sondheim" position = { x = 187.3382 y = 355.3743 } initializer = Sondheim_initializer }
-system = { id = "496" name = "Pleuric" position = { x = 228.2119 y = 378.0819 } initializer = Pleuric_initializer }
-system = { id = "497" name = "Naitoc" position = { x = 274.7626 y = 374.6758 } initializer = Naitoc_initializer }
-system = { id = "498" name = "Stygilon" position = { x = 311.0948 y = 359.9158 } initializer = Stygilon_initializer }
-system = { id = "499" name = "Samech" position = { x = -277.0333 y = 396.2481 } initializer = Samech_initializer } #ТЁМНАЯ КУЗНЯ
-system = { id = "500" name = "Salem" position = { x = -345.1563 y = 339.479 } initializer = Salem_initializer }
-system = { id = "501" name = "Repentance" position = { x = -324.7194 y = 381.4881 } initializer = Repentance_initializer }
-system = { id = "502" name = "Isstvan" position = { x = 67.99989 y = -454.8521 }  }
-system = { id = "503" name = "Appollonia" position = { x = 96.27989 y = -462.8521 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = RakGol_start } } }
-system = { id = "504" name = "Voss Prime" position = { x = 216.8581 y = -121.4864 } initializer = VossPrime_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Mechanicus_start } } }
+system = { id = "495" name = "Sondheim"			position = { x = 187.3382 y = 355.3743 } initializer = Sondheim_initializer }
+system = { id = "496" name = "Pleuric"			position = { x = 228.2119 y = 378.0819 } initializer = Pleuric_initializer }
+system = { id = "497" name = "Naitoc"			position = { x = 274.7626 y = 374.6758 } initializer = Naitoc_initializer }
+system = { id = "498" name = "Stygilon"			position = { x = 311.0948 y = 359.9158 } initializer = Stygilon_initializer }
+system = { id = "499" name = "Samech"			position = { x = -301.0000 y = 389.0000 } initializer = Samech_initializer } #ТЁМНАЯ КУЗНЯ
+system = { id = "500" name = "Salem"			position = { x = -345.1563 y = 339.479 } initializer = Salem_initializer }
+system = { id = "501" name = "Repentance"		position = { x = -324.0000 y = 381.0000 } initializer = Repentance_initializer }
+system = { id = "502" name = "Isstvan"			position = { x = 67.99989 y = -454.8521 }  }
+system = { id = "503" name = "Appollonia"		position = { x = 96.27989 y = -462.8521 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = RakGol_start } } }
+system = { id = "504" name = "Voss Prime"		position = { x = 216.8581 y = -121.4864 } initializer = VossPrime_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Mechanicus_start } } }
 system = { id = "505" name = "Shedim" position = { x = 162.1197 y = 54.7481 } initializer = Shedim_initializer } 
 system = { id = "506" name = "Grendel" position = { x = -385.1655 y = 247.2854 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Barghesi_start } } }
 system = { id = "507" name = "Nortaie" position = { x = -397.1655 y = 279.2854 } initializer = Nortaie_initializer }
@@ -571,19 +571,29 @@ system = { id = "546" name = "Warp X" position = { x = 452.2917 y = 462.8485 } s
 system = { id = "547" name = "Warp XI" position = { x = 452.2917 y = 457.8485 } } #Кхорн
 system = { id = "548" name = "Warp XII" position = { x = 452.2917 y = 467.8485 } } #Слаанеш
 system = { id = "549" name = "Manachea" position = { x = -44.3107 y = -334.5061 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } }
-system = { id = "551" name = "Cociaminus"	position = { x = 427.0000 y = 169.0000 } } # x = 415.5500 y = 154.4116
-system = { id = "552" name = "Gereon"		position = { x = 460.0000 y = 153.0000 } } # x = 445.0700 y = 143.0577
-system = { id = "553" name = "Atar Median"	position = { x = 458.0000 y = 113.0000 } } # x = 446.2054 y = 116.9439
-system = { id = "554" name = "Sapiencia"	position = { x = 465.0000 y = 131.0000 } } # x = 446.2054 y = 116.9439
-system = { id = "555" name = "Praedis"		position = { x = -459.0000 y = -20.0000 } } # x = -467.7777 y = -38.6034
-system = { id = "556" name = "Crenax"		position = { x = -444.0000 y = -4.0000 } } # x = -433.7162 y = 10.2180
-system = { id = "557" name = "Naduesh"		position = { x = 387.0000 y = -350.0000 } } # x = 391.7070 y = -338.3445
-system = { id = "558" name = "Vessor"		position = { x = 370.0000 y = -340.0000 } } # x = 372.4055 y = -321.3138
-system = { id = "559" name = "Vraks"		position = { x = 354.0000 y = -342.0000 } } # x = 345.1563 y = -326.9907
-system = { id = "560" name = "Thracia"		position = { x = 328.0000 y = -343.0000 } } # x = 312.2302 y = -323.5846
-system = { id = "561" name = "Sevoms"		position = { x = 406.0000 y = -354.0000 } } # x = 421.7070 y = -341.3445
-system = { id = "562" name = "Prime Gala" position = { x = -326.701 y = 100.6732 }  }
-system = { id = "563" name = "Somnium Stars" position = { x = -426.6486 y = -147.0999 } } 
+system = { id = "550" name = "Ries"				position = { x = -277.0000 y = 396.0000 } }
+system = { id = "551" name = "Cociaminus"		position = { x = 427.0000 y = 169.0000 } } # x = 415.5500 y = 154.4116
+system = { id = "552" name = "Gereon"			position = { x = 460.0000 y = 153.0000 } } # x = 445.0700 y = 143.0577
+system = { id = "553" name = "Atar Median"		position = { x = 458.0000 y = 113.0000 } } # x = 446.2054 y = 116.9439
+system = { id = "554" name = "Sapiencia"		position = { x = 465.0000 y = 131.0000 } } # x = 446.2054 y = 116.9439
+system = { id = "555" name = "Praedis"			position = { x = -459.0000 y = -20.0000 } } # x = -467.7777 y = -38.6034
+system = { id = "556" name = "Crenax"			position = { x = -444.0000 y = -4.0000 } } # x = -433.7162 y = 10.2180
+system = { id = "557" name = "Naduesh"			position = { x = 387.0000 y = -350.0000 } } # x = 391.7070 y = -338.3445
+system = { id = "558" name = "Vessor"			position = { x = 370.0000 y = -340.0000 } } # x = 372.4055 y = -321.3138
+system = { id = "559" name = "Vraks"			position = { x = 354.0000 y = -342.0000 } } # x = 345.1563 y = -326.9907
+system = { id = "560" name = "Thracia"			position = { x = 328.0000 y = -343.0000 } } # x = 312.2302 y = -323.5846
+system = { id = "561" name = "Sevoms"			position = { x = 406.0000 y = -354.0000 } } # x = 421.7070 y = -341.3445
+system = { id = "562" name = "Prime Gala"		position = { x = -326.701 y = 100.6732 } }
+system = { id = "563" name = "Somnium Stars"	position = { x = -426.6486 y = -147.0999 } }
+
+system = { id = "564" name = "Castiel"			position = { x = -345.0000 y = 339.0000 } }		# x = -345.0000 y = 339.0000
+system = { id = "565" name = "Magog"			position = { x = -299.0000 y = 359.0000 } }		# x = -301.0000 y = 389.0000
+system = { id = "566" name = "Vespasia"			position = { x = -272.0000 y = 361.0000 } }		# x = -248.0000 y = 357.0000
+system = { id = "567" name = "Karlak"			position = { x = -275.0000 y = 327.0000 } }		# x = -252.0000 y = 321.0000
+system = { id = "568" name = "Aurum"			position = { x = -274.0000 y = 267.0000 } }		# x = -256.0000 y = 267.0000
+system = { id = "569" name = "Freya"			position = { x = -290.0000 y = 285.0000 } }		# x = -291.0000 y = 278.0000
+system = { id = "570" name = "Vanir"			position = { x = -290.0000 y = 322.0000 } }		# x = -291.0000 y = 278.0000
+
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
@@ -1314,6 +1324,9 @@ system = { id = "563" name = "Somnium Stars" position = { x = -426.6486 y = -147
  add_hyperlane = { from = "539" to = "540" }
  add_hyperlane = { from = "539" to = "542" }
  
+ add_hyperlane = { from = "550" to = "237" }
+ add_hyperlane = { from = "550" to = "480" }
+ add_hyperlane = { from = "550" to = "499" }
  add_hyperlane = { from = "551" to = "205" }
  add_hyperlane = { from = "551" to = "206" }
  add_hyperlane = { from = "551" to = "552" }
@@ -1321,11 +1334,9 @@ system = { id = "563" name = "Somnium Stars" position = { x = -426.6486 y = -147
  add_hyperlane = { from = "552" to = "554" }
  add_hyperlane = { from = "553" to = "207" }
  add_hyperlane = { from = "553" to = "554" }
- 
  add_hyperlane = { from = "555" to = "430" }
  add_hyperlane = { from = "555" to = "556" }
  add_hyperlane = { from = "556" to = "418" }
- 
  add_hyperlane = { from = "557" to = "141" }
  add_hyperlane = { from = "557" to = "558" }
  add_hyperlane = { from = "557" to = "561" }
@@ -1340,4 +1351,22 @@ system = { id = "563" name = "Somnium Stars" position = { x = -426.6486 y = -147
  add_hyperlane = { from = "563" to = "424" }
  add_hyperlane = { from = "563" to = "423" }
  add_hyperlane = { from = "563" to = "422" }
+ 
+ add_hyperlane = { from = "564" to = "371" }
+ add_hyperlane = { from = "564" to = "500" }
+ add_hyperlane = { from = "564" to = "565" }
+ add_hyperlane = { from = "564" to = "570" }
+ add_hyperlane = { from = "565" to = "566" }
+ add_hyperlane = { from = "565" to = "570" }
+ add_hyperlane = { from = "566" to = "237" }
+ add_hyperlane = { from = "566" to = "570" }
+ add_hyperlane = { from = "567" to = "236" }
+ add_hyperlane = { from = "567" to = "568" }
+ add_hyperlane = { from = "567" to = "569" }
+ add_hyperlane = { from = "568" to = "369" }
+ add_hyperlane = { from = "568" to = "370" }
+ add_hyperlane = { from = "568" to = "569" }
+ add_hyperlane = { from = "569" to = "370" }
+ add_hyperlane = { from = "569" to = "371" }
+ add_hyperlane = { from = "569" to = "570" }
 }
