@@ -3727,11 +3727,11 @@ country_event = { #Imperium
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
-		declare_war = {
-			target = event_target:Eldar_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-		}
+		#declare_war = {
+		#	target = event_target:Eldar_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		#}
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>

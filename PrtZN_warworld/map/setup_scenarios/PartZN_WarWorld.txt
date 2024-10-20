@@ -286,7 +286,7 @@ system = { id = "261" name = "Larsa" position = { x = -10.21844 y = 49.95641 } i
 system = { id = "262" name = "Kyro" position = { x = 6.154019E-06 y = 70.3933 } initializer = Kyro_initializer } 
 system = { id = "263" name = "Magma Codelian" position = { x = 108.9967 y = -84.01877 } initializer = Magma_Codelian_initializer }
 system = { id = "264" name = "Praesidia" position = { x = 85.1537 y = -97.64336 } initializer = Praesidia_initializer }
-system = { id = "265" name = "Sortiarius" position = { x = 88.55984 y = -55.6342 } initializer = Sortiarius_initializer } #МИР_ДЕМОНОВ_ХАОСА
+system = { id = "265" name = "Prospero" position = { x = 88.55984 y = -55.6342 } initializer = Prospero_initializer } #МИР_ДЕМОНОВ_ХАОСА Sortiarius_initializer
 system = { id = "266" name = "Purgatoria" position = { x = 49.95684 y = -44.28036 } initializer = Purgatoria_initializer } #МИР_ВОЙНЫ_ХАОСА
 system = { id = "267" name = "Cocholus" position = { x = 61.31067 y = -69.25879 } initializer = Cocholus_initializer }  
 system = { id = "268" name = "Cornucopia" position = { x = 105.5906 y = -119.2156 } initializer = Cornucopia_initializer } #ВРАТА ПОСТАВИТЬ
@@ -571,21 +571,19 @@ system = { id = "546" name = "Warp X" position = { x = 452.2917 y = 462.8485 } s
 system = { id = "547" name = "Warp XI" position = { x = 452.2917 y = 457.8485 } } #Кхорн
 system = { id = "548" name = "Warp XII" position = { x = 452.2917 y = 467.8485 } } #Слаанеш
 system = { id = "549" name = "Manachea" position = { x = -44.3107 y = -334.5061 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } }
-
 system = { id = "551" name = "Cociaminus"	position = { x = 427.0000 y = 169.0000 } } # x = 415.5500 y = 154.4116
 system = { id = "552" name = "Gereon"		position = { x = 460.0000 y = 153.0000 } } # x = 445.0700 y = 143.0577
 system = { id = "553" name = "Atar Median"	position = { x = 458.0000 y = 113.0000 } } # x = 446.2054 y = 116.9439
 system = { id = "554" name = "Sapiencia"	position = { x = 465.0000 y = 131.0000 } } # x = 446.2054 y = 116.9439
-
 system = { id = "555" name = "Praedis"		position = { x = -459.0000 y = -20.0000 } } # x = -467.7777 y = -38.6034
 system = { id = "556" name = "Crenax"		position = { x = -444.0000 y = -4.0000 } } # x = -433.7162 y = 10.2180
-
 system = { id = "557" name = "Naduesh"		position = { x = 387.0000 y = -350.0000 } } # x = 391.7070 y = -338.3445
-system = { id = "558" name = "Vessor"		position = { x = 375.0000 y = -340.0000 } } # x = 372.4055 y = -321.3138
+system = { id = "558" name = "Vessor"		position = { x = 370.0000 y = -340.0000 } } # x = 372.4055 y = -321.3138
 system = { id = "559" name = "Vraks"		position = { x = 354.0000 y = -342.0000 } } # x = 345.1563 y = -326.9907
 system = { id = "560" name = "Thracia"		position = { x = 328.0000 y = -343.0000 } } # x = 312.2302 y = -323.5846
 system = { id = "561" name = "Sevoms"		position = { x = 406.0000 y = -354.0000 } } # x = 421.7070 y = -341.3445
-
+system = { id = "562" name = "Prime Gala" position = { x = -326.701 y = 100.6732 }  }
+system = { id = "563" name = "Somnium Stars" position = { x = -426.6486 y = -147.0999 } } 
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
@@ -1074,6 +1072,8 @@ system = { id = "561" name = "Sevoms"		position = { x = 406.0000 y = -354.0000 }
  add_hyperlane = { from = "389" to = "388" }
  add_hyperlane = { from = "388" to = "387" }
  add_hyperlane = { from = "387" to = "386" }
+ add_hyperlane = { from = "562" to = "359" }
+ add_hyperlane = { from = "562" to = "386" }
  add_hyperlane = { from = "384" to = "386" }
  add_hyperlane = { from = "384" to = "387" }
  add_hyperlane = { from = "384" to = "388" }
@@ -1335,4 +1335,9 @@ system = { id = "561" name = "Sevoms"		position = { x = 406.0000 y = -354.0000 }
  add_hyperlane = { from = "559" to = "139" }
  add_hyperlane = { from = "560" to = "138" }
  add_hyperlane = { from = "560" to = "139" }
+ #add_hyperlane = { from = "303" to = "561" } #Проклятая гиперлиния которая почему-то багуется
+ #add_hyperlane = { from = "361" to = "561" } #Проклятая гиперлиния которая почему-то багуется
+ add_hyperlane = { from = "563" to = "424" }
+ add_hyperlane = { from = "563" to = "423" }
+ add_hyperlane = { from = "563" to = "422" }
 }
