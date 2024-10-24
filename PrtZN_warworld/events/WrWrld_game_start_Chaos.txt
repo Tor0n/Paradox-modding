@@ -214,20 +214,8 @@ country_event = { #Black_Legion
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
 		add_tradition = tr_psionics_adopt
 		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -243,6 +231,13 @@ country_event = { #Black_Legion
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		#add_tradition = tr_subterfuge_double_agents
+		#add_tradition = tr_subterfuge_shadow_recruits
+		#add_tradition = tr_subterfuge_finish     #Махинации
 		#
 		every_system = {
 			limit = {
@@ -722,20 +717,8 @@ country_event = { #Death_Guard
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
 		add_tradition = tr_psionics_adopt
 		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -1172,21 +1155,6 @@ country_event = { #World_Eaters
 		add_tradition = tr_unyielding_defensive_zeal
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -2085,11 +2053,6 @@ country_event = { #Emperors_Children
 		add_tradition = tr_psionics_adopt
 		add_tradition = tr_psionics_mind_readers     #Псионика
 		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
 		add_tradition = tr_domination_grand_council
@@ -2526,27 +2489,19 @@ country_event = { #Word_Bearers
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
 		add_tradition = tr_domination_grand_council
 		add_tradition = tr_domination_judgment_corps
 		add_tradition = tr_domination_workplace_motivators
 		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_psychological_profiling
+		add_tradition = tr_aptitude_healthcare_program
+		add_tradition = tr_aptitude_champions_of_the_empire
+		add_tradition = tr_aptitude_finish     #Одарённость(это про лидеров)
 		
 		#add_tradition = tr_adaptability_adopt
 		add_tradition = tr_adaptability_recycling
@@ -2984,14 +2939,6 @@ country_event = { #Alpha_Legion
 		add_tradition = tr_subterfuge_shadow_recruits
 		add_tradition = tr_subterfuge_finish     #Махинации
 		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
 		add_tradition = tr_domination_grand_council
@@ -3006,6 +2953,11 @@ country_event = { #Alpha_Legion
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		#
 		every_system = {
 			limit = {
@@ -3429,20 +3381,12 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -3458,6 +3402,11 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		#add_tradition = tr_aptitude_adopt
+		#add_tradition = tr_aptitude_the_empire_needs_you
+		#add_tradition = tr_aptitude_specialist_training
+		#add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		#
 		every_system = {
 			limit = {
@@ -3878,20 +3827,12 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -3907,6 +3848,11 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		#add_tradition = tr_aptitude_adopt
+		#add_tradition = tr_aptitude_the_empire_needs_you
+		#add_tradition = tr_aptitude_specialist_training
+		#add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		#
 		every_system = {
 			limit = {
@@ -4330,16 +4276,6 @@ country_event = { #Blood_Pact
 		add_tradition = tr_unyielding_defensive_zeal
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
 		
 		add_tradition = tr_aptitude_adopt
 		add_tradition = tr_aptitude_the_empire_needs_you
@@ -4781,27 +4717,12 @@ country_event = { #Admonition
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
 		add_tradition = tr_domination_grand_council
 		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		#add_tradition = tr_domination_workplace_motivators
+		#add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
 		
 		#add_tradition = tr_adaptability_adopt
 		add_tradition = tr_adaptability_recycling
@@ -5232,20 +5153,8 @@ country_event = { #Chaos
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		#add_tradition = tr_psionics_adopt
+		#add_tradition = tr_psionics_mind_readers     #Псионика
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -5753,13 +5662,6 @@ country_event = { #Conjurers_of_Fear
 		add_tradition = tr_aptitude_the_empire_needs_you
 		add_tradition = tr_aptitude_specialist_training
 		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		
-		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
 		
 		#add_tradition = tr_adaptability_adopt
 		add_tradition = tr_adaptability_recycling
@@ -6646,9 +6548,6 @@ country_event = { #Brothrhd_Knife
 		add_tradition = tr_subterfuge_shadow_recruits
 		add_tradition = tr_subterfuge_finish     #Махинации
 		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
 		add_tradition = tr_aptitude_adopt
 		add_tradition = tr_aptitude_the_empire_needs_you
 		add_tradition = tr_aptitude_specialist_training
@@ -7085,31 +6984,14 @@ country_event = { #Givers_of_Life
 		add_tradition = tr_unyielding_resistance_is_frugal
 		add_tradition = tr_unyielding_never_surrender
 		add_tradition = tr_unyielding_bulwark_of_harmony
-		add_tradition = tr_unyielding_defensive_zeal
-		add_tradition = tr_unyielding_fortress_doctrine
-		add_tradition = tr_unyielding_finish     #Упорство
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
 		
 		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		
 		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
 		
 		#add_tradition = tr_adaptability_adopt
 		add_tradition = tr_adaptability_recycling
@@ -7533,26 +7415,11 @@ country_event = { #Bloodbath
 		add_tradition = tr_supremacy_finish     #Превосходство
 		
 		add_tradition = tr_unyielding_resistance_is_frugal
-		add_tradition = tr_unyielding_never_surrender
-		add_tradition = tr_unyielding_bulwark_of_harmony
-		add_tradition = tr_unyielding_defensive_zeal
-		add_tradition = tr_unyielding_fortress_doctrine
-		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		#add_tradition = tr_unyielding_never_surrender
+		#add_tradition = tr_unyielding_bulwark_of_harmony
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -7988,21 +7855,6 @@ country_event = { #Stigmartus
 		add_tradition = tr_unyielding_defensive_zeal
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
-		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -8449,25 +8301,6 @@ country_event = { #Penumbral
 		add_tradition = tr_psionics_adopt
 		add_tradition = tr_psionics_mind_readers     #Псионика
 		
-		add_tradition = tr_aptitude_adopt
-		add_tradition = tr_aptitude_the_empire_needs_you
-		add_tradition = tr_aptitude_specialist_training
-		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		
-		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
-		
-		#add_tradition = tr_adaptability_adopt
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
 		#
 		every_system = {
 			limit = {

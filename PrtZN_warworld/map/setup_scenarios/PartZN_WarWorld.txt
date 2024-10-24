@@ -209,12 +209,12 @@ system = { id = "184" name = "Meghosh" position = { x = 443.9347 y = -26.11428 }
 system = { id = "185" name = "Artemia" position = { x = 381.4886 y = -56.76961 } initializer = Artemia_initializer } 
 system = { id = "186" name = "Zapennec" position = { x = 415.55 y = -61.31114 } initializer = Zapennec_initializer } 
 system = { id = "187" name = "Perun" position = { x = 459.83 y = -48.82193 } initializer = Perun_initializer }
-system = { id = "188" name = "Excovar" position = { x = 388.3009 y = -86.28956 } initializer = Excovar_initializer }
+system = { id = "188" name = "Cando" position = { x = 388.3009 y = -86.28956 } }
 system = { id = "189" name = "Sabatine" position = { x = 400.7883 y = -27.2035 } initializer = Sabatine_initializer } #МИР_ДЕМОНОВ_ХАОСА
 system = { id = "190" name = "Stygies" position = { x = 357.6456 y = -56.7696 } initializer = Stygies_initializer } 
 system = { id = "191" name = "Savlar" position = { x = 351.9686 y = -79.47726 } initializer = Savlar_initializer }
 system = { id = "192" name = "Hydraphur" position = { x = 338.3441 y = -102.1849 } initializer = Hydraphur_initializer } 
-system = { id = "193" name = "Il-kaithe" position = { x = 351.9686 y = -113.5387 } initializer = Ilkaithe_initializer } #МИР ЭЛЬДАР
+system = { id = "193" name = "Adrastapol" position = { x = 351.9686 y = -113.5387 } } #МИР ЭЛЬДАР
 system = { id = "194" name = "Loqiit" position = { x = 374.6763 y = -107.8618 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Qorl_start } } } 
 system = { id = "195" name = "Guryan" position = { x = 370.1347 y = 35.1964 } initializer = Guryan_initializer }
 system = { id = "196" name = "Urdesh" position = { x = 354.2394 y = 55.63329 } initializer = Urdesh_initializer } 
@@ -603,6 +603,18 @@ system = { id = "577" name = "Lyndheist" position = { x = -392.4231 y = -84.7602
 system = { id = "578" name = "Etiamnum" position = { x = -415.4231 y = -48.7602 } }
 system = { id = "579" name = "Obsidia" position = { x = -345.4231 y = 31.7602 } }
 system = { id = "580" name = "Halathel" position = { x = -358.4231 y = 50.7602 } initializer = Halathel_initializer }
+system = { id = "581" name = "Excovar" position = { x = 401.3009 y = -72.55956 } initializer = Excovar_initializer  }
+system = { id = "582" name = "Khur" position = { x = 401.3009 y = -101.76756 } }
+system = { id = "583" name = "Salvation Gamma" position = { x = 417.3009 y = -91.55956 } }
+system = { id = "584" name = "Colchis" position = { x = 410.3009 y = -121.55956 } }
+system = { id = "585" name = "Darkhold" position = { x = 387.3009 y = -118.55956 } }
+system = { id = "586" name = "Kdask" position = { x = 392.9471 y = -144.3079 } } 
+system = { id = "587" name = "Precipice" position = { x = 430.3009 y = -138.55956 } }
+system = { id = "588" name = "Sarcosa" position = { x = 435.3009 y = -156.55956 } }
+system = { id = "589" name = "Ogris" position = { x = 405.0085 y = -182.8187 } }
+system = { id = "590" name = "Il-kaithe" position = { x = 347.9686 y = -135.5387 } initializer = Ilkaithe_initializer } 
+system = { id = "591" name = "Forgefane" position = { x = 199.2551 y = 258.9715 } } 
+system = { id = "592" name = "Ordex" position = { x = 202.3473 y = 236.3253 } } 
 
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
@@ -1405,4 +1417,23 @@ system = { id = "580" name = "Halathel" position = { x = -358.4231 y = 50.7602 }
  add_hyperlane = { from = "577" to = "395" }
  add_hyperlane = { from = "577" to = "421" }
  add_hyperlane = { from = "577" to = "394" }
+ add_hyperlane = { from = "581" to = "185" }
+ add_hyperlane = { from = "581" to = "186" }
+ add_hyperlane = { from = "581" to = "583" }
+ add_hyperlane = { from = "583" to = "582" }
+ add_hyperlane = { from = "582" to = "188" }
+ add_hyperlane = { from = "582" to = "584" }
+ add_hyperlane = { from = "582" to = "585" }
+ add_hyperlane = { from = "586" to = "585" }
+ add_hyperlane = { from = "586" to = "106" }
+ add_hyperlane = { from = "586" to = "107" }
+ add_hyperlane = { from = "589" to = "147" }
+ add_hyperlane = { from = "589" to = "107" }
+ add_hyperlane = { from = "584" to = "587" }
+ add_hyperlane = { from = "588" to = "587" }
+ add_hyperlane = { from = "588" to = "107" }
+ add_hyperlane = { from = "590" to = "193" }
+ add_hyperlane = { from = "592" to = "67" }
+ add_hyperlane = { from = "591" to = "67" }
+ add_hyperlane = { from = "591" to = "80" }
 }
