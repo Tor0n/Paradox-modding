@@ -1,32 +1,5 @@
 namespace = WrWrld_game_start
 
-@create_pop_watch_fort_station = 15
-
-#country_event = { #ПРИВЕТ МИР(зачёркнуто) ИГРОК!
-#	id = WrWrld_game_start.0
-#	title = "WrWrld_game_start.0.name"
-#	desc = "WrWrld_game_start.0.desc"
-#	picture = GFX_evt_ship_in_orbit
-#	#hide_window = no
-#	#is_triggered_only = yes
-#
-#	#trigger = {
-#		#or = {
-#		#	has_country_flag = Imperium_gos
-#		#	has_country_flag = Chaos_gos
-#		#}
-#	#}
-#	#immediate = {
-#   #    declare_war = {
-#	#		target = event_target:Imperium_evnt_trgt_country
-#	#		#name = <optional war name>
-#	#		attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-#	#	}
-#	#}
-#	option = {
-#		name = "WrWrld_game_start.0.a"
-#	}
-#}
 country_event = { #Black_Legion
 	id = WrWrld_game_start.19
 	hide_window = yes
@@ -7273,11 +7246,7 @@ country_event = { #Bloodbath
 		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		#owner = {
-		#	country_event = { id = WrWrld_game_start.101 days = 1 }
-		#}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
-		#
 		add_resource = { energy = 45000	}
 		add_resource = { minerals = 12500 }
 		add_resource = { food = 12500 }
@@ -7407,7 +7376,6 @@ country_event = { #Bloodbath
 		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
 		give_technology = { tech = tech_thrusters_3 }
 		
-		
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -7439,7 +7407,7 @@ country_event = { #Bloodbath
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
-		#
+		
 		every_system = {
 			limit = {
 				or = {
@@ -7467,26 +7435,12 @@ country_event = { #Bloodbath
 					module = shipyard
 					module = gun_battery
 					module = gun_battery
-					#module = trading_hub
-					#module = detection_array #or: anchorage
-					
 					building = crew_quarters
-					#building = fleet_academy
-					#building = listening_post
-					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
+				    limit = { is_colonizable = no}
 					create_deposits_stations = yes
 				}
 				if = {                                         ### МИР ДЕМОНОВ ###
@@ -7515,9 +7469,7 @@ country_event = { #Bloodbath
 					add_building = building_energy_grid					
 				    while = {
 				    	count = 38
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 				    	count = 3

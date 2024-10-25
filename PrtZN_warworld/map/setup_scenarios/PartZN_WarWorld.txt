@@ -14,7 +14,7 @@ static_galaxy_scenario = {
 	colonizable_planet_odds = 0
     primitive_odds = 0
     crisis_strength = 0.75
- 	extra_crisis_strength = { 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10 11 12 13 14 15 17.5 20 22.5 25 30 35 40 45 50}
+ 	extra_crisis_strength = { 5.5 6 6.5 7 7.5 8 8.5 9 9.5 10 11 12 13 14 15 17.5 20 22.5 25 30 35 40 45 50 }
     num_wormhole_pairs = { min = 0 max = 30 }
     num_wormhole_pairs_default = 0
     num_gateways = { min = 0 max = 20 }
@@ -333,11 +333,11 @@ system = { id = "308" name = "Prassium" position = { x = -249.7842 y = 127.1625 
 system = { id = "309" name = "Eydolim" position = { x = -265.6795 y = 146.464 } initializer = Eydolim_initializer }
 system = { id = "310" name = "Alsanta" position = { x = -237.295 y = 148.7347 } initializer = Alsanta_initializer }
 system = { id = "311" name = "Mekwod" position = { x = -286.1164 y = 149.8701 } initializer = Mekwod_initializer }
-system = { id = "312" name = "Schidelgheist" position = { x = -219.1288 y = 131.704 } initializer = Schidelgheist_initializer }
-system = { id = "313" name = "Accatran" position = { x = -181.6612 y = 136.2455 } initializer = Accatran_initializer } 
-system = { id = "314" name = "Sarlok" position = { x = -183.932 y = 106.7255 } initializer = Sarlok_initializer } 
+system = { id = "312" name = "Schidelgheist"	position = { x = -219.0000 y = 131.0000 } initializer = Schidelgheist_initializer }
+system = { id = "313" name = "Accatran"			position = { x = -181.0000 y = 136.0000 } initializer = Accatran_initializer } 
+system = { id = "314" name = "Sarlok"			position = { x = -183.0000 y = 106.0000 } initializer = Sarlok_initializer } 
 system = { id = "315" name = "Nexus" position = { x = -174.8489 y = 68.12254 } initializer = Nexus_initializer }
-system = { id = "316" name = "Cantaix" position = { x = -198.692 y = 43.14413 } initializer = Cantaix_initializer }
+system = { id = "316" name = "Cantaix"			position = { x = -198.0000 y = 43.0000 } initializer = Cantaix_initializer }
 system = { id = "317" name = "Dsholtu" position = { x = -179.3905 y = 5.676496 } initializer = Dsholtu_initializer }
 system = { id = "318" name = "Cephian" position = { x = -193.0151 y = -26.11422 } initializer = Cephian_initializer } 
 system = { id = "319" name = "Heletine" position = { x = -106.7259 y = 204.3685 } initializer = Heletine_initializer }
@@ -345,17 +345,17 @@ system = { id = "320" name = "Charadon" position = { x = -110.1321 y = 172.5777 
 system = { id = "321" name = "Perdus" position = { x = -136.2459 y = 215.7223 } initializer = Perdus_initializer }
 system = { id = "322" name = "Trusk" position = { x = -162.3597 y = 228.2115 } initializer = Trusk_initializer }
 system = { id = "323" name = "Vayber" position = { x = -145.3289 y = 185.067 } initializer = Vayber_initializer }
-system = { id = "324" name = "Metalica" position = { x = -164.6305 y = 164.6301 } initializer = Metalica_initializer } 
-system = { id = "325" name = "Balcarhsa" position = { x = -147.5997 y = 140.787 } initializer = Balcarhsa_initializer } #МИР_ВОЙНЫ_ХАОСА
-system = { id = "326" name = "Thranix" position = { x = -137.3813 y = 106.7255 } initializer = Thranix_initializer } #МИР_ДЕМОНОВ_ХАОСА
-system = { id = "327" name = "Gottgaard" position = { x = -112.4029 y = 127.1624 } initializer = Gottgaard_initializer } #МИР КРЕПОСТЬ
-system = { id = "328" name = "Mancora" position = { x = -74.93524 y = 135.1101 } initializer = Mancora_initializer }
-system = { id = "329" name = "Octarius" position = { x = -47.68606 y = 114.6732 } initializer = Octarius_initializer }
+system = { id = "324" name = "Metalica"			position = { x = -164.0000 y = 164.0000 } initializer = Metalica_initializer }
+system = { id = "325" name = "Balcarhsa"		position = { x = -147.0000 y = 140.0000 } initializer = Balcarhsa_initializer } #МИР_ВОЙНЫ_ХАОСА
+system = { id = "326" name = "Thranix"			position = { x = -137.0000 y = 96.0000 } initializer = Thranix_initializer } #МИР_ДЕМОНОВ_ХАОСА
+system = { id = "327" name = "Gottgaard"		position = { x = -112.0000 y = 127.0000 } initializer = Gottgaard_initializer } #МИР КРЕПОСТЬ
+system = { id = "328" name = "Mancora"			position = { x = -74.0000 y = 135.0000 } initializer = Mancora_initializer }
+system = { id = "329" name = "Octarius"			position = { x = -47.0000 y = 114.0000 } initializer = Octarius_initializer }
 system = { id = "330" name = "Thraxis" position = { x = -36.33224 y = 80.61175 } initializer = Thraxis_initializer } 
 system = { id = "331" name = "Gartuli" position = { x = -39.73839 y = 49.95641 } initializer = Gartuli_initializer } #МИР КРЕПОСТЬ
 system = { id = "332" name = "Viridia" position = { x = -36.33224 y = -0.0004302691 } initializer = Viridia_initializer } 
 system = { id = "333" name = "Phargos" position = { x = -47.68607 y = 28.38414 } initializer = Phargos_initializer } #ВРАТА ПОСТАВИТЬ
-system = { id = "334" name = "Zantragorra" position = { x = -68.12295 y = 86.28865 } initializer = Zantragorra_initializer } 
+system = { id = "334" name = "Zantragorra"		position = { x = -68.12295 y = 86.28865 } initializer = Zantragorra_initializer }
 system = { id = "335" name = "Trakonn" position = { x = -114.6736 y = 51.0918 } initializer = Trakonn_initializer } 
 system = { id = "336" name = "Moebius" position = { x = -139.6521 y = -12.48963 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Nefrekh_start } } } 
 system = { id = "337" name = "Cirillo" position = { x = -132.8398 y = 27.24876 } initializer = Cirillo_initializer }
@@ -617,6 +617,14 @@ system = { id = "592" name = "Ordex" position = { x = 202.3473 y = 236.3253 } }
 system = { id = "593" name = "Nocturne" position = { x = 52.06149 y = 141.5347 } initializer = Nocturne_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Salamanders_start } } } 
 system = { id = "594" name = "Baal" position = { x = -128.9444 y = -190.6401 } initializer = Baal_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Blood_Angels_start } } } 
 system = { id = "595" name = "Erenon" position = { x = -25.68606 y = 110.6732 } }
+
+system = { id = "596" name = "Ghodri"			position = { x = -143.0000 y = 121.0000 } }
+system = { id = "597" name = "Atria"			position = { x = -126.0000 y = 105.0000 } }
+system = { id = "598" name = "Orestes"			position = { x = -147.0000 y = 107.0000 } }
+system = { id = "599" name = "Gheist"			position = { x = -80.0000 y = 110.0000 } }
+system = { id = "600" name = "Kolossi"			position = { x = -187.0000 y = 164.0000 } }
+system = { id = "601" name = "Newfound"			position = { x = -202.0000 y = 145.0000 } }
+system = { id = "602" name = "Heart of Darkness"position = { x = -212.0000 y = 75.0000 } }
 
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
@@ -1043,8 +1051,6 @@ system = { id = "595" name = "Erenon" position = { x = -25.68606 y = 110.6732 } 
  add_hyperlane = { from = "324" to = "313" }
  add_hyperlane = { from = "325" to = "313" }
  add_hyperlane = { from = "325" to = "324" }
- add_hyperlane = { from = "325" to = "326" }
- add_hyperlane = { from = "327" to = "326" }
  add_hyperlane = { from = "327" to = "325" }
  add_hyperlane = { from = "333" to = "331" }
  add_hyperlane = { from = "331" to = "330" }
@@ -1444,4 +1450,21 @@ system = { id = "595" name = "Erenon" position = { x = -25.68606 y = 110.6732 } 
  add_hyperlane = { from = "595" to = "330" }
  add_hyperlane = { from = "595" to = "329" }
  add_hyperlane = { from = "595" to = "213" }
+ add_hyperlane = { from = "596" to = "325" }
+ add_hyperlane = { from = "596" to = "326" }
+ add_hyperlane = { from = "596" to = "597" }
+ add_hyperlane = { from = "596" to = "598" }
+ add_hyperlane = { from = "597" to = "326" }
+ add_hyperlane = { from = "597" to = "327" }
+ add_hyperlane = { from = "598" to = "313" }
+ add_hyperlane = { from = "598" to = "326" }
+ add_hyperlane = { from = "599" to = "328" }
+ add_hyperlane = { from = "599" to = "334" }
+ add_hyperlane = { from = "600" to = "313" }
+ add_hyperlane = { from = "600" to = "324" }
+ add_hyperlane = { from = "600" to = "601" }
+ add_hyperlane = { from = "601" to = "312" }
+ add_hyperlane = { from = "601" to = "313" }
+ add_hyperlane = { from = "602" to = "314" }
+ add_hyperlane = { from = "602" to = "316" }
 }
