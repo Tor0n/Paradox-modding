@@ -17,7 +17,7 @@ Imperium = {
 		plural = "PRESCRIPTED_species_plural_humans1"
 		adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
-		trait = "trait_perfected_genes"
+		#trait = "trait_perfected_genes"
 		trait = "trait_extremely_adaptive"
 		trait = "trait_unruly"
 		trait = "trait_deviants"
@@ -103,7 +103,8 @@ Mechanicus = {
 		}
 		name_list="HUMAN3"
 		gender=not_set
-		trait="trait_perfected_genes"
+		#trait="trait_perfected_genes"
+		trait="trait_cybernetic"
 		trait="trait_extremely_adaptive"
 		trait="trait_unruly"
 		trait="trait_deviants"
@@ -213,7 +214,7 @@ Mechanicus = {
 		"civic_relentless_industrialists"
 		"civic_technocracy"
 	}
-	origin="origin_imperium"
+	origin="origin_mechanicus"
 }
 Ecclesiarchy = {
 	key="Экклезиархия"
@@ -240,7 +241,7 @@ Ecclesiarchy = {
 		}
 		name_list="HUMAN3"
 		gender=female
-		trait="trait_perfected_genes"
+		#trait="trait_perfected_genes"
 		trait="trait_extremely_adaptive"
 		trait="trait_unruly"
 		trait="trait_deviants"
@@ -1060,7 +1061,7 @@ Manachean_Commonwealth = {
 		}
 		name_list="HUMAN3"
 		gender=not_set
-		trait="trait_perfected_genes"
+		#trait="trait_perfected_genes"
 		trait="trait_extremely_adaptive"
 		trait="trait_unruly"
 		trait="trait_deviants"
@@ -2164,6 +2165,7 @@ Mechanicum_Cyclothrathe = {
 		}
 		name_list="HUMAN3"
 		gender=not_set
+		trait="trait_cybernetic"
 		trait="trait_extremely_adaptive"
 		trait="trait_deviants"
 		trait="trait_unruly"
@@ -2281,7 +2283,7 @@ Mechanicum_Cyclothrathe = {
 		"civic_technocracy"
 		"civic_shadow_council"
 	}
-	origin="origin_chaos"
+	origin="origin_mechanicum"
 	flags = { Mechanicum_Cyclothrathe_start Mechanicum_Cyclothrathe_gos }
 }
 Mechanicum_Samech = {
@@ -2312,6 +2314,7 @@ Mechanicum_Samech = {
 		}
 		name_list="HUMAN3"
 		gender=not_set
+		trait="trait_cybernetic"
 		trait="trait_extremely_adaptive"
 		trait="trait_deviants"
 		trait="trait_unruly"
@@ -2429,7 +2432,7 @@ Mechanicum_Samech = {
 		"civic_cutthroat_politics"
 		"civic_corvee_system"
 	}
-	origin="origin_chaos"
+	origin="origin_mechanicum"
 	flags = { Mechanicum_Samech_start Mechanicum_Samech_gos }
 }
 Blood_Pact = {
@@ -2520,13 +2523,13 @@ Blood_Pact = {
 		background=
 		{
 			category="backgrounds"
-			file="inverted_v.dds"
+			file="vertical.dds"
 		}
 		colors=
 		{
-			"black"
 			"red"
-			"black"
+			"dark_red"
+			"red"
 			"null"
 		}
 	}
@@ -2674,7 +2677,7 @@ Admonition = {
 		{
 			"sick_green"
 			"shadow_green"
-			"black"
+			"shadow_green" #black
 			"null"
 		}
 	}
@@ -2796,9 +2799,9 @@ Land_Chaos = {
 		}
 		colors =
 		{
-			"indigo"
+			"burgundy" #indigo
 			"dark_red"
-			"black"
+			"dark_red" #black
 			"null"
 		}
 	}
@@ -3071,7 +3074,7 @@ Barbed_Chalice = {
 		{
 			"light_pink"
 			"bright_purple"
-			"black"
+			"light_pink"
 			"null"
 		}
 	}
@@ -3342,7 +3345,7 @@ Givers_of_Life = {
 		{
 			"swamp_green"
 			"dark_green"
-			"black"
+			"swamp_green" #black
 			"null"
 		}
 	}
@@ -3479,12 +3482,12 @@ Bloodbath = {
 		background=
 		{
 			category="backgrounds"
-			file="vertical.dds"
+			file="inverted_v.dds"
 		}
 		colors=
 		{
+			"black"
 			"red"
-			"dark_red"
 			"black"
 			"null"
 		}
@@ -4121,7 +4124,7 @@ Tau_Federation = {
 		colors = {
 			"sky_blue"
 			"turquoise"
-			"black"
+			"sky_blue" #black
 			"null"
 		}
 	}
@@ -4217,18 +4220,18 @@ Ork_territory = {
 	spawn_as_fallen = no
 }
 Ownerships_Corinis = {
-	name = "Владения Коринисов"
-	adjective = "Владения Коринисов."
+	name = "Миры Генокрадов" #Владения Коринисов
+	adjective = "Генокрадск"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Коринис."
+	ship_prefix = "Генокрад."
 	species = {
 		class = "NECROID"
 		portrait = "nec1"
-		name = "Коринис"
-		plural = "Коринисы"
-		adjective = "Кориниск"
+		name = "Генокрад"
+		plural = "Генокрады"
+		adjective = "Генокрадск"
 		name_list = "FUN2"
 		gender = male
 		trait="trait_hive_mind"

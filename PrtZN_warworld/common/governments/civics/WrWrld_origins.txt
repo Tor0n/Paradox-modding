@@ -21,7 +21,36 @@ origin_imperium = {
 
 	description = ""
 	
-	traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
+	#traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_mechanicus = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { Mechanicus_origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	traits = { trait = trait_cybernetic } # без этого ломается, либо убрать идеальные гены у расы
 	
 	# has_secondary_species = {  }
 
@@ -89,6 +118,35 @@ origin_chaos = {
 	#	#title = civic_necrophage_secondary_species
 	#	# traits = { trait = trait_xxx trait = trait_yyy }
 	#}
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_mechanicum = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+	
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { Mechanicum_origin_start }
+	#modifier = {  }
+
+	description = ""
+	
+	traits = { trait = trait_cybernetic } # без этого ломается, либо убрать идеальные гены у расы
+	
+	# has_secondary_species = {  }
 
 	advanced_start = yes
 	random_weight = { base = 0 }

@@ -114,19 +114,19 @@ ap_lord_of_war = {
 	}
 
 	modifier = {
-		country_enclave_capacity_add = 1
+		#country_enclave_capacity_add = 1
 		diplo_weight_naval_mult = 0.25
 		#Bonus to dividends frequency handled in the dividends situation.
 	}
 
 	ai_weight = {
-		factor = 5
+		factor = 0
 		modifier = {
-			factor = 2
+			factor = 0
 			has_ethic = ethic_militarist
 		}
 		modifier = {
-			factor = 3
+			factor = 0
 			has_ethic = ethic_fanatic_militarist
 		}
 		modifier = {

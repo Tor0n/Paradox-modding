@@ -3403,6 +3403,13 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
 		
+		add_tradition = tr_cybernetics_transubstantiation_synthesis
+		add_tradition = tr_cybernetics_metabolic_reprocessing
+		add_tradition = tr_cybernetics_integrated_anatomy
+		add_tradition = tr_cybernetics_augmentation_overload
+		add_tradition = tr_cybernetics_modular_cybernetics
+		add_tradition = tr_cybernetics_finish     #Кибернетик
+		
 		#add_tradition = tr_aptitude_adopt
 		#add_tradition = tr_aptitude_the_empire_needs_you
 		#add_tradition = tr_aptitude_specialist_training
@@ -3457,71 +3464,10 @@ country_event = { #Mechanicum_Cyclothrathe
 		    	    # }
 					create_deposits_stations = yes
 				}
-				if = {                                         ### МИР ДЕМОНОВ ###
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Chaos_demon_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-				    while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_capital 
-				    add_building = building_precinct_house					
-				    #add_building = building_planetary_shield_generator 
-					add_building = building_fortress	
-					add_building = building_dread_encampment					
-				    add_building = building_factory_1	
-					add_building = building_foundry_1
-					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
-					add_building = building_temple #building_holotemple	
-					add_building = building_energy_grid					
-				    while = {
-				    	count = 38
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 3
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
 				if = {                                         ### ПАДШИЙ МИР ###
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Chaos_fallen_world			
+                        has_planet_flag = Chaos_Tesser_world			
 			        }
 				    create_colony = {
 				    	owner = ROOT
@@ -3543,13 +3489,13 @@ country_event = { #Mechanicum_Cyclothrathe
 					add_building = building_mineral_purification_plant
 					add_building = building_foundry_1					
 				    while = {
-				    	count = 13
+				    	count = 5
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-				    	count = 21
+				    	count = 29
 				    	create_pop = {
 				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
@@ -3579,64 +3525,60 @@ country_event = { #Mechanicum_Cyclothrathe
 						}
 					}
 				}
-				if = {                                         ### МИР ВОЙНЫ ###
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Chaos_war_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-				    while = {
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_housing
+					#	}
+					#}
+					while = {
 						count = 3
 						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
+							district = district_arcology_arms_industry
 						}
 					}
-				    add_building = building_capital 
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress  
-					add_building = building_dread_encampment
-				    add_building = building_foundry_1
-				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
-					add_building = building_temple						
-				    while = {
-				    	count = 4
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
-				    	count = 12
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_civilian_industry
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_administrative
+					#	}
+					#}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_dread_encampment		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_autochthon_monument
+					add_building = building_chemical_plant 	
+					add_building = building_ministry_production					
+				    #while = {
+				    #	count = 18
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 20
 				    	create_pop = {
 				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					#while = {
-					#	count = 1
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_generator
-					#	}
-					#}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					#while = {
-					#	count = 1
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
 				}
 			}
 		}
@@ -3848,6 +3790,13 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_cybernetics_transubstantiation_synthesis
+		add_tradition = tr_cybernetics_metabolic_reprocessing
+		add_tradition = tr_cybernetics_integrated_anatomy
+		add_tradition = tr_cybernetics_augmentation_overload
+		add_tradition = tr_cybernetics_modular_cybernetics
+		add_tradition = tr_cybernetics_finish     #Кибернетик
 		
 		#add_tradition = tr_aptitude_adopt
 		#add_tradition = tr_aptitude_the_empire_needs_you
@@ -4083,6 +4032,61 @@ country_event = { #Mechanicum_Cyclothrathe
 					#		district = district_farming
 					#	}
 					#}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_housing
+					#	}
+					#}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_arms_industry
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_civilian_industry
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_administrative
+					#	}
+					#}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_dread_encampment		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_autochthon_monument
+					add_building = building_chemical_plant 	
+					add_building = building_ministry_production					
+				    #while = {
+				    #	count = 18
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 20
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
 				}
 			}
 		}
