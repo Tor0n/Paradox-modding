@@ -6499,21 +6499,15 @@ country_event = { #Barbed_Chalice
 					#building = offworld_trading_company
 				}
 			}
-			every_system_planet = { 
-			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
 					create_deposits_stations = yes
 				}
-				if = {                                         ### МИР ДЕМОНОВ ###
-				    limit = { 
+				### МИР ДЕМОНОВ ###
+				if = {
+				    limit = {
 			            is_colonizable = yes
                         has_planet_flag = Chaos_demon_world			
 			        }

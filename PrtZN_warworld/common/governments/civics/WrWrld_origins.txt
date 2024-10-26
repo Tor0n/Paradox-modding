@@ -17,7 +17,10 @@ origin_imperium = {
 	}
 	
 	flags = { Imp_origin_start }
-	#modifier = {  }
+	modifier = {
+		divided_patrongage_max_subjects = 1
+		monthly_loyalty_from_subjects = 1
+	}
 
 	description = ""
 	
