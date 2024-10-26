@@ -2,31 +2,6 @@ namespace = WrWrld_game_start
 
 @create_pop_watch_fort_station = 15
 
-#country_event = { #ПРИВЕТ МИР(зачёркнуто) ИГРОК!
-#	id = WrWrld_game_start.0
-#	title = "WrWrld_game_start.0.name"
-#	desc = "WrWrld_game_start.0.desc"
-#	picture = GFX_evt_ship_in_orbit
-#	#hide_window = no
-#	#is_triggered_only = yes
-#
-#	#trigger = {
-#		#or = {
-#		#	has_country_flag = Imperium_gos
-#		#	has_country_flag = Chaos_gos
-#		#}
-#	#}
-#	#immediate = {
-#   #    declare_war = {
-#	#		target = event_target:Imperium_evnt_trgt_country
-#	#		#name = <optional war name>
-#	#		attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-#	#	}
-#	#}
-#	option = {
-#		name = "WrWrld_game_start.0.a"
-#	}
-#}
 country_event = { #Tau
 	id = WrWrld_game_start.59
 	hide_window = yes
@@ -705,7 +680,7 @@ country_event = { #Xenos Qorl
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.114 days = 1 }
+			country_event = { id = WrWrld_game_start.114 days = 4 }
 		}
 		#
 		add_resource = { energy = 9000	}
@@ -810,7 +785,7 @@ country_event = { #Xenos Slogth
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.115 days = 1 }
+			country_event = { id = WrWrld_game_start.115 days = 4 }
 		}
 		#add_resource = { energy = 25000	}
 		add_resource = { alloys = 14000	}
@@ -912,7 +887,7 @@ country_event = { #Xenos Rak'Gol
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.116 days = 1 }
+			country_event = { id = WrWrld_game_start.116 days = 4 }
 		}
 		add_resource = { energy = 5000	}
 		add_resource = { alloys = 14000	}
@@ -1015,7 +990,7 @@ country_event = { #Xenos Barghesi
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.117 days = 1 }
+			country_event = { id = WrWrld_game_start.117 days = 4 }
 		}
 		add_resource = { energy = 5000	}
 		add_resource = { alloys = 12500	}
