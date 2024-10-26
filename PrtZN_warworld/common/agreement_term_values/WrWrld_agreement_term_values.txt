@@ -6,18 +6,18 @@ specialist_astartes = {
 	term = specialist_type
 	triggered_loyalty_change = {
 		trigger = {
-			target = { is_militarist = yes }
+			target = { is_xenophobe = yes }
 		}
-		loyalty_change = 5
+		loyalty_change = 50
 		ai_acceptance = {
 			subject = 20
 		}
 	}
 	triggered_loyalty_change = {
 		trigger = {
-			target = { is_spiritualist = yes }
+			target = { is_authoritarian = yes }
 		}
-		loyalty_change = 15
+		loyalty_change = 50
 		ai_acceptance = {
 			subject = 30
 		}
@@ -34,18 +34,18 @@ specialist_ecclesiarchy = {
 	term = specialist_type
 	triggered_loyalty_change = {
 		trigger = {
-			target = { is_militarist = yes }
+			target = { is_xenophobe = yes }
 		}
-		loyalty_change = 5
+		loyalty_change = 50
 		ai_acceptance = {
 			subject = 20
 		}
 	}
 	triggered_loyalty_change = {
 		trigger = {
-			target = { is_spiritualist = yes }
+			target = { is_authoritarian = yes }
 		}
-		loyalty_change = 15
+		loyalty_change = 50
 		ai_acceptance = {
 			subject = 30
 		}
@@ -62,18 +62,18 @@ specialist_mechanicus = {
 	term = specialist_type
 	triggered_loyalty_change = {
 		trigger = {
-			target = { is_militarist = yes }
+			target = { is_xenophobe = yes }
 		}
-		loyalty_change = 5
+		loyalty_change = 50
 		ai_acceptance = {
 			subject = 20
 		}
 	}
 	triggered_loyalty_change = {
 		trigger = {
-			target = { is_spiritualist = yes }
+			target = { is_authoritarian = yes }
 		}
-		loyalty_change = 15
+		loyalty_change = 50
 		ai_acceptance = {
 			subject = 30
 		}

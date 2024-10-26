@@ -13,7 +13,7 @@ country_event = { #Imperium
 	immediate = {
 	    save_global_event_target_as = Imperium_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.100 days = 4 }
+			country_event = { id = WrWrld_game_start.401 days = 4 }
 		}
 		# owner = {
 			# country_event = { id = WrWrld_Imperium_species.1 }
@@ -3142,6 +3142,8 @@ country_event = { #Space_Wolves
 		}
 	}
 }
+#9		Тёмные ангелы
+#10     Чёрные храмовники
 country_event = { #Manachean_Commonwealth
 	id = WrWrld_game_start.11
 	hide_window = yes
@@ -3152,13 +3154,13 @@ country_event = { #Manachean_Commonwealth
 	}
 	immediate = {
 	    save_global_event_target_as = Manachean_Commonwealth_evnt_trgt_country
-		#owner = {
-		#	country_event = { id = WrWrld_game_start.100 days = 1 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start.211 days = 2 }
+		}
 		# owner = {
 	    # 	country_event = { id = WrWrld_Imperium_species.1 }
 		# }
-		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
 		establish_communications_no_message = event_target:Ultramarines_evnt_trgt_country
@@ -3676,66 +3678,6 @@ country_event = { #Manachean_Commonwealth
 #17 Резерв под Возможного Вассала в центре
 #18 Резерв под Возможного Вассала на всякий случай 
 country_event = { #Imperium
-	id = WrWrld_game_start.100
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Imperium_gos
-	}
-	immediate = {
-		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
-		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
-		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
-		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		establish_communications_no_message = event_target:Tau_evnt_trgt_country
-		establish_communications_no_message = event_target:Orc_evnt_trgt_country
-		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
-		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
-		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
-		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
-		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
-		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
-		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
-		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
-		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
-		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
-		establish_communications_no_message = event_target:Texian_evnt_trgt_country
-		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
-		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
-		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
-		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
-		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
-		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		declare_war = {
-			target = event_target:Tau_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-		}
-		#declare_war = {
-		#	target = event_target:Eldar_evnt_trgt_country
-		#	#name = <optional war name>
-		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-		#}
-		declare_war = {
-			target = event_target:Aldari_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Strixis_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Sardonit_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-	}
-}
-country_event = { #Imperium
 	id = WrWrld_game_start.202
 	hide_window = yes
 	is_triggered_only = yes
@@ -4012,6 +3954,106 @@ country_event = { #Imperium
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start.211
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Manachean_Commonwealth_gos
+	}
+	immediate = {
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Imperium_evnt_trgt_country
+			preset = preset_scion
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start.401
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Imperium_gos
+	}
+	immediate = {
+		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		#declare_war = {
+		#	target = event_target:Eldar_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		#}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 	}
 }
