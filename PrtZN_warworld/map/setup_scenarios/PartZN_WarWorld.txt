@@ -21,16 +21,16 @@ static_galaxy_scenario = {
     num_gateways_default = 0
     random_hyperlanes = no
 
-system = { id = "0" name = "Terra" position = { x = 231.6181 y = -22.70811 } initializer = Terra_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Imperium_start } } }
-system = { id = "1" name = "Cadia" position = { x = 280.4395 y = -162.3602 } initializer = Cadia_initializer }
-system = { id = "2" name = "Agripinaa" position = { x = 278.1688 y = -133.9756 } initializer = Agripinaa_initializer }
-system = { id = "3" name = "Ingiga" position = { x = 255.4611 y = -118.0803 } initializer = Ingiga_initializer }
-system = { id = "4" name = "Yarant" position = { x = 247.5134 y = -102.1849 } initializer = Yarant_initializer } #ВРАТА ПОСТАВИТЬ
-system = { id = "5" name = "Prescience" position = { x = 252.055 y = -52.22807 } initializer = Prescience_initializer }
-system = { id = "6" name = "Talon Aegis" position = { x = 212.3166 y = -48.82191 } initializer = Talon_Aegis_initializer }
-system = { id = "7" name = "Eyrie" position = { x = 225.9411 y = 11.35337 } initializer = Eyrie_initializer }
-system = { id = "8" name = "Chrysis" position = { x = 264.5442 y = -0.0004565726 } initializer = Chrysis_initializer }
-system = { id = "9" name = "Voss" position = { x = 275.898 y = -30.65579 } initializer = Voss_initializer } 
+system = { id = "0" name = "Terra"				position = { x = 231.6181 y = -22.70811 } initializer = Terra_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Imperium_start } } }
+system = { id = "1" name = "Cadia"				position = { x = 280.4395 y = -162.3602 } initializer = Cadia_initializer }
+system = { id = "2" name = "Agripinaa"			position = { x = 278.1688 y = -133.9756 } initializer = Agripinaa_initializer }
+system = { id = "3" name = "Ingiga"				position = { x = 255.4611 y = -118.0803 } initializer = Ingiga_initializer }
+system = { id = "4" name = "Yarant"				position = { x = 247.5134 y = -102.1849 } initializer = Yarant_initializer } #ВРАТА ПОСТАВИТЬ
+system = { id = "5" name = "Prescience"			position = { x = 252.055 y = -52.22807 } initializer = Prescience_initializer }
+system = { id = "6" name = "Talon Aegis"		position = { x = 212.3166 y = -48.82191 } initializer = Talon_Aegis_initializer }
+system = { id = "7" name = "Eyrie"				position = { x = 223.0000 y = 4.0000 } initializer = Eyrie_initializer }
+system = { id = "8" name = "Chrysis"			position = { x = 273.0000 y = 10.0000 } initializer = Chrysis_initializer }
+system = { id = "9" name = "Voss"				position = { x = 285.0000 y = -30.0000 } initializer = Voss_initializer }
 system = { id = "10" name = "Avellorn" position = { x = 227.0766 y = -79.47724 } initializer = Avellorn_initializer } 
 system = { id = "11" name = "Glorifica" position = { x = 309.9595 y = -23.8435 } initializer = Glorifica_initializer }
 system = { id = "12" name = "Vellung" position = { x = 326.9902 y = 6.811834 } initializer = Vellung_initializer } 
@@ -45,8 +45,8 @@ system = { id = "20" name = "Vanaheim" position = { x = 172.5782 y = -121.4864 }
 system = { id = "21" name = "Armageddon" position = { x = 145.329 y = -115.8095 } initializer = Armageddon_initializer }
 system = { id = "22" name = "Paramar" position = { x = 152.1413 y = -145.3294 } initializer = Paramar_initializer } 
 system = { id = "23" name = "Elysia" position = { x = 129.4336 y = -129.4341 } initializer = Elysia_initializer }
-system = { id = "24" name = "Vilamus" position = { x = 185.0674 y = -28.38502 } initializer = Vilamus_initializer }
-system = { id = "25" name = "Dulmalin" position = { x = 187.3381 y = 2.270316 } initializer = Dulmalin_initializer }
+system = { id = "24" name = "Vilamus"			position = { x = 185.0674 y = -28.38502 } initializer = Vilamus_initializer }
+system = { id = "25" name = "Dulmalin"			position = { x = 187.3381 y = 2.270316 } initializer = Dulmalin_initializer }
 system = { id = "26" name = "Banna" position = { x = 158.9536 y = 15.89491 } initializer = Banna_initializer }
 system = { id = "27" name = "Keletros" position = { x = 136.2459 y = -34.06193 } initializer = Keletros_initializer }
 system = { id = "28" name = "Nikaea" position = { x = 127.1629 y = 4.541086 } initializer = Nikaea_initializer } 
@@ -55,7 +55,7 @@ system = { id = "30" name = "Phaeton" position = { x = 272.4918 y = 61.31021 } i
 system = { id = "31" name = "Calverna" position = { x = 308.8241 y = 78.34094 } initializer = Calverna_initializer }
 system = { id = "32" name = "Forlor" position = { x = 255.4611 y = 96.50706 } initializer = Forlor_initializer }
 system = { id = "33" name = "Krieg" position = { x = 295.1995 y = 113.5378 } initializer = Krieg_initializer }
-system = { id = "34" name = "Gathalamor" position = { x = 229.3473 y = 43.14409 } initializer = Gathalamor_initializer }
+system = { id = "34" name = "Gathalamor"		position = { x = 223.0000 y = 49.0000 } initializer = Gathalamor_initializer }
 system = { id = "35" name = "Necromunda" position = { x = 216.8581 y = 65.85175 } initializer = Necromunda_initializer } 
 system = { id = "36" name = "Rassios" position = { x = 177.1197 y = 74.93481 } initializer = Rassios_initializer } 
 system = { id = "37" name = "Magdelon" position = { x = 197.5566 y = 103.3194 } initializer = Magdelon_initializer } #ВРАТА ПОСТАВИТЬ
@@ -247,18 +247,18 @@ system = { id = "222" name = "Jornv" position = { x = -74.93523 y = 255.4607 } i
 system = { id = "223" name = "Methusela" position = { x = -70.39371 y = 205.5038 } initializer = Methusela_initializer } 
 system = { id = "224" name = "Endragiga" position = { x = -70.39371 y = 227.0761 } initializer = Endragiga_initializer }
 system = { id = "225" name = "San Leor" position = { x = -86.28905 y = 244.1069 } initializer = San_Leor_initializer } 
-system = { id = "226" name = "Indiga" position = { x = -124.8921 y = 280.4391 } initializer = Indiga_initializer } #БУФЕР ЭЛЬДАР
-system = { id = "227" name = "Alaitoc" position = { x = -146.4643 y = 279.3037 } initializer = Alaitoc_initializer } #МИР ЭЛЬДАР
-system = { id = "228" name = "Agrax" position = { x = -103.3198 y = 269.0853 } initializer = Agrax_initializer } #БУФЕР ЭЛЬДАР
-system = { id = "229" name = "Solemnace" position = { x = -172.5781 y = 269.0853 } initializer = Solemnace_initializer } 
-system = { id = "230" name = "Gheden" position = { x = -199.8273 y = 267.9499 } initializer = Gheden_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Nigilah_start } } } 
-system = { id = "231" name = "Carnac" position = { x = -185.0674 y = 240.7007 } initializer = Carnac_initializer } 
-system = { id = "232" name = "Ghonis" position = { x = -131.7043 y = 314.5005 } initializer = Ghonis_initializer } #МИР_ДЕМОНОВ_ХАОСА
-system = { id = "233" name = "Ath-Ethon" position = { x = -174.8489 y = 322.4483 } initializer = Ath-Ethon_initializer } #МИР_ВОЙНЫ_ХАОСА
-system = { id = "234" name = "Rigant" position = { x = -96.50748 y = 321.3129 } initializer = Rigant_initializer } #МИР_ВОЙНЫ_ХАОСА
-system = { id = "235" name = "Moltova" position = { x = -217.9934 y = 329.2605 } initializer = Moltova_initializer } 
-system = { id = "236" name = "Falshop" position = { x = -252.0549 y = 321.3129 } initializer = Falshop_initializer }
-system = { id = "237" name = "Upsidhe-Ka" position = { x = -248.6487 y = 357.6451 } initializer = UpsidheKa_initializer }
+system = { id = "226" name = "Indiga"			position = { x = -124.0000 y = 280.0000 } initializer = Indiga_initializer } #БУФЕР ЭЛЬДАР
+system = { id = "227" name = "Alaitoc"			position = { x = -146.0000 y = 279.0000 } initializer = Alaitoc_initializer } #МИР ЭЛЬДАР
+system = { id = "228" name = "Agrax"			position = { x = -103.0000 y = 269.0000 } initializer = Agrax_initializer } #БУФЕР ЭЛЬДАР
+system = { id = "229" name = "Solemnace"		position = { x = -172.0000 y = 269.0000 } initializer = Solemnace_initializer } 
+system = { id = "230" name = "Gheden"			position = { x = -199.0000 y = 267.0000 } initializer = Gheden_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Nigilah_start } } } 
+system = { id = "231" name = "Carnac"			position = { x = -185.0000 y = 240.0000 } initializer = Carnac_initializer } 
+system = { id = "232" name = "Ghonis"			position = { x = -131.0000 y = 314.0000 } initializer = Ghonis_initializer } #МИР_ДЕМОНОВ_ХАОСА
+system = { id = "233" name = "Ath-Ethon"		position = { x = -174.0000 y = 322.0000 } initializer = Ath-Ethon_initializer } #МИР_ВОЙНЫ_ХАОСА
+system = { id = "234" name = "Rigant"			position = { x = -96.0000 y = 321.0000 } initializer = Rigant_initializer } #МИР_ВОЙНЫ_ХАОСА
+system = { id = "235" name = "Moltova"			position = { x = -217.0000 y = 329.0000 } initializer = Moltova_initializer } 
+system = { id = "236" name = "Falshop"			position = { x = -252.0000 y = 321.0000 } initializer = Falshop_initializer }
+system = { id = "237" name = "Upsidhe-Ka"		position = { x = -248.0000 y = 357.0000 } initializer = UpsidheKa_initializer }
 system = { id = "238" name = "Bale" position = { x = -233.8888 y = 277.033 } initializer = Bale_initializer }
 system = { id = "239" name = "Barac" position = { x = 106.726 y = -7.948123 } initializer = Barac_initializer }
 system = { id = "240" name = "Sulairn" position = { x = 106.726 y = 18.16568 } initializer = Sulairn_initializer }
@@ -336,7 +336,7 @@ system = { id = "311" name = "Mekwod" position = { x = -286.1164 y = 149.8701 } 
 system = { id = "312" name = "Schidelgheist"	position = { x = -219.0000 y = 131.0000 } initializer = Schidelgheist_initializer }
 system = { id = "313" name = "Accatran"			position = { x = -181.0000 y = 136.0000 } initializer = Accatran_initializer } 
 system = { id = "314" name = "Sarlok"			position = { x = -183.0000 y = 106.0000 } initializer = Sarlok_initializer } 
-system = { id = "315" name = "Nexus" position = { x = -174.8489 y = 68.12254 } initializer = Nexus_initializer }
+system = { id = "315" name = "Nexus"			position = { x = -174.8489 y = 68.12254 } initializer = Nexus_initializer }
 system = { id = "316" name = "Cantaix"			position = { x = -198.0000 y = 43.0000 } initializer = Cantaix_initializer }
 system = { id = "317" name = "Dsholtu" position = { x = -179.3905 y = 5.676496 } initializer = Dsholtu_initializer }
 system = { id = "318" name = "Cephian" position = { x = -193.0151 y = -26.11422 } initializer = Cephian_initializer } 
@@ -498,9 +498,9 @@ system = { id = "473" name = "Valos" position = { x = -420.0915 y = 311.0944 } i
 system = { id = "474" name = "Myrandias" position = { x = -453.0176 y = 300.876 } initializer = Myrandias_initializer }
 system = { id = "475" name = "Ventrillia" position = { x = -425.7685 y = 284.9807 } initializer = Ventrillia_initializer } 
 system = { id = "476" name = "Khardoom" position = { x = -408.7377 y = 252.0545 } initializer = Khardoom_initializer }
-system = { id = "477" name = "Incalepeta" position = { x = -181.6612 y = 363.322 } initializer = Incalepeta_initializer } #МИР КРЕПОСТЬ
-system = { id = "478" name = "Ishariel" position = { x = -144.1935 y = 404.1958 } initializer = Ishariel_initializer }
-system = { id = "479" name = "Zodiac" position = { x = -198.6919 y = 406.4665 } initializer = Zodiac_initializer }
+system = { id = "477" name = "Incalepeta"		position = { x = -181.6612 y = 363.322 } initializer = Incalepeta_initializer } #МИР КРЕПОСТЬ
+system = { id = "478" name = "Ishariel"			position = { x = -144.1935 y = 404.1958 } initializer = Ishariel_initializer }
+system = { id = "479" name = "Zodiac"			position = { x = -198.6919 y = 406.4665 } initializer = Zodiac_initializer }
 system = { id = "480" name = "Vorketh" position = { x = -237.2949 y = 422.3619 } initializer = Vorketh_initializer } 
 system = { id = "481" name = "Tesla" position = { x = -90.83057 y = 388.3004 } initializer = Tesla_initializer }
 system = { id = "482" name = "Tirathain" position = { x = -45.41526 y = 391.7065 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Aldari_start } } }
@@ -516,16 +516,16 @@ system = { id = "491" name = "Myr" position = { x = 153.2767 y = 363.322 } initi
 system = { id = "492" name = "Tremert" position = { x = 188.4735 y = 404.1957 } initializer = Tremert_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Givers_of_Life_start } } } 
 system = { id = "493" name = "Mortarius" position = { x = 236.1596 y = 434.8511 } initializer = Mortarius_initializer } #МИР_ДЕМОНОВ_ХАОСА
 system = { id = "494" name = "Sternmost" position = { x = 302.0118 y = 446.2049 } initializer = Sternmost_initializer }
-system = { id = "495" name = "Sondheim"			position = { x = 187.3382 y = 355.3743 } initializer = Sondheim_initializer }
-system = { id = "496" name = "Pleuric"			position = { x = 228.2119 y = 378.0819 } initializer = Pleuric_initializer }
-system = { id = "497" name = "Naitoc"			position = { x = 274.7626 y = 374.6758 } initializer = Naitoc_initializer }
-system = { id = "498" name = "Stygilon"			position = { x = 311.0948 y = 359.9158 } initializer = Stygilon_initializer }
+system = { id = "495" name = "Sondheim"			position = { x = 187.0000 y = 355.0000 } initializer = Sondheim_initializer }
+system = { id = "496" name = "Pleuric"			position = { x = 228.0000 y = 378.0000 } initializer = Pleuric_initializer }
+system = { id = "497" name = "Naitoc"			position = { x = 274.0000 y = 374.0000 } initializer = Naitoc_initializer }
+system = { id = "498" name = "Stygilon"			position = { x = 311.0000 y = 359.0000 } initializer = Stygilon_initializer }
 system = { id = "499" name = "Samech"			position = { x = -301.0000 y = 389.0000 } initializer = Samech_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Mechanicum_Samech_start } } } #initializer = Samech_initializer
-system = { id = "500" name = "Salem"			position = { x = -345.1563 y = 339.479 } initializer = Salem_initializer }
+system = { id = "500" name = "Salem"			position = { x = -345.0000 y = 339.0000 } initializer = Salem_initializer }
 system = { id = "501" name = "Repentance"		position = { x = -324.0000 y = 381.0000 } initializer = Repentance_initializer }
-system = { id = "502" name = "Isstvan"			position = { x = 67.99989 y = -454.8521 }  }
-system = { id = "503" name = "Appollonia"		position = { x = 96.27989 y = -462.8521 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = RakGol_start } } }
-system = { id = "504" name = "Voss Prime"		position = { x = 216.8581 y = -121.4864 } initializer = VossPrime_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Mechanicus_start } } }
+system = { id = "502" name = "Isstvan"			position = { x = 67.0000 y = -454.0000 }  }
+system = { id = "503" name = "Appollonia"		position = { x = 96.0000 y = -462.0000 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = RakGol_start } } }
+system = { id = "504" name = "Voss Prime"		position = { x = 216.0000 y = -121.0000 } initializer = VossPrime_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Mechanicus_start } } }
 system = { id = "505" name = "Shedim" position = { x = 162.1197 y = 54.7481 } initializer = Shedim_initializer } 
 system = { id = "506" name = "Grendel" position = { x = -385.1655 y = 247.2854 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Barghesi_start } } }
 system = { id = "507" name = "Nortaie" position = { x = -397.1655 y = 279.2854 } initializer = Nortaie_initializer }
@@ -540,7 +540,7 @@ system = { id = "515" name = "Sorrow" position = { x = -462.2917 y = 467.8485 } 
 system = { id = "516" name = "Zero" position = { x = -467.2917 y = 455.8485 } initializer = Zero_initializer }
 system = { id = "517" name = "Elindrhakh" position = { x = -462.2917 y = 455.8485 } initializer = Elindrhakh_initializer }
 system = { id = "518" name = "Rope of Hope" position = { x = -90.09371 y = 205.5038 } initializer = Ropeofhope_initializer }
-system = { id = "519" name = "Woe" position = { x = -462.2917 y = 462.8485 } initializer = Woe_initializer }
+system = { id = "519" name = "Woe"				position = { x = -462.0000 y = 462.0000 } initializer = Woe_initializer }
 system = { id = "520" name = "Pain" position = { x = -467.2917 y = 467.8485 } initializer = Pain_initializer }
 system = { id = "521" name = "Astorgius" position = { x = -220.0006 y = -83.7032 } initializer = Astorgius_initializer } 
 system = { id = "522" name = "Pax Argentius" position = { x = -30.82148 y = -193.7755 } initializer = PaxArgentius_initializer }
@@ -558,21 +558,30 @@ system = { id = "533" name = "Barf" position = { x = -390.0435 y = -322.2002 } }
 system = { id = "534" name = "Siat" position = { x = -385.0286 y = -283.5609 } }
 system = { id = "535" name = "Deme" position = { x = -415.7286 y = -264.0571 } }
 system = { id = "536" name = "Kallia" position = { x = -420.7216 y = -300.7573 } }
+####################
+# Варп кластер Varp#
+####################
+system = { id = "537" name = "Sortiarius"		position = { x = -457.0000 y = -457.0000 } initializer = Sortiarius_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Thousand_Sons_start } } }
+system = { id = "538" name = "Cthonia"			position = { x = -455.0000 y = -440.0000 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Black_Legion_start } } }
+system = { id = "539" name = "Fulgrimia"		position = { x = -457.0000 y = -407.0000 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Emperors_Children_start } } }
+system = { id = "540" name = "Sicarus"			position = { x = -445.0000 y = -440.0000 } initializer = Sicarus_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Word_Bearers_start } } }
+system = { id = "541" name = "Plague"			position = { x = -425.0000 y = -405.0000 } initializer = Plague_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Death_Guard_start } } }
+system = { id = "542" name = "Bodt"				position = { x = -430.0000 y = -445.0000 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = World_Eaters_start } } }
+system = { id = "543" name = "Alpha Legion"		position = { x = -425.0000 y = -430.0000 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Alpha_Legion_start } } }
 
-system = { id = "537" name = "Warp I" position = { x = -447.2917 y = -437.8485 } } #Хаос
-system = { id = "538" name = "Warp II" position = { x = -440.2917 y = -425.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Black_Legion_start } } }
-system = { id = "539" name = "Warp III" position = { x = -417.2917 y = -417.8485 } } #Тзинч
-system = { id = "540" name = "Sortiarius" position = { x = -457.2917 y = -457.8485 } initializer = Sortiarius_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Thousand_Sons_start } } }
-system = { id = "541" name = "Warp V" position = { x = -457.2917 y = -407.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Emperors_Children_start } } }
-system = { id = "542" name = "Sicarus" position = { x = -435.2917 y = -442.8485 } initializer = Sicarus_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Word_Bearers_start } } }
-system = { id = "543" name = "Warp VII" position = { x = -427.2917 y = -407.8485 } } #Нургл
-system = { id = "544" name = "Warp VIII" position = { x = -432.2917 y = -407.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Alpha_Legion_start } } } 
-system = { id = "545" name = "Warp IX" position = { x = -427.2917 y = -422.8485 } initializer = Plague_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Death_Guard_start } } } 
-system = { id = "546" name = "Warp X" position = { x = -402.2917 y = -412.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = World_Eaters_start } } }
-system = { id = "547" name = "Warp XI" position = { x = -402.2917 y = -427.8485 } } #Кхорн
-system = { id = "548" name = "Warp XII" position = { x = -402.2917 y = -457.8485 } } #Слаанеш
-
-system = { id = "549" name = "Manachea" position = { x = -27.00 y = -342.00 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } }
+system = { id = "544" name = "Warp I"			position = { x = -450.0000 y = -427.0000 } }
+system = { id = "545" name = "Warp II"			position = { x = -450.0000 y = -453.0000 } }
+system = { id = "546" name = "Warp III"			position = { x = -443.0000 y = -455.0000 } }
+system = { id = "547" name = "Warp IV"			position = { x = -440.0000 y = -445.0000 } }
+system = { id = "548" name = "Warp V"			position = { x = -435.0000 y = -427.0000 } }
+system = { id = "624" name = "Warp VI"			position = { x = -435.0000 y = -407.0000 } }
+system = { id = "625" name = "Warp VII"			position = { x = -410.0000 y = -410.0000 } }
+system = { id = "626" name = "Warp VIII"		position = { x = -420.0000 y = -445.0000 } }
+system = { id = "627" name = "Warp IX"			position = { x = -433.0000 y = -457.0000 } }
+system = { id = "628" name = "Warp X"			position = { x = -410.0000 y = -440.0000 } }
+system = { id = "629" name = "Warp XI"			position = { x = -410.0000 y = -420.0000 } }
+####################
+system = { id = "549" name = "Manachea"			position = { x = -27.00 y = -342.00 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Manachean_Commonwealth_start } } }
 system = { id = "550" name = "Ries"				position = { x = -262.0000 y = 396.0000 } initializer = Ries_initializer }
 system = { id = "551" name = "Cociaminus"		position = { x = 427.0000 y = 169.0000 } initializer = Cociaminus_initializer } # x = 415.5500 y = 154.4116
 system = { id = "552" name = "Gereon"			position = { x = 454.0000 y = 153.0000 } initializer = Gereon_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Blood_Pact_start } } } 
@@ -585,15 +594,15 @@ system = { id = "558" name = "Vessor"			position = { x = 370.0000 y = -340.0000 
 system = { id = "559" name = "Vraks"			position = { x = 354.0000 y = -342.0000 } initializer = Vraks_initializer }
 system = { id = "560" name = "Thracia"			position = { x = 328.0000 y = -343.0000 } initializer = Thracia_initializer }
 system = { id = "561" name = "Sevoms"			position = { x = 406.0000 y = -354.0000 } initializer = Sevoms_initializer }
-system = { id = "562" name = "Prime Gala"		position = { x = -326.701 y = 100.6732 } initializer = Prime_Gala_initializer }
-system = { id = "563" name = "Somnium Stars"	position = { x = -426.6486 y = -147.0999 } initializer = Somnium_Stars_initializer }
+system = { id = "562" name = "Prime Gala"		position = { x = -326.0000 y = 100.0000 } initializer = Prime_Gala_initializer }
+system = { id = "563" name = "Somnium Stars"	position = { x = -426.0000 y = -147.0000 } initializer = Somnium_Stars_initializer }
 system = { id = "564" name = "Castiel"			position = { x = -323.0000 y = 339.0000 } initializer = Castiel_initializer }
 system = { id = "565" name = "Magog"			position = { x = -299.0000 y = 359.0000 } initializer = Magog_initializer }
 system = { id = "566" name = "Zdale"			position = { x = -272.0000 y = 361.0000 } initializer = Zdale_initializer }
 system = { id = "567" name = "Karlak"			position = { x = -275.0000 y = 323.0000 } initializer = Karlak_initializer }
 system = { id = "568" name = "Aurum"			position = { x = -264.0000 y = 289.0000 } initializer = Aurum_initializer }
 system = { id = "569" name = "Freya"			position = { x = -290.0000 y = 305.0000 } initializer = Freya_initializer }
-system = { id = "570" name = "Vanir"			position = { x = -292.0000 y = 337.5000 } initializer = Vanir_initializer }
+system = { id = "570" name = "Vanir"			position = { x = -292.0000 y = 337.0000 } initializer = Vanir_initializer }
 system = { id = "571" name = "Fool's Door" position = { x = 92.4395 y = -162.3602 } }
 system = { id = "572" name = "Mackan" position = { x = 289.00 y = -57.65579 } initializer = Mackan_initializer } 
 system = { id = "573" name = "Moebian" position = { x = 300.2303 y = -112.23724 } initializer = Moebian_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Admonition_start } } } 
@@ -619,7 +628,6 @@ system = { id = "592" name = "Ordex" position = { x = 202.3473 y = 236.3253 } in
 system = { id = "593" name = "Nocturne" position = { x = 52.06149 y = 141.5347 } initializer = Nocturne_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Salamanders_start } } } 
 system = { id = "594" name = "Baal" position = { x = -128.9444 y = -190.6401 } initializer = Baal_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Blood_Angels_start } } } 
 system = { id = "595" name = "Erenon" position = { x = -25.68606 y = 110.6732 } }
-
 system = { id = "596" name = "Ghodri"			position = { x = -143.0000 y = 121.0000 } initializer = Ghodri_initializer }
 system = { id = "597" name = "Atria"			position = { x = -126.0000 y = 116.0000 } initializer = Atria_initializer }
 system = { id = "598" name = "Orestes"			position = { x = -159.0000 y = 118.0000 } initializer = Orestes_initializer }
@@ -627,7 +635,7 @@ system = { id = "599" name = "Gheist"			position = { x = -80.0000 y = 110.0000 }
 system = { id = "600" name = "Kolossi"			position = { x = -187.0000 y = 164.0000 } initializer = Kolossi_initializer }
 system = { id = "601" name = "Newfound"			position = { x = -202.0000 y = 145.0000 } initializer = Newfound_initializer }
 system = { id = "602" name = "Heart of Darkness" position = { x = -212.0000 y = 75.0000 } initializer = Heart_of_Darkness_initializer }
-system = { id = "603" name = "Neo Khartoum" position = { x = -415.3624 y = -188.9108 }  } -406 -168
+system = { id = "603" name = "Neo Khartoum" position = { x = -415.3624 y = -188.9108 }  }
 system = { id = "604" name = "Mundanus" position = { x = -300.4487 y = 13.541936 } initializer = Mundanus_initializer }
 system = { id = "605" name = "Kanzuz" position = { x = 280.3041 y = -409.2183 } initializer = Kanzuz_initializer }
 system = { id = "606" name = "Holshct" position = { x = 192.000 y = -320.000 } initializer = Holshct_initializer } 
@@ -638,13 +646,28 @@ system = { id = "610" name = "Noricium" position = { x = -100.000 y = -413.3014 
 system = { id = "611" name = "Othion" position = { x = -51.07067 y = -400.0306 } initializer = Othion_initializer }
 system = { id = "612" name = "Tuphal" position = { x = -59.07067 y = -360.0306 } initializer = Tuphal_initializer }
 system = { id = "613" name = "Naogeddon" position = { x = -27.07067 y = -380.0306 } initializer = Naogeddon_initializer }
+system = { id = "614" name = "Cthonia"			position = { x = 248.0000 y = -2.0000 } }
+system = { id = "615" name = "Paragon"			position = { x = 222.0000 y = 27.0000 } }
+system = { id = "616" name = "Olmec"			position = { x = 265.0000 y = -27.0000 } }
+system = { id = "617" name = "Raesis"			position = { x = -162.0000 y = 295.0000 } }
+system = { id = "618" name = "Mundus"			position = { x = -182.0000 y = 295.0000 } }
+system = { id = "619" name = "Gangava"			position = { x = -153.0000 y = 335.0000 } }
+system = { id = "620" name = "Beroghast"		position = { x = -150.0000 y = 360.0000 } }
+system = { id = "621" name = "Gellephera"		position = { x = -106.0000 y = 340.0000 } }
+system = { id = "622" name = "PPPPPPPPPPP"		position = { x = -99.0000 y = 295.0000 } }
+system = { id = "623" name = "Woe 2 NEW"		position = { x = -223.0000 y = 382.0000 } }
+#		СЛЕДУЮЩАЯ 629		#
 
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
  add_hyperlane = { from = "0" to = "5" }
- add_hyperlane = { from = "0" to = "9" }
- add_hyperlane = { from = "572" to = "9" }
- add_hyperlane = { from = "0" to = "8" }
+ add_hyperlane = { from = "0" to = "614" }
+ add_hyperlane = { from = "0" to = "616" }
+ add_hyperlane = { from = "7" to = "25" }
+ add_hyperlane = { from = "7" to = "614" }
+ add_hyperlane = { from = "7" to = "615" }
+ add_hyperlane = { from = "8" to = "614" }
+ add_hyperlane = { from = "9" to = "616" }
  add_hyperlane = { from = "10" to = "5" }
  add_hyperlane = { from = "10" to = "6" }
  add_hyperlane = { from = "10" to = "4" }
@@ -687,8 +710,8 @@ system = { id = "613" name = "Naogeddon" position = { x = -27.07067 y = -380.030
  add_hyperlane = { from = "28" to = "26" }
  add_hyperlane = { from = "32" to = "30" }
  add_hyperlane = { from = "33" to = "32" }
- add_hyperlane = { from = "7" to = "34" }
  add_hyperlane = { from = "34" to = "35" }
+ add_hyperlane = { from = "34" to = "615" }
  add_hyperlane = { from = "35" to = "36" }
  add_hyperlane = { from = "37" to = "36" }
  add_hyperlane = { from = "37" to = "35" }
@@ -1365,26 +1388,6 @@ system = { id = "613" name = "Naogeddon" position = { x = -27.07067 y = -380.030
  add_hyperlane = { from = "535" to = "534" }
  add_hyperlane = { from = "535" to = "536" }
  add_hyperlane = { from = "536" to = "440" }
- add_hyperlane = { from = "538" to = "537" }
- add_hyperlane = { from = "538" to = "540" }
- add_hyperlane = { from = "537" to = "540" }
- add_hyperlane = { from = "537" to = "539" }
- add_hyperlane = { from = "542" to = "540" }
- add_hyperlane = { from = "542" to = "544" }
- add_hyperlane = { from = "541" to = "538" }
- add_hyperlane = { from = "541" to = "548" }
- add_hyperlane = { from = "545" to = "541" }
- add_hyperlane = { from = "545" to = "540" }
- add_hyperlane = { from = "545" to = "546" }
- add_hyperlane = { from = "545" to = "543" }
- add_hyperlane = { from = "547" to = "543" }
- add_hyperlane = { from = "547" to = "546" }
- add_hyperlane = { from = "544" to = "543" }
- add_hyperlane = { from = "544" to = "545" }
- add_hyperlane = { from = "544" to = "540" }
- add_hyperlane = { from = "539" to = "540" }
- add_hyperlane = { from = "539" to = "542" }
- 
  add_hyperlane = { from = "550" to = "237" }
  add_hyperlane = { from = "550" to = "480" }
  add_hyperlane = { from = "550" to = "499" }
@@ -1412,7 +1415,6 @@ system = { id = "613" name = "Naogeddon" position = { x = -27.07067 y = -380.030
  add_hyperlane = { from = "563" to = "424" }
  add_hyperlane = { from = "563" to = "423" }
  add_hyperlane = { from = "563" to = "422" }
- 
  add_hyperlane = { from = "564" to = "371" }
  add_hyperlane = { from = "564" to = "500" }
  add_hyperlane = { from = "564" to = "565" }
@@ -1430,6 +1432,7 @@ system = { id = "613" name = "Naogeddon" position = { x = -27.07067 y = -380.030
  add_hyperlane = { from = "569" to = "370" }
  add_hyperlane = { from = "569" to = "371" }
  add_hyperlane = { from = "569" to = "570" }
+ add_hyperlane = { from = "572" to = "9" }
  add_hyperlane = { from = "124" to = "571" }
  add_hyperlane = { from = "576" to = "357" }
  add_hyperlane = { from = "576" to = "364" }
@@ -1508,4 +1511,42 @@ system = { id = "613" name = "Naogeddon" position = { x = -27.07067 y = -380.030
  add_hyperlane = { from = "612" to = "613" }
  add_hyperlane = { from = "176" to = "175" }
  add_hyperlane = { from = "176" to = "613" }
+ add_hyperlane = { from = "617" to = "229" }
+ add_hyperlane = { from = "617" to = "232" }
+ add_hyperlane = { from = "617" to = "233" }
+ add_hyperlane = { from = "618" to = "229" }
+ add_hyperlane = { from = "618" to = "233" }
+ add_hyperlane = { from = "619" to = "232" }
+ add_hyperlane = { from = "619" to = "233" }
+ add_hyperlane = { from = "619" to = "620" }
+ add_hyperlane = { from = "619" to = "621" }
+ add_hyperlane = { from = "620" to = "477" }
+ add_hyperlane = { from = "621" to = "234" }
+ add_hyperlane = { from = "622" to = "228" }
+ add_hyperlane = { from = "622" to = "234" }
+ add_hyperlane = { from = "623" to = "237" }
+ add_hyperlane = { from = "623" to = "479" }
+ ####################
+ # Варп кластер Varp#
+ ####################
+ add_hyperlane = { from = "537" to = "538" }
+ add_hyperlane = { from = "538" to = "544" }
+ add_hyperlane = { from = "539" to = "544" }
+ add_hyperlane = { from = "540" to = "538" }
+ add_hyperlane = { from = "540" to = "544" }
+ add_hyperlane = { from = "540" to = "545" }
+ add_hyperlane = { from = "540" to = "546" }
+ add_hyperlane = { from = "540" to = "547" }
+ add_hyperlane = { from = "540" to = "548" }
+ add_hyperlane = { from = "541" to = "548" }
+ add_hyperlane = { from = "541" to = "624" }
+ add_hyperlane = { from = "541" to = "625" }
+ add_hyperlane = { from = "542" to = "547" }
+ add_hyperlane = { from = "542" to = "626" }
+ add_hyperlane = { from = "542" to = "627" }
+ add_hyperlane = { from = "543" to = "548" }
+ add_hyperlane = { from = "543" to = "628" }
+ add_hyperlane = { from = "543" to = "629" }
+ add_hyperlane = { from = "544" to = "548" }
+ ####################
 }
