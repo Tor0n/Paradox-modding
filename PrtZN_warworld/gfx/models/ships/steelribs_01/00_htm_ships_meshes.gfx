@@ -1,0 +1,253 @@
+objectTypes = {
+		
+	#######  Turrets  #######	
+	
+	pdxmesh = {
+		name = "steelribs_01_turret_empty_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_turret_empty.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	#######  corvette sections  #######	
+	
+	pdxmesh = {
+		name = "steelribs_01_dirge_hull_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_jackal_hull.mesh"
+		scale = 0.8
+		meshsettings = {
+            shader = "PdxMeshShip"
+		}
+	}	
+
+	#######  destroyer sections  #######	
+	
+	pdxmesh = {
+		name = "steelribs_01_jackal_hull_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_jackal_hull.mesh"
+		scale = 1.4
+
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_jackal_bow_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_jackal_bow.mesh"
+		scale = 1.4
+
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	#######  cruiser sections  #######	
+	
+	pdxmesh = {
+		name = "steelribs_01_shroud_bow_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_shroud_bow.mesh"
+		scale = 0.8
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "steelribs_01_shroud_hull_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_shroud_hull.mesh"
+		scale = 0.8
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_shroud_stern_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_shroud_stern.mesh"
+		scale = 0.8
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	#######  Battleship sections  #######			
+		
+	
+	pdxmesh = {
+		name = "steelribs_01_scythe_bow_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_scythe_bow.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_scythe_hull_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_scythe_hull.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "steelribs_01_scythe_stern_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_scythe_stern.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	#######  civilian frame  #######
+	
+	####### small ships  #######	
+	pdxmesh = {
+		name = "steelribs_01_fighter_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_fighter.mesh"
+		scale = 0.25
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_launcher_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_launcher.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_lcrystal_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_lcrystal.mesh"
+		scale = 1.0
+	}
+	
+	####### stations #######	
+	
+	pdxmesh = {
+		name = "steelribs_01_pcrystal_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_pcrystal.mesh"
+		scale = 2.0
+		
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_monolith_small_hull_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_monolith_small_hull.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_mcrystal_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_mcrystal.mesh"
+		scale = 1.0
+		
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_monolith_large_hull_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_monolith_large_hull.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_mcrystal_l_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_mcrystal.mesh"
+		scale = 1.0
+		
+	}
+
+	pdxmesh = {
+		name = "steelribs_01_steelribs_01_crystal_gun_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_crystal_gun.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	####### civilian ships  #######	
+	
+	pdxmesh = {
+		name = "steelribs_01_ark_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_ark_hull.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_acrystal_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_acrystal.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_tombfirefly_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_tombfirefly_hull.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_tcrystal_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_tcrystal.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_empty_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_empty.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_military_station_section_heavy_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_military_station_section_heavy.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "steelribs_01_military_station_section_medium_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_military_station_section_medium.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "steelribs_01_military_station_section_light_mesh"
+		file = "gfx/models/ships/steelribs_01/steelribs_01_military_station_section_light.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+}
+
+

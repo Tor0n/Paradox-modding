@@ -1,0 +1,371 @@
+objectTypes = {
+
+	######################
+	### NEW NSC MESHES ###
+	######################
+
+		#######  frigate sections  #######	
+		
+		pdxmesh = {
+		name = "gothic_01_frigate_NSC_mesh"
+		file = "gfx/models/ships/gothic_01/corvette/gothic_01_frigate_NSC.mesh"
+		scale = 1.65
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+		#######  StrikeCruiser sections  #######	
+		
+		pdxmesh = {
+			name = "gothic_01_dauntless1_frame_mesh"
+			file = "gfx/models/ships/gothic_01/cruiser/gothic_01_dauntless1_frame.mesh"
+			scale = 2.85
+			meshsettings = {
+				shader = "PdxMeshShip"
+			}
+		}	
+
+		pdxmesh = {
+			name = "gothic_01_dauntless2_frame_mesh"
+			file = "gfx/models/ships/gothic_01/cruiser/gothic_01_dauntless2_frame.mesh"
+			scale = 2.85
+			meshsettings = {
+				shader = "PdxMeshShip"
+			}
+		}
+
+		pdxmesh = {
+			name = "gothic_01_dauntless1_mesh"
+			file = "gfx/models/ships/gothic_01/cruiser/gothic_01_dauntless1.mesh"
+			scale = 2.85
+			meshsettings = {
+				shader = "PdxMeshShip"
+			}
+		}
+
+		pdxmesh = {
+			name = "gothic_01_dauntless2_mesh"
+			file = "gfx/models/ships/gothic_01/cruiser/gothic_01_dauntless2.mesh"
+			scale = 2.85
+			meshsettings = {
+				shader = "PdxMeshShip"
+			}
+		}
+
+		pdxmesh = {
+			name = "gothic_01_enforcer_mesh"
+			file = "gfx/models/ships/gothic_01/cruiser/gothic_01_enforcer.mesh"
+			scale = 2.85
+			meshsettings = {
+				shader = "PdxMeshShip"
+			}
+		}
+	
+		#######  Battlecruiser sections  #######	
+
+		pdxmesh = {
+		name = "gothic_01_battlecruiser_frame_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_battlecruiser_frame.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_dictator_hull_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_dictator_hull.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_dictator_parts_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_dictator_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_overlord_hull_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_overlord_hull.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_overlord_parts_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_overlord_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_gothic_hull_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_gothic_hull.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_gothic_parts_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_gothic_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "gothic_01_jovian_hull_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_jovian_hull.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_jovian_parts_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_jovian_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_mars_hull_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_mars_hull.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "gothic_01_mars_parts_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_mars_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_lunar_parts_mesh"
+		file = "gfx/models/ships/gothic_01/battlecruiser/gothic_01_lunar_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+		####### Exploration Cruiser sections #######
+
+		pdxmesh = {
+		name = "gothic_01_expc_frame_mesh"
+		file = "gfx/models/ships/gothic_01/explorationcruiser/gothic_01_expc_frame.mesh"
+		scale = 0.67
+		meshsettings = {
+				shader = "PdxMeshShip"
+		}	
+	}
+
+	pdxmesh = {
+		name = "gothic_01_expc_parts_mesh"
+		file = "gfx/models/ships/gothic_01/explorationcruiser/gothic_01_expc_parts.mesh"
+		scale = 0.67
+		meshsettings = {
+				shader = "PdxMeshShip"
+		}	
+	}
+
+	pdxmesh = {
+		name = "gothic_01_expc_parts1_mesh"
+		file = "gfx/models/ships/gothic_01/explorationcruiser/gothic_01_expc_parts1.mesh"
+		scale = 0.67
+		meshsettings = {
+				shader = "PdxMeshShip"
+		}	
+	}
+
+	pdxmesh = {
+		name = "gothic_01_expc_partsmain_mesh"
+		file = "gfx/models/ships/gothic_01/explorationcruiser/gothic_01_expc_partsmain.mesh"
+		scale = 0.67
+		meshsettings = {
+				shader = "PdxMeshShip"
+		}	
+	}
+
+		#######  Dreadnought sections  #######	
+
+		pdxmesh = {
+		name = "gothic_01_dn_frame_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_frame.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+		pdxmesh = {
+		name = "gothic_01_dn_bow_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_bow.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "gothic_01_dn_mid_1_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_mid_1.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_mid_2_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_mid_2.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_stern_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_stern.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_stern_parts_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_stern_parts.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_ret_frame_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_ret_frame.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+		pdxmesh = {
+		name = "gothic_01_dn_ret_bow_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_ret_bow.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "gothic_01_dn_ret_mid_1_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_ret_mid_1.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_ret_mid_2_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_ret_mid_2.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_oberon_frame_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_oberon_frame.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+		pdxmesh = {
+		name = "gothic_01_dn_oberon_bow_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_oberon_bow.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "gothic_01_dn_oberon_mid_1_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_oberon_mid_1.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_dn_oberon_mid_2_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_dn_oberon_mid_2.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+		#######  Carrier sections  #######	
+		
+		pdxmesh = {
+		name = "gothic_01_ca_NSC_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_ca_NSC.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+		pdxmesh = {
+		name = "gothic_01_ca_frame_NSC_mesh"
+		file = "gfx/models/ships/gothic_01/dreadnought/gothic_01_ca_frame.mesh"
+		scale = 2.5
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+		#######  Flag sections  #######	
+		
+		pdxmesh = {
+		name = "gothic_01_flag_NSC_mesh"
+		file = "gfx/models/ships/gothic_01/gothic_01_flag_NSC.mesh"
+		scale = 12.8
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+}

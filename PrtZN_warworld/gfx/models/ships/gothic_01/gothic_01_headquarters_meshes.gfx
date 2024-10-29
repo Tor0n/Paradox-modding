@@ -1,0 +1,40 @@
+objectTypes = {
+	pdxmesh = {
+		name = "gothic_01_blackstone_frame_mesh"
+		file = "gfx/models/ships/gothic_01/gothic_01_blackstone_frame.mesh"
+		
+		animation = { id = "idle"			type = "gothic_01_blackstone_spin_animation" }
+		animation = { id = "moving"			type = "gothic_01_blackstone_spin_animation" }
+		scale = 2
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_blackstone_simple_frame_mesh"
+		file = "gfx/models/ships/gothic_01/gothic_01_blackstone_simple_frame.mesh"
+		scale = 2	
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_blackstone_upper_mesh"
+		file = "gfx/models/ships/gothic_01/gothic_01_blackstone_upper.mesh"
+		scale = 2	
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "gothic_01_blackstone_lower_mesh"
+		file = "gfx/models/ships/gothic_01/gothic_01_blackstone_lower.mesh"
+		scale = 2	
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+}
