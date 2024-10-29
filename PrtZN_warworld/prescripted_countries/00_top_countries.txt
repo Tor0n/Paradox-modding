@@ -44,7 +44,7 @@ Imperium = {
 	#initializer = "Terra_initializer"
 	system_name = "Солнце"
 	
-	graphical_culture = "wain_01"
+	graphical_culture = "gothic_01" #wain_01
 	city_graphical_culture = "humanoid_01"
 	
 	empire_flag = {
@@ -79,7 +79,7 @@ Imperium = {
 	spawn_as_fallen = no
 }
 Mechanicus = {
-	key="Механикус"
+	key="Name_Mechanicus"
 	ship_prefix=
 	{
 		key="Механикус."
@@ -442,7 +442,7 @@ Ultramarines = {
 		{
 			"blue"
 			"light_blue"
-			"black"
+			"blue" #
 			"null"
 		}
 	}
@@ -2981,7 +2981,7 @@ Conjurers_of_Fear = {
 	flags = { Conjurers_of_Fear_start Conjurers_of_Fear_gos }
 }
 Barbed_Chalice = {
-	key="Воинство Шипастой Чаши"
+	key="Name_Barbed_Chalice"
 	ship_prefix=
 	{
 		key="Шипастая Чаша."
@@ -3085,7 +3085,7 @@ Barbed_Chalice = {
 		{
 			full_names=
 			{
-				key="Понтий Глоу"
+				key="Name_leader_Pontius_Glaw"
 				literal=yes
 			}
 		}
@@ -3624,8 +3624,8 @@ Stigmartus = {
 		colors=
 		{
 			"burgundy"
-			"khaki_brown"
-			"black"
+			"pink"
+			"pink" #black
 			"null"
 		}
 	}
@@ -4124,7 +4124,7 @@ Tau_Federation = {
 		colors = {
 			"sky_blue"
 			"turquoise"
-			"sky_blue" #black
+			"turquoise" #black
 			"null"
 		}
 	}
@@ -4334,7 +4334,7 @@ Tsardom_Thokt = {
 	#initializer = ""
 	system_name = "Заманевкор"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4426,7 +4426,7 @@ Tsardom_Agdagath = {
 	#initializer = ""
 	system_name = "Тир"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4501,7 +4501,7 @@ Tsardom_Sautekh = {
 	initializer = ""
 	system_name = "Мандрейк"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4575,7 +4575,7 @@ Tsardom_Nihilakh = {
 	#initializer = ""
 	system_name = "Касол"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4648,7 +4648,7 @@ Tsardom_Kardenath = {
 	#initializer = ""
 	system_name = "Друзгуми"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	empire_flag = {
 		icon = {
@@ -4722,7 +4722,7 @@ Tsardom_Oruscar = {
 	#initializer = ""
 	system_name = "Цери"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4795,7 +4795,7 @@ Tsardom_Mephrit = {
 	#initializer = ""
 	system_name = "Каваш"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4870,7 +4870,7 @@ Tsardom_Nephrekh = {
 	#initializer = ""
 	system_name = "Конора"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
@@ -4947,7 +4947,7 @@ Empire_Sarkoni = {
 	#initializer = ""
 	system_name = "Ампра"
 	
-	graphical_culture="nemesis_01"
+	graphical_culture="steelribs_01" #nemesis_01
 	city_graphical_culture="zem_01"
 	
 	empire_flag = {
