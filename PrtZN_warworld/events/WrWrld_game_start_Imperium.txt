@@ -15,9 +15,6 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_game_start.401 days = 4 }
 		}
-		# owner = {
-			# country_event = { id = WrWrld_Imperium_species.1 }
-		# }
 		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -242,6 +239,17 @@ country_event = { #Imperium
 			add_trait = trait_nerve_stapled
 			remove_trait = trait_perfected_genes
 			effect = { save_global_event_target_as = servitor_species }
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_nerve_stapled
+			add_trait = trait_very_strong
+			effect = { save_global_event_target_as = ogryn_species }
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_psionic
+			effect = { save_global_event_target_as = psyker_species }
 		}
 		
 		every_system = {
@@ -3312,9 +3320,6 @@ country_event = { #Manachean_Commonwealth
 		owner = {
 			country_event = { id = WrWrld_game_start.211 days = 2 }
 		}
-		# owner = {
-	    # 	country_event = { id = WrWrld_Imperium_species.1 }
-		# }
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country

@@ -9,15 +9,42 @@ country_event = {
 		has_country_flag = Commorragh_gos
 	}
 	immediate = {
-		#every_system = {
-			#limit = { has_star_flag = Commorragh }
-			#link_wormholes = event_target:wormhole_2
-		#}
 		event_target:wormhole_Commorragh = { link_wormholes = event_target:wormhole_Daeconc }
 		event_target:wormhole_Sorrow = { link_wormholes = event_target:wormhole_Daxos_Gemini }
 		event_target:wormhole_Zero = { link_wormholes = event_target:wormhole_Preyspire }
 		event_target:wormhole_Elindrhakh = { link_wormholes = event_target:wormhole_Quaijinn }
 		event_target:wormhole_Woe = { link_wormholes = event_target:wormhole_Areadnnil }
 		event_target:wormhole_Pain = { link_wormholes = event_target:wormhole_Necris }
+	}
+}
+
+country_event = {
+	id = WrWrld_wormhole.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = Thousand_Sons_gos
+			has_country_flag = Black_Legion_gos
+			has_country_flag = Death_Guard_gos
+			has_country_flag = World_Eaters_gos
+		}
+	}
+	immediate = {
+		event_target:wormhole_Sortiarius = { link_wormholes = event_target:wormhole_Magnus_Storm }
+		event_target:wormhole_Cthonia = { link_wormholes = event_target:wormhole_Terror_Eye }
+		event_target:wormhole_warp_1 = { link_wormholes = event_target:wormhole_Maelstro }
+		event_target:wormhole_warp_2 = { link_wormholes = event_target:wormhole_Precipice }
+		event_target:wormhole_warp_3 = { link_wormholes = event_target:wormhole_Mundanus }
+		event_target:wormhole_warp_4 = { link_wormholes = event_target:wormhole_Thranix }
+		event_target:wormhole_warp_5 = { link_wormholes = event_target:wormhole_Khardoom }
+		event_target:wormhole_warp_6 = { link_wormholes = event_target:wormhole_Sorrowfall }
+		event_target:wormhole_warp_7 = { link_wormholes = event_target:wormhole_Crystallax }
+		event_target:wormhole_warp_8 = { link_wormholes = event_target:wormhole_Somnium_Stars }
+		event_target:wormhole_warp_9 = { link_wormholes = event_target:wormhole_Erenon }
+		event_target:wormhole_warp_10 = { link_wormholes = event_target:wormhole_Castiel }
+		event_target:wormhole_warp_11 = { link_wormholes = event_target:wormhole_Ordex }
+		event_target:wormhole_warp_12 = { link_wormholes = event_target:wormhole_Fools_Door }
 	}
 }

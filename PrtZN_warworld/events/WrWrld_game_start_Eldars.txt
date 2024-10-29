@@ -989,9 +989,7 @@ country_event = { #Commorragh
 		every_system = {
 			limit = { has_star_flag = Commorragh }
 			if = {
-				limit = {
-					has_star_flag = Commorragh
-				}
+				limit = { has_star_flag = Commorragh }
 				create_starbase = {
 					owner = ROOT
 					size = starbase_outpost
@@ -999,15 +997,7 @@ country_event = { #Commorragh
 			}
 			every_system_planet = {
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = {
-			            is_colonizable = no
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
+				    limit = { is_colonizable = no }
 					create_deposits_stations = yes
 				}
 				if = {
@@ -1027,12 +1017,6 @@ country_event = { #Commorragh
 				    		species = owner_main_species
 				    	}
 					}
-					#while = {
-					#	count = 1
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_city
-					#	}
-					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {

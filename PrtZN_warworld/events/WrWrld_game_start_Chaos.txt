@@ -241,7 +241,9 @@ country_event = { #Black_Legion
 		#add_tradition = tr_subterfuge_double_agents
 		#add_tradition = tr_subterfuge_shadow_recruits
 		#add_tradition = tr_subterfuge_finish     #Махинации
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
 				or = {
@@ -764,7 +766,9 @@ country_event = { #Death_Guard
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
 				or = {
@@ -1227,7 +1231,9 @@ country_event = { #World_Eaters
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
 				or = {
@@ -1705,27 +1711,25 @@ country_event = { #Thousand_Sons
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
-				or = {
+				OR = {
 					has_star_flag = Thousand_Sons_gos
 					has_star_flag = Thousand_Sons_gos_station
 				}
 			}
 			if = {
-				limit = {
-				    has_star_flag = Thousand_Sons_gos
-			    }
+				limit = { has_star_flag = Thousand_Sons_gos }
 				create_starbase = {
 					owner = ROOT
 					size = starbase_outpost
 				}
 			}
 			else = {
-				limit = {
-					has_star_flag = Thousand_Sons_gos_station
-			    }
+				limit = { has_star_flag = Thousand_Sons_gos_station }
 				create_starbase = {
 					owner = ROOT
 					size = starbase_starfortress
@@ -1744,15 +1748,7 @@ country_event = { #Thousand_Sons
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
+				    limit = { is_colonizable = no }
 					create_deposits_stations = yes
 				}
 				if = {                                         ### МИР ДЕМОНОВ ###
@@ -2178,7 +2174,9 @@ country_event = { #Emperors_Children
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
 				or = {
@@ -2648,7 +2646,9 @@ country_event = { #Word_Bearers
 		add_tradition = tr_adaptability_adaptive_ecology
 		add_tradition = tr_adaptability_appropriation
 		add_tradition = tr_adaptability_finish     #Адаптация
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
 				or = {
@@ -3123,7 +3123,9 @@ country_event = { #Alpha_Legion
 		add_tradition = tr_aptitude_the_empire_needs_you
 		add_tradition = tr_aptitude_specialist_training
 		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		#
+		
+		add_seen_bypass_type = wormhole
+		
 		every_system = {
 			limit = {
 				or = {

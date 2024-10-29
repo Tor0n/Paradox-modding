@@ -15,12 +15,12 @@ Terror_Eye_initializer = {
 			is_bottleneck_system = yes
 		}
 	}
-
 	max_instances = 1
-
 	flags = { great_wound shroudwalker_enclave_system enclave Black_Legion_gos_station }
-	#flags = { great_wound }
-    #flags = { empire_home_system shroudwalker_enclave_system enclave }
+	init_effect = {
+		save_global_event_target_as = wormhole_Terror_Eye
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 	
 	planet = {
 		class = star
