@@ -4702,10 +4702,14 @@ Vraks_initializer = {
 }
 Naduesh_initializer = {
 	class = "rl_starting_stars"
-	init_effect = { generate_home_system_resources = yes }
+	
 	flags = { Barbed_Chalice_gos }
-
 	max_instances = 1
+	init_effect = {
+		generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_Naduesh
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star
