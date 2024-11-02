@@ -236,20 +236,18 @@ country_event = { #Imperium
 		
 		modify_species = {
 			species = owner_main_species
+			name = Сервитор			#species_name_servitor
+			plural = Сервиторы		#species_plural_servitor
+			adjective = Сервиторыск	#species_adjective_servitor
 			add_trait = trait_nerve_stapled
 			add_trait = trait_limited_cybernetic
 			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
-			#remove_trait = trait_perfected_genes
 			effect = { save_global_event_target_as = servitor_species }
-			name = Сервитор
-			plural = Сервиторы
-			adjective = Сервиторск
 		}
 		modify_species = {
 			species = owner_main_species
 			add_trait = trait_syncretic_proles
 			add_trait = trait_very_strong
-			#############
 			add_trait = trait_presapient_earthbound
 			effect = { save_global_event_target_as = ogryn_species }
 			name = Огрин
@@ -259,7 +257,6 @@ country_event = { #Imperium
 		modify_species = {
 			species = owner_main_species
 			add_trait = trait_psionic
-			#############
 			add_trait = trait_stargazer
 			effect = { save_global_event_target_as = psyker_species }
 			name = Псайкер
@@ -974,10 +971,10 @@ country_event = { #Mechanicus
 		add_resource = { rare_crystals = 1000 }
 		add_resource = { exotic_gases = 1000 }
 		# Вассализация
-		#set_subject_of = {
-		#	who = event_target:Imperium_evnt_trgt_country
-		#	preset = preset_mechanicus
-		#}
+		set_subject_of = {
+			who = event_target:Imperium_evnt_trgt_country
+			preset = preset_mechanicus
+		}
 		
 		hidden_effect = {
 			#Соц наука
@@ -1144,14 +1141,20 @@ country_event = { #Mechanicus
 		add_tradition = tr_cybernetics_modular_cybernetics
 		add_tradition = tr_cybernetics_finish     #Кибернетик
 		
-		#add_tradition = tr_statecraft_adopt
-		
 		#modify_species = {
 		#	species = this
 		#	add_trait = trait_auto_mod_cyborg #trait_cyborg_ritualistic_implants
 		#	#add_traits_at_start_of_list = yes
 		#}
 		#change_species = event_target:mechanicus_species
+		
+		owner_main_species = {
+			rename_species = {
+				name = PRESCRIPTED_species_name_mechanicus
+				plural = PRESCRIPTED_species_plural_mechanicus
+				adjective = PRESCRIPTED_species_adjective_humans1
+			}
+		}
 
 		every_system = {
 			limit = {
@@ -3667,13 +3670,6 @@ country_event = { #Manachean_Commonwealth
 		
 		add_tradition = tr_statecraft_adopt
 		
-		#modify_species = {
-		#	species = owner_main_species
-		#	add_trait = trait_nerve_stapled
-		#	remove_trait = trait_perfected_genes
-		#	effect = { save_global_event_target_as = servitor_species }
-		#}
-		
 		every_system = {
 			limit = {
 				OR = {
@@ -4043,22 +4039,6 @@ country_event = { #Imperium
 		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		#rename_species = {
-		#	name = "an entry within the species name database"
-		#	name = random
-		#	name_list = "key"
-		#}
-		#modify_species = {
-		#	species = owner_main_species # species to modify
-			#base = <target>/auto/none # new base species; default: auto (uses species)
-		#	add_trait = trait_auto_mod_cyborg # optional, can specify multiple
-			#remove_trait = <key> # optional, can specify multiple
-			#add_traits_at_start_of_list = yes # optional, pushes out other traits if needed
-			#ideal_planet_class = <target or pc_name> # optional
-			#change_scoped_species = yes/no # modify scoped pops/planet/leader/country; default: yes
-			#portrait = <target or portrait name> # optional
-		#	effect = { SCOPE_SPECIES } # optional effect to run on the resulting new species, is executed after any handling of change_scoped_species
-		#}
 	}
 }
 country_event = { #Imperium
@@ -4695,9 +4675,3 @@ country_event = { #Imperium
 #}
 
 #set_species_homeworld = <target planet>
-
-#rename_species = {
-#	name = "an entry within the species name database"
-#	name = random
-#	name_list = "key"
-#}

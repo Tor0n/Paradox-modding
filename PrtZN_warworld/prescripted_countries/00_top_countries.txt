@@ -3,12 +3,12 @@
 #######################
 
 Imperium = {
-	name = "Name_Imperium"
-	adjective = "Imperium"
+	name = "name_imperium"
+	adjective = "PRESCRIPTED_adjective_humans1"	# "PRESCRIPTED_adjective_imperium"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "ship_prefix_Imperium"
+	ship_prefix = "ship_prefix_imperium"
 	
 	species = {
 		class = "HUM"
@@ -31,18 +31,17 @@ Imperium = {
 	authority = "auth_dictatorial"
 	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_philosopher_king" }
 	government = gov_purity_order
+	origin = "origin_imperium"
 	
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_fanatic_xenophobe"
 	
-	# origin = "origin_legendary_leader"
-	origin = "origin_imperium"
 	flags = { Imperium_start Imperium_gos Imperor_Alive }
 	
-	planet_name = "Терра"
+	planet_name = "planet_name_terra"
 	planet_class = "pc_continental"
+	system_name = "system_name_sol"
 	#initializer = "Terra_initializer"
-	system_name = "Солнце"
 	
 	graphical_culture = "gothic_01" #wain_01
 	city_graphical_culture = "humanoid_01"
@@ -64,7 +63,7 @@ Imperium = {
 		}
 	}
 	ruler = {
-		name = "Неот"
+		name = "PRESCRIPTED_ruler_name_imperium"
 		gender = male
 		portrait = "imperium_male_03"
 		texture = 0
@@ -79,104 +78,71 @@ Imperium = {
 	spawn_as_fallen = no
 }
 Mechanicus = {
-	key="Name_Mechanicus"
-	ship_prefix=
-	{
-		key="Механикус."
-		literal=yes
+	#key = "name_mechanicus"
+	name = "name_mechanicus"
+	adjective = "PRESCRIPTED_adjective_mechanicus"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = ship_prefix_mechanicus
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
-		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
-		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		#trait="trait_perfected_genes"
-		trait="trait_cybernetic"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Механикус"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Механикусск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
+	
+	room="machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_technocracy" }
+	government = gov_purity_order
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_materialist"
+	
 	flags = { Mechanicus_start Mechanicus_gos }
-	government="gov_purity_order"
-	advisor_voice_type="l_the_technocrat"
-	planet_name=
-	{
-		key="Восс Прайм"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Восс Прайм"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="sto_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="AdeptusMechanicus.dds"
+	
+	planet_name = "planet_name_voss_prime"
+	planet_class = "pc_continental"
+	system_name = "system_name_voss_prime"
+	#initializer=""
+	
+	graphical_culture = "sto_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "AdeptusMechanicus.dds"
 		}
-		background=
-		{
-			category="backgrounds"
-			file="vertical.dds"
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
 		}
-		colors=
-		{
+		colors = {
 			"shadow_blue"
 			"red"
 			"black"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
+	ruler = {
+		gender = male
+		name = {
 			full_names=
 			{
 				key="Од Одия Раскиан"
@@ -201,20 +167,8 @@ Mechanicus = {
 		trait="trait_ruler_eye_for_talent"
 		leader_class="scientist"
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="machine_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_fanatic_materialist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_relentless_industrialists"
-		"civic_technocracy"
-	}
-	origin="origin_mechanicus"
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
 }
 Ecclesiarchy = {
 	key="Экклезиархия"
