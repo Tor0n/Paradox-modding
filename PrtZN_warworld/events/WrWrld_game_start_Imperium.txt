@@ -237,19 +237,34 @@ country_event = { #Imperium
 		modify_species = {
 			species = owner_main_species
 			add_trait = trait_nerve_stapled
-			remove_trait = trait_perfected_genes
+			add_trait = trait_limited_cybernetic
+			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
+			#remove_trait = trait_perfected_genes
 			effect = { save_global_event_target_as = servitor_species }
+			name = Сервитор
+			plural = Сервиторы
+			adjective = Сервиторск
 		}
 		modify_species = {
 			species = owner_main_species
-			add_trait = trait_nerve_stapled
+			add_trait = trait_syncretic_proles
 			add_trait = trait_very_strong
+			#############
+			add_trait = trait_presapient_earthbound
 			effect = { save_global_event_target_as = ogryn_species }
+			name = Огрин
+			plural = Огрины
+			adjective = Огринск
 		}
 		modify_species = {
 			species = owner_main_species
 			add_trait = trait_psionic
+			#############
+			add_trait = trait_stargazer
 			effect = { save_global_event_target_as = psyker_species }
+			name = Псайкер
+			plural = Псайкеры
+			adjective = Псайкерск
 		}
 		
 		every_system = {
@@ -318,7 +333,7 @@ country_event = { #Imperium
 				    create_colony = { owner = ROOT }
 				    add_building = building_colony_shelter				
 				    while = {
-				    	count = 4
+				    	count = 3
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
@@ -336,11 +351,23 @@ country_event = { #Imperium
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
 				    while = {
-				    	count = 26
+				    	count = 9
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-						count = 13
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 12
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 				}
@@ -354,11 +381,23 @@ country_event = { #Imperium
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
 				    while = {
-				    	count = 25
+				    	count = 16
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-						count = 13
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 11
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
@@ -396,15 +435,16 @@ country_event = { #Imperium
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
 				    while = {
-				    	count = 35
+				    	count = 53
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-				    	count = 30
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_materialist" }
-				    	}
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 7
@@ -430,18 +470,11 @@ country_event = { #Imperium
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
-				    	count = 14
+				    	count = 25
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-				    	count = 13
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_materialist" }
-				    	}
-					}
-					while = {
-				    	count = 10
+				    	count = 5
 				    	create_pop = { species = event_target:servitor_species }
 					}
 					while = {
@@ -478,17 +511,29 @@ country_event = { #Imperium
 					#add_building = building_archaeo_refinery  	
 					add_building = building_energy_nexus					
 				    while = {
-				    	count = 42
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
+					}
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
@@ -505,7 +550,7 @@ country_event = { #Imperium
 				    	owner = ROOT
 		    	    }
 					while = {
-						count = 6
+						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 				    add_building = building_major_capital   	
@@ -515,11 +560,11 @@ country_event = { #Imperium
 					add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
-					add_building = building_commercial_zone
-					add_building = building_commercial_zone
-					add_building = building_commercial_zone
-					add_building = building_commercial_zone
-					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
 					add_building = building_autochthon_monument
 					add_building = building_planetary_shield_generator
 					#add_building = building_refinery
@@ -527,17 +572,29 @@ country_event = { #Imperium
 					#add_building = building_crystal_plant
 					#add_building = building_archaeo_refinery  					
 				    while = {
-				    	count = 57
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
 					while = {
-						count = 7
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
-						count = 4
+						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 				}
@@ -570,10 +627,22 @@ country_event = { #Imperium
 					#add_building = building_chemical_plant
 					add_building = building_planetary_shield_generator					
 				    while = {
-				    	count = 32
+				    	count = 24
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 5
@@ -593,7 +662,7 @@ country_event = { #Imperium
 						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
 					}
 					while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
 					}
 				    add_building = building_major_capital   	
@@ -611,10 +680,22 @@ country_event = { #Imperium
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
 				    while = {
-				    	count = 63
+				    	count = 46
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
 					}
 				}
 				if = {
@@ -642,10 +723,22 @@ country_event = { #Imperium
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
 				    while = {
-				    	count = 33
+				    	count = 20
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 1
@@ -682,10 +775,14 @@ country_event = { #Imperium
 					add_building = building_resource_silo
 					add_building = building_resource_silo					
 				    while = {
-				    	count = 6
+				    	count = 4
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
 					}
 				}
 				if = {
@@ -705,10 +802,22 @@ country_event = { #Imperium
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 				    while = {
-				    	count = 12
+				    	count = 8
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 4 #3
@@ -738,8 +847,20 @@ country_event = { #Imperium
 						add_district_and_planet_size_if_needed_effect = { district = district_arcology_administrative }
 					}
 					while = {
-						count = 76
+						count = 54
 						create_pop = {species = owner_main_species}
+					}
+					#while = {
+				    #	count = 5
+				    #	create_pop = { species = event_target:servitor_species }
+					#}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:psyker_species }
 					}
 					add_building = building_system_capital
 				    add_building = building_hall_judgment
@@ -3920,6 +4041,17 @@ country_event = { #Imperium
 		#	name = random
 		#	name_list = "key"
 		#}
+		modify_species = {
+			species = owner_main_species # species to modify
+			#base = <target>/auto/none # new base species; default: auto (uses species)
+			add_trait = trait_auto_mod_cyborg # optional, can specify multiple
+			#remove_trait = <key> # optional, can specify multiple
+			#add_traits_at_start_of_list = yes # optional, pushes out other traits if needed
+			#ideal_planet_class = <target or pc_name> # optional
+			#change_scoped_species = yes/no # modify scoped pops/planet/leader/country; default: yes
+			#portrait = <target or portrait name> # optional
+			effect = { SCOPE_SPECIES } # optional effect to run on the resulting new species, is executed after any handling of change_scoped_species
+		}
 	}
 }
 country_event = { #Imperium
