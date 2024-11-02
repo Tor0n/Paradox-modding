@@ -1146,6 +1146,13 @@ country_event = { #Mechanicus
 		
 		#add_tradition = tr_statecraft_adopt
 		
+		#modify_species = {
+		#	species = this
+		#	add_trait = trait_auto_mod_cyborg #trait_cyborg_ritualistic_implants
+		#	#add_traits_at_start_of_list = yes
+		#}
+		#change_species = event_target:mechanicus_species
+
 		every_system = {
 			limit = {
 				OR = {
@@ -4041,17 +4048,17 @@ country_event = { #Imperium
 		#	name = random
 		#	name_list = "key"
 		#}
-		modify_species = {
-			species = owner_main_species # species to modify
+		#modify_species = {
+		#	species = owner_main_species # species to modify
 			#base = <target>/auto/none # new base species; default: auto (uses species)
-			add_trait = trait_auto_mod_cyborg # optional, can specify multiple
+		#	add_trait = trait_auto_mod_cyborg # optional, can specify multiple
 			#remove_trait = <key> # optional, can specify multiple
 			#add_traits_at_start_of_list = yes # optional, pushes out other traits if needed
 			#ideal_planet_class = <target or pc_name> # optional
 			#change_scoped_species = yes/no # modify scoped pops/planet/leader/country; default: yes
 			#portrait = <target or portrait name> # optional
-			effect = { SCOPE_SPECIES } # optional effect to run on the resulting new species, is executed after any handling of change_scoped_species
-		}
+		#	effect = { SCOPE_SPECIES } # optional effect to run on the resulting new species, is executed after any handling of change_scoped_species
+		#}
 	}
 }
 country_event = { #Imperium
