@@ -8,13 +8,103 @@
 @homeworld_min_size = 18
 @homeworld_max_size = 21
 
+Tirathain_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Aldari_gos_station }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_tropical"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = no
+		starting_planet = yes
+		
+		#flags = { Aldari_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 48
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 20 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 Syph_initializer = {
 	class = "rl_starting_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
 	}
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	usage = misc_system_init	#The game can pick this initialiser randomly for misc. purposes, i.e those which have not been initialised by empires or fallen empires
 	usage_odds = {
@@ -365,7 +455,7 @@ Quilan_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -658,7 +748,7 @@ Cnath_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -868,7 +958,7 @@ Rianoen_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1056,7 +1146,7 @@ Areadnnil_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = {
@@ -1165,7 +1255,7 @@ Eqhai_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1375,7 +1465,7 @@ Mirienh_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1585,7 +1675,7 @@ Valos_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1772,7 +1862,7 @@ UpsidheKa_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -2043,7 +2133,7 @@ Ishariel_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -2231,7 +2321,7 @@ Svehlin_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -2336,7 +2426,7 @@ Naitoc_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -2441,7 +2531,7 @@ Athelaq_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Aldari_gos }
+	flags = { Aldari_gos_station }
 
 	max_instances = 1
 	init_effect = { }

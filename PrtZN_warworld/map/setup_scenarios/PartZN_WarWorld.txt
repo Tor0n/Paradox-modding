@@ -530,7 +530,7 @@ system = { id = "478" name = "Ishariel"			position = { x = -144.1935 y = 404.195
 system = { id = "479" name = "Zodiac"			position = { x = -198.6919 y = 406.4665 } initializer = Zodiac_initializer }
 system = { id = "480" name = "Vorketh"			position = { x = -237.2949 y = 422.3619 } initializer = Vorketh_initializer } 
 system = { id = "481" name = "Tesla"			position = { x = -90.83057 y = 388.3004 } initializer = Tesla_initializer }
-system = { id = "482" name = "Tirathain"		position = { x = -45.41526 y = 391.7065 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Aldari_start } } }
+system = { id = "482" name = "Tirathain"		position = { x = -45.41526 y = 391.7065 } initializer = Tirathain_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Aldari_start } } }
 system = { id = "483" name = "Necris"			position = { x = -61.31062 y = 346.2913 } initializer = Necris_initializer }       #ЧЕРВОТОЧИНА КОММОРРЫ
 system = { id = "484" name = "Vigilance"		position = { x = -23.843 y = 324.719 } initializer = Vigilance_initializer }
 system = { id = "485" name = "Birmingham"		position = { x = 23.84307 y = 395.1127 } initializer = Birmingham_initializer }

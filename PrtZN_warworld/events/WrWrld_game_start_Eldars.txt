@@ -689,11 +689,39 @@ country_event = { #Экзодиты 1
 		
 		every_system = {
 			limit = {
-				has_star_flag = Aldari_gos
+				OR = {
+					has_star_flag = Aldari_gos
+					has_star_flag = Aldari_gos_station
+				}
 			}
-			create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+			if = {
+				limit = {
+				    has_star_flag = Aldari_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Aldari_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
 			}
 			every_system_planet = { 
 			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
@@ -719,7 +747,7 @@ country_event = { #Экзодиты 1
 				    add_building = building_capital 
 				    add_building = building_ranger_lodge  					
 				    while = {
-				    	count = 15
+				    	count = 9
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -742,14 +770,14 @@ country_event = { #Экзодиты 1
 							district = district_generator
 						}
 					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_mining
+					#	}
+					#}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
