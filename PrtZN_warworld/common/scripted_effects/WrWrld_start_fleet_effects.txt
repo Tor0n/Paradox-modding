@@ -1,14 +1,13 @@
-create_Imperium_starting_navy = {
-	create_Imperium_corvette_fleet = yes
-	create_Imperium_corvette_fleet = yes
+create_imperium_starting_navy = {
+	create_imperium_cruiser_fleet = yes
 }
-create_Imperium_corvette_fleet = {
+create_imperium_cruiser_fleet = {
 	create_fleet = {
 		effect = {
 			set_owner = prev.owner
 			while = {
 				count = 10
-				create_Imperium_Corvette = yes
+				create_imperium_cruiser = yes
 			}
 			random_list = {
 				25 = {
@@ -43,10 +42,11 @@ create_Imperium_corvette_fleet = {
 		}
 	}
 }
-create_Imperium_Corvette = {
+create_imperium_cruiser = {
 	create_ship = {
 		name = random
-		design = "NAME_TESTNAME_Imperium"
+		design = random_existing_design = cruiser
+		#random_existing_design = cruiser
 		graphical_culture = owner
 	}
 }

@@ -15,6 +15,9 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_game_start.401 days = 4 }
 		}
+		owner = {
+			country_event = { id = WrWrld_start_fleet.1 }
+		}
 		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
