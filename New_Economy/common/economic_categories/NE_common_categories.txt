@@ -1,43 +1,3 @@
-planet_districts = {
-	parent = planet_structures
-
-	generate_mult_modifiers = {
-		cost
-		upkeep
-	}
-	modifier_category = planet
-}
-
-planet_districts_farming = {
-	parent = planet_districts
-
-	modifier_category = planet
-}
-
-planet_districts_mining = {
-	parent = planet_districts
-
-	modifier_category = planet
-}
-
-planet_districts_generator = {
-	parent = planet_districts
-
-	modifier_category = planet
-}
-
-planet_districts_cities = {
-	parent = planet_districts
-}
-
-planet_districts_industrial = {
-	parent = planet_districts
-	
-	generate_mult_modifiers = {
-		cost
-	}
-}
-
 planet_farmers = {
 	parent = planet_jobs_productive
 	generate_mult_modifiers = {
@@ -50,10 +10,6 @@ planet_farmers = {
 		upkeep
 	}
 	modifier_category = pop
-}
-
-planet_anglers = {
-	parent = planet_farmers
 }
 
 planet_miners = {

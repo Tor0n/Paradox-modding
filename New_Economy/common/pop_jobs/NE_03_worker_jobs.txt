@@ -1,94 +1,11 @@
+@b_clerk_upkeep = 0.05
+@b_miner_upkeep = 0.1
+@b_farmer_upkeep = 0.05
+@b_technician_upkeep = 0.05
+
 ###################
 # Basic Jobs
 ###################
-
-@b_mine_upkeep = 0.1
-@requisitorium_mine_upkeep = 0.05
-@b_farm_upkeep = 0.05
-@requisitorium_farm_upkeep = 0.02
-@b_technician_upkeep = 0.05
-@requisitorium_technician_upkeep = 0.02
-
-colonist = {
-	category = worker
-	exempt_from_ai_amenity_prioritization = yes
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_colony_shelter
-	clothes_texture_index = 3
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_worker_job
-
-	planet_modifier = {
-		planet_building_build_speed_mult = 0.10
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_amenities_add = 3
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
-	}
-
-	resources = {
-		category = planet_jobs
-		produces = {
-			trigger = {
-				has_food_upkeep = yes
-			}
-			food = 1
-		}
-		produces = {
-			trigger = {
-				OR = {
-					has_mineral_upkeep = yes
-					has_energy_upkeep = yes
-				}
-
-			}
-			minerals = 1
-		}
-	}
-
-	weight = {
-		weight = @colonist_job_weight # Higher prio
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 1.5
-			has_job = colonist
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_job = colonist }
-			exists = planet
-			planet = {
-				owner = { is_ai = yes }
-				count_owned_pop = { limit = { is_sapient = yes }count < 4 }
-				any_owned_pop = {
-					has_job = colonist
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
-		}
-	}
-
-	inline_script = "jobs/automodding_priority_amenities"
-}
 
 clerk = {
 	category = worker
@@ -108,17 +25,11 @@ clerk = {
 	resources = {
 		category = planet_clerks
 		upkeep = {
-			consumer_goods = 0.05
+			consumer_goods = @b_clerk_upkeep
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_synth_corporate = no
-			}
-		}
+	planet_modifier = {
 		trade_value_mult = 0.01
 	}
 
@@ -130,6 +41,7 @@ clerk = {
 			}
 		}
 		planet_jobs_alloys_produces_mult = 0.005
+		planet_jobs_consumer_goods_produces_mult = 0.005
 	}
 
 	triggered_planet_modifier = {
@@ -156,6 +68,7 @@ clerk = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = planet
 			planet = {
 				NOT = { has_planet_flag = has_franchise_headquarters }
 			}
@@ -166,6 +79,7 @@ clerk = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = planet
 			planet = {
 				has_planet_flag = has_franchise_headquarters
 			}
@@ -210,6 +124,7 @@ clerk = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = planet
 			planet = {
 				exists = orbital_defence
 				orbital_defence = {
@@ -353,14 +268,6 @@ technician = {
 			minerals = 1
 			alloys = @b_technician_upkeep
 		}
-		upkeep = {
-			trigger = {
-				planet = {
-					has_planet_flag = has_energy_requisitorium
-				}
-			}
-			alloys = @requisitorium_technician_upkeep
-		}
 	}
 
 	overlord_resources = {
@@ -468,15 +375,7 @@ miner = {
 			minerals = @requisitorium_minerals_reduction
 		}
 		upkeep = {
-			alloys = @b_mine_upkeep
-		}
-		upkeep = {
-			trigger = {
-				planet = {
-					has_planet_flag = has_material_requisitorium
-				}
-			}
-			alloys = @requisitorium_mine_upkeep
+			alloys = @b_miner_upkeep
 		}
 	}
 
@@ -582,7 +481,7 @@ crystal_miner = {
 			rare_crystals = 2
 		}
 		upkeep = {
-			alloys = @b_mine_upkeep
+			alloys = @b_miner_upkeep
 		}
 	}
 
@@ -645,7 +544,7 @@ gas_extractor = {
 			exotic_gases = 2
 		}
 		upkeep = {
-			alloys = @b_mine_upkeep
+			alloys = @b_miner_upkeep
 		}
 	}
 
@@ -708,7 +607,7 @@ mote_harvester = {
 			volatile_motes = 2
 		}
 		upkeep = {
-			alloys = @b_mine_upkeep
+			alloys = @b_miner_upkeep
 		}
 	}
 
@@ -800,15 +699,7 @@ farmer = {
 			food = @requisitorium_food_reduction
 		}
 		upkeep = {
-			consumer_goods = @b_farm_upkeep
-		}
-		upkeep = {
-			trigger = {
-				planet = {
-					has_planet_flag = has_produce_requisitorium
-				}
-			}
-			consumer_goods = @requisitorium_farm_upkeep
+			consumer_goods = @b_farmer_upkeep
 		}
 	}
 
@@ -910,320 +801,6 @@ farmer = {
 	inline_script = "jobs/automodding_priority_food"
 }
 
-soldier = {
-	category = worker
-	condition_string = SOLDIER_JOB_TRIGGER
-	building_icon = building_stronghold
-	clothes_texture_index = 4
-
-	country_modifier = {
-		country_naval_cap_add = 4
-	}
-
-	resources = {
-		category = planet_soldiers
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				exists = owner
-				owner = { has_technology = "tech_ground_defense_planning" }
-			}
-		}
-		modifier = {
-			country_naval_cap_add = 2
-		}
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				any_owned_leader = {
-					is_councilor = yes
-					has_trait = leader_trait_bellicose
-				}
-			}
-		}
-
-		modifier = {
-			country_naval_cap_add = 2
-		}
-		mult = value:bellicose_naval_cap
-	}
-
-	pop_modifier = {
-		pop_defense_armies_add = 3
-	}
-
-	planet_modifier = {
-		planet_stability_add = 0.25
-	}
-
-	triggered_pop_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				any_owned_leader = {
-					is_councilor = yes
-					has_trait = leader_trait_bellicose
-				}
-			}
-		}
-
-		modifier = {
-			pop_defense_armies_add = 1
-		}
-		mult = value:bellicose_naval_cap
-	}
-
-	triggered_planet_modifier = {
-		modifier = {
-			planet_stability_add = 1
-		}
-		mult = planet.modifier:job_soldier_stability_add
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			planet = {
-				exists = owner
-				owner = { has_tradition = "tr_modularity_3" }
-			}
-		}
-		modifier = {
-			planet_stability_add = 0.25
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			has_councilor = { COUNCILOR = "councilor_private_military_companies" }
-		}
-
-		modifier = {
-			planet_stability_add = @councilor_private_military_companies_stability
-		}
-
-		mult = value:councilor_level|TYPE|councilor_private_military_companies|
-	}
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible = {
-		soldier_job_check_trigger = yes
-		owner = { is_gestalt = no }
-	}
-
-	weight = {
-		weight = @soldier_job_weight
-		modifier = {
-			factor = 10
-			exists = planet
-			planet = {
-				exists = leader
-				leader = {
-					leader_class = commander
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_resilient
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_very_strong
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_strong
-		}
-		modifier = {
-			factor = 0.5
-			has_trait = trait_weak
-		}
-		modifier = {
-			factor = 0.1
-			is_enslaved = yes
-			NOT = { has_slavery_type = { type = slavery_military } }
-		}
-		modifier = {
-			factor = 10
-			is_enslaved = yes
-			has_slavery_type = { type = slavery_military }
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_presapient_earthbound
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_limited_regeneration
-		}
-		modifier = {
-			factor = 0
-			species = { can_be_soldier = no }
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_lithoid
-		}
-		modifier = {
-			factor = 5
-			has_trait = trait_cyborg_creed_of_war
-		}
-	}
-}
-
-mortal_initiate = {
-	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_sacrificial_temple_1
-	clothes_texture_index = 3
-	icon = mortal_initiate
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_sapient = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-
-	possible_precalc = can_fill_worker_job
-	possible = {
-		NOR = {
-			has_trait = trait_mechanical #No robots
-			has_trait = trait_zombie #How do you kill that which has no life?
-			has_virtual_species_trait = yes #You'd just print more
-		}
-	}
-
-	resources = {
-		category = planet_administrators
-		produces = {
-			unity = 2
-			society_research = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_amenities_add = 2
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
-	}
-
-	weight = {
-		weight = @specialist_job_weight
-		mult = value:job_weights_multiple_resources_modifier|JOB|mortal_initiate|RESOURCE1|unity|WEIGHT1|0.5|RESOURCE2|society_research|WEIGHT2|0.3|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		modifier = {
-			factor = 0.2
-			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-	}
-
-	inline_script = "jobs/automodding_priority_unity"
-}
-
-scrap_miner = {
-	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
-	icon = miner
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_worker_job
-
-	resources = {
-		category = planet_miners
-		produces = {
-			minerals = 2
-			alloys = 1
-		}
-	}
-
-	weight = {
-		weight = @worker_job_weight
-		mult = value:job_weights_multiple_resources_modifier|JOB|scrap_miner|RESOURCE1|minerals|WEIGHT1|0.7|RESOURCE2|alloys|WEIGHT2|0.3|
-		modifier = {
-			factor = 10
-			is_enslaved = yes
-			can_take_servant_job = no
-			NOT = { has_slavery_type = { type = slavery_indentured } }
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
-		}
-		modifier = {
-			factor = 200
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
-		}
-		modifier = {
-			factor = 0.25
-			can_take_servant_job = yes
-		}
-		# low income modifier
-		modifier = {
-			factor = 1.1
-			exists = planet
-			planet = {
-				has_available_jobs = "scrap_miner"
-			}
-			exists = owner
-			owner = {
-				is_ai = yes
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-	}
-
-	inline_script = "jobs/automodding_priority_minerals"
-}
-
 angler = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -1276,15 +853,7 @@ angler = {
 			food = @requisitorium_food_reduction
 		}
 		upkeep = {
-			consumer_goods = @b_farm_upkeep
-		}
-		upkeep = {
-			trigger = {
-				planet = {
-					has_planet_flag = has_produce_requisitorium
-				}
-			}
-			consumer_goods = @requisitorium_farm_upkeep
+			consumer_goods = @b_farmer_upkeep
 		}
 	}
 
@@ -1351,111 +920,4 @@ angler = {
 	}
 
 	inline_script = "jobs/automodding_priority_food"
-}
-
-ranger = {
-	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = holding_park_ranger_lodge
-	clothes_texture_index = 1
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_worker_job
-
-	resources = {
-		category = planet_rangers
-		produces = {
-			society_research = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_amenities_add = 3
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
-	}
-
-	weight = {
-		weight = @worker_job_weight
-		mult = value:job_weights_modifier|JOB|culture_worker|RESOURCE|society_research|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		modifier = {
-			factor = 1.5
-			has_job = ranger
-		}
-	}
-
-	inline_script = "jobs/automodding_priority_research"
-}
-
-squire = {
-	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_order_keep
-	clothes_texture_index = 4
-
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-		is_enslaved = no
-	}
-
-	possible_precalc = can_fill_specialist_job #deliberate, they are baby knights
-
-	possible = {
-		hidden_trigger = { exists = owner }
-		owner = {
-			is_gestalt = no
-		}
-	}
-
-	pop_modifier = {
-		pop_defense_armies_add = 1
-	}
-
-	planet_modifier = {
-		planet_knights_produces_mult = 0.025
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_amenities_add = 2
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			planet = { has_modifier = syamelles_curse_habitat }
-		}
-		planet_pop_assembly_organic_add = 0.25
-	}
-
-	resources = {
-		category = planet_squires
-		upkeep = {
-			trigger = {
-				planet = { has_modifier = syamelles_curse_habitat }
-			}
-			alloys = 0.5
-		}
-	}
-
-	weight = {
-		weight = @worker_job_weight
-		factor = 1.2
-	}
-
-	inline_script = "jobs/automodding_priority_amenities"
 }

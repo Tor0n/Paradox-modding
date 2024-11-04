@@ -220,6 +220,15 @@ district_mining = {
 
 	triggered_planet_modifier = {
 		potential = {
+			has_modifier = metal_planet
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
 			exists = owner
 			owner = { is_machine_empire = yes }
 		}
@@ -329,6 +338,15 @@ district_farming = {
 		cost = {
 			minerals = @base_cost
 			food = @farm_cost
+			trigger = {
+				NOT = { has_modifier = wooden_planet }
+			}
+		}
+		cost = {
+			food = @base_cost
+			trigger = {
+				has_modifier = wooden_planet
+			}
 		}
 		# Anglers Civic cost effect
 		cost = {
@@ -548,6 +566,7 @@ district_generator_uncapped = {
 		category = planet_districts_generator
 		cost = {
 			minerals = @base_cost
+			alloys = @gen_cost
 		}
 		upkeep = {
 			energy = 1
@@ -593,9 +612,10 @@ district_generator_uncapped = {
 
 	triggered_planet_modifier = {
 		potential = {
+			NOT = { uses_district_set = shattered_ring_world }
 			exists = owner
-			owner = { 
-				is_machine_empire = yes 
+			owner = {
+				is_machine_empire = yes
 				has_ascension_perk = ap_machine_worlds
 			}
 		}
@@ -604,7 +624,7 @@ district_generator_uncapped = {
 			planet_housing_add = 3
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -714,6 +734,7 @@ district_mining_uncapped = {
 		category = planet_districts_mining
 		cost = {
 			minerals = @base_cost
+			alloys = @mine_cost
 		}
 		upkeep = {
 			energy = 1
@@ -733,6 +754,15 @@ district_mining_uncapped = {
 		}
 		modifier = {
 			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_modifier = metal_planet
+		}
+		modifier = {
+			planet_housing_add = 5
 		}
 	}
 
@@ -763,8 +793,8 @@ district_mining_uncapped = {
 		potential = {
 			NOT = { uses_district_set = shattered_ring_world }
 			exists = owner
-			owner = { 
-				is_machine_empire = yes 
+			owner = {
+				is_machine_empire = yes
 				has_ascension_perk = ap_machine_worlds
 			}
 		}
@@ -956,6 +986,7 @@ district_farming_uncapped = {
 		category = planet_districts_farming
 		cost = {
 			minerals = @base_cost
+			food = @farm_cost
 		}
 		# Anglers Civic cost effect
 		cost = {

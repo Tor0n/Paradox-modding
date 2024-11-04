@@ -21,7 +21,7 @@ living_standard_organic_trophy = {
 		has_synthetic_dawn = yes
 		exists = from
 		from = {
-			has_authority = auth_machine_intelligence
+			is_machine_empire = yes
 			has_valid_civic = civic_machine_servitor
 		}
 	}
@@ -39,92 +39,6 @@ living_standard_organic_trophy = {
 
 	ai_will_do = {
 		factor = 100
-	}
-}
-
-living_standard_chemical_bliss = {
-	triggered_pop_modifier = {
-		potential = {
-			NAND = {
-				exists = owner
-				owner = { has_deficit = consumer_goods }
-			}
-		}
-		pop_happiness = 0.4
-	}
-
-	# Triggered so the auto-generated modifier is hidden.
-	triggered_pop_modifier = {
-		potential = {
-			always = yes
-		}
-		living_standard_trade_value_rulers_add = @trade_value_very_high
-		living_standard_trade_value_specialists_add = @trade_value_very_high
-		living_standard_trade_value_workers_add = @trade_value_very_high
-	}
-
-	pop_modifier = {
-		planet_jobs_produces_mult = -0.6
-		pop_category_rulers_consumer_goods_upkeep_add = @living_standard_luxuries_very_high
-		pop_category_specialists_consumer_goods_upkeep_add = @living_standard_luxuries_very_high
-		pop_category_workers_consumer_goods_upkeep_add = @living_standard_luxuries_very_high
-		pop_category_slave_consumer_goods_upkeep_add = @living_standard_luxuries_low
-	}
-
-	potential = {
-		from = {
-			has_technology = tech_subdermal_stimulation
-			NOT = { has_valid_civic = civic_dystopian_society }
-		}
-		NOT = { has_trait = trait_hive_mind }
-		NOR = {
-			has_trait = trait_mechanical
-			has_trait = trait_machine_unit
-		}
-	}
-
-	allow = {
-		hidden_trigger = { exists = from }
-		custom_tooltip = {
-			fail_text = is_slaves_chattel_or_domestic
-			if = {
-				limit = {
-					has_citizenship_type = { country = from type = citizenship_slavery }
-				}
-				NOR = {
-					has_slavery_type = { country = from type = slavery_normal }
-					has_slavery_type = { country = from type = slavery_domestic }
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = is_purged_not_neutered
-			if = {
-				limit = {
-					OR = {
-						has_citizenship_type = { country = from type = citizenship_purge_machine }
-						has_citizenship_type = { country = from type = citizenship_purge }
-					}
-				}
-				OR = {
-					has_purge_type = { country = from type = purge_neutering }
-					has_purge_type = { country = from type = purge_cosmogenesis_lathe_resettle }
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = SPECIES_MUST_NOT_BE_ASSIMILATING
-			NOT = {
-				has_citizenship_type = {
-					type = citizenship_assimilation
-					country = from
-				}
-			}
-		}
-	}
-
-	ai_will_do = {
-		factor = 0
 	}
 }
 
@@ -357,7 +271,7 @@ living_standard_dystopian_society = {
 			always = yes
 		}
 		living_standard_trade_value_rulers_add =			@trade_value_very_high
-		living_standard_trade_value_specialists_add =			@trade_value_low
+		living_standard_trade_value_specialists_add =		@trade_value_low
 		living_standard_trade_value_workers_add = 			@trade_value_low
 	}
 
@@ -951,13 +865,13 @@ living_standard_good = {
 		NOT = { has_trait = trait_hive_mind }
 		OR = {
 			AND = {
-				is_robotic_species = yes
+				from = { is_robotic_species = yes }
 				OR = {
 					species_rights_robot_full_rights_check = yes
 					from = { is_individual_machine = yes }
 				}
 			}
-			is_robotic_species = no
+			from = { is_robotic_species = no }
 		}
 	}
 
@@ -1494,7 +1408,7 @@ living_standard_hive_mind = {
 	allow = {
 		if = {
 			limit = {
-				from = { has_authority = auth_hive_mind }
+				from = { is_hive_empire = yes }
 			}
 			custom_tooltip = {
 				fail_text = species_is_not_hive
@@ -1502,7 +1416,7 @@ living_standard_hive_mind = {
 			}
 		}
 		else_if = {
-			limit = { from = { has_authority = auth_machine_intelligence } }
+			limit = { from = { is_machine_empire = yes } }
 			custom_tooltip = {
 				fail_text = species_is_not_machine
 				OR = {
@@ -1645,24 +1559,6 @@ living_standard_decadent = {
 		pop_category_workers_consumer_goods_upkeep_add = @living_standard_luxuries_normal_decadent
 		pop_cat_ruler_political_power = 7
 		pop_cat_specialist_political_power = 2
-	}
-
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-# only for purge, so no happiness effect
-living_standard_none = {
-	allow = {
-		hidden_trigger = { exists = from }
-		custom_tooltip = {
-			fail_text = species_is_neutered_displaced
-			OR = {
-				has_citizenship_type = { country = from type = citizenship_purge_machine }
-				has_citizenship_type = { country = from type = citizenship_purge }
-			}
-		}
 	}
 
 	ai_will_do = {

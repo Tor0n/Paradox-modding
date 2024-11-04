@@ -3,4 +3,4 @@ tags={
 	"Economy"
 }
 name="New Economy"
-supported_version="3.12.2"
+supported_version="3.14.15"

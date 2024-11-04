@@ -1,0 +1,138 @@
+@industrial_arcology_cost = 200
+
+district_arcology_arms_industry = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = city_world
+	}
+
+	potential = {
+		uses_district_set = city_world
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			alloys = @industrial_arcology_cost
+			volatile_motes = 50
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = industrial_maintenance
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+	
+	inline_script = {
+		script = jobs/industrial_districts_foundry_add
+		AMOUNT = 6
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_edict = industrial_maintenance
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+}
+
+district_arcology_civilian_industry = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = city_world
+		exists = owner
+		owner = {
+			country_uses_consumer_goods = yes
+		}
+	}
+
+	potential = {
+		uses_district_set = city_world
+		exists = owner
+		owner = {
+			OR = {
+				is_gestalt = no
+				country_uses_consumer_goods = yes
+			}
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			alloys = @industrial_arcology_cost
+			rare_crystals = 50
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = industrial_maintenance
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	inline_script = {
+		script = jobs/industrial_districts_factory_add
+		AMOUNT = 6
+	}
+}
