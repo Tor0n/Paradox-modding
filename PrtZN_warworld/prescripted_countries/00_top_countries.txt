@@ -107,13 +107,14 @@ Mechanicus = {
 	room="machine_room"
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_technocracy" }
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_galactic_curators" }
 	government = gov_purity_order
 	origin = "origin_mechanicus"
 	
-	ethic = "ethic_authoritarian"
-	ethic = "ethic_xenophobe"
-	ethic = "ethic_fanatic_materialist"
+	ethic="ethic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
 	
 	flags = { Mechanicus_start Mechanicus_gos }
 	
@@ -242,7 +243,7 @@ Ecclesiarchy = {
 		literal=yes
 	}
 	initializer=""
-	graphical_culture="wain_01"
+	graphical_culture="wain_04"
 	city_graphical_culture="humanoid_01"
 	empire_flag=
 	{
@@ -3832,17 +3833,17 @@ Eldar_Empire = {
 	
 	empire_flag = {
 		icon = {
-			category = "Warhammer"
-			file = "asuryani_emblem.dds"
+			category="Warhammer_Eldar"
+			file="CraftworldAeldari.dds"
 		}
 		background = {
 			category = "backgrounds"
 			file = "flag_BG_15.dds"
 		}
 		colors = {
-			"blue"
-			"shadow_blue"
-			"pink"
+			"dark_teal"
+			"intense_blue"
+			"null" #pink
 			"null"
 		}
 	}
@@ -3861,6 +3862,153 @@ Eldar_Empire = {
 	}
 	advisor_voice_type = "l_militarist"
 	spawn_as_fallen = no
+}
+"Иннари"=
+{
+	key="Иннари"
+	ship_prefix=
+	{
+		key="Иннари."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="eldar"
+		species_name=
+		{
+			key="Эльдар"
+		}
+		species_plural=
+		{
+			key="Эльдары"
+		}
+		species_adjective=
+		{
+			key="Эльдарск"
+		}
+		name_list="HUM1"
+		gender=not_set
+		trait="trait_psionic"
+		trait="trait_intelligent"
+		trait="trait_nonadaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_traditional"
+		trait="trait_solitary"
+		trait="trait_conservational"
+		trait="trait_venerable"
+		trait="trait_humanoid_psychological_infertility"
+		trait="trait_deviants"
+		trait="trait_resilient"
+	}
+	name=
+	{
+		key="Иннари"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Иннариск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	flags=
+	{
+		"Eldar_start"
+		"Eldar_gos"
+		"class_4_singularity_can_build"
+	}
+	government="gov_theocratic_dictatorship"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="humanoid_01"
+	city_graphical_culture="avian_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Eldar"
+			file="Ynnari.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors=
+		{
+			"turquoise"
+			"light_indigo"
+			"null" #pink
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Иврайна"
+				literal=yes
+			}
+		}
+		portrait="eldar_female_01"
+		texture=1
+		evolution_mask=0
+		attachment=5
+		clothes=4
+		ruler_title=
+		{
+			key="Правитель"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Правительница"
+			literal=yes
+		}
+		trait="trait_ruler_charismatic"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_fanatic_befrienders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_fanatic_spiritualist"
+	civics=
+	{
+		"civic_natural_design"
+		"civic_memory_vault"
+		"civic_ascensionists"
+	}
+	origin="origin_eldar"
 }
 Worlds_Aldari = {
 	name = "Миры Экзодитов"
@@ -3925,7 +4073,7 @@ Worlds_Aldari = {
 		colors = {
 			"sick_green"
 			"toxic_green"
-			"pink"
+			"null" #pink
 			"null"
 		}
 	}
@@ -3994,7 +4142,7 @@ Commorragh = {
 	
 	empire_flag = {
 		icon = {
-			category = "Warhammer"
+			category = "Warhammer_Eldar"
 			file = "drukhari_emblem.dds"
 		}
 		background = {
@@ -4096,99 +4244,830 @@ Tau_Federation = {
 	}
 	spawn_as_fallen=no
 }
-Ork_territory = {
-	name = "Орочья территория"
-	adjective = "Ork territory."
-	spawn_enabled = always
-	ignore_portrait_duplication = no
-	
-	ship_prefix = "Орк."
-	
-	species = {
-		class = "HUM"
-		portrait = "humanoid_hp_12"
-		name = "Орк"
-		plural = "Орки"
-		adjective = "Оркск"
-		name_list = "FUN4"
-		gender = indeterminable
-		trait = "trait_hive_mind"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_strong"
-		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
-		trait = "trait_slow_learners"
-		trait = "trait_quarrelsome"
-		trait = "trait_unruly"
-		trait = "trait_repugnant"
-		trait = "trait_fleeting"
-		trait = "trait_noxious"
+"Кровавые Топоры"=
+{
+	key="Кровавые Топоры"
+	ship_prefix=
+	{
+		key="Орк."
 	}
-	
-	room = "scrappy_room"
-	
-	authority = "auth_hive_mind"
-	government ="gov_devouring_swarm" #gov_hive_mind
-	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }     #civic_hive_ascetic
-	
-	ethic = "ethic_gestalt_consciousness"
-	
-	# origin = "origin_default"
-	origin = "origin_ork"
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_12"
+		species_name=
+		{
+			key="Орк"
+		}
+		species_plural=
+		{
+			key="Орки"
+		}
+		species_adjective=
+		{
+			key="Оркск"
+		}
+		name_list="FUN4"
+		gender=indeterminable
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_slow_learners"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Кровавые Топоры"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Кровавые Топорыск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Orc_start"
+		"Orc_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="toxoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Orks"
+			file="BloodAxes.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"red"
+			"dark_green"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Габоре"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_12"
+		texture=6
+		evolution_mask=0
+		attachment=0
+		clothes=5
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_toxic_baths"
+		"civic_hive_devouring_swarm"
+	}
+	origin="origin_ork"
 	flags = { Orc_start Orc_gos }
-	
-	planet_name= "Барак"
-	planet_class = "pc_savannah"
-	#initializer = "Jurn_initializer"
-	system_name = "Салгастина"
-	
-	graphical_culture = "toxoid_01"
-	city_graphical_culture = "molluscoid_01"
-	
-	empire_flag = {
-		icon = {
-			category = "Warhammer"
-			file = "ork_emblem.dds"
+}
+"Гоффы"=
+{
+	key="Гоффы"
+	ship_prefix=
+	{
+		key="Орк."
+	}
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_12"
+		species_name=
+		{
+			key="Орк"
 		}
-		background = {
-			category = "backgrounds"
-			file = "circle.dds"
+		species_plural=
+		{
+			key="Орки"
 		}
-		colors = {
+		species_adjective=
+		{
+			key="Оркск"
+		}
+		name_list="FUN4"
+		gender=indeterminable
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_slow_learners"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Гоффы"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Гоффыск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Orc_start"
+		"Orc_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="toxoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Orks"
+			file="Goffs.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_50.dds"
+		}
+		colors=
+		{
+			"white"
+			"red"
+			"red"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Блорт"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_12"
+		texture=6
+		evolution_mask=0
+		attachment=0
+		clothes=5
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_toxic_baths"
+		"civic_hive_devouring_swarm"
+	}
+	origin="origin_ork"
+}
+"Злые Солнца"=
+{
+	key="Злые Солнца"
+	ship_prefix=
+	{
+		key="Орк."
+	}
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_12"
+		species_name=
+		{
+			key="Орк"
+		}
+		species_plural=
+		{
+			key="Орки"
+		}
+		species_adjective=
+		{
+			key="Оркск"
+		}
+		name_list="FUN4"
+		gender=indeterminable
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_slow_learners"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Злые Солнца"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Злые Солнцаск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Orc_start"
+		"Orc_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="toxoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Orks"
+			file="EvilSunz.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="diagonal.dds"
+		}
+		colors=
+		{
+			"bright_yellow"
+			"red"
+			"red"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Блорт"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_12"
+		texture=6
+		evolution_mask=0
+		attachment=0
+		clothes=5
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_toxic_baths"
+		"civic_hive_devouring_swarm"
+	}
+	origin="origin_ork"
+}
+"Смерточерепа"=
+{
+	key="Смерточерепа"
+	ship_prefix=
+	{
+		key="Орк."
+	}
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_12"
+		species_name=
+		{
+			key="Орк"
+		}
+		species_plural=
+		{
+			key="Орки"
+		}
+		species_adjective=
+		{
+			key="Оркск"
+		}
+		name_list="FUN4"
+		gender=indeterminable
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_slow_learners"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Смерточерепа"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Смерточерепаск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Orc_start"
+		"Orc_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="toxoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Orks"
+			file="Deathskulls.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_50.dds"
+		}
+		colors=
+		{
+			"blue"
+			"light_turquoise"
+			"light_turquoise"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Блорт"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_12"
+		texture=6
+		evolution_mask=0
+		attachment=0
+		clothes=5
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_toxic_baths"
+		"civic_hive_devouring_swarm"
+	}
+	origin="origin_ork"
+}
+"Плохие Луны"=
+{
+	key="Плохие Луны"
+	ship_prefix=
+	{
+		key="Орк."
+	}
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_12"
+		species_name=
+		{
+			key="Орк"
+		}
+		species_plural=
+		{
+			key="Орки"
+		}
+		species_adjective=
+		{
+			key="Оркск"
+		}
+		name_list="FUN4"
+		gender=indeterminable
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_slow_learners"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Плохие Луны"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Плохие Луныск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Orc_start"
+		"Orc_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="toxoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Orks"
+			file="BadMoons.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
 			"yellow"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Блорт"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_12"
+		texture=6
+		evolution_mask=0
+		attachment=0
+		clothes=5
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_toxic_baths"
+		"civic_hive_devouring_swarm"
+	}
+	origin="origin_ork"
+}
+"Змеекусы"=
+{
+	key="Змеекусы"
+	ship_prefix=
+	{
+		key="Орк."
+	}
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_12"
+		species_name=
+		{
+			key="Орк"
+		}
+		species_plural=
+		{
+			key="Орки"
+		}
+		species_adjective=
+		{
+			key="Оркск"
+		}
+		name_list="FUN4"
+		gender=indeterminable
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_slow_learners"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+		trait="trait_noxious"
+	}
+	name=
+	{
+		key="Змеекусы"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Змеекусыск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Orc_start"
+		"Orc_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_savannah"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="toxoid_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Orks"
+			file="Snakebites.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors=
+		{
+			"orange"
 			"khaki_brown"
 			"black"
 			"null"
 		}
 	}
-	ruler = {
-		name = "FUN4_CHR_Glorp"
-		gender = indeterminable
-		portrait = "humanoid_hp_12"
-		texture = 6
-		attachment = 0
-		clothes = 5
-		trait = "trait_ruler_warlike"
-		leader_class = commander
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="Блорт"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_12"
+		texture=6
+		evolution_mask=0
+		attachment=0
+		clothes=5
+		trait="trait_ruler_warlike"
+		leader_class="commander"
 	}
-	advisor_voice_type = "l_militarist"
-	spawn_as_fallen = no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_strength_of_legions"
+		"civic_hive_toxic_baths"
+		"civic_hive_devouring_swarm"
+	}
+	origin="origin_ork"
 }
-Ownerships_Corinis = {
-	name = "Миры Генокрадов" #Владения Коринисов
-	adjective = "Генокрадск"
-	spawn_enabled = always
-	ignore_portrait_duplication = no
-	
-	ship_prefix = "Генокрад."
-	species = {
-		class = "NECROID"
-		portrait = "nec1"
-		name = "Генокрад"
-		plural = "Генокрады"
-		adjective = "Генокрадск"
-		name_list = "FUN2"
-		gender = male
+"Культ Четырехрукого Императора"=
+{
+	key="Культ Четырехрукого Императора"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
 		trait="trait_hive_mind"
 		trait="trait_extremely_adaptive"
 		trait="trait_talented"
@@ -4198,56 +5077,1312 @@ Ownerships_Corinis = {
 		trait="trait_strong"
 		trait="trait_sedentary"
 	}
-	
-	room = "organic_room"
-	
-	authority = "auth_hive_mind"
-	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_upkeep_twister" }
-	government = "gov_devouring_swarm"
-	
-	ethic = "ethic_gestalt_consciousness"
-	
-	# origin = "origin_default" #origin_progenitor_hive
-	origin = "origin_necrophage"
-	flags =  { Corinis_start Corinis_gos }
-	
-	planet_name= "Исис"
-	planet_class = "pc_alpine"
-	#initializer=""
-	system_name = "Имгарл"
-	
-	graphical_culture = "fungoid_01"
-	city_graphical_culture = "molluscoid_01"
-	
-	empire_flag = {
-		icon = {
-			category = "Warhammer"
-			file = "tyranid_emblem.dds"
+	name=
+	{
+		key="Культ Четырехрукого Императора"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Культ Четырехрукого Императораск"
+					literal=yes
+				}
+			}
+ 
 		}
-		background = {
-			category = "backgrounds"
-			file = "inverted_v.dds"
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="FourArmedEmperor.dds"
 		}
-		colors = {
-			"intense_purple"
-			"cloud_purple"
+		background=
+		{
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors=
+		{
+			"red"
+			"blue"
 			"black"
 			"null"
 		}
 	}
-	ruler = {
-		name = "Маргес"
-		gender = male
-		portrait = "nec1"
-		texture = 2
-		attachment = 0
-		clothes = 0
-		ruler_title = "Патриарх"
-		trait = "trait_ruler_logistic_understanding"
-		leader_class = commander
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
 	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_ascetic"
+	}
+	origin="origin_corinis"
+	flags =  { Corinis_start Corinis_gos }
+}
+"Культ Улья"=
+{
+	key="Культ Улья"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Культ Улья"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Культ Ульяск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
-	spawn_as_fallen = no
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="HiveCult.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="triangle_split.dds"
+		}
+		colors=
+		{
+			"shadow_teal"
+			"purple"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_strength_of_legions"
+	}
+	origin="origin_corinis"
+}
+"Ржавый Коготь"=
+{
+	key="Ржавый Коготь"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Ржавый Коготь"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Ржавый Коготьск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="RustedClaw.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="stripes.dds"
+		}
+		colors=
+		{
+			"dark_orange"
+			"yellow"
+			"null" #black
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_ascetic"
+	}
+	origin="origin_corinis"
+}
+"Зазубренная Шестерня"=
+{
+	key="Зазубренная Шестерня"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Зазубренная Шестерня"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Зазубренная Шестерняск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="BladedCog.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"dark_teal"
+			"red"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_ascensionists"
+	}
+	origin="origin_corinis"
+}
+"Нищие Принцы"=
+{
+	key="Нищие Принцы"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Нищие Принцы"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Нищие Принцыск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="PauperPrinces.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_12.dds"
+		}
+		colors=
+		{
+			"intense_orange"
+			"indigo"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_ascetic"
+	}
+	origin="origin_corinis"
+}
+"Кривая Спираль"=
+{
+	key="Кривая Спираль"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Кривая Спираль"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Кривая Спиральск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="TwistedHelix.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_1.dds"
+		}
+		colors=
+		{
+			"dark_teal"
+			"indigo"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_toxic_baths"
+	}
+	origin="origin_corinis"
+}
+"Культ Гидраик"=
+{
+	key="Культ Гидраик"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Культ Гидраик"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Культ Гидраикск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="SonsofJormungander.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"orange"
+			"blue"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_subspace_ephapse"
+		"civic_hive_hyperspace_specialty"
+	}
+	origin="origin_corinis"
+}
+"Звёздный Род"=
+{
+	key="Звёздный Род"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Звёздный Род"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Звёздный Родск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="Behemoid.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_42.dds"
+		}
+		colors=
+		{
+			"dark_blue"
+			"bright_yellow"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_divided_attention"
+		"civic_hive_one_mind"
+	}
+	origin="origin_corinis"
+}
+"Благословлённые Червяки"=
+{
+	key="Благословлённые Червяки"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Благословлённые Червяки"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Благословлённые Червякиск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="Innerwyrm.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors=
+		{
+			"blue"
+			"shadow_teal"
+			"null" #black
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_ascetic"
+		"civic_memory_vault_hive"
+	}
+	origin="origin_corinis"
+}
+"Глатчское Наставление"=
+{
+	key="Глатчское Наставление"
+	ship_prefix=
+	{
+		key="Генокрад."
+	}
+	species=
+	{
+		class="NECROID"
+		portrait="nec1"
+		species_name=
+		{
+			key="Генокрад"
+		}
+		species_plural=
+		{
+			key="Генокрады"
+		}
+		species_adjective=
+		{
+			key="Генокрадск"
+		}
+		name_list="FUN2"
+		gender=male
+		trait="trait_hive_mind"
+		trait="trait_extremely_adaptive"
+		trait="trait_talented"
+		trait="trait_quick_learners"
+		trait="trait_slow_breeders"
+		trait="trait_repugnant"
+		trait="trait_strong"
+		trait="trait_sedentary"
+	}
+	name=
+	{
+		key="Глатчское Наставление"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Глатчское Наставлениеск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_hive_mind"
+	flags=
+	{
+		"Corinis_start"
+		"Corinis_gos"
+	}
+	government="gov_devouring_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Не знаю"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_GeneStealer"
+			file="tyranid_emblem.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="stripes.dds"
+		}
+		colors=
+		{
+			"red_orange"
+			"white"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Маргес"
+			}
+		}
+		portrait="nec1"
+		texture=2
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		ruler_title=
+		{
+			key="Патриарх"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="organic_room"
+	spawn_enabled=always
+	ethic="ethic_gestalt_consciousness"
+	civics=
+	{
+		"civic_hive_devouring_swarm"
+		"civic_hive_natural_neural_network"
+		"civic_hive_upkeep_twister"
+	}
+	origin="origin_corinis"
 }
 Tsardom_Thokt = {
 	name = "Царство Токт"
@@ -5622,4 +7757,135 @@ Rak_Gol_Territory = {
 		"civic_memorialist"
 	}
 	origin="origin_default"
+}
+"Союз Куторов"=
+{
+	key="Союз Куторов"
+	ship_prefix=
+	{
+		key="Кутор."
+		literal=yes
+	}
+	species=
+	{
+		class="LITHOID"
+		portrait="lith5"
+		species_name=
+		{
+			key="Кутор"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Куторы"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Куторск"
+			literal=yes
+		}
+		name_list="LITHOID3"
+		gender=indeterminable
+		trait="trait_lithoid"
+		trait="trait_lithoid_volatile_excretions"
+		trait="trait_humanoid_existential_iteroparity"
+		trait="trait_repugnant"
+		trait="trait_quarrelsome"
+		trait="trait_unruly"
+		trait="trait_strong"
+		trait="trait_resilient"
+		trait="trait_nomadic"
+	}
+	name=
+	{
+		key="Союз Куторов"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Союз Куторовск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_imperial"
+	government="gov_blood_court"
+	advisor_voice_type="l_lithoid_vir"
+	planet_name=
+	{
+		key="Cythor"
+		literal=yes
+	}
+	planet_class="pc_arctic"
+	system_name=
+	{
+		key="Cythor"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="lithoid_01"
+	city_graphical_culture="lithoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="lithoid"
+			file="lithoid_10.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_53.dds"
+		}
+		colors=
+		{
+			"intense_orange"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=indeterminable
+		name=
+		{
+			full_names=
+			{
+				key="УхТент Ваййрр"
+				literal=yes
+			}
+		}
+		portrait="lith5"
+		texture=3
+		evolution_mask=0
+		attachment=0
+		clothes=0
+		trait="trait_ruler_industrialist"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="lithoid_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_fanatic_militarist"
+	civics=
+	{
+		"civic_fanatic_purifiers"
+		"civic_nationalistic_zeal"
+		"civic_scavengers"
+	}
+	origin="origin_lithoid"
 }
