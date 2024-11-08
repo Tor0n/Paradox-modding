@@ -992,6 +992,142 @@ Space_Wolves = {
 	}
 	origin="origin_astartes"
 }
+Black_Templars = {
+	key="Чёрные Храмовники"
+	ship_prefix=
+	{
+		key="Чёрн. Храмовник."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=male
+		trait="trait_perfected_genes"
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Чёрные Храмовники"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Чёрные Храмовникиск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_purity_order"
+	advisor_voice_type="l_xenophobe"
+	planet_name=
+	{
+		key="Исис"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Исис"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="aod_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer"
+			file="BlackTemplar.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_12.dds"
+		}
+		colors=
+		{
+			"white"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Хелбрехт"
+				literal=yes
+			}
+		}
+		portrait="imperium_male_03"
+		texture=0
+		evolution_mask=0
+		attachment=20
+		clothes=4
+		ruler_title=
+		{
+			key="Магистр"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Примарх"
+			literal=yes
+		}
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_honorbound_warriors_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_xenophobe"
+	ethic="ethic_fanatic_militarist"
+	civics=
+	{
+		"civic_fanatic_purifiers"
+		"civic_heroic_tales"
+		"civic_warrior_culture"
+	}
+	origin="origin_astartes"
+	flags = { Black_Templars_start Black_Templars_gos }
+}
 Manachean_Commonwealth = {
 	key="Манахейское Содружество"
 	ship_prefix=
@@ -2176,8 +2312,8 @@ Mechanicum_Cyclothrathe = {
 	{
 		icon=
 		{
-			category="toxoid"
-			file="toxoid_10.dds"
+			category="Warhammer_Chaos" 		#category="toxoid" 
+			file="flag_chaos_28.dds" 		#file="toxoid_10.dds" 
 		}
 		background=
 		{
@@ -2325,8 +2461,8 @@ Mechanicum_Samech = {
 	{
 		icon=
 		{
-			category="toxoid"
-			file="toxoid_03.dds"
+			category="Warhammer_Chaos"       #category="toxoid" 
+			file="flag_chaos_28.dds"	#file="toxoid_03.dds"
 		}
 		background=
 		{
@@ -3152,7 +3288,7 @@ Brothrhd_Knife = {
 		icon=
 		{
 			category="Warhammer_Chaos"
-			file="chaosun.dds"
+			file="flag_chaos_21.dds"				#file="chaosun.dds"	
 		}
 		background=
 		{
@@ -3570,7 +3706,7 @@ Stigmartus = {
 		icon=
 		{
 			category="Warhammer_Chaos"
-			file="chaosun.dds"
+			file="ChaosSpaceMarines.dds"           #chaosun.dds
 		}
 		background=
 		{
@@ -3779,8 +3915,8 @@ Penumbral = {
 	flags = { Penumbral_start Penumbral_gos }
 }
 Eldar_Empire = {
-	name = "Империя Эльдар"
-	adjective = "Империя Эльдар."
+	name = "Миры Азуриан"
+	adjective = "Миры Азурианск"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3807,7 +3943,7 @@ Eldar_Empire = {
 		trait="trait_resilient"
 	}
 	
-	room = "personality_hive_mind_room"
+	room = "personality_ruthless_capitalists_room"
 	
 	authority = "auth_oligarchic"
 	civics = { "civic_natural_design" "civic_heroic_tales" "civic_memory_vault" }
@@ -3848,12 +3984,12 @@ Eldar_Empire = {
 		}
 	}
 	ruler = {
-		name = "HUM1_CHR_Darmuga"
-		gender=female
-		portrait="eldar_female_02"
+		name = "Eldrad_Ulthran"
+		gender=male
+		portrait="eldar_male_03"
 		texture=1
 		evolution_mask=0
-		attachment=1
+		attachment=6
 		clothes=0
 		ruler_title = "Правитель"
 		ruler_title_female = "Правительница"
@@ -4238,8 +4374,7 @@ Tau_Federation = {
 	}
 	spawn_as_fallen=no
 }
-"Кровавые Топоры"=
-{
+Blood_Axes = {
 	key="Кровавые Топоры"
 	ship_prefix=
 	{
@@ -4341,7 +4476,7 @@ Tau_Federation = {
 		{
 			full_names=
 			{
-				key="Габоре"
+				key="Gorsnik_Magash"
 				literal=yes
 			}
 		}
@@ -4370,10 +4505,9 @@ Tau_Federation = {
 		"civic_hive_devouring_swarm"
 	}
 	origin="origin_ork"
-	flags = { Orc_start Orc_gos }
+	flags = { Blood_Axes_start Blood_Axes_gos }
 }
-"Гоффы"=
-{
+Goffs = {
 	key="Гоффы"
 	ship_prefix=
 	{
@@ -4475,15 +4609,15 @@ Tau_Federation = {
 		{
 			full_names=
 			{
-				key="Блорт"
+				key="Ghazghkull_Mag_Uruk_Thraka"
 				literal=yes
 			}
 		}
 		portrait="humanoid_hp_12"
-		texture=6
+		texture=1
 		evolution_mask=0
 		attachment=0
-		clothes=5
+		clothes=3
 		ruler_title=
 		{
 			key="Варбосс"
@@ -4504,9 +4638,9 @@ Tau_Federation = {
 		"civic_hive_devouring_swarm"
 	}
 	origin="origin_ork"
+	flags = { Goffs_start Goffs_gos }
 }
-"Злые Солнца"=
-{
+Evil_Sunz = {
 	key="Злые Солнца"
 	ship_prefix=
 	{
@@ -4608,15 +4742,15 @@ Tau_Federation = {
 		{
 			full_names=
 			{
-				key="Блорт"
+				key="Shazfrag"
 				literal=yes
 			}
 		}
 		portrait="humanoid_hp_12"
-		texture=6
+		texture=12
 		evolution_mask=0
 		attachment=0
-		clothes=5
+		clothes=2
 		ruler_title=
 		{
 			key="Варбосс"
@@ -4637,9 +4771,9 @@ Tau_Federation = {
 		"civic_hive_devouring_swarm"
 	}
 	origin="origin_ork"
+	flags = { Evil_Sunz_start Evil_Sunz_gos }
 }
-"Смерточерепа"=
-{
+Deathskulls = {
 	key="Смерточерепа"
 	ship_prefix=
 	{
@@ -4741,15 +4875,15 @@ Tau_Federation = {
 		{
 			full_names=
 			{
-				key="Блорт"
+				key="Finds_Bullets_He_Has_Not_Lost" #Там должно быть - и дословно можно переводить на любой язык
 				literal=yes
 			}
 		}
 		portrait="humanoid_hp_12"
-		texture=6
+		texture=9
 		evolution_mask=0
 		attachment=0
-		clothes=5
+		clothes=4
 		ruler_title=
 		{
 			key="Варбосс"
@@ -4770,9 +4904,9 @@ Tau_Federation = {
 		"civic_hive_devouring_swarm"
 	}
 	origin="origin_ork"
+	flags = { Deathskulls_start Deathskulls_gos }
 }
-"Плохие Луны"=
-{
+Bad_Moons = {
 	key="Плохие Луны"
 	ship_prefix=
 	{
@@ -4835,13 +4969,13 @@ Tau_Federation = {
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Ponwander"
+		key="Cilix"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Ponwander"
+		key="Cilix"
 		literal=yes
 	}
 	initializer=""
@@ -4874,15 +5008,15 @@ Tau_Federation = {
 		{
 			full_names=
 			{
-				key="Блорт"
+				key="Nazdreg_Ug_Urdgrub"
 				literal=yes
 			}
 		}
 		portrait="humanoid_hp_12"
-		texture=6
+		texture=19
 		evolution_mask=0
 		attachment=0
-		clothes=5
+		clothes=8
 		ruler_title=
 		{
 			key="Варбосс"
@@ -4903,9 +5037,9 @@ Tau_Federation = {
 		"civic_hive_devouring_swarm"
 	}
 	origin="origin_ork"
+	flags = { Bad_Moons_start Bad_Moons_gos }
 }
-"Змеекусы"=
-{
+Snakebites = {
 	key="Змеекусы"
 	ship_prefix=
 	{
@@ -5007,15 +5141,15 @@ Tau_Federation = {
 		{
 			full_names=
 			{
-				key="Блорт"
+				key="Grudbolg"
 				literal=yes
 			}
 		}
 		portrait="humanoid_hp_12"
-		texture=6
+		texture=7
 		evolution_mask=0
 		attachment=0
-		clothes=5
+		clothes=7
 		ruler_title=
 		{
 			key="Варбосс"
@@ -5036,6 +5170,7 @@ Tau_Federation = {
 		"civic_hive_devouring_swarm"
 	}
 	origin="origin_ork"
+	flags = { Snakebites_start Snakebites_gos }
 }
 Cult_Four_ArmEmpr = {
 	key="Культ Четырехрукого Императора"

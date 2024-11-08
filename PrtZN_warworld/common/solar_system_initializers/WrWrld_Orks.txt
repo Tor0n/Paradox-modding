@@ -350,7 +350,7 @@ Calverna_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
+		starting_planet = yes
 		flags = { Orc_world }
 		
 		init_effect = {
@@ -681,7 +681,7 @@ Cilix_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos_station }
+	flags = { Bad_Moons_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -727,7 +727,7 @@ Cilix_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
+		starting_planet = yes
 		flags = { Orc_world }
 		
 		init_effect = {
@@ -1119,7 +1119,7 @@ Hephastine_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
+		starting_planet = yes
 		flags = { Orc_world }
 		
 		init_effect = {
@@ -1171,7 +1171,7 @@ Vacuna_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos }
+	flags = { Snakebites_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1315,7 +1315,7 @@ Gorkamorka_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
+		starting_planet = yes
 		flags = { Orc_world }
 		
 		init_effect = {
@@ -1413,7 +1413,7 @@ Charadon_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		#change_orbit = 4
+		starting_planet = yes
 		flags = { Orc_world }
 		
 		init_effect = {
@@ -1465,7 +1465,7 @@ Alsanta_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos_station }
+	flags = { Deathskulls_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1563,7 +1563,7 @@ Mekwod_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos }
+	flags = { Deathskulls_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1760,7 +1760,7 @@ Eydolim_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos }
+	flags = { Deathskulls_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2175,7 +2175,7 @@ Ponwander_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos }
+	flags = { Bad_Moons_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2424,7 +2424,7 @@ Grave_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos }
+	flags = { Snakebites_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3183,7 +3183,7 @@ Aspen_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Orc_gos }
+	flags = { Snakebites_gos }
 
 	max_instances = 1
 	init_effect = { }
