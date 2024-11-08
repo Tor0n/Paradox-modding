@@ -9,7 +9,7 @@ Vigilance_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos_station }
+	flags = { Cult_Hydraic_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -40,7 +40,97 @@ Vigilance_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 22
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
+		
+		flags = { Corinis_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+NewGidlam_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Hivecult_gos_station }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -99,7 +189,7 @@ Kendrax_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos_station }
+	flags = { Pauper_Princes_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -130,7 +220,7 @@ Kendrax_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 22
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -189,7 +279,7 @@ Ghosar_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos_station }
+	flags = { Cult_Four_ArmEmpr_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -220,7 +310,7 @@ Ghosar_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 20
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -279,7 +369,7 @@ Feinminster_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos_station }
+	flags = { Bladed_Cog_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -310,7 +400,7 @@ Feinminster_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 22
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -369,7 +459,7 @@ Uralek_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos }
+	flags = { Twisted_Helix_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -400,7 +490,7 @@ Uralek_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -459,7 +549,7 @@ Schidelgheist_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos }
+	flags = { Cult_Four_ArmEmpr_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -549,7 +639,7 @@ Gleptid_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos_station }
+	flags = { Star_Kindred_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -580,7 +670,7 @@ Gleptid_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -639,7 +729,7 @@ Vengeance_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos }
+	flags = { Rusted_Claw_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -670,7 +760,7 @@ Vengeance_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 20
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -729,7 +819,7 @@ Quistorol_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Corinis_gos_station }
+	flags = { Blessed_Wormlings_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -760,7 +850,7 @@ Quistorol_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 22
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Corinis_world }
 		
@@ -819,7 +909,7 @@ Rapture_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Corinis_gos }
+	flags = { Cult_Hydraic_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -909,7 +999,7 @@ Bellephon_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Corinis_gos }
+	flags = { Star_Kindred_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -999,187 +1089,7 @@ Dragon_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Corinis_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
-Elusia_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Corinis_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
-Coelia_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Corinis_gos }
+	flags = { Star_Kindred_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1269,7 +1179,7 @@ Black_nebula_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Corinis_gos_station }
+	flags = { Rusted_Claw_gos_station }
 
 	max_instances = 1
 	init_effect = { }

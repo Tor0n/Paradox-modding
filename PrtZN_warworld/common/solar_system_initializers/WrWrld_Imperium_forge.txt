@@ -277,7 +277,7 @@ Agripinaa_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Imperium_gos }
+	flags = { Mechanicus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -310,7 +310,7 @@ Agripinaa_initializer = {
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Forge_world }
+		flags = { Mechanicus_Forge_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -365,7 +365,7 @@ Voss_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Imperium_gos }
+	flags = { Mechanicus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -398,7 +398,7 @@ Voss_initializer = {
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Forge_world }
+		flags = { Mechanicus_Forge_world }
 		
 		init_effect = {
 			prevent_anomaly = yes

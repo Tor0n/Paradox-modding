@@ -3820,7 +3820,7 @@ Eldar_Empire = {
 	
 	# origin = "origin_void_dwellers"
 	origin = "origin_eldar"
-	flags={ Eldar_start Eldar_gos class_4_singularity_can_build }
+	flags={ Eldar_start Eldar_gos }
 	#class_4_singularity_can_build для здания на 250 энергии
 	planet_name = "Зандрос"
 	planet_class = "pc_continental"
@@ -3925,23 +3925,17 @@ Eldar_Empire = {
 		}
 	}
 	authority="auth_dictatorial"
-	flags=
-	{
-		"Eldar_start"
-		"Eldar_gos"
-		"class_4_singularity_can_build"
-	}
 	government="gov_theocratic_dictatorship"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Iynden"
 		literal=yes
 	}
 	planet_class="pc_continental"
 	system_name=
 	{
-		key="Не знаю"
+		key="Iynden"
 		literal=yes
 	}
 	initializer=""
@@ -4304,22 +4298,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Orc_start"
-		"Orc_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Calverna"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Не знаю"
+		key="Calverna"
 		literal=yes
 	}
 	initializer=""
@@ -4361,6 +4350,11 @@ Tau_Federation = {
 		evolution_mask=0
 		attachment=0
 		clothes=5
+		ruler_title=
+		{
+			key="Варбосс"
+			literal=yes
+		}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -4438,22 +4432,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Orc_start"
-		"Orc_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Jurn"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Не знаю"
+		key="Jurn"
 		literal=yes
 	}
 	initializer=""
@@ -4495,6 +4484,11 @@ Tau_Federation = {
 		evolution_mask=0
 		attachment=0
 		clothes=5
+		ruler_title=
+		{
+			key="Варбосс"
+			literal=yes
+		}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -4571,22 +4565,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Orc_start"
-		"Orc_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Hephastine"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Не знаю"
+		key="Hephastine"
 		literal=yes
 	}
 	initializer=""
@@ -4628,6 +4617,11 @@ Tau_Federation = {
 		evolution_mask=0
 		attachment=0
 		clothes=5
+		ruler_title=
+		{
+			key="Варбосс"
+			literal=yes
+		}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -4704,22 +4698,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Orc_start"
-		"Orc_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Charadon"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Не знаю"
+		key="Charadon"
 		literal=yes
 	}
 	initializer=""
@@ -4761,6 +4750,11 @@ Tau_Federation = {
 		evolution_mask=0
 		attachment=0
 		clothes=5
+		ruler_title=
+		{
+			key="Варбосс"
+			literal=yes
+		}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -4837,22 +4831,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Orc_start"
-		"Orc_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Ponwander"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Не знаю"
+		key="Ponwander"
 		literal=yes
 	}
 	initializer=""
@@ -4894,6 +4883,11 @@ Tau_Federation = {
 		evolution_mask=0
 		attachment=0
 		clothes=5
+		ruler_title=
+		{
+			key="Варбосс"
+			literal=yes
+		}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -4970,22 +4964,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Orc_start"
-		"Orc_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_militarist"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Gorkamorka"
 		literal=yes
 	}
 	planet_class="pc_savannah"
 	system_name=
 	{
-		key="Не знаю"
+		key="Gorkamorka"
 		literal=yes
 	}
 	initializer=""
@@ -5027,6 +5016,11 @@ Tau_Federation = {
 		evolution_mask=0
 		attachment=0
 		clothes=5
+		ruler_title=
+		{
+			key="Варбосс"
+			literal=yes
+		}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -5043,8 +5037,7 @@ Tau_Federation = {
 	}
 	origin="origin_ork"
 }
-"Культ Четырехрукого Императора"=
-{
+Cult_Four_ArmEmpr = {
 	key="Культ Четырехрукого Императора"
 	ship_prefix=
 	{
@@ -5100,22 +5093,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Ghosar"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Ghosar"
 		literal=yes
 	}
 	initializer=""
@@ -5176,10 +5164,9 @@ Tau_Federation = {
 		"civic_hive_ascetic"
 	}
 	origin="origin_corinis"
-	flags =  { Corinis_start Corinis_gos }
+	flags =  { Cult_Four_ArmEmpr_start Cult_Four_ArmEmpr_gos }
 }
-"Культ Улья"=
-{
+Hivecult = {
 	key="Культ Улья"
 	ship_prefix=
 	{
@@ -5235,22 +5222,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="New Gidlam"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="New Gidlam"
 		literal=yes
 	}
 	initializer=""
@@ -5311,9 +5293,9 @@ Tau_Federation = {
 		"civic_hive_strength_of_legions"
 	}
 	origin="origin_corinis"
+	flags =  { Hivecult_start Hivecult_gos }
 }
-"Ржавый Коготь"=
-{
+Rusted_Claw = {
 	key="Ржавый Коготь"
 	ship_prefix=
 	{
@@ -5369,22 +5351,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Vengeance"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Vengeance"
 		literal=yes
 	}
 	initializer=""
@@ -5445,9 +5422,9 @@ Tau_Federation = {
 		"civic_hive_ascetic"
 	}
 	origin="origin_corinis"
+	flags =  { Rusted_Claw_start Rusted_Claw_gos }
 }
-"Зазубренная Шестерня"=
-{
+Bladed_Cog = {
 	key="Зазубренная Шестерня"
 	ship_prefix=
 	{
@@ -5503,22 +5480,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Feinminster"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Feinminster"
 		literal=yes
 	}
 	initializer=""
@@ -5579,9 +5551,9 @@ Tau_Federation = {
 		"civic_hive_ascensionists"
 	}
 	origin="origin_corinis"
+	flags =  { Bladed_Cog_start Bladed_Cog_gos }
 }
-"Нищие Принцы"=
-{
+Pauper_Princes = {
 	key="Нищие Принцы"
 	ship_prefix=
 	{
@@ -5637,22 +5609,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Kendrax"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Kendrax"
 		literal=yes
 	}
 	initializer=""
@@ -5713,9 +5680,9 @@ Tau_Federation = {
 		"civic_hive_ascetic"
 	}
 	origin="origin_corinis"
+	flags =  { Pauper_Princes_start Pauper_Princes_gos }
 }
-"Кривая Спираль"=
-{
+Twisted_Helix = {
 	key="Кривая Спираль"
 	ship_prefix=
 	{
@@ -5771,22 +5738,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Uralek"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Uralek"
 		literal=yes
 	}
 	initializer=""
@@ -5847,9 +5809,9 @@ Tau_Federation = {
 		"civic_hive_toxic_baths"
 	}
 	origin="origin_corinis"
+	flags =  { Twisted_Helix_start Twisted_Helix_gos }
 }
-"Культ Гидраик"=
-{
+Cult_Hydraic = {
 	key="Культ Гидраик"
 	ship_prefix=
 	{
@@ -5905,22 +5867,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Vigilance"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Vigilance"
 		literal=yes
 	}
 	initializer=""
@@ -5981,9 +5938,9 @@ Tau_Federation = {
 		"civic_hive_hyperspace_specialty"
 	}
 	origin="origin_corinis"
+	flags =  { Cult_Hydraic_start Cult_Hydraic_gos }
 }
-"Звёздный Род"=
-{
+Star_Kindred = {
 	key="Звёздный Род"
 	ship_prefix=
 	{
@@ -6039,22 +5996,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Gleptid"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Gleptid"
 		literal=yes
 	}
 	initializer=""
@@ -6115,9 +6067,9 @@ Tau_Federation = {
 		"civic_hive_one_mind"
 	}
 	origin="origin_corinis"
+	flags =  { Star_Kindred_start Star_Kindred_gos }
 }
-"Благословлённые Червяки"=
-{
+Blessed_Wormlings = {
 	key="Благословлённые Червяки"
 	ship_prefix=
 	{
@@ -6173,22 +6125,17 @@ Tau_Federation = {
 		}
 	}
 	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
 	government="gov_devouring_swarm"
 	advisor_voice_type="l_hivemind"
 	planet_name=
 	{
-		key="Не знаю"
+		key="Quistorol"
 		literal=yes
 	}
 	planet_class="pc_alpine"
 	system_name=
 	{
-		key="Не знаю"
+		key="Quistorol"
 		literal=yes
 	}
 	initializer=""
@@ -6249,140 +6196,7 @@ Tau_Federation = {
 		"civic_memory_vault_hive"
 	}
 	origin="origin_corinis"
-}
-"Глатчское Наставление"=
-{
-	key="Глатчское Наставление"
-	ship_prefix=
-	{
-		key="Генокрад."
-	}
-	species=
-	{
-		class="NECROID"
-		portrait="nec1"
-		species_name=
-		{
-			key="Генокрад"
-		}
-		species_plural=
-		{
-			key="Генокрады"
-		}
-		species_adjective=
-		{
-			key="Генокрадск"
-		}
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
-	}
-	name=
-	{
-		key="Глатчское Наставление"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Глатчское Наставлениеск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_hive_mind"
-	flags=
-	{
-		"Corinis_start"
-		"Corinis_gos"
-	}
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name=
-	{
-		key="Не знаю"
-		literal=yes
-	}
-	planet_class="pc_alpine"
-	system_name=
-	{
-		key="Не знаю"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer_GeneStealer"
-			file="tyranid_emblem.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="stripes.dds"
-		}
-		colors=
-		{
-			"red_orange"
-			"white"
-			"black"
-			"null"
-		}
-	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Маргес"
-			}
-		}
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title=
-		{
-			key="Патриарх"
-			literal=yes
-		}
-		trait="trait_ruler_logistic_understanding"
-		leader_class="commander"
-	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics=
-	{
-		"civic_hive_devouring_swarm"
-		"civic_hive_natural_neural_network"
-		"civic_hive_upkeep_twister"
-	}
-	origin="origin_corinis"
+	flags =  { Blessed_Wormlings_start Blessed_Wormlings_gos }
 }
 Tsardom_Thokt = {
 	name = "Царство Токт"
@@ -7758,8 +7572,7 @@ Rak_Gol_Territory = {
 	}
 	origin="origin_default"
 }
-"Союз Куторов"=
-{
+Cythor_Fiends = {
 	key="Союз Куторов"
 	ship_prefix=
 	{
@@ -7888,4 +7701,5 @@ Rak_Gol_Territory = {
 		"civic_scavengers"
 	}
 	origin="origin_lithoid"
+	flags = { Cythor_Fiends_start Cythor_Fiends_gos }
 }
