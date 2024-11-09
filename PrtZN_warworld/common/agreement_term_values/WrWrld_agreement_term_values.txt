@@ -86,6 +86,34 @@ specialist_mechanicus = {
 	}
 }
 
+specialist_imperium_vassal = {
+	term = specialist_type
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_spiritualist = yes }
+		}
+		loyalty_change = 15
+		ai_acceptance = {
+			subject = 5
+		}
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = { is_authoritarian = yes }
+		}
+		loyalty_change = 50
+		ai_acceptance = {
+			subject = 30
+		}
+	}
+	activate_effect = {
+		convert_to_specialist = specialist_imperium_vassal
+	}
+	potential = {
+		agreement_preset = preset_imperium_vassal
+	}
+}
+
 #########################
 # RESOURCE CONTRIBUTION #
 #########################

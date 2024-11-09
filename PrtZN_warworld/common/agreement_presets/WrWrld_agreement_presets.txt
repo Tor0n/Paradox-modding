@@ -543,3 +543,136 @@ preset_mechanicus = {
 		}
 	}
 }
+
+preset_imperium_vassal = {
+	specialist_type = specialist_imperium_vassal
+	term_data = {
+		resource_terms = {
+			{
+				key = resource_subsidies_basic
+				value = 0.00
+			}
+			{
+				key = resource_subsidies_energy
+				value = 0.00
+			}
+			{
+				key = resource_subsidies_food
+				value = 0.00
+			}
+			{
+				key = resource_subsidies_advanced
+				value = 0.00
+			}
+			{
+				key = resource_subsidies_alloys
+				value = 0.00
+			}
+			{
+				key = resource_subsidies_strategic 
+				value = 0.00
+			}
+			{
+				key = resource_subsidies_unity
+				value = 0.00
+			}
+		}
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = specialist_imperium_vassal
+			}
+			{
+				key = subject_integration
+				value = subject_can_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_not_do_diplomacy
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_all
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_all
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_1
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+			{
+				key = subject_sensors
+				value = subject_gets_sensors
+			}
+		}
+	}
+
+	overlord_weight = {
+		base =  @specialist_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_spiritualist = yes
+		}
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_authoritarian = yes
+		}
+		modifier = {
+			add = -500
+			is_egalitarian = yes
+		}
+		# modifier = {
+			# factor = 0.5
+			# has_specialist_subject_type = { TYPE = imperium_vassal }
+			# NOT = { FROM = { is_specialist_subject_type = { TYPE = imperium_vassal } } }
+		# }
+		modifier = {
+			factor = 1.5
+			FROM = { is_specialist_subject_type = { TYPE = imperium_vassal } }
+		}
+	}
+
+	subject_weight = {
+		base =  @specialist_subject_base_acceptance_value
+		modifier = {
+			add = @specialist_aligned_ethics_value
+			is_authoritarian = yes
+		}
+		modifier = {
+			add = @specialist_unaligned_ethics_value
+			is_egalitarian = yes
+		}
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		# NOR = {
+			# has_civic = civic_inwards_perfection
+			# FROM = { has_civic = civic_inwards_perfection }
+		# }
+		OR = {
+			FROM = { has_origin = origin_imperial_vassal_overlord }
+			is_specialist_subject_type = { TYPE = imperium_vassal }
+			has_country_flag = specialistion_subject_conversion_flag
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_origin = origin_enlightened
+		}
+	}
+}

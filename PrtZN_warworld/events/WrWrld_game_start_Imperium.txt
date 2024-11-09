@@ -4149,6 +4149,12 @@ country_event = { #Manachean_Commonwealth
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		add_resource = { influence = 400 }
+		
+		set_subject_of = {
+			who = event_target:Imperium_evnt_trgt_country
+			preset = preset_imperium_vassal
+		}
+		
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2

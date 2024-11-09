@@ -26,7 +26,7 @@ astartes_1_modifier = {
 				ethics = no
 				government = no
 			}
-			room_name_override = ""
+			#room_name_override = ""
 		}
 	}
 	deactivate_effect = {
@@ -127,7 +127,7 @@ ecclesiarchy_1_modifier = {
 				ethics = no
 				government = no
 			}
-			room_name_override = ""
+			#room_name_override = ""
 		}
 	}
 	deactivate_effect = {
@@ -224,7 +224,7 @@ mechanicus_1_modifier = {
 				ethics = no
 				government = no
 			}
-			room_name_override = ""
+			#room_name_override = ""
 		}
 	}
 	deactivate_effect = {
@@ -287,5 +287,66 @@ mechanicus_3_penalties = {
 	subject_modifier = {
 		#country_minerals_produces_mult = -0.3
 		#country_food_produces_mult = -0.40
+	}
+}
+
+##############################
+# IMPERIUM VASSAL SPECIALIST #
+##############################
+
+imperium_vassal_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		monthly_loyalty = 1
+	}
+	
+	activate_effect = {
+		target = {
+			store_country_backup_data = {
+				flag = no
+				room = yes
+				name = no
+				ethics = no
+				government = no
+			}
+			#room_name_override = ""
+		}
+	}
+	deactivate_effect = {
+		target = {
+			restore_country_backup_data = yes
+		}
+	}
+}
+
+imperium_vassal_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+	}
+}
+
+imperium_vassal_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		monthly_loyalty = 2
+	}
+}
+
+imperium_vassal_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+	}
+}
+
+imperium_vassal_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		monthly_loyalty = 3
+	}
+}
+
+imperium_vassal_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
 	}
 }

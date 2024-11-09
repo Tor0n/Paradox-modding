@@ -6,7 +6,7 @@
 specialist_astartes = {
 	icon = "GFX_diplomacy_specialist_subject_astartes"
 	icon_large = "GFX_diplomacy_specialist_subject_astartes_large"
-	preferred_ethic = ethic_spiritualist
+	preferred_ethic = ethic_militarist
 	base_conversion_time = @specialist_base_conversion_time
 	
 	on_progress_complete = {
@@ -108,6 +108,43 @@ specialist_mechanicus = {
 			perks = {
 				mechanicus_3_modifier
 				mechanicus_3_penalties
+				
+			}
+		}
+	}
+}
+
+specialist_imperium_vassal = {
+	icon = "GFX_diplomacy_specialist_subject_imperium_vassal"
+	icon_large = "GFX_diplomacy_specialist_subject_imperium_vassal_large"
+	preferred_ethic = ethic_authoritarian
+	base_conversion_time = @specialist_base_conversion_time
+	
+	on_progress_complete = {
+	}
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				imperium_vassal_1_modifier
+				imperium_vassal_1_penalties
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				imperium_vassal_2_modifier
+				imperium_vassal_2_penalties
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				imperium_vassal_3_modifier
+				imperium_vassal_3_penalties
 				
 			}
 		}
