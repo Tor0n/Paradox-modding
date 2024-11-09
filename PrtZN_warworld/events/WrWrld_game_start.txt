@@ -2045,6 +2045,9 @@ country_event = { #Genestealer - Коринис
 		owner = {
 			country_event = { id = WrWrld_game_start.103 days = 4 }
 		}
+		owner = {
+			country_event = { id = WrWrld_game_start.367 days = 3 }
+		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
 		add_resource = { food = 12500 }
@@ -4530,6 +4533,91 @@ country_event = { #Genestealer
 			target = event_target:Sarkoni_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Феда генокрадов
+	id = WrWrld_game_start.367
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Hivecult_gos
+	}
+	immediate = {
+		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_evnt_trgt_country
+		establish_communications_no_message = event_target:Hivecult_evnt_trgt_country
+		establish_communications_no_message = event_target:Bladed_Cog_evnt_trgt_country
+		establish_communications_no_message = event_target:Rusted_Claw_evnt_trgt_country
+		establish_communications_no_message = event_target:Pauper_Princes_evnt_trgt_country
+		establish_communications_no_message = event_target:Twisted_Helix_evnt_trgt_country
+		establish_communications_no_message = event_target:Cult_Hydraic_evnt_trgt_country
+		establish_communications_no_message = event_target:Blessed_Wormlings_evnt_trgt_country
+		establish_communications_no_message = event_target:Star_Kindred_evnt_trgt_country
+		
+		federation = {
+			set_federation_type = military_federation #military_federation
+			set_federation_leader = root
+			set_name = random
+			#set_federation_law = succession_term_years_20
+			add_federation_experience = 600
+			add_cohesion = 100
+		}
+		event_target:Cult_Four_ArmEmpr_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Pauper_Princes_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Cult_Hydraic_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Star_Kindred_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Blessed_Wormlings_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Twisted_Helix_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Bladed_Cog_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Rusted_Claw_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
 		}
 	}
 }
