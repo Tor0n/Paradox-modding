@@ -250,7 +250,7 @@ Ecclesiarchy = {
 		icon=
 		{
 			category="Warhammer"
-			file="AdeptaSororitas.dds"
+			file="AdeptaSororitas2.dds"
 		}
 		background=
 		{
@@ -387,7 +387,7 @@ Ultramarines = {
 		icon=
 		{
 			category="Warhammer"
-			file="Astartes_13.dds"
+			file="game-40k-ultramarines.dds"
 		}
 		background=
 		{
@@ -443,6 +443,144 @@ Ultramarines = {
 		"civic_fanatic_purifiers"
 		"civic_philosopher_king"
 		"civic_distinguished_admiralty"
+	}
+	origin="origin_astartes"
+}
+Dark_Angels = {
+	key="Тёмные Ангелы"
+	ship_prefix=
+	{
+		key="Тёмн. Ангел."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=male
+		trait="trait_perfected_genes"
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Тёмные Ангелы"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Тёмные Ангелыск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	flags = { Dark_Angels_start Dark_Angels_gos }
+	government="gov_purity_order"
+	advisor_voice_type="l_evil_corp"
+	planet_name=
+	{
+		key="Рок"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Рок"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="aod_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer"
+			file="game-40k-dark-angels.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_29.dds"
+		}
+		colors=
+		{
+			"dark_green"
+			"shadow_green"
+			"shadow_green"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Азраил"
+				literal=yes
+			}
+		}
+		portrait="imperium_male_01"
+		texture=0
+		evolution_mask=0
+		attachment=20
+		clothes=5
+		ruler_title=
+		{
+			key="Магистр"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Примарх"
+			literal=yes
+		}
+		trait="leader_trait_spark_of_genius"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_honorbound_warriors_room"
+	spawn_enabled=always
+	ethic="ethic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	civics=
+	{
+		"civic_fanatic_purifiers"
+		"civic_exalted_priesthood"
+		"civic_memory_vault"
 	}
 	origin="origin_astartes"
 }
@@ -660,7 +798,7 @@ Blood_Angels = {
 		icon=
 		{
 			category="Warhammer"
-			file="Astartes_9.dds"
+			file="game-40k-blood-dragons1.dds"
 		}
 		background=
 		{
@@ -1127,6 +1265,550 @@ Black_Templars = {
 	}
 	origin="origin_astartes"
 	flags = { Black_Templars_start Black_Templars_gos }
+}
+Segmentum_Obscurus = {
+	key="Сегментум Обскурус"
+	ship_prefix=
+	{
+		key="Обскурус."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Сегментум Обскурус"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Сегментум Обскурусск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_purity_order"
+	advisor_voice_type="l_xenophobe"
+	planet_name=
+	{
+		key="Фенксворлд"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Фенксворлд"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="wain_02"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer"
+			file="imperium_emblem.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors=
+		{
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Нумелей"
+				literal=yes
+			}
+		}
+		portrait="imperium_male_01"
+		texture=0
+		evolution_mask=0
+		attachment=31
+		clothes=10
+		ruler_title=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_democratic_crusaders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_dystopian_society"
+		"civic_fanatic_purifiers"
+		"civic_distinguished_admiralty"
+	}
+	origin="origin_imperium"
+	flags = { Segmentum_Obscurus_start Segmentum_Obscurus_gos }
+}
+Ultima_Segmentum = {
+	key="Сегментум Ультима"
+	ship_prefix=
+	{
+		key="Ультима."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Сегментум Ультима"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Сегментум Ультимаск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_purity_order"
+	advisor_voice_type="l_xenophobe"
+	planet_name=
+	{
+		key="Cephian"			#Lastrati
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Cephian"			#Lastrati
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="wain_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer"
+			file="imperium_emblem.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_29.dds"
+		}
+		colors=
+		{
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Мациний"
+				literal=yes
+			}
+		}
+		portrait="imperium_male_04"
+		texture=0
+		evolution_mask=0
+		attachment=46
+		clothes=11
+		ruler_title=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_democratic_crusaders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_dystopian_society"
+		"civic_fanatic_purifiers"
+		"civic_distinguished_admiralty"
+	}
+	origin="origin_imperium"
+	flags = { Ultima_Segmentum_start Ultima_Segmentum_gos }
+}
+Segmentum_Tempestus = {
+	key="Сегментум Темпестус"
+	ship_prefix=
+	{
+		key="Темпестус."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Сегментум Темпестус"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Сегментум Темпестусск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_purity_order"
+	advisor_voice_type="l_xenophobe"
+	planet_name=
+	{
+		key="Targus"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Targus"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer"
+			file="imperium_emblem.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="horizontal.dds"
+		}
+		colors=
+		{
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=female
+		name=
+		{
+			full_names=
+			{
+				key="Герминия"
+				literal=yes
+			}
+		}
+		portrait="imperium_female_03"
+		texture=0
+		evolution_mask=0
+		attachment=2
+		clothes=0
+		ruler_title=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_democratic_crusaders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_dystopian_society"
+		"civic_fanatic_purifiers"
+		"civic_distinguished_admiralty"
+	}
+	origin="origin_imperium"
+	flags = { Segmentum_Tempestus_start Segmentum_Tempestus_gos }
+}
+Eastern_Fringe = {
+	key="Домен Востока"
+	ship_prefix=
+	{
+		key="Домен Востока."
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="imperium"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_humans1"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_humans1"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_humans1"
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_extremely_adaptive"
+		trait="trait_unruly"
+		trait="trait_deviants"
+		trait="trait_decadent"
+		trait="trait_resilient"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Домен Востока"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Домен Востокаск"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	government="gov_purity_order"
+	advisor_voice_type="l_xenophobe"
+	planet_name=
+	{
+		key="Ichar"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Ichar"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="gothic_01"
+	city_graphical_culture="humanoid_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer"
+			file="imperium_emblem.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="diagonal.dds"
+		}
+		colors=
+		{
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Тамбабве"
+				literal=yes
+			}
+		}
+		portrait="imperium_male_05"
+		texture=0
+		evolution_mask=0
+		attachment=10
+		clothes=12
+		ruler_title=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Губернатор"
+			literal=yes
+		}
+		trait="trait_ruler_logistic_understanding"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_democratic_crusaders_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	civics=
+	{
+		"civic_dystopian_society"
+		"civic_fanatic_purifiers"
+		"civic_distinguished_admiralty"
+	}
+	origin="origin_imperium"
+	flags = { Eastern_Fringe_start Eastern_Fringe_gos }
 }
 Manachean_Commonwealth = {
 	key="Манахейское Содружество"
@@ -2462,12 +3144,12 @@ Mechanicum_Samech = {
 		icon=
 		{
 			category="Warhammer_Chaos"       #category="toxoid" 
-			file="flag_chaos_28.dds"	#file="toxoid_03.dds"
+			file="flag_chaos_28.dds"		 #file="toxoid_03.dds"
 		}
 		background=
 		{
-			category="backgrounds"
-			file="flag_BG_32.dds"
+			category="backgrounds"			#category="backgrounds"
+			file="flag_BG_19.dds"			#file="flag_BG_32.dds"	
 		}
 		colors=
 		{
