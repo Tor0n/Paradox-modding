@@ -1039,6 +1039,7 @@ country_event = { #Mechanicus
 			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
 			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
 			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_antimatter_power } #Реактор 4
 			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
 			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
 			give_technology = { tech = tech_shields_2 message = no } #Щиты 2
@@ -1066,8 +1067,12 @@ country_event = { #Mechanicus
 			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
 			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
 			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_armor_hardeners_1 }
+			give_technology = { tech = tech_shield_rechargers_1 }
+			give_technology = { tech = tech_shield_hardeners_1 }
 			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
 			#give_technology = { tech = tech_thrusters_3 message = no }
+			give_technology = { tech = tech_sensors_2 }
 			
 			give_technology = { tech = tech_starbase_3 message = no }
 			give_technology = { tech = tech_starbase_4 message = no }
@@ -4149,12 +4154,6 @@ country_event = { #Manachean_Commonwealth
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		add_resource = { influence = 400 }
-		
-		set_subject_of = {
-			who = event_target:Imperium_evnt_trgt_country
-			preset = preset_imperium_vassal
-		}
-		
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -5335,7 +5334,7 @@ country_event = { #Imperium
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
-			preset = preset_scion
+			preset = preset_imperium_vassal
 		}
 	}
 }
