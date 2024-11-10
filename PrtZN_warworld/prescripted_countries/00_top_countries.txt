@@ -8391,133 +8391,77 @@ Rak_Gol_Territory = {
 	origin="origin_default"
 }
 Cythor_Fiends = {
-	key="Союз Куторов"
-	ship_prefix=
-	{
-		key="Кутор."
-		literal=yes
+	name = "name_cythor"
+	adjective = "PRESCRIPTED_adjective_cythor"
+	ignore_portrait_duplication = no
+	spawn_enabled = always
+	
+	ship_prefix = "ship_prefix_сythor"
+	species= {
+		class = "LITHOID"
+		portrait = "lith5"
+		species_name = "PRESCRIPTED_species_name_сythor"
+		species_plural = "PRESCRIPTED_species_plural_сythor"
+		species_adjective = "PRESCRIPTED_species_adjective_сythor"
+		name_list = "LITHOID3"
+		gender = indeterminable
+		trait = "trait_lithoid"
+		trait = "trait_lithoid_volatile_excretions"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_repugnant"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_nomadic"
 	}
-	species=
-	{
-		class="LITHOID"
-		portrait="lith5"
-		species_name=
-		{
-			key="Кутор"
-			literal=yes
+	room = "lithoid_room"
+	
+	authority = "auth_imperial"
+	civics =  { "civic_fanatic_purifiers" "civic_nationalistic_zeal" "civic_scavengers" }
+	government = "gov_blood_court"
+	origin = "origin_lithoid"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Cythor_Fiends_start Cythor_Fiends_gos }
+	
+	planet_name =  "planet_name_cythor"
+	planet_class = "pc_arctic"
+	system_name = "system_name_сythor"
+	initializer = "Porteus_initializer"
+	
+	graphical_culture = "lithoid_01"
+	city_graphical_culture = "lithoid_01"
+	
+	empire_flag = {
+		icon =  {
+			category = "lithoid"
+			file = "lithoid_10.dds"
 		}
-		species_plural=
-		{
-			key="Куторы"
-			literal=yes
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_53.dds"
 		}
-		species_adjective=
-		{
-			key="Куторск"
-			literal=yes
-		}
-		name_list="LITHOID3"
-		gender=indeterminable
-		trait="trait_lithoid"
-		trait="trait_lithoid_volatile_excretions"
-		trait="trait_humanoid_existential_iteroparity"
-		trait="trait_repugnant"
-		trait="trait_quarrelsome"
-		trait="trait_unruly"
-		trait="trait_strong"
-		trait="trait_resilient"
-		trait="trait_nomadic"
-	}
-	name=
-	{
-		key="Союз Куторов"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Союз Куторовск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_imperial"
-	government="gov_blood_court"
-	advisor_voice_type="l_lithoid_vir"
-	planet_name=
-	{
-		key="Cythor"
-		literal=yes
-	}
-	planet_class="pc_arctic"
-	system_name=
-	{
-		key="Cythor"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="lithoid_01"
-	city_graphical_culture="lithoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="lithoid"
-			file="lithoid_10.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="flag_BG_53.dds"
-		}
-		colors=
-		{
+		colors = {
 			"intense_orange"
 			"grey"
 			"null"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=indeterminable
-		name=
-		{
-			full_names=
-			{
-				key="УхТент Ваййрр"
-				literal=yes
-			}
-		}
-		portrait="lith5"
-		texture=3
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		trait="trait_ruler_industrialist"
-		leader_class="official"
+	ruler =  {
+		gender = indeterminable
+		name = "PRESCRIPTED_ruler_name_сythor"
+		portrait = "lith5"
+		texture = 3
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		trait = "trait_ruler_industrialist"
+		leader_class = "official"
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="lithoid_room"
-	spawn_enabled=always
-	ethic="ethic_fanatic_xenophobe"
-	ethic="ethic_fanatic_militarist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_nationalistic_zeal"
-		"civic_scavengers"
-	}
-	origin="origin_lithoid"
-	flags = { Cythor_Fiends_start Cythor_Fiends_gos }
+	advisor_voice_type = "l_lithoid_vir"
+	spawn_as_fallen = no
 }

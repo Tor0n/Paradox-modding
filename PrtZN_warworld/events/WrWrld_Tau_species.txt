@@ -13,11 +13,18 @@ country_event = {
 		create_species = {
 			name = Веспид
 			plural = Веспиды
-			#adjective = Веспидск
 			class = ART
 			portrait = art1
 			homeworld = event_target:Vespid_World
-			traits = { pc_tropical_preference docile communal fleeting slow_learners strong }
+			traits = {
+				trait = trait_pc_tropical_preference
+				trait = trait_docile
+				trait = trait_communal
+				trait = trait_fleeting
+				trait = trait_strong
+			}
+			#trait_pc_tropical_preference trait_docile trait_communal trait_fleeting trait_slow_learners trait_strong
+			#traits = random
 			sapient = yes
 			is_mod = no
 			immortal = no
@@ -28,3 +35,69 @@ country_event = {
 		}
 	}
 }
+#Пример из скриптовых эффектов
+	# create_species = {
+		# name = random
+		# class = random_non_machine
+		# portrait = random
+		# traits = {
+			# trait = trait_cave_dweller
+			# trait = random_traits
+		# }
+		# homeworld = root
+	# }
+	# create_species = {
+		# is_mod = yes
+		# name = this
+		# plural = this
+		# class = this
+		# portrait = this
+		# traits = this
+		# can_be_modified = this
+		# homeworld = this
+		# namelist = this
+		# gender = this
+		# traits = {
+			# ideal_planet_class = this
+			# trait = trait_cybernetic
+		# }
+	# }
+	# if = {
+		# limit = {
+			# host_has_dlc = "Plantoids Species Pack"
+		# }
+		# create_species = {
+			# name = "NAME_Nivlac"
+			# plural = "NAME_Nivlacs"
+			# class = FUN
+			# portrait = "fun15"
+			# namelist = "FUN4"
+			# extra_trait_points = 2
+			# traits = {
+				# trait = "trait_nivlac"
+				# trait = "trait_plantoid_radiotrophic"
+				# trait = "trait_quick_learners"
+			# }
+			# homeworld = event_target:nivlac_joint_planet
+			# effect = {
+				# save_global_event_target_as = nivlac_species
+			# }
+		# }
+	# }
+	# else = {
+		# create_species = {
+			# name = "NAME_Nivlac"
+			# plural = "NAME_Nivlacs"
+			# class = FUN
+			# portrait = "fun15"
+			# namelist = "FUN4"
+			# traits = {
+				# trait = "trait_nivlac"
+				# trait = "trait_quick_learners"
+			# }
+			# homeworld = event_target:nivlac_joint_planet
+			# effect = {
+				# save_global_event_target_as = nivlac_species
+			# }
+		# }
+	# }

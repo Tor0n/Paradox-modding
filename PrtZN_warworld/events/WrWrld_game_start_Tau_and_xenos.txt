@@ -246,19 +246,11 @@ country_event = { #Tau
 				}
 			}
 			every_system_planet = {
-			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
 					create_deposits_stations = yes
 				}
-				
 				if = {
 				    limit = { 
 			            is_colonizable = yes
@@ -1355,6 +1347,50 @@ country_event = { #Barghesi
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Cythor_Fiends
+	id = WrWrld_game_start.118
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Cythor_Fiends_gos
+	}
+	immediate = {
+		save_global_event_target_as = Cythor_Fiends_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		add_resource = { energy = 1000 }
+		add_resource = { minerals = 1000 }
+		add_resource = { food = 100 }
+		add_resource = { consumer_goods = 1000 }
+		add_resource = { alloys = 1000 }
+		add_resource = { volatile_motes = 100 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 100 }
+		# нижние две строки смотри в common\scripted_effects\WrWrld_start_of_game_effects
+		# оба скриптовых эффекта описаны там, просто дублируются строки в обычном эвенте
+		give_technology_cythor_fiends = yes #техи
+		add_tradition_cythor_fiends = yes #традиции
+		
+		every_system = {
+			#в целом других систем у них и нет
+			limit = {
+				OR = {
+					has_star_flag = Cythor_Fiends_gos
+					has_star_flag = Cythor_Fiends_gos_station
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+			}
 		}
 	}
 }
