@@ -4083,6 +4083,3086 @@ country_event = { #Black_Templars
 #14 Резерв под Возможного Вассала Ультима
 #15 Резерв под Возможного Вассала Темпестус
 #16 Резерв под Возможного Вассала Восточная Окраина
+country_event = { #Segmentum_Obscurus
+	id = WrWrld_game_start.13
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Segmentum_Obscurus_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Segmentum_Obscurus_evnt_trgt_country
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.401 days = 4 }
+		#}
+		#owner = {
+		#	country_event = { id = WrWrld_start_fleet.1 }
+		#}
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
+		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
+		establish_communications_no_message = event_target:Ultramarines_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperial_Fists_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Angels_evnt_trgt_country
+		establish_communications_no_message = event_target:Salamanders_evnt_trgt_country
+		establish_communications_no_message = event_target:Space_Wolves_evnt_trgt_country
+		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
+		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
+		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
+		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
+		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
+		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
+		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
+		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
+		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
+		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
+		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
+		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
+		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
+		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		add_resource = { energy = 4500 }
+		add_resource = { minerals = 4500 }
+		add_resource = { food = 4000 }
+		add_resource = { alloys = 3000	}
+		add_resource = { volatile_motes = 200 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		add_resource = { influence = 400 }
+		hidden_effect = {
+			#Соц наука
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			
+			#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+			give_technology = { tech = tech_penal_colonies message = no } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			
+			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
+			give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель #tech_psi_jump_drive_1
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			#give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy message = no } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy message = no } #Баф бюрократии + постройка
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+			give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 message = no } #Щиты 2
+			
+			give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_planetary_shield_generator message = no } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+		    give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 message = no }
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 message = no }
+			
+			give_technology = { tech = tech_starbase_3 message = no }
+			give_technology = { tech = tech_starbase_4 message = no }
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
+			#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_housing_1 message = no }
+			
+			#give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			#give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
+			#give_technology = { tech = tech_mine_betharian message = no }
+		}
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
+		
+		modify_species = {
+			species = owner_main_species
+			name = Сервитор			#species_name_servitor
+			plural = Сервиторы		#species_plural_servitor
+			adjective = Сервиторыск	#species_adjective_servitor
+			add_trait = trait_nerve_stapled
+			add_trait = trait_limited_cybernetic
+			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
+			effect = { save_global_event_target_as = servitor_species }
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_syncretic_proles
+			add_trait = trait_very_strong
+			add_trait = trait_presapient_earthbound
+			effect = { save_global_event_target_as = ogryn_species }
+			name = Огрин
+			plural = Огрины
+			adjective = Огринск
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_psionic
+			add_trait = trait_stargazer
+			effect = { save_global_event_target_as = psyker_species }
+			name = Псайкер
+			plural = Псайкеры
+			adjective = Псайкерск
+		}
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Segmentum_Obscurus_gos
+					has_star_flag = Segmentum_Obscurus_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Segmentum_Obscurus_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Segmentum_Obscurus_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+				### ПОСТРОЙКА СТАНЦИЙ ###
+			    if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Civilised_world
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter
+				    while = {
+				    	count = 4
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Industrial_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter				
+				    while = {
+				    	count = 3
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 9
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 16
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 11
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Frontier_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter 					
+				    while = {
+				    	count = 1
+				    	create_pop = { species = owner_main_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+				    create_colony = { owner = ROOT }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					#add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_mote_harvesters
+					add_building = building_mote_harvesters
+					add_building = building_gas_extractors
+				    #add_building = building_refinery
+					add_building = building_crystal_mines
+					#add_building = building_crystal_plant
+					add_building = building_archaeo_refinery
+					#add_building = building_chemical_plant
+					add_building = building_planetary_shield_generator					
+				    while = {
+				    	count = 24
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 46
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    while = {
+				    	count = 20
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    while = {
+				    	count = 8
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 18
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Ultima_Segmentum
+	id = WrWrld_game_start.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Ultima_Segmentum_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Ultima_Segmentum_evnt_trgt_country
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.401 days = 4 }
+		#}
+		#owner = {
+		#	country_event = { id = WrWrld_start_fleet.1 }
+		#}
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
+		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
+		establish_communications_no_message = event_target:Ultramarines_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperial_Fists_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Angels_evnt_trgt_country
+		establish_communications_no_message = event_target:Salamanders_evnt_trgt_country
+		establish_communications_no_message = event_target:Space_Wolves_evnt_trgt_country
+		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
+		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
+		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
+		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
+		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
+		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
+		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
+		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
+		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
+		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
+		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
+		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
+		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
+		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		add_resource = { energy = 4500 }
+		add_resource = { minerals = 4500 }
+		add_resource = { food = 4000 }
+		add_resource = { alloys = 3000	}
+		add_resource = { volatile_motes = 200 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		add_resource = { influence = 400 }
+		hidden_effect = {
+			#Соц наука
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			
+			#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+			give_technology = { tech = tech_penal_colonies message = no } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			
+			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
+			give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель #tech_psi_jump_drive_1
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			#give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy message = no } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy message = no } #Баф бюрократии + постройка
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+			give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 message = no } #Щиты 2
+			
+			give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_planetary_shield_generator message = no } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+		    give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 message = no }
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 message = no }
+			
+			give_technology = { tech = tech_starbase_3 message = no }
+			give_technology = { tech = tech_starbase_4 message = no }
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
+			#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_housing_1 message = no }
+			
+			#give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			#give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
+			#give_technology = { tech = tech_mine_betharian message = no }
+		}
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
+		
+		modify_species = {
+			species = owner_main_species
+			name = Сервитор			#species_name_servitor
+			plural = Сервиторы		#species_plural_servitor
+			adjective = Сервиторыск	#species_adjective_servitor
+			add_trait = trait_nerve_stapled
+			add_trait = trait_limited_cybernetic
+			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
+			effect = { save_global_event_target_as = servitor_species }
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_syncretic_proles
+			add_trait = trait_very_strong
+			add_trait = trait_presapient_earthbound
+			effect = { save_global_event_target_as = ogryn_species }
+			name = Огрин
+			plural = Огрины
+			adjective = Огринск
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_psionic
+			add_trait = trait_stargazer
+			effect = { save_global_event_target_as = psyker_species }
+			name = Псайкер
+			plural = Псайкеры
+			adjective = Псайкерск
+		}
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Ultima_Segmentum_gos
+					has_star_flag = Ultima_Segmentum_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Ultima_Segmentum_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Ultima_Segmentum_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+				### ПОСТРОЙКА СТАНЦИЙ ###
+			    if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Civilised_world
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter
+				    while = {
+				    	count = 4
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Industrial_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter				
+				    while = {
+				    	count = 3
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 9
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 16
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 11
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Frontier_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter 					
+				    while = {
+				    	count = 1
+				    	create_pop = { species = owner_main_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+				    create_colony = { owner = ROOT }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					#add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_mote_harvesters
+					add_building = building_mote_harvesters
+					add_building = building_gas_extractors
+				    #add_building = building_refinery
+					add_building = building_crystal_mines
+					#add_building = building_crystal_plant
+					add_building = building_archaeo_refinery
+					#add_building = building_chemical_plant
+					add_building = building_planetary_shield_generator					
+				    while = {
+				    	count = 24
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 46
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    while = {
+				    	count = 20
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    while = {
+				    	count = 8
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 18
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Segmentum_Tempestus
+	id = WrWrld_game_start.15
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Segmentum_Tempestus_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Segmentum_Tempestus_evnt_trgt_country
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.401 days = 4 }
+		#}
+		#owner = {
+		#	country_event = { id = WrWrld_start_fleet.1 }
+		#}
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
+		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
+		establish_communications_no_message = event_target:Ultramarines_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperial_Fists_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Angels_evnt_trgt_country
+		establish_communications_no_message = event_target:Salamanders_evnt_trgt_country
+		establish_communications_no_message = event_target:Space_Wolves_evnt_trgt_country
+		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
+		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
+		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
+		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
+		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
+		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
+		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
+		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
+		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
+		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
+		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
+		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
+		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
+		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		add_resource = { energy = 4500 }
+		add_resource = { minerals = 4500 }
+		add_resource = { food = 4000 }
+		add_resource = { alloys = 3000	}
+		add_resource = { volatile_motes = 200 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		add_resource = { influence = 400 }
+		hidden_effect = {
+			#Соц наука
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			
+			#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+			give_technology = { tech = tech_penal_colonies message = no } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			
+			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
+			give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель #tech_psi_jump_drive_1
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			#give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy message = no } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy message = no } #Баф бюрократии + постройка
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+			give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 message = no } #Щиты 2
+			
+			give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_planetary_shield_generator message = no } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+		    give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 message = no }
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 message = no }
+			
+			give_technology = { tech = tech_starbase_3 message = no }
+			give_technology = { tech = tech_starbase_4 message = no }
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
+			#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_housing_1 message = no }
+			
+			#give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			#give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
+			#give_technology = { tech = tech_mine_betharian message = no }
+		}
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
+		
+		modify_species = {
+			species = owner_main_species
+			name = Сервитор			#species_name_servitor
+			plural = Сервиторы		#species_plural_servitor
+			adjective = Сервиторыск	#species_adjective_servitor
+			add_trait = trait_nerve_stapled
+			add_trait = trait_limited_cybernetic
+			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
+			effect = { save_global_event_target_as = servitor_species }
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_syncretic_proles
+			add_trait = trait_very_strong
+			add_trait = trait_presapient_earthbound
+			effect = { save_global_event_target_as = ogryn_species }
+			name = Огрин
+			plural = Огрины
+			adjective = Огринск
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_psionic
+			add_trait = trait_stargazer
+			effect = { save_global_event_target_as = psyker_species }
+			name = Псайкер
+			plural = Псайкеры
+			adjective = Псайкерск
+		}
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Segmentum_Tempestus_gos
+					has_star_flag = Segmentum_Tempestus_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Segmentum_Tempestus_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Segmentum_Tempestus_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+				### ПОСТРОЙКА СТАНЦИЙ ###
+			    if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Civilised_world
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter
+				    while = {
+				    	count = 4
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Industrial_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter				
+				    while = {
+				    	count = 3
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 9
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 16
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 11
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Frontier_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter 					
+				    while = {
+				    	count = 1
+				    	create_pop = { species = owner_main_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+				    create_colony = { owner = ROOT }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					#add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_mote_harvesters
+					add_building = building_mote_harvesters
+					add_building = building_gas_extractors
+				    #add_building = building_refinery
+					add_building = building_crystal_mines
+					#add_building = building_crystal_plant
+					add_building = building_archaeo_refinery
+					#add_building = building_chemical_plant
+					add_building = building_planetary_shield_generator					
+				    while = {
+				    	count = 24
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 46
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    while = {
+				    	count = 20
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    while = {
+				    	count = 8
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus					
+				    #while = {
+				    #	count = 23
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					#while = {
+				   # 	count = 5
+				    ##	create_pop = { species = event_target:ogryn_species }
+					#}
+					#while = {
+				    #	count = 10
+				    #	create_pop = { species = event_target:servitor_species }
+					#}
+					#while = {
+				   # 	count = 2
+				   # 	create_pop = { species = event_target:psyker_species }
+					#}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Eastern_Fringe
+	id = WrWrld_game_start.16
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Eastern_Fringe_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Eastern_Fringe_evnt_trgt_country
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.401 days = 4 }
+		#}
+		#owner = {
+		#	country_event = { id = WrWrld_start_fleet.1 }
+		#}
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
+		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
+		establish_communications_no_message = event_target:Ultramarines_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperial_Fists_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Angels_evnt_trgt_country
+		establish_communications_no_message = event_target:Salamanders_evnt_trgt_country
+		establish_communications_no_message = event_target:Space_Wolves_evnt_trgt_country
+		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
+		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
+		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
+		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
+		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
+		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
+		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
+		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
+		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
+		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
+		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
+		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
+		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
+		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
+		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		add_resource = { energy = 4500 }
+		add_resource = { minerals = 4500 }
+		add_resource = { food = 4000 }
+		add_resource = { alloys = 3000	}
+		add_resource = { volatile_motes = 200 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		add_resource = { influence = 400 }
+		hidden_effect = {
+			#Соц наука
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			
+			#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+			give_technology = { tech = tech_penal_colonies message = no } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			
+			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
+			give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель #tech_psi_jump_drive_1
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			#give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy message = no } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy message = no } #Баф бюрократии + постройка
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+			give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 message = no } #Щиты 2
+			
+			give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_planetary_shield_generator message = no } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+		    give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 message = no }
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 message = no }
+			
+			give_technology = { tech = tech_starbase_3 message = no }
+			give_technology = { tech = tech_starbase_4 message = no }
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
+			#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_housing_1 message = no }
+			
+			#give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			#give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
+			#give_technology = { tech = tech_mine_betharian message = no }
+		}
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
+		
+		modify_species = {
+			species = owner_main_species
+			name = Сервитор			#species_name_servitor
+			plural = Сервиторы		#species_plural_servitor
+			adjective = Сервиторыск	#species_adjective_servitor
+			add_trait = trait_nerve_stapled
+			add_trait = trait_limited_cybernetic
+			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
+			effect = { save_global_event_target_as = servitor_species }
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_syncretic_proles
+			add_trait = trait_very_strong
+			add_trait = trait_presapient_earthbound
+			effect = { save_global_event_target_as = ogryn_species }
+			name = Огрин
+			plural = Огрины
+			adjective = Огринск
+		}
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_psionic
+			add_trait = trait_stargazer
+			effect = { save_global_event_target_as = psyker_species }
+			name = Псайкер
+			plural = Псайкеры
+			adjective = Псайкерск
+		}
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Eastern_Fringe_gos
+					has_star_flag = Eastern_Fringe_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Eastern_Fringe_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Eastern_Fringe_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+				### ПОСТРОЙКА СТАНЦИЙ ###
+			    if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Civilised_world
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter
+				    while = {
+				    	count = 4
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Industrial_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter				
+				    while = {
+				    	count = 3
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 9
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 16
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 11
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Frontier_world			
+			        }
+				    create_colony = { owner = ROOT }
+				    add_building = building_colony_shelter 					
+				    while = {
+				    	count = 1
+				    	create_pop = { species = owner_main_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+				    create_colony = { owner = ROOT }
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 23
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					#add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_mote_harvesters
+					add_building = building_mote_harvesters
+					add_building = building_gas_extractors
+				    #add_building = building_refinery
+					add_building = building_crystal_mines
+					#add_building = building_crystal_plant
+					add_building = building_archaeo_refinery
+					#add_building = building_chemical_plant
+					add_building = building_planetary_shield_generator					
+				    while = {
+				    	count = 24
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 46
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    while = {
+				    	count = 20
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    while = {
+				    	count = 8
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 18
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+			}
+		}
+	}
+}
 country_event = { #Manachean_Commonwealth
 	id = WrWrld_game_start.17
 	hide_window = yes
@@ -4578,39 +7658,53 @@ country_event = { #Manachean_Commonwealth
 					remove_all_districts = yes
 					remove_all_buildings = yes
 					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus					
+				    #while = {
+				    #	count = 23
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					#while = {
+				    #	count = 5
+				    #	create_pop = { species = event_target:ogryn_species }
+					#}
+					#while = {
+				    #	count = 10
+				    #	create_pop = { species = event_target:servitor_species }
+					#}
+					#while = {
+				    #	count = 2
+				    #	create_pop = { species = event_target:psyker_species }
+					#}
 					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
-						count = 9
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_administrative }
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
-					while = {
-						count = 46
-						create_pop = {species = owner_main_species}
-					}
-					add_building = building_system_capital
-				    add_building = building_hall_judgment
-				    add_building = building_hall_judgment
-				    add_building = building_military_academy
-				    #add_building = building_foundry_1
-				    #add_building = building_factory_1
-					add_building = building_fortress
-					add_building = building_fortress
-					add_building = building_planetary_shield_generator #building_research_lab_2
-					add_building = building_commercial_zone
-					add_building = building_ministry_production
-					add_building = building_autochthon_monument
-					#add_building = building_chemical_plant
-					#add_building = building_archaeo_refinery
 				}
 			}
 		}

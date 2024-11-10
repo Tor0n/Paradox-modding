@@ -45,7 +45,7 @@ country_event = { #Tokt
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		#establish_communications_no_message = event_target:Korinis_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.105 days = 4 }
+			country_event = { id = WrWrld_game_start.475 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
@@ -405,7 +405,7 @@ country_event = { #Agdagat
 		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
 		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.106 days = 4 }
+			country_event = { id = WrWrld_game_start.476 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 11000 }
@@ -765,7 +765,10 @@ country_event = { #Sayteh
 		#establish_communications_no_message = event_target:Tokt_evnt_trgt_country
 		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.107 days = 4 }
+			country_event = { id = WrWrld_game_start.377 days = 3 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.477 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
@@ -1135,7 +1138,7 @@ country_event = { #Nigilah
 		#establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
 		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.108 days = 4 }
+			country_event = { id = WrWrld_game_start.478 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
@@ -1498,7 +1501,7 @@ country_event = { #Kardenat
 		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
 		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.109 days = 4 }
+			country_event = { id = WrWrld_game_start.479 days = 4 }
 		}
 		add_resource = { energy = 75000	}
 		add_resource = { minerals = 5000 }
@@ -1860,7 +1863,10 @@ country_event = { #Oryskar
 		#establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
 		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.110 days = 4 }
+			country_event = { id = WrWrld_game_start.380 days = 3 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.480 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12000 }
@@ -2226,7 +2232,7 @@ country_event = { #Mefrit
 		#establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
 		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.111 days = 4 }
+			country_event = { id = WrWrld_game_start.481 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
@@ -2598,7 +2604,7 @@ country_event = { #Nephrekh
 		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
 		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.112 days = 4 }
+			country_event = { id = WrWrld_game_start.482 days = 4 }
 		}
 		add_resource = { energy = 10000	}
 		add_resource = { minerals = 5000 }
@@ -2966,7 +2972,7 @@ country_event = { #Sarkoni
 		#establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
 		#establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
 		owner = {
-			country_event = { id = WrWrld_game_start.113 days = 4 }
+			country_event = { id = WrWrld_game_start.483 days = 4 }
 		}
 		add_resource = { energy = 9000	}
 		add_resource = { minerals = 8000 }
@@ -3306,7 +3312,7 @@ country_event = { #Sarkoni
 	}
 }
 country_event = { #Tokt
-	id = WrWrld_game_start.105
+	id = WrWrld_game_start.475
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3376,7 +3382,7 @@ country_event = { #Tokt
 	}
 }
 country_event = { #Agdagat
-	id = WrWrld_game_start.106
+	id = WrWrld_game_start.476
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3446,7 +3452,64 @@ country_event = { #Agdagat
 	}
 }
 country_event = { #Sayteh
-	id = WrWrld_game_start.107
+	id = WrWrld_game_start.377
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Sayteh_gos
+	}
+	immediate = {
+        establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		federation = {
+			set_federation_type = hegemony_federation #military_federation
+			set_federation_leader = root
+			set_name = random
+			#set_federation_law = succession_term_years_20
+			add_federation_experience = 600
+			add_cohesion = 100
+		}
+		event_target:Kardenat_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Agdagat_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+	}
+}
+country_event = { #Sayteh
+	id = WrWrld_game_start.477
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3518,10 +3581,15 @@ country_event = { #Sayteh
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 	}
 }
 country_event = { #Nigilah
-	id = WrWrld_game_start.108
+	id = WrWrld_game_start.478
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3593,15 +3661,15 @@ country_event = { #Nigilah
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
-		declare_war = {
-			target = event_target:Nephrekh_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
+		#declare_war = {
+		#	target = event_target:Nephrekh_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
 	}
 }
 country_event = { #Kardenat
-	id = WrWrld_game_start.109
+	id = WrWrld_game_start.479
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3673,20 +3741,67 @@ country_event = { #Kardenat
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
-		declare_war = {
-			target = event_target:Oryskar_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+	}
+}
+country_event = { #Oryskar
+	id = WrWrld_game_start.380
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Oryskar_gos
+	}
+	immediate = {
+        establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
+		establish_communications_no_message = event_target:Orc_evnt_trgt_country
+		establish_communications_no_message = event_target:Korinis_evnt_trgt_country
+		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
+		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
+		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
+		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
+		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
+		#establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
+		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
+		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
+		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
+		establish_communications_no_message = event_target:Texian_evnt_trgt_country
+		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
+		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
+		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
+		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
+		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
+		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
+		federation = {
+			set_federation_type = military_federation #military_federation
+			set_federation_leader = root
+			set_name = random
+			#set_federation_law = succession_term_years_20
+			add_federation_experience = 600
+			add_cohesion = 100
 		}
-		declare_war = {
-			target = event_target:Sayteh_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		event_target:Nigilah_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Tokt_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
 		}
 	}
 }
 country_event = { #Oryskar
-	id = WrWrld_game_start.110
+	id = WrWrld_game_start.480
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3758,10 +3873,15 @@ country_event = { #Oryskar
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 	}
 }
 country_event = { #Mefrit
-	id = WrWrld_game_start.111
+	id = WrWrld_game_start.481
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3823,10 +3943,20 @@ country_event = { #Mefrit
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 	}
 }
 country_event = { #Nephrekh
-	id = WrWrld_game_start.112
+	id = WrWrld_game_start.482
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3891,7 +4021,7 @@ country_event = { #Nephrekh
 	}
 }
 country_event = { #Sarkoni
-	id = WrWrld_game_start.113
+	id = WrWrld_game_start.483
 	hide_window = yes
 	is_triggered_only = yes
 

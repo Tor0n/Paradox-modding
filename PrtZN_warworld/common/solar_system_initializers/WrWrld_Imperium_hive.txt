@@ -1214,7 +1214,7 @@ Targus_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos_station }
+	#flags = { Imperium_gos_station }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1263,9 +1263,9 @@ Targus_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 23
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
-		flags = { Imperium_Hive_civ_world }	
+		#flags = { Imperium_Hive_civ_world }	
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2303,7 +2303,7 @@ Fenksworld_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	#flags = { Imperium_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2352,9 +2352,9 @@ Fenksworld_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
-		flags = { Imperium_Hive_ecumenopolis_world }	
+		#flags = { Imperium_Hive_ecumenopolis_world }	
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2594,7 +2594,7 @@ Ichar_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	#flags = { Imperium_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2643,9 +2643,9 @@ Ichar_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
-		flags = { Imperium_Hive_ecumenopolis_world }	
+		#flags = { Imperium_Hive_ecumenopolis_world }	
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2691,7 +2691,7 @@ Cephian_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos_station }
+	#flags = { Imperium_gos_station }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2740,9 +2740,9 @@ Cephian_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
-		flags = { Imperium_Hive_ecumenopolis_world }	
+		#flags = { Imperium_Hive_ecumenopolis_world }	
 		
 		init_effect = {
 			prevent_anomaly = yes

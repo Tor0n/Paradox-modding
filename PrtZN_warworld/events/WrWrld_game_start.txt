@@ -1761,6 +1761,9 @@ country_event = { #Genestealer - Коринис
 		establish_communications_no_message = event_target:Tau_evnt_trgt_country
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		owner = {
+			country_event = { id = WrWrld_game_start.366 days = 3 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start.103 days = 4 }
 		}
 		add_resource = { energy = 20000	}
@@ -2044,9 +2047,6 @@ country_event = { #Genestealer - Коринис
 		establish_communications_no_message = event_target:Orc_evnt_trgt_country
 		owner = {
 			country_event = { id = WrWrld_game_start.103 days = 4 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start.367 days = 3 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -4537,12 +4537,12 @@ country_event = { #Genestealer
 	}
 }
 country_event = { #Феда генокрадов
-	id = WrWrld_game_start.367
+	id = WrWrld_game_start.366
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_flag = Hivecult_gos
+		has_country_flag = Cult_Four_ArmEmpr_gos
 	}
 	immediate = {
 		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_evnt_trgt_country
@@ -4563,7 +4563,7 @@ country_event = { #Феда генокрадов
 			add_federation_experience = 600
 			add_cohesion = 100
 		}
-		event_target:Cult_Four_ArmEmpr_evnt_trgt_country = {
+		event_target:Hivecult_evnt_trgt_country = {
 			join_alliance = {
 				who = root
 				override_requirements = yes
