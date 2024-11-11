@@ -8396,13 +8396,14 @@ Cythor_Fiends = {
 	ignore_portrait_duplication = no
 	spawn_enabled = always
 	
-	ship_prefix = "ship_prefix_сythor"
+	ship_prefix = "ship_prefix_cythor"
+	
 	species= {
 		class = "LITHOID"
 		portrait = "lith5"
-		species_name = "PRESCRIPTED_species_name_сythor"
-		species_plural = "PRESCRIPTED_species_plural_сythor"
-		species_adjective = "PRESCRIPTED_species_adjective_сythor"
+		species_name = "PRESCRIPTED_species_name_cythor_fiends"
+		species_plural = "PRESCRIPTED_species_plural_cythor_fiends"
+		species_adjective = "PRESCRIPTED_species_adjective_cythor_fiends"
 		name_list = "LITHOID3"
 		gender = indeterminable
 		trait = "trait_lithoid"
@@ -8429,7 +8430,7 @@ Cythor_Fiends = {
 	
 	planet_name =  "planet_name_cythor"
 	planet_class = "pc_arctic"
-	system_name = "system_name_сythor"
+	system_name = "system_name_porteus"
 	initializer = "Porteus_initializer"
 	
 	graphical_culture = "lithoid_01"
@@ -8453,7 +8454,7 @@ Cythor_Fiends = {
 	}
 	ruler =  {
 		gender = indeterminable
-		name = "PRESCRIPTED_ruler_name_сythor"
+		name = "PRESCRIPTED_ruler_name_cythor"
 		portrait = "lith5"
 		texture = 3
 		evolution_mask = 0
