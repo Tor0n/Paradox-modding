@@ -33,6 +33,81 @@ country_event = {
 			namelist = ART3
 			effect = { save_global_event_target_as = vespid_species }
 		}
+		create_species = {
+			name = Kroot
+			plural = Kroots
+			class = AVI
+			portrait = avi14
+			homeworld = event_target:Kroot_World
+			traits = {
+				trait = trait_communal
+				trait = trait_strong
+				trait = trait_traditional
+				trait = trait_repugnant
+				trait = trait_conformists
+				trait = trait_humanoid_jinxed
+			}
+			#trait_pc_tropical_preference trait_docile trait_communal trait_fleeting trait_slow_learners trait_strong
+			#traits = random
+			sapient = yes
+			is_mod = no
+			immortal = no
+			can_be_modified  = yes
+			gender = not_set
+			namelist = ART3
+			effect = { save_global_event_target_as = kroot_species }
+		}
+		create_species = {
+			name = Nicassar
+			plural = Nicassars
+			class = MOL
+			portrait = mol11
+			homeworld = event_target:Nicassar_World
+			traits = {
+				trait = trait_psionic_species
+				trait = trait_intelligent
+				trait = trait_slow_breeders
+				trait = trait_talented
+				trait = trait_quick_learners
+				trait = trait_docile
+				trait = trait_solitary
+				trait = trait_sedentary
+			}
+			#trait_pc_tropical_preference trait_docile trait_communal trait_fleeting trait_slow_learners trait_strong
+			#traits = random
+			sapient = yes
+			is_mod = no
+			immortal = no
+			can_be_modified  = yes
+			gender = not_set
+			namelist = ART3
+			effect = { save_global_event_target_as = nicassar_species }
+		}
+		create_species = {
+			name = Tarellian
+			plural = Tarellians
+			class = REP
+			portrait = rep9
+			#homeworld = event_target:Tarellian_World
+			traits = {
+				trait = trait_strong
+				trait = trait_ingenious
+				trait = trait_extremely_adaptive
+				trait = trait_sedentary
+				trait = trait_solitary
+				trait = trait_unruly
+				trait = trait_slow_learners
+			}
+			#trait_pc_tropical_preference trait_docile trait_communal trait_fleeting trait_slow_learners trait_strong
+			#traits = random
+			sapient = yes
+			is_mod = no
+			immortal = no
+			can_be_modified  = yes
+			gender = not_set
+			namelist = ART3
+			effect = { save_global_event_target_as = tarellian_species }
+		}
 	}
 }
 #Пример из скриптовых эффектов

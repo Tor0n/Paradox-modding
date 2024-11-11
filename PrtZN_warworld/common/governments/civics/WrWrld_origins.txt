@@ -1,7 +1,7 @@
 # Imperium
 origin_imperium = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_godruler.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -33,7 +33,7 @@ origin_imperium = {
 }
 origin_mechanicus = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_godruler.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -62,7 +62,7 @@ origin_mechanicus = {
 }
 origin_astartes = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_imp.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -95,7 +95,7 @@ origin_astartes = {
 # Land_Chaos
 origin_chaos = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_chaos.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -127,7 +127,7 @@ origin_chaos = {
 }
 origin_mechanicum = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_chaos.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -156,7 +156,7 @@ origin_mechanicum = {
 }
 origin_eldar = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origin_void_dwellers.dds"
+	icon = "gfx/interface/icons/origins/origins_soulkeepers.dds"
 	picture = GFX_origin_void_dwellers
 	
 	starting_colony = pc_habitat
@@ -200,7 +200,7 @@ origin_eldar = {
 }
 origin_exodite = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_eldar.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -236,7 +236,7 @@ origin_exodite = {
 }
 origin_commorragh = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_paindrinkers.dds"
 	picture = GFX_evt_metropolis
 	
 	starting_colony = pc_relic
@@ -268,7 +268,7 @@ origin_commorragh = {
 	random_weight = { base = 0 }
 }
 # Tau
-origin_greatergood = {
+origin_Tau = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_greatergood.dds"
 	picture = GFX_evt_greatergood
@@ -291,29 +291,29 @@ origin_greatergood = {
 			}
 		}
 	}
-	starting_colony = pc_gaia
-	habitability_preference = pc_tropical
+	#starting_colony = pc_gaia
+	habitability_preference = pc_arid
 	preferred_planet_class_neighbor = no
 	modifier = {
 		# pop_amenities_usage_mult = -0.1
 		# planet_pops_consumer_goods_upkeep_mult = -0.1
 		# colony_start_num_pops_add = -1
-		country_leader_pool_size = -1
-		country_subject_technology_sharing_mult = 0.75
+		#country_leader_pool_size = -1
+		#country_subject_technology_sharing_mult = 0.75
 		external_leader_pool_add = 1
 		force_disparity_fire_rate_mult = 0.5
 		country_produces_mult = 0.1
 		country_unity_produces_mult = 0.1
 		# pop_factions_produces_mult = 0.1
 		diplo_weight_mult = 0.25
-		diplomacy_upkeep_mult = -1
+		#diplomacy_upkeep_mult = -1
 		pop_happiness = 0.1 # Compare broken_shackles_war_03
 		pop_government_ethic_attraction = 0.25
-		country_border_friction_mult = -1
-		monthly_trades_energy_produces_add = 1
-		trade_value_mult = 0.02
-		country_trade_fee = -0.01
-		country_trade_attractiveness = 1
+		#country_border_friction_mult = -1
+		#monthly_trades_energy_produces_add = 1
+		#trade_value_mult = 0.02
+		#country_trade_fee = -0.01
+		#country_trade_attractiveness = 1
 	}
 	# traits = { trait = trait_tau } TODO
 	# has_secondary_species = {
@@ -331,7 +331,7 @@ origin_greatergood = {
 }
 origin_ork = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_barbarichorde.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -374,7 +374,7 @@ origin_ork = {
 }
 origin_corinis = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_bioreformers.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
@@ -404,7 +404,7 @@ origin_corinis = {
 # Некроны
 origin_necron = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
+	icon = "gfx/interface/icons/origins/origins_necron.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""
