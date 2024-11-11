@@ -204,7 +204,7 @@ ChancherVale_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -314,7 +314,7 @@ Juno_initializer = {
 			}
 		}
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -714,7 +714,7 @@ Lavantia_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -814,7 +814,7 @@ Moltova_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -914,7 +914,7 @@ Boucherin_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1014,7 +1014,7 @@ Methusela_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1114,7 +1114,7 @@ NeoBaku_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1314,7 +1314,7 @@ Lastrati_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1903,7 +1903,7 @@ Morox_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2003,7 +2003,7 @@ CruachMhorn_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2203,7 +2203,7 @@ Dlackreach_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2259,6 +2259,106 @@ Dlackreach_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			add_deposit = d_dust_desert #пустыня пылинок
+			#add_deposit = d_dust_caverns
+			#add_deposit = d_dust_caverns
+		} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Manachea_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	flags = { Manachean_Commonwealth_gos }
+	
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 60
+	#}
+	
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_tundra"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		starting_planet = yes
+		
+		#flags = { }	
+		
+		init_effect = {
+			prevent_anomaly = yes
+			#add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
 		} 
@@ -2594,7 +2694,7 @@ Ichar_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	#flags = { Imperium_gos }
+	#flags = { Eastern_Fringe_gos }
 	
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt

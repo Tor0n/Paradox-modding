@@ -256,7 +256,7 @@ Trikster_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -339,7 +339,7 @@ Illustries_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1325,6 +1325,255 @@ Khoraj_initializer = {
 		home_planet = no
 	}
 }
+Esko_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Segmentum_Tempestus_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Antagonis_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Segmentum_Tempestus_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Ondhor_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Segmentum_Tempestus_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 Montsegnur_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -1335,7 +1584,7 @@ Montsegnur_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1494,7 +1743,7 @@ Zephyr_initializer = {
 Necris_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = {
@@ -2152,6 +2401,172 @@ Vinculus_initializer = {
 		home_planet = no
 	}
 }
+Khain_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Ultima_Segmentum_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Gheist_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Ultima_Segmentum_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 Mancora_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -2162,7 +2577,7 @@ Mancora_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2245,7 +2660,7 @@ Stryken_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2411,7 +2826,7 @@ Ophidia_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2494,7 +2909,7 @@ Galthrog_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3075,7 +3490,7 @@ Subilamrys_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3158,7 +3573,90 @@ Gegorach_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Hrax_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3241,7 +3739,7 @@ Treconandal_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3324,7 +3822,7 @@ Tanika_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3488,7 +3986,7 @@ Draconith_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -4069,7 +4567,7 @@ Duriel_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos_station }
+	flags = { Segmentum_Tempestus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -4650,7 +5148,7 @@ Agrax_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -4733,7 +5231,7 @@ Endragiga_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos_station }
+	flags = { Segmentum_Tempestus_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -4982,7 +5480,7 @@ Atilla_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5231,7 +5729,7 @@ Aurum_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5314,7 +5812,7 @@ Freya_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5646,7 +6144,7 @@ Thraxis_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5729,7 +6227,7 @@ Estaban_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5812,7 +6310,7 @@ Loxar_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Mechanicus_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -5853,6 +6351,172 @@ Loxar_initializer = {
 
 	planet = {
 		class = "pc_ocean"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Tuonelia_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Talasa_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -5978,7 +6642,7 @@ Angstorm_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -6061,7 +6725,7 @@ Badab_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -6881,7 +7545,7 @@ Mkhand_initializer = {
 Mundanus_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 	max_instances = 1
 	init_effect = {
 		generate_home_system_resources = yes
@@ -7368,6 +8032,85 @@ Lalinta_initializer = {
 		home_planet = no
 	}
 }
+Beroghast_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
 Falshop_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -7378,7 +8121,7 @@ Falshop_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -7457,7 +8200,7 @@ Vlax_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -7536,7 +8279,7 @@ Mortant_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -7615,7 +8358,7 @@ Hadex_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -7773,7 +8516,7 @@ Laeran_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Mechanicus_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -7852,7 +8595,402 @@ Orpheus_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Mechanicus_gos }
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Sternac_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Miral_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Kimmeria_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Lamarno_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Neo_Khartoum_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -7931,7 +9069,7 @@ Dreadhaven_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Mechanicus_gos }
+	flags = { Eastern_Fringe_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -8010,7 +9148,7 @@ Irradium_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -8405,7 +9543,7 @@ Phargos_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -8477,7 +9615,7 @@ Phargos_initializer = {
 Preyspire_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = {
@@ -8560,7 +9698,7 @@ Vanhorne_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9113,7 +10251,7 @@ Kenadarax_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9192,7 +10330,7 @@ Thun_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9271,7 +10409,7 @@ Krastellan_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9350,7 +10488,7 @@ Passrum_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9429,7 +10567,7 @@ Leckides_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9508,7 +10646,7 @@ Molov_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9587,7 +10725,7 @@ Vaxhallia_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9666,7 +10804,7 @@ Jhanna_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -9756,7 +10894,7 @@ Raisa_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10171,7 +11309,7 @@ Felis_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10254,7 +11392,7 @@ Fergax_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10337,7 +11475,7 @@ Miasma_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10420,7 +11558,7 @@ Cancri_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Eastern_Fringe_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10586,7 +11724,7 @@ Fleishgate_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10669,7 +11807,7 @@ Madrigal_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -10830,7 +11968,7 @@ Barbarus_initializer = {                                                        
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 	
 	planet = {
 		class = star
@@ -10891,7 +12029,7 @@ Chemos_initializer = {                                                        ##
 	init_effect = {
 		generate_home_system_resources = yes
 	}
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 	
 	planet = {
 		class = star
@@ -11035,7 +12173,7 @@ Brogrod_initializer = {                                                        #
 Thracia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = { generate_home_system_resources = yes }
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 	
 	planet = {
 		class = star
@@ -11108,7 +12246,7 @@ Thracia_initializer = {
 Kanzuz_initializer = {
 	class = "rl_starting_stars"
 	init_effect = { generate_home_system_resources = yes }
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 	
 	planet = {
 		class = star
@@ -11181,7 +12319,7 @@ Kanzuz_initializer = {
 Kanak_initializer = {
 	class = "rl_starting_stars"
 	init_effect = { generate_home_system_resources = yes }
-	flags = { Imperium_gos }
+	flags = { Segmentum_Obscurus_gos }
 	
 	planet = {
 		class = star
@@ -11254,7 +12392,7 @@ Kanak_initializer = {
 Forgefane_initializer = {
 	class = "rl_starting_stars"
 	init_effect = { generate_home_system_resources = yes }
-	flags = { Imperium_gos }
+	flags = { Segmentum_Tempestus_gos }
 	
 	planet = {
 		class = star
@@ -11330,7 +12468,7 @@ Boras_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -11416,7 +12554,7 @@ Volurilis_initializer = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Imperium_gos }
+	flags = { Ultima_Segmentum_gos }
 
 	max_instances = 1
 	init_effect = { }

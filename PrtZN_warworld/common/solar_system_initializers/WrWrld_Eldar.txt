@@ -80,7 +80,7 @@ Ursulia_initializer = {
 Iathglas_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Eldar_gos Eldar_gaia }
+	flags = { Ynnari_gos Ynnari_gaia }
 
 	max_instances = 1
 	init_effect = {
@@ -472,43 +472,66 @@ Alaitoc_initializer = {
 		
 	}
 }
-Tuonelia_initializer = {
-	class = "rl_starting_stars"
+Iyanden_initializer = {
+	class = rl_starting_stars
+	#usage = origin
+	flags = { empire_home_system Ynnari_gos Ynnari_Habitat Eldar_Capital }
 	
 	init_effect = {
 		generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_gos Eldar_Habitat }
-
-	#max_instances = 1
+	usage = custom_empire
 	
 	planet = {
 		class = star
 		orbit_distance = 0
 	}
     planet = {
-		class = "pc_molten"
+		class = pc_molten
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 10 max = 17 }
+		flags = { ignore_startup_effect habitat_2_planet has_megastructure }
 		has_ring = no
-
 		
+		init_effect = {
+			set_deposit = d_minerals_4
+		}
 	}
 	planet = {
-		class = "pc_toxic"
+		class = pc_toxic
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 20 }
 		has_ring = no
-
-		
 	}
 	planet = {
-		class = "pc_barren"
+		class = random_non_colonizable #Был идеальный мир
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		flags = { ignore_startup_effect has_megastructure habitat_1_planet }
+		
+		init_effect = {
+			set_deposit = d_physics_3
+		}
+		#взято из federations_initializers инициализатор void_dweller_system
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			starting_planet = yes
+			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat } #Центральный хабитат тут
+			deposit_blockers = none
+		}
+	}
+	planet = {
+		class = pc_barren
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -522,14 +545,6 @@ Tuonelia_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 		has_ring = no
-		moon = {
-			class = pc_habitat
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-			size = 6
-			flags = { habitat }
-			deposit_blockers = none
-		}
 	}
 	planet = {
 		class = "pc_gas_giant"
@@ -537,9 +552,12 @@ Tuonelia_initializer = {
 		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 25 max = 45 }
+		flags = { ignore_startup_effect habitat_3_planet has_megastructure }
 		has_ring = yes
-
 		
+		init_effect = {
+			set_deposit = d_energy_4
+		}
 	}
 }
 Mymeara_initializer = {

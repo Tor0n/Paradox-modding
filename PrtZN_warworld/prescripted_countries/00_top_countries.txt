@@ -4681,8 +4681,7 @@ Eldar_Empire = {
 	advisor_voice_type = "l_militarist"
 	spawn_as_fallen = no
 }
-"Иннари"=
-{
+Ynnari = {
 	key="Иннари"
 	ship_prefix=
 	{
@@ -4821,6 +4820,7 @@ Eldar_Empire = {
 		"civic_ascensionists"
 	}
 	origin="origin_eldar"
+	flags={ Ynnari_start Ynnari_gos }
 }
 Worlds_Aldari = {
 	name = "Миры Экзодитов"

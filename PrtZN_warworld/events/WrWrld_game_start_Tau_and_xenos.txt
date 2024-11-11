@@ -655,6 +655,34 @@ country_event = { #Xenos Texian
 		add_tradition = tr_mercantile_marketplace_of_better_ideas
 		add_tradition = tr_mercantile_insider_trading
 		add_tradition = tr_mercantile_finish     #Меркантилизм
+		every_system = {
+			limit = {
+				has_star_flag = Texian_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = Texian_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+			}
+		}
 	}
 }
 country_event = { #Xenos Qorl
