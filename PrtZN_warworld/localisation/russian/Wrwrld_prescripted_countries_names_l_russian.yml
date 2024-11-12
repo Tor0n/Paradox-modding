@@ -1,41 +1,74 @@
 ﻿l_russian:
- ship_prefix_imperium: "Империум."
+ 
  PRESCRIPTED_species_name_humans1: "Человек|||gen:Человека"
  PRESCRIPTED_species_plural_humans1: "Люди|||gen:Людей"
  PRESCRIPTED_species_adjective_humans1: "Человеческ|||masc:Человеческий $1$|||masc,gen:Человеческого $1$|||masc,dat:Человеческому $1$|||masc,acc:Человеческий $1$|||masc,inst:Человеческим $1$|||masc,prep:Человеческом $1$|||fem:Человеческая $1$|||fem,gen:Человеческой $1$|||fem,dat:Человеческой $1$|||fem,acc:Человеческую $1$|||fem,inst:Человеческой $1$|||fem,prep:Человеческой $1$|||neut:Человеческое $1$|||neut,gen:Человеческого $1$|||neut,dat:Человеческому $1$|||neut,acc:Человеческое $1$|||neut,inst:Человеческим $1$|||neut,prep:Человеческом $1$|||pl:Человеческие $1$|||pl,gen:Человеческих $1$|||pl,dat:Человеческим $1$|||pl,acc:Человеческие $1$|||pl,inst:Человеческими $1$|||pl,prep:Человеческих $1$|||corp:Человек $1$"
- PRESCRIPTED_ruler_name_imperium: "Неот"
  
- ship_prefix_mechanicus: "Механикус."
  PRESCRIPTED_species_name_mechanicus: "Механикус"
  PRESCRIPTED_species_plural_mechanicus: "Механикус|||gen:Технодибилусов"
- PRESCRIPTED_ruler_name_mechanicus: "Од Одия Раскиан"
+ #Префиксы кораблей
+ ship_prefix_imperium: "Империум."
+ ship_prefix_mechanicus: "Механикус."
+ ship_prefix_ecclesiarchy: "Экклезиарх."
+ ship_prefix_ultramarines: "Ультрамар."
+ ship_prefix_dark_angels: "Т.А."
  #сythor
  ship_prefix_cythor: "Кутор."
  PRESCRIPTED_species_name_cythor_fiends: "Кутор"
  PRESCRIPTED_species_plural_cythor_fiends: "Куторы"
  PRESCRIPTED_species_adjective_cythor_fiends: "Куторск"
- PRESCRIPTED_ruler_name_cythor: "УхТент Ваййрр"
- 
- PRESCRIPTED_species_name_tzynn: "Тзинн|||gen:Тзинна"
- PRESCRIPTED_species_plural_tzynn: "Тзинны|||gen:Тзиннов"
- PRESCRIPTED_species_adjective_tzynn: "Тзиннск|||masc:Тзиннский $1$|||masc,gen:Тзиннского $1$|||masc,dat:Тзиннскому $1$|||masc,acc:Тзиннский $1$|||masc,inst:Тзиннским $1$|||masc,prep:Тзиннском $1$|||fem:Тзиннская $1$|||fem,gen:Тзиннской $1$|||fem,dat:Тзиннской $1$|||fem,acc:Тзиннскую $1$|||fem,inst:Тзиннской $1$|||fem,prep:Тзиннской $1$|||neut:Тзиннское $1$|||neut,gen:Тзиннского $1$|||neut,dat:Тзиннскому $1$|||neut,acc:Тзиннское $1$|||neut,inst:Тзиннским $1$|||neut,prep:Тзиннском $1$|||pl:Тзиннские $1$|||pl,gen:Тзиннских $1$|||pl,dat:Тзиннским $1$|||pl,acc:Тзиннские $1$|||pl,inst:Тзиннскими $1$|||pl,prep:Тзиннских $1$|||corp:Тзинн $1$"
- PRESCRIPTED_ruler_name_tzynn: "Садзейя"
  
  ###############
  # Государства #
  ###############
  name_imperium: "Империум Человечества"
  PRESCRIPTED_adjective_humans1: "Человеческ|||masc:Человеческий $1$|||masc,gen:Человеческого $1$|||masc,dat:Человеческому $1$|||masc,acc:Человеческий $1$|||masc,inst:Человеческим $1$|||masc,prep:Человеческом $1$|||fem:Человеческая $1$|||fem,gen:Человеческой $1$|||fem,dat:Человеческой $1$|||fem,acc:Человеческую $1$|||fem,inst:Человеческой $1$|||fem,prep:Человеческой $1$|||neut:Человеческое $1$|||neut,gen:Человеческого $1$|||neut,dat:Человеческому $1$|||neut,acc:Человеческое $1$|||neut,inst:Человеческим $1$|||neut,prep:Человеческом $1$|||pl:Человеческие $1$|||pl,gen:Человеческих $1$|||pl,dat:Человеческим $1$|||pl,acc:Человеческие $1$|||pl,inst:Человеческими $1$|||pl,prep:Человеческих $1$"
+ 
  name_mechanicus: "Механикус"
  PRESCRIPTED_adjective_mechanicus: "Механикусск"
+ 
+ name_ecclesiarchy: "Экклезиархия"
+ PRESCRIPTED_adjective_ecclesiarchy: "Экклезиархск"
+ 
+ name_ultramarines: "Царство Ультрамар"
+ PRESCRIPTED_adjective_ultramarines: "Ультрамарск"
+ 
+ name_dark_angels: "Тёмные Ангелы"
+ PRESCRIPTED_adjective_dark_angels: "Темноангельск"
+ 
  name_cythor: "Союз Куторов"
  PRESCRIPTED_adjective_cythor: "Куторовск"
+ 
+ #############
+ # Правители #
+ #############
+ PRESCRIPTED_ruler_name_imperium: "Неот"
+ ruler_title_imperium_male: "Император"
+ ruler_title_imperium_female: "Императрица"
+ 
+ PRESCRIPTED_ruler_name_mechanicus: "Од Одия Раскиан"
+ ruler_title_mechanicus: "Фабрикатор-генерал"
+ 
+ PRESCRIPTED_ruler_name_ecclesiarchy: "Веридяна"
+ ruler_title_ecclesiarchy_female: "Аббатиса"
+ #Космодесант
+ ruler_title_astartes: "Примарх"
+ ruler_title_dark_angels: "Магистр"
+ PRESCRIPTED_ruler_name_ultramarines: "Робаут Жиллиман"
+ PRESCRIPTED_ruler_name_dark_angels: "Азраил"
+ 
+ 
+ PRESCRIPTED_ruler_name_cythor: "УхТент Ваййрр"
  
  ###################
  # Названия планет #
  ###################
  planet_name_terra: "Терра"
  planet_name_voss_prime: "Восс Прайм"
+ planet_name_ophellia: "Офелия VII"
+ planet_name_macragge: "Макрагг"
+ planet_name_rock: "Рок"
+ 
  planet_name_cythor: "9836-18 Grave Core"
  
  
@@ -44,4 +77,11 @@
  ###################
  system_name_sol: "Солнце"
  system_name_voss_prime: "Восс Прайм"
+ system_name_ophellia: "Офелия"
+ system_name_macragge: "Макрагг"
+ system_name_rock: "Рок"
+ 
  system_name_porteus: "Porteus"
+ 
+ 
+ 

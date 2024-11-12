@@ -33,9 +33,9 @@ Imperium = {
 	government = gov_purity_order
 	origin = "origin_imperium"
 	
-	ethic="ethic_fanatic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
 	
 	flags = { Imperium_start Imperium_gos Imperor_Alive }
 	
@@ -70,8 +70,8 @@ Imperium = {
 		texture = 0
 		attachment = 35
 		clothes = 0
-		ruler_title = "Император"
-		ruler_title_female = "Императрица"
+		ruler_title = "ruler_title_imperium_male"
+		ruler_title_female = "ruler_title_imperium_female"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = official
 	}
@@ -79,13 +79,12 @@ Imperium = {
 	spawn_as_fallen = no
 }
 Mechanicus = {
-	#key = "name_mechanicus"
 	name = "name_mechanicus"
 	adjective = "PRESCRIPTED_adjective_mechanicus"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = ship_prefix_mechanicus
+	ship_prefix = "ship_prefix_mechanicus"
 	
 	species = {
 		class = "HUM"
@@ -104,24 +103,24 @@ Mechanicus = {
 		trait = "trait_traditional"
 	}
 	
-	room="machine_room"
+	room = "machine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_galactic_curators" }
 	government = gov_purity_order
 	origin = "origin_mechanicus"
 	
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
 	
 	flags = { Mechanicus_start Mechanicus_gos }
 	
 	planet_name = "planet_name_voss_prime"
 	planet_class = "pc_continental"
 	system_name = "system_name_voss_prime"
-	#initializer=""
+	#initializer = ""
 	
 	graphical_culture = "sto_01"
 	city_graphical_culture = "humanoid_01"
@@ -143,446 +142,255 @@ Mechanicus = {
 		}
 	}
 	ruler = {
+		name = "PRESCRIPTED_ruler_name_mechanicus"
 		gender = male
-		name = {
-			full_names=
-			{
-				key="Од Одия Раскиан"
-				literal=yes
-			}
-		}
-		portrait="imperium"
-		texture=0
-		evolution_mask=0
-		attachment=81
-		clothes=2
-		ruler_title=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		trait="trait_ruler_eye_for_talent"
-		leader_class="scientist"
+		portrait = "imperium"
+		texture = 0
+		evolution_mask = 0
+		attachment = 81
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
 	}
 	advisor_voice_type = "l_the_technocrat"
 	spawn_as_fallen = no
 }
 Ecclesiarchy = {
-	key="Экклезиархия"
-	ship_prefix=
-	{
-		key="Экклезиарх."
-		literal=yes
+	name = "name_ecclesiarchy"
+	adjective = "PRESCRIPTED_adjective_ecclesiarchy"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ecclesiarchy"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = female
+		#trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
-		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
-		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=female
-		#trait="trait_perfected_genes"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Экклезиархия"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Экклезиархск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
+	
+	room = "personality_evangelizing_zealots_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_exalted_priesthood" "civic_police_state" }
+	government = "gov_purity_order"
+	origin = "origin_imperium"
+	
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
 	flags = { Ecclesiarchy_start Ecclesiarchy_gos }
-	government="gov_purity_order"
-	advisor_voice_type="l_the_soldier"
-	planet_name=
-	{
-		key="Офелия VII"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Офелия"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="wain_04"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="AdeptaSororitas2.dds"
+	
+	planet_name = "planet_name_ophellia"
+	planet_class = "pc_continental"
+	system_name = "system_name_ophellia"
+	#initializer = ""
+	
+	graphical_culture = "wain_04"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "AdeptaSororitas2.dds"
 		}
-		background=
-		{
-			category="backgrounds"
-			file="circle.dds"
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
 		}
-		colors=
-		{
+		colors = {
 			"red"
 			"white"
 			"black"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=female
-		name=
-		{
-			full_names=
-			{
-				key="Веридяна"
-				literal=yes
-			}
-		}
-		portrait="imperium_female_01"
-		texture=0
-		evolution_mask=0
-		attachment=10
-		clothes=4
-		ruler_title=
-		{
-			key="Император"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Аббатиса"
-			literal=yes
-		}
-		trait="leader_trait_fleet_organizer"
-		leader_class="commander"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ecclesiarchy"
+		gender = female
+		portrait = "imperium_female_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 10
+		clothes = 4
+		ruler_title = "ruler_title_imperium_male"
+		ruler_title_female = "ruler_title_ecclesiarchy_female"
+		trait = "leader_trait_fleet_organizer"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_evangelizing_zealots_room"
-	spawn_enabled=always
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_fanatic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_exalted_priesthood"
-		"civic_police_state"
-	}
-	origin="origin_imperium"
+	advisor_voice_type = "l_the_soldier"
+	spawn_as_fallen = no
 }
 Ultramarines = {
-	key="Царство Ультрамар"
-	ship_prefix=
-	{
-		key="Ультрамарин."
-		literal=yes
+	name = "name_ultramarines"
+	adjective = "PRESCRIPTED_adjective_ultramarines"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ultramarines"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
-		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
-		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=male
-		trait="trait_perfected_genes"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Царство Ультрамар"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Царство Ультрамарск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_philosopher_king" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
 	flags = { Ultramarines_start Ultramarines_gos }
-	government="gov_purity_order"
-	advisor_voice_type="l_militarist"
-	planet_name=
-	{
-		key="Макрагг"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Макрагг"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="aod_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="game-40k-ultramarines.dds"
+	
+	planet_name = "planet_name_macragge"
+	planet_class = "pc_continental"
+	system_name = "system_name_macragge"
+	initializer = ""
+	
+	graphical_culture = "aod_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "game-40k-ultramarines.dds"
 		}
-		background=
-		{
-			category="backgrounds"
-			file="double_triangles.dds"
+		background = {
+			category = "backgrounds"
+			file = "double_triangles.dds"
 		}
-		colors=
-		{
+		colors= {
 			"blue"
 			"light_blue"
-			"blue" #
+			"blue"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Робаут Жиллиман"
-				literal=yes
-			}
-		}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ultramarines"
+		gender = male
 		portrait="imperium_male_01"
 		texture=0
 		evolution_mask=0
 		attachment=45
 		clothes=9
-		ruler_title=
-		{
-			key="Примарх"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Примарх"
-			literal=yes
-		}
-		trait="leader_trait_fleet_organizer"
-		leader_class="commander"
+		ruler_title = "ruler_title_astartes"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "leader_trait_fleet_organizer"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_honorbound_warriors_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_fanatic_militarist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_philosopher_king"
-		"civic_distinguished_admiralty"
-	}
-	origin="origin_astartes"
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
 }
 Dark_Angels = {
-	key="Тёмные Ангелы"
-	ship_prefix=
-	{
-		key="Тёмн. Ангел."
-		literal=yes
+	name = "name_dark_angels"
+	adjective = "PRESCRIPTED_adjective_dark_angels"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_dark_angels"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
-		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
-		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=male
-		trait="trait_perfected_genes"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Тёмные Ангелы"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Тёмные Ангелыск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_exalted_priesthood" "civic_memory_vault" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
 	flags = { Dark_Angels_start Dark_Angels_gos }
-	government="gov_purity_order"
-	advisor_voice_type="l_evil_corp"
-	planet_name=
-	{
-		key="Рок"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Рок"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="aod_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="game-40k-dark-angels.dds"
+	
+	planet_name = "planet_name_rock"
+	planet_class = "pc_continental"
+	system_name = "system_name_rock"
+	initializer = ""
+	
+	graphical_culture = "aod_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "game-40k-dark-angels.dds"
 		}
-		background=
-		{
-			category="backgrounds"
-			file="flag_BG_29.dds"
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_29.dds"
 		}
-		colors=
-		{
+		colors = {
 			"dark_green"
 			"shadow_green"
 			"shadow_green"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Азраил"
-				literal=yes
-			}
-		}
-		portrait="imperium_male_01"
-		texture=0
-		evolution_mask=0
-		attachment=20
-		clothes=5
-		ruler_title=
-		{
-			key="Магистр"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Примарх"
-			literal=yes
-		}
-		trait="leader_trait_spark_of_genius"
-		leader_class="scientist"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_dark_angels"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 20
+		clothes = 5
+		ruler_title = "ruler_title_dark_angels"
+		ruler_title_female = "ruler_title_dark_angels"
+		trait = "leader_trait_spark_of_genius"
+		leader_class = "scientist"
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_honorbound_warriors_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_exalted_priesthood"
-		"civic_memory_vault"
-	}
-	origin="origin_astartes"
+	advisor_voice_type = "l_evil_corp"
+	spawn_as_fallen = no
 }
 Imperial_Fists = {
 	key="Имперские Кулаки"
@@ -5856,133 +5664,79 @@ Snakebites = {
 	flags = { Snakebites_start Snakebites_gos }
 }
 Cult_Four_ArmEmpr = {
-	key="Культ Четырехрукого Императора"
-	ship_prefix=
-	{
-		key="Генокрад."
+	name = "Культ Четырехрукого Императора"
+	adjective = "Культ Четырехрукого Императораск"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "Генокрад."
+	
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	species=
-	{
-		class="NECROID"
-		portrait="nec1"
-		species_name=
-		{
-			key="Генокрад"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	flags =  { Cult_Four_ArmEmpr_start Cult_Four_ArmEmpr_gos }
+	
+	planet_name = "Ghosar"
+	planet_class = "pc_alpine"
+	system_name = "Ghosar"
+	initializer = ""
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "FourArmedEmperor.dds"
 		}
-		species_plural=
-		{
-			key="Генокрады"
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
 		}
-		species_adjective=
-		{
-			key="Генокрадск"
-		}
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
-	}
-	name=
-	{
-		key="Культ Четырехрукого Императора"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Культ Четырехрукого Императораск"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name=
-	{
-		key="Ghosar"
-		literal=yes
-	}
-	planet_class="pc_alpine"
-	system_name=
-	{
-		key="Ghosar"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer_GeneStealer"
-			file="FourArmedEmperor.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="vertical.dds"
-		}
-		colors=
-		{
+		colors = {
 			"red"
 			"blue"
 			"black"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Маргес"
-			}
-		}
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title=
-		{
-			key="Патриарх"
-			literal=yes
-		}
-		trait="trait_ruler_logistic_understanding"
-		leader_class="commander"
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = "commander"
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics=
-	{
-		"civic_hive_devouring_swarm"
-		"civic_hive_subspace_ephapse"
-		"civic_hive_ascetic"
-	}
-	origin="origin_corinis"
-	flags =  { Cult_Four_ArmEmpr_start Cult_Four_ArmEmpr_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Hivecult = {
 	key="Культ Улья"

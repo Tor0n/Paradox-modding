@@ -2,31 +2,6 @@ namespace = WrWrld_game_start
 
 @create_pop_watch_fort_station = 15
 
-#country_event = { #ПРИВЕТ МИР(зачёркнуто) ИГРОК!
-#	id = WrWrld_game_start.0
-#	title = "WrWrld_game_start.0.name"
-#	desc = "WrWrld_game_start.0.desc"
-#	picture = GFX_evt_ship_in_orbit
-#	#hide_window = no
-#	#is_triggered_only = yes
-#
-#	#trigger = {
-#		#or = {
-#		#	has_country_flag = Imperium_gos
-#		#	has_country_flag = Chaos_gos
-#		#}
-#	#}
-#	#immediate = {
-#   #    declare_war = {
-#	#		target = event_target:Imperium_evnt_trgt_country
-#	#		#name = <optional war name>
-#	#		attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-#	#	}
-#	#}
-#	option = {
-#		name = "WrWrld_game_start.0.a"
-#	}
-#}
 country_event = { #Genestealer - Коринис
 	id = WrWrld_game_start.66
 	hide_window = yes
