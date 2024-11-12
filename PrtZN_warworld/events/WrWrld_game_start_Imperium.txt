@@ -89,10 +89,10 @@ country_event = { #Imperium
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		add_resource = { energy = 4500 }
+		add_resource = { energy = 7500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
+		add_resource = { alloys = 7900	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -1009,10 +1009,10 @@ country_event = { #Mechanicus
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		add_resource = { energy = 4500 }
-		add_resource = { minerals = 4500 }
-		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 1000 }
 		add_resource = { exotic_gases = 1000 }
@@ -1595,7 +1595,7 @@ country_event = { #Ecclesiarchy
 		add_resource = { energy = 15000 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 5500 }
-		add_resource = { alloys = 13000	}
+		add_resource = { alloys = 14500	}
 		add_resource = { volatile_motes = 1500 }
 		add_resource = { rare_crystals = 750 }
 		add_resource = { exotic_gases = 750 }
@@ -4451,7 +4451,7 @@ country_event = { #Segmentum_Obscurus
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
+		add_resource = { alloys = 14500	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -5240,7 +5240,7 @@ country_event = { #Ultima_Segmentum
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
+		add_resource = { alloys = 14500	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -6029,7 +6029,7 @@ country_event = { #Segmentum_Tempestus
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
+		add_resource = { alloys = 14500	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -6826,7 +6826,7 @@ country_event = { #Eastern_Fringe
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 3000	}
+		add_resource = { alloys = 14500	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -7612,7 +7612,7 @@ country_event = { #Manachean_Commonwealth
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 9000	}
+		add_resource = { alloys = 10500	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -9490,12 +9490,22 @@ country_event = { #Imperium
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Strixis_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}

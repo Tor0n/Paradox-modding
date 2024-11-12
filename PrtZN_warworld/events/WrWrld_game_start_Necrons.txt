@@ -108,13 +108,13 @@ country_event = { #Tokt
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		owner = {
-			country_event = { id = WrWrld_game_start.475 days = 4 }
-		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.475 days = 4 }
+		#}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		#add_resource = { food = 14000 }
-		add_resource = { alloys = 10000	}
+		add_resource = { alloys = 14000	}
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
@@ -531,9 +531,9 @@ country_event = { #Agdagat
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		owner = {
-			country_event = { id = WrWrld_game_start.476 days = 4 }
-		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.476 days = 4 }
+		#}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 11000 }
 		#add_resource = { food = 11000 }
@@ -545,12 +545,12 @@ country_event = { #Agdagat
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
 			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
 			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
 			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
@@ -808,7 +808,7 @@ country_event = { #Agdagat
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
-				    	count = 59
+				    	count = 42
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -850,7 +850,7 @@ country_event = { #Agdagat
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
-				    	count = 40
+				    	count = 30
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1385,9 +1385,9 @@ country_event = { #Nigilah
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		owner = {
-			country_event = { id = WrWrld_game_start.478 days = 4 }
-		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.478 days = 4 }
+		#}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
 		#add_resource = { food = 14000 }
@@ -1399,13 +1399,13 @@ country_event = { #Nigilah
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
 			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
 			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
 			
@@ -1807,26 +1807,26 @@ country_event = { #Kardenat
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		owner = {
-			country_event = { id = WrWrld_game_start.479 days = 4 }
-		}
-		add_resource = { energy = 75000	}
-		add_resource = { minerals = 5000 }
-		add_resource = { alloys = 4000	}
-		add_resource = { volatile_motes = 500 }
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.479 days = 4 }
+		#}
+		add_resource = { energy = 3500	}
+		add_resource = { minerals = 1000 }
+		add_resource = { alloys = 400	}
+		add_resource = { volatile_motes = 250 }
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
 			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
 			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
 			
@@ -2669,13 +2669,13 @@ country_event = { #Mefrit
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
 			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
 			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
 			
@@ -3521,14 +3521,14 @@ country_event = { #Sarkoni
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
+			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
+			#give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
 			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
 			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
 			
@@ -4272,12 +4272,17 @@ country_event = { #Sayteh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Brothrhd_Knife_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4297,17 +4302,52 @@ country_event = { #Sayteh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Orc_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Korinis_evnt_trgt_country
+			target = event_target:Cult_Four_ArmEmpr_gos
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Slogth_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:RakGol_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barghesi_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4681,12 +4721,17 @@ country_event = { #Oryskar
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Penumbral_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4701,12 +4746,12 @@ country_event = { #Oryskar
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Orc_evnt_trgt_country
+			target = event_target:Tau_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Korinis_evnt_trgt_country
+			target = event_target:Rusted_Claw_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4717,6 +4762,46 @@ country_event = { #Oryskar
 		}
 		declare_war = {
 			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Slogth_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:RakGol_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barghesi_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4808,7 +4893,7 @@ country_event = { #Mefrit
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Conjurers_of_Fear_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4818,17 +4903,22 @@ country_event = { #Mefrit
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Orc_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Korinis_evnt_trgt_country
+			target = event_target:Star_Kindred_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4838,7 +4928,57 @@ country_event = { #Mefrit
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Oryskar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Nephrekh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sarkoni_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Slogth_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:RakGol_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barghesi_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -4940,17 +5080,62 @@ country_event = { #Nephrekh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Orc_evnt_trgt_country
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Twisted_Helix_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Korinis_evnt_trgt_country
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Slogth_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:RakGol_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barghesi_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -5042,7 +5227,7 @@ country_event = { #Sarkoni
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Barbed_Chalice_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -5057,12 +5242,32 @@ country_event = { #Sarkoni
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Orc_evnt_trgt_country
+			target = event_target:Pauper_Princes_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Korinis_evnt_trgt_country
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Slogth_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:RakGol_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barghesi_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -5071,15 +5276,15 @@ country_event = { #Sarkoni
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
-		#declare_war = {
-		#	target = event_target:Slogth_evnt_trgt_country
-		#	#name = <optional war name>
-		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		#}
-		#declare_war = {
-		#	target = event_target:RakGol_evnt_trgt_country
-		#	#name = <optional war name>
-		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		#}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 	}
 }

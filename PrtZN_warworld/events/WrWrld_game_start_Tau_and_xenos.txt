@@ -86,14 +86,14 @@ country_event = { #Tau
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
-		add_resource = { energy = 25000	}
-		add_resource = { minerals = 12500 }
-		add_resource = { food = 12500 }
+		add_resource = { energy = 45000	}
+		add_resource = { minerals = 17500 }
+		add_resource = { food = 17500 }
 		add_resource = { consumer_goods = 9500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 400 }
-		add_resource = { rare_crystals = 100 }
-		add_resource = { exotic_gases = 100 }
+		add_resource = { volatile_motes = 1400 }
+		add_resource = { rare_crystals = 900 }
+		add_resource = { exotic_gases = 900 }
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -232,13 +232,19 @@ country_event = { #Tau
 		add_tradition = tr_discovery_polytechnic_education
 		add_tradition = tr_discovery_faith_in_science
 		
-		add_tradition = tr_supremacy_adopt
 		add_tradition = tr_supremacy_fleet_logistical_corps
 		add_tradition = tr_supremacy_master_shipwrights
-		#add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_war_games
 		add_tradition = tr_supremacy_overwhelming_force
-		#add_tradition = tr_supremacy_great_game
-		#add_tradition = tr_supremacy_finish     #Превосходство
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
 		
 		#add_tradition = tr_prosperity_adopt
 		add_tradition = tr_prosperity_sct
@@ -249,8 +255,8 @@ country_event = { #Tau
 		add_tradition = tr_prosperity_finish     #Процветание
 		
 		add_tradition = tr_adaptability_adopt
-		#add_tradition = tr_adaptability_recycling
-		#add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
 		add_tradition = tr_adaptability_environmental_diversification
 		add_tradition = tr_adaptability_adaptive_ecology
 		#add_tradition = tr_adaptability_appropriation
@@ -268,7 +274,8 @@ country_event = { #Tau
 		#add_tradition = tr_unyielding_fortress_doctrine
 		#add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_diplomacy_adopt     #Дипломатия
+		#add_tradition = tr_diplomacy_adopt     #Дипломатия
+		
 		every_system = {
 			limit = {
 				or = {
@@ -759,11 +766,11 @@ country_event = { #Xenos Texian
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		#
-		add_resource = { energy = 12000	}
-		add_resource = { minerals = 7500 }
-		add_resource = { food = 7500 }
-		add_resource = { consumer_goods = 4500 }
-		add_resource = { alloys = 12000	}
+		add_resource = { energy = 18900	}
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 9500 }
+		add_resource = { consumer_goods = 6500 }
+		add_resource = { alloys = 14500	}
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -2140,14 +2147,14 @@ country_event = { #Slogth
 	}
 	immediate = {
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
 		declare_war = {
 			target = event_target:Imperium_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Barbed_Chalice_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2163,14 +2170,14 @@ country_event = { #Rakgol
 	}
 	immediate = {
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
 		declare_war = {
 			target = event_target:Imperium_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2187,19 +2194,37 @@ country_event = { #Barghesi
 	immediate = {
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
+		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
+		establish_communications_no_message = event_target:Ynnari_evnt_trgt_country
 		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
+		establish_communications_no_message = event_target:Tau_evnt_trgt_country
 		declare_war = {
 			target = event_target:Imperium_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Chaos_evnt_trgt_country
+			target = event_target:Stigmartus_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
