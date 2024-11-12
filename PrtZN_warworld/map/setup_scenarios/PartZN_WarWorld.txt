@@ -3,7 +3,7 @@ static_galaxy_scenario = {
     name = "PartZN.arm" #PartZNWarWorld
 	default = no
 	priority = 109
-    num_empires = { min = 68 max = 78 }
+    num_empires = { min = 70 max = 70 }
     num_empire_default = 70
 	num_hyperlanes = { min = 0 max = 0 }
 	colonizable_planet_odds = 0
@@ -72,7 +72,7 @@ system = { id = "45" name = "Anphelion" position = { x = 297.4703 y = 191.8792 }
 system = { id = "46" name = "Khreak" position = { x = 346.2917 y = 95.37167 } initializer = Khreak_initializer }
 system = { id = "47" name = "Loriar" position = { x = 379.2178 y = 153.2762 } initializer = Loriar_initializer }
 system = { id = "48" name = "Chiros" position = { x = 371.2701 y = 127.1624 } initializer = Chiros_initializer } 
-system = { id = "49" name = "Commorragh" position = { x = -467.2917 y = 462.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Commorragh_start } } } #У неё есть инициализатор и он прописан при спавне
+system = { id = "49" name = "Commorragh" position = { x = -433.2917 y = 436.8485 } spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Commorragh_start } } } #У неё есть инициализатор и он прописан при спавне
 system = { id = "50" name = "Kimdaria" position = { x = 328.1256 y = 153.2762 } initializer = Kimdaria_initializer }
 system = { id = "51" name = "Infernus" position = { x = 297.4703 y = 256.596 } initializer = Infernus_initializer }
 system = { id = "52" name = "Caspalen" position = { x = 287.2519 y = 290.6575 } initializer = Caspalen_initializer }
@@ -538,12 +538,12 @@ system = { id = "511" name = "Cyclothrathe"		position = { x = -92.5601 y = -353.
 system = { id = "512" name = "Daeconc"			position = { x = 354.5003 y = 179.5000 } initializer = Daeconc_initializer }      #ЧЕРВОТОЧИНА КОММОРРЫ
 system = { id = "513" name = "Kendrax"			position = { x = 180.000 y = -210.2463 } initializer = Kendrax_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Pauper_Princes_start } } } 
 system = { id = "514" name = "Black Nebula"		position = { x = -414.8117 y = -8.62499 } initializer = Black_nebula_initializer } 
-system = { id = "515" name = "Sorrow"			position = { x = -462.2917 y = 467.8485 } initializer = Sorrow_initializer }
-system = { id = "516" name = "Zero"				position = { x = -467.2917 y = 455.8485 } initializer = Zero_initializer }
-system = { id = "517" name = "Elindrhakh"		position = { x = -462.2917 y = 455.8485 } initializer = Elindrhakh_initializer }
+system = { id = "515" name = "Sorrow"			position = { x = -412.2917 y = 467.8485 } initializer = Sorrow_initializer }
+system = { id = "516" name = "Zero"				position = { x = -455.2917 y = 415.8485 } initializer = Zero_initializer }
+system = { id = "517" name = "Elindrhakh"		position = { x = -412.2917 y = 415.8485 } initializer = Elindrhakh_initializer }
 system = { id = "518" name = "Rope of Hope"		position = { x = -90.09371 y = 205.5038 } initializer = Ropeofhope_initializer }
-system = { id = "519" name = "Woe"				position = { x = -462.0000 y = 462.0000 } initializer = Woe_initializer }
-system = { id = "520" name = "Pain"				position = { x = -467.2917 y = 467.8485 } initializer = Pain_initializer }
+system = { id = "519" name = "Woe"				position = { x = -412.0000 y = 436.0000 } initializer = Woe_initializer }
+system = { id = "520" name = "Pain"				position = { x = -455.2917 y = 467.8485 } initializer = Pain_initializer }
 system = { id = "521" name = "Astorgius"		position = { x = -220.0006 y = -83.7032 } initializer = Astorgius_initializer } 
 system = { id = "522" name = "Pax Argentius"	position = { x = -30.82148 y = -193.7755 } initializer = PaxArgentius_initializer }
 system = { id = "523" name = "Fenris"			position = { x = 170.2413 y = -160.4294 } initializer = Fenris_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Space_Wolves_start } } } #Астартес
@@ -690,6 +690,7 @@ system = { id = "658" name = "Iynden"			position = { x = -235.0000 y = 225.0000 
 system = { id = "659" name = "Damnos"			position = { x = -240.0000 y = 250.0000 } initializer = Damnos_initializer }
 system = { id = "660" name = "Arkios"			position = { x = 63.0000 y = 2.0000 } initializer = Arkios_initializer }
 system = { id = "661" name = "Rock"			position = { x = 314.2302 y = -298.4 } initializer = Rock_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Dark_Angels_start } } } #Опхидия 316 -272
+system = { id = "662" name = "Gaptyria"			position = { x = -455.0000 y = 436.0000 } }
 #										#
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
@@ -1666,4 +1667,5 @@ system = { id = "661" name = "Rock"			position = { x = 314.2302 y = -298.4 } ini
  add_hyperlane = { from = "661" to = "129" }
  add_hyperlane = { from = "661" to = "130" }
  add_hyperlane = { from = "661" to = "138" }
+ add_hyperlane = { from = "662" to = "49" }
 }
