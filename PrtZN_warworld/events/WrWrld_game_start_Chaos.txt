@@ -339,17 +339,17 @@ country_event = { #Black_Legion
 					add_building = building_temple #building_holotemple	
 					add_building = building_energy_grid					
 				    while = {
-				    	count = 38
+				    	count = 41
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
+					#while = {
+				    #	count = 3
+				    #	create_pop = {
+				    #		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    #	}
+					#}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = {
@@ -400,17 +400,17 @@ country_event = { #Black_Legion
 					add_building = building_mineral_purification_plant
 					add_building = building_foundry_1					
 				    while = {
-				    	count = 13
+				    	count = 34
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 21
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
+					#while = {
+				    #	count = 21
+				    #	create_pop = {
+				    #		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    #	}
+					#}
 					#while = {
 					#	count = 2
 					#	add_district_and_planet_size_if_needed_effect = {
@@ -436,65 +436,6 @@ country_event = { #Black_Legion
 						}
 					}
 				}
-				if = {                                         ### МИР ВОЙНЫ ###
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Chaos_war_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-				    while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
-					}
-				    add_building = building_capital 
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress  
-					add_building = building_fortress
-				    add_building = building_foundry_1
-				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
-					add_building = building_temple						
-				    while = {
-				    	count = 4
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 12
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					#while = {
-					#	count = 1
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_generator
-					#	}
-					#}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					#while = {
-					#	count = 1
-					#	add_district_and_planet_size_if_needed_effect = {
-					#		district = district_farming
-					#	}
-					#}
-				}
 				if = {                                         ### КУЗНЯ ХАОСА ###
 				    limit = { 
 			            is_colonizable = yes
@@ -510,13 +451,13 @@ country_event = { #Black_Legion
 					#	}
 					#}
 					while = {
-						count = 3
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_arcology_arms_industry
 						}
 					}
 					while = {
-						count = 3
+						count = 1
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_arcology_civilian_industry
 						}
@@ -540,17 +481,17 @@ country_event = { #Black_Legion
 					add_building = building_chemical_plant 	
 					add_building = building_ministry_production					
 				    while = {
-				    	count = 18
+				    	count = 32
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 30
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
+					#while = {
+				    #	count = 30
+				    #	create_pop = {
+				    #		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    #	}
+					#}
 				}
 			}
 		}
