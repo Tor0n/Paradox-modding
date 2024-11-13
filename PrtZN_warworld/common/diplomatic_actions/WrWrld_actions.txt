@@ -8,17 +8,62 @@ action_negotiate_existing_agreement = {
 
 	potential = {
 		NOT = { is_at_war_with = FROM }
-		NOT = {
-			OR = {
-				AND = {
-					is_overlord = yes
-					has_country_flag = Imperor_Alive
-				}
-				AND = {
-					has_any_overlord = yes
-					overlord = { has_country_flag = Imperor_Alive }
-				}
+		# NOT = {
+			# OR = {
+				# AND = {
+					# is_overlord = yes
+					# has_country_flag = Imperor_Alive
+				# }
+				# AND = {
+					# has_any_overlord = yes
+					# overlord = { has_country_flag = Imperor_Alive }
+				# }
 				
+			# }
+		# }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "not" #DIPLOMACY_STATUS_WAR
+			NOT = {
+				OR = {
+					AND = {
+						is_overlord = yes
+						has_country_flag = Imperor_Alive
+					}
+					AND = {
+						has_any_overlord = yes
+						overlord = { has_country_flag = Imperor_Alive }
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+action_integrate_subject = {
+	icon = "GFX_diplomacy_status_being_integrated"
+	auto_accepted = yes
+	requires_recipient_independence = no
+	should_notify_all_communications = yes
+	action_type = neutral
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "not" #DIPLOMACY_STATUS_WAR
+			NOT = {
+				OR = {
+					AND = {
+						is_overlord = yes
+						has_country_flag = Imperor_Alive
+					}
+					AND = {
+						has_any_overlord = yes
+						overlord = { has_country_flag = Imperor_Alive }
+					}
+					
+				}
 			}
 		}
 	}
