@@ -88,6 +88,7 @@ Sorrow_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Sorrow
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh }
@@ -178,6 +179,7 @@ Zero_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Zero
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh }
@@ -265,6 +267,7 @@ Elindrhakh_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Elindrhakh
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh }
@@ -352,6 +355,7 @@ Adversity_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		#save_global_event_target_as = wormhole_Adversity
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh_portal }
@@ -439,6 +443,7 @@ Woe_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Woe
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh }
@@ -526,6 +531,7 @@ Pain_initializer = {
 	init_effect = {
 		generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Pain
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh }
@@ -612,7 +618,8 @@ Gaptyria = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Commorragh
+		save_global_event_target_as = wormhole_Gaptyria
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
 	flags = { Commorragh }

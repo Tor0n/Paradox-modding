@@ -6,17 +6,93 @@
  
  PRESCRIPTED_species_name_mechanicus: "Механикус"
  PRESCRIPTED_species_plural_mechanicus: "Механикус|||gen:Технодибилусов"
+ 
+ PRESCRIPTED_species_name_chaos: "Хаосит|||gen:Хаосита"
+ PRESCRIPTED_species_plural_chaos: "Хаоситы|||gen:Хаоситов"
+ PRESCRIPTED_species_adjective_chaos: "Хаоситск|||masc:Хаоситский $1$|||masc,gen:Хаоситского $1$|||masc,dat:Хаоситскому $1$|||masc,acc:Хаоситский $1$|||masc,inst:Хаоситским $1$|||masc,prep:Хаоситском $1$|||fem:Хаоситская $1$|||fem,gen:Хаоситской $1$|||fem,dat:Хаоситской $1$|||fem,acc:Хаоситскую $1$|||fem,inst:Хаоситской $1$|||fem,prep:Хаоситской $1$|||neut:Хаоситское $1$|||neut,gen:Хаоситского $1$|||neut,dat:Хаоситскому $1$|||neut,acc:Хаоситское $1$|||neut,inst:Хаоситским $1$|||neut,prep:Хаоситском $1$|||pl:Хаоситские $1$|||pl,gen:Хаоситских $1$|||pl,dat:Хаоситским $1$|||pl,acc:Хаоситские $1$|||pl,inst:Хаоситскими $1$|||pl,prep:Хаоситских $1$|||corp:Хаосит $1$"
+ 
+ 
+ PRESCRIPTED_species_name_cythor_fiends: "Кутор"
+ PRESCRIPTED_species_plural_cythor_fiends: "Куторы"
+ PRESCRIPTED_species_adjective_cythor_fiends: "Куторск"
+ 
  #Префиксы кораблей
  ship_prefix_imperium: "Империум."
  ship_prefix_mechanicus: "Механикус."
  ship_prefix_ecclesiarchy: "Экклезиарх."
+ ship_prefix_astartes: "Астертес."
+ ship_prefix_manachean: "Манахей."
+ ship_prefix_chaos: "Хаосит."
+ ######################################################################################
  ship_prefix_ultramarines: "Ультрамар."
  ship_prefix_dark_angels: "Т.А."
- #сythor
+ ship_prefix_imperial_fists: "XYZ"
+ ship_prefix_blood_angels: "XYZ"
+ ship_prefix_salamanders: "XYZ"
+ ship_prefix_space_wolves: "XYZ"
+ ship_prefix_black_templars: "XYZ"
+ ship_prefix_segmentum_obscurus: "XYZ"
+ ship_prefix_ultima_segmentum: "XYZ"
+ ship_prefix_segmentum_tempestus: "XYZ"
+ ship_prefix_eastern_fringe: "XYZ"
+ ship_prefix_manachean_commonwealth: "XYZ"
+ ship_prefix_black_legion: "XYZ"
+ ship_prefix_death_guard: "XYZ"
+ ship_prefix_world_eaters: "XYZ"
+ ship_prefix_thousand_sons: "XYZ"
+ ship_prefix_emperors_children: "XYZ"
+ ship_prefix_word_bearers: "XYZ"
+ ship_prefix_alpha_legion: "XYZ"
+ ship_prefix_mechanicum_cyclothrathe: "XYZ"
+ ship_prefix_mechanicum_samech: "XYZ"
+ ship_prefix_blood_pact: "XYZ"
+ ship_prefix_admonition: "XYZ"
+ ship_prefix_land_chaos: "XYZ"
+ ship_prefix_conjurers_of_fear: "XYZ"
+ ship_prefix_barbed_chalice: "XYZ"
+ ship_prefix_brothrhd_knife: "XYZ"
+ ship_prefix_givers_of_life: "XYZ"
+ ship_prefix_bloodbath: "XYZ"
+ ship_prefix_stigmartus: "XYZ"
+ ship_prefix_penumbral: "XYZ"
+ ######################################################################################
+ ship_prefix_eldar_empire: "XYZ"
+ ship_prefix_ynnari: "XYZ"
+ ship_prefix_worlds_aldari: "XYZ"
+ ship_prefix_commorragh: "XYZ"
+ ship_prefix_tau_federation: "XYZ"
+ ship_prefix_blood_axes: "XYZ"
+ ship_prefix_goffs: "XYZ"
+ ship_prefix_evil_sunz: "XYZ"
+ ship_prefix_deathskulls: "XYZ"
+ ship_prefix_bad_moons: "XYZ"
+ ship_prefix_snakebites: "XYZ"
+ ship_prefix_cult_four_armempr: "XYZ"
+ ship_prefix_hivecult: "XYZ"
+ ship_prefix_rusted_claw: "XYZ"
+ ship_prefix_bladed_cog: "XYZ"
+ ship_prefix_pauper_princes: "XYZ"
+ ship_prefix_twisted_helix: "XYZ"
+ ship_prefix_cult_hydraic: "XYZ"
+ ship_prefix_star_kindred: "XYZ"
+ ship_prefix_blessed_wormlings: "XYZ"
+ ship_prefix_tsardom_thokt: "XYZ"
+ ship_prefix_tsardom_agdagath: "XYZ"
+ ship_prefix_tsardom_sautekh: "XYZ"
+ ship_prefix_tsardom_nihilakh: "XYZ"
+ ship_prefix_tsardom_kardenath: "XYZ"
+ ship_prefix_tsardom_oruscar: "XYZ"
+ ship_prefix_tsardom_mephrit: "XYZ"
+ ship_prefix_tsardom_nephrekh: "XYZ"
+ ship_prefix_empire_sarkoni: "XYZ"
+ ship_prefix_texian_empire: "XYZ"
+ ship_prefix_hive_q_orl: "XYZ"
+ ship_prefix_slogt_territory: "XYZ"
+ ship_prefix_rak_gol_territory: "XYZ"
+ ship_prefix_state_barghesi: "XYZ"
+ ship_prefix_confederation_stryxis: "XYZ"
+ ship_prefix_sardonite_state: "XYZ"
  ship_prefix_cythor: "Кутор."
- PRESCRIPTED_species_name_cythor_fiends: "Кутор"
- PRESCRIPTED_species_plural_cythor_fiends: "Куторы"
- PRESCRIPTED_species_adjective_cythor_fiends: "Куторск"
  
  ###############
  # Государства #
@@ -36,12 +112,190 @@
  name_dark_angels: "Тёмные Ангелы"
  PRESCRIPTED_adjective_dark_angels: "Темноангельск"
  
+ name_imperial_fists: "Имперские Кулаки"
+ PRESCRIPTED_adjective_imperial_fists: "Кулакиск"
+ 
+ name_blood_angels: "Кровавые Ангелы"
+ PRESCRIPTED_adjective_blood_angels: "Кровавоангелск"
+ 
+ name_salamanders: "Саламандры"
+ PRESCRIPTED_adjective_salamanders: "Саламандрыск"
+ 
+ name_space_wolves: "Космические Волки"
+ PRESCRIPTED_adjective_space_wolves: "Космоволкск"
+ 
+ name_black_templars: "Чёрные Храмовники"
+ PRESCRIPTED_adjective_black_templars: "ЧёрноХрамовникск"
+ 
+ name_segmentum_obscurus: "Страна"
+ PRESCRIPTED_adjective_segmentum_obscurus: "Странаск"
+ 
+ name_segmentum_obscurus: "Сегментум Обскурус"
+ PRESCRIPTED_adjective_segmentum_obscurus: "Обскуруск"
+ 
+ name_ultima_segmentum: "Сегментум Ультима"
+ PRESCRIPTED_adjective_ultima_segmentum: "Ультимаск"
+ 
+ name_segmentum_tempestus: "Сегментум Темпестус"
+ PRESCRIPTED_adjective_segmentum_tempestus: "Темпестуск"
+ 
+ name_eastern_fringe: "Домен Востока"
+ PRESCRIPTED_adjective_eastern_fringe: "Восточно доменск" #Домен Востокаск
+ 
+ name_manachean_commonwealth: "Манахейское Содружество"
+ PRESCRIPTED_adjective_manachean_commonwealth: "Манахейск"
+ 
+ name_black_legion: "Чёрный Легион"
+ PRESCRIPTED_adjective_black_legion: "Чёрнолегионск"
+ 
+ name_death_guard: "Гвардия Смерти"
+ PRESCRIPTED_adjective_death_guard: "Смертогвардск"
+ 
+ name_world_eaters: "Пожиратели Миров"
+ PRESCRIPTED_adjective_world_eaters: "Мирожравск"
+ 
+ name_thousand_sons: "Тысяча Сынов"
+ PRESCRIPTED_adjective_thousand_sons: "Тысячасыновск"
+ 
+ name_emperors_children: "Дети Императора"
+ PRESCRIPTED_adjective_emperors_children: "Императорск"
+ 
+ name_word_bearers: "Несущие Слово"
+ PRESCRIPTED_adjective_word_bearers: "Несущесловск"
+ 
+ name_alpha_legion: "Альфа-Легион"
+ PRESCRIPTED_adjective_alpha_legion: "Альфа-Легионск"
+ 
+ name_mechanicum_cyclothrathe: "Механикум Циклотрата"
+ PRESCRIPTED_adjective_mechanicum_cyclothrathe: "Механикумск"
+ 
+ name_mechanicum_samech: "Механикум Самеха"
+ PRESCRIPTED_adjective_mechanicum_samech: "Механикумск"
+ 
+ name_blood_pact: "Кровавый Пакт"
+ PRESCRIPTED_adjective_blood_pact: "Кровавопактск"
+ 
+ name_admonition: "Войско Наставления"
+ PRESCRIPTED_adjective_admonition: "Наставленческ"
+ 
+ name_land_chaos: "Страна Хаоса"
+ PRESCRIPTED_adjective_land_chaos: "Хаоситск"
+ 
+ name_conjurers_of_fear: "Заклинатели Страха"
+ PRESCRIPTED_adjective_conjurers_of_fear: "Страхозаклинательск"
+ 
+ name_barbed_chalice: "Воинство Шипастой Чаши"
+ PRESCRIPTED_adjective_barbed_chalice: "Шипасточашиск"
+ 
+ name_brothrhd_knife: "Братство Ножа"
+ PRESCRIPTED_adjective_brothrhd_knife: "Братоножеск"
+ 
+ name_givers_of_life: "Дарители Жизни"
+ PRESCRIPTED_adjective_givers_of_life: "Жизнедарск"
+ 
+ name_bloodbath: "Кровавая Резня"
+ PRESCRIPTED_adjective_bloodbath: "Резняяяяск"
+ 
+ name_stigmartus: "Стигмартус"
+ PRESCRIPTED_adjective_stigmartus: "Стигмартуск"
+ 
+ name_penumbral: "Полутень"
+ PRESCRIPTED_adjective_penumbral: "Полутеньск"
+ 
+ name_eldar_empire: "Миры Азуриан"
+ PRESCRIPTED_adjective_eldar_empire: "Азурианcr"
+ 
+ name_ynnari: "Иннари"
+ PRESCRIPTED_adjective_ynnari: "Иннарск"
+ 
+ name_worlds_aldari: "Миры Экзодитов"
+ PRESCRIPTED_adjective_worlds_aldari: "Экзодитск"
+ 
+ name_commorragh: "Коморра"
+ PRESCRIPTED_adjective_commorragh: "Коморритск"
+ 
+ name_tau_federation: "Федерация Тау"
+ PRESCRIPTED_adjective_tau_federation: "Таутск"
+ 
+ name_blood_axes: "Страна"
+ PRESCRIPTED_adjective_blood_axes: "Странаск"
+ 
+ name_goffs: "Страна"
+ PRESCRIPTED_adjective_goffs: "Странаск"
+ 
+ name_evil_sunz: "Страна"
+ PRESCRIPTED_adjective_evil_sunz: "Странаск"
+ 
+ name_deathskulls: "Страна"
+ PRESCRIPTED_adjective_deathskulls: "Странаск"
+ 
+ name_bad_moons: "Страна"
+ PRESCRIPTED_adjective_bad_moons: "Странаск"
+ 
+ name_snakebites: "Страна"
+ PRESCRIPTED_adjective_snakebites: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
+ name_state: "Страна"
+ PRESCRIPTED_adjective_state: "Странаск"
+ 
  name_cythor: "Союз Куторов"
  PRESCRIPTED_adjective_cythor: "Куторовск"
  
  #############
  # Правители #
  #############
+ #Общие
+ ruler_title_ruler_male: "Правитель"
+ ruler_title_ruler_female: "Правительница"
+ # Империум #
  PRESCRIPTED_ruler_name_imperium: "Неот"
  ruler_title_imperium_male: "Император"
  ruler_title_imperium_female: "Императрица"
@@ -53,10 +307,46 @@
  ruler_title_ecclesiarchy_female: "Аббатиса"
  #Космодесант
  ruler_title_astartes: "Примарх"
- ruler_title_dark_angels: "Магистр"
+ ruler_title_magister: "Магистр"
  PRESCRIPTED_ruler_name_ultramarines: "Робаут Жиллиман"
  PRESCRIPTED_ruler_name_dark_angels: "Азраил"
+ PRESCRIPTED_ruler_name_imperial_fists: "Грегор Дессиан"
+ PRESCRIPTED_ruler_name_blood_angels: "Данте"
+ PRESCRIPTED_ruler_name_salamanders: "Ту'Шан"
+ PRESCRIPTED_ruler_name_space_wolves: "Логан Гримнар"
+ PRESCRIPTED_ruler_name_black_templars: "Хелбрехт"
+ #Имперские субъекты
+ ruler_title_governor_male: "Губернатор"
+ ruler_title_governor_female: "Губернатор"
+ PRESCRIPTED_ruler_name_segmentum_obscurus: "Нумелей"
+ PRESCRIPTED_ruler_name_ultima_segmentum: "Мациний"
+ PRESCRIPTED_ruler_name_segmentum_tempestus: "Герминия"
+ PRESCRIPTED_ruler_name_eastern_fringe: "Тамбабве"
+ PRESCRIPTED_ruler_name_manachean_commonwealth: "Прокул Офаний"
+ # Хаоситы #
+ PRESCRIPTED_ruler_name_black_legion: "Азраил"
+ PRESCRIPTED_ruler_name_death_guard: "Азраил"
+ PRESCRIPTED_ruler_name_world_eaters: "Азраил"
+ PRESCRIPTED_ruler_name_thousand_sons: "Азраил"
+ PRESCRIPTED_ruler_name_emperors_children: "Азраил"
+ PRESCRIPTED_ruler_name_word_bearers: "Азраил"
+ PRESCRIPTED_ruler_name_alpha_legion: "Азраил"
+ PRESCRIPTED_ruler_name_mechanicum_cyclothrathe: "Азраил"
+ PRESCRIPTED_ruler_name_mechanicum_samech: "Азраил"
+ PRESCRIPTED_ruler_name_blood_pact: "Азраил"
+ PRESCRIPTED_ruler_name_admonition: "Азраил"
+ PRESCRIPTED_ruler_name_land_chaos: "Азраил"
+ PRESCRIPTED_ruler_name_conjurers_of_fear: "Азраил"
+ PRESCRIPTED_ruler_name_barbed_chalice: "Азраил"
+ PRESCRIPTED_ruler_name_brothrhd_knife: "Азраил"
+ PRESCRIPTED_ruler_name_givers_of_life: "Азраил"
+ PRESCRIPTED_ruler_name_bloodbath: "Азраил"
+ PRESCRIPTED_ruler_name_stigmartus: "Азраил"
+ PRESCRIPTED_ruler_name_penumbral: "Азраил"
  
+ #Некроны
+ PRESCRIPTED_ruler_name_tsar: "Царёк"
+ PRESCRIPTED_ruler_name_sarkoni: "Император-Некрофил"
  
  PRESCRIPTED_ruler_name_cythor: "УхТент Ваййрр"
  
@@ -68,6 +358,16 @@
  planet_name_ophellia: "Офелия VII"
  planet_name_macragge: "Макрагг"
  planet_name_rock: "Рок"
+ planet_name_inwit: "Инвит"
+ planet_name_baal: "Ваал"
+ planet_name_nocturne: "Ноктюрн"
+ planet_name_fenris: "Фенрис"
+ planet_name_isis: "Исис"
+ planet_name_fenksworld: "Фенксворлд"
+ planet_name_cephian: "Cephian"
+ planet_name_targus: "Targus"
+ planet_name_ichar: "Ichar"
+ planet_name_manachea: "Манахея"
  
  planet_name_cythor: "9836-18 Grave Core"
  
@@ -80,6 +380,16 @@
  system_name_ophellia: "Офелия"
  system_name_macragge: "Макрагг"
  system_name_rock: "Рок"
+ system_name_inwit: "Инвит"
+ system_name_baal: "Ваал"
+ system_name_nocturne: "Ноктюрн"
+ system_name_fenris: "Фенрис"
+ system_name_isis: "Исис"
+ system_name_fenksworld: "Фенксворлд"
+ system_name_cephian: "Cephian"
+ system_name_targus: "Targus"
+ system_name_ichar: "Ichar"
+ system_name_manachea: "Манахея"
  
  system_name_porteus: "Porteus"
  
