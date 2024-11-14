@@ -18,6 +18,9 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_start_fleet.1 }
 		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
 		#establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -938,6 +941,9 @@ country_event = { #Mechanicus
 		owner = {
 			country_event = { id = WrWrld_game_start.202 days = 2 }
 		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
+		#}
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -1521,6 +1527,9 @@ country_event = { #Ecclesiarchy
 		owner = {
 			country_event = { id = WrWrld_game_start.203 days = 2 }
 		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
+		#}
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -5163,6 +5172,9 @@ country_event = { #Ultima_Segmentum
 		owner = {
 			country_event = { id = WrWrld_game_start.214 days = 2 }
 		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
 		#owner = {
 		#	country_event = { id = WrWrld_start_fleet.1 }
 		#}
@@ -6749,6 +6761,9 @@ country_event = { #Eastern_Fringe
 		owner = {
 			country_event = { id = WrWrld_game_start.216 days = 2 }
 		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
 		#owner = {
 		#	country_event = { id = WrWrld_start_fleet.1 }
 		#}
@@ -7537,6 +7552,9 @@ country_event = { #Manachean_Commonwealth
 	    save_global_event_target_as = Manachean_Commonwealth_evnt_trgt_country
 		owner = {
 			country_event = { id = WrWrld_game_start.217 days = 2 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country

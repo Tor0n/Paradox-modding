@@ -94,6 +94,9 @@ country_event = { #Tau
 		add_resource = { volatile_motes = 1400 }
 		add_resource = { rare_crystals = 900 }
 		add_resource = { exotic_gases = 900 }
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
 		hidden_effect = {
 			#Соц наука
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
@@ -1148,6 +1151,9 @@ country_event = { #Xenos Slogth
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		owner = {
 			country_event = { id = WrWrld_game_start.115 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		#add_resource = { energy = 25000	}
 		add_resource = { alloys = 14000	}

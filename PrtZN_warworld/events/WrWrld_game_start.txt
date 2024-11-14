@@ -27,3 +27,168 @@ namespace = WrWrld_game_start
 #		name = "WrWrld_game_start.0.a"
 #	}
 #}
+
+country_event = { #Bug fix через костыль
+	id = WrWrld_game_start.601
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Black_Legion_gos
+	#}
+	#owner = {
+	#	country_event = { id = WrWrld_game_start.601 days = 1200 }
+	#}
+	immediate = {
+		capital_scope = {
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			create_army = {
+			#	name = <string>
+				owner = root
+				species = owner_main_species #<target>/random
+				type = assault_army
+			}
+			#create_army_transport = {
+			#	ship_name = <string>
+			#	graphical_culture = <key>
+			#	army_name = <string>
+			#	army_type = assault_army
+			#	species = owner_main_species
+			#}
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 1200 }
+		}
+	}
+}
