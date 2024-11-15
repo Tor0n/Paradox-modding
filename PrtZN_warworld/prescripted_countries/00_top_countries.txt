@@ -2531,7 +2531,7 @@ Bloodbath = {
 Stigmartus = {
 	name = "name_stigmartus"
 	adjective = "PRESCRIPTED_adjective_stigmartus"
-	
+	spawn_enabled = always
 	ship_prefix = "Стигмартус."
 	
 	species = {
@@ -2554,8 +2554,21 @@ Stigmartus = {
 		trait = "trait_traditional"
 	}
 	
+	room="personality_fanatic_purifier_room"
+	
 	authority = "auth_imperial"
 	government = "gov_divine_empire"
+	ethic="ethic_authoritarian"
+	ethic="ethic_militarist"
+	ethic="ethic_fanatic_spiritualist"
+	civics=
+	{
+		"civic_imperial_cult"
+		"civic_aristocratic_elite"
+		"civic_warrior_culture"
+	}
+	origin="origin_chaos"
+	flags = { Stigmartus_start Stigmartus_gos }
 	
 	planet_name = "planet_name_khazant"
 	planet_class = "pc_continental"
@@ -3541,8 +3554,8 @@ Snakebites = {
 }
 # Генокрады #
 Cult_Four_ArmEmpr = {
-	name = "name_cult_аour_armempr"
-	adjective = "PRESCRIPTED_adjective_cult_аour_armempr"
+	name = "name_cult_four_armempr"
+	adjective = "PRESCRIPTED_adjective_cult_four_armempr"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
