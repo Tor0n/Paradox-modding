@@ -2664,8 +2664,8 @@ Penumbral = {
 		}
 	}
 	ruler = {
-		gender = male
 		name = "Ивано Каросан"
+		gender = male
 		portrait = "xevil_male_01"
 		texture = 0
 		evolution_mask = 0
@@ -2753,7 +2753,7 @@ Eldar_Empire = {
 		evolution_mask = 0
 		attachment = 6
 		clothes = 0
-		ruler_title  =  "ruler_title_ruler_male"
+		ruler_title = "ruler_title_ruler_male"
 		ruler_title_female = "ruler_title_ruler_female"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
@@ -3075,8 +3075,8 @@ Tau_Federation = {
 }
 # Орки #
 Blood_Axes = {
-	name = "Кровавые Топоры"
-	adjective = "Кровавые Топорыск"
+	name = "name_blood_axes"
+	adjective = "PRESCRIPTED_adjective_blood_axes"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3154,8 +3154,8 @@ Blood_Axes = {
 	spawn_as_fallen = no
 }
 Goffs = {
-	name = "Гоффы"
-	adjective = "Гоффыск"
+	name = "name_goffs"
+	adjective = "PRESCRIPTED_adjective_goffs"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3233,8 +3233,8 @@ Goffs = {
 	spawn_as_fallen = no
 }
 Evil_Sunz = {
-	name = "Злые Солнца"
-	adjective = "Злые Солнцаск"
+	name = "name_evil_sunz"
+	adjective = "PRESCRIPTED_adjective_evil_sunz"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3310,8 +3310,8 @@ Evil_Sunz = {
 	spawn_as_fallen = no
 }
 Deathskulls = {
-	name = "Смерточерепа"
-	adjective = "Смерточерепаск"
+	name = "name_deathskulls"
+	adjective = "PRESCRIPTED_adjective_deathskulls"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3386,8 +3386,8 @@ Deathskulls = {
 	spawn_as_fallen = no
 }
 Bad_Moons = {
-	name = "Плохие Луны"
-	adjective = "Плохие Луныск"
+	name = "name_bad_moons"
+	adjective = "PRESCRIPTED_adjective_bad_moons"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3463,8 +3463,8 @@ Bad_Moons = {
 	spawn_as_fallen = no
 }
 Snakebites = {
-	name = "Змеекусы"
-	adjective = "Змеекусыск"
+	name = "name_snakebites"
+	adjective = "PRESCRIPTED_adjective_snakebites"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3541,8 +3541,8 @@ Snakebites = {
 }
 # Генокрады #
 Cult_Four_ArmEmpr = {
-	name = "Культ Четырехрукого Императора"
-	adjective = "Культ Четырехрукого Императораск"
+	name = "name_сult_аour_armempr"
+	adjective = "PRESCRIPTED_adjective_сult_аour_armempr"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -3617,592 +3617,611 @@ Cult_Four_ArmEmpr = {
 	spawn_as_fallen = no
 }
 Hivecult = {
-	name="Культ Улья"
-	adjective="Культ Ульяск"
-	spawn_enabled=always
-	ignore_portrait_duplication=no
+	name = "name_hivecult"
+	adjective = "PRESCRIPTED_adjective_hivecult"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
+	ship_prefix = "Генокрад."
 	
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
 	
-	room="organic_room"
+	room = "organic_room"
 	
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	civics={ "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_strength_of_legions" }
-	origin="origin_corinis"
+	authority = "auth_hive_mind"
+	government = "gov_devouring_swarm"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_strength_of_legions" }
+	origin = "origin_corinis"
 	
-	ethic="ethic_gestalt_consciousness"
+	ethic = "ethic_gestalt_consciousness"
 	
 	flags =  { Hivecult_start Hivecult_gos }
 	
-	planet_name="New Gidlam"
-	planet_class="pc_alpine"
-	system_name="New Gidlam"
+	planet_name = "New Gidlam"
+	planet_class = "pc_alpine"
+	system_name = "New Gidlam"
 	#initializer = ""
 	
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
 	
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="HiveCult.dds"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "HiveCult.dds"
 		}
-		background={
-			category="backgrounds"
-			file="triangle_split.dds"
+		background = {
+			category = "backgrounds"
+			file = "triangle_split.dds"
 		}
-		colors={
+		colors = {
 			"shadow_teal"
 			"purple"
 			"black"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	advisor_voice_type="l_hivemind"
-	spawn_as_fallen=no
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Rusted_Claw = {
+	name = "name_rusted_claw"
+	adjective = "PRESCRIPTED_adjective_rusted_claw"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
+	ship_prefix = "Генокрад."
 	
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Ржавый Коготь"
-	adjective="Ржавый Коготьск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Vengeance"
-	planet_class="pc_alpine"
-	system_name="Vengeance"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Rusted_Claw_start Rusted_Claw_gos }
+	
+	planet_name = "Vengeance"
+	planet_class = "pc_alpine"
+	system_name = "Vengeance"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="RustedClaw.dds"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "RustedClaw.dds"
 		}
-		background={
-			category="backgrounds"
-			file="stripes.dds"
+		background = {
+			category = "backgrounds"
+			file = "stripes.dds"
 		}
-		colors={
+		colors = {
 			"dark_orange"
 			"yellow"
-			"null" #black
+			"null"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_subspace_ephapse"
-		"civic_hive_ascetic"
-	}
-	origin="origin_corinis"
-	flags =  { Rusted_Claw_start Rusted_Claw_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Bladed_Cog = {
+	name = "name_bladed_cog"
+	adjective = "PRESCRIPTED_adjective_bladed_cog"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
+	ship_prefix = "Генокрад."
 	
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Зазубренная Шестерня"
-	adjective="Зазубренная Шестерняск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Feinminster"
-	planet_class="pc_alpine"
-	system_name="Feinminster"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	government = "gov_devouring_swarm"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_ascensionists" }
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Bladed_Cog_start Bladed_Cog_gos }
+	
+	planet_name = "Feinminster"
+	planet_class = "pc_alpine"
+	system_name = "Feinminster"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="BladedCog.dds"
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "BladedCog.dds"
 		}
-		background={
-			category="backgrounds"
-			file="circle.dds"
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
 		}
-		colors={
+		colors = {
 			"dark_teal"
 			"red"
 			"black"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_subspace_ephapse"
-		"civic_hive_ascensionists"
-	}
-	origin="origin_corinis"
-	flags =  { Bladed_Cog_start Bladed_Cog_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Pauper_Princes = {
+	name = "name_pauper_princes"
+	adjective = "PRESCRIPTED_adjective_pauper_princes"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
+	ship_prefix = "Генокрад."
 	
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Нищие Принцы"
-	adjective="Нищие Принцыск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Kendrax"
-	planet_class="pc_alpine"
-	system_name="Kendrax"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Pauper_Princes_start Pauper_Princes_gos }
+	
+	planet_name = "Kendrax"
+	planet_class = "pc_alpine"
+	system_name = "Kendrax"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="PauperPrinces.dds"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "PauperPrinces.dds"
 		}
-		background={
-			category="backgrounds"
-			file="flag_BG_12.dds"
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_12.dds"
 		}
-		colors={
+		colors = {
 			"intense_orange"
 			"indigo"
 			"black"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_subspace_ephapse"
-		"civic_hive_ascetic"
-	}
-	origin="origin_corinis"
-	flags =  { Pauper_Princes_start Pauper_Princes_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Twisted_Helix = {
+	name = "name_twisted_helix"
+	adjective = "PRESCRIPTED_adjective_twisted_helix"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	ship_prefix = "Генокрад."
+	
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Кривая Спираль"
-	adjective="Кривая Спиральск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Uralek"
-	planet_class="pc_alpine"
-	system_name="Uralek"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_toxic_baths" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Twisted_Helix_start Twisted_Helix_gos }
+	
+	planet_name = "Uralek"
+	planet_class = "pc_alpine"
+	system_name = "Uralek"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="TwistedHelix.dds"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "TwistedHelix.dds"
 		}
-		background={
-			category="backgrounds"
-			file="flag_BG_1.dds"
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_1.dds"
 		}
-		colors={
+		colors = {
 			"dark_teal"
 			"indigo"
 			"black"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_subspace_ephapse"
-		"civic_hive_toxic_baths"
-	}
-	origin="origin_corinis"
-	flags =  { Twisted_Helix_start Twisted_Helix_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Cult_Hydraic = {
+	name = "name_cult_hydraic"
+	adjective = "PRESCRIPTED_adjective_cult_hydraic"
 	
-	ship_prefix="Генокрад."
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	ship_prefix = "Генокрад."
+	
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Культ Гидраик"
-	adjective="Культ Гидраикск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Vigilance"
-	planet_class="pc_alpine"
-	system_name="Vigilance"
+	
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_subspace_ephapse" "civic_hive_hyperspace_specialty" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Cult_Hydraic_start Cult_Hydraic_gos }
+	
+	planet_name = "Vigilance"
+	planet_class = "pc_alpine"
+	system_name = "Vigilance"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="SonsofJormungander.dds"
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "SonsofJormungander.dds"
 		}
-		background={
-			category="backgrounds"
-			file="circle.dds"
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
 		}
-		colors={
+		colors = {
 			"orange"
 			"blue"
 			"black"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_subspace_ephapse"
-		"civic_hive_hyperspace_specialty"
-	}
-	origin="origin_corinis"
-	flags =  { Cult_Hydraic_start Cult_Hydraic_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 Star_Kindred = {
+	name = "name_star_kindred"
+	adjective = "PRESCRIPTED_adjective_star_kindred"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	ship_prefix = "Генокрад."
+	
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Звёздный Род"
-	adjective="Звёздный Родск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Gleptid"
-	planet_class="pc_alpine"
-	system_name="Gleptid"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_divided_attention" "civic_hive_one_mind" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Star_Kindred_start Star_Kindred_gos }
+	
+	planet_name = "Gleptid"
+	planet_class = "pc_alpine"
+	system_name = "Gleptid"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="Behemoid.dds"
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "Behemoid.dds"
 		}
-		background={
-			category="backgrounds"
-			file="flag_BG_42.dds"
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_42.dds"
 		}
-		colors={
+		colors = {
 			"dark_blue"
 			"bright_yellow"
 			"black"
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_divided_attention"
-		"civic_hive_one_mind"
-	}
-	origin="origin_corinis"
-	flags =  { Star_Kindred_start Star_Kindred_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no	
 }
 Blessed_Wormlings = {
+	name = "name_blessed_wormlings"
+	adjective = "PRESCRIPTED_adjective_blessed_wormlings"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
-	ship_prefix="Генокрад."
-	species={
-		class="NECROID"
-		portrait="nec1"
-		species_name="Генокрад"
-		species_plural="Генокрады"
-		species_adjective="Генокрадск"
-		name_list="FUN2"
-		gender=male
-		trait="trait_hive_mind"
-		trait="trait_extremely_adaptive"
-		trait="trait_talented"
-		trait="trait_quick_learners"
-		trait="trait_slow_breeders"
-		trait="trait_repugnant"
-		trait="trait_strong"
-		trait="trait_sedentary"
+	ship_prefix = "Генокрад."
+	
+	species = {
+		class = "NECROID"
+		portrait = "nec1"
+		species_name = "Генокрад"
+		species_plural = "Генокрады"
+		species_adjective = "Генокрадск"
+		name_list = "FUN2"
+		gender = male
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_talented"
+		trait = "trait_quick_learners"
+		trait = "trait_slow_breeders"
+		trait = "trait_repugnant"
+		trait = "trait_strong"
+		trait = "trait_sedentary"
 	}
-	name="Благословлённые Червяки"
-	adjective="Благословлённые Червякиск"
-	authority="auth_hive_mind"
-	government="gov_devouring_swarm"
-	advisor_voice_type="l_hivemind"
-	planet_name="Quistorol"
-	planet_class="pc_alpine"
-	system_name="Quistorol"
+	
+	room = "organic_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_devouring_swarm" "civic_hive_ascetic" "civic_memory_vault_hive" }
+	government = "gov_devouring_swarm"
+	origin = "origin_corinis"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags =  { Blessed_Wormlings_start Blessed_Wormlings_gos }
+	
+	planet_name = "Quistorol"
+	planet_class = "pc_alpine"
+	system_name = "Quistorol"
 	#initializer = ""
-	graphical_culture="gothic_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag={
-		icon={
-			category="Warhammer_GeneStealer"
-			file="Innerwyrm.dds"
+	
+	graphical_culture = "gothic_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_GeneStealer"
+			file = "Innerwyrm.dds"
 		}
-		background={
-			category="backgrounds"
-			file="rounded_middle.dds"
+		background = {
+			category = "backgrounds"
+			file = "rounded_middle.dds"
 		}
-		colors={
+		colors = {
 			"blue"
 			"shadow_teal"
 			"null" #black
 			"null"
 		}
 	}
-	ruler={
-		name="Маргес"
-		gender=male
-		portrait="nec1"
-		texture=2
-		evolution_mask=0
-		attachment=0
-		clothes=0
-		ruler_title="Патриарх"
-		trait="trait_ruler_logistic_understanding"
-		leader_class=commander
+	ruler = {
+		name = "Маргес"
+		gender = male
+		portrait = "nec1"
+		texture = 2
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		ruler_title = "Патриарх"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = commander
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="organic_room"
-	spawn_enabled=always
-	ethic="ethic_gestalt_consciousness"
-	civics={
-		"civic_hive_devouring_swarm"
-		"civic_hive_ascetic"
-		"civic_memory_vault_hive"
-	}
-	origin="origin_corinis"
-	flags =  { Blessed_Wormlings_start Blessed_Wormlings_gos }
+	advisor_voice_type = "l_hivemind"
+	spawn_as_fallen = no
 }
 # Некроны #
 Tsardom_Thokt = {
-	name = "Царство Токт"
-	adjective = "Царство Токт."
+	name = "name_tsardom_thokt"
+	adjective = "PRESCRIPTED_adjective_tsardom_thokt"
 	ignore_portrait_duplication = no
 	spawn_enabled = always
 	
@@ -4274,8 +4293,8 @@ Tsardom_Thokt = {
 	spawn_as_fallen = no
 }
 Tsardom_Agdagath = {
-	name = "Царство Агдагат"
-	adjective = "Царство Агдагат."
+	name = "name_tsardom_agdagath"
+	adjective = "PRESCRIPTED_adjective_tsardom_agdagath"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4347,8 +4366,8 @@ Tsardom_Agdagath = {
 	spawn_as_fallen = no
 }
 Tsardom_Sautekh = {
-	name = "Царство Саутех"
-	adjective = "Царство Саутех."
+	name = "name_tsardom_sautekh"
+	adjective = "PRESCRIPTED_adjective_tsardom_sautekh"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4420,8 +4439,8 @@ Tsardom_Sautekh = {
 	spawn_as_fallen = no
 }
 Tsardom_Nihilakh = {
-	name = "Царство Нигилах"
-	adjective = "Царство Нигилах."
+	name = "name_tsardom_nihilakh"
+	adjective = "PRESCRIPTED_adjective_tsardom_nihilakh"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4493,8 +4512,8 @@ Tsardom_Nihilakh = {
 	spawn_as_fallen = no
 }
 Tsardom_Kardenath = {
-	name = "Царство Карденат"
-	adjective = "Царство Карденат."
+	name = "name_tsardom_kardenath"
+	adjective = "PRESCRIPTED_adjective_tsardom_kardenath"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4556,7 +4575,7 @@ Tsardom_Kardenath = {
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title  =  "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "PRESCRIPTED_ruler_name_tsar"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -4564,8 +4583,8 @@ Tsardom_Kardenath = {
 	spawn_as_fallen = no
 }
 Tsardom_Oruscar = {
-	name = "Царство Орускар"
-	adjective = "Царство Орускар."
+	name = "name_tsardom_oruscar"
+	adjective = "PRESCRIPTED_adjective_tsardom_oruscar"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4638,8 +4657,8 @@ Tsardom_Oruscar = {
 	spawn_as_fallen = no
 }
 Tsardom_Mephrit = {
-	name = "Царство Мефрит"
-	adjective = "Царство Мефрит."
+	name = "name_tsardom_mephrit"
+	adjective = "PRESCRIPTED_adjective_tsardom_mephrit"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4710,8 +4729,8 @@ Tsardom_Mephrit = {
 	spawn_as_fallen = no
 }
 Tsardom_Nephrekh = {
-	name = "Царство Некфист"
-	adjective = "Царство Некфист."
+	name = "name_tsardom_nephrekh"
+	adjective = "PRESCRIPTED_adjective_tsardom_nephrekh"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4784,8 +4803,8 @@ Tsardom_Nephrekh = {
 	spawn_as_fallen = no
 }
 Empire_Sarkoni = {
-	name = "Империя Саркон"
-	adjective = "Империя Саркон."
+	name = "name_empire_sarkoni"
+	adjective = "PRESCRIPTED_adjective_empire_sarkoni"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4859,11 +4878,10 @@ Empire_Sarkoni = {
 }
 # Xenos #
 Texian_Empire = {
-	name = "Тексианская Империя"
-	adjective = "Тексианская Империя."
+	name = "name_texian_empire"
+	adjective = "PRESCRIPTED_adjective_texian_empire"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
-	
 	
 	ship_prefix = "Тексиан."
 	
@@ -4899,8 +4917,8 @@ Texian_Empire = {
 	
 	planet_name = "Текс"
 	planet_class = "pc_desert"
-	#initializer = ""
 	system_name = "Текс Прайм"
+	#initializer = ""
 	
 	graphical_culture = "arthropoid_01"
 	city_graphical_culture = "arthropoid_01"
@@ -4935,8 +4953,8 @@ Texian_Empire = {
 	spawn_as_fallen = no
 }
 Hive_Q_Orl = {
-	name = "Рой Кв'Орлов"
-	adjective = "Рой Кв'Орлов."
+	name = "name_hive_q_orl"
+	adjective = "PRESCRIPTED_adjective_hive_q_orl"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -4974,8 +4992,8 @@ Hive_Q_Orl = {
 	
 	planet_name = "Локиит"
 	planet_class = "pc_alpine"
-	#initializer = ""
 	system_name = "Локит"
+	#initializer = ""
 	
 	graphical_culture = "arthropoid_01"
 	city_graphical_culture = "molluscoid_01"
@@ -5010,8 +5028,8 @@ Hive_Q_Orl = {
 	spawn_as_fallen = no	
 }
 Slogt_Territory = {
-	name = "Территория Слогтов"
-	adjective =  "Территория Слогтов."
+	name = "name_slogt_territory"
+	adjective =  "PRESCRIPTED_adjective_slogt_territory"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -5050,8 +5068,8 @@ Slogt_Territory = {
 	
 	planet_name = "Рамейн"
 	planet_class = "pc_tundra"
-	#initializer = ""
 	system_name = "Ремайн"
+	#initializer = ""
 	
 	graphical_culture = "necroid_01"
 	city_graphical_culture = "molluscoid_01"
@@ -5086,8 +5104,8 @@ Slogt_Territory = {
 	spawn_as_fallen = no
 }
 Rak_Gol_Territory = {
-	name = "Территория Рак'Голов"
-	adjective = "Территория Рак'Голов."
+	name = "name_rak_gol_territory"
+	adjective = "PRESCRIPTED_adjective_rak_gol_territory"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -5124,8 +5142,8 @@ Rak_Gol_Territory = {
 	
 	planet_name = "Апполлония"
 	planet_class = "pc_desert"
-	#initializer = ""
 	system_name = "Апсилов"
+	#initializer = ""
 	
 	graphical_culture = "fungoid_01"
 	city_graphical_culture = "molluscoid_01"
@@ -5159,8 +5177,8 @@ Rak_Gol_Territory = {
 	spawn_as_fallen = no
 }
 State_Barghesi = {
-	name = "Государство Баргези"
-	adjective = "Государство Баргези."
+	name = "name_state_barghesi"
+	adjective = "PRESCRIPTED_adjective_state_barghesi"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
@@ -5232,150 +5250,146 @@ State_Barghesi = {
 	spawn_as_fallen = no
 }
 Confederation_Stryxis = { #Конфедерация Стриксис
-	name="Конфедерация Стриксис"
-	adjective="Конфедерация Стриксис."
+	name = "name_confederation_stryxis"
+	adjective = "PRESCRIPTED_adjective_confederation_stryxis"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
+	ship_prefix = "Стриксис."
 	
-	ship_prefix="Стриксис."
-	
-	species={
-		class="MAM"
-		portrait="mam5"
-		species_name="Стриксис"
-		species_plural="Стриксисы"
-		species_adjective="Стриксиск"
-		name_list="MAM2"
-		gender=indeterminable
-		trait="trait_survivor"
-		trait="trait_thrifty"
-		trait="trait_slow_breeders"
-		trait="trait_nomadic"
-		trait="trait_wasteful"
-		trait="trait_charismatic"
+	species = {
+		class = "MAM"
+		portrait = "mam5"
+		species_name = "Стриксис"
+		species_plural = "Стриксисы"
+		species_adjective = "Стриксиск"
+		name_list = "MAM2"
+		gender = indeterminable
+		trait = "trait_survivor"
+		trait = "trait_thrifty"
+		trait = "trait_slow_breeders"
+		trait = "trait_nomadic"
+		trait = "trait_wasteful"
+		trait = "trait_charismatic"
 	}
 	
-	authority="auth_oligarchic"
+	room = "personality_peaceful_traders_room"
 	
-	government="gov_theocratic_oligarchy"
+	authority = "auth_oligarchic"
+	civics = { "civic_free_haven" "civic_merchant_guilds" "civic_functional_architecture" }
+	government = "gov_theocratic_oligarchy"
+	origin = "origin_post_apocalyptic"
 	
-	planet_name="Стрикс"
-	planet_class="pc_alpine"
-	system_name="Ланорра"
+	ethic = "ethic_fanatic_xenophile"
+	ethic = "ethic_pacifist"
+	ethic = "ethic_spiritualist"
+	
+	planet_name = "Стрикс"
+	planet_class = "pc_alpine"
+	system_name = "Ланорра"
 	initializer = "Lanorra_initializer"
 	
 	flags = { Strixis_start Strixis_gos }
 	
-	graphical_culture="toxoid_01"
-	city_graphical_culture="arthropoid_01"
-	empire_flag={
-		icon={
-			category="toxoid"
-			file="toxoid_09.dds"
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "arthropoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "toxoid"
+			file = "toxoid_09.dds"
 		}
-		background={
-			category="backgrounds"
-			file="circle.dds"
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
 		}
-		colors={
+		colors = {
 			"toxic_green"
 			"yellow"
 			"null"
 			"null"
 		}
 	}
-	ruler={
-		gender=indeterminable
-		name="Бирм Ден Сакр"
-		portrait="mam5"
-		texture=0
-		attachment=0
-		clothes=1
-		trait="leader_trait_spark_of_genius"
-		leader_class=scientist
+	ruler = {
+		name = "Бирм Ден Сакр"
+		gender = indeterminable
+		portrait = "mam5"
+		texture = 0
+		attachment = 0
+		clothes = 1
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_peaceful_traders_room"
-	spawn_enabled=always
-	ethic="ethic_fanatic_xenophile"
-	ethic="ethic_pacifist"
-	ethic="ethic_spiritualist"
-	civics={
-		"civic_free_haven"
-		"civic_merchant_guilds"
-		"civic_functional_architecture"
-	}
-	origin="origin_post_apocalyptic"
+	spawn_as_fallen = no
 }
 Sardonite_State = { #Государство Сардонитов
+	name = "name_sardonite_state"
+	adjective = "PRESCRIPTED_adjective_sardonite_state"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
 	
+	ship_prefix = "Сардонит."
 	
-	
-	ship_prefix="Сардонит."
-	species={
-		class="REP"
-		portrait="rep4"
-		species_name="Сардонит"
-		species_plural="Сардониты"
-		species_adjective="Сардонитск"
-		name_list="REP3"
-		gender=not_set
-		trait="trait_communal"
-		trait="trait_conservational"
-		trait="trait_natural_engineers"
-		trait="trait_sedentary"
+	species = {
+		class = "REP"
+		portrait = "rep4"
+		species_name = "Сардонит"
+		species_plural = "Сардониты"
+		species_adjective = "Сардонитск"
+		name_list = "REP3"
+		gender = not_set
+		trait = "trait_communal"
+		trait = "trait_conservational"
+		trait = "trait_natural_engineers"
+		trait = "trait_sedentary"
 	}
-	name="Государство Сардонитов"
-	adjective="Государство Сардонитов."
-	authority="auth_oligarchic"
-	government="gov_science_directorate"
-	planet_name="Сардия"
-	planet_class="pc_tropical"
-	system_name="Амфрелия"
+	
+	room = "personality_decadent_hierarchy_room"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_technocracy" "civic_meritocracy" "civic_memorialist" }
+	government = "gov_science_directorate"
+	origin = "origin_default"
+	
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_fanatic_materialist"
+	
+	planet_name = "Сардия"
+	planet_class = "pc_tropical"
+	system_name = "Амфрелия"
 	
 	flags = { Sardonit_start Sardonit_gos }
 	#initializer = ""
 	
-	graphical_culture="plantoid_01"
-	city_graphical_culture="plantoid_01"
-	empire_flag={
-		icon={
-			category="plantoid"
-			file="plantoid_04.dds"
+	graphical_culture = "plantoid_01"
+	city_graphical_culture = "plantoid_01"
+	empire_flag = {
+		icon = {
+			category = "plantoid"
+			file = "plantoid_04.dds"
 		}
-		background={
-			category="backgrounds"
-			file="vertical.dds"
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
 		}
-		colors={
+		colors = {
 			"shadow_teal"
 			"shadow_green"
 			"null"
 			"null"
 		}
 	}
-	ruler={
-		gender=female
-		name="Фарглекс"
-		portrait="rep4"
-		texture=2
-		attachment=0
-		clothes=2
-		trait="leader_trait_spark_of_genius"
-		leader_class=scientist
+	ruler = {
+		name = "Фарглекс"
+		gender = female
+		portrait = "rep4"
+		texture = 2
+		attachment = 0
+		clothes = 2
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_decadent_hierarchy_room"
-	spawn_enabled=always
-	ethic="ethic_fanatic_militarist"
-	ethic="ethic_fanatic_materialist"
-	civics={
-		"civic_technocracy"
-		"civic_meritocracy"
-		"civic_memorialist"
-	}
-	origin="origin_default"
+	spawn_as_fallen = no
 }
 Cythor_Fiends = {
 	name = "name_cythor"
@@ -5403,6 +5417,7 @@ Cythor_Fiends = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 	}
+	
 	room = "lithoid_room"
 	
 	authority = "auth_imperial"
@@ -5440,8 +5455,8 @@ Cythor_Fiends = {
 		}
 	}
 	ruler =  {
-		gender = indeterminable
 		name = "PRESCRIPTED_ruler_name_cythor"
+		gender = indeterminable
 		portrait = "lith5"
 		texture = 3
 		evolution_mask = 0
