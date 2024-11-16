@@ -1,8 +1,8 @@
 version="1"
 tags={
-	"Fixes"
+	"Total Conversion"
 }
-name="PrtZN_warworld"
+name="Warhammer M41"
 picture="thumbnail.png"
-supported_version="v3.12.5"
-remote_file_id="3297958799"
+supported_version="v3.14.159"
+remote_file_id="3366297519"
