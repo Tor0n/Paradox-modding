@@ -1,5 +1,15 @@
 #######################
-#### Major Empires ####
+# city_graphical_culture = "humanoid_01" заменено на city_graphical_culture = "mammalian_01" *Humanoids Species Pack
+# убраны trait у расс:
+# *Humanoids Species Pack
+# 	trait_humanoid_existential_iteroparity
+# 	trait_humanoid_jinxed
+# 	trait_humanoid_psychological_infertility
+# *Toxoids Species Pack
+# 	trait_incubator
+# 	trait_noxious
+# 
+# 10 файл трейтов и далее проверить
 #######################
 
 Imperium = {
@@ -45,7 +55,7 @@ Imperium = {
 	#initializer = "Terra_initializer"
 	
 	graphical_culture = "gothic_01" #wain_01
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -106,7 +116,7 @@ Mechanicus = {
 	room = "machine_room"
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_galactic_curators" } #civic_galactic_curators
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_galactic_curators" } #удалено civic_galactic_curators
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -123,7 +133,7 @@ Mechanicus = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -201,7 +211,7 @@ Ecclesiarchy = {
 	#initializer = ""
 	
 	graphical_culture = "wain_04"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -279,7 +289,7 @@ Ultramarines = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -358,7 +368,7 @@ Dark_Angels = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -435,7 +445,7 @@ Imperial_Fists = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -512,7 +522,7 @@ Blood_Angels = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -588,7 +598,7 @@ Salamanders = {
 	system_name = "system_name_nocturne"
 	#initializer = ""
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	empire_flag = {
 		icon = {
 			category = "Warhammer"
@@ -666,7 +676,7 @@ Space_Wolves = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -743,7 +753,7 @@ Black_Templars = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -818,7 +828,7 @@ Segmentum_Obscurus = {
 	#initializer = ""
 	
 	graphical_culture = "wain_02"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -896,7 +906,7 @@ Ultima_Segmentum = {
 	#initializer = ""
 	
 	graphical_culture = "wain_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -973,7 +983,7 @@ Segmentum_Tempestus = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -1050,7 +1060,7 @@ Eastern_Fringe = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -1183,7 +1193,7 @@ Black_Legion = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1267,7 +1277,7 @@ Death_Guard = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1346,7 +1356,7 @@ World_Eaters = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1425,7 +1435,7 @@ Thousand_Sons = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	room = "personality_evangelizing_zealots_room"
@@ -1504,7 +1514,7 @@ Emperors_Children = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1584,7 +1594,7 @@ Word_Bearers = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1663,7 +1673,7 @@ Alpha_Legion = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1744,7 +1754,7 @@ Mechanicum_Cyclothrathe = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1828,7 +1838,7 @@ Mechanicum_Samech = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1909,7 +1919,7 @@ Blood_Pact = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -1991,7 +2001,7 @@ Admonition = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2072,7 +2082,7 @@ Land_Chaos = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2152,7 +2162,7 @@ Conjurers_of_Fear = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2233,7 +2243,7 @@ Barbed_Chalice = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2312,7 +2322,7 @@ Brothrhd_Knife = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2392,7 +2402,7 @@ Givers_of_Life = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2473,7 +2483,7 @@ Bloodbath = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2550,7 +2560,7 @@ Stigmartus = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2632,7 +2642,7 @@ Penumbral = {
 		trait = "trait_resilient"
 		trait = "trait_nomadic"
 		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
+		#trait = "trait_humanoid_jinxed"
 		trait = "trait_traditional"
 	}
 	
@@ -2713,7 +2723,7 @@ Eldar_Empire = {
 		trait = "trait_solitary"
 		trait = "trait_conservational"
 		trait = "trait_venerable"
-		trait = "trait_humanoid_psychological_infertility"
+		#trait = "trait_humanoid_psychological_infertility"
 		trait = "trait_deviants"
 		trait = "trait_resilient"
 	}
@@ -2736,7 +2746,7 @@ Eldar_Empire = {
 	system_name = "system_name_maiden"
 	initializer = "Zandros_initializer"
 	
-	graphical_culture = "humanoid_01"
+	graphical_culture = "mammalian_01"
 	city_graphical_culture = "avian_01"
 	
 	empire_flag = {
@@ -2796,7 +2806,7 @@ Ynnari = {
 		trait = "trait_solitary"
 		trait = "trait_conservational"
 		trait = "trait_venerable"
-		trait = "trait_humanoid_psychological_infertility"
+		#trait = "trait_humanoid_psychological_infertility"
 		trait = "trait_deviants"
 		trait = "trait_resilient"
 	}
@@ -2818,7 +2828,7 @@ Ynnari = {
 	system_name = "system_name_iyanden"
 	#initializer = ""
 	
-	graphical_culture = "humanoid_01"
+	graphical_culture = "mammalian_01"
 	city_graphical_culture = "avian_01"
 	
 	empire_flag = {
@@ -2876,7 +2886,7 @@ Worlds_Aldari = {
 		trait = "trait_solitary"
 		trait = "trait_conservational"
 		trait = "trait_venerable"
-		trait = "trait_humanoid_psychological_infertility"
+		#trait = "trait_humanoid_psychological_infertility"
 		trait = "trait_deviants"
 		trait = "trait_resilient"
 	}
@@ -3104,13 +3114,13 @@ Blood_Axes = {
 		trait = "trait_extremely_adaptive"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_slow_learners"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
 		trait = "trait_repugnant"
 		trait = "trait_fleeting"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	
 	room = "scrappy_room"
@@ -3183,13 +3193,13 @@ Goffs = {
 		trait = "trait_extremely_adaptive"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_slow_learners"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
 		trait = "trait_repugnant"
 		trait = "trait_fleeting"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	
 	room = "scrappy_room"
@@ -3262,13 +3272,13 @@ Evil_Sunz = {
 		trait = "trait_extremely_adaptive"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_slow_learners"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
 		trait = "trait_repugnant"
 		trait = "trait_fleeting"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	
 	room = "scrappy_room"
@@ -3339,13 +3349,13 @@ Deathskulls = {
 		trait = "trait_extremely_adaptive"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_slow_learners"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
 		trait = "trait_repugnant"
 		trait = "trait_fleeting"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	room = "scrappy_room"
 	
@@ -3415,13 +3425,13 @@ Bad_Moons = {
 		trait = "trait_extremely_adaptive"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_slow_learners"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
 		trait = "trait_repugnant"
 		trait = "trait_fleeting"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	
 	room = "scrappy_room"
@@ -3492,13 +3502,13 @@ Snakebites = {
 		trait = "trait_extremely_adaptive"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_slow_learners"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
 		trait = "trait_repugnant"
 		trait = "trait_fleeting"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	
 	room = "scrappy_room"
@@ -3593,7 +3603,7 @@ Cult_Four_ArmEmpr = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -3669,7 +3679,7 @@ Hivecult = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -3745,7 +3755,7 @@ Rusted_Claw = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -3820,7 +3830,7 @@ Bladed_Cog = {
 	system_name = "system_name_feinminster"
 	#initializer = ""
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	empire_flag = {
 		icon = {
 			category = "Warhammer_GeneStealer"
@@ -3895,7 +3905,7 @@ Pauper_Princes = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -3971,7 +3981,7 @@ Twisted_Helix = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -4046,7 +4056,7 @@ Cult_Hydraic = {
 	system_name = "system_name_vigilance"
 	#initializer = ""
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	empire_flag = {
 		icon = {
 			category = "Warhammer_GeneStealer"
@@ -4120,7 +4130,7 @@ Star_Kindred = {
 	system_name = "system_name_gleptid"
 	#initializer = ""
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	empire_flag = {
 		icon = {
 			category = "Warhammer_GeneStealer"
@@ -4195,7 +4205,7 @@ Blessed_Wormlings = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
 		icon = {
@@ -4338,7 +4348,7 @@ Tsardom_Agdagath = {
 	
 	planet_name = "planet_name_thur"
 	planet_class = "pc_tundra"
-	system_name = "system_name_thir"
+	system_name = "system_name_Thir"
 	#initializer = ""
 	
 	graphical_culture="steelribs_01" #nemesis_01
@@ -4979,7 +4989,7 @@ Hive_Q_Orl = {
 		name_list = "ART4"
 		gender = female
 		trait = "trait_hive_mind"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_resilient"
 		trait = "trait_strong"
 		trait = "trait_extremely_adaptive"
@@ -5060,7 +5070,7 @@ Slogt_Territory = {
 		trait = "trait_slow_breeders"
 		trait = "trait_nomadic"
 		trait = "trait_repugnant"
-		trait = "trait_noxious"
+		#trait = "trait_noxious"
 	}
 	
 	room = "runic_room"
@@ -5128,8 +5138,8 @@ Rak_Gol_Territory = {
 		plural = "PRESCRIPTED_species_plural_rakgol"
 		adjective = "PRESCRIPTED_species_adjective_rakgol"
 		name_list = "PLANT4"
-		trait = "trait_incubator"
-		trait = "trait_noxious"
+		#trait = "trait_incubator"
+		#trait = "trait_noxious"
 		trait = "trait_very_strong"
 		trait = "trait_unruly"
 		trait = "trait_quarrelsome"
@@ -5419,7 +5429,7 @@ Cythor_Fiends = {
 		gender = indeterminable
 		trait = "trait_lithoid"
 		trait = "trait_lithoid_volatile_excretions"
-		trait = "trait_humanoid_existential_iteroparity"
+		#trait = "trait_humanoid_existential_iteroparity"
 		trait = "trait_repugnant"
 		trait = "trait_quarrelsome"
 		trait = "trait_unruly"
