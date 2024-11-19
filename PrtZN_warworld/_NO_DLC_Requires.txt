@@ -1,5 +1,5 @@
 #######################
-# city_graphical_culture = "humanoid_01" заменено на city_graphical_culture = "mammalian_01" *Humanoids Species Pack
+# city_graphical_culture = "mammalian_01" заменено на city_graphical_culture = "mammalian_01" *Humanoids Species Pack
 # убраны trait у расс:
 # *Humanoids Species Pack
 # 	trait_humanoid_existential_iteroparity
@@ -116,7 +116,7 @@ Mechanicus = {
 	room = "machine_room"
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_galactic_curators" } #удалено civic_galactic_curators
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -1176,7 +1176,8 @@ Black_Legion = {
 	name = "name_black_legion"
 	adjective = "PRESCRIPTED_adjective_black_legion"
 	
-	ship_prefix = "Чёрный Легион."
+	ship_prefix = "ship_prefix_chaos"
+	
 	species = {
 		class = "HUM"
 		portrait = "xevil"
@@ -1241,7 +1242,7 @@ Black_Legion = {
 		evolution_mask = 0
 		attachment = 3
 		clothes = 19
-		ruler_title = "Повелитель"
+		ruler_title = "ruler_title_overlord"
 		trait = "trait_ruler_charismatic"
 		leader_class = commander
 	}
@@ -1258,7 +1259,7 @@ Death_Guard = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Гвардия Смерти."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1338,7 +1339,7 @@ World_Eaters = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Пожиратели Миров."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1417,7 +1418,7 @@ Thousand_Sons = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Тысяча Сынов."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1496,7 +1497,7 @@ Emperors_Children = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Дети Императора."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1576,7 +1577,7 @@ Word_Bearers = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Несущие Слово."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1655,7 +1656,7 @@ Alpha_Legion = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Альфа-Легион."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1735,7 +1736,7 @@ Mechanicum_Cyclothrathe = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Циклотрат."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1803,8 +1804,8 @@ Mechanicum_Cyclothrathe = {
 		evolution_mask = 0
 		attachment = 5
 		clothes = 12
-		ruler_title = "Фабрикатор-Генерал"
-		ruler_title_female = "Фабрикатор-Генерал"
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
 		#heir_title_female = "Святая"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = scientist
@@ -1819,7 +1820,7 @@ Mechanicum_Samech = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Самех."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1887,8 +1888,8 @@ Mechanicum_Samech = {
 		evolution_mask = 0
 		attachment = 8
 		clothes = 9
-		ruler_title = "Фабрикатор-Генерал"
-		ruler_title_female = "Фабрикатор-Генерал"
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
 		#heir_title_female = "Святая"
 		trait = "leader_trait_spark_of_genius"
 		leader_class = scientist
@@ -1901,7 +1902,7 @@ Blood_Pact = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Кровавый Пакт."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -1968,9 +1969,7 @@ Blood_Pact = {
 		evolution_mask = 0
 		attachment = 4
 		clothes = 11
-		ruler_title = "Гаур"
-		ruler_title_female = "Гаур"
-		#heir_title_female = "Святая"
+		ruler_title = "ruler_title_gaur"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -1983,7 +1982,7 @@ Admonition = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Наставление."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2050,8 +2049,8 @@ Admonition = {
 		evolution_mask = 0
 		attachment = 5
 		clothes = 3
-		ruler_title = "Верховный Жрец"
-		ruler_title_female = "Верховная Жрица"
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
 		trait = "trait_ruler_eye_for_talent"
 		leader_class = official
 	}
@@ -2064,7 +2063,7 @@ Land_Chaos = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Хаос."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2144,7 +2143,7 @@ Conjurers_of_Fear = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Заклинатель."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2211,8 +2210,8 @@ Conjurers_of_Fear = {
 		evolution_mask = 0
 		attachment = 6
 		clothes = 8
-		ruler_title = "Верховный Жрец"
-		ruler_title_female = "Верховная Жрица"
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
 		trait = "trait_ruler_eye_for_talent"
 		leader_class = scientist
 	}
@@ -2225,7 +2224,7 @@ Barbed_Chalice = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Шипастая Чаша."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2304,7 +2303,7 @@ Brothrhd_Knife = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Братство Ножа."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2384,7 +2383,7 @@ Givers_of_Life = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Дарители Жизни."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2451,8 +2450,8 @@ Givers_of_Life = {
 		evolution_mask = 0
 		attachment = 11
 		clothes = 21
-		ruler_title = "Верховный Жрец"
-		ruler_title_female = "Верховная Жрица"
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
 		trait = "trait_ruler_charismatic"
 		leader_class = official
 	}
@@ -2465,7 +2464,7 @@ Bloodbath = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Кровавая Резня."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2542,7 +2541,7 @@ Stigmartus = {
 	name = "name_stigmartus"
 	adjective = "PRESCRIPTED_adjective_stigmartus"
 	spawn_enabled = always
-	ship_prefix = "Стигмартус."
+	ship_prefix = "ship_prefix_chaos"
 	
 	species = {
 		class = "HUM"
@@ -2624,7 +2623,7 @@ Penumbral = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Полутень."
+	ship_prefix = "ship_prefix_chaos."
 	
 	species = {
 		class = "HUM"
@@ -2691,8 +2690,8 @@ Penumbral = {
 		evolution_mask = 0
 		attachment = 0
 		clothes = 13
-		ruler_title = "Верховный Жрец"
-		ruler_title_female = "Верховная Жрица"
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
 		trait = "leader_trait_spark_of_genius"
 		leader_class = scientist
 	}
@@ -2706,7 +2705,8 @@ Eldar_Empire = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Эльдар."
+	ship_prefix = "ship_prefix_eldar_empire"
+	
 	species = {
 		class = "HUM"
 		portrait = "eldar"
@@ -2766,7 +2766,7 @@ Eldar_Empire = {
 		}
 	}
 	ruler = {
-		name = "Eldrad_Ulthran"
+		name = "PRESCRIPTED_ruler_name_eldar_empire"
 		gende = male
 		portrait = "eldar_male_03"
 		texture = 1
@@ -2787,7 +2787,7 @@ Ynnari = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Иннари."
+	ship_prefix = "ship_prefix_ynnari"
 	
 	species = {
 		class = "HUM"
@@ -2848,7 +2848,7 @@ Ynnari = {
 		}
 	}
 	ruler = {
-		name = "Иврайна"
+		name = "PRESCRIPTED_ruler_name_ynnari"
 		gender = female
 		portrait = "eldar_female_01"
 		texture = 1
@@ -2869,7 +2869,7 @@ Worlds_Aldari = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Экзодит."
+	ship_prefix = "ship_prefix_worlds_aldari"
 	species = {
 		class = "HUM"
 		portrait = "eldar"
@@ -2951,7 +2951,7 @@ Commorragh = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Друкхарский"
+	ship_prefix = "ship_prefix_commorragh"
 	
 	species = {
 		class = "HUM"
@@ -3008,7 +3008,7 @@ Commorragh = {
 		}
 	}
 	ruler = {
-		name = "Архра"
+		name = "PRESCRIPTED_ruler_name_commorragh"
 		gender = female
 		portrait = "druchii_female_05"
 		texture = 5
@@ -3026,7 +3026,7 @@ Tau_Federation = {
 	spawn_enabled = always
 	ignore_portrait_duplication = no
 	
-	ship_prefix = "Тау."
+	ship_prefix = "ship_prefix_tau_federation"
 	
 	species = {
 		class = "REP"
@@ -3082,7 +3082,7 @@ Tau_Federation = {
 		}
 	}
 	ruler ={
-		name = "Аун'Ва"
+		name = "PRESCRIPTED_ruler_name_tau"
 		gender = male
 		portrait = "rep2"
 		texture = 0
@@ -3159,14 +3159,14 @@ Blood_Axes = {
 		}
 	}
 	ruler = {
-		name = "Gorsnik_Magash"
+		name = "PRESCRIPTED_ruler_name_blood_axes"
 		gender = indeterminable
 		portrait = "humanoid_hp_12"
 		texture = 6
 		evolution_mask = 0
 		attachment = 0
 		clothes = 5
-		ruler_title = "Варбосс"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -3238,14 +3238,14 @@ Goffs = {
 		}
 	}
 	ruler = {
-		name = "Ghazghkull_Mag_Uruk_Thraka"
+		name = "PRESCRIPTED_ruler_name_goffs"
 		gender = indeterminable
 		portrait = "humanoid_hp_12"
 		texture = 1
 		evolution_mask = 0
 		attachment = 0
 		clothes = 3
-		ruler_title = "Варбосс"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -3315,14 +3315,14 @@ Evil_Sunz = {
 		}
 	}
 	ruler = {
-		name = "Shazfrag"
+		name = "PRESCRIPTED_ruler_name_evil_sunz"
 		gender = indeterminable
 		portrait = "humanoid_hp_12"
 		texture = 12
 		evolution_mask = 0
 		attachment = 0
 		clothes = 2
-		ruler_title = "Варбосс"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -3372,8 +3372,10 @@ Deathskulls = {
 	planet_class = "pc_savannah"
 	system_name = "system_name_charadon"
 	#initializer = ""
+	
 	graphical_culture = "toxoid_01"
 	city_graphical_culture = "molluscoid_01"
+	
 	empire_flag = {
 		icon = {
 			category = "Warhammer_Orks"
@@ -3392,13 +3394,13 @@ Deathskulls = {
 	}
 	ruler = {
 		gender = indeterminable
-		name = "Finds_Bullets_He_Has_Not_Lost" #Там должно быть - и дословно можно переводить на любой язык
+		name = "PRESCRIPTED_ruler_name_fbhhnl"
 		portrait = "humanoid_hp_12"
 		texture = 9
 		evolution_mask = 0
 		attachment = 0
 		clothes = 4
-		ruler_title = "Варбосс"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -3468,14 +3470,14 @@ Bad_Moons = {
 		}
 	}
 	ruler = {
-		name = "Nazdreg_Ug_Urdgrub"
+		name = "PRESCRIPTED_ruler_name_bad_moons"
 		gender = indeterminable
 		portrait = "humanoid_hp_12"
 		texture = 19
 		evolution_mask = 0
 		attachment = 0
 		clothes = 8
-		ruler_title = "Варбосс"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -3545,14 +3547,14 @@ Snakebites = {
 		}
 	}
 	ruler = {
-		name = "Grudbolg"
+		name = "PRESCRIPTED_ruler_name_snakebites"
 		gender = indeterminable
 		portrait = "humanoid_hp_12"
 		texture = 7
 		evolution_mask = 0
 		attachment = 0
 		clothes = 7
-		ruler_title = "Варбосс"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -3622,14 +3624,14 @@ Cult_Four_ArmEmpr = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_cult_four_armempr"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -3698,14 +3700,14 @@ Hivecult = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_hivecult"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -3774,14 +3776,14 @@ Rusted_Claw = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_rusted_claw"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -3848,14 +3850,14 @@ Bladed_Cog = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_bladed_cog"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -3924,14 +3926,14 @@ Pauper_Princes = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_pauper_princes"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -4000,14 +4002,14 @@ Twisted_Helix = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_twisted_helix"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -4074,14 +4076,14 @@ Cult_Hydraic = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_cult_hydraic"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -4148,14 +4150,14 @@ Star_Kindred = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_star_kindred"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -4224,14 +4226,14 @@ Blessed_Wormlings = {
 		}
 	}
 	ruler = {
-		name = "Маргес"
+		name = "PRESCRIPTED_ruler_name_blessed_wormlings"
 		gender = male
 		portrait = "nec1"
 		texture = 2
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "Патриарх"
+		ruler_title = "ruler_title_warboss"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -4250,9 +4252,9 @@ Tsardom_Thokt = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_thokt"
-		plural = "PRESCRIPTED_species_plural_thokt"
-		adjective = "PRESCRIPTED_species_adjective_thokt"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4298,14 +4300,14 @@ Tsardom_Thokt = {
 		}
 	}
 	ruler = {
-		name = "Онрикс"
+		name = "PRESCRIPTED_ruler_name_tsardom_thokt"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "trait_ruler_feedback_loop"
 		leader_class = scientist
 	}
@@ -4323,9 +4325,9 @@ Tsardom_Agdagath = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_agdagath"
-		plural = "PRESCRIPTED_species_plural_agdagath"
-		adjective = "PRESCRIPTED_species_adjective_agdagath"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4348,7 +4350,7 @@ Tsardom_Agdagath = {
 	
 	planet_name = "planet_name_thur"
 	planet_class = "pc_tundra"
-	system_name = "system_name_Thir"
+	system_name = "system_name_thir"
 	#initializer = ""
 	
 	graphical_culture="steelribs_01" #nemesis_01
@@ -4371,14 +4373,14 @@ Tsardom_Agdagath = {
 		}
 	}
 	ruler = {
-		name = "Барим ден Бадир"
+		name = "PRESCRIPTED_ruler_name_tsardom_agdagath"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "trait_ruler_industrialist"
 		leader_class = official
 	}
@@ -4396,9 +4398,9 @@ Tsardom_Sautekh = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_sautekh"
-		plural = "PRESCRIPTED_species_plural_sautekh"
-		adjective = "PRESCRIPTED_species_adjective_sautekh"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4444,14 +4446,14 @@ Tsardom_Sautekh = {
 		}
 	}
 	ruler = {
-		name = "Имотех"
+		name = "PRESCRIPTED_ruler_name_tsardom_sautekh"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "trait_ruler_logistic_understanding"
 		leader_class = commander
 	}
@@ -4468,9 +4470,9 @@ Tsardom_Nihilakh = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_nihilakh"
-		plural = "PRESCRIPTED_species_plural_nihilakh"
-		adjective = "PRESCRIPTED_species_adjective_nihilakh"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4517,14 +4519,14 @@ Tsardom_Nihilakh = {
 		}
 	}
 	ruler = {
-		name = "Криспех"
+		name = "PRESCRIPTED_ruler_name_tsardom_nihilakh"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "leader_trait_spark_of_genius"
 		leader_class = scientist
 	}
@@ -4542,9 +4544,9 @@ Tsardom_Kardenath = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_kardenath"
-		plural = "PRESCRIPTED_species_plural_kardenath"
-		adjective = "PRESCRIPTED_species_adjective_kardenath"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4588,14 +4590,14 @@ Tsardom_Kardenath = {
 		}
 	}
 	ruler = {
-		name = "Аканабекх"
+		name = "PRESCRIPTED_ruler_name_tsardom_kardenath"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "trait_ruler_warlike"
 		leader_class = commander
 	}
@@ -4613,9 +4615,9 @@ Tsardom_Oruscar = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_oruscar"
-		plural = "PRESCRIPTED_species_plural_oruscar"
-		adjective = "PRESCRIPTED_species_adjective_oruscar"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4662,14 +4664,14 @@ Tsardom_Oruscar = {
 		}
 	}
 	ruler = {
-		name = "Хакмекхпхетпх"
+		name = "PRESCRIPTED_ruler_name_tsardom_oruscar"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "leader_trait_spark_of_genius"
 		leader_class = scientist
 	}
@@ -4687,9 +4689,9 @@ Tsardom_Mephrit = {
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
-		name = "PRESCRIPTED_species_name_mephrit"
-		plural = "PRESCRIPTED_species_plural_mephrit"
-		adjective = "PRESCRIPTED_species_adjective_mephrit"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4734,14 +4736,14 @@ Tsardom_Mephrit = {
 		}
 	}
 	ruler = {
-		name = "Анубитар"
+		name = "PRESCRIPTED_ruler_name_tsardom_mephrit"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "trait_ruler_eye_for_talent"
 		leader_class = official
 	}
@@ -4759,9 +4761,9 @@ Tsardom_Nephrekh = {
 	species = {
 		class = "USHABTI"
 		portrait = "canoptek_01"
-		name = "PRESCRIPTED_species_name_nephrekh"
-		plural = "PRESCRIPTED_species_plural_nephrekh"
-		adjective = "PRESCRIPTED_species_adjective_nephrekh"
+		name = "PRESCRIPTED_species_name_necrons"
+		plural = "PRESCRIPTED_species_plural_necrons"
+		adjective = "PRESCRIPTED_species_adjective_necrons"
 		name_list = "NECROID2"
 		trait = "trait_machine_unit"
 		trait = "trait_robot_enhanced_memory"
@@ -4815,7 +4817,7 @@ Tsardom_Nephrekh = {
 		evolution_mask = 0
 		attachment = 0
 		clothes = 0
-		ruler_title = "PRESCRIPTED_ruler_name_tsar"
+		ruler_title = "ruler_title_tsar"
 		trait = "trait_ruler_charismatic"
 		leader_class = official
 	}
@@ -4829,6 +4831,7 @@ Empire_Sarkoni = {
 	ignore_portrait_duplication = no
 	
 	ship_prefix = "ship_prefix_empire_sarkoni"
+	
 	species = {
 		class="USHABTI"
 		portrait="canoptek_01"
@@ -4882,7 +4885,7 @@ Empire_Sarkoni = {
 		}
 	}
 	ruler = {
-		name = "Саркони"
+		name = "PRESCRIPTED_ruler_name_empire_sarkoni"
 		gender = male
 		portrait = "canoptek_male_01"
 		texture = 0
@@ -4960,7 +4963,7 @@ Texian_Empire = {
 		}
 	}
 	ruler = {
-		name = "Локсатетль"
+		name = "PRESCRIPTED_ruler_name_texian"
 		gender = male
 		portrait = "tox14"
 		texture = 2
@@ -5035,13 +5038,13 @@ Hive_Q_Orl = {
 		}
 	}
 	ruler = {
-		name = "Хагрида"
+		name = "PRESCRIPTED_ruler_name_q_orl"
 		gender = female
 		portrait = "art13"
 		texture = 3
 		attachment = 0
 		clothes = 0
-		ruler_title_female = "Королева"
+		ruler_title_female = "ruler_title_queen"
 		trait = "trait_ruler_eye_for_talent"
 		leader_class = official
 	}
@@ -5111,7 +5114,7 @@ Slogt_Territory = {
 		}
 	}
 	ruler = {
-		name = "Ув'Ив"
+		name = "PRESCRIPTED_ruler_name_slaugth"
 		gender = indeterminable
 		portrait = "fun9"
 		texture = 1
@@ -5185,7 +5188,7 @@ Rak_Gol_Territory = {
 		}
 	}
 	ruler = {
-		name = "Ризта'Петрек"
+		name = "PRESCRIPTED_ruler_name_rak_gol"
 		gender = male
 		portrait = "pla12"
 		texture = 4
@@ -5257,7 +5260,7 @@ State_Barghesi = {
 		}
 	}
 	ruler = {
-		name = "Вулатко Бухтец"
+		name = "PRESCRIPTED_ruler_name_barghesi"
 		gender = male
 		portrait = "mol5"
 		texture = 3
@@ -5269,7 +5272,7 @@ State_Barghesi = {
 	advisor_voice_type = "l_xenophobe"
 	spawn_as_fallen = no
 }
-Confederation_Stryxis = { #Конфедерация Стриксис
+Confederation_Stryxis = {
 	name = "name_confederation_stryxis"
 	adjective = "PRESCRIPTED_adjective_confederation_stryxis"
 	spawn_enabled = always
@@ -5331,7 +5334,7 @@ Confederation_Stryxis = { #Конфедерация Стриксис
 		}
 	}
 	ruler = {
-		name = "Бирм Ден Сакр"
+		name = "PRESCRIPTED_ruler_name_stryxis"
 		gender = indeterminable
 		portrait = "mam5"
 		texture = 0
@@ -5400,7 +5403,7 @@ Sardonite_State = { #Государство Сардонитов
 		}
 	}
 	ruler = {
-		name = "Фарглекс"
+		name = "PRESCRIPTED_ruler_name_sardonite"
 		gender = female
 		portrait = "rep4"
 		texture = 2

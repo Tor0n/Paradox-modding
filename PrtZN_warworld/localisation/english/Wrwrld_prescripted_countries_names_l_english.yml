@@ -1,7 +1,7 @@
 ﻿l_english:
- PRESCRIPTED_species_name_humans1:0 "Human"
- PRESCRIPTED_species_plural_humans1:0 "Humans"
- PRESCRIPTED_species_adjective_humans1:1 "Human $1$"
+ PRESCRIPTED_species_name_humans1: "Human"
+ PRESCRIPTED_species_plural_humans1: "Humans"
+ PRESCRIPTED_species_adjective_humans1: "Human $1$"
  
  PRESCRIPTED_species_name_mechanicus: "Mechanicus"
  PRESCRIPTED_species_plural_mechanicus: "Mechanicuses"
@@ -10,21 +10,21 @@
  PRESCRIPTED_species_plural_chaos: "Chaosits"
  PRESCRIPTED_species_adjective_chaos: "Chaosits"
  
- PRESCRIPTED_species_name_eldar: "Asuryani"
- PRESCRIPTED_species_plural_eldar: "Asuryani"
- PRESCRIPTED_species_adjective_eldar: "Asuryani"
+ PRESCRIPTED_species_name_eldar: "Eldar"
+ PRESCRIPTED_species_plural_eldar: "Eldars"
+ PRESCRIPTED_species_adjective_eldar: "Eldar"
  
- PRESCRIPTED_species_name_exodites: "Exodites"
- PRESCRIPTED_species_plural_exodites: "Exoditeses"
- PRESCRIPTED_species_adjective_exodites: "Exodites"
+ PRESCRIPTED_species_name_exodites: "Eldar"
+ PRESCRIPTED_species_plural_exodites: "Eldars"
+ PRESCRIPTED_species_adjective_exodites: "Eldar"
  
  PRESCRIPTED_species_name_drukhari: "Drukhari"
  PRESCRIPTED_species_plural_drukhari: "Drukhari"
  PRESCRIPTED_species_adjective_drukhari: "Drukhari"
  
- PRESCRIPTED_species_name_tau: "Tau"
- PRESCRIPTED_species_plural_tau: "Tau"
- PRESCRIPTED_species_adjective_tau: "Tau"
+ PRESCRIPTED_species_name_tau: "T'au"
+ PRESCRIPTED_species_plural_tau: "T'au"
+ PRESCRIPTED_species_adjective_tau: "T'au"
  
  PRESCRIPTED_species_name_ork: "Ork"
  PRESCRIPTED_species_plural_ork: "Orks"
@@ -34,7 +34,7 @@
  PRESCRIPTED_species_plural_genestealer: "Genestealers"
  PRESCRIPTED_species_adjective_genestealer: "Genestealers"
  
- #Некроны
+ # Necrons #
  PRESCRIPTED_species_name_necrons: "Necron"
  PRESCRIPTED_species_plural_necrons: "Necrons"
  PRESCRIPTED_species_adjective_necrons: "Necron"
@@ -71,7 +71,7 @@
  PRESCRIPTED_species_plural_cythor_fiends: "Cythor Fiends"
  PRESCRIPTED_species_adjective_cythor_fiends: "Cythor Fiends"
  
- #Префиксы кораблей
+ #ship prefix
  ship_prefix_imperium: "Imperium."
  ship_prefix_mechanicus: "Mechanicus."
  ship_prefix_ecclesiarchy: "Ecclesiarchy."
@@ -111,11 +111,11 @@
  # ship_prefix_stigmartus: "XYZ"
  # ship_prefix_penumbral: "XYZ"
  ######################################################################################
- # ship_prefix_eldar_empire: "XYZ"
- # ship_prefix_ynnari: "XYZ"
- # ship_prefix_worlds_aldari: "XYZ"
- # ship_prefix_commorragh: "XYZ"
- # ship_prefix_tau_federation: "XYZ"
+ ship_prefix_eldar_empire: "Eldar."
+ ship_prefix_ynnari: "Ynnari."
+ ship_prefix_worlds_aldari: "Exodites."
+ ship_prefix_commorragh: "Drukhari."
+ ship_prefix_tau_federation: "T'au."
  ######################################################################################
  ship_prefix_ork: "Ork."
  # ship_prefix_blood_axes: "XYZ"
@@ -156,9 +156,9 @@
  ship_prefix_sardonite_state: "Sardonite."
  ship_prefix_cythor: "Cythor."
  
- ###############
- # Государства #
- ###############
+ ##########
+ # States #
+ ##########
  name_imperium: "Imperium of Man"
  PRESCRIPTED_adjective_humans1: "Human"
  
@@ -267,14 +267,14 @@
  name_ynnari: "Ynnari"
  PRESCRIPTED_adjective_ynnari: "Ynnari"
  
- name_worlds_aldari: "Worlds Aldari"
- PRESCRIPTED_adjective_worlds_aldari: "Worlds Aldari"
+ name_worlds_aldari: "Worlds Exodites"
+ PRESCRIPTED_adjective_worlds_aldari: "Exodit"
  
  name_commorragh: "Commorragh"
  PRESCRIPTED_adjective_commorragh: "Commorragh"
  
- name_tau_federation: "Tau Federation"
- PRESCRIPTED_adjective_tau_federation: "Tau"
+ name_tau_federation: "T'au Federation"
+ PRESCRIPTED_adjective_tau_federation: "T'au"
  
  name_blood_axes: "Blood Axes"
  PRESCRIPTED_adjective_blood_axes: "Blood Axes"
@@ -372,13 +372,13 @@
  name_cythor: "Union Cythor"
  PRESCRIPTED_adjective_cythor: "Cythor"
  
- #############
- # Правители #
- #############
- #Общие
+ ###########
+ # Rulers #
+ ##########
+ #Common
  ruler_title_ruler_male: "Ruler"
  ruler_title_ruler_female: "Ruler"
- # Империум #
+ # Imperium #
  PRESCRIPTED_ruler_name_imperium: "Neot"
  ruler_title_imperium_male: "Emperor"
  ruler_title_imperium_female: "Empress"
@@ -388,7 +388,7 @@
  
  PRESCRIPTED_ruler_name_ecclesiarchy: "Veridian"
  ruler_title_ecclesiarchy_female: "Abbess"
- #Космодесант
+ #Astartes
  ruler_title_astartes: "Primarch"
  ruler_title_magister: "Master"
  PRESCRIPTED_ruler_name_ultramarines: "Roboute Guilliman"
@@ -398,84 +398,132 @@
  PRESCRIPTED_ruler_name_salamanders: "Tu'Shan"
  PRESCRIPTED_ruler_name_space_wolves: "Logan Grimnar"
  PRESCRIPTED_ruler_name_black_templars: "Helbrecht"
- #Имперские субъекты
+ #Imperium subjects
  ruler_title_governor_male: "Governor"
  ruler_title_governor_female: "Governor"
- # PRESCRIPTED_ruler_name_segmentum_obscurus: "Нумелей"
- # PRESCRIPTED_ruler_name_ultima_segmentum: "Мациний"
- # PRESCRIPTED_ruler_name_segmentum_tempestus: "Герминия"
- # PRESCRIPTED_ruler_name_eastern_fringe: "Тамбабве"
- # PRESCRIPTED_ruler_name_manachean_commonwealth: "Прокул Офаний"
- # Хаоситы #
- # PRESCRIPTED_ruler_name_black_legion: "Абаддон"
- # PRESCRIPTED_ruler_name_death_guard: "Мортарион"
- # PRESCRIPTED_ruler_name_world_eaters: "Ангрон"
- # PRESCRIPTED_ruler_name_thousand_sons: "Магнус"
- # PRESCRIPTED_ruler_name_emperors_children: "Фулгрим"
- # PRESCRIPTED_ruler_name_word_bearers: "Лоргар"
- # PRESCRIPTED_ruler_name_alpha_legion: "Альфарий"
- # PRESCRIPTED_ruler_name_mechanicum_cyclothrathe: "Спурий Цепасий"
- # PRESCRIPTED_ruler_name_mechanicum_samech: "Корис Григорис"
- # PRESCRIPTED_ruler_name_blood_pact: "Урлок"
- # PRESCRIPTED_ruler_name_admonition: "Урмал"
- # PRESCRIPTED_ruler_name_land_chaos: "Галл Хаттий"
- # PRESCRIPTED_ruler_name_conjurers_of_fear: "Шим'дре'лекс'казар"
- # PRESCRIPTED_ruler_name_barbed_chalice: "Pontius Glaw"
- # PRESCRIPTED_ruler_name_brothrhd_knife: "Криол Фоуст"
- # PRESCRIPTED_ruler_name_givers_of_life: "Артинктан"
- # PRESCRIPTED_ruler_name_bloodbath: "Крейг"
- # PRESCRIPTED_ruler_name_stigmartus: "Элак Сарда"
- # PRESCRIPTED_ruler_name_penumbral: "Ивано Каросан"
+ PRESCRIPTED_ruler_name_segmentum_obscurus: "Numelay"
+ PRESCRIPTED_ruler_name_ultima_segmentum: "Macinium"
+ PRESCRIPTED_ruler_name_segmentum_tempestus: "Herminia"
+ PRESCRIPTED_ruler_name_eastern_fringe: "Tambabwe"
+ PRESCRIPTED_ruler_name_manachean_commonwealth: "Proculus Ophanius"
+ # Chaosits #
+ ruler_title_overlord: "Overlord"
+ ruler_title_high_priest_male: "High Priest"
+ ruler_title_high_priest_female: "High Priestess"
+ ruler_title_gaur: "Gaur"
+ PRESCRIPTED_ruler_name_black_legion: "Abaddon"
+ PRESCRIPTED_ruler_name_death_guard: "Mortarion"
+ PRESCRIPTED_ruler_name_world_eaters: "Angron"
+ PRESCRIPTED_ruler_name_thousand_sons: "Magnus"
+ PRESCRIPTED_ruler_name_emperors_children: "Fulgrim"
+ PRESCRIPTED_ruler_name_word_bearers: "Lorgar"
+ PRESCRIPTED_ruler_name_alpha_legion: "Alpharius"
+ PRESCRIPTED_ruler_name_mechanicum_cyclothrathe: "Spurius Cepasius"
+ PRESCRIPTED_ruler_name_mechanicum_samech: "Koris Grigoris"
+ PRESCRIPTED_ruler_name_blood_pact: "Urlock"
+ PRESCRIPTED_ruler_name_admonition: "Urmal"
+ PRESCRIPTED_ruler_name_land_chaos: "Gall Hattius"
+ PRESCRIPTED_ruler_name_conjurers_of_fear: "Shim'dre'lex'kazar"
+ PRESCRIPTED_ruler_name_barbed_chalice: "Pontius Glaw"
+ PRESCRIPTED_ruler_name_brothrhd_knife: "Criol Fowst"
+ PRESCRIPTED_ruler_name_givers_of_life: "Artinktan"
+ PRESCRIPTED_ruler_name_bloodbath: "Craig"
+ PRESCRIPTED_ruler_name_stigmartus: "Elak Sarda"
+ PRESCRIPTED_ruler_name_penumbral: "Ivano Karosan"
+ # Aeldar и Tau #
+ ruler_title_leader_male: "Leader"
+ ruler_title_leader_female: "Leader"
+ PRESCRIPTED_ruler_name_eldar: "Eldrad Ulthran"
+ PRESCRIPTED_ruler_name_ynnari: "Yvraine"
+ PRESCRIPTED_ruler_name_aldari: "Hephanir"
+ PRESCRIPTED_ruler_name_commorragh: "Arhra"
+ PRESCRIPTED_ruler_name_tau: "Aun'Va"
+ # Orks #
+ ruler_title_warboss: "Warboss"
+ PRESCRIPTED_ruler_name_blood_axes: "Gorsnik Magash"
+ PRESCRIPTED_ruler_name_goffs: "Ghazghkull Mag Uruk Thraka"
+ PRESCRIPTED_ruler_name_evil_sunz: "Shazfrag"
+ PRESCRIPTED_ruler_name_fbhhnl: "Finds-Bullets-He-Has-Not-Lost"
+ PRESCRIPTED_ruler_name_bad_moons: "Nazdreg Ug Urdgrub"
+ PRESCRIPTED_ruler_name_snakebites: "Grudbolg"
+ # Genestealers #
+ ruler_title_patriarch: "Patriarch"
+ PRESCRIPTED_ruler_name_cult_four_armempr: "Margues"
+ PRESCRIPTED_ruler_name_hivecult: "Margues"
+ PRESCRIPTED_ruler_name_rusted_claw: "Margues"
+ PRESCRIPTED_ruler_name_bladed_cog: "Margues"
+ PRESCRIPTED_ruler_name_pauper_princes: "Margues"
+ PRESCRIPTED_ruler_name_twisted_helix: "Margues"
+ PRESCRIPTED_ruler_name_cult_hydraic: "Margues"
+ PRESCRIPTED_ruler_name_star_kindred: "Margues"
+ PRESCRIPTED_ruler_name_blessed_wormlings: "Margues"
+ # Necrons #
  
- #Некроны
- PRESCRIPTED_ruler_name_tsar: "PRESCRIPTED_adjective_admonitionhaeron"
- PRESCRIPTED_ruler_name_sarkoni: "Silent King"
- 
+ ruler_name_tsar: "Phaeron"
+ ruler_title_sarkoni: "Silent King"
+ PRESCRIPTED_ruler_name_tsardom_thokt: "Onryx"
+ PRESCRIPTED_ruler_name_tsardom_agdagath: "Barim den Badir"
+ PRESCRIPTED_ruler_name_tsardom_sautekh: "Imotech"
+ PRESCRIPTED_ruler_name_tsardom_nihilakh: "Krispekh"
+ PRESCRIPTED_ruler_name_tsardom_kardenath: "Akanabekh"
+ PRESCRIPTED_ruler_name_tsardom_oruscar: "Hakmephet"
+ PRESCRIPTED_ruler_name_tsardom_mephrit: "Anubitar"
+ PRESCRIPTED_ruler_name_tsardom_nephrekh: "Sylphek"
+ PRESCRIPTED_ruler_name_empire_sarkoni: "Sarkoni"
+ # Xenos #
+ ruler_title_queen: "Queen"
+ PRESCRIPTED_ruler_name_texian: "Loxatelle"
+ PRESCRIPTED_ruler_name_q_orl: "Hagrida"
+ PRESCRIPTED_ruler_name_slaugth: "Uv'iv"
+ PRESCRIPTED_ruler_name_rak_gol: "Rizta'Petrek"
+ PRESCRIPTED_ruler_name_barghesi: "Vulatko Buchtec"
+ PRESCRIPTED_ruler_name_stryxis: "Burm Den Sakr"
+ PRESCRIPTED_ruler_name_sardonite: "Farglex"
  PRESCRIPTED_ruler_name_cythor: "UhTent Weirr"
  
- ###################
- # Названия планет #
- ###################
+ ###############
+ # Planet name #
+ ###############
  planet_name_terra: "Terra"
- # planet_name_voss_prime: "Voos Prime"
- # planet_name_ophellia: "Офелия VII"
- # planet_name_macragge: "Макрагг"
- # planet_name_rock: "Рок"
- # planet_name_inwit: "Инвит"
- # planet_name_baal: "Ваал"
- # planet_name_nocturne: "Ноктюрн"
- # planet_name_fenris: "Фенрис"
- # planet_name_isis: "Исис"
- # planet_name_fenksworld: "Фенксворлд"
- # planet_name_cephian: "Cephian"
- # planet_name_targus: "Targus"
- # planet_name_ichar: "Ichar"
- # planet_name_manachea: "Манахея"
- # planet_name_Cthonia: "Хтония"
- # planet_name_plague_planet: "Чумная Планета"
- # planet_name_bodt: "Бодт"
- # planet_name_sortiarius: "Сортиариус"
- # planet_name_fulgrimworld: "Фулгримворлд"
- # planet_name_sicarus: "Сикарус"
- # planet_name_silent: "Сайлент"
- # planet_name_cyclothrathe: "Циклотрат"
- # planet_name_samech: "Самех"
- # planet_name_gereon: "Гереон"
- # planet_name_atoma_prime: "Атома Prime"
- # planet_name_carpathia: "Карпатия"
- # planet_name_kantakkha: "Кантаккха"
- # planet_name_vessos: "Вессос"
- # planet_name_stolia: "Столия"
- # planet_name_tremert: "Тремерт"
- # planet_name_jedathra: "Джедатра"
- # planet_name_khazant: "Хазант"
+ planet_name_voss_prime: "Voos Prime"
+ planet_name_ophellia: "Ophellia VII"
+ planet_name_macragge: "Macragge"
+ planet_name_rock: "Rock"
+ planet_name_inwit: "Inwit"
+ planet_name_baal: "Baal"
+ planet_name_nocturne: "Nocturne"
+ planet_name_fenris: "Fenris"
+ planet_name_isis: "Isis"
+ planet_name_fenksworld: "Fenksworld"
+ planet_name_cephian: "Cephian"
+ planet_name_targus: "Targus"
+ planet_name_ichar: "Ichar"
+ planet_name_manachea: "Manachea"
+ planet_name_Cthonia: "Cthonia"
+ planet_name_plague_planet: "Plague Planet"
+ planet_name_bodt: "Bodt"
+ planet_name_sortiarius: "Sortiarius"
+ planet_name_fulgrimworld: "Fulgrimworld"
+ planet_name_sicarus: "Sicarus"
+ planet_name_silent: "Silent"
+ planet_name_cyclothrathe: "Cyclothrathe"
+ planet_name_samech: "Samech"
+ planet_name_gereon: "Gereon"
+ planet_name_atoma_prime: "Atoma Prime"
+ planet_name_carpathia: "Carpathia"
+ planet_name_kantakkha: "Kantakkha"
+ planet_name_vessos: "Vessos"
+ planet_name_stolia: "Stolia"
+ planet_name_tremert: "Tremert"
+ planet_name_jedathra: "Jedathra"
+ planet_name_khazant: "Khazant"
  planet_name_gladius: "Gladius"
- # planet_name_zandros: "Зандрос"
- # planet_name_iyanden: "Iyanden"
- # planet_name_tirathain: "Тиратхейн"
- # planet_name_commorragh: "Коморра"
+ planet_name_zandros: "Zandros"
+ planet_name_iyanden: "Iyanden"
+ planet_name_tirathain: "Tirathain"
+ planet_name_commorragh: "Commorragh"
  planet_name_tau: "T'au"
- planet_name_calverna: "Сalverna"
+ planet_name_calverna: "Calverna"
  planet_name_jurn: "Jurn"
  planet_name_hephastine: "Hephastine"
  planet_name_charadon: "Charadon"
@@ -493,7 +541,7 @@
  planet_name_meghoshta: "Meghoshta"
  planet_name_thur: "Thur"
  planet_name_mandrake: "Mandrake"
- planet_name_gheden: "gheden"
+ planet_name_gheden: "Gheden"
  planet_name_nagathar: "Nagathar"
  planet_name_thanatos: "Thanatos"
  planet_name_perdita: "Perdita"
@@ -509,21 +557,21 @@
  planet_name_cythor: "9836-18 Grave Core"
  
  
- ###################
- # Названия систем #
- ###################
+ ###############
+ # System name #
+ ###############
  system_name_sol: "Sol"
  system_name_voss_prime: "Voss Prime"
  system_name_ophellia: "Ophellia"
- # system_name_macragge: "Макрагг"
- # system_name_rock: "Рок"
- # system_name_inwit: "Инвит"
- # system_name_baal: "Ваал"
- # system_name_nocturne: "Ноктюрн"
- # system_name_fenris: "Фенрис"
- # system_name_isis: "Исис"
- # system_name_fenksworld: "Фенксворлд"
- # system_name_cephian: "Cephian"
+ system_name_macragge: "Macragge"
+ system_name_rock: "Rock"
+ system_name_inwit: "Inwit"
+ system_name_baal: "Baal"
+ system_name_nocturne: "Nocturne"
+ system_name_fenris: "Fenris"
+ system_name_isis: "Isis"
+ system_name_fenksworld: "Fenksworld"
+ system_name_cephian: "Cephian"
  system_name_targus: "Targus"
  system_name_ichar: "Ichar"
  system_name_manachea: "Manachea"
@@ -533,7 +581,7 @@
  system_name_sortiarius: "Sortiarius"
  system_name_fulgrimia: "Fulgrimia"
  system_name_sicarus: "Sicarus"
- system_name_silentia: "Silentia:"
+ system_name_silentia: "Silentia"
  system_name_cyclothrathe: "Cyclothrathe"
  system_name_samech: "Samech"
  system_name_gereon: "Gereon"
@@ -550,8 +598,8 @@
  system_name_iyanden: "Iyanden"
  system_name_exoda: "Exoda"
  system_name_agrin: "Agrin"
- system_name_tau: "T'au System" #Анван
- system_name_calverna: "Сalverna"
+ system_name_tau: "T'au System"
+ system_name_calverna: "Calverna"
  system_name_jurn: "Jurn"
  system_name_hephastine: "Hephastine"
  system_name_charadon: "Charadon"
@@ -566,7 +614,7 @@
  system_name_vigilance: "Vigilance"
  system_name_gleptid: "Gleptid"
  system_name_quistorol: "Quistorol"
- system_name_zamanevkor: "Заманевкор"
+ system_name_zamanevkor: "Zamanevkor"
  system_name_thir: "Thir"
  system_name_mandrake: "Mandrake"
  system_name_kasol: "Kasol"
@@ -583,6 +631,6 @@
  system_name_lanorra: "Lanorra"
  system_name_amphrelia: "Amphelia"
  system_name_porteus: "Porteus"
- 
+ #Нестартовые страны
  
  
