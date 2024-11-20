@@ -1,6 +1,10 @@
 #######################
-# city_graphical_culture = "mammalian_01" заменено на city_graphical_culture = "mammalian_01" *Humanoids Species Pack
+# city_graphical_culture = "humanoid_01" заменено на city_graphical_culture = "mammalian_01" *Humanoids Species Pack
+# city_graphical_culture = "plantoid_01" заменено на city_graphical_culture = "reptilian_01" *Humanoids Species Pack у Sardonite_State
+# aquatic_01, toxoid_01 требуют длс
 # убраны trait у расс:
+# *Aquatics Species Pack
+#	trait_aquatic
 # *Humanoids Species Pack
 # 	trait_humanoid_existential_iteroparity
 # 	trait_humanoid_jinxed
@@ -8,8 +12,10 @@
 # *Toxoids Species Pack
 # 	trait_incubator
 # 	trait_noxious
+# *Cosmic Storms
+#	trait_storm_touched
 # 
-# 10 файл трейтов и далее проверить
+# 14 файл трейтов и далее проверить
 #######################
 
 Imperium = {
@@ -648,7 +654,7 @@ Space_Wolves = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_storm_touched"
+		#trait = "trait_storm_touched"
 		trait = "trait_extremely_adaptive"
 		trait = "trait_unruly"
 		trait = "trait_deviants"
@@ -1269,7 +1275,7 @@ Death_Guard = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_storm_touched"
+		#trait = "trait_storm_touched"
 		trait = "trait_extremely_adaptive"
 		trait = "trait_deviants"
 		trait = "trait_unruly"
@@ -5215,7 +5221,7 @@ State_Barghesi = {
 		species_adjective = "PRESCRIPTED_species_adjective_barghesi"
 		name_list = "AQUATIC1"
 		gender = not_set
-		trait = "trait_aquatic"
+		#trait = "trait_aquatic"
 		trait = "trait_rapid_breeders"
 		trait = "trait_unruly"
 		trait = "trait_quarrelsome"
@@ -5384,8 +5390,8 @@ Sardonite_State = { #Государство Сардонитов
 	flags = { Sardonit_start Sardonit_gos }
 	#initializer = ""
 	
-	graphical_culture = "plantoid_01"
-	city_graphical_culture = "plantoid_01"
+	graphical_culture = "reptilian_01"
+	city_graphical_culture = "reptilian_01"
 	empire_flag = {
 		icon = {
 			category = "plantoid"
