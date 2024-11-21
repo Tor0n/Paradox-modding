@@ -689,7 +689,7 @@ system = { id = "657" name = "Occluda"			position = { x = -268.0000 y = 225.0000
 system = { id = "658" name = "Iynden"			position = { x = -235.0000 y = 225.0000 } initializer = Iyanden_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ynnari_start } } }
 system = { id = "659" name = "Damnos"			position = { x = -240.0000 y = 250.0000 } initializer = Damnos_initializer }
 system = { id = "660" name = "Arkios"			position = { x = 63.0000 y = 2.0000 } initializer = Arkios_initializer }
-system = { id = "661" name = "Rock"			position = { x = 314.2302 y = -298.4 } initializer = Rock_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Dark_Angels_start } } } #Опхидия 316 -272
+system = { id = "661" name = "Rock"				position = { x = 314.2302 y = -298.4 } initializer = Rock_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Dark_Angels_start } } } #Опхидия 316 -272
 system = { id = "662" name = "Gaptyria"			position = { x = -455.0000 y = 436.0000 } initializer = Gaptyria_initializer }
 #										#
  add_hyperlane = { from = "0" to = "7" }
