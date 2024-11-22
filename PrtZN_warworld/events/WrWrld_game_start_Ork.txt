@@ -374,6 +374,57 @@ country_event = { #Orc
 						}
 					}
 				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_toxic_bath_hive 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_fortress
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
 			}
 		}
 	}
@@ -696,6 +747,57 @@ country_event = { #Orc
 				    add_building = building_chemical_plant					
 				    while = {
 				    	count = 65                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_toxic_bath_hive 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_fortress
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #было 73, 30 03 2024 было 67
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1076,6 +1178,57 @@ country_event = { #Orc
 						}
 					}
 				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_toxic_bath_hive 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_fortress
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1398,6 +1551,57 @@ country_event = { #Orc
 				    add_building = building_chemical_plant					
 				    while = {
 				    	count = 65                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_toxic_bath_hive 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_fortress
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #было 73, 30 03 2024 было 67
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1778,6 +1982,57 @@ country_event = { #Orc
 						}
 					}
 				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_toxic_bath_hive 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_fortress
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
 			}
 		}
 	}
@@ -2100,6 +2355,57 @@ country_event = { #Orc
 				    add_building = building_chemical_plant					
 				    while = {
 				    	count = 65                            #было 73, 30 03 2024 было 67
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_toxic_bath_hive 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_fortress
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #было 73, 30 03 2024 было 67
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}

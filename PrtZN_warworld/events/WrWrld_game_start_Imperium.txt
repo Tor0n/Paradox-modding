@@ -4381,6 +4381,9 @@ country_event = { #Segmentum_Obscurus
 	immediate = {
 	    save_global_event_target_as = Segmentum_Obscurus_evnt_trgt_country
 		owner = {
+			country_event = { id = WrWrld_game_start.113 days = 1 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start.213 days = 2 }
 		}
 		#owner = {
@@ -4626,36 +4629,6 @@ country_event = { #Segmentum_Obscurus
 		
 		add_tradition = tr_statecraft_adopt
 		
-		modify_species = {
-			species = owner_main_species
-			name = Сервитор			#species_name_servitor
-			plural = Сервиторы		#species_plural_servitor
-			adjective = Сервиторыск	#species_adjective_servitor
-			add_trait = trait_nerve_stapled
-			add_trait = trait_limited_cybernetic
-			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
-			effect = { save_global_event_target_as = servitor_species }
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_syncretic_proles
-			add_trait = trait_very_strong
-			add_trait = trait_presapient_earthbound
-			effect = { save_global_event_target_as = ogryn_species }
-			name = Огрин
-			plural = Огрины
-			adjective = Огринск
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_psionic
-			add_trait = trait_stargazer
-			effect = { save_global_event_target_as = psyker_species }
-			name = Псайкер
-			plural = Псайкеры
-			adjective = Псайкерск
-		}
-		
 		every_system = {
 			limit = {
 				OR = {
@@ -4744,18 +4717,6 @@ country_event = { #Segmentum_Obscurus
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 12
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
@@ -4772,18 +4733,6 @@ country_event = { #Segmentum_Obscurus
 				    while = {
 				    	count = 16
 				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 11
@@ -4831,18 +4780,6 @@ country_event = { #Segmentum_Obscurus
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 5
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 10
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 5
@@ -4894,18 +4831,6 @@ country_event = { #Segmentum_Obscurus
 				    	}
 					}
 					while = {
-				    	count = 11
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 6
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -4949,18 +4874,6 @@ country_event = { #Segmentum_Obscurus
 				    	}
 					}
 					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -5001,18 +4914,6 @@ country_event = { #Segmentum_Obscurus
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
 				}
 				if = {
 				    limit = { 
@@ -5043,18 +4944,6 @@ country_event = { #Segmentum_Obscurus
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 7
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 1
@@ -5090,18 +4979,6 @@ country_event = { #Segmentum_Obscurus
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 4 #3
@@ -5142,18 +5019,18 @@ country_event = { #Segmentum_Obscurus
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
+					#while = {
+				    #	count = 3
+				    #	create_pop = { species = event_target:servitor_species }
+					#}
+					#while = {
+				    #	count = 1
+				    #	create_pop = { species = event_target:ogryn_species }
+					#}
+					#while = {
+				    #	count = 3
+				    #	create_pop = { species = event_target:psyker_species }
+					#}
 				}
 			}
 		}
@@ -5169,6 +5046,9 @@ country_event = { #Ultima_Segmentum
 	}
 	immediate = {
 	    save_global_event_target_as = Ultima_Segmentum_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start.114 days = 1 }
+		}
 		owner = {
 			country_event = { id = WrWrld_game_start.214 days = 2 }
 		}
@@ -5418,36 +5298,6 @@ country_event = { #Ultima_Segmentum
 		
 		add_tradition = tr_statecraft_adopt
 		
-		modify_species = {
-			species = owner_main_species
-			name = Сервитор			#species_name_servitor
-			plural = Сервиторы		#species_plural_servitor
-			adjective = Сервиторыск	#species_adjective_servitor
-			add_trait = trait_nerve_stapled
-			add_trait = trait_limited_cybernetic
-			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
-			effect = { save_global_event_target_as = servitor_species }
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_syncretic_proles
-			add_trait = trait_very_strong
-			add_trait = trait_presapient_earthbound
-			effect = { save_global_event_target_as = ogryn_species }
-			name = Огрин
-			plural = Огрины
-			adjective = Огринск
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_psionic
-			add_trait = trait_stargazer
-			effect = { save_global_event_target_as = psyker_species }
-			name = Псайкер
-			plural = Псайкеры
-			adjective = Псайкерск
-		}
-		
 		every_system = {
 			limit = {
 				OR = {
@@ -5536,18 +5386,6 @@ country_event = { #Ultima_Segmentum
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 12
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
@@ -5564,18 +5402,6 @@ country_event = { #Ultima_Segmentum
 				    while = {
 				    	count = 16
 				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 11
@@ -5623,18 +5449,6 @@ country_event = { #Ultima_Segmentum
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 5
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 10
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 5
@@ -5686,18 +5500,6 @@ country_event = { #Ultima_Segmentum
 				    	}
 					}
 					while = {
-				    	count = 11
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 6
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -5741,18 +5543,6 @@ country_event = { #Ultima_Segmentum
 				    	}
 					}
 					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -5793,18 +5583,6 @@ country_event = { #Ultima_Segmentum
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
 				}
 				if = {
 				    limit = { 
@@ -5835,18 +5613,6 @@ country_event = { #Ultima_Segmentum
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 7
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 1
@@ -5882,18 +5648,6 @@ country_event = { #Ultima_Segmentum
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 4 #3
@@ -5934,18 +5688,18 @@ country_event = { #Ultima_Segmentum
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
+					#while = {
+				    #	count = 3
+				    #	create_pop = { species = event_target:servitor_species }
+					#}
+					#while = {
+				    #	count = 1
+				    #	create_pop = { species = event_target:ogryn_species }
+					#}
+					#while = {
+				    #	count = 3
+				    #	create_pop = { species = event_target:psyker_species }
+					#}
 				}
 			}
 		}
@@ -5961,6 +5715,9 @@ country_event = { #Segmentum_Tempestus
 	}
 	immediate = {
 	    save_global_event_target_as = Segmentum_Tempestus_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start.115 days = 1 }
+		}
 		owner = {
 			country_event = { id = WrWrld_game_start.215 days = 2 }
 		}
@@ -6207,36 +5964,6 @@ country_event = { #Segmentum_Tempestus
 		
 		add_tradition = tr_statecraft_adopt
 		
-		modify_species = {
-			species = owner_main_species
-			name = Сервитор			#species_name_servitor
-			plural = Сервиторы		#species_plural_servitor
-			adjective = Сервиторыск	#species_adjective_servitor
-			add_trait = trait_nerve_stapled
-			add_trait = trait_limited_cybernetic
-			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
-			effect = { save_global_event_target_as = servitor_species }
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_syncretic_proles
-			add_trait = trait_very_strong
-			add_trait = trait_presapient_earthbound
-			effect = { save_global_event_target_as = ogryn_species }
-			name = Огрин
-			plural = Огрины
-			adjective = Огринск
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_psionic
-			add_trait = trait_stargazer
-			effect = { save_global_event_target_as = psyker_species }
-			name = Псайкер
-			plural = Псайкеры
-			adjective = Псайкерск
-		}
-		
 		every_system = {
 			limit = {
 				OR = {
@@ -6325,18 +6052,6 @@ country_event = { #Segmentum_Tempestus
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 12
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
@@ -6353,18 +6068,6 @@ country_event = { #Segmentum_Tempestus
 				    while = {
 				    	count = 16
 				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 11
@@ -6412,18 +6115,6 @@ country_event = { #Segmentum_Tempestus
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 5
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 10
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 5
@@ -6475,18 +6166,6 @@ country_event = { #Segmentum_Tempestus
 				    	}
 					}
 					while = {
-				    	count = 11
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 6
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -6530,18 +6209,6 @@ country_event = { #Segmentum_Tempestus
 				    	}
 					}
 					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -6582,18 +6249,6 @@ country_event = { #Segmentum_Tempestus
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
 				}
 				if = {
 				    limit = { 
@@ -6624,18 +6279,6 @@ country_event = { #Segmentum_Tempestus
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 7
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 1
@@ -6671,18 +6314,6 @@ country_event = { #Segmentum_Tempestus
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 4 #3
@@ -6758,6 +6389,9 @@ country_event = { #Eastern_Fringe
 	}
 	immediate = {
 	    save_global_event_target_as = Eastern_Fringe_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start.116 days = 1 }
+		}
 		owner = {
 			country_event = { id = WrWrld_game_start.216 days = 2 }
 		}
@@ -7007,36 +6641,6 @@ country_event = { #Eastern_Fringe
 		
 		add_tradition = tr_statecraft_adopt
 		
-		modify_species = {
-			species = owner_main_species
-			name = Сервитор			#species_name_servitor
-			plural = Сервиторы		#species_plural_servitor
-			adjective = Сервиторыск	#species_adjective_servitor
-			add_trait = trait_nerve_stapled
-			add_trait = trait_limited_cybernetic
-			add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
-			effect = { save_global_event_target_as = servitor_species }
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_syncretic_proles
-			add_trait = trait_very_strong
-			add_trait = trait_presapient_earthbound
-			effect = { save_global_event_target_as = ogryn_species }
-			name = Огрин
-			plural = Огрины
-			adjective = Огринск
-		}
-		modify_species = {
-			species = owner_main_species
-			add_trait = trait_psionic
-			add_trait = trait_stargazer
-			effect = { save_global_event_target_as = psyker_species }
-			name = Псайкер
-			plural = Псайкеры
-			adjective = Псайкерск
-		}
-		
 		every_system = {
 			limit = {
 				OR = {
@@ -7125,18 +6729,6 @@ country_event = { #Eastern_Fringe
 				    	create_pop = { species = owner_main_species }
 					}
 					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 12
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
@@ -7153,18 +6745,6 @@ country_event = { #Eastern_Fringe
 				    while = {
 				    	count = 16
 				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 11
@@ -7212,18 +6792,6 @@ country_event = { #Eastern_Fringe
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 5
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 10
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 5
@@ -7275,18 +6843,6 @@ country_event = { #Eastern_Fringe
 				    	}
 					}
 					while = {
-				    	count = 11
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 6
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 2
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -7330,18 +6886,6 @@ country_event = { #Eastern_Fringe
 				    	}
 					}
 					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
-					}
-					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
@@ -7382,18 +6926,6 @@ country_event = { #Eastern_Fringe
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
 				}
 				if = {
 				    limit = { 
@@ -7424,18 +6956,6 @@ country_event = { #Eastern_Fringe
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 7
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 1
@@ -7471,18 +6991,6 @@ country_event = { #Eastern_Fringe
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:psyker_species }
 					}
 					while = {
 						count = 4 #3
@@ -7523,18 +7031,18 @@ country_event = { #Eastern_Fringe
 				    		species = owner_main_species
 				    	}
 					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:servitor_species }
-					}
-					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:ogryn_species }
-					}
-					while = {
-				    	count = 3
-				    	create_pop = { species = event_target:psyker_species }
-					}
+					#while = {
+				    #	count = 3
+				    #	create_pop = { species = event_target:servitor_species }
+					#}
+					#while = {
+				    #	count = 1
+				    #	create_pop = { species = event_target:ogryn_species }
+					#}
+					#while = {
+				    #	count = 3
+				    #	create_pop = { species = event_target:psyker_species }
+					#}
 				}
 			}
 		}
@@ -8192,6 +7700,734 @@ country_event = { #Imperium
 		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
 		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
 		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
+	}
+}
+country_event = { #Pops fix
+	id = WrWrld_game_start.113
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Segmentum_Obscurus_gos
+	}
+	immediate = {
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Segmentum_Obscurus_gos
+					has_star_flag = Segmentum_Obscurus_gos_station
+				}
+			}
+			every_system_planet = {
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				#if = {
+				#	limit = {
+				#		is_capital = yes
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:servitor_species }
+				#	}
+				#	while = {
+				#    	count = 1
+				#    	create_pop = { species = event_target:ogryn_species }
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:psyker_species }
+				#	}
+				#}
+			}
+		}
+	}
+}
+country_event = { #Pops fix
+	id = WrWrld_game_start.114
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Ultima_Segmentum_gos
+	}
+	immediate = {
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Ultima_Segmentum_gos
+					has_star_flag = Ultima_Segmentum_gos_station
+				}
+			}
+			every_system_planet = {
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				#if = {
+				#	limit = {
+				#		is_capital = yes
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:servitor_species }
+				#	}
+				#	while = {
+				#    	count = 1
+				#    	create_pop = { species = event_target:ogryn_species }
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:psyker_species }
+				#	}
+				#}
+			}
+		}
+	}
+}
+country_event = { #Pops fix
+	id = WrWrld_game_start.115
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Segmentum_Tempestus_gos
+	}
+	immediate = {
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Segmentum_Tempestus_gos
+					has_star_flag = Segmentum_Tempestus_gos_station
+				}
+			}
+			every_system_planet = {
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				#if = {
+				#	limit = {
+				#		is_capital = yes
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:servitor_species }
+				#	}
+				#	while = {
+				#    	count = 1
+				#    	create_pop = { species = event_target:ogryn_species }
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:psyker_species }
+				#	}
+				#}
+			}
+		}
+	}
+}
+country_event = { #Pops fix
+	id = WrWrld_game_start.116
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Eastern_Fringe_gos
+	}
+	immediate = {
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Eastern_Fringe_gos
+					has_star_flag = Eastern_Fringe_gos_station
+				}
+			}
+			every_system_planet = {
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+					while = {
+				    	count = 5
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 10
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+					while = {
+				    	count = 11
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 6
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 7
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				if = {
+				    limit = { 
+			            #is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:servitor_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:ogryn_species }
+					}
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:psyker_species }
+					}
+				}
+				#if = {
+				#	limit = {
+				#		is_capital = yes
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:servitor_species }
+				#	}
+				#	while = {
+				#    	count = 1
+				#    	create_pop = { species = event_target:ogryn_species }
+				#	}
+				#	while = {
+				#    	count = 3
+				#    	create_pop = { species = event_target:psyker_species }
+				#	}
+				#}
+			}
+		}
 	}
 }
 country_event = { #Imperium

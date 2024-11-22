@@ -317,6 +317,57 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
 				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
@@ -663,7 +714,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1009,7 +1111,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1362,7 +1515,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -1708,7 +1912,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -2054,7 +2309,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -2400,7 +2706,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -2746,7 +3103,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
@@ -3092,7 +3500,58 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
 				    while = {
-				    	count = 32                            #было 73, 30 03 2024 было 67
+				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_hive
+						}
+					}
+				    add_building = building_hive_capital 
+				    add_building = building_spawning_pool
+				    add_building = building_planetary_shield_generator 
+				    add_building = building_hive_warren                #building_hive_node
+				    add_building = building_sentinel_posts
+				    add_building = building_stronghold
+				    add_building = building_food_processing_center	
+				    add_building = building_chemical_plant					
+				    while = {
+				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
