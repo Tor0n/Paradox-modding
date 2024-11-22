@@ -3942,5 +3942,6 @@ country_event = { #Genestealer
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		change_dominant_species = { species = event_target:Star_Kindred_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }

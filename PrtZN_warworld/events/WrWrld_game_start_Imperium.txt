@@ -8779,6 +8779,8 @@ country_event = { #Imperium
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
 		}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
@@ -8866,6 +8868,8 @@ country_event = { #Imperium
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
 		}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
@@ -8953,6 +8957,8 @@ country_event = { #Imperium
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
 		}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
@@ -9040,6 +9046,8 @@ country_event = { #Imperium
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
 		}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
@@ -9127,6 +9135,8 @@ country_event = { #Imperium
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
 		}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Black_Templars
@@ -9214,6 +9224,8 @@ country_event = { #Black_Templars
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_astartes
 		}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Segmentum_Obscurus
@@ -9240,67 +9252,13 @@ country_event = { #Segmentum_Obscurus
 		establish_communications_no_message = event_target:Ultima_Segmentum_evnt_trgt_country
 		establish_communications_no_message = event_target:Eastern_Fringe_evnt_trgt_country
 		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
-		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
-		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
-		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
-		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
-		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
-		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
-		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
-		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
-		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
-		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
-		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
-		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
-		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
-		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
-		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
-		establish_communications_no_message = event_target:Ynnari_evnt_trgt_country
-		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
-		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		establish_communications_no_message = event_target:Tau_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Axes_evnt_trgt_country
-		establish_communications_no_message = event_target:Goffs_evnt_trgt_country
-		establish_communications_no_message = event_target:Evil_Sunz_evnt_trgt_country
-		establish_communications_no_message = event_target:Deathskulls_evnt_trgt_country
-		establish_communications_no_message = event_target:Bad_Moons_evnt_trgt_country
-		establish_communications_no_message = event_target:Snakebites_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_gos
-		establish_communications_no_message = event_target:Hivecult_evnt_trgt_country
-		establish_communications_no_message = event_target:Rusted_Claw_evnt_trgt_country
-		establish_communications_no_message = event_target:Bladed_Cog_evnt_trgt_country
-		establish_communications_no_message = event_target:Pauper_Princes_evnt_trgt_country
-		establish_communications_no_message = event_target:Twisted_Helix_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Hydraic_evnt_trgt_country
-		establish_communications_no_message = event_target:Star_Kindred_evnt_trgt_country
-		establish_communications_no_message = event_target:Blessed_Wormlings_evnt_trgt_country
-		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
-		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
-		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
-		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
-		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
-		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
-		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
-		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
-		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
-		establish_communications_no_message = event_target:Texian_evnt_trgt_country
-		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
-		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
-		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
-		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
-		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
-		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_imperium_vassal_segmentum_obscurus
 		}
+		
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Ultima_Segmentum_gos
@@ -9327,67 +9285,13 @@ country_event = { #Ultima_Segmentum_gos
 		establish_communications_no_message = event_target:Ultima_Segmentum_evnt_trgt_country
 		establish_communications_no_message = event_target:Eastern_Fringe_evnt_trgt_country
 		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
-		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
-		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
-		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
-		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
-		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
-		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
-		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
-		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
-		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
-		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
-		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
-		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
-		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
-		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
-		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
-		establish_communications_no_message = event_target:Ynnari_evnt_trgt_country
-		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
-		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		establish_communications_no_message = event_target:Tau_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Axes_evnt_trgt_country
-		establish_communications_no_message = event_target:Goffs_evnt_trgt_country
-		establish_communications_no_message = event_target:Evil_Sunz_evnt_trgt_country
-		establish_communications_no_message = event_target:Deathskulls_evnt_trgt_country
-		establish_communications_no_message = event_target:Bad_Moons_evnt_trgt_country
-		establish_communications_no_message = event_target:Snakebites_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_gos
-		establish_communications_no_message = event_target:Hivecult_evnt_trgt_country
-		establish_communications_no_message = event_target:Rusted_Claw_evnt_trgt_country
-		establish_communications_no_message = event_target:Bladed_Cog_evnt_trgt_country
-		establish_communications_no_message = event_target:Pauper_Princes_evnt_trgt_country
-		establish_communications_no_message = event_target:Twisted_Helix_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Hydraic_evnt_trgt_country
-		establish_communications_no_message = event_target:Star_Kindred_evnt_trgt_country
-		establish_communications_no_message = event_target:Blessed_Wormlings_evnt_trgt_country
-		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
-		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
-		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
-		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
-		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
-		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
-		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
-		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
-		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
-		establish_communications_no_message = event_target:Texian_evnt_trgt_country
-		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
-		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
-		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
-		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
-		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
-		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_imperium_vassal_ultima
 		}
+		
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Segmentum_Tempestus_gos
@@ -9414,67 +9318,13 @@ country_event = { #Segmentum_Tempestus_gos
 		establish_communications_no_message = event_target:Ultima_Segmentum_evnt_trgt_country
 		establish_communications_no_message = event_target:Eastern_Fringe_evnt_trgt_country
 		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
-		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
-		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
-		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
-		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
-		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
-		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
-		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
-		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
-		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
-		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
-		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
-		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
-		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
-		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
-		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
-		establish_communications_no_message = event_target:Ynnari_evnt_trgt_country
-		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
-		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		establish_communications_no_message = event_target:Tau_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Axes_evnt_trgt_country
-		establish_communications_no_message = event_target:Goffs_evnt_trgt_country
-		establish_communications_no_message = event_target:Evil_Sunz_evnt_trgt_country
-		establish_communications_no_message = event_target:Deathskulls_evnt_trgt_country
-		establish_communications_no_message = event_target:Bad_Moons_evnt_trgt_country
-		establish_communications_no_message = event_target:Snakebites_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_gos
-		establish_communications_no_message = event_target:Hivecult_evnt_trgt_country
-		establish_communications_no_message = event_target:Rusted_Claw_evnt_trgt_country
-		establish_communications_no_message = event_target:Bladed_Cog_evnt_trgt_country
-		establish_communications_no_message = event_target:Pauper_Princes_evnt_trgt_country
-		establish_communications_no_message = event_target:Twisted_Helix_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Hydraic_evnt_trgt_country
-		establish_communications_no_message = event_target:Star_Kindred_evnt_trgt_country
-		establish_communications_no_message = event_target:Blessed_Wormlings_evnt_trgt_country
-		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
-		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
-		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
-		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
-		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
-		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
-		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
-		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
-		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
-		establish_communications_no_message = event_target:Texian_evnt_trgt_country
-		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
-		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
-		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
-		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
-		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
-		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_imperium_vassal_segmentum_tempestus
 		}
+		
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Eastern_Fringe
@@ -9501,67 +9351,13 @@ country_event = { #Eastern_Fringe
 		establish_communications_no_message = event_target:Ultima_Segmentum_evnt_trgt_country
 		establish_communications_no_message = event_target:Eastern_Fringe_evnt_trgt_country
 		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
-		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
-		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
-		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
-		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
-		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
-		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
-		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
-		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
-		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
-		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
-		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
-		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
-		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
-		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
-		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
-		establish_communications_no_message = event_target:Ynnari_evnt_trgt_country
-		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
-		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		establish_communications_no_message = event_target:Tau_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Axes_evnt_trgt_country
-		establish_communications_no_message = event_target:Goffs_evnt_trgt_country
-		establish_communications_no_message = event_target:Evil_Sunz_evnt_trgt_country
-		establish_communications_no_message = event_target:Deathskulls_evnt_trgt_country
-		establish_communications_no_message = event_target:Bad_Moons_evnt_trgt_country
-		establish_communications_no_message = event_target:Snakebites_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_gos
-		establish_communications_no_message = event_target:Hivecult_evnt_trgt_country
-		establish_communications_no_message = event_target:Rusted_Claw_evnt_trgt_country
-		establish_communications_no_message = event_target:Bladed_Cog_evnt_trgt_country
-		establish_communications_no_message = event_target:Pauper_Princes_evnt_trgt_country
-		establish_communications_no_message = event_target:Twisted_Helix_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Hydraic_evnt_trgt_country
-		establish_communications_no_message = event_target:Star_Kindred_evnt_trgt_country
-		establish_communications_no_message = event_target:Blessed_Wormlings_evnt_trgt_country
-		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
-		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
-		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
-		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
-		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
-		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
-		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
-		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
-		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
-		establish_communications_no_message = event_target:Texian_evnt_trgt_country
-		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
-		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
-		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
-		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
-		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
-		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_imperium_vassal_eastern_fringe
 		}
+		
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
@@ -9588,67 +9384,13 @@ country_event = { #Imperium
 		establish_communications_no_message = event_target:Ultima_Segmentum_evnt_trgt_country
 		establish_communications_no_message = event_target:Eastern_Fringe_evnt_trgt_country
 		establish_communications_no_message = event_target:Manachean_Commonwealth_evnt_trgt_country
-		establish_communications_no_message = event_target:Black_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Death_Guard_evnt_trgt_country
-		establish_communications_no_message = event_target:World_Eaters_evnt_trgt_country
-		establish_communications_no_message = event_target:Thousand_Sons_evnt_trgt_country
-		establish_communications_no_message = event_target:Emperors_Children_evnt_trgt_country
-		establish_communications_no_message = event_target:Word_Bearers_evnt_trgt_country
-		establish_communications_no_message = event_target:Alpha_Legion_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
-		establish_communications_no_message = event_target:Mechanicum_Samech_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Pact_evnt_trgt_country
-		establish_communications_no_message = event_target:Admonition_evnt_trgt_country
-		establish_communications_no_message = event_target:Chaos_evnt_trgt_country
-		establish_communications_no_message = event_target:Conjurers_of_Fear_evnt_trgt_country
-		establish_communications_no_message = event_target:Barbed_Chalice_evnt_trgt_country
-		establish_communications_no_message = event_target:Brothrhd_Knife_evnt_trgt_country
-		establish_communications_no_message = event_target:Givers_of_Life_evnt_trgt_country
-		establish_communications_no_message = event_target:Bloodbath_evnt_trgt_country
-		establish_communications_no_message = event_target:Stigmartus_evnt_trgt_country
-		establish_communications_no_message = event_target:Penumbral_evnt_trgt_country
-		establish_communications_no_message = event_target:Eldar_evnt_trgt_country
-		establish_communications_no_message = event_target:Ynnari_evnt_trgt_country
-		establish_communications_no_message = event_target:Aldari_evnt_trgt_country
-		establish_communications_no_message = event_target:Commorragh_evnt_trgt_country
-		establish_communications_no_message = event_target:Tau_evnt_trgt_country
-		establish_communications_no_message = event_target:Blood_Axes_evnt_trgt_country
-		establish_communications_no_message = event_target:Goffs_evnt_trgt_country
-		establish_communications_no_message = event_target:Evil_Sunz_evnt_trgt_country
-		establish_communications_no_message = event_target:Deathskulls_evnt_trgt_country
-		establish_communications_no_message = event_target:Bad_Moons_evnt_trgt_country
-		establish_communications_no_message = event_target:Snakebites_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Four_ArmEmpr_gos
-		establish_communications_no_message = event_target:Hivecult_evnt_trgt_country
-		establish_communications_no_message = event_target:Rusted_Claw_evnt_trgt_country
-		establish_communications_no_message = event_target:Bladed_Cog_evnt_trgt_country
-		establish_communications_no_message = event_target:Pauper_Princes_evnt_trgt_country
-		establish_communications_no_message = event_target:Twisted_Helix_evnt_trgt_country
-		establish_communications_no_message = event_target:Cult_Hydraic_evnt_trgt_country
-		establish_communications_no_message = event_target:Star_Kindred_evnt_trgt_country
-		establish_communications_no_message = event_target:Blessed_Wormlings_evnt_trgt_country
-		establish_communications_no_message = event_target:Tokt_evnt_trgt_country
-		establish_communications_no_message = event_target:Agdagat_evnt_trgt_country
-		establish_communications_no_message = event_target:Sayteh_evnt_trgt_country
-		establish_communications_no_message = event_target:Nigilah_evnt_trgt_country
-		establish_communications_no_message = event_target:Kardenat_evnt_trgt_country
-		establish_communications_no_message = event_target:Oryskar_evnt_trgt_country
-		establish_communications_no_message = event_target:Mefrit_evnt_trgt_country
-		establish_communications_no_message = event_target:Nephrekh_evnt_trgt_country
-		establish_communications_no_message = event_target:Sarkoni_evnt_trgt_country
-		establish_communications_no_message = event_target:Texian_evnt_trgt_country
-		establish_communications_no_message = event_target:Qorl_evnt_trgt_country
-		establish_communications_no_message = event_target:Slogth_evnt_trgt_country
-		establish_communications_no_message = event_target:RakGol_evnt_trgt_country
-		establish_communications_no_message = event_target:Barghesi_evnt_trgt_country
-		establish_communications_no_message = event_target:Strixis_evnt_trgt_country
-		establish_communications_no_message = event_target:Sardonit_evnt_trgt_country
-		establish_communications_no_message = event_target:Cythor_Fiends_evnt_trgt_country
 		# Вассализация
 		set_subject_of = {
 			who = event_target:Imperium_evnt_trgt_country
 			preset = preset_imperium_vassal_manachean
 		}
+		
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
