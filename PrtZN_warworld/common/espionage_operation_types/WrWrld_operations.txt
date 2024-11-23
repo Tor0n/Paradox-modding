@@ -1,0 +1,65 @@
+# @diff_t0 = 4
+# @diff_t1 = 5
+# @diff_t2 = 6
+# @diff_t3 = 7
+# @diff_t4 = 8
+# @diff_t5 = 9
+# @diff_t6 = 10
+# @diff_t7 = 11
+# @diff_t8 = 12
+# @diff_t9 = 13
+
+# @operationTargetedByTimer = 10800 #30 years during which the effects of an operation may be felt by select Spy Network events
+
+# # this = operation
+# # from = operation target
+
+# operation_implement_cult = {
+	# target = none
+	# categories = { op_cat_sabotage op_cat_military }
+	# picture = GFX_evt_spymaster
+	# desc = ruler_title_patriarch_desc
+	# stages = 1
+
+	# resources = {
+		# category = operations
+		# cost = {
+			# influence = 20
+		# }
+		# upkeep = {
+			# energy = 4
+			# food = 4
+		# }
+	# }
+
+	# spy_power_cost = 0
+	# potential = {
+		# target = { has_country_flag = Genestealer_Cult }
+	# }
+	# allow = {
+		# custom_tooltip = {
+			# is_running_espionage_operation = no
+			# fail_text = operation_one_at_a_time
+		# }
+		# target = { has_country_flag = Genestealer_Cult }
+	# }
+	# stage = {
+		# difficulty = @diff_t0
+		# icon = GFX_espionage_chapter_icon_document
+		# # event = operation.7000
+	# }
+
+	# on_roll_failed = {
+		# standard_espionage_operation_on_roll_failed = {
+			# RANDOM_EVENTS = operation_random_events_low_stakes
+		# }
+	# }
+	# on_create = {
+		# # target = {
+			# # set_timed_country_flag = {
+				# # flag = espionage_operation_targeted_by@root.owner #Used in random Spy Network events
+				# # days = @operationTargetedByTimer
+			# # }
+		# # }
+	# }
+# }

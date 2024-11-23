@@ -1,4 +1,4 @@
-# Imperium
+# Imperium #
 origin_imperium = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_godruler.dds"
@@ -92,7 +92,7 @@ origin_astartes = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
-# Land_Chaos
+# Хаоситы #
 origin_chaos = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_chaos.dds"
@@ -154,6 +154,7 @@ origin_mechanicum = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
+# Аэлдари и Тау #
 origin_eldar = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_soulkeepers.dds"
@@ -267,7 +268,6 @@ origin_commorragh = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
-# Tau
 origin_Tau = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_greatergood.dds"
@@ -329,6 +329,7 @@ origin_Tau = {
 	advanced_start = no
 	random_weight = { base = 0.5 }
 }
+# Орки #
 origin_ork = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_barbarichorde.dds"
@@ -372,6 +373,7 @@ origin_ork = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
+# Генокрады #
 origin_corinis = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_bioreformers.dds"
@@ -390,7 +392,9 @@ origin_corinis = {
 	}
 	
 	flags = { origin_start }
-	#modifier = {  }
+	modifier = {
+		envoys_add = 1
+	}
 
 	description = ""
 	
@@ -401,7 +405,7 @@ origin_corinis = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
-# Некроны
+# Некроны #
 origin_necron = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_necron.dds"
