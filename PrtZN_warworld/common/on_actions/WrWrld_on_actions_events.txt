@@ -278,8 +278,15 @@ on_game_start_country = {
 	events = { WrWrld_wormhole.2 }
 }
 
-on_colony_10_year_pulse = {
+on_colony_3_years_old = {
 	events = {
-		WrWrld_genestealer_assimilation.1 #Apotheosis for non-necrophage pops to necrophage
+		WrWrld_genestealer_assimilation.1
 	}
 }
+
+# empire_init_capital_planet = {
+	# events = {
+		# game_start.12 # starting buildings, districts & pops
+		# # at this point the species might have changed (because we added traits), so FROMFROM might not be the secondary species anymore
+	# }
+# }
