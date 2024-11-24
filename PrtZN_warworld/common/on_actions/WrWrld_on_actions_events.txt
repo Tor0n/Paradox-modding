@@ -277,3 +277,9 @@ on_game_start_country = {
 	#Червоточины Варп кластера
 	events = { WrWrld_wormhole.2 }
 }
+
+on_colony_10_year_pulse = {
+	events = {
+		WrWrld_genestealer_assimilation.1 #Apotheosis for non-necrophage pops to necrophage
+	}
+}
