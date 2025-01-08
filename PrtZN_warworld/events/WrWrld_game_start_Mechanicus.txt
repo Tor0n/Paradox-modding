@@ -1,0 +1,1982 @@
+namespace = WrWrld_game_start_mechanicus
+
+@create_pop_watch_fort_station = 15
+
+country_event = { #Mechanicus
+	id = WrWrld_game_start_mechanicus.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Mechanicus_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Mechanicus_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.201 days = 2 }
+		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#}
+		communication_with_all = yes
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_mechanicus = yes
+		add_tradition_mechanicus = yes
+		
+		#modify_species = {
+		#	species = this
+		#	add_trait = trait_auto_mod_cyborg #trait_cyborg_ritualistic_implants
+		#	#add_traits_at_start_of_list = yes
+		#}
+		#change_species = event_target:mechanicus_species
+		
+		modify_species = {
+			species = owner_main_species
+			#name = Сервитор			#species_name_servitor
+			#plural = Сервиторы		#species_plural_servitor
+			#adjective = Сервиторыск	#species_adjective_servitor
+			add_trait = trait_nerve_stapled
+			#add_trait = trait_limited_cybernetic
+			add_trait = trait_auto_mod_cyborg #trait_auto_mod_biological trait_auto_mod_cyborg
+			#delete_trait = trait_cybernetic
+			effect = { save_global_event_target_as = mecha_servitor_species }
+		}
+		modify_species = {
+			species = owner_main_species #this
+			#add_trait = trait_cybernetic
+			#add_trait = trait_cyborg_ritualistic_implants
+			add_trait = trait_cyborg_enhanced_memory
+			add_trait = trait_cyborg_learning_algorithms
+			add_trait = trait_cyborg_integrated_weaponry
+			add_trait = trait_cyborg_efficient_processors
+			add_trait = trait_cyborg_streamlined_protocols
+			#add_traits_at_start_of_list = yes
+			effect = { save_global_event_target_as = tech_priests_species }
+		}
+		
+		# owner_main_species = {
+			# rename_species = {
+				# name = random #PRESCRIPTED_species_name_mechanicus
+				#plural = PRESCRIPTED_species_plural_mechanicus
+				#adjective = PRESCRIPTED_species_adjective_humans1
+			# }
+		# }
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Mechanicus_gos
+					has_star_flag = Mechanicus_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Mechanicus_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Mechanicus_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    #while = {
+				    #	count = 65
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 65
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_fortress
+					add_building = building_stronghold	
+					add_building = building_mote_harvesters 	
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 8
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 23
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 18
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery
+				    add_building = building_slave_processing					
+				    while = {
+				    	count = 20 #было 40
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+			}
+		}
+	}
+} 
+country_event = { #Ryza
+	id = WrWrld_game_start_mechanicus.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Ryza_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Ryza_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.202 days = 2 }
+		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#}
+		communication_with_all = yes
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_mechanicus = yes
+		add_tradition_mechanicus = yes
+		
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Ryza_gos
+					has_star_flag = Ryza_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Ryza_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Ryza_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    #while = {
+				    #	count = 65
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 65
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_fortress
+					add_building = building_stronghold	
+					add_building = building_mote_harvesters 	
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 8
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 23
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 18
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery
+				    add_building = building_slave_processing					
+				    while = {
+				    	count = 20 #было 40
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+			}
+		}
+	}
+} 
+country_event = { #Metalica
+	id = WrWrld_game_start_mechanicus.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Metalica_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Metalica_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.202 days = 2 }
+		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#}
+		communication_with_all = yes
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_mechanicus = yes
+		add_tradition_mechanicus = yes
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Metalica_gos
+					has_star_flag = Metalica_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Metalica_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Metalica_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    #while = {
+				    #	count = 65
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 65
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_fortress
+					add_building = building_stronghold	
+					add_building = building_mote_harvesters 	
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 8
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 23
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 18
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery
+				    add_building = building_slave_processing					
+				    while = {
+				    	count = 20 #было 40
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+			}
+		}
+	}
+} 
+country_event = { #Graia
+	id = WrWrld_game_start_mechanicus.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Graia_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Graia_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.204 days = 2 }
+		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#}
+		communication_with_all = yes
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_mechanicus = yes
+		add_tradition_mechanicus = yes
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Graia_gos
+					has_star_flag = Graia_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Graia_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Graia_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    #while = {
+				    #	count = 65
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 65
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_fortress
+					add_building = building_stronghold	
+					add_building = building_mote_harvesters 	
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 8
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 23
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 18
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery
+				    add_building = building_slave_processing					
+				    while = {
+				    	count = 20 #было 40
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+			}
+		}
+	}
+} 
+country_event = { #Lucius
+	id = WrWrld_game_start_mechanicus.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Lucius_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Lucius_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.205 days = 2 }
+		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#}
+		communication_with_all = yes
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_mechanicus = yes
+		add_tradition_mechanicus = yes
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Lucius_gos
+					has_star_flag = Lucius_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Lucius_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Lucius_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    #while = {
+				    #	count = 65
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 65
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_fortress
+					add_building = building_stronghold	
+					add_building = building_mote_harvesters 	
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 8
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 23
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 18
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery
+				    add_building = building_slave_processing					
+				    while = {
+				    	count = 20 #было 40
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+			}
+		}
+	}
+} 
+country_event = { #Triplex_Phall
+	id = WrWrld_game_start_mechanicus.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Triplex_Phall_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Triplex_Phall_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_mechanicus.206 days = 2 }
+		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#}
+		communication_with_all = yes
+		add_resource = { energy = 25000 }
+		add_resource = { minerals = 8500 }
+		add_resource = { food = 7000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_mechanicus = yes
+		add_tradition_mechanicus = yes
+
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Triplex_Phall_gos
+					has_star_flag = Triplex_Phall_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Triplex_Phall_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Triplex_Phall_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = gun_battery
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_Ecumenopolis			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery				
+				    #while = {
+				    #	count = 65
+				    #	create_pop = {
+				    #		species = owner_main_species
+				    #	}
+					#}
+					while = {
+				    	count = 65
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Mechanicus_Forge_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    add_building = building_foundry_1 #building_factory_1
+					add_building = building_ministry_production
+					add_building = building_fortress
+					add_building = building_stronghold	
+					add_building = building_mote_harvesters 	
+				    add_building = building_planetary_shield_generator	
+					add_building = building_coordinated_fulfillment_center_1					
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 8
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Mining_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital
+				    add_building = building_mineral_purification_plant
+				    add_building = building_precinct_house
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 23
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Agri_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center					
+				    while = {
+				    	count = 3
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 18
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+					while = {
+				    	count = 1
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 2
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 9
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					remove_all_districts = yes
+					remove_all_buildings = yes
+					add_building = building_major_capital   	
+					add_building = building_fortress
+					add_building = building_stronghold
+				    add_building = building_planetary_shield_generator
+					add_building = building_hall_judgment 
+				    add_building = building_precinct_house 
+				    add_building = building_foundry_2
+				    add_building = building_factory_2
+				    add_building = building_ministry_production  
+				    #add_building = building_research_lab_2
+					add_building = building_resource_silo
+					add_building = building_coordinated_fulfillment_center_2
+					#add_building = building_production_center 
+				    #add_building = building_coordinated_fulfillment_center_2 
+				    #add_building = building_archaeo_refinery
+				    add_building = building_slave_processing					
+				    while = {
+				    	count = 20 #было 40
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 16
+				    	create_pop = { species = event_target:tech_priests_species }
+					}
+					while = {
+				    	count = 4
+				    	create_pop = { species = event_target:mecha_servitor_species }
+					}
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+					}
+				}
+			}
+		}
+	}
+} 
+country_event = { #Imperium
+	id = WrWrld_game_start_mechanicus.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Mechanicus_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		#для Фикса попов
+	}
+}
+
+country_event = { #Imperium
+	id = WrWrld_game_start_mechanicus.201
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Mechanicus_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Imperium_evnt_trgt_country
+			preset = preset_mechanicus
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_mechanicus.202
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_country_flag = Ryza_gos
+			has_country_flag = Metalica_gos
+		}
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Ultima_Segmentum_evnt_trgt_country
+			preset = preset_mechanicus
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_mechanicus.204
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Graia_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Segmentum_Tempestus_evnt_trgt_country
+			preset = preset_mechanicus
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_mechanicus.205
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Lucius_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Segmentum_Obscurus_evnt_trgt_country
+			preset = preset_mechanicus
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_mechanicus.206
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Triplex_Phall_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		set_subject_of = {
+			who = event_target:Eastern_Fringe_evnt_trgt_country
+			preset = preset_mechanicus
+		}
+	}
+}

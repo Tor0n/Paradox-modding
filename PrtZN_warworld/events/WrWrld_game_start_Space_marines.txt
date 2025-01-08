@@ -1,0 +1,970 @@
+namespace = WrWrld_game_start_space_marines
+
+@create_pop_watch_fort_station = 15
+
+country_event = { #Ultramarines
+	id = WrWrld_game_start_space_marines.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Ultramarines_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Ultramarines_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.201 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Ultramarines_gos
+					has_star_flag = Ultramarines_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Ultramarines_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Ultramarines_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Ultramarines_Agri_world_desert			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					add_building = building_capital
+				    add_building = building_precinct_house
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    #add_building = building_hydroponics_farm
+				    #add_building = building_hydroponics_farm
+				    add_building = building_food_processing_center 					
+				    while = {
+				    	count = 22
+				    	create_pop = { species = owner_main_species }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+			# if = {
+				# limit = { is_capital_system = yes }
+				#every_system_planet
+			# }
+		}
+	}
+}
+country_event = { #Dark_Angels
+	id = WrWrld_game_start_space_marines.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Dark_Angels_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Dark_Angels_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.205 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Dark_Angels_gos
+					has_star_flag = Dark_Angels_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Dark_Angels_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Dark_Angels_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Imperial_Fists
+	id = WrWrld_game_start_space_marines.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Imperial_Fists_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Imperial_Fists_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.206 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Imperial_Fists_gos
+					has_star_flag = Imperial_Fists_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Imperial_Fists_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Imperial_Fists_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Blood_Angels
+	id = WrWrld_game_start_space_marines.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Blood_Angels_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Blood_Angels_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.207 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Blood_Angels_gos
+					has_star_flag = Blood_Angels_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Blood_Angels_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Blood_Angels_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Salamanders
+	id = WrWrld_game_start_space_marines.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Salamanders_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Salamanders_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.208 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Salamanders_gos
+					has_star_flag = Salamanders_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Salamanders_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Salamanders_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Space_Wolves
+	id = WrWrld_game_start_space_marines.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Space_Wolves_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Space_Wolves_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.209 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Space_Wolves_gos
+					has_star_flag = Space_Wolves_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Space_Wolves_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Space_Wolves_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Black_Templars
+	id = WrWrld_game_start_space_marines.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Black_Templars_gos
+	}
+	immediate = {
+	    save_global_event_target_as = Black_Templars_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.211 days = 2 }
+		}
+		communication_with_all = yes
+		add_resource = { energy = 22500 }
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 10000 }
+		add_resource = { alloys = 14000	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 1000 }
+		
+		give_technology_imperium = yes
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Black_Templars_gos
+					has_star_flag = Black_Templars_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Black_Templars_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Black_Templars_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					#change_pc = pc_alpine
+					#while = {
+					#	count = 76
+					#	create_pop = {species = owner_main_species}
+					#}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_military_academy
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_commercial_zone
+					#add_building = building_ministry_production
+					#add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_space_marines.201
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Ultramarines_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Imperium_evnt_trgt_country
+		#	preset = preset_ultramarines
+		#}
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_space_marines.202
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Dark_Angels_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Segmentum_Obscurus_evnt_trgt_country
+		#	preset = preset_astartes
+		#}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_space_marines.203
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Imperial_Fists_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Segmentum_Tempestus_evnt_trgt_country
+		#	preset = preset_astartes
+		#}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_space_marines.204
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Blood_Angels_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Ultima_Segmentum_evnt_trgt_country
+		#	preset = preset_astartes
+		#}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_space_marines.205
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Salamanders_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Imperium_evnt_trgt_country
+		#	preset = preset_astartes
+		#}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #Imperium
+	id = WrWrld_game_start_space_marines.206
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Space_Wolves_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Segmentum_Obscurus_evnt_trgt_country
+		#	preset = preset_astartes
+		#}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #Black_Templars
+	id = WrWrld_game_start_space_marines.207
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Black_Templars_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		# Вассализация
+		#set_subject_of = {
+		#	who = event_target:Imperium_evnt_trgt_country
+		#	preset = preset_astartes
+		#}
+		
+		change_dominant_species = { species = event_target:Ultramarines_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}

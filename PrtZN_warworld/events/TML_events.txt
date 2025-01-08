@@ -1,0 +1,58 @@
+namespace = TML
+
+country_event = {
+	id = TML.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = {
+			has_modifier = "TML_Trade_Reduce"
+		}
+	}
+	
+	immediate = {
+		add_modifier = { modifier = "TML_Trade_Reduce" }
+		this.capital_scope.starbase = {
+			add_modifier = {modifier = "Capital_Trade_Collection_Bonus" }
+		}
+	}
+}
+
+planet_event = {
+	id = TML.2
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		
+		this = {
+			starbase = {
+				add_modifier = {modifier = "Capital_Trade_Collection_Bonus" }
+			}
+		}
+		
+		# might want to check if from exist
+		if = {
+			limit = {
+				exists = from
+			}
+			from = {
+				starbase = {
+					remove_modifer = {modifier = "Capital_Trade_Collection_Bonus" }
+				}
+			}
+		}
+	}
+}
+
+event = {
+
+	id = TML.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = { country_event = { id = TML.1 } }
+	}
+}

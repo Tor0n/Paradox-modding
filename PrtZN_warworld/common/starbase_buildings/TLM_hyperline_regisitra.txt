@@ -1,0 +1,52 @@
+warp_fluctuator = {
+	icon = "GFX_spaceport_module_atmospheric_manipulator"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_interstellar_economics
+			is_gestalt = no
+		}
+		is_normal_starbase = yes
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	station_modifier = {
+		trade_value_add = 6
+	}
+	triggered_system_modifier = {
+		# Gives some Stability per "Hyperspace Specialty" Councilor level.
+		potential = {
+			OR = {
+				has_councilor = { COUNCILOR = "councilor_hyperspace_specialty" }
+				has_councilor = { COUNCILOR = "councilor_hyperspace_specialty_corporate" }
+			}
+		}
+		planet_stability_add = @councilor_hyperspace_specialty_warp_fluctuator_stability
+		mult = value:councilor_level_combo|COUNCILOR_1|councilor_hyperspace_specialty|COUNCILOR_2|councilor_hyperspace_specialty_corporate|
+	}
+
+	show_in_tech = "tech_interstellar_economics"
+
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
