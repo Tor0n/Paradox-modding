@@ -9,6 +9,7 @@
 #	default = yes	# Is this the default stance that new fleets will use?
 #
 #	stop_when_armies_dead = yes	# Will this stance continue to bombard planets where all defensive armies are dead? default = no
+#	stop_when_ground_combat = yes # If yes, this stance will stop bombarding a planet when there's ground combat happening on it. default = no
 #	abduct_pops = no	# Will this stance attempt to abduct pops to your own planets instead of killing them? default = no
 #
 #	planet_damage = 0.5		# General scale of damage to planet, default = 1.0
@@ -19,6 +20,7 @@
 #	}
 #	min_pops_to_kill_pop = 8	# Will not kill/abduct pops if pops <= this number already, default = 0. Doesn't work for nations that doesn't have diplomatic wars!
 #
+#	kill_pop_amount = { min = 0 max = 200 } # gives the range for how many pops are abducted/killed with each bombardment
 #	# root = fleet
 #	# from = planet
 #	ai_weight = {
@@ -36,11 +38,17 @@ selective = {
 				has_policy_flag = orbital_bombardment_armageddon
 			}
 		}
+		NOT = {
+			any_owned_ship = {
+				has_ship_flag = behemoth_hatchling_ship
+			}
+		}
 	}
 
 	default = no
 
 	stop_when_armies_dead = yes
+	stop_when_ground_combat = yes
 	accept_surrender = yes
 	abduct_pops = no
 
@@ -50,7 +58,8 @@ selective = {
 	kill_pop_chance = {
 		base = 0.25
 	}
-	min_pops_to_kill_pop = 21
+	min_pops_to_kill_pop = 2100
+	kill_pop_amount = { min = 0 max = 200 }
 
 	# root = fleet
 	# from = planet
@@ -68,11 +77,17 @@ indiscriminate = {
 				has_policy_flag = orbital_bombardment_armageddon
 			}
 		}
+		NOT = {
+			any_owned_ship = {
+				has_ship_flag = behemoth_hatchling_ship
+			}
+		}
 	}
 
 	default = yes
 
 	stop_when_armies_dead = no
+	stop_when_ground_combat = no
 	accept_surrender = yes
 	abduct_pops = no
 
@@ -82,23 +97,23 @@ indiscriminate = {
 	kill_pop_chance = {
 		base = 0.5
 	}
-	min_pops_to_kill_pop = 11
-
+	min_pops_to_kill_pop = 1100
+	kill_pop_amount = { min = 0 max = 200 }
 	# root = fleet
 	# from = planet
 	ai_weight = {
 		weight = 5
-		#modifier = {
-		#	factor = 0.01
-		#	exists = from
-		#	from = {
-		#		owner = { NOT = { is_hostile = root.owner } }
-		#		NAND = {
-		#			controller = { is_crisis_faction = yes }
-		#			planet_garrison_strength > 0
-		#		}
-		#	}
-		#}
+		modifier = {
+			factor = 0.01
+			exists = from
+			from = {
+				owner = { NOT = { is_hostile = root.owner } }
+				NAND = {
+					controller = { is_crisis_faction = yes }
+					planet_garrison_strength > 0
+				}
+			}
+		}
 	}
 }
 
@@ -128,7 +143,7 @@ armageddon = {
 	default = no
 
 	stop_when_armies_dead = no
-	accept_surrender = yes
+	stop_when_ground_combat = no
 	abduct_pops = no
 
 	planet_damage = 1.5
@@ -137,25 +152,26 @@ armageddon = {
 	kill_pop_chance = {
 		base = 1.0
 	}
-	#min_pops_to_kill_pop = 5
+	min_pops_to_kill_pop = 0
+	kill_pop_amount = { min = 0 max = 200 }
 
 	# root = fleet
 	# from = planet
 	ai_weight = {
 		weight = 10
-		#modifier = {
-		#	factor = 0.01
-		#	exists = from
-		#	from = {
-		#		owner = { NOT = { is_hostile = root.owner } }
-		#		NAND = {
-		#			controller = { is_crisis_faction = yes }
-		#			planet_garrison_strength > 0
-		#		}
-		#	}
-		#	exists = owner
-		#	owner = { is_crisis_faction = no }
-		#}
+		modifier = {
+			factor = 0.01
+			exists = from
+			from = {
+				owner = { NOT = { is_hostile = root.owner } }
+				NAND = {
+					controller = { is_crisis_faction = yes }
+					planet_garrison_strength > 0
+				}
+			}
+			exists = owner
+			owner = { is_crisis_faction = no }
+		}
 	}
 }
 
@@ -178,11 +194,17 @@ pox = {
 				has_policy_flag = orbital_bombardment_armageddon
 			}
 		}
+		NOT = {
+			any_owned_ship = {
+				has_ship_flag = behemoth_hatchling_ship
+			}
+		}
 	}
 
 	default = no
 
 	stop_when_armies_dead = no
+	stop_when_ground_combat = no
 	abduct_pops = no
 
 	planet_damage = 0.2
@@ -190,15 +212,16 @@ pox = {
 
 	kill_pop_chance = { # Should only target organics
 		base = 1.5
-		modifier = {
-			factor = 0
-			OR = {
-				pop_has_trait = trait_machine_unit
-				pop_has_trait = trait_mechanical
-			}
-		}
+		# modifier = { # Jonas
+		# 	factor = 0
+		# 	OR = {
+		# 		pop_group_has_trait = trait_machine_unit
+		# 		pop_group_has_trait = trait_mechanical
+		# 	}
+		# }
 	}
 	min_pops_to_kill_pop = 0
+	kill_pop_amount = { min = 0 max = 200 }
 
 	# root = fleet
 	# from = planet
@@ -234,11 +257,17 @@ raiding = {
 				}
 			}
 		}
+		NOT = {
+			any_owned_ship = {
+				has_ship_flag = behemoth_hatchling_ship
+			}
+		}
 	}
 
 	default = no
 
 	stop_when_armies_dead = no
+	stop_when_ground_combat = no
 	abduct_pops = yes
 
 	planet_damage = 0.5
@@ -247,7 +276,8 @@ raiding = {
 	kill_pop_chance = {
 		base = 0.15
 	}
-	min_pops_to_kill_pop = 2
+	min_pops_to_kill_pop = 200
+	kill_pop_amount = { min = 0 max = 200 }
 
 	# root = fleet
 	# from = planet
@@ -258,7 +288,7 @@ raiding = {
 			exists = from
 			from = {
 				OR = {
-					num_pops < 2
+					pop_amount < 200
 					owner = { NOT = { is_hostile = root.owner } }
 				}
 			}
@@ -294,6 +324,7 @@ seed_bombing = {
 	default = no
 
 	stop_when_armies_dead = no
+	stop_when_ground_combat = no
 	abduct_pops = no
 
 	planet_damage = 1.0
@@ -302,7 +333,8 @@ seed_bombing = {
 	kill_pop_chance = {
 		base = 0
 	}
-	min_pops_to_kill_pop = 21
+	min_pops_to_kill_pop = 2100
+	kill_pop_amount = { min = 0 max = 200 }
 
 	# root = fleet
 	# from = planet
@@ -313,60 +345,10 @@ seed_bombing = {
 			exists = from
 			from = {
 				owner = { NOT = { is_hostile = root.owner } }
-				NAND = { 
+				NAND = {
 					controller = { is_crisis_faction = yes }
 					planet_garrison_strength > 0
 				}
-			}
-		}
-	}
-}
-
-#WawWorld bombardment
-nurgle_blessing = {
-	trigger = {
-		owner = {
-			OR = {
-				has_country_flag = Death_Guard_gos
-				AND = {
-					owner = { is_country_type = enclave_mercenary }
-					root.controller = {
-						has_country_flag = Death_Guard_gos
-					}
-				}
-			}
-		}
-	}
-
-	default = no
-
-	stop_when_armies_dead = no
-	abduct_pops = no
-
-	planet_damage = 0.5
-	army_damage = 2.5
-
-	kill_pop_chance = { # Should only target organics
-		base = 1.5
-		modifier = {
-			factor = 0.25
-			OR = {
-				pop_has_trait = trait_machine_unit
-				pop_has_trait = trait_mechanical
-			}
-		}
-	}
-	min_pops_to_kill_pop = 0
-
-	# root = fleet
-	# from = planet
-	ai_weight = {
-		weight = 50
-		modifier = {
-			factor = 0.01
-			exists = from
-			from = {
-				owner = { NOT = { is_hostile = root.owner } }
 			}
 		}
 	}
@@ -383,6 +365,7 @@ voidworm_invasion = {
 	default = no
 
 	stop_when_armies_dead = no
+	stop_when_ground_combat = no
 	abduct_pops = no
 
 	planet_damage = {
@@ -408,7 +391,8 @@ voidworm_invasion = {
 		base = 0.5
 	}
 
-	min_pops_to_kill_pop = 10
+	min_pops_to_kill_pop = 1000
+	kill_pop_amount = { min = 0 max = 200 }
 
 	ai_weight = {
 		weight = 1000
@@ -427,6 +411,7 @@ voidworm_invasion_crisis = {
 	default = no
 
 	stop_when_armies_dead = no
+	stop_when_ground_combat = no
 	abduct_pops = no
 
 	planet_damage = {
@@ -447,6 +432,7 @@ voidworm_invasion_crisis = {
 	}
 
 	min_pops_to_kill_pop = 0
+	kill_pop_amount = { min = 0 max = 200 }
 
 	ai_weight = {
 		weight = 1000
@@ -461,6 +447,35 @@ frenzied_voidworm_invasion = {
 	}
 	default = no
 	planet_damage = 1.0
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+behemoth_invasion = {
+	trigger = {
+		any_owned_ship = {
+			has_ship_flag = behemoth_hatchling_ship
+		}
+	}
+
+	default = no
+
+	stop_when_armies_dead = no
+	stop_when_ground_combat = no
+	abduct_pops = no
+
+	planet_damage = 3.0
+	army_damage = 1.0
+
+	kill_pop_chance = {
+		base = 2.0
+	}
+	# Also spawns hostile armies on planet - see biocrisis.80
+	min_pops_to_kill_pop = 0
+
+	# root = fleet
+	# from = planet
 	ai_weight = {
 		weight = 1000
 	}

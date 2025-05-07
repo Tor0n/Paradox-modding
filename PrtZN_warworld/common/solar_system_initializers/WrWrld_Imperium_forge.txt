@@ -40,7 +40,7 @@ Metalica_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Mechanicus_Forge_Ecumenopolis }
 		
@@ -670,7 +670,7 @@ Graia_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Mechanicus_Forge_world }
 		
@@ -1024,13 +1024,13 @@ Lucius_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Mechanicus_Forge_world }
 		
@@ -1654,13 +1654,13 @@ Ryza_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tundra"
+		class = "pc_desert"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Mechanicus_Forge_world }
 		
@@ -2200,7 +2200,7 @@ Triplex_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		
 		flags = { Mechanicus_Forge_world }
 		
