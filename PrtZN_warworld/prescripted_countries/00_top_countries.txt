@@ -620,709 +620,399 @@ Mechanicus = {
 	spawn_as_fallen = no
 }
 Ryza = {
-	key="Риза"
-	ship_prefix=
-	{
-		key="ship_prefix_mechanicus"
+	name = "name_ryza"
+	adjective = "PRESCRIPTED_adjective_ryza"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_warrior_culture" }
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Ryza_start Ryza_gos }
+	
+	planet_name = "planet_name_ryza"
+	planet_class = "pc_continental"
+	system_name = "system_name_ryza"
+	#initializer = ""
+	
+	graphical_culture = "sto_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "RyzaXXX.dds"
 		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_11.dds"
 		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		trait="trait_cybernetic"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Риза"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Риза"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
-	flags=
-	{
-		"Ryza_start"
-		"Ryza_gos"
-	}
-	government="gov_purity_order"
-	advisor_voice_type="l_the_technocrat"
-	planet_name=
-	{
-		key="Ryza"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Ryza"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="sto_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="RyzaXXX.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="flag_BG_11.dds"
-		}
-		colors=
-		{
+		colors = {
 			"orange"
 			"red"
 			"red"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=female
-		name=
-		{
-			full_names=
-			{
-				key="Ауратор"
-				literal=yes
-			}
-		}
-		portrait="imperium_female_03"
-		texture=0
-		evolution_mask=0
-		attachment=36
-		clothes=2
-		ruler_title=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		trait="trait_ruler_eye_for_talent"
-		leader_class="scientist"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ryza"
+		gender = female
+		portrait = "imperium_female_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 36
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="machine_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_relentless_industrialists"
-		"civic_warrior_culture"
-	}
-	origin="origin_mechanicus"
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
 }
 Metalica = {
-	key="Металика"
-	ship_prefix=
-	{
-		key="ship_prefix_mechanicus"
+	name = "name_metalica"
+	adjective = "PRESCRIPTED_adjective_metalica"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Metalica_start Metalica_gos }
+	
+	planet_name = "planet_name_metalica"
+	planet_class = "pc_continental"
+	system_name = "system_name_metalica"
+	#initializer = ""
+	
+	graphical_culture = "sto_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "MetalicaVII.dds"
 		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds" #file="circle.dds"
 		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		trait="trait_cybernetic"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Металика"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Металика"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
-	flags=
-	{
-		"Metalica_start"
-		"Metalica_gos"
-	}
-	government="gov_purity_order"
-	advisor_voice_type="l_the_technocrat"
-	planet_name=
-	{
-		key="Metalica"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Metalica"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="sto_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="MetalicaVII.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="00_solid.dds" #file="circle.dds"
-		}
-		colors=
-		{
+		colors = {
 			"white"
 			"white" #red
 			"null"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Апт Нон"
-				literal=yes
-			}
-		}
-		portrait="imperium_male_04"
-		texture=0
-		evolution_mask=0
-		attachment=81
-		clothes=2
-		ruler_title=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		trait="trait_ruler_eye_for_talent"
-		leader_class="scientist"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_metalica"
+		gender = male
+		portrait = "imperium_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 81
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="machine_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_relentless_industrialists"
-		"civic_functional_architecture"
-	}
-	origin="origin_mechanicus"
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
 }
 Graia = {
-	key="Грайя"
-	ship_prefix=
-	{
-		key="ship_prefix_mechanicus"
+	name = "name_graia"
+	adjective = "PRESCRIPTED_adjective_graia"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_astrometeorology" }
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Graia_start Graia_gos }
+	
+	planet_name = "planet_name_graia"
+	planet_class = "pc_continental"
+	system_name = "system_name_graia"
+	#initializer = ""
+	
+	graphical_culture = "sto_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "GraiaXIII.dds"
 		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
 		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		trait="trait_cybernetic"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Грайя"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Грайя"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
-	flags=
-	{
-		"Graia_start"
-		"Graia_gos"
-	}
-	government="gov_purity_order"
-	advisor_voice_type="l_the_technocrat"
-	planet_name=
-	{
-		key="Graia"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Graia"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="sto_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="GraiaXIII.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="00_solid.dds"
-		}
-		colors=
-		{
+		colors = {
 			"red"
 			"red_orange"
 			"red_orange"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Шафер Льямун"
-				literal=yes
-			}
-		}
-		portrait="imperium_male_01"
-		texture=0
-		evolution_mask=0
-		attachment=81
-		clothes=2
-		ruler_title=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		trait="trait_ruler_eye_for_talent"
-		leader_class="scientist"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_graia"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 81
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="machine_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_relentless_industrialists"
-		"civic_astrometeorology"
-	}
-	origin="origin_mechanicus"
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
 }
 Lucius = {
-	key="Люций"
-	ship_prefix=
-	{
-		key="ship_prefix_mechanicus"
+	name = "name_lucius"
+	adjective = "PRESCRIPTED_adjective_lucius"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Lucius_start Lucius_gos }
+	
+	planet_name = "planet_name_lucius"
+	planet_class = "pc_continental"
+	system_name = "system_name_lucius"
+	#initializer = ""
+	
+	graphical_culture = "sto_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "LuciusXVIII.dds"
 		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
 		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		trait="trait_cybernetic"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Люций"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Люций"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
-	flags=
-	{
-		"Lucius_start"
-		"Lucius_gos"
-	}
-	government="gov_purity_order"
-	advisor_voice_type="l_the_technocrat"
-	planet_name=
-	{
-		key="Lucius"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Lucius"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="sto_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="LuciusXVIII.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="00_solid.dds"
-		}
-		colors=
-		{
+		colors = {
 			"red"
 			"beige"
 			"black"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=female
-		name=
-		{
-			full_names=
-			{
-				key="Горид Арнот"
-				literal=yes
-			}
-		}
-		portrait="imperium_female_05"
-		texture=0
-		evolution_mask=0
-		attachment=36
-		clothes=2
-		ruler_title=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		trait="trait_ruler_eye_for_talent"
-		leader_class="scientist"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_lucius"
+		gender = female
+		portrait = "imperium_female_05"
+		texture = 0
+		evolution_mask = 0
+		attachment = 36
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="machine_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_relentless_industrialists"
-		"civic_memory_vault"
-	}
-	origin="origin_mechanicus"
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
 }
 Triplex_Phall = {
-	key="Триплекс-Фолл"
-	ship_prefix=
-	{
-		key="ship_prefix_mechanicus"
+	name = "name_triplex_phall"
+	adjective = "PRESCRIPTED_adjective_triplex_phall"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="imperium"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_humans1"
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Triplex_Phall_start Triplex_Phall_gos }
+	
+	planet_name = "planet_name_triplex_phall"
+	planet_class = "pc_continental"
+	system_name = "system_name_triplex_phall"
+	#initializer = ""
+	
+	graphical_culture = "sto_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "TriplexPhall.dds"
 		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_humans1"
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
 		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_humans1"
-		}
-		name_list="HUMAN3"
-		gender=not_set
-		trait="trait_cybernetic"
-		trait="trait_extremely_adaptive"
-		trait="trait_unruly"
-		trait="trait_deviants"
-		trait="trait_decadent"
-		trait="trait_resilient"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Триплекс-Фолл"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Триплекс-Фолл"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_dictatorial"
-	flags=
-	{
-		"Triplex_Phall_start"
-		"Triplex_Phall_gos"
-	}
-	government="gov_purity_order"
-	advisor_voice_type="l_the_technocrat"
-	planet_name=
-	{
-		key="Triplex Phall"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Triplex Phall"
-		literal=yes
-	}
-	initializer=""
-	graphical_culture="sto_01"
-	city_graphical_culture="humanoid_01"
-	empire_flag=
-	{
-		icon=
-		{
-			category="Warhammer"
-			file="TriplexPhall.dds"
-		}
-		background=
-		{
-			category="backgrounds"
-			file="vertical.dds"
-		}
-		colors=
-		{
+		colors = {
 			"dark_grey"
 			"shadow_steel"
 			"black"
 			"null"
 		}
 	}
-	ruler=
-	{
-		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Ниг Дорган"
-				literal=yes
-			}
-		}
-		portrait="imperium_male_02"
-		texture=0
-		evolution_mask=0
-		attachment=83
-		clothes=2
-		ruler_title=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Фабрикатор-генерал"
-			literal=yes
-		}
-		trait="trait_ruler_eye_for_talent"
-		leader_class="scientist"
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_triplex_phall"
+		gender = male
+		portrait = "imperium_male_02"
+		texture = 0
+		evolution_mask = 0
+		attachment = 83
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
 	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="machine_room"
-	spawn_enabled=always
-	ethic="ethic_authoritarian"
-	ethic="ethic_xenophobe"
-	ethic="ethic_militarist"
-	ethic="ethic_spiritualist"
-	civics=
-	{
-		"civic_fanatic_purifiers"
-		"civic_relentless_industrialists"
-		"civic_distinguished_admiralty"
-	}
-	origin="origin_mechanicus"
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
 }
 Ultramarines = {
 	name = "name_ultramarines"
