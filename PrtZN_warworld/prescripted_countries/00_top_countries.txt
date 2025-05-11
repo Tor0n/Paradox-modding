@@ -846,14 +846,14 @@ Metalica = {
 		background=
 		{
 			category="backgrounds"
-			file="circle.dds"
+			file="00_solid.dds" #file="circle.dds"
 		}
 		colors=
 		{
 			"white"
-			"red"
-			"white"
-			"red"
+			"white" #red
+			"null"
+			"null"
 		}
 	}
 	ruler=
@@ -1727,7 +1727,6 @@ Space_Wolves = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_storm_touched"
 		trait = "trait_extremely_adaptive"
 		trait = "trait_unruly"
 		trait = "trait_deviants"
@@ -1739,7 +1738,7 @@ Space_Wolves = {
 	room = "personality_honorbound_warriors_room"
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_storm_callers" }
+	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_environmentalist" }
 	origin = "origin_astartes"
 	government = "gov_purity_order"
 	

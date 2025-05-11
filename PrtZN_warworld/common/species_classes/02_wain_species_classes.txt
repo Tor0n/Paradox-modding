@@ -1,22 +1,66 @@
 "Imperial Navy BF" = {
+	archetype = BIOLOGICAL
+
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+			}
+		}
+	}
+	
 	graphical_culture = wain_02
 	move_pop_sound_effect = "moving_pop_confirmation"
 	randomized = no
 }
 
 "Imperial Navy FF" = {
+	archetype = BIOLOGICAL
+
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+			}
+		}
+	}
+	
 	graphical_culture = wain_03
 	move_pop_sound_effect = "moving_pop_confirmation"
 	randomized = no
 }
 
 "Imperial Navy FW" = {
+	archetype = BIOLOGICAL
+
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+			}
+		}
+	}
+	
 	graphical_culture = wain_04
 	move_pop_sound_effect = "moving_pop_confirmation"
 	randomized = no
 }
 
 "Imperial Navy FB" = {
+	archetype = BIOLOGICAL
+
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+			}
+		}
+	}
+	
 	graphical_culture = wain_05
 	move_pop_sound_effect = "moving_pop_confirmation"
 	randomized = no

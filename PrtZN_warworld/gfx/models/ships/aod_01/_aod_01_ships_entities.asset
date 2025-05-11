@@ -1938,6 +1938,17 @@ entity = {
 }
 
 entity = {
+	name = "aod_01_military_station_section_hangar_entity"
+	pdxmesh = "aod_01_military_station_section_heavy_mesh"	
+	scale = 1.0
+	attach = { part1 = "aod_01_military_station_section_hull_entity" }
+
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
 	name = "aod_01_military_station_section_hull_entity"
 	pdxmesh = "aod_01_military_station_section_hull_mesh"	
 	scale = 1.0

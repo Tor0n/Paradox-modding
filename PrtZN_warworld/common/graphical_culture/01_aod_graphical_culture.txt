@@ -1,4 +1,20 @@
 aod_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	ship_selection_weight = {
+		base = 0
+		modifier = {
+			set = 10
+			graphical_culture = from
+		}
+	}
+	
 	fallback = mammalian_01
 	ship_color = yes
 	ship_lighting = {

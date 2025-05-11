@@ -2039,6 +2039,17 @@ entity = {
 }
 
 entity = {
+	name = "wain_05_military_station_section_hangar_entity"
+	pdxmesh = "wain_05_military_station_section_heavy_mesh"	
+	scale = 1.0
+	attach = { part1 = "wain_05_military_station_section_hull_entity" }
+
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
 	name = "wain_05_military_station_section_hull_entity"
 	pdxmesh = "wain_05_military_station_section_hull_mesh"	
 	scale = 1.0

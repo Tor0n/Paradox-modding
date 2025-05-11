@@ -1704,6 +1704,17 @@ entity = {
 		state = { name = "moving" state_time = 5 }
 		state = { name = "death" state_time = 5 }	
 	}
+	
+	entity = {
+		name = "chaos_02_military_station_section_hangar_entity"
+		pdxmesh = "chaos_02_military_station_section_heavy_mesh"	
+		scale = 1.0
+		
+		default_state = idle
+		state = { name = "idle" state_time = 5 }
+		state = { name = "moving" state_time = 5 }
+		state = { name = "death" state_time = 5 }	
+	}
 
 	entity = {
 		name = "chaos_02_wormhole_main_entity"
