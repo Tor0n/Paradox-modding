@@ -100,6 +100,8 @@ country_event = { #Black_Legion
 		add_resource = { volatile_motes = 10000 }
 		add_resource = { rare_crystals = 1000 }
 		add_resource = { exotic_gases = 1000 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -594,6 +596,8 @@ country_event = { #Death_Guard
 		add_resource = { volatile_motes = 1750 }
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -1083,6 +1087,8 @@ country_event = { #World_Eaters
 		add_resource = { volatile_motes = 1750 }
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -1569,6 +1575,8 @@ country_event = { #Thousand_Sons
 		add_resource = { volatile_motes = 1750 }
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -2058,6 +2066,8 @@ country_event = { #Emperors_Children
 		add_resource = { volatile_motes = 1750 }
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -2554,6 +2564,8 @@ country_event = { #Word_Bearers
 		add_resource = { volatile_motes = 1750 }
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -3047,6 +3059,8 @@ country_event = { #Alpha_Legion
 		add_resource = { volatile_motes = 1750 }
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -3550,6 +3564,8 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 450 }
 		add_resource = { exotic_gases = 450 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -3901,7 +3917,8 @@ country_event = { #Mechanicum_Cyclothrathe
 			}
 		}
 	}
-}country_event = { #Mechanicum_Samech
+}
+country_event = { #Mechanicum_Samech
 	id = WrWrld_game_start.28
 	hide_window = yes
 	is_triggered_only = yes
@@ -3995,6 +4012,8 @@ country_event = { #Mechanicum_Cyclothrathe
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 450 }
 		add_resource = { exotic_gases = 450 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -4569,6 +4588,8 @@ country_event = { #Blood_Pact
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 300 }
 		add_resource = { exotic_gases = 300 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -5059,6 +5080,8 @@ country_event = { #Admonition
 		add_resource = { volatile_motes = 700 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -5544,6 +5567,8 @@ country_event = { #Chaos
 		add_resource = { volatile_motes = 700 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -6089,6 +6114,8 @@ country_event = { #Conjurers_of_Fear
 		add_resource = { volatile_motes = 700 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -6582,6 +6609,8 @@ country_event = { #Barbed_Chalice
 		add_resource = { volatile_motes = 700 }
 		add_resource = { rare_crystals = 300 }
 		add_resource = { exotic_gases = 300 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -7076,6 +7105,8 @@ country_event = { #Brothrhd_Knife
 		add_resource = { volatile_motes = 700 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -7573,6 +7604,8 @@ country_event = { #Givers_of_Life
 		add_resource = { volatile_motes = 800 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -8054,6 +8087,8 @@ country_event = { #Bloodbath
 		owner = {
 			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -8522,6 +8557,8 @@ country_event = { #Stigmartus
 		add_resource = { volatile_motes = 800 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -9007,6 +9044,8 @@ country_event = { #Penumbral
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 300 }
 		add_resource = { exotic_gases = 300 }
+		#НАУКА
+		give_technology_chaos = yes
 		#СОЦ НАУКА
 		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3

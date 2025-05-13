@@ -2,31 +2,6 @@ namespace = WrWrld_game_start
 
 @create_pop_watch_fort_station = 15
 
-#country_event = { #ПРИВЕТ МИР(зачёркнуто) ИГРОК!
-#	id = WrWrld_game_start.0
-#	title = "WrWrld_game_start.0.name"
-#	desc = "WrWrld_game_start.0.desc"
-#	picture = GFX_evt_ship_in_orbit
-#	#hide_window = no
-#	#is_triggered_only = yes
-#
-#	#trigger = {
-#		#or = {
-#		#	has_country_flag = Imperium_gos
-#		#	has_country_flag = Chaos_gos
-#		#}
-#	#}
-#	#immediate = {
-#   #    declare_war = {
-#	#		target = event_target:Imperium_evnt_trgt_country
-#	#		#name = <optional war name>
-#	#		attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-#	#	}
-#	#}
-#	option = {
-#		name = "WrWrld_game_start.0.a"
-#	}
-#}
 country_event = { #Tokt
 	id = WrWrld_game_start.75
 	hide_window = yes
@@ -119,7 +94,9 @@ country_event = { #Tokt
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -542,7 +519,9 @@ country_event = { #Agdagat
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -966,7 +945,9 @@ country_event = { #Sayteh
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
         hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -1396,7 +1377,9 @@ country_event = { #Nigilah
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -1817,7 +1800,9 @@ country_event = { #Kardenat
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -2242,7 +2227,9 @@ country_event = { #Oryskar
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -2666,7 +2653,9 @@ country_event = { #Mefrit
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -3095,7 +3084,9 @@ country_event = { #Nephrekh
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
@@ -3519,7 +3510,9 @@ country_event = { #Sarkoni
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_necrons = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
 			#give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +

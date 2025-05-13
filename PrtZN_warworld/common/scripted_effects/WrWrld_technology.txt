@@ -1,0 +1,781 @@
+#Для уменьшения буков
+give_technology_energy_boost_3 = {
+	optimize_memory
+	give_technology = { tech = tech_power_plant_2 message = no }		#Увеличение добычи энергетиками
+	give_technology = { tech = tech_power_plant_3 message = no }		#Увеличение добычи энергетиками
+}
+give_technology_mineral_boost_3 = {
+	optimize_memory
+	give_technology = { tech = tech_mining_1 message = no }
+	give_technology = { tech = tech_mining_2 message = no }
+	give_technology = { tech = tech_mining_3 message = no }
+}
+give_technology_farm_boost_3 = {
+	optimize_memory
+	give_technology = { tech = tech_eco_simulation message = no }		#Бонус производительности для фермеров 2
+	give_technology = { tech = tech_gene_crops message = no }			#Бонус производительности для фермеров 3
+}
+#Стартовые технологии и традиции фракциям
+give_technology_imperium = {
+	optimize_memory
+			# Соц наука #
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			
+			#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+			give_technology = { tech = tech_penal_colonies message = no } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			
+			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			#give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy message = no } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy message = no } #Баф бюрократии + постройка
+			
+			# Физ наука #
+			give_technology = { tech = tech_lasers_2					message = no } #Лазеры
+			give_technology = { tech = tech_plasma_1					message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2					message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3					message = no } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power				message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power			message = no } #Реактор 3
+			#	Для прыжкового двигателя	########################################################################################################################## ОБРАТИ ВНИМАНИЕ
+			#give_technology = { tech = tech_antimatter_power message = no } #Реактор 4
+			#give_technology = { tech = tech_zero_point_power message = no } #Реактор 5
+			#################################
+			give_technology = { tech = tech_reactor_boosters_2			message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3			message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2					message = no } #Щиты 2
+			
+			give_technology = { tech = tech_ftl_inhibitor				message = no } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_planetary_shield_generator	message = no } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+		    give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			
+			give_technology = { tech = tech_hyper_drive_2 message = no } #гипер двигатель #tech_psi_jump_drive_1 ############################################################### ОБРАТИ ВНИМАНИЕ
+			give_technology = { tech = tech_jump_drive_1 message = no } ######################################################################################################## ОБРАТИ ВНИМАНИЕ
+			
+			# Инж наука #
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 message = no }
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 message = no }
+			
+			give_technology = { tech = tech_starbase_3 message = no }
+			give_technology = { tech = tech_starbase_4 message = no }
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
+			#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_housing_1 message = no }
+			
+			#give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			#give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			
+			#для зон
+			give_technology = { tech = tech_society_2 message = no }
+			give_technology = { tech = tech_engineering_2 message = no }
+			give_technology = { tech = tech_physics_2 message = no }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
+			#give_technology = { tech = tech_mine_betharian message = no }
+}
+add_tradition_imperium = {
+	optimize_memory
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_specialist_training
+		
+		add_tradition = tr_statecraft_adopt
+}
+
+give_technology_mechanicus = {
+			#Соц наука
+			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+			#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+			
+			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+			give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+			give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+			#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+			
+			#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
+			give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+			give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+			#give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+			give_technology = { tech = tech_penal_colonies message = no } #Только для обычных органиков
+			
+			give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+			give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+			
+			give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель #tech_psi_jump_drive_1
+			give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+			give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+			give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+			give_technology = { tech = tech_centralized_command message = no } #Военная академия
+			give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+			give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+			give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+			give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+			#give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+			#give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+			
+			give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+			give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+			give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+			give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+			give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+			#give_technology = { tech = tech_adaptive_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_effective_bureaucracy message = no } #Баф бюрократии
+			#give_technology = { tech = tech_colonial_bureaucracy message = no } #Баф бюрократии + постройка
+			#give_technology = { tech = tech_galactic_bureaucracy message = no } #Баф бюрократии + постройка
+			
+			#Псих наука
+			give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+			give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+			give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+			give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+			give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+			give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+			give_technology = { tech = tech_antimatter_power } #Реактор 4
+			give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+			give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+			give_technology = { tech = tech_shields_2 message = no } #Щиты 2
+			
+			give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
+			give_technology = { tech = tech_planetary_shield_generator message = no } #Планетарный генератор щита
+			give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+			give_technology = { tech = tech_encryption_1 message = no } 
+			give_technology = { tech = tech_decryption_1 message = no }
+			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+		    give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+			
+			#Инж наука
+			give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+			give_technology = { tech = tech_energy_lance_1 message = no }
+			give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
+			give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+			give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+			give_technology = { tech = tech_destroyers message = no } #Эсминец
+			give_technology = { tech = tech_cruisers message = no } #Крейсер
+			give_technology = { tech = tech_battleships message = no } #Линкор
+			give_technology = { tech = tech_titans message = no } #Титан
+			give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+			give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+			give_technology = { tech = tech_armor_hardeners_1 }
+			give_technology = { tech = tech_shield_rechargers_1 }
+			give_technology = { tech = tech_shield_hardeners_1 }
+			give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+			#give_technology = { tech = tech_thrusters_3 message = no }
+			give_technology = { tech = tech_sensors_2 }
+			
+			give_technology = { tech = tech_starbase_3 message = no }
+			give_technology = { tech = tech_starbase_4 message = no }
+			give_technology = { tech = tech_starbase_5 message = no } # Цитадель
+			#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
+			#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
+			give_technology = { tech = tech_housing_1 message = no }
+			
+			#give_technology = { tech = tech_habitat_1 } #Хабитат
+			give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
+			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
+			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+			give_technology = { tech = tech_space_mining_1 message = no }
+			give_technology = { tech = tech_space_mining_2 message = no }
+			#give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_mining_1 message = no }
+			give_technology = { tech = tech_mining_2 message = no }
+			
+			#для зон
+			give_technology = { tech = tech_society_2 message = no }
+			give_technology = { tech = tech_engineering_2 message = no }
+			give_technology = { tech = tech_physics_2 message = no }
+			
+			#Прочие науки
+			give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+			give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+			give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+			give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+			give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+			give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
+			give_technology = { tech = tech_archaeo_refinery message = no }
+			#give_technology = { tech = tech_mine_betharian message = no }
+}
+add_tradition_mechanicus = {
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_discovery_adopt     #Изучение
+		add_tradition = tr_discovery_science_division
+		add_tradition = tr_discovery_polytechnic_education
+		add_tradition = tr_discovery_faith_in_science
+		
+		add_tradition = tr_cybernetics_transubstantiation_synthesis
+		add_tradition = tr_cybernetics_metabolic_reprocessing
+		add_tradition = tr_cybernetics_integrated_anatomy
+		add_tradition = tr_cybernetics_augmentation_overload
+		add_tradition = tr_cybernetics_modular_cybernetics
+		add_tradition = tr_cybernetics_finish     #Кибернетик
+}
+
+give_technology_chaos = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+give_technology_eldar = {
+	optimize_memory
+	#############
+	# Соц наука #
+	#############
+	#give_technology = { tech = tech_industrial_farming message = no }
+	give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
+	give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
+	give_technology = { tech = tech_nano_vitality_crops message = no } #Бонус производительности для фермеров 4
+	give_technology = { tech = tech_nutrient_replication message = no } #Бонус производительности для фермеров 5 - уникальный для Эльдар
+	give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
+	give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
+	give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+	give_technology = { tech = tech_frontier_health message = no } #Госпиталь 1
+	give_technology = { tech = tech_frontier_hospital message = no } #Госпиталь 2
+	
+	give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
+	give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
+	give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
+	give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
+	give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
+	give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+	give_technology = { tech = tech_mountain_range message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_volcano message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_dangerous_wildlife message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_dense_jungle message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_quicksand_basin message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_noxious_swamp message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_massive_glacier message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_toxic_kelp message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_deep_sinkhole message = no } #Очистка квадратов и тд
+	give_technology = { tech = tech_terrestrial_sculpting message = no } #Терраформинг и тд
+	give_technology = { tech = tech_ecological_adaptation message = no } #Терраформинг и тд
+	give_technology = { tech = tech_climate_restoration message = no } #Терраформинг и тд
+	
+	#give_technology = { tech = tech_neural_implants message = no } #Просто импланты
+	give_technology = { tech = tech_artificial_moral_codes message = no } #Только для обычных органиков
+	give_technology = { tech = tech_synthetic_thought_patterns message = no } #Только для обычных органиков
+	
+	give_technology = { tech = tech_ground_defense_planning message = no } #Усиление обычной армии
+	give_technology = { tech = tech_combat_training message = no } #Усиление обычной армии
+	give_technology = { tech = tech_global_defense_grid message = no } #Вторая крепость-форпост для планеты
+	give_technology = { tech = tech_centralized_command message = no } #Военная академия
+	give_technology = { tech = tech_interstellar_fleet_traditions message = no } #Космическая Военная академия для станций
+	give_technology = { tech = tech_doctrine_fleet_size_1 message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_2 message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_3 message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_4 message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_5 message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_navy_size_1 message = no } #Увеличение численности флота
+	give_technology = { tech = tech_doctrine_navy_size_2 message = no } #Увеличение численности флота
+	give_technology = { tech = tech_doctrine_navy_size_3 message = no } #Увеличение численности флота
+	give_technology = { tech = tech_doctrine_navy_size_4 message = no } #Увеличение численности флота
+	give_technology = { tech = tech_galactic_ambitions message = no } #Увеличение числа космических баз
+	give_technology = { tech = tech_manifest_destiny message = no } #Увеличение числа космических баз
+	
+	give_technology = { tech = tech_planetary_unification message = no } #Необходимо для дальнейших исследований
+	give_technology = { tech = tech_colonial_centralization message = no } #Планитарная столица и новые полицейские участки
+	give_technology = { tech = tech_galactic_administration message = no } #Открытие столицы новой
+	give_technology = { tech = tech_planetary_infrastructure_1 message = no } #Слот под сооружение и скорость развития колонии
+	give_technology = { tech = tech_planetary_infrastructure_2 message = no } #Слот под сооружение и скорость развития колонии
+	give_technology = { tech = tech_global_production_strategy message = no } #Министерство продукции
+	
+	#Псих наука
+	give_technology = { tech = tech_lasers_2 message = no } #Лазеры
+	give_technology = { tech = tech_lasers_3 message = no }
+	give_technology = { tech = tech_lasers_4 message = no }
+	#give_technology = { tech = tech_lasers_5 message = no }
+	#give_technology = { tech = tech_plasma_1 message = no } #Плазма оружие 1
+	#give_technology = { tech = tech_plasma_2 message = no } #Плазма оружие 2
+	#give_technology = { tech = tech_plasma_3 message = no } #Плазма оружие 3
+	#give_technology = { tech = tech_disruptors_1 message = no } #Дезинтеграторы
+	#give_technology = { tech = tech_disruptors_2 message = no }
+	#give_technology = { tech = tech_disruptors_3 message = no }
+	give_technology = { tech = tech_fusion_power message = no } #Реактор 2
+	give_technology = { tech = tech_cold_fusion_power message = no } #Реактор 3
+	give_technology = { tech = tech_antimatter_power message = no } #Реактор 4
+	give_technology = { tech = tech_zero_point_power message = no } #Реактор 5
+	give_technology = { tech = tech_reactor_boosters_2 message = no } #Дополнительный реактор 2
+	give_technology = { tech = tech_reactor_boosters_3 message = no } #Дополнительный реактор 3
+	give_technology = { tech = tech_shields_2 message = no } #Щиты
+	give_technology = { tech = tech_shields_3 message = no }
+	give_technology = { tech = tech_shields_4 message = no }
+	#give_technology = { tech = tech_shields_5 message = no }
+	give_technology = { tech = tech_shield_rechargers_1 message = no }
+	give_technology = { tech = tech_shield_hardeners_1 message = no }
+	give_technology = { tech = tech_sensors_2 message = no } #Сенсоры
+	give_technology = { tech = tech_sensors_3 message = no }
+	give_technology = { tech = tech_sensors_4 message = no }
+	
+	give_technology = { tech = tech_ftl_inhibitor message = no } #Блокиратор пролёта чрез систему
+	give_technology = { tech = tech_planetary_shield_generator message = no } #Планетарный генератор щита
+	give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
+	give_technology = { tech = tech_power_hub_2 message = no }
+	give_technology = { tech = tech_power_plant_2 message = no } #+Энергия
+	give_technology = { tech = tech_power_plant_3 message = no }
+	give_technology = { tech = tech_power_plant_4 message = no }
+	give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_3 message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_4 message = no } # Наука от космических станций
+	give_technology = { tech = tech_encryption_1 message = no } 
+	give_technology = { tech = tech_encryption_2 message = no }
+	give_technology = { tech = tech_decryption_1 message = no }
+	give_technology = { tech = tech_decryption_2 message = no }
+	give_technology = { tech = tech_decryption_3 message = no }
+	give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
+	give_technology = { tech = tech_power_plant_3 message = no } #Увеличение добычи энергетиками
+	give_technology = { tech = tech_power_plant_4 message = no } #Увеличение добычи энергетиками
+	
+	#Инж наука
+	give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+	give_technology = { tech = tech_mass_drivers_3 message = no } #Ускорители материи
+	give_technology = { tech = tech_mass_drivers_4 message = no }
+	give_technology = { tech = tech_mass_drivers_5 message = no } 
+	give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
+	give_technology = { tech = tech_torpedoes_1 message = no } #Торпеды			
+	give_technology = { tech = tech_destroyers message = no } #Эсминец
+	give_technology = { tech = tech_cruisers message = no } #Крейсер
+	give_technology = { tech = tech_battleships message = no } #Линкор
+	#give_technology = { tech = tech_corvette_build_speed message = no } #Скорость строительства корветов
+	give_technology = { tech = tech_ship_armor_2 message = no } #Броня корабля
+	give_technology = { tech = tech_ship_armor_3 message = no } #Броня корабля
+	#give_technology = { tech = tech_ship_armor_4 message = no } #Броня корабля
+	#give_technology = { tech = tech_ship_armor_5 message = no }
+	give_technology = { tech = tech_crystal_armor_1 message = no } #Кристальная броня
+	#give_technology = { tech = tech_crystal_armor_2 message = no }
+	give_technology = { tech = tech_thrusters_2 message = no } #Улучшенный двигатель
+	give_technology = { tech = tech_thrusters_3 message = no }
+	give_technology = { tech = tech_thrusters_4 message = no }
+	give_technology = { tech = tech_hyper_drive_2 message = no } #Гипер-двигатель
+	give_technology = { tech = tech_hyper_drive_3 message = no } #Гипер-двигатель
+	
+	give_technology = { tech = tech_starbase_3							message = no } #Космическая база новый уровень
+	give_technology = { tech = tech_starbase_4							message = no } #Космическая база новый уровень
+	give_technology = { tech = tech_starbase_5							message = no } # Цитадель
+	give_technology = { tech = tech_modular_engineering					message = no  } #Удешевление строительства
+	give_technology = { tech = tech_space_defense_station_improvement	message = no } #Удешевление строительства
+	give_technology = { tech = tech_powered_exoskeletons				message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+	give_technology = { tech = tech_space_mining_1						message = no }
+	give_technology = { tech = tech_space_mining_2						message = no }
+	give_technology = { tech = tech_space_mining_3						message = no }
+	give_technology = { tech = tech_space_mining_4						message = no }
+	give_technology = { tech = tech_mining_1							message = no }
+	give_technology = { tech = tech_mining_2							message = no }
+	give_technology = { tech = tech_mining_3							message = no }
+	
+	give_technology = { tech = tech_habitat_1							message = no } #Хабитат
+	give_technology = { tech = tech_habitat_2							message = no }
+	give_technology = { tech = tech_habitat_3							message = no }
+	give_technology = { tech = tech_housing_1							message = no }
+	give_technology = { tech = tech_housing_2							message = no }
+	give_technology = { tech = tech_alloys_1							message = no } #Бонус производства ТМС
+	give_technology = { tech = tech_alloys_2							message = no }
+	give_technology = { tech = tech_advanced_metallurgy_1				message = no } #Бонус производства стали
+	give_technology = { tech = tech_advanced_metallurgy_2				message = no }
+	give_technology = { tech = tech_luxuries_1							message = no } #Улучшеное здание на тмс
+	give_technology = { tech = tech_luxuries_2							message = no }
+	give_technology = { tech = tech_mineral_purification_1				message = no } #Усилитель эффективности шахтёров
+	give_technology = { tech = tech_mineral_purification_2				message = no }
+	
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+	
+	#Прочие науки
+	give_technology = { tech = tech_mine_exotic_gases					message = no } #Добыча газа
+	give_technology = { tech = tech_exotic_gases						message = no } #Создание газа
+	give_technology = { tech = tech_mine_rare_crystals					message = no } #Добыча кристаллов
+	give_technology = { tech = tech_rare_crystals						message = no } #Создание кристаллов
+	give_technology = { tech = tech_mine_volatile_motes					message = no } #Добыча пылинок
+	give_technology = { tech = tech_volatile_motes						message = no } #Создание пылинок
+	give_technology = { tech = tech_archaeo_refinery					message = no }
+	
+	#Мегаструктуры
+	#give_technology = { tech = tech_mega_engineering					message = no }
+	give_technology = { tech = tech_gateway_activation					message = no }
+}
+add_tradition_eldar = {
+	optimize_memory
+	# Гармония #
+	add_tradition = tr_harmony_finish
+	add_tradition = tr_harmony_the_greater_good
+	add_tradition = tr_harmony_kinship
+	add_tradition = tr_harmony_utopian_dream
+	add_tradition = tr_harmony_harmonious_directives
+	add_tradition = tr_harmony_mind_and_body
+	# Адаптация #
+	add_tradition = tr_adaptability_finish
+	add_tradition = tr_adaptability_recycling
+	add_tradition = tr_adaptability_survival_fittest
+	add_tradition = tr_adaptability_environmental_diversification
+	add_tradition = tr_adaptability_adaptive_ecology
+	add_tradition = tr_adaptability_appropriation
+	# Одарённость (про лидеров) #
+	add_tradition = tr_aptitude_finish
+	add_tradition = tr_aptitude_the_empire_needs_you
+	add_tradition = tr_aptitude_specialist_training
+	add_tradition = tr_aptitude_psychological_profiling
+	add_tradition = tr_aptitude_healthcare_program
+	add_tradition = tr_aptitude_champions_of_the_empire
+	# Директивы совета #
+	add_tradition = tr_statecraft_finish
+	add_tradition = tr_statecraft_constitutional_focus
+	add_tradition = tr_statecraft_inspiring_agendas
+	add_tradition = tr_statecraft_immutable_directives
+	add_tradition = tr_statecraft_amongst_peers
+	add_tradition = tr_statecraft_shared_benefits
+	# Превосходство #
+	add_tradition = tr_supremacy_fleet_logistical_corps
+	add_tradition = tr_supremacy_master_shipwrights
+	add_tradition = tr_supremacy_war_games
+	add_tradition = tr_supremacy_overwhelming_force
+	add_tradition = tr_supremacy_great_game
+	add_tradition = tr_supremacy_finish
+	# Упорство #
+	add_tradition = tr_unyielding_resistance_is_frugal
+	add_tradition = tr_unyielding_never_surrender
+	add_tradition = tr_unyielding_bulwark_of_harmony
+	add_tradition = tr_unyielding_defensive_zeal
+	add_tradition = tr_unyielding_fortress_doctrine
+	add_tradition = tr_unyielding_finish
+	# Процветание #
+	add_tradition = tr_prosperity_adopt
+	add_tradition = tr_prosperity_administrative_operations
+	add_tradition = tr_prosperity_pursuit_of_profit
+	add_tradition = tr_prosperity_interstellar_franchising
+}
+
+give_technology_genestealer = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+give_technology_necrons = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+give_technology_ork = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+# give_technology_space_marines = {
+	#для зон
+	# give_technology = { tech = tech_society_2 message = no }
+	# give_technology = { tech = tech_engineering_2 message = no }
+	# give_technology = { tech = tech_physics_2 message = no }
+# }
+
+give_technology_tau = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+give_technology_xenos = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+give_technology_ork = {
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+}
+
+give_technology_cythor_fiends = {
+	optimize_memory
+	#############
+	# Соц наука #
+	#############
+	give_technology = { tech = tech_eco_simulation						message = no } #Бонус производительности для фермеров 2
+	give_technology = { tech = tech_hydroponics							message = no } #Гидропонные фермы
+	give_technology = { tech = tech_food_processing_1					message = no } #Центр обработки пищи
+	
+	give_technology = { tech = tech_colonization_2						message = no } #Приспособляемость
+	
+	give_technology = { tech = tech_ground_defense_planning				message = no } #Усиление обычной армии
+	give_technology = { tech = tech_centralized_command					message = no } #Военная академия
+	give_technology = { tech = tech_combat_training						message = no } #Усиление обычной армии
+	give_technology = { tech = tech_global_defense_grid					message = no } #Вторая крепость-форпост для планеты
+	
+	give_technology = { tech = tech_interstellar_fleet_traditions		message = no } #Космическая Военная академия для станций
+	give_technology = { tech = tech_doctrine_fleet_size_1				message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_2				message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_3				message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_4				message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_fleet_size_5				message = no } #Предел управляемости +
+	give_technology = { tech = tech_doctrine_navy_size_1				message = no } #Увеличение численности флота
+	give_technology = { tech = tech_doctrine_navy_size_2				message = no } #Увеличение численности флота
+	give_technology = { tech = tech_doctrine_navy_size_3				message = no } #Увеличение численности флота
+	give_technology = { tech = tech_doctrine_navy_size_4				message = no } #Увеличение численности флота
+	give_technology = { tech = tech_galactic_ambitions					message = no } #Увеличение числа космических баз
+	give_technology = { tech = tech_manifest_destiny					message = no } #Увеличение числа космических баз
+	
+	give_technology = { tech = tech_planetary_unification				message = no } #Необходимо для дальнейших исследований
+	give_technology = { tech = tech_colonial_centralization				message = no } #Планитарная столица и новые полицейские участки
+	give_technology = { tech = tech_galactic_administration				message = no } #Открытие столицы новой
+	give_technology = { tech = tech_planetary_infrastructure_1			message = no } #Слот под сооружение и скорость развития колонии
+	give_technology = { tech = tech_planetary_infrastructure_2			message = no } #Слот под сооружение и скорость развития колонии
+	give_technology = { tech = tech_global_production_strategy			message = no } #Министерство продукции
+	give_technology = { tech = tech_adaptive_bureaucracy				message = no } #Баф бюрократии
+	give_technology = { tech = tech_effective_bureaucracy				message = no } #Баф бюрократии
+	give_technology = { tech = tech_colonial_bureaucracy				message = no } #Баф бюрократии + постройка
+	give_technology = { tech = tech_galactic_bureaucracy				message = no } #Баф бюрократии + постройка
+	#############
+	# Физ наука #
+	#############
+	give_technology = { tech = tech_lasers_2							message = no } #Лазеры 2
+	give_technology = { tech = tech_plasma_1							message = no } #Плазма оружие 1
+	give_technology = { tech = tech_fusion_power						message = no } #Реактор 2
+	give_technology = { tech = tech_cold_fusion_power					message = no } #Реактор 3
+	give_technology = { tech = tech_shields_2							message = no } #Щиты 2
+	
+	give_technology = { tech = tech_ftl_inhibitor						message = no } #Блокиратор пролёта чрез систему
+	give_technology = { tech = tech_planetary_shield_generator			message = no } #Планетарный генератор щита
+	give_technology = { tech = tech_power_hub_1							message = no } #Здание для усиления добычи энергии
+	give_technology = { tech = tech_space_science_1						message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_2						message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_3						message = no } # Наука от космических станций
+	give_technology = { tech = tech_encryption_1						message = no }
+	give_technology = { tech = tech_encryption_2						message = no }
+	give_technology = { tech = tech_encryption_3						message = no }
+	give_technology = { tech = tech_decryption_1						message = no }
+	give_technology = { tech = tech_power_plant_2						message = no } #Увеличение добычи энергетиками
+	#############
+	# Инж наука #
+	#############
+	give_technology = { tech = tech_mass_drivers_2						message = no } #2 кин пушки
+	give_technology = { tech = tech_mass_drivers_3						message = no } #3 кин пушки
+	#give_technology = { tech = tech_mass_drivers_4						message = no } #4 кин пушки
+	#give_technology = { tech = tech_mass_drivers_5						message = no } #4 кин пушки
+	give_technology = { tech = tech_flak_batteries_2					message = no } #зенитки 
+	give_technology = { tech = tech_torpedoes_1							message = no } #Торпеды			
+	give_technology = { tech = tech_destroyers							message = no } #Эсминец
+	#give_technology = { tech = tech_cruisers							message = no } #Крейсер
+	#give_technology = { tech = tech_battleships						message = no } #Линкор
+	give_technology = { tech = tech_ship_armor_2						message = no } #Броня корабля
+	give_technology = { tech = tech_ship_armor_3						message = no } #Броня корабля
+	give_technology = { tech = tech_crystal_armor_1						message = no } #Броня корабля из кристаллов
+	give_technology = { tech = tech_thrusters_2							message = no } #Улучшенный двигатель
+	
+	give_technology = { tech = tech_starbase_3							message = no }
+	give_technology = { tech = tech_starbase_4							message = no }
+	give_technology = { tech = tech_housing_1							message = no }
+	
+	give_technology = { tech = tech_space_mining_1						message = no }
+	give_technology = { tech = tech_space_mining_2						message = no }
+	give_technology = { tech = tech_space_mining_3						message = no }
+	give_technology = { tech = tech_mining_1							message = no }
+	give_technology = { tech = tech_mining_2							message = no }
+	give_technology = { tech = tech_mining_3							message = no }
+	give_technology = { tech = tech_mineral_purification_1				message = no } #Здание для шахтёров
+	#give_technology = { tech = tech_alloys_1							message = no } #Бонус производства стали
+	#give_technology = { tech = tech_advanced_metallurgy_1				message = no } #Бонус производства стали
+	#give_technology = { tech = tech_powered_exoskeletons				message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+	#give_technology = { tech = tech_robotic_workers					message = no } #Возможность строить роботов
+	
+	#для зон
+	give_technology = { tech = tech_society_2 message = no }
+	give_technology = { tech = tech_engineering_2 message = no }
+	give_technology = { tech = tech_physics_2 message = no }
+	
+	#Стратегические и редкие ресурсы
+	give_technology = { tech = tech_mine_exotic_gases					message = no } #Добыча газа
+	give_technology = { tech = tech_exotic_gases						message = no } #Создание газа
+	give_technology = { tech = tech_mine_rare_crystals					message = no } #Добыча кристаллов
+	give_technology = { tech = tech_rare_crystals						message = no } #Создание кристаллов
+	give_technology = { tech = tech_mine_volatile_motes					message = no } #Добыча пылинок
+	give_technology = { tech = tech_volatile_motes						message = no } #Создание пылинок
+}
+add_tradition_cythor_fiends = {
+	optimize_memory
+	add_tradition = tr_adaptability_adopt
+	add_tradition = tr_adaptability_recycling
+	add_tradition = tr_adaptability_survival_fittest
+	add_tradition = tr_adaptability_environmental_diversification
+	add_tradition = tr_adaptability_adaptive_ecology
+	add_tradition = tr_adaptability_appropriation
+	add_tradition = tr_adaptability_finish     #Адаптация
+	
+	add_tradition = tr_unyielding_resistance_is_frugal
+	add_tradition = tr_unyielding_never_surrender
+	add_tradition = tr_unyielding_bulwark_of_harmony
+	add_tradition = tr_unyielding_defensive_zeal
+	add_tradition = tr_unyielding_fortress_doctrine
+	add_tradition = tr_unyielding_finish     #Упорство
+}

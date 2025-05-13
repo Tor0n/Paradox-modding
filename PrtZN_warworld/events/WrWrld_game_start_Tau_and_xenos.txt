@@ -98,7 +98,9 @@ country_event = { #Tau
 			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_tau = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 			give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
@@ -775,7 +777,9 @@ country_event = { #Xenos Texian
 		add_resource = { consumer_goods = 6500 }
 		add_resource = { alloys = 14500	}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
@@ -984,7 +988,9 @@ country_event = { #Xenos Qorl
 		add_resource = { energy = 9000	}
 		add_resource = { alloys = 12500 }
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
@@ -1158,7 +1164,9 @@ country_event = { #Xenos Slogth
 		#add_resource = { energy = 25000	}
 		add_resource = { alloys = 14000	}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
@@ -1355,7 +1363,9 @@ country_event = { #Xenos Rak'Gol
 		add_resource = { energy = 5000	}
 		add_resource = { alloys = 14000	}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
 			
@@ -1552,7 +1562,9 @@ country_event = { #Xenos Barghesi
 		add_resource = { energy = 5000	}
 		add_resource = { alloys = 12500	}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
@@ -1747,7 +1759,9 @@ country_event = { #Xenos Strixis
 		#add_resource = { energy = 25000	}
 		add_resource = { alloys = 7200	}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 			give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
@@ -1911,7 +1925,9 @@ country_event = { #Xenos Sardonit
 		#add_resource = { energy = 25000	}
 		add_resource = { alloys = 9000	}
 		hidden_effect = {
-			#Соц наука
+			#НАУКА
+			give_technology_xenos = yes
+			#СОЦ НАУКА
 			give_technology = { tech = tech_eco_simulation message = no } #Бонус производительности для фермеров 2
 			
 			give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость

@@ -2,31 +2,6 @@ namespace = WrWrld_game_start
 
 @create_pop_watch_fort_station = 15
 
-#country_event = { #ПРИВЕТ МИР(зачёркнуто) ИГРОК!
-#	id = WrWrld_game_start.0
-#	title = "WrWrld_game_start.0.name"
-#	desc = "WrWrld_game_start.0.desc"
-#	picture = GFX_evt_ship_in_orbit
-#	#hide_window = no
-#	#is_triggered_only = yes
-#
-#	#trigger = {
-#		#or = {
-#		#	has_country_flag = Imperium_gos
-#		#	has_country_flag = Chaos_gos
-#		#}
-#	#}
-#	#immediate = {
-#   #    declare_war = {
-#	#		target = event_target:Imperium_evnt_trgt_country
-#	#		#name = <optional war name>
-#	#		attacker_war_goal = wg_WrWrld_total_pregalcom_war  
-#	#	}
-#	#}
-#	option = {
-#		name = "WrWrld_game_start.0.a"
-#	}
-#}
 country_event = { #Orc
 	id = WrWrld_game_start.60
 	hide_window = yes
@@ -116,7 +91,9 @@ country_event = { #Orc
 		add_resource = { food = 12500 }
 		add_resource = { alloys = 12500	}
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_ork = yes
+			#СОЦ НАУКА
 			#give_technology = { tech = tech_industrial_farming } #
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -518,7 +495,9 @@ country_event = { #Orc
 		add_resource = { food = 12500 }
 		add_resource = { alloys = 12500	}
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_ork = yes
+			#СОЦ НАУКА
 			#give_technology = { tech = tech_industrial_farming } #
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -920,7 +899,9 @@ country_event = { #Orc
 		add_resource = { food = 12500 }
 		add_resource = { alloys = 12500	}
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_ork = yes
+			#СОЦ НАУКА
 			#give_technology = { tech = tech_industrial_farming } #
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -1322,7 +1303,9 @@ country_event = { #Orc
 		add_resource = { food = 12500 }
 		add_resource = { alloys = 12500	}
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_ork = yes
+			#СОЦ НАУКА
 			#give_technology = { tech = tech_industrial_farming } #
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -1724,7 +1707,9 @@ country_event = { #Orc
 		add_resource = { food = 12500 }
 		add_resource = { alloys = 12500	}
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_ork = yes
+			#СОЦ НАУКА
 			#give_technology = { tech = tech_industrial_farming } #
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -2126,7 +2111,9 @@ country_event = { #Orc
 		add_resource = { food = 12500 }
 		add_resource = { alloys = 12500	}
 		hidden_effect = { 
-			#Соц наука
+			#НАУКА
+			give_technology_ork = yes
+			#СОЦ НАУКА
 			#give_technology = { tech = tech_industrial_farming } #
 			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
 			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
@@ -2448,7 +2435,7 @@ country_event = { #Orc
 	#	has_country_flag = Orc_gos
 	#}
 	immediate = {
-        establish_communications_no_message = event_target:Imperium_evnt_trgt_country
+		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
 		establish_communications_no_message = event_target:Ultramarines_evnt_trgt_country
