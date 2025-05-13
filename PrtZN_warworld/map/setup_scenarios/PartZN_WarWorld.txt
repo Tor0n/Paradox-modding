@@ -691,6 +691,13 @@ system = { id = "659" name = "Damnos"			position = { x = -240.0000 y = 250.0000 
 system = { id = "660" name = "Arkios"			position = { x = 63.0000 y = 2.0000 } initializer = Arkios_initializer }
 system = { id = "661" name = "Rock"				position = { x = 314.2302 y = -298.4 } initializer = Rock_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Dark_Angels_start } } } #Опхидия 316 -272
 system = { id = "662" name = "Gaptyria"			position = { x = -455.0000 y = 436.0000 } initializer = Gaptyria_initializer }
+system = { id = "663" name = "Gravian"			position = { x = 247.5618 y = 55.31021 } initializer = Gravian_initializer } 
+system = { id = "664" name = "Null Breach"		position = { x = 260.2600 y = 32.8000 } initializer = Null_Breach_initializer }
+system = { id = "665" name = "Berillia"			position = { x = 156.1629 y = -11.541086 } initializer = Berillia_initializer }
+system = { id = "666" name = "Drondii" 			position = { x = 331.1347 y = 33.1964 } initializer = Drondii_initializer }
+system = { id = "667" name = "Obsidus" 			position = { x = 317.8856 y = 53.07018 } initializer = Obsidus_initializer }
+system = { id = "668" name = "Viracon"			position = { x = -42.24917 y = 217.4208 } initializer = Viracon_initializer }
+system = { id = "669" name = "Dutonis" 			position = { x = 47.66145 y = -338.5846 } initializer = Dutonis_initializer }
 #										#
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }
@@ -855,8 +862,8 @@ system = { id = "662" name = "Gaptyria"			position = { x = -455.0000 y = 436.000
  add_hyperlane = { from = "523" to = "112" }
  add_hyperlane = { from = "109" to = "114" }
  #add_hyperlane = { from = "109" to = "115" }
- #add_hyperlane = { from = "115" to = "113" }
- #add_hyperlane = { from = "115" to = "117" }
+ add_hyperlane = { from = "115" to = "113" }
+ add_hyperlane = { from = "115" to = "117" }
  add_hyperlane = { from = "109" to = "113" }
  add_hyperlane = { from = "115" to = "116" }
  add_hyperlane = { from = "22" to = "123" }
@@ -932,6 +939,8 @@ system = { id = "662" name = "Gaptyria"			position = { x = -455.0000 y = 436.000
  add_hyperlane = { from = "165" to = "164" }
 # add_hyperlane = { from = "164" to = "163" }
  add_hyperlane = { from = "172" to = "173" }
+ add_hyperlane = { from = "669" to = "173" }
+ add_hyperlane = { from = "669" to = "163" }
  add_hyperlane = { from = "165" to = "173" }
  add_hyperlane = { from = "172" to = "170" }
  add_hyperlane = { from = "171" to = "173" }
@@ -1670,4 +1679,20 @@ system = { id = "662" name = "Gaptyria"			position = { x = -455.0000 y = 436.000
  add_hyperlane = { from = "661" to = "130" }
  add_hyperlane = { from = "661" to = "138" }
  add_hyperlane = { from = "662" to = "49" }
+ #add_hyperlane = { from = "668" to = "216" }
+ add_hyperlane = { from = "668" to = "220" }
+ add_hyperlane = { from = "668" to = "215" }
+ add_hyperlane = { from = "668" to = "221" }
+ add_hyperlane = { from = "665" to = "27" }
+ add_hyperlane = { from = "665" to = "28" }
+ add_hyperlane = { from = "665" to = "24" }
+ add_hyperlane = { from = "663" to = "30" }
+ add_hyperlane = { from = "663" to = "34" }
+ add_hyperlane = { from = "663" to = "664" }
+ add_hyperlane = { from = "664" to = "8" }
+ add_hyperlane = { from = "666" to = "12" }
+ add_hyperlane = { from = "666" to = "667" }
+ add_hyperlane = { from = "29" to = "666" }
+ add_hyperlane = { from = "29" to = "667" }
+ add_hyperlane = { from = "31" to = "667" }
 }
