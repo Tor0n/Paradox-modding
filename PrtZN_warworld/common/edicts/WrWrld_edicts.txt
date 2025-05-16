@@ -9,9 +9,7 @@
 
 @EdictPerpetual = -1
 
-#################
-# Toggle Edicts
-#################
+#	imperium	#
 
 сorpses_briquettes = {
 	length = @EdictPerpetual
@@ -30,7 +28,7 @@
 	}
 
 	modifier = {
-		planet_pops_organics_food_upkeep_mult = -0.1
+		planet_pops_organics_food_upkeep_mult = -0.15
 		planet_stability_add = -5
 	}
 
@@ -46,6 +44,48 @@
 		weight = 500
 	}
 }
+imperium_exploitation = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict1Cost
+			#multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			#multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_consumer_goods_produces_mult = 0.1
+		planet_jobs_alloys_produces_mult = 0.1
+		planet_jobs_worker_produces_mult = 0.1
+		pop_cat_worker_bonus_workforce_mult = 0.1
+		planet_jobs_specialist_produces_mult = 0.1
+		planet_stability_add = -5
+	}
+
+	potential = {
+		has_origin = origin_imperium
+	}
+	#allow = {  }
+
+	#prerequisites = {  }
+	#show_tech_unlock_if = {  }
+
+	ai_weight = {
+		weight = 500
+	}
+}
+
+#	Chaos	#
 
 veneration_khorne = {
 	length = @EdictPerpetual
