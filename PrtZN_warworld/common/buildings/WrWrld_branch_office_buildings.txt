@@ -1,0 +1,59 @@
+###########################
+# Branch Office Buildings #
+###########################
+
+## N.B.: ai_weight is still used for branch offices!
+
+@traders_from_civic = 200
+@crime_floor_from_legal_crime = 5
+@trade_value_from_jobs = 0.01
+
+building_cult_imperor_temple = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	owner_type = corporate
+
+	category = unity
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_valid_civic = civic_holy_ecclesiarchy
+			is_legit_or_legal_criminal = yes
+		}
+	}
+
+	planet_modifier = {
+		job_bureaucrat_add = 200
+		pop_ethic_spiritualist_attraction_mult = 0.5
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			influence = 10
+			minerals = 500
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+			influence = 10
+		}
+		produces = {
+			unity = 6
+			influence = 0.1
+			mult = value:branch_office_value_for_buildings
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 500
+	}
+}

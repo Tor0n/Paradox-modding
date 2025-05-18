@@ -1,0 +1,322 @@
+### Planet Modifiers
+
+# Note: you can now use potential = { } in these too
+
+pm_null = {
+	is_null = yes
+
+	spawn_chance = {
+		base = 275
+		modifier = {
+			factor = 3
+			num_modifiers > 2
+		}
+		modifier = {
+			factor = 3
+			num_modifiers > 1
+		}
+		modifier = {
+			factor = 3
+			num_modifiers > 0
+		}
+	}
+}
+
+pm_hazardous_weather = {
+	spawn_chance = {}
+
+	modifier = "hazardous_weather"
+}
+
+pm_dangerous_wildlife = {
+	spawn_chance = {}
+
+	modifier = "dangerous_wildlife"
+}
+
+pm_weak_magnetic_field = {
+	spawn_chance = {}
+
+	modifier = "weak_magnetic_field"
+}
+
+pm_strong_magnetic_field = {
+	spawn_chance = {}
+
+	modifier = "strong_magnetic_field"
+}
+
+pm_abundant_geothermal_activity = {
+	spawn_chance = {}
+
+	modifier = "abundant_geothermal_activity"
+}
+
+pm_unstable_tectonics = {
+	spawn_chance = {}
+
+	modifier = "unstable_tectonics"
+}
+
+pm_tidal_locked = {
+	spawn_chance = {}
+
+	modifier = "tidal_locked"
+}
+
+pm_chthonian_planet = {
+	spawn_chance = {}
+
+	modifier = "chthonian_planet"
+}
+
+pm_asteroid_impacts = {
+	spawn_chance = {}
+
+	modifier = "asteroid_impacts"
+}
+
+pm_extensive_moon_system = {
+	spawn_chance = {}
+
+	modifier = "extensive_moon_system"
+}
+
+pm_carbon_world = {
+	spawn_chance = {}
+
+	modifier = "carbon_world"
+}
+
+pm_wild_storms = {
+	spawn_chance = {}
+
+	modifier = "wild_storms"
+}
+
+pm_low_gravity = {
+	spawn_chance = {}
+
+	modifier = "low_gravity"
+}
+
+pm_high_gravity = {
+	spawn_chance = {}
+
+	modifier = "high_gravity"
+}
+
+pm_mineral_rich = {
+	spawn_chance = {}
+
+	modifier = "mineral_rich"
+}
+
+pm_ultra_rich = {
+	spawn_chance = {}
+
+	modifier = "ultra_rich"
+}
+
+pm_mineral_poor = {
+	spawn_chance = {}
+
+	modifier = "mineral_poor"
+}
+
+pm_titanic_life = {
+	spawn_chance = {}
+
+	modifier = "titanic_life"
+}
+
+pm_asteroid_belt = {
+	spawn_chance = {}
+
+	modifier = "asteroid_belt"
+}
+
+pm_subterranean_wildlife = {
+	spawn_chance = {}
+
+	modifier = "subterranean_wildlife"
+}
+
+pm_natural_beauty = {
+	spawn_chance = {}
+
+	modifier = "natural_beauty"
+}
+
+pm_atmospheric_aphrodisiac = {
+	spawn_chance = {}
+
+	modifier = "atmospheric_aphrodisiac"
+}
+
+pm_atmospheric_hallucinogen = {
+	spawn_chance = {}
+
+	modifier = "atmospheric_hallucinogen"
+}
+
+pm_lush = {
+	spawn_chance = {}
+
+	modifier = "lush_planet"
+}
+
+pm_bleak = {
+	spawn_chance = {}
+
+	modifier = "bleak_planet"
+}
+
+pm_rich_mircoflora = {
+	spawn_chance = {}
+
+	modifier = "rich_mircoflora"
+}
+
+pm_ancient_automation = {
+	spawn_chance = {
+		#None - From anomaly
+	}
+
+	modifier = "ancient_automation"
+}
+
+pm_ancient_factory = {
+	spawn_chance = {
+		#None - From anomaly
+	}
+
+	modifier = "ancient_factory"
+}
+
+pm_robot_workers = {
+	spawn_chance = {
+		#None - From anomaly
+	}
+
+	modifier = "robot_workers"
+}
+
+pm_ancient_forgeworld = {
+	spawn_chance = {
+		#None - From anomaly
+	}
+
+	modifier = "ancient_forgeworld"
+}
+
+pm_ancient_weapon = {
+	spawn_chance = {
+		#None - From anomaly
+	}
+
+	modifier = "ancient_weapon"
+}
+
+pm_payback_debris_field = {
+	spawn_chance = {
+		#None - From origin
+	}
+
+	modifier = "payback_debris_field"
+}
+
+pm_dyson_swarm_1 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "dyson_swarm_1_mod"
+}
+
+pm_dyson_swarm_2 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "dyson_swarm_2_mod"
+}
+
+pm_dyson_swarm_3 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "dyson_swarm_3_mod"
+}
+
+pm_arc_furnace_1 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "orbital_arc_furnace_1_mod"
+}
+
+pm_arc_furnace_2 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "orbital_arc_furnace_2_mod"
+}
+
+pm_arc_furnace_3 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "orbital_arc_furnace_3_mod"
+}
+
+pm_arc_furnace_4 = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "orbital_arc_furnace_4_mod"
+}
+
+pm_obsessional_directive = {
+	spawn_chance = {
+		#None - From Megastructure
+	}
+
+	modifier = "obsessional_directive_mod"
+}
+
+pm_stratovents = {
+	spawn_chance = {}
+
+	modifier = "stratovents"
+}
+
+pm_hyper_ecosystem = {
+	spawn_chance = {}
+
+	modifier = "hyper_ecosystem"
+}
+
+pm_docile_fauna = {
+	spawn_chance = {}
+
+	modifier = "docile_fauna"
+}
+
+pm_obsidian_lakes = {
+	spawn_chance = {}
+	modifier = "obsidian_lakes"
+}
+
+pm_unplugged_battlefield = {
+	spawn_chance = {
+		#None - From origin
+	}
+
+	modifier = "unplugged_battlefield"
+}

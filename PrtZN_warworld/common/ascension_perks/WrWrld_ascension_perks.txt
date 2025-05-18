@@ -1,0 +1,27 @@
+ap_ecclesiastical_authority = {
+	potential = {
+		#host_has_dlc = "Megacorp"
+		NOT = {
+			has_ascension_perk = ap_ecclesiastical_authority
+		}
+		is_megacorp = yes
+		has_valid_civic = civic_holy_ecclesiarchy
+	}
+
+	modifier = {
+		country_official_cap_add = 2
+		planet_branch_offices_cost_mult = -0.15
+		#planet_max_branch_office_buildings_add = 1
+		#planet_max_branch_office_buildings_self_add = 1
+		empire_size_branch_office_mult = -0.33
+		branch_office_value_mult = 0.1
+	}
+
+	# on_enabled = {
+		# custom_tooltip = "free_commercial_pacts"
+	# }
+
+	ai_weight = {
+		factor = 150
+	}
+}

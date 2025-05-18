@@ -1,0 +1,449 @@
+##########################################################################
+# Empire Policies
+#
+# #####
+#
+# AI:
+# Base AI-weight is 100, if unchanged
+# AI will grab whatever policy-option has the highest weight
+#
+# #####
+#
+##########################################################################
+
+orbital_bombardment = {
+
+	potential = {
+		OR = {
+			is_country_type = default
+			is_country_type = vol
+		}
+	}
+
+	option = {
+		name = "orbital_bombardment_selective"
+		policy_flags = {
+			orbital_bombardment_selective
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+				NOR = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+				NOT = {
+					is_galactic_community_member = yes
+					OR = {
+						is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+						is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+						is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "orbital_bombardment_indiscriminate"
+
+		in_breach_of = {
+			{
+				key = resolution_rulesofwar_independent_tribunals
+			}
+			{
+				key = resolution_rulesofwar_last_resort_doctrine
+			}
+			{
+				key = resolution_rulesofwar_demobilization_initiative
+			}
+		}
+
+		policy_flags = {
+			orbital_bombardment_indiscriminate
+		}
+		modifier = {}
+
+		valid = {
+			NOR = {
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_pacifist"
+			}
+		}
+		AI_weight = {
+			modifier = {
+				factor = 0.1
+				is_galactic_community_member = yes
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+		}
+	}
+	option = {
+		name = "orbital_bombardment_armageddon"
+
+		in_breach_of = {
+			{
+				key = resolution_rulesofwar_independent_tribunals
+			}
+			{
+				key = resolution_rulesofwar_last_resort_doctrine
+			}
+			{
+				key = resolution_rulesofwar_demobilization_initiative
+			}
+		}
+
+		potential = {
+			OR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+
+		policy_flags = {
+			orbital_bombardment_armageddon
+		}
+		modifier = {}
+
+		AI_weight = {
+			modifier = {
+				factor = 10
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_machine_terminator
+				}
+			}
+			modifier = {
+				factor = 10
+				has_ascension_perk = ap_become_the_crisis
+			}
+		}
+	}
+}
+
+food_policy = {
+	potential = {
+		always = no
+	}
+
+	option = {
+		name = "food_policy_rationing"
+
+		modifier = {
+			planet_pops_organics_food_upkeep_mult = -0.25
+			planet_pops_organics_minerals_upkeep_mult = -0.25
+			logistic_growth_mult = -0.1
+			biological_pop_happiness = -0.1
+			lithoid_pop_happiness = -0.1
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "food_policy_normal"
+
+		modifier = {}
+
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "food_policy_generous"
+
+		modifier = {
+			planet_pops_organics_food_upkeep_mult = 0.25
+			planet_pops_organics_minerals_upkeep_mult = 0.25
+			biological_pop_happiness = 0.05
+			lithoid_pop_happiness = 0.05
+			logistic_growth_mult = 0.1
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+}
+
+economic_policy = {
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+
+	option = {
+		name = "economic_policy_civilian"
+
+		modifier = {
+			planet_jobs_consumer_goods_produces_mult = 0.25
+			planet_jobs_alloys_produces_mult = -0.25
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "economic_policy_balanced"
+
+		modifier = {}
+
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = yes
+				is_ai = yes
+				is_galactic_community_member = yes
+				is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+			}
+		}
+	}
+
+	option = {
+		name = "economic_policy_military"
+
+		in_breach_of = {
+			{
+				key = resolution_rulesofwar_demobilization_initiative
+			}
+		}
+
+		modifier = {
+			planet_jobs_consumer_goods_produces_mult = -0.25
+			planet_jobs_alloys_produces_mult = 0.25
+		}
+
+		policy_flags = {
+			economic_policy_military
+		}
+
+		AI_weight = {
+			factor = 2
+			modifier = {
+				factor = 0
+				is_authoritarian = no
+				NOT = { has_ascension_perk = ap_become_the_crisis }
+			}
+		}
+	}
+}
+
+trade_policy = {
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+
+	option = {
+		name = "trade_policy_default"
+
+		potential = {
+			is_worker_coop_empire = no
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				set_trade_conversions = {
+					trade = 0.5
+					energy = 0.5
+				}
+			}
+		}
+
+		on_disabled = {
+			hidden_effect = {
+				set_trade_conversions = { }
+			}
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "trade_policy_consumer_goods"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = { NOT = { has_federation_perk = trade_federation_passive } }
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			is_worker_coop_empire = no
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.75
+				consumer_goods = 0.25
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_consumer_goods
+		}
+
+		modifier = {}
+
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "trade_policy_unity"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = {
+						NOR = {
+							has_federation_perk = trade_federation_passive
+							has_federation_perk = unity_trade_1
+						}
+					}
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			is_worker_coop_empire = no
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.75
+				unity = 0.25
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_unity
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "trade_policy_trade_league"
+		potential = {
+			has_federation = yes
+			federation = { has_federation_perk = trade_federation_passive }
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.50
+				energy = 0.10
+				consumer_goods = 0.20
+				unity = 0.20
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_trade_league
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	option = {
+		name = "trade_policy_holy_covenant"
+		potential = {
+			has_federation = yes
+			federation = { has_federation_perk = unity_trade_1 }
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.60
+				unity = 0.40
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_holy_covenant
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+
+	option = {
+		name = "trade_policy_mutual_aid"
+		potential = {
+			is_worker_coop_empire = yes
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.30
+				energy = 0.20
+				minerals = 0.20
+				food = 0.20
+				unity = 0.10
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_mutual_aid
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 1000
+		}
+	}
+	# WrWrld #
+	option = {
+		name = "trade_policy_ecclesiarchy"
+		potential = {
+			has_valid_civic = civic_holy_ecclesiarchy
+		}
+
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.50
+				unity = 0.25
+				energy = 0.20
+				consumer_goods = 0.05
+			}
+		}
+
+		policy_flags = {
+			trade_conversion_ecclesiarchy
+		}
+
+		modifier = {
+		}
+
+		AI_weight = {
+			factor = 5000
+		}
+	}
+}

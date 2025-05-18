@@ -1,0 +1,173 @@
+trait_human = {
+	cost = 2
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive habitability army ethic_attraction individual empire_size }
+	modifier = {
+		pop_environment_tolerance = 0.30
+		pc_nuked_habitability = 0.1
+		army_defense_damage_mult = 0.55
+		pop_government_ethic_attraction = -0.35
+		species_empire_size_mult = 0.075
+	}
+	slave_cost = {
+		energy = 1300
+	}
+}
+
+# trait_extremely_adaptive = {
+	# cost = 4
+	# category = normal
+	# species_possible_add = {
+		# can_add_genetic_traits = yes
+	# }
+	# species_possible_remove = {
+		# can_remove_beneficial_genetic_traits = yes
+	# }
+	# species_possible_merge_remove = {
+		# always = yes
+	# }
+	# opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" }
+	# allowed_archetypes = { BIOLOGICAL }
+	# tags = { organic positive habitability }
+	# modifier = {
+		# pop_environment_tolerance = 0.20
+	# }
+	# slave_cost = {
+		# energy = 1000
+	# }
+# }
+# trait_resilient = {
+	# cost = 1
+	# category = normal
+	# species_possible_add = {
+		# can_add_genetic_traits = yes
+	# }
+	# species_possible_remove = {
+		# can_remove_beneficial_genetic_traits = yes
+	# }
+	# species_possible_merge_remove = {
+		# always = yes
+	# }
+	# allowed_archetypes = { BIOLOGICAL LITHOID }
+	# tags = { organic positive army }
+	# modifier = {
+		# army_defense_damage_mult = 0.5
+	# }
+	# slave_cost = {
+		# energy = 500
+	# }
+# }
+# trait_deviants = {
+	# cost = -1
+	# category = normal
+	# species_potential_add = {
+		# can_add_negative_organic_traits = yes
+	# }
+	# modifier = { pop_government_ethic_attraction = -0.15 }
+
+	# allowed_archetypes = { BIOLOGICAL LITHOID }
+	# tags = { organic negative ethic_attraction individual }
+	# opposites = { "trait_conformists" "trait_hive_mind" }
+	# ai_weight = {
+		# weight = 0
+	# }
+	# slave_cost = {
+		# energy = -200
+	# }
+# }
+# trait_unruly = {
+	# cost = -2
+	# category = normal
+	# species_potential_add = {
+		# can_add_negative_organic_traits = yes
+	# }
+	# opposites = { "trait_docile" }
+	# allowed_archetypes = { BIOLOGICAL LITHOID }
+	# tags = { organic negative empire_size }
+	# modifier = {
+		# species_empire_size_mult = 0.10
+	# }
+	# slave_cost = {
+		# energy = -200
+	# }
+# }
+
+trait_aeldar = {
+	cost = 3
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	modifier = {
+		leader_lifespan_add = 430
+		pop_housing_usage_mult = 0.15
+		#BIOLOGICAL_species_trait_picks_add = 2
+		#BIOLOGICAL_species_trait_points_add = 2
+	}
+	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" "trait_syncretic_proles" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive leader housing }
+	slave_cost = {
+		energy = 1000
+	}
+}
+
+# trait_venerable = {
+	# cost = 4
+	# category = normal
+	# species_possible_add = {
+		# can_add_genetic_traits = yes
+	# }
+	# species_possible_remove = {
+		# can_remove_beneficial_genetic_traits = yes
+	# }
+	# species_possible_merge_remove = {
+		# always = yes
+	# }
+	# modifier = { leader_lifespan_add = 80 }
+	# opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" "trait_syncretic_proles" }
+	# allowed_archetypes = { BIOLOGICAL LITHOID }
+	# tags = { organic positive leader }
+	# slave_cost = {
+		# energy = 1000
+	# }
+# }
+# trait_solitary = {
+	# cost = -1
+	# category = normal
+	# species_potential_add = {
+		# can_add_negative_organic_traits = yes
+	# }
+	# opposites = { "trait_communal" }
+
+	# allowed_archetypes = { BIOLOGICAL LITHOID }
+	# tags = { organic negative housing }
+
+	# modifier = {
+		# pop_housing_usage_mult = 0.1
+	# }
+
+	# ai_weight = {
+		# weight = 0
+	# }
+	# slave_cost = {
+		# energy = -200
+	# }
+# }

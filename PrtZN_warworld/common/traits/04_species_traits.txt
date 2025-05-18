@@ -1116,7 +1116,7 @@ trait_cybernetic = {
 	tags = { organic positive habitability army leader cybernetic }
 
 	modifier = {
-		planet_jobs_produces_mult = 0.1						 
+		planet_jobs_produces_mult = 0.1
 		pop_environment_tolerance = 0.20
 		army_damage_mult = 0.1
 		leader_lifespan_add = 40
@@ -2286,7 +2286,7 @@ trait_lithoid_budding = {
 	tags = { organic positive lithoid pop_growth species }
 	custom_tooltip = TRAIT_LITHOID_BUDDING_EFFECT
 
-	triggered_planet_pop_group_modifier = {
+	triggered_planet_pop_group_modifier_for_species = {
 		potential = {
 			has_budding_trait = yes
 		}

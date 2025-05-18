@@ -23,10 +23,34 @@ origin_imperium = {
 	}
 
 	description = ""
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
+origin_ecclesiarchy = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_godruler.dds"
+	picture = GFX_evt_metropolis
 	
-	#traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
+	# starting_colony = ""
+	# habitability_preference = ""
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
 	
-	# has_secondary_species = {  }
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { Imp_origin_start }
+	modifier = {
+		divided_patrongage_max_subjects = 7
+		monthly_loyalty_from_subjects = 3
+	}
+
+	description = ""
 
 	advanced_start = yes
 	random_weight = { base = 0 }
@@ -78,10 +102,13 @@ origin_astartes = {
 	}
 	
 	flags = { Astartes_origin_start }
-	#modifier = {
+	modifier = {
 		#monthly_trades_energy_produces_add = 175
 		#monthly_trades_alloys_produces_add = 120
-	#}
+		ship_fire_rate_mult = 0.15
+		army_damage_mult = 0.33
+		country_naval_cap_mult = 0.75
+	}
 
 	description = ""
 	
@@ -181,7 +208,7 @@ origin_eldar = {
 		ship_sensor_range_add = 2
 		ship_speed_mult = 0.20	
 		country_naval_cap_mult = 0.33
-		leader_lifespan_add = 350
+		#leader_lifespan_add = 350
 		#BIOLOGICAL_species_trait_picks_add = 2
 		#BIOLOGICAL_species_trait_points_add = 2
 	}
@@ -218,8 +245,8 @@ origin_exodite = {
 	
 	flags = { origin_start }
 	modifier = { 
-		leader_lifespan_add = 350
-	#planet_sensor_range_add = 2
+		#leader_lifespan_add = 350
+		#planet_sensor_range_add = 2
 		ship_speed_mult = 0.1	
 	}
 
@@ -256,6 +283,7 @@ origin_commorragh = {
 	modifier = { 
 		ship_sensor_range_add = 1
 		ship_speed_mult = 0.25	
+		ship_cloaking_strength_add = 2
 		leader_lifespan_add = 40
 	}
 
@@ -409,36 +437,6 @@ origin_corinis = {
 origin_necron = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_necron.dds"
-	picture = GFX_evt_metropolis
-	
-	# starting_colony = ""
-	# habitability_preference = ""
-	# preferred_planet_class_neighbor = no
-	# initializers = {  }
-	# max_once_global = yes
-	# non_colonizable_planet_class_neighbor = yes
-	
-	playable = { always = yes }
-	potential = { always = yes }
-	possible = {
-	}
-	
-	flags = { origin_start }
-	#modifier = {  }
-
-	description = ""
-	
-	#traits = {  }
-	
-	# has_secondary_species = {  }
-
-	advanced_start = yes
-	random_weight = { base = 0 }
-}
-# Шаблон, этот копируй и дописывай
-origin_ = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
 	picture = GFX_evt_metropolis
 	
 	# starting_colony = ""

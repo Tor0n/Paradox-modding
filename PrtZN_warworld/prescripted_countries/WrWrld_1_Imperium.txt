@@ -1,0 +1,1549 @@
+Imperium = {
+	name = "name_imperium"
+	adjective = "PRESCRIPTED_adjective_humans1"	# "PRESCRIPTED_adjective_imperium"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_imperium"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly
+		trait = "trait_decadent"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_democratic_crusaders_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_imperium"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	
+	flags = { Imperium_start Imperium_gos Imperor_Alive }
+	
+	planet_name = "planet_name_terra"
+	planet_class = "pc_continental"
+	system_name = "system_name_sol"
+	#initializer = "Terra_initializer"
+	
+	graphical_culture = "wain_01" #gothic_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "imperium_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "v.dds"
+		}
+		colors = {
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_imperium"
+		gender = male
+		portrait = "imperium_male_03"
+		texture = 0
+		attachment = 35
+		clothes = 0
+		ruler_title = "ruler_title_imperium_male"
+		ruler_title_female = "ruler_title_imperium_female"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = official
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+}
+Segmentum_Obscurus = {
+	name = "name_segmentum_obscurus"
+	adjective = "PRESCRIPTED_adjective_segmentum_obscurus"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_imperium"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
+	origin = "origin_imperium"
+	government = "gov_purity_order"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	
+	flags = { Segmentum_Obscurus_start Segmentum_Obscurus_gos }
+	
+	planet_name = "planet_name_fenksworld"
+	planet_class = "pc_continental"
+	system_name = "system_name_fenksworld"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "imperium_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_segmentum_obscurus"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 31
+		clothes = 10
+		ruler_title = "ruler_title_governor_male"
+		ruler_title_female = "ruler_title_governor_female"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = official
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+	room = "personality_democratic_crusaders_room"
+}
+Ultima_Segmentum = {
+	name = "name_ultima_segmentum"
+	adjective = "PRESCRIPTED_adjective_ultima_segmentum"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_imperium"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_democratic_crusaders_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_imperium"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	
+	flags = { Ultima_Segmentum_start Ultima_Segmentum_gos }
+	
+	planet_name = "planet_name_cephian"
+	planet_class = "pc_continental"
+	system_name = "system_name_cephian"
+	#initializer = ""
+	
+	graphical_culture = "wain_01"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "imperium_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_29.dds"
+		}
+		colors = {
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ultima_segmentum"
+		gender = male
+		portrait = "imperium_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 46
+		clothes = 11
+		ruler_title = "ruler_title_governor_male"
+		ruler_title_female = "ruler_title_governor_female"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = official
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+}
+Segmentum_Tempestus = {
+	name = "name_segmentum_tempestus"
+	adjective = "PRESCRIPTED_adjective_segmentum_tempestus"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_imperium"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_democratic_crusaders_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_imperium"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	
+	flags = { Segmentum_Tempestus_start Segmentum_Tempestus_gos }
+	
+	planet_name = "planet_name_targus"
+	planet_class = "pc_continental"
+	system_name = "system_name_targus"
+	#initializer = ""
+	
+	graphical_culture = "wain_01" #gothic_01 вернуть как только удастся починить
+	city_graphical_culture = "gothic_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "imperium_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "horizontal.dds"
+		}
+		colors = {
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_segmentum_tempestus"
+		gender = female
+		portrait = "imperium_female_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 2
+		clothes = 0
+		ruler_title = "ruler_title_governor_male"
+		ruler_title_female = "ruler_title_governor_female"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = official
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+}
+Eastern_Fringe = {
+	name = "name_eastern_fringe"
+	adjective = "PRESCRIPTED_adjective_eastern_fringe"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_imperium"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_democratic_crusaders_room"
+	
+	authority = "auth_dictatorial"
+	government = "gov_purity_order"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
+	origin = "origin_imperium"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	
+	flags = { Eastern_Fringe_start Eastern_Fringe_gos }
+	
+	planet_name = "planet_name_ichar"
+	planet_class = "pc_continental"
+	system_name = "system_name_ichar"
+	#initializer = ""
+	
+	graphical_culture = "wain_01" #gothic_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "imperium_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "diagonal.dds"
+		}
+		colors = {
+			"shadow_green"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		gender = male
+		name = "PRESCRIPTED_ruler_name_eastern_fringe"
+		portrait = "imperium_male_05"
+		texture = 0
+		evolution_mask = 0
+		attachment = 10
+		clothes = 12
+		ruler_title = "ruler_title_governor_male"
+		ruler_title_female = "ruler_title_governor_female"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = official
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+}
+Manachean_Commonwealth = {
+	name = "name_manachean_commonwealth"
+	adjective = "PRESCRIPTED_adjective_manachean_commonwealth"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_manachean"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_peaceful_traders_room"
+	
+	authority = "auth_dictatorial"
+	government = "gov_purity_order"
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_merchant_guilds" }
+	origin = "origin_imperium"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	
+	flags = { Manachean_Commonwealth_start Manachean_Commonwealth_gos }
+	
+	planet_name = "planet_name_manachea"
+	planet_class = "pc_continental"
+	system_name = "system_name_manachea"
+	#initializer = ""
+	
+	graphical_culture = "wain_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon = {
+			category = "zoological"
+			file = "flag_zoological_24.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"dark_blue"
+			"yellow"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		gender = male
+		name = "PRESCRIPTED_ruler_name_manachean_commonwealth"
+		portrait = "imperium_male_02"
+		texture = 0
+		evolution_mask = 0
+		attachment = 31
+		clothes = 11
+		ruler_title = "ruler_title_ruler_male"
+		ruler_title_female = "ruler_title_ruler_female"
+		trait = "trait_ruler_charismatic"
+		leader_class = official
+	}
+	spawn_as_fallen = no
+	advisor_voice_type = "l_xenophobe"
+}
+Ecclesiarchy = {
+	name = "name_ecclesiarchy"
+	adjective = "PRESCRIPTED_adjective_ecclesiarchy"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ecclesiarchy"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = female
+		#trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_evangelizing_zealots_room"
+	
+	authority = "auth_corporate"
+	civics = { "civic_holy_ecclesiarchy" "civic_brand_loyalty" "civic_crusader_spirit_corporate" } #	"civic_fanatic_purifiers" "civic_exalted_priesthood" "civic_police_state"
+	government = "gov_purity_order"
+	origin = "origin_ecclesiarchy"
+	
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flags = { Ecclesiarchy_start Ecclesiarchy_gos }
+	
+	planet_name = "planet_name_ophellia"
+	planet_class = "pc_continental"
+	system_name = "system_name_ophellia"
+	#initializer = ""
+	
+	graphical_culture = "wain_04"
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "AdeptaSororitas2.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"white" 
+			"red"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ecclesiarchy"
+		gender = female
+		portrait = "imperium_female_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 10
+		clothes = 4
+		ruler_title = "ruler_title_imperium_male"
+		ruler_title_female = "ruler_title_ecclesiarchy_female"
+		trait = "leader_trait_fleet_organizer"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_the_soldier"
+	spawn_as_fallen = no
+}
+Mechanicus = {
+	name = "name_mechanicus"
+	adjective = "PRESCRIPTED_adjective_mechanicus"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Mechanicus_start Mechanicus_gos }
+	
+	planet_name = "planet_name_voss_prime"
+	planet_class = "pc_continental"
+	system_name = "system_name_voss_prime"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"  #sto_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "AdeptusMechanicus.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"shadow_blue"
+			"red"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_mechanicus"
+		gender = male
+		portrait = "imperium"
+		texture = 0
+		evolution_mask = 0
+		attachment = 81
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
+}
+Ryza = {
+	name = "name_ryza"
+	adjective = "PRESCRIPTED_adjective_ryza"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_warrior_culture" }
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Ryza_start Ryza_gos }
+	
+	planet_name = "planet_name_ryza"
+	planet_class = "pc_continental"
+	system_name = "system_name_ryza"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"  #sto_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "RyzaXXX.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_11.dds"
+		}
+		colors = {
+			"orange"
+			"red"
+			"red"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ryza"
+		gender = female
+		portrait = "imperium_female_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 36
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
+}
+Metalica = {
+	name = "name_metalica"
+	adjective = "PRESCRIPTED_adjective_metalica"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Metalica_start Metalica_gos }
+	
+	planet_name = "planet_name_metalica"
+	planet_class = "pc_continental"
+	system_name = "system_name_metalica"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"  #sto_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "MetalicaVII.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds" #file="circle.dds"
+		}
+		colors = {
+			"white"
+			"white" #red
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_metalica"
+		gender = male
+		portrait = "imperium_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 81
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
+}
+Graia = {
+	name = "name_graia"
+	adjective = "PRESCRIPTED_adjective_graia"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_shadow_council" }
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Graia_start Graia_gos }
+	
+	planet_name = "planet_name_graia"
+	planet_class = "pc_continental"
+	system_name = "system_name_graia"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"  #sto_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "GraiaXIII.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"
+			"red_orange"
+			"red_orange"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_graia"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 81
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
+}
+Lucius = {
+	name = "name_lucius"
+	adjective = "PRESCRIPTED_adjective_lucius"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Lucius_start Lucius_gos }
+	
+	planet_name = "planet_name_lucius"
+	planet_class = "pc_continental"
+	system_name = "system_name_lucius"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"  #sto_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "LuciusXVIII.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"
+			"beige"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_lucius"
+		gender = female
+		portrait = "imperium_female_05"
+		texture = 0
+		evolution_mask = 0
+		attachment = 36
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
+}
+Triplex_Phall = {
+	name = "name_triplex_phall"
+	adjective = "PRESCRIPTED_adjective_triplex_phall"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_mechanicus"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "machine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_mechanicus"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Triplex_Phall_start Triplex_Phall_gos }
+	
+	planet_name = "planet_name_triplex_phall"
+	planet_class = "pc_continental"
+	system_name = "system_name_triplex_phall"
+	#initializer = ""
+	
+	graphical_culture = "wain_02"  #sto_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "TriplexPhall.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"dark_grey"
+			"shadow_steel"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_triplex_phall"
+		gender = male
+		portrait = "imperium_male_02"
+		texture = 0
+		evolution_mask = 0
+		attachment = 83
+		clothes = 2
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+	spawn_as_fallen = no
+}
+Ultramarines = {
+	name = "name_ultramarines"
+	adjective = "PRESCRIPTED_adjective_ultramarines"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ultramarines"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_philosopher_king" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Ultramarines_start Ultramarines_gos }
+	
+	planet_name = "planet_name_macragge"
+	planet_class = "pc_continental"
+	system_name = "system_name_macragge"
+	#initializer = ""
+	
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "game-40k-ultramarines.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "double_triangles.dds"
+		}
+		colors= {
+			"blue"
+			"light_blue"
+			"blue"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ultramarines"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 45
+		clothes = 9
+		ruler_title = "ruler_title_astartes"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "leader_trait_fleet_organizer"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Dark_Angels = {
+	name = "name_dark_angels"
+	adjective = "PRESCRIPTED_adjective_dark_angels"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_dark_angels"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_exalted_priesthood" "civic_memory_vault" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flags = { Dark_Angels_start Dark_Angels_gos }
+	
+	planet_name = "planet_name_rock"
+	planet_class = "pc_continental"
+	system_name = "system_name_rock"
+	#initializer = ""
+	
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "game-40k-dark-angels.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_29.dds"
+		}
+		colors = {
+			"dark_green"
+			"shadow_green"
+			"shadow_green"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_dark_angels"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 20
+		clothes = 5
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_evil_corp"
+	spawn_as_fallen = no
+}
+Imperial_Fists = {
+	name = "name_imperial_fists"
+	adjective = "PRESCRIPTED_adjective_imperial_fists"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_astartes"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_heroic_tales" "civic_warrior_culture" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Imperial_Fists_start Imperial_Fists_gos }
+	
+	planet_name = "planet_name_inwit"
+	planet_class = "pc_continental"
+	system_name = "system_name_inwit"
+	#initializer = ""
+	
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "Astartes_7.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"black"
+			"yellow"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_imperial_fists"
+		gender = male
+		portrait = "imperium_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 39
+		clothes = 7
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "trait_ruler_charismatic"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Blood_Angels = {
+	name = "name_blood_angels"
+	adjective = "PRESCRIPTED_adjective_blood_angels"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_astartes"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_distinguished_admiralty" }
+	origin = "origin_astartes"
+	government = "gov_purity_order"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Blood_Angels_start Blood_Angels_gos }
+	
+	planet_name = "planet_name_baal"
+	planet_class = "pc_continental"
+	system_name = "system_name_baal"
+	#initializer = ""
+	
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "game-40k-blood-dragons1.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_21.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_blood_angels"
+		gender = male
+		portrait = "imperium_male_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 8
+		clothes = 10
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Salamanders = {
+	name = "name_salamanders"
+	adjective = "PRESCRIPTED_adjective_salamanders"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_astartes"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_crafters" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Salamanders_start Salamanders_gos }
+	
+	planet_name = "planet_name_nocturne"
+	planet_class = "pc_continental"
+	system_name = "system_name_nocturne"
+	#initializer = ""
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "Astartes_18.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_12.dds"
+		}
+		colors = {
+			"green"
+			"dark_green"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_salamanders"
+		gender = male
+		portrait = "imperium_male_05"
+		texture = 0
+		evolution_mask = 0
+		attachment = 20
+		clothes = 12
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	spawn_as_fallen = no
+	advisor_voice_type = "l_militarist"
+}
+Space_Wolves = {
+	name = "name_space_wolves"
+	adjective = "PRESCRIPTED_adjective_space_wolves"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_astartes"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_environmentalist" }
+	origin = "origin_astartes"
+	government = "gov_purity_order"
+	
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Space_Wolves_start Space_Wolves_gos }
+	
+	planet_name = "planet_name_fenris"
+	planet_class = "pc_continental"
+	system_name = "system_name_fenris"
+	#initializer = ""
+	
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "Astartes_6.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_21.dds"
+		}
+		colors = {
+			"grey"
+			"yellow"
+			"yellow"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_space_wolves"
+		gender = male
+		portrait = "imperium_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 40
+		clothes = 8
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Black_Templars = {
+	name = "name_black_templars"
+	adjective = "PRESCRIPTED_adjective_black_templars"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_astartes"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_perfected_genes"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_unruly"
+		trait = "trait_deviants"
+		trait = "trait_decadent"
+		trait = "trait_resilient"
+		trait = "trait_traditional"
+	}
+	
+	room = "personality_honorbound_warriors_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_heroic_tales" "civic_warrior_culture" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flags = { Black_Templars_start Black_Templars_gos }
+	
+	planet_name = "planet_name_isis"
+	planet_class = "pc_continental"
+	system_name = "system_name_isis"
+	#initializer = ""
+	
+	graphical_culture = "wain_03" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "humanoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "BlackTemplar.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_12.dds"
+		}
+		colors = {
+			"white"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_black_templars"
+		gender = male
+		portrait = "imperium_male_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 20
+		clothes = 4
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+}

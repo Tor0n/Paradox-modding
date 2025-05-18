@@ -1,8 +1,7 @@
 namespace = WrWrld_game_start
 
-@create_pop_watch_fort_station = 15
-
-country_event = { #Eldar
+#Eldar
+country_event = {
 	id = WrWrld_game_start.50
 	hide_window = yes
 	is_triggered_only = yes
@@ -12,9 +11,7 @@ country_event = { #Eldar
 	}
 	immediate = {
 		save_global_event_target_as = Eldar_evnt_trgt_country
-		owner = {
-			country_event = { id = WrWrld_game_start.151 days = 1 }
-		}
+		#owner = { country_event = { id = WrWrld_game_start.151 days = 1 } }
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -176,9 +173,8 @@ country_event = { #Eldar
 					}
 					while = {
 				    	count = 30
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	#create_pop = { species = owner_main_species }
+						create_pop_group = { species = owner_main_species }
 					}
 					add_building = building_system_capital
 					add_building = building_planetary_shield_generator
@@ -208,9 +204,7 @@ country_event = { #Eldar
 					}
 					while = {
 				    	count = 33
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					add_building = building_hab_system_capital
 					add_building = building_planetary_shield_generator
@@ -224,27 +218,6 @@ country_event = { #Eldar
 					add_building = building_hydroponics_farm
 					add_building = building_foundry_1
 				}
-				# else = {
-					# limit = { 
-			            # is_colonizable = yes
-			        # }
-				    # create_colony = {
-				    	# owner = ROOT
-		    	    # }
-					# while = {
-				    	# count = 25
-				    	# create_pop = {
-				    		# species = owner_main_species
-				    	# }
-					# }
-					# while = {
-						# count = 3
-						# add_district_and_planet_size_if_needed_effect = {
-							# district = district_hab_housing
-						# }
-					# }
-					# add_building = building_hab_system_capital
-				# }
 			}
 			#*-/ врата \-*#
 			if = {
@@ -263,7 +236,8 @@ country_event = { #Eldar
 		}
 	}
 }
-country_event = { #Ynnari
+#Ynnari
+country_event = {
 	id = WrWrld_game_start.51
 	hide_window = yes
 	is_triggered_only = yes
@@ -273,9 +247,7 @@ country_event = { #Ynnari
 	}
 	immediate = {
 		save_global_event_target_as = Ynnari_evnt_trgt_country
-		owner = {
-			country_event = { id = WrWrld_game_start.151 days = 1 }
-		}
+		#owner = { country_event = { id = WrWrld_game_start.151 days = 1 } }
 		establish_communications_no_message = event_target:Imperium_evnt_trgt_country
 		establish_communications_no_message = event_target:Mechanicus_evnt_trgt_country
 		establish_communications_no_message = event_target:Ecclesiarchy_evnt_trgt_country
@@ -419,9 +391,7 @@ country_event = { #Ynnari
 					}
 					while = {
 				    	count = 30
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					add_building = building_system_capital
 					add_building = building_planetary_shield_generator
@@ -451,9 +421,7 @@ country_event = { #Ynnari
 					}
 					while = {
 				    	count = 33
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					add_building = building_hab_system_capital
 					add_building = building_planetary_shield_generator
@@ -486,7 +454,8 @@ country_event = { #Ynnari
 	}
 }
 #52 Арлекины
-country_event = { #Экзодиты 1
+#Экзодиты 1
+country_event = {
 	id = WrWrld_game_start.53
 	hide_window = yes
 	is_triggered_only = yes
@@ -828,9 +797,7 @@ country_event = { #Экзодиты 1
 				    add_building = building_ranger_lodge  					
 				    while = {
 				    	count = 9
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					#while = {
 					#	count = 1
@@ -871,7 +838,8 @@ country_event = { #Экзодиты 1
 #55 Экзодиты 3
 #56 Корсары
 #57 Корсары
-country_event = { #Commorragh
+#Commorragh
+country_event = {
 	id = WrWrld_game_start.58
 	hide_window = yes
 	is_triggered_only = yes
@@ -1188,9 +1156,7 @@ country_event = { #Commorragh
 					add_building = building_slave_processing
 				    while = {
 				    	count = 29
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    	create_pop = { species = owner_main_species }
 					}
 					while = {
 						count = 5
@@ -1226,19 +1192,17 @@ country_event = { #Commorragh
 		add_seen_bypass_type = wormhole
 	}
 }
-country_event = { #
+country_event = {
 	id = WrWrld_game_start.151
 	hide_window = yes
 	is_triggered_only = yes
-
-	#trigger = {
-	#	has_country_flag = 
-	#}
+	
 	immediate = {
 		change_dominant_species = { species = event_target:Aldari_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
-country_event = { #Commorragh
+#Commorragh
+country_event = {
 	id = WrWrld_game_start.458
 	hide_window = yes
 	is_triggered_only = yes

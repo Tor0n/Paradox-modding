@@ -33,7 +33,12 @@
 	}
 
 	potential = {
-		has_origin = origin_imperium
+		OR = {
+			has_origin = origin_imperium
+			has_origin = origin_ecclesiarchy
+			has_origin = origin_mechanicus
+			has_origin = origin_astartes
+		}
 	}
 	#allow = {  }
 
@@ -61,19 +66,20 @@ imperium_exploitation = {
 	}
 
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.1
-		planet_jobs_minerals_produces_mult = 0.1
-		planet_jobs_food_produces_mult = 0.1
-		planet_jobs_consumer_goods_produces_mult = 0.1
-		planet_jobs_alloys_produces_mult = 0.1
 		planet_jobs_worker_produces_mult = 0.1
-		pop_cat_worker_bonus_workforce_mult = 0.1
-		planet_jobs_specialist_produces_mult = 0.1
-		planet_stability_add = -5
+		planet_jobs_specialist_produces_mult = 0.05
+		planet_jobs_productive_produces_mult = 0.20
+		planet_jobs_productive_upkeep_mult = 0.21
+		planet_stability_add = -10
 	}
 
 	potential = {
-		has_origin = origin_imperium
+		OR = {
+			has_origin = origin_imperium
+			has_origin = origin_ecclesiarchy
+			has_origin = origin_mechanicus
+			has_origin = origin_astartes
+		}
 	}
 	#allow = {  }
 
