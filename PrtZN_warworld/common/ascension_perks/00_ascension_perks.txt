@@ -1611,6 +1611,7 @@ ap_universal_transactions = {
 		NOT = {
 			has_ascension_perk = ap_universal_transactions
 		}
+		NOT = { has_valid_civic = civic_holy_ecclesiarchy }
 		is_megacorp = yes
 		is_criminal_syndicate = no
 	}
