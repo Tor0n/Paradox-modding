@@ -1,0 +1,33 @@
+namespace = WrWrld_chaos_events
+
+country_event = {
+	id = WrWrld_chaos_events.1
+	title = "black_crusades.name"
+	desc = "black_crusades.desc"
+	picture = GFX_evt_black_crusade
+	location = FROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		years_passed > 29
+		has_country_flag = Black_Legion_gos
+	}
+	
+	immediate = {
+		#add_resource = { alloys = 14000 }
+	}
+	option = {
+		name =  black_crusades.a
+		#add_resource = { energy = 14000 }
+	}
+	option = {
+		name =  black_crusades.b
+		add_resource = { energy = 100 }
+	}
+	after = {
+		# Effects that are applied after option is chosen.
+		# Will generate a tooltip in addition the tooltip of every option, unless hidden_effect is used.
+		add_resource = { alloys = 14000	}
+	}
+}
