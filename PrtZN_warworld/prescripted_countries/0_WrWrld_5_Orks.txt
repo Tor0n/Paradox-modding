@@ -1,0 +1,468 @@
+# Орки #
+Blood_Axes = {
+	name = "name_blood_axes"
+	adjective = "PRESCRIPTED_adjective_blood_axes"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ork"
+	
+	species = {
+		class = "HUM"
+		portrait = "humanoid_hp_12"
+		species_name = "PRESCRIPTED_species_name_ork"
+		species_plural = "PRESCRIPTED_species_plural_ork"
+		species_adjective = "PRESCRIPTED_species_adjective_ork"
+		name_list = "FUN4"
+		gender = indeterminable
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_slow_learners"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_repugnant"
+		trait = "trait_fleeting"
+		trait = "trait_noxious"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }
+	government = "gov_devouring_swarm"
+	origin = "origin_ork"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags = { Blood_Axes_start Blood_Axes_gos }
+	
+	planet_name = "planet_name_calverna"
+	planet_class = "pc_savannah"
+	system_name = "system_name_calverna"
+	#initializer = ""
+	
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "molluscoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Orks"
+			file = "BloodAxes.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"red"
+			"dark_green"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_blood_axes"
+		gender = indeterminable
+		portrait = "humanoid_hp_12"
+		texture = 6
+		evolution_mask = 0
+		attachment = 0
+		clothes = 5
+		ruler_title = "ruler_title_warboss"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Goffs = {
+	name = "name_goffs"
+	adjective = "PRESCRIPTED_adjective_goffs"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ork"
+	
+	species = {
+		class = "HUM"
+		portrait = "humanoid_hp_12"
+		species_name = "PRESCRIPTED_species_name_ork"
+		species_plural = "PRESCRIPTED_species_plural_ork"
+		species_adjective = "PRESCRIPTED_species_adjective_ork"
+		name_list = "FUN4"
+		gender = indeterminable
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_slow_learners"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_repugnant"
+		trait = "trait_fleeting"
+		trait = "trait_noxious"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }
+	government = "gov_devouring_swarm"
+	origin = "origin_ork"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags = { Goffs_start Goffs_gos }
+	
+	planet_name = "planet_name_jurn"
+	planet_class = "pc_savannah"
+	system_name = "system_name_jurn"
+	#initializer = ""
+	
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "molluscoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Orks"
+			file = "Goffs.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_50.dds"
+		}
+		colors = {
+			"dark_green"
+			"red"
+			"red"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_goffs"
+		gender = indeterminable
+		portrait = "humanoid_hp_12"
+		texture = 1
+		evolution_mask = 0
+		attachment = 0
+		clothes = 3
+		ruler_title = "ruler_title_warboss"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Evil_Sunz = {
+	name = "name_evil_sunz"
+	adjective = "PRESCRIPTED_adjective_evil_sunz"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ork"
+	
+	species = {
+		class = "HUM"
+		portrait = "humanoid_hp_12"
+		species_name = "PRESCRIPTED_species_name_ork"
+		species_plural = "PRESCRIPTED_species_plural_ork"
+		species_adjective = "PRESCRIPTED_species_adjective_ork"
+		name_list = "FUN4"
+		gender = indeterminable
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_slow_learners"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_repugnant"
+		trait = "trait_fleeting"
+		trait = "trait_noxious"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }
+	government = "gov_devouring_swarm"
+	origin = "origin_ork"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags = { Evil_Sunz_start Evil_Sunz_gos }
+	
+	planet_name = "planet_name_hephastine"
+	planet_class = "pc_savannah"
+	system_name = "system_name_hephastine"
+	#initializer = ""
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "molluscoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Orks"
+			file = "EvilSunz.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "diagonal.dds"
+		}
+		colors = {
+			"bright_yellow"
+			"red"
+			"red"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_evil_sunz"
+		gender = indeterminable
+		portrait = "humanoid_hp_12"
+		texture = 12
+		evolution_mask = 0
+		attachment = 0
+		clothes = 2
+		ruler_title = "ruler_title_warboss"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Deathskulls = {
+	name = "name_deathskulls"
+	adjective = "PRESCRIPTED_adjective_deathskulls"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ork"
+	
+	species = {
+		class = "HUM"
+		portrait = "humanoid_hp_12"
+		species_name = "PRESCRIPTED_species_name_ork"
+		species_plural = "PRESCRIPTED_species_plural_ork"
+		species_adjective = "PRESCRIPTED_species_adjective_ork"
+		name_list = "FUN4"
+		gender = indeterminable
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_slow_learners"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_repugnant"
+		trait = "trait_fleeting"
+		trait = "trait_noxious"
+	}
+	room = "scrappy_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }
+	government = "gov_devouring_swarm"
+	origin = "origin_ork"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags = { Deathskulls_start Deathskulls_gos }
+	
+	planet_name = "planet_name_charadon"
+	planet_class = "pc_savannah"
+	system_name = "system_name_charadon"
+	#initializer = ""
+	
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "molluscoid_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Orks"
+			file = "Deathskulls.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_50.dds"
+		}
+		colors = {
+			"blue"
+			"light_turquoise"
+			"light_turquoise"
+			"null"
+		}
+	}
+	ruler = {
+		gender = indeterminable
+		name = "PRESCRIPTED_ruler_name_fbhhnl"
+		portrait = "humanoid_hp_12"
+		texture = 9
+		evolution_mask = 0
+		attachment = 0
+		clothes = 4
+		ruler_title = "ruler_title_warboss"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Bad_Moons = {
+	name = "name_bad_moons"
+	adjective = "PRESCRIPTED_adjective_bad_moons"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ork"
+	
+	species = {
+		class = "HUM"
+		portrait = "humanoid_hp_12"
+		species_name = "PRESCRIPTED_species_name_ork"
+		species_plural = "PRESCRIPTED_species_plural_ork"
+		species_adjective = "PRESCRIPTED_species_adjective_ork"
+		name_list = "FUN4"
+		gender = indeterminable
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_slow_learners"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_repugnant"
+		trait = "trait_fleeting"
+		trait = "trait_noxious"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }
+	government = "gov_devouring_swarm"
+	origin = "origin_ork"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags = { Bad_Moons_start Bad_Moons_gos }
+	
+	planet_name = "planet_name_cilix"
+	planet_class = "pc_savannah"
+	system_name = "system_name_cilix"
+	#initializer = ""
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "molluscoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Orks"
+			file = "BadMoons.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"yellow"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_bad_moons"
+		gender = indeterminable
+		portrait = "humanoid_hp_12"
+		texture = 19
+		evolution_mask = 0
+		attachment = 0
+		clothes = 8
+		ruler_title = "ruler_title_warboss"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Snakebites = {
+	name = "name_snakebites"
+	adjective = "PRESCRIPTED_adjective_snakebites"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ork"
+	
+	species = {
+		class = "HUM"
+		portrait = "humanoid_hp_12"
+		species_name = "PRESCRIPTED_species_name_ork"
+		species_plural = "PRESCRIPTED_species_plural_ork"
+		species_adjective = "PRESCRIPTED_species_adjective_ork"
+		name_list = "FUN4"
+		gender = indeterminable
+		trait = "trait_hive_mind"
+		trait = "trait_extremely_adaptive"
+		trait = "trait_strong"
+		trait = "trait_resilient"
+		trait = "trait_humanoid_existential_iteroparity"
+		trait = "trait_slow_learners"
+		trait = "trait_quarrelsome"
+		trait = "trait_unruly"
+		trait = "trait_repugnant"
+		trait = "trait_fleeting"
+		trait = "trait_noxious"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_hive_mind"
+	civics = { "civic_hive_strength_of_legions" "civic_hive_toxic_baths" "civic_hive_devouring_swarm" }
+	government = "gov_devouring_swarm"
+	origin = "origin_ork"
+	
+	ethic = "ethic_gestalt_consciousness"
+	
+	flags = { Snakebites_start Snakebites_gos }
+	
+	planet_name = "planet_name_gorkamorka"
+	planet_class = "pc_savannah"
+	system_name = "system_name_gorkamorka"
+	#initializer = ""
+	graphical_culture = "toxoid_01"
+	city_graphical_culture = "molluscoid_01"
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Orks"
+			file = "Snakebites.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "rounded_middle.dds"
+		}
+		colors = {
+			"orange"
+			"khaki_brown"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_snakebites"
+		gender = indeterminable
+		portrait = "humanoid_hp_12"
+		texture = 7
+		evolution_mask = 0
+		attachment = 0
+		clothes = 7
+		ruler_title = "ruler_title_warboss"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}

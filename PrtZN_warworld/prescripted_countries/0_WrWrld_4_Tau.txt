@@ -1,0 +1,74 @@
+# Тау #
+Tau_Federation = {
+	name = "name_tau_federation"
+	adjective = "PRESCRIPTED_adjective_tau_federation"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_tau_federation"
+	
+	species = {
+		class = "REP"
+		portrait = "rep2"
+		name = "PRESCRIPTED_species_name_tau"
+		plural ="PRESCRIPTED_species_plural_tau"
+		adjective = "PRESCRIPTED_species_adjective_tau"
+		name_list = "REP1"
+		trait = "trait_intelligent"
+		trait = "trait_weak"
+		trait = "trait_nomadic"
+		trait = "trait_charismatic"
+		trait = "trait_solitary"
+		trait = "trait_fleeting"
+	}
+	
+	room = "personality_migrating_flock_room"
+	
+	
+	authority = "auth_democratic"
+	civics = { "civic_shared_burden" "civic_free_haven" "civic_meritocracy" }
+	government = "gov_communal_parity"
+	
+	ethic = "ethic_fanatic_egalitarian"
+	ethic = "ethic_xenophile"
+	ethic = "ethic_materialist"
+	
+	origin = "origin_Tau"
+	flags = { Tau_start Tau_gos }
+	
+	planet_name = "planet_name_tau"
+	planet_class = "pc_arid"
+	system_name = "system_name_tau"
+	#initializer = "Tau_initializer"
+	
+	graphical_culture = "reptilian_01"
+	city_graphical_culture = "reptilian_01"
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "tau_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"sky_blue"
+			"turquoise"
+			"turquoise"
+			"null"
+		}
+	}
+	ruler ={
+		name = "PRESCRIPTED_ruler_name_tau"
+		gender = male
+		portrait = "rep2"
+		texture = 0
+		attachment = 1
+		clothes = 0
+		trait = "leader_trait_principled"
+		leader_class = official
+	}
+	spawn_as_fallen = no
+}

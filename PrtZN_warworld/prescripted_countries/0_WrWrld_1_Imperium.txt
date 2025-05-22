@@ -13,9 +13,7 @@ Imperium = {
 		plural = "PRESCRIPTED_species_plural_humans1"
 		adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
-		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly
-		trait = "trait_decadent"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_democratic_crusaders_room"
@@ -86,12 +84,7 @@ Segmentum_Obscurus = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	authority = "auth_dictatorial"
@@ -162,12 +155,7 @@ Ultima_Segmentum = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_democratic_crusaders_room"
@@ -239,12 +227,7 @@ Segmentum_Tempestus = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_democratic_crusaders_room"
@@ -316,12 +299,7 @@ Eastern_Fringe = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_democratic_crusaders_room"
@@ -393,12 +371,7 @@ Manachean_Commonwealth = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_peaceful_traders_room"
@@ -470,13 +443,7 @@ Ecclesiarchy = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = female
-		#trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_evangelizing_zealots_room"
@@ -549,12 +516,7 @@ Mechanicus = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "machine_room"
@@ -628,12 +590,7 @@ Ryza = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "machine_room"
@@ -707,12 +664,7 @@ Metalica = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "machine_room"
@@ -743,14 +695,14 @@ Metalica = {
 			file = "MetalicaVII.dds"
 		}
 		background = {
-			category = "backgrounds"
-			file = "00_solid.dds" #file="circle.dds"
+			category="backgrounds"
+			file="flag_BG_12.dds"
 		}
 		colors = {
+			"red"
 			"white"
-			"white" #red
-			"null"
-			"null"
+			"white"
+			"red"
 		}
 	}
 	ruler = {
@@ -786,12 +738,7 @@ Graia = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "machine_room"
@@ -865,12 +812,7 @@ Lucius = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "machine_room"
@@ -944,12 +886,7 @@ Triplex_Phall = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "machine_room"
@@ -1023,12 +960,7 @@ Ultramarines = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
@@ -1101,12 +1033,7 @@ Dark_Angels = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
@@ -1180,12 +1107,7 @@ Imperial_Fists = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
@@ -1257,12 +1179,7 @@ Blood_Angels = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
@@ -1334,12 +1251,7 @@ Salamanders = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
@@ -1409,12 +1321,7 @@ Space_Wolves = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
@@ -1487,12 +1394,7 @@ Black_Templars = {
 		name_list = "HUMAN3"
 		gender = male
 		trait = "trait_perfected_genes"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_unruly"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_resilient"
-		trait = "trait_traditional"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
 	room = "personality_honorbound_warriors_room"
