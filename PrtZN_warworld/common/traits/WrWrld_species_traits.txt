@@ -28,84 +28,6 @@ trait_human = {
 	}
 }
 
-# trait_extremely_adaptive = {
-	# cost = 4
-	# category = normal
-	# species_possible_add = {
-		# can_add_genetic_traits = yes
-	# }
-	# species_possible_remove = {
-		# can_remove_beneficial_genetic_traits = yes
-	# }
-	# species_possible_merge_remove = {
-		# always = yes
-	# }
-	# opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" }
-	# allowed_archetypes = { BIOLOGICAL }
-	# tags = { organic positive habitability }
-	# modifier = {
-		# pop_environment_tolerance = 0.20
-	# }
-	# slave_cost = {
-		# energy = 1000
-	# }
-# }
-# trait_resilient = {
-	# cost = 1
-	# category = normal
-	# species_possible_add = {
-		# can_add_genetic_traits = yes
-	# }
-	# species_possible_remove = {
-		# can_remove_beneficial_genetic_traits = yes
-	# }
-	# species_possible_merge_remove = {
-		# always = yes
-	# }
-	# allowed_archetypes = { BIOLOGICAL LITHOID }
-	# tags = { organic positive army }
-	# modifier = {
-		# army_defense_damage_mult = 0.5
-	# }
-	# slave_cost = {
-		# energy = 500
-	# }
-# }
-# trait_deviants = {
-	# cost = -1
-	# category = normal
-	# species_potential_add = {
-		# can_add_negative_organic_traits = yes
-	# }
-	# modifier = { pop_government_ethic_attraction = -0.15 }
-
-	# allowed_archetypes = { BIOLOGICAL LITHOID }
-	# tags = { organic negative ethic_attraction individual }
-	# opposites = { "trait_conformists" "trait_hive_mind" }
-	# ai_weight = {
-		# weight = 0
-	# }
-	# slave_cost = {
-		# energy = -200
-	# }
-# }
-# trait_unruly = {
-	# cost = -2
-	# category = normal
-	# species_potential_add = {
-		# can_add_negative_organic_traits = yes
-	# }
-	# opposites = { "trait_docile" }
-	# allowed_archetypes = { BIOLOGICAL LITHOID }
-	# tags = { organic negative empire_size }
-	# modifier = {
-		# species_empire_size_mult = 0.10
-	# }
-	# slave_cost = {
-		# energy = -200
-	# }
-# }
-
 trait_aeldar = {
 	cost = 1 # было 3
 	category = normal
@@ -118,6 +40,9 @@ trait_aeldar = {
 	species_possible_merge_remove = {
 		always = yes
 	}
+	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" "trait_syncretic_proles" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive leader housing }
 	modifier = {
 		leader_lifespan_add = 460
 		pop_housing_usage_mult = 0.15
@@ -132,53 +57,60 @@ trait_aeldar = {
 		army_defense_damage_mult = 0.65
 		logistic_growth_mult = -0.25
 	}
-	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" "trait_syncretic_proles" }
-	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive leader housing }
 	slave_cost = {
 		energy = 1000
 	}
 }
 
-# trait_venerable = {
-	# cost = 4
-	# category = normal
-	# species_possible_add = {
-		# can_add_genetic_traits = yes
-	# }
-	# species_possible_remove = {
-		# can_remove_beneficial_genetic_traits = yes
-	# }
-	# species_possible_merge_remove = {
-		# always = yes
-	# }
-	# modifier = { leader_lifespan_add = 80 }
-	# opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" "trait_syncretic_proles" }
-	# allowed_archetypes = { BIOLOGICAL LITHOID }
-	# tags = { organic positive leader }
-	# slave_cost = {
-		# energy = 1000
-	# }
-# }
-# trait_solitary = {
-	# cost = -1
-	# category = normal
-	# species_potential_add = {
-		# can_add_negative_organic_traits = yes
-	# }
-	# opposites = { "trait_communal" }
-
-	# allowed_archetypes = { BIOLOGICAL LITHOID }
-	# tags = { organic negative housing }
-
-	# modifier = {
-		# pop_housing_usage_mult = 0.1
-	# }
-
-	# ai_weight = {
-		# weight = 0
-	# }
-	# slave_cost = {
-		# energy = -200
-	# }
-# }
+trait_ork = {
+	cost = 1 # было 2
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	#opposites = { }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive habitability army ethic_attraction individual empire_size }
+	modifier = {
+		pop_environment_tolerance = 0.20
+		army_damage_mult = 0.20
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.025
+		army_defense_damage_mult = 0.5
+		species_leader_exp_gain = -0.10
+		bureaucrat_jobs_bonus_workforce_mult = -0.1
+		species_empire_size_mult = 0.10
+		entertainer_jobs_bonus_workforce_mult = -0.20
+		leader_lifespan_add = -10
+		habitability_floor_add = 0.3
+		habitability_ceil_add = -0.3
+		army_damage_mult = 0.50
+		pop_housing_usage_mult = 0.1
+	}
+	#custom_tooltip = TRAIT_HUMANOID_EXISTENTIAL_ITEROPARITY_EFFECT
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					is_at_war = yes
+					has_crisis = yes
+				}
+			}
+		}
+		logistic_growth_mult = 0.3
+	}
+	#custom_tooltip_with_modifiers = noxious_tooltip
+	triggered_pop_group_modifier = {
+		pop_happiness = @noxious_happiness_bonus
+		mult = planet.value:counter_noxious
+	}
+	slave_cost = {
+		energy = -1000
+	}
+}
