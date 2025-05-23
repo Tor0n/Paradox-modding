@@ -4,30 +4,119 @@ country_event = {
 	id = WrWrld_chaos_events.1
 	title = "black_crusades.name"
 	desc = "black_crusades.desc"
-	picture = GFX_evt_black_crusade
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
 	location = FROM
 
 	is_triggered_only = yes
 
-	trigger = {
-		years_passed > 29
-		has_country_flag = Black_Legion_gos
-	}
+	#trigger = {
+	#	years_passed > 29
+	#	has_country_flag = Black_Legion_gos
+	#}
 	
-	immediate = {
-		#add_resource = { alloys = 14000 }
-	}
+	#immediate = {
+	#	#add_resource = { alloys = 14000 }
+	#}
 	option = {
 		name =  black_crusades.a
-		#add_resource = { energy = 14000 }
-	}
-	option = {
-		name =  black_crusades.b
-		add_resource = { energy = 100 }
-	}
-	after = {
-		# Effects that are applied after option is chosen.
-		# Will generate a tooltip in addition the tooltip of every option, unless hidden_effect is used.
 		add_resource = { alloys = 14000	}
+		#add_resource = { energy = 4000 }
+		event_target:Death_Guard_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:World_Eaters_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Thousand_Sons_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Emperors_Children_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Word_Bearers_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Alpha_Legion_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Mechanicum_Cyclothrathe_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Mechanicum_Samech_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Blood_Pact_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Admonition_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Chaos_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Conjurers_of_Fear_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Barbed_Chalice_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Brothrhd_Knife_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Givers_of_Life_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Stigmartus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Bloodbath_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Penumbral_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+	}
+	#option = {
+	#	name =  black_crusades.b
+	#	add_resource = { energy = 2000 }
+	#}
+	#after = {
+	#	# Effects that are applied after option is chosen.
+	#	# Will generate a tooltip in addition the tooltip of every option, unless hidden_effect is used.
+	#	add_resource = { alloys = 14000	}
+	#}
+}
+country_event = {
+	id = WrWrld_chaos_events.2 							#Для другого космодесанта
+	title = "black_crusades.name"
+	desc = "black_crusades.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+	
+	#immediate = {
+	#	#add_resource = { alloys = 14000 }
+	#}
+	option = {
+		name =  black_crusades.a
+		add_resource = { alloys = 12000	}
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.3 							#Для повстанцев
+	title = "black_crusades.name"
+	desc = "black_crusades.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+	
+	#immediate = {
+	#	#add_resource = { alloys = 14000 }
+	#}
+	option = {
+		name =  black_crusades.a
+		add_resource = { alloys = 8250	}
 	}
 }

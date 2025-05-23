@@ -90,6 +90,9 @@ country_event = { #Black_Legion
 		owner = {
 			country_event = { id = WrWrld_game_start.419 days = 4 }
 		}
+		owner = {
+			country_event = { id = WrWrld_chaos_events.1 days = 10256 } #за 2 года до начала 999, вроде за это время ИИ как раз успеет сделать флот
+		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
 		add_resource = { energy = 45000	}
