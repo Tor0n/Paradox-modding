@@ -11,6 +11,7 @@
 building_cult_imperor_temple = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
+	planet_limit = 1
 
 	owner_type = corporate
 
@@ -25,9 +26,15 @@ building_cult_imperor_temple = {
 	}
 
 	planet_modifier = {
+		job_high_priest_add = 100
 		job_bureaucrat_add = 200
 		pop_ethic_spiritualist_attraction_mult = 0.5
 	}
+	
+	# inline_script = {
+		# script = jobs/priests_add
+		# AMOUNT = @building_static_jobs
+	# }
 
 	resources = {
 		category = planet_branch_office_buildings
@@ -76,8 +83,15 @@ building_inquisitorial_conclavee = {
 
 	planet_modifier = {
 		job_bureaucrat_add = 100
-		pop_ethic_spiritualist_attraction_mult = 0.5
+		job_enforcer_add = 100
+		planet_stability_add = 1
+		pop_ethic_spiritualist_attraction_mult = 0.10
 	}
+	
+	# inline_script = {
+		# script = jobs/priests_add
+		# AMOUNT = @building_static_jobs
+	# }
 
 	resources = {
 		category = planet_branch_office_buildings
@@ -95,7 +109,6 @@ building_inquisitorial_conclavee = {
 		}
 		produces = {
 			unity = 6
-			influence = 0.1
 			mult = value:branch_office_value_for_buildings
 		}
 		upkeep = {
@@ -104,6 +117,6 @@ building_inquisitorial_conclavee = {
 	}
 
 	ai_weight = {
-		weight = 500
+		weight = 100
 	}
 }
