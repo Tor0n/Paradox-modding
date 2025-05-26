@@ -1,0 +1,170 @@
+##################################CAIRN##################################
+entity = {
+	name = "NS_cairn_entity"
+	locator = { name = "root"		position = { 0 1 0 } rotation = { 180 0 0 } }
+
+	default_state = idle
+
+	attach = { "root" 				= "NS_cairn_black_entity" }
+	attach = { "root" 				= "NS_cairn_dark_entity" }
+	attach = { "root" 				= "NS_cairn_medium_entity" }
+	attach = { "root" 				= "NS_cairn_green_entity" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_cairn_black_entity"
+	pdxmesh = "NS_cairn_black_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_cairn_dark_entity"
+	pdxmesh = "NS_cairn_dark_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_cairn_medium_entity"
+	pdxmesh = "NS_cairn_medium_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_cairn_green_entity"
+	pdxmesh = "NS_cairn_green_mesh"
+	scale = 1.0
+}
+##################################SHROUD##################################
+entity = {
+	name = "NS_shroud_entity"
+	locator = { name = "root"		position = { 0 -1 0 } rotation = { 180 0 0 } }
+
+	default_state = idle
+
+	attach = { "root" 				= "NS_shroud_black_entity" }
+	attach = { "root" 				= "NS_shroud_dark_entity" }
+	attach = { "root" 				= "NS_shroud_medium_entity" }
+	attach = { "root" 				= "NS_shroud_green_entity" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_shroud_black_entity"
+	pdxmesh = "NS_shroud_black_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_shroud_dark_entity"
+	pdxmesh = "NS_shroud_dark_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_shroud_medium_entity"
+	pdxmesh = "NS_shroud_medium_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_shroud_green_entity"
+	pdxmesh = "NS_shroud_green_mesh"
+	scale = 1.0
+}
+##################################SCYTHE##################################
+entity = {
+	name = "NS_scythe_entity"
+	locator = { name = "root"		position = { 0 5 -1 } rotation = { 180 0 0 } }
+
+	default_state = idle
+
+	attach = { "root" 				= "NS_scythe_dark_entity" }
+	attach = { "root" 				= "NS_scythe_medium_entity" }
+	attach = { "root" 				= "NS_scythe_green_entity" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_scythe_dark_entity"
+	pdxmesh = "NS_scythe_dark_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_scythe_medium_entity"
+	pdxmesh = "NS_scythe_medium_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_scythe_green_entity"
+	pdxmesh = "NS_scythe_green_mesh"
+	scale = 1.0
+}
+##################################JACKAL##################################
+entity = {
+	name = "NS_jackal_entity"
+	locator = { name = "root"		position = { 0 0.1 -0.5 } rotation = { 180 0 0 } }
+
+	default_state = idle
+
+	attach = { "root" 				= "NS_jackal_dark_entity" }
+	attach = { "root" 				= "NS_jackal_medium_entity" }
+	attach = { "root" 				= "NS_jackal_green_entity" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_jackal_dark_entity"
+	pdxmesh = "NS_jackal_dark_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_jackal_medium_entity"
+	pdxmesh = "NS_jackal_medium_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_jackal_green_entity"
+	pdxmesh = "NS_jackal_green_mesh"
+	scale = 1.0
+}
+##################################DIRGE##################################
+entity = {
+	name = "NS_dirge_entity"
+	locator = { name = "root"		position = { 0 0 -0.5 } rotation = { 180 0 0 } }
+
+	default_state = idle
+
+	attach = { "root" 				= "NS_dirge_dark_entity" }
+	attach = { "root" 				= "NS_dirge_medium_entity" }
+	attach = { "root" 				= "NS_dirge_green_entity" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_dirge_dark_entity"
+	pdxmesh = "NS_dirge_dark_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_dirge_medium_entity"
+	pdxmesh = "NS_dirge_medium_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "NS_dirge_green_entity"
+	pdxmesh = "NS_dirge_green_mesh"
+	scale = 1.0
+}
+

@@ -1,0 +1,843 @@
+#colossus
+entity = {
+	name = "necron_01_colossus_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "frame_ship"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_cairn_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 2
+}
+
+entity = {
+	name = "necron_01_colossus_ship_entity"
+	locator = { name = "planet_killer_gun_01"		position = { 0 0 0 } }
+}
+
+#juggernaut
+entity = {
+	name = "necron_01_juggernaut_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "part1"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_cairn_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 1.5
+}
+
+entity = {
+	name = "necron_01_juggernaut_core_section_entity"
+	locator = { name = "xl_gun_01"		position = { 0 0 0 } }
+	locator = { name = "xl_gun_02"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_02"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_03"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_04"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_05"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_06"		position = { 0 0 0 } }
+	locator = { name = "gun_1"		position = { 0 0 0 } }
+	locator = { name = "gun_2"		position = { 0 0 0 } }
+	locator = { name = "gun_3"		position = { 0 0 0 } }
+	locator = { name = "gun_4"		position = { 0 0 0 } }
+	locator = { name = "gun_5"		position = { 0 0 0 } }
+}
+
+#titan
+entity = {
+	name = "necron_01_titan_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "part1"		position = { 0 0 0 } }
+	locator = { name = "part2"		position = { 0 0 0 } }
+	locator = { name = "part3"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_cairn_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 1
+}
+
+entity = {
+	name = "necron_01_titan_bow_entity"
+	locator = { name = "xl_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_titan_mid_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "large_gun_02"		position = { 0 0 0 } }
+	locator = { name = "large_gun_03"		position = { 0 0 0 } }
+	locator = { name = "large_gun_04"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_titan_stern_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "large_gun_02"		position = { 0 0 0 } }
+}
+
+#battleship
+entity = {
+	name = "necron_01_battleship_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "part1"		position = { 0 0 0 } }
+	locator = { name = "part2"		position = { 0 0 0 } }
+	locator = { name = "part3"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_shroud_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 1
+}
+
+# BOW
+entity = {
+	name = "necron_01_battleship_bow_L1M1S2_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_bow_L2_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "large_gun_02"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_bow_M1S2SHB_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_bow_XL1_entity"
+	locator = { name = "xl_gun_01"		position = { 0 0 0 } }
+}
+
+#MID
+
+entity = {
+	name = "necron_01_battleship_mid_L2M2_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "large_gun_02"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_mid_L3_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "large_gun_02"		position = { 0 0 0 } }
+	locator = { name = "large_gun_03"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_mid_M4SHB_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_03"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_04"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_mid_S4LHB_entity"
+	locator = { name = "SMALL_GUN_01"		position = { 0 0 0 } }
+	locator = { name = "SMALL_GUN_02"		position = { 0 0 0 } }
+	locator = { name = "SMALL_GUN_03"		position = { 0 0 0 } }
+	locator = { name = "SMALL_GUN_04"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_02"		position = { 0 0 0 } }
+}
+
+# STERN
+
+entity = {
+	name = "necron_01_battleship_stern_L1_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_battleship_stern_M2_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"		position = { 0 0 0 } }
+}
+
+#cruiser
+entity = {
+	name = "necron_01_cruiser_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "part1"		position = { 0 0 0 } }
+	locator = { name = "part2"		position = { 0 0 0 } }
+	locator = { name = "part3"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_scythe_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 1
+}
+
+# BOW
+entity = {
+	name = "necron_01_cruiser_bow_L1_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_cruiser_bow_M1S2_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_cruiser_bow_M2_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"		position = { 0 0 0 } }
+}
+
+# MID
+
+entity = {
+	name = "necron_01_cruiser_mid_S2HB_entity"
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_cruiser_mid_L1M1_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_cruiser_mid_M3_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_03"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_cruiser_mid_M2S2_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"		position = { 0 0 0 } }
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+}
+
+# STERN
+entity = {
+	name = "necron_01_cruiser_stern_M1_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_cruiser_stern_S2_entity"
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+}
+
+#############################destroyer#############################
+entity = {
+	name = "necron_01_destroyer_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "part1"		position = { 0 0 0 } }
+	locator = { name = "part2"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_jackal_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 1
+}
+
+# BOW
+
+entity = {
+	name = "necron_01_destroyer_bow_L1_entity"
+	locator = { name = "large_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_destroyer_bow_M1S2_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_destroyer_bow_S3_entity"
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+	locator = { name = "small_gun_03"		position = { 0 0 0 } }
+}
+
+# STERN
+
+entity = {
+	name = "necron_01_destroyer_stern_S2_entity"
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_destroyer_stern_M1_entity"
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+}
+
+#############################corvette#############################
+entity = {
+	name = "necron_01_corvette_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	locator = { name = "part1"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_dirge_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 1
+}
+
+entity = {
+	name = "necron_01_corvette_M1S1_entity"
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "medium_gun_01"		position = { 0 0 0 } }
+}
+
+entity = {
+	name = "necron_01_corvette_S3_entity"
+	locator = { name = "small_gun_01"		position = { 0 0 0 } }
+	locator = { name = "small_gun_02"		position = { 0 0 0 } }
+	locator = { name = "small_gun_03"		position = { 0 0 0 } }
+}
+
+#constructor
+entity = {
+	name = "necron_01_constructor_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_dirge_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	}
+	scale = 0.7
+}
+
+
+entity = {
+	name = "necron_01_construction_ship_entity"
+}
+
+#colonizer
+entity = {
+	name = "necron_01_colonizer_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_dirge_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 0.8
+}
+
+entity = { 
+	name = "necron_01_sponsored_colonizer_entity"
+}
+
+entity = {
+	name = "necron_01_colony_ship_entity"
+}
+
+#science
+entity = {
+ 	name = "necron_01_science_entity"
+ 	locator = { name = "root"		position = { 0 0 0 } }
+ 	attach = { "root" 				= "NS_dirge_entity" }
+	scale = 0.07
+}
+
+entity = {
+	name = "necron_01_science_ship_entity"
+}
+
+entity = {
+	name = "necron_01_science_core_entity"
+}
+
+#transport
+entity = {
+	name = "necron_01_transport_entity"
+	locator = { name = "root"		position = { 0 0 0 } }
+	attach = { "root" 				= "NS_dirge_entity" }
+	game_data = {
+		size = 1
+		emissive_recolor_crunch = 0.0
+	} 
+	scale = 0.5
+}
+
+entity = {
+	name = "necron_01_transport_ship_entity"
+}
+
+
+###################################################################################
+###																				###
+###									WEAPONS										###
+###																				###
+###################################################################################
+
+######## XL Turret ###########
+
+entity = {
+	name = "necron_01_turret_xl_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+
+######## Turrets ###########
+
+entity = {
+	name = "necron_01_turret_projectile_large_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_projectile_medium_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_projectile_small_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_missle_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	default_state = idle
+	state = { name = "idle" animation = "idle" }
+	state = { name = "stop" animation = "miss" looping = no }
+
+
+	scale = 1.25
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_energy_torpedo_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_torpedo_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_missile_large_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_missile_medium_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_missile_small_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_large_kinetic_gun_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_medium_kinetic_gun_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_small_kinetic_gun_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_turret_point_defence_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_large_laser_gun_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_medium_laser_gun_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "necron_01_small_laser_gun_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+# ##################
+# Critter Weapons
+# ##################
+
+
+# Amoeba Weapons
+
+entity = {
+	name = "necron_01_small_space_amoeba_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_medium_space_amoeba_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_large_space_amoeba_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+# Space Cloud Weapons
+
+entity = {
+	name = "necron_01_small_space_cloud_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_large_space_cloud_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+# Crystal Weapons
+
+entity = {
+	name = "necron_01_small_crystal_ship_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_medium_crystal_ship_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_large_crystal_ship_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+# Mining Drone Weapons
+
+entity = {
+	name = "necron_01_small_mining_drone_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_medium_mining_drone_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+# Space Whale Weapons
+
+entity = {
+	name = "necron_01_small_space_whale_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_medium_space_whale_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_large_space_whale_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+# Swarm Weapons
+
+entity = {
+	name = "necron_01_small_scourge_projectile_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "necron_01_medium_scourge_projectile_weapon_entity"
+	pdxmesh = "necron_01_empty_turret_mesh"
+	locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}

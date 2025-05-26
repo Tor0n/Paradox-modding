@@ -1,0 +1,30 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ass_ps_01_titan_frame_mesh"
+		file = "gfx/models/ships/ass_ps_01/08_Titan_Assets/ass_ps_01_titan_frame.mesh"
+
+		
+		animation = { id = "idle"		type = "pirate_01_galleon_idle_animation" }
+		animation = { id = "death"		type = "pirate_01_galleon_death_animation" }
+
+		scale = 1.5	
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_titan_bow_mesh"
+		file = "gfx/models/ships/ass_ps_01/08_Titan_Assets/ass_ps_01_titan_bow.mesh"
+		scale = 1.5
+	}
+
+	pdxmesh = {
+		name = "ass_ps_01_titan_mid_mesh"
+		file = "gfx/models/ships/ass_ps_01/08_Titan_Assets/ass_ps_01_titan_mid.mesh"
+		scale = 1.5
+	}
+
+	pdxmesh = {
+		name = "ass_ps_01_titan_stern_mesh"
+		file = "gfx/models/ships/ass_ps_01/08_Titan_Assets/ass_ps_01_titan_stern.mesh"
+		scale = 1.5
+	}
+}

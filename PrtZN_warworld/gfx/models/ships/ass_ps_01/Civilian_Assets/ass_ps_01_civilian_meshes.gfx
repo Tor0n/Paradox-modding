@@ -1,0 +1,146 @@
+objectTypes = {
+
+	#######  civilian frame  #######
+	
+	
+	####### stations #######	
+	
+	pdxmesh = {
+		name = "ass_ps_01_terraforming_station_mesh"
+		file = "gfx/models/ships/mammalian_01/mammalian_01_terraforming_station.mesh"
+		scale = 1.00
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_orbital_station_mesh"
+		file = "gfx/models/ships/ass_ps_01/Habitat/ass_ps_01_orbital_station.mesh"
+		scale = 4.00
+
+		animation = { id = "idle"			type = "station_generic_01_idle_animation" }
+		animation = { id = "death"			type = "station_generic_01_death_animation" }
+	}
+		
+	pdxmesh = {
+		name = "ass_ps_01_orbital_station_frame_mesh"
+		file = "gfx/models/ships/ass_ps_01/Habitat/ass_ps_01_orbital_station_frame.mesh"
+		scale = 5.00
+	}		
+			
+	pdxmesh = {
+		name = "ass_ps_01_orbital_station_assemblyyard_section_mesh"
+		file = "gfx/models/ships/ass_ps_01/ass_ps_01_invis.mesh"
+		scale = 1.00
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_orbital_station_hangarbay_section_mesh"
+		file = "gfx/models/ships/ass_ps_01/ass_ps_01_invis.mesh"
+		scale = 1.00
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_orbital_station_refinery_section_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/mining_station/ass_ps_01_mining_frame.mesh"
+		scale = 1.00
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_orbital_station_science_section_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/research_station/ass_ps_01_research_frame.mesh"
+		scale = 1.00
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_science_station_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/research_station/ass_ps_01_research_frame.mesh"
+		scale = 1.00
+	}
+
+	pdxmesh = {
+		name = "ass_ps_01_science_station_frame_mesh"
+		file = "gfx/models/ships/ass_ps_01/ass_ps_01_invis.mesh"	
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_military_station_mesh"
+		file = "gfx/models/ships/ass_ps_01/ass_ps_01_invis.mesh"
+		scale = 1.00
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_military_station_large_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/starbase/ass_ps_01_military_station_small.mesh"
+		scale = 1.00
+	}	
+	
+	pdxmesh = {
+		name = "ass_ps_01_military_station_medium_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/starbase/ass_ps_01_military_station_small.mesh"
+		scale = 1.00
+	}	
+	
+	pdxmesh = {
+		name = "ass_ps_01_military_station_small_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/starbase/ass_ps_01_military_station_small.mesh"
+		scale = 1.00
+	}	
+	
+	pdxmesh = {
+		name = "ass_ps_01_military_station_section_heavy_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/starbase/ass_ps_01_military_station_section_heavy.mesh"
+		scale = 1.00
+	}
+		
+	pdxmesh = {
+		name = "ass_ps_01_military_station_section_medium_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/starbase/ass_ps_01_military_station_section_medium.mesh"
+		scale = 1.00
+	}
+
+	pdxmesh = {
+		name = "ass_ps_01_military_station_section_light_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/starbase/ass_ps_01_military_station_section_light.mesh"
+		scale = 1.00
+	}
+	
+
+	
+	pdxmesh = {
+		name = "ass_ps_01_mining_station_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/mining_station/ass_ps_01_mining_frame.mesh"
+		scale = 1.00
+	}
+
+	pdxmesh = {
+		name = "ass_ps_01_mining_station_frame_mesh"
+		file = "gfx/models/ships/ass_ps_01/ass_ps_01_invis.mesh"
+		scale = 1.00
+	}
+	
+	####### civilian ships  #######	
+	
+	pdxmesh = {
+		name = "ass_ps_01_science_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/science_ship/ass_ps_01_science_ship_frame.mesh"
+		scale = 0.90
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_construction_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/construction_ship/ass_ps_01_construction_frame.mesh"
+		scale = 0.90
+	}
+	
+	
+	pdxmesh = {
+		name = "ass_ps_01_transport_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/transport_ship/ass_ps_01_transport_frame.mesh"
+		scale = 0.25
+	}
+	
+	pdxmesh = {
+		name = "ass_ps_01_colony_mesh"
+		file = "gfx/models/ships/ass_ps_01/Civilian_Assets/colony_ship/ass_ps_01_colony_frame.mesh"
+		scale = 0.75
+	}	
+}
