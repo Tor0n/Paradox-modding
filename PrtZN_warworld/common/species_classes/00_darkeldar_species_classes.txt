@@ -5,15 +5,15 @@
 @species_trait_points = 2
 @species_max_traits = 5
 
-ELD = {
+DEL = {
 	randomized = no
 	archetype = BIOLOGICAL
 	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
 
     portraits = {
-        "imp_eldar"
+        "imp_dark_eldar"
     }   
-    graphical_culture = eldar_01
+    graphical_culture = darkeldar_01
 
     move_pop_sound_effect = "moving_pop_confirmation"
 }
