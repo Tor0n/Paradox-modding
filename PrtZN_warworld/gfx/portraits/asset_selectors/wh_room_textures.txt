@@ -1,0 +1,32 @@
+room_selector = {
+	#default = "d_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	default = "default_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	#will run with a limited country scope. species and government is set but the country does not actually exist
+	
+	game_setup = {	
+		"Imperium_room" = { always = yes }
+		"Imperium2_room" = { always = yes }
+                "Custodes_room" = { always = yes }
+		"Space_marine_room" = { always = yes }
+                "Necron_room" = { always = yes }
+                "Khorne_room" = { always = yes }
+		"Nurgle_room" = { always = yes }
+		"Slaneesh_room" = { always = yes }
+                "Tyranid_room" = { always = yes }
+                "Ork_room" = { always = yes }
+		"Chaos_room" = { always = yes }
+
+
+		
+	}
+
+	#leader scope
+	ruler = {
+		"ethic_light_side_room" = { exists = owner owner = { has_ethic = ethic_light_side } }
+		"ethic_dark_side_room" = { exists = owner owner = { has_ethic = ethic_dark_side } }		
+		"imperium1_room" = { exists = owner owner = { has_civic = civic_imperial_cult } }
+		"hive1_room" = { exists = owner owner = { has_authority = auth_hive_mind } }
+	}
+}
