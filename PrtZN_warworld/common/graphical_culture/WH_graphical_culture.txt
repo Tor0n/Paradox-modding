@@ -1,25 +1,261 @@
-# gothic_01 = {
-    # fallback = mammalian_01
-	# ship_color = yes
-	# ship_lighting = {
-		# cam_light_1_dir = { 0.5 0.0 0.5 }
-		# cam_light_2_dir = { -0.5 0.2 0.0 }
-		# cam_light_3_dir = { 0.5 -1.0 0.0 }
+steelribs_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = nemesis_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+aod_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
 		
-		# intensity_near = 0.3
-		# intensity_far = 0.7
-		# near_value = 700
-		# far_value = 700
-		# rim_start_near = 0.5
-		# rim_stop_near = 0.99
-		# rim_start_far = 0.4
-		# rim_stop_far = 0.99
-		# #rim_start_far = 1.5
-		# #rim_stop_far = 2.0
-		# ambient_near = 0.1
-		# ambient_far = 1.0
-	# }
-# }
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+chaos_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+chaos_02 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+sto_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+tau_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = reptilian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+    }
+}
+
+genestealer_01 = {
+	fallback = gothic_01
+	ship_color = yes
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
 
 gothic_01 = {
 	ship_kinds = {
@@ -39,13 +275,353 @@ gothic_01 = {
 		}
 	}
 	
-	fallback = mammalian_01
 	ship_color = no
+	fallback = mammalian_01
 	ship_lighting = {
 		cam_light_1_dir = { 0.5 0.0 0.5 }
 		cam_light_2_dir = { -0.5 0.2 0.0 }
 		cam_light_3_dir = { 0.5 -1.0 0.0 }
 
+		intensity_near = 0.3
+		intensity_far = 0.7
+		near_value = 700
+		far_value = 700
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.4
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 1.0
+	}
+}
+
+eldar_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = aquatic_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+drukhari_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = avian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+tyranid_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = arthropoid_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+ork_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = lithoid_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+		
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+		
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+Chaos_Cultists_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+	fallback = chaos_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
+	}
+}
+
+nurgle_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+    fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.5 0.0 0.5 }
+		cam_light_2_dir = { -0.5 0.2 0.0 }
+		cam_light_3_dir = { 0.5 -1.0 0.0 }
+		
+		intensity_near = 0.3
+		intensity_far = 0.7
+		near_value = 700
+		far_value = 700
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.4
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 1.0
+	}
+}
+
+tzeentch_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+    fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.5 0.0 0.5 }
+		cam_light_2_dir = { -0.5 0.2 0.0 }
+		cam_light_3_dir = { 0.5 -1.0 0.0 }
+		
+		intensity_near = 0.3
+		intensity_far = 0.7
+		near_value = 700
+		far_value = 700
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.4
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 1.0
+	}
+}
+
+slaanesh_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+    fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.5 0.0 0.5 }
+		cam_light_2_dir = { -0.5 0.2 0.0 }
+		cam_light_3_dir = { 0.5 -1.0 0.0 }
+		
+		intensity_near = 0.3
+		intensity_far = 0.7
+		near_value = 700
+		far_value = 700
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.4
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 1.0
+	}
+}
+
+khorne_01 = {
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
+	ship_color = yes
+    fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.5 0.0 0.5 }
+		cam_light_2_dir = { -0.5 0.2 0.0 }
+		cam_light_3_dir = { 0.5 -1.0 0.0 }
+		
 		intensity_near = 0.3
 		intensity_far = 0.7
 		near_value = 700

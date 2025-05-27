@@ -1,0 +1,128 @@
+#Defensive armies can't transport off the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+#ai_weight: as standard, but note that it pre-filters by whether the country can recruit this army (measuring by whether it is an assault army, whether it has the tech prereqs, and whether it passes potential_country)
+
+# Hunter-Killer Armies
+machine_assault_1 = {
+	damage = 2.0
+	health = 2.5
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 2.0
+	war_exhaustion = 0.5
+	time = 90
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	potential_country = {
+		is_machine_empire = yes
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		is_machine_empire = yes
+	}
+
+	prerequisites = { "tech_assault_armies" }
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			set = 0
+			has_technology = tech_adaptive_combat_algorithms
+		}
+	}
+}
+
+# Battle Frames
+machine_assault_2 = {
+	damage = 2.5
+	health = 3.5
+	has_morale = no
+	morale_damage = 2.0
+	collateral_damage = 2.0
+	war_exhaustion = 1.0
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	potential_country = {
+		is_machine_empire = yes
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	prerequisites = { "tech_adaptive_combat_algorithms" }
+
+	ai_weight = {
+		base = 100
+	}
+}
+
+# Mega-Warform
+machine_assault_3 = {
+	damage = 4.0
+	health = 6.0
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 4.0
+	war_exhaustion = 4.0
+	time = 500
+	has_species = no
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+
+	potential_country = {
+		is_machine_empire = yes
+	}
+
+	prerequisites = { "tech_biomechanics" }
+
+	ai_weight = {
+		base = 50
+	}
+}

@@ -6,7 +6,20 @@
 zem_01 = {
     #randomized = { has_necroids = yes }
 	#selectable = { has_necroids = yes }
-
+	
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+	
+	ship_selection_weight = {
+		base = 0
+	}
+	
     ship_color = yes
 	fallback = necroid_01
 	ship_lighting = {
