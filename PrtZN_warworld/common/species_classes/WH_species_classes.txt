@@ -16,3 +16,218 @@
 	move_pop_sound_effect = "moving_pop_confirmation"
 	randomized = no
 }
+Legiones_Astartes = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                                         
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = gothic_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Heretic_Astartes = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                                                                                             
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = chaos_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Astartes = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                                         
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = aod_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Mechanicus = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                                   
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = sto_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Necrons = {
+
+ 	           archetype = MACHINE
+
+                   randomized = yes
+                                     
+                   possible = { authority = { OR = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = steelribs_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Genestealer = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                      
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = genestealer_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Orkz = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = no
+
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = ork_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Tau = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                                        
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+
+ 	graphical_culture = tau_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Eldars = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                      
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+    
+ 
+ 	graphical_culture = eldar_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Drukhari = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                      
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = drukhari_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Chaos_Daemons = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = no
+                                      
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = chaos_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Tyranids = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = no
+
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = tyranid_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Chaos_Cultists = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = yes
+
+                   gender = yes
+                                                                                                             
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = Chaos_Cultists_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Nurgle = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = no
+                                                                                                           
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+
+ 	graphical_culture = nurgle_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Tzeentch = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = no
+                                                                                                           
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = tzeentch_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Slaanesh = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = no
+                                                                                                           
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+ 	graphical_culture = slaanesh_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}
+Khorne = {
+
+ 	           archetype = BIOLOGICAL
+
+                   randomized = no
+                                                                                                           
+	           possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+
+ 	graphical_culture = khorne_01
+ 	move_pop_sound_effect = "moving_pop_confirmation"
+}

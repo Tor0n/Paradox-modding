@@ -25,7 +25,7 @@ Cult_Four_ArmEmpr = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
@@ -42,7 +42,7 @@ Cult_Four_ArmEmpr = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -101,7 +101,7 @@ Hivecult = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	government = "gov_devouring_swarm"
@@ -118,7 +118,7 @@ Hivecult = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -177,7 +177,7 @@ Rusted_Claw = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
@@ -194,7 +194,7 @@ Rusted_Claw = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -253,7 +253,7 @@ Bladed_Cog = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	government = "gov_devouring_swarm"
@@ -269,7 +269,7 @@ Bladed_Cog = {
 	system_name = "system_name_feinminster"
 	#initializer = ""
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	empire_flag = {
 		icon = {
 			category = "Warhammer_GeneStealer"
@@ -327,7 +327,7 @@ Pauper_Princes = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
@@ -344,7 +344,7 @@ Pauper_Princes = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -403,7 +403,7 @@ Twisted_Helix = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_toxic_baths" }
@@ -420,7 +420,7 @@ Twisted_Helix = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -479,7 +479,7 @@ Cult_Hydraic = {
 	
 	spawn_enabled = always
 	ignore_portrait_duplication = no
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_subsumed_will" }
@@ -495,7 +495,7 @@ Cult_Hydraic = {
 	system_name = "system_name_vigilance"
 	#initializer = ""
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	empire_flag = {
 		icon = {
 			category = "Warhammer_GeneStealer"
@@ -553,7 +553,7 @@ Star_Kindred = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_divided_attention" "civic_hive_one_mind" }
@@ -569,7 +569,7 @@ Star_Kindred = {
 	system_name = "system_name_gleptid"
 	#initializer = ""
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	empire_flag = {
 		icon = {
 			category = "Warhammer_GeneStealer"
@@ -582,8 +582,8 @@ Star_Kindred = {
 		colors = {
 			"dark_blue"
 			"bright_yellow"
-			"black"
-			"null"
+			"bright_yellow" #black
+			"bright_yellow" #null
 		}
 	}
 	ruler = {
@@ -627,7 +627,7 @@ Blessed_Wormlings = {
 		trait = "trait_sedentary"
 	}
 	
-	room = "organic_room"
+	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
 	civics = { "civic_hive_upkeep_twister" "civic_hive_ascetic" "civic_memory_vault_hive" }
@@ -644,7 +644,7 @@ Blessed_Wormlings = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {

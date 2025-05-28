@@ -16,7 +16,7 @@ Imperium = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_democratic_crusaders_room"
+	room = "Imperium2_room" #personality_democratic_crusaders_room
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
@@ -35,7 +35,7 @@ Imperium = {
 	#initializer = "Terra_initializer"
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -104,7 +104,7 @@ Segmentum_Obscurus = {
 	#initializer = ""
 	
 	graphical_culture = "wain_02"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -137,7 +137,7 @@ Segmentum_Obscurus = {
 	}
 	advisor_voice_type = "l_xenophobe"
 	spawn_as_fallen = no
-	room = "personality_democratic_crusaders_room"
+	room = "Imperium2_room" #personality_democratic_crusaders_room
 }
 Ultima_Segmentum = {
 	name = "name_ultima_segmentum"
@@ -158,7 +158,7 @@ Ultima_Segmentum = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_democratic_crusaders_room"
+	room = "Imperium_room" #personality_democratic_crusaders_room
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
@@ -177,7 +177,7 @@ Ultima_Segmentum = {
 	#initializer = ""
 	
 	graphical_culture = "wain_01"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -230,7 +230,7 @@ Segmentum_Tempestus = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_democratic_crusaders_room"
+	room = "Imperium_room" #personality_democratic_crusaders_room
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_distinguished_admiralty" }
@@ -302,7 +302,7 @@ Eastern_Fringe = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_democratic_crusaders_room"
+	room = "Imperium_room" #personality_democratic_crusaders_room
 	
 	authority = "auth_dictatorial"
 	government = "gov_purity_order"
@@ -321,7 +321,7 @@ Eastern_Fringe = {
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -374,7 +374,7 @@ Manachean_Commonwealth = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_peaceful_traders_room"
+	room = "Imperium_room" #personality_peaceful_traders_room
 	
 	authority = "auth_dictatorial"
 	government = "gov_purity_order"
@@ -393,7 +393,7 @@ Manachean_Commonwealth = {
 	#initializer = ""
 	
 	graphical_culture = "wain_01"
-	city_graphical_culture = "mammalian_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -446,7 +446,7 @@ Ecclesiarchy = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_evangelizing_zealots_room"
+	room = "Imperium2_room" #personality_evangelizing_zealots_room
 	
 	authority = "auth_corporate"
 	civics = { "civic_holy_ecclesiarchy" "civic_brand_loyalty" "civic_crusader_spirit_corporate" } #	"civic_fanatic_purifiers" "civic_exalted_priesthood" "civic_police_state"
@@ -465,7 +465,7 @@ Ecclesiarchy = {
 	#initializer = ""
 	
 	graphical_culture = "wain_04"
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -539,7 +539,7 @@ Mechanicus = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"  #sto_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "sto_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -613,7 +613,7 @@ Ryza = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"  #sto_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "sto_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -687,7 +687,7 @@ Metalica = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"  #sto_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "sto_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -761,7 +761,7 @@ Graia = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"  #sto_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "sto_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -835,7 +835,7 @@ Lucius = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"  #sto_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "sto_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -909,7 +909,7 @@ Triplex_Phall = {
 	#initializer = ""
 	
 	graphical_culture = "sto_01"  #sto_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "sto_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -963,7 +963,7 @@ Ultramarines = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_philosopher_king" "civic_distinguished_admiralty" }
@@ -982,7 +982,7 @@ Ultramarines = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "gothic_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -1036,7 +1036,7 @@ Dark_Angels = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_exalted_priesthood" "civic_memory_vault" }
@@ -1056,7 +1056,7 @@ Dark_Angels = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "genestealer_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -1110,7 +1110,7 @@ Imperial_Fists = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_heroic_tales" "civic_warrior_culture" }
@@ -1128,7 +1128,7 @@ Imperial_Fists = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "genestealer_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -1182,7 +1182,7 @@ Blood_Angels = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_distinguished_admiralty" }
@@ -1200,7 +1200,7 @@ Blood_Angels = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "genestealer_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -1254,7 +1254,7 @@ Salamanders = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_crafters" }
@@ -1271,7 +1271,7 @@ Salamanders = {
 	system_name = "system_name_nocturne"
 	#initializer = ""
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "genestealer_01" #humanoid_01
 	empire_flag = {
 		icon = {
 			category = "Warhammer"
@@ -1324,7 +1324,7 @@ Space_Wolves = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_warrior_culture" "civic_environmentalist" }
@@ -1343,7 +1343,7 @@ Space_Wolves = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "genestealer_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
@@ -1397,7 +1397,7 @@ Black_Templars = {
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
-	room = "personality_honorbound_warriors_room"
+	room = "Space_marine_room"
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_fanatic_purifiers" "civic_heroic_tales" "civic_warrior_culture" }
@@ -1415,7 +1415,7 @@ Black_Templars = {
 	#initializer = ""
 	
 	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
-	city_graphical_culture = "humanoid_01"
+	city_graphical_culture = "genestealer_01" #humanoid_01
 	
 	empire_flag = {
 		icon = {
