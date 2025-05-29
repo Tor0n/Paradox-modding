@@ -35,7 +35,7 @@ Texian_Empire = {
 	ethic = "ethic_militarist"
 	
 	origin = "origin_default"
-	flags = { Texian_start Texian_gos }
+	flag = empire_the_Texian_Empire
 	
 	planet_name = "planet_name_tex"
 	planet_class = "pc_desert"
@@ -110,7 +110,7 @@ Hive_Q_Orl = {
 	ethic = "ethic_gestalt_consciousness"
 	
 	origin = "origin_default"
-	flags={ Qorl_start Qorl_gos }
+	flag = empire_the_Qorl
 	
 	planet_name = "planet_name_lokiit"
 	planet_class = "pc_alpine"
@@ -186,7 +186,7 @@ Slogt_Territory = {
 	ethic = "ethic_militarist"
 	
 	origin = "origin_post_apocalyptic"
-	flags = { Slogth_start Slogth_gos }
+	flag = empire_the_Slogth
 	
 	planet_name = "planet_name_ramain"
 	planet_class = "pc_tundra"
@@ -260,7 +260,7 @@ Rak_Gol_Territory = {
 	ethic = "ethic_materialist"
 	
 	origin = "origin_default"
-	flags = { RakGol_start RakGol_gos }
+	flag = empire_the_RakGol
 	
 	planet_name = "planet_name_apollonia"
 	planet_class = "pc_desert"
@@ -337,7 +337,7 @@ State_Barghesi = {
 	system_name = "system_name_grendel"
 	#initializer = "Grendel_initializer"
 	
-	flags = { Barghesi_start Barghesi_gos }
+	flag = empire_the_Barghesi
 	
 	graphical_culture = "molluscoid_01"
 	city_graphical_culture = "necroid_01"
@@ -411,7 +411,7 @@ Confederation_Stryxis = {
 	system_name = "system_name_lanorra"
 	initializer = "Lanorra_initializer"
 	
-	flags = { Strixis_start Strixis_gos }
+	flag = empire_the_Strixis
 	
 	graphical_culture = "toxoid_01"
 	city_graphical_culture = "arthropoid_01"
@@ -480,7 +480,7 @@ Sardonite_State = { #Государство Сардонитов
 	planet_class = "pc_tropical"
 	system_name = "system_name_amphrelia"
 	
-	flags = { Sardonit_start Sardonit_gos }
+	flag = empire_the_Sardonit
 	#initializer = ""
 	
 	graphical_culture = "plantoid_01"
@@ -550,7 +550,7 @@ Cythor_Fiends = {
 	ethic = "ethic_fanatic_xenophobe"
 	ethic = "ethic_fanatic_militarist"
 	
-	flags = { Cythor_Fiends_start Cythor_Fiends_gos }
+	flag = empire_the_Cythor_Fiends
 	
 	planet_name =  "planet_name_cythor"
 	planet_class = "pc_arctic"

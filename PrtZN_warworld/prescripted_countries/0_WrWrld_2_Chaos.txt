@@ -30,7 +30,7 @@ Black_Legion = {
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_fanatic_militarist"
 	
-	flags = { Black_Legion_start Black_Legion_gos }
+	flag = empire_the_Black_Legion
 	
 	authority = "auth_dictatorial"
 	civics = { "civic_cutthroat_politics" "civic_distinguished_admiralty" "civic_dystopian_society" }
@@ -118,7 +118,7 @@ Death_Guard = {
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_fanatic_militarist"
 	
-	flags = { Death_Guard_start Death_Guard_gos }
+	flag = empire_the_Death_Guard
 	
 	planet_name = "planet_name_plague_planet"
 	planet_class = "pc_continental"
@@ -197,7 +197,7 @@ World_Eaters = {
 	ethic = "ethic_authoritarian"
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_militarist"
-	flags = { World_Eaters_start World_Eaters_gos }
+	flag = empire_the_World_Eaters
 	
 	planet_name = "planet_name_bodt"
 	planet_class = "pc_continental"
@@ -276,7 +276,7 @@ Thousand_Sons = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Thousand_Sons_start Thousand_Sons_gos }
+	flag = empire_the_Thousand_Sons
 	
 	planet_name = "planet_name_sortiarius"
 	planet_class = "pc_continental"
@@ -356,7 +356,7 @@ Emperors_Children = {
 	ethic = "ethic_fanatic_militarist"
 	ethic = "ethic_spiritualist"
 	
-	flags = { Emperors_Children_start Emperors_Children_gos }
+	flag = empire_the_Emperors_Children
 	
 	planet_name = "planet_name_fulgrimworld"
 	planet_class = "pc_continental"
@@ -435,7 +435,7 @@ Word_Bearers = {
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Word_Bearers_start Word_Bearers_gos }
+	flag = empire_the_Word_Bearers
 	
 	planet_name = "planet_name_sicarus"
 	planet_class = "pc_continental"
@@ -515,7 +515,7 @@ Alpha_Legion = {
 	ethic = "ethic_fanatic_militarist"
 	ethic = "ethic_spiritualist"
 	
-	flags = { Alpha_Legion_start Alpha_Legion_gos }
+	flag = empire_the_Alpha_Legion
 	
 	planet_name = "planet_name_silent"
 	planet_class = "pc_continental"
@@ -596,7 +596,7 @@ Mechanicum_Cyclothrathe = {
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_materialist"
 	
-	flags = { Mechanicum_Cyclothrathe_start Mechanicum_Cyclothrathe_gos }
+	flag = empire_the_Mechanicum_Cyclothrathe
 	
 	planet_name = "planet_name_cyclothrathe"
 	planet_class = "pc_continental"
@@ -680,7 +680,7 @@ Mechanicum_Samech = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_materialist"
 	
-	flags = { Mechanicum_Samech_start Mechanicum_Samech_gos }
+	flag = empire_the_Mechanicum_Samech
 	
 	planet_name = "planet_name_samech"
 	planet_class = "pc_continental"
@@ -761,7 +761,7 @@ Blood_Pact = {
 	ethic = "ethic_fanatic_militarist"
 	ethic = "ethic_spiritualist"
 	
-	flags = { Blood_Pact_start Blood_Pact_gos }
+	flag = empire_the_Blood_Pact
 	
 	planet_name = "planet_name_gereon"
 	planet_class = "pc_continental"
@@ -841,7 +841,7 @@ Admonition = {
 	ethic = "ethic_fanatic_militarist"
 	ethic = "ethic_spiritualist"
 	
-	flags = { Admonition_start Admonition_gos }
+	flag = empire_the_Admonition
 	
 	planet_name = "planet_name_atoma_prime"
 	planet_class = "pc_continental"
@@ -922,6 +922,8 @@ Land_Chaos = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
+	flag = empire_the_Land_Chaos
+	
 	planet_name = "planet_name_carpathia"
 	planet_class = "pc_continental"
 	system_name = "system_name_carpathia"
@@ -961,7 +963,6 @@ Land_Chaos = {
 	}
 	advisor_voice_type = "l_militarist"
 	spawn_as_fallen = no
-	flags = { Chaos_start Chaos_gos }
 }
 Conjurers_of_Fear = {
 	name = "name_conjurers_of_fear"
@@ -1002,7 +1003,7 @@ Conjurers_of_Fear = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Conjurers_of_Fear_start Conjurers_of_Fear_gos }
+	flag = empire_the_Conjurers_of_Fear
 	
 	planet_name = "planet_name_kantakkha"
 	planet_class = "pc_continental"
@@ -1083,7 +1084,7 @@ Barbed_Chalice = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Barbed_Chalice_start Barbed_Chalice_gos }
+	flag = empire_the_Barbed_Chalice
 	
 	planet_name = "planet_name_vessos"
 	planet_class = "pc_continental"
@@ -1162,7 +1163,7 @@ Brothrhd_Knife = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Brothrhd_Knife_start Brothrhd_Knife_gos }
+	flag = empire_the_Brothrhd_Knife
 	
 	planet_name = "planet_name_stolia"
 	planet_class = "pc_continental"
@@ -1242,7 +1243,7 @@ Givers_of_Life = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Givers_of_Life_start Givers_of_Life_gos }
+	flag = empire_the_Givers_of_Life
 	
 	planet_name = "planet_name_tremert"
 	planet_class = "pc_continental"
@@ -1322,7 +1323,7 @@ Bloodbath = {
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_fanatic_militarist"
 	
-	flags = { Bloodbath_start Bloodbath_gos }
+	flag = empire_the_Bloodbath
 	
 	planet_name = "planet_name_jedathra"
 	planet_class = "pc_continental"
@@ -1400,7 +1401,7 @@ Stigmartus = {
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Stigmartus_start Stigmartus_gos }
+	flag = empire_the_Stigmartus
 	
 	planet_name = "planet_name_khazant"
 	planet_class = "pc_continental"
@@ -1481,7 +1482,7 @@ Penumbral = {
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_spiritualist"
 	
-	flags = { Penumbral_start Penumbral_gos }
+	flag = empire_the_Penumbral
 	
 	planet_name = "planet_name_gladius"
 	planet_class = "pc_continental"

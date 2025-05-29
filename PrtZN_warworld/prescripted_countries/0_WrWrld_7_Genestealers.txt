@@ -34,7 +34,7 @@ Cult_Four_ArmEmpr = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Cult_Four_ArmEmpr_start Cult_Four_ArmEmpr_gos }
+	flag =  empire_the_Cult_Four_ArmEmpr
 	
 	planet_name = "planet_name_ghosar"
 	planet_class = "pc_alpine"
@@ -110,7 +110,7 @@ Hivecult = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Hivecult_start Hivecult_gos }
+	flag =  empire_the_Hivecult
 	
 	planet_name = "planet_name_new_gidlam"
 	planet_class = "pc_alpine"
@@ -186,7 +186,7 @@ Rusted_Claw = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Rusted_Claw_start Rusted_Claw_gos }
+	flag =  empire_the_Rusted_Claw
 	
 	planet_name = "planet_name_vengeance"
 	planet_class = "pc_alpine"
@@ -262,7 +262,7 @@ Bladed_Cog = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Bladed_Cog_start Bladed_Cog_gos }
+	flag =  empire_the_Bladed_Cog
 	
 	planet_name = "planet_name_feinminster"
 	planet_class = "pc_alpine"
@@ -336,7 +336,7 @@ Pauper_Princes = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Pauper_Princes_start Pauper_Princes_gos }
+	flag =  empire_the_Pauper_Princes
 	
 	planet_name = "planet_name_kendrax"
 	planet_class = "pc_alpine"
@@ -412,7 +412,7 @@ Twisted_Helix = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Twisted_Helix_start Twisted_Helix_gos }
+	flag =  empire_the_Twisted_Helix
 	
 	planet_name = "planet_name_uralek"
 	planet_class = "pc_alpine"
@@ -488,7 +488,7 @@ Cult_Hydraic = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Cult_Hydraic_start Cult_Hydraic_gos }
+	flag =  empire_the_Cult_Hydraic
 	
 	planet_name = "planet_name_vigilance"
 	planet_class = "pc_alpine"
@@ -562,7 +562,7 @@ Star_Kindred = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Star_Kindred_start Star_Kindred_gos }
+	flag =  empire_the_Star_Kindred
 	
 	planet_name = "planet_name_gleptid"
 	planet_class = "pc_alpine"
@@ -582,8 +582,8 @@ Star_Kindred = {
 		colors = {
 			"dark_blue"
 			"bright_yellow"
-			"bright_yellow" #black
-			"bright_yellow" #null
+			"black" #black
+			"null" #null
 		}
 	}
 	ruler = {
@@ -636,7 +636,7 @@ Blessed_Wormlings = {
 	
 	ethic = "ethic_gestalt_consciousness"
 	
-	flags =  { Genestealer_Cult Blessed_Wormlings_start Blessed_Wormlings_gos }
+	flag =  empire_the_Blessed_Wormlings
 	
 	planet_name = "planet_name_quistorol"
 	planet_class = "pc_alpine"
