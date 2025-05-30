@@ -10,7 +10,6 @@
 @EdictPerpetual = -1
 
 #	imperium	#
-
 сorpses_briquettes = {
 	length = @EdictPerpetual
 	icon = "GFX_edict_type_policy"
@@ -19,11 +18,11 @@
 		category = edicts
 		cost = {
 			unity = @Edict1Cost
-			#multiplier = value:edict_size_effect
+			multiplier = value:edict_size_effect
 		}
 		upkeep = {
 			unity = @Edict1Cost
-			#multiplier = value:edict_size_effect
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -57,11 +56,11 @@ imperium_exploitation = {
 		category = edicts
 		cost = {
 			unity = @Edict1Cost
-			#multiplier = value:edict_size_effect
+			multiplier = value:edict_size_effect
 		}
 		upkeep = {
 			unity = @Edict1Cost
-			#multiplier = value:edict_size_effect
+			multiplier = value:edict_size_effect
 		}
 	}
 
@@ -92,7 +91,6 @@ imperium_exploitation = {
 }
 
 #	Chaos	#
-
 veneration_khorne = {
 	length = @EdictPerpetual
 	icon = "GFX_edict_type_policy"

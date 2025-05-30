@@ -26,7 +26,7 @@ building_cult_imperor_temple = {
 	}
 
 	planet_modifier = {
-		job_high_priest_add = 100
+		#job_high_priest_add = 100
 		job_bureaucrat_add = 200
 		pop_ethic_spiritualist_attraction_mult = 0.5
 	}
@@ -65,13 +65,13 @@ building_cult_imperor_temple = {
 	}
 }
 
-building_inquisitorial_conclavee = {
+building_inquisition_branch = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 
 	owner_type = corporate
 
-	category = unity
+	category = government
 
 	potential = {
 		has_branch_office = yes
@@ -80,6 +80,10 @@ building_inquisitorial_conclavee = {
 			is_legit_or_legal_criminal = yes
 		}
 	}
+	
+	# allow = {
+		# has_building = building_cult_imperor_temple
+	# }
 
 	planet_modifier = {
 		job_bureaucrat_add = 100
@@ -87,11 +91,115 @@ building_inquisitorial_conclavee = {
 		planet_stability_add = 1
 		pop_ethic_spiritualist_attraction_mult = 0.10
 	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			influence = 10
+			minerals = 500
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+			influence = 10
+		}
+		produces = {
+			unity = 6
+			mult = value:branch_office_value_for_buildings
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+#либо сommandery или preceptory
+building_convents_sororitas = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	owner_type = corporate
+
+	category = government
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_valid_civic = civic_holy_ecclesiarchy
+			is_legit_or_legal_criminal = yes
+		}
+	}
 	
-	# inline_script = {
-		# script = jobs/priests_add
-		# AMOUNT = @building_static_jobs
+	# allow = {
+		# has_building = building_cult_imperor_temple
 	# }
+
+	planet_modifier = {
+		job_bureaucrat_add = 100
+		job_soldier_add = 200
+		army_starting_experience_add = 100
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			influence = 10
+			minerals = 500
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+			influence = 10
+		}
+		produces = {
+			unity = 6
+			mult = value:branch_office_value_for_buildings
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_convents_hospitaller = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	owner_type = corporate
+
+	category = government
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			has_valid_civic = civic_holy_ecclesiarchy
+			is_legit_or_legal_criminal = yes
+		}
+	}
+	
+	# allow = {
+		# has_building = building_cult_imperor_temple
+	# }
+
+	planet_modifier = {
+		job_healthcare_add = 200
+		job_healthcare_amenities_add = 200	# see output/healthcare_triggered_modifiers
+		planet_doctors_trade_produces_add = 1
+		pop_ethic_spiritualist_attraction_mult = 0.15
+	}
 
 	resources = {
 		category = planet_branch_office_buildings

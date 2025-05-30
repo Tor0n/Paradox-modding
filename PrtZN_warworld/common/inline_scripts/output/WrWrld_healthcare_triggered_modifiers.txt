@@ -1,0 +1,14 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = planet
+		planet = {
+			has_branch_office = yes
+			has_holding = {
+				holding = building_convents_hospitaller
+				owner = branch_office_owner
+			}
+		}
+	}
+	planet_amenities_add = 250
+	mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+}
