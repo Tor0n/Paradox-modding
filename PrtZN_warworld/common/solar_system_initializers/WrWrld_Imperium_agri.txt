@@ -1,8 +1,5 @@
 Dentor_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -99,112 +96,8 @@ Dentor_initializer = {
 		home_planet = no
 	}
 }
-Chiros_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Imperium_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_ocean"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 23
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Imperium_Agri_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-			#add_deposit = d_lichen_fields #лишайниковые поля 1
-			add_deposit = d_bountiful_plains #изобильные равнины 1
-			#add_deposit = d_rugged_woods #суровый лес 3
-			add_deposit = d_green_hills #зелёные холмы 1
-			add_deposit = d_boggy_fens #вязкие топи 1
-			add_deposit = d_nutritious_mudland #питательные грязи 1
-			add_deposit = d_fertile_lands #плодородные земли 4 
-			#add_deposit = d_black_soil #чернозём 6
-			add_deposit = d_teeming_reef #рифы какие-то 3
-			add_deposit = d_teeming_reef #рифы какие-то 3
-			add_deposit = d_teeming_reef #рифы какие-то 3
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 Polando_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -303,9 +196,6 @@ Polando_initializer = {
 }
 Khai_Zahn_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -404,9 +294,6 @@ Khai_Zahn_initializer = {
 }
 Ntharis_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -505,9 +392,6 @@ Ntharis_initializer = {
 }
 Zavarich_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -604,9 +488,6 @@ Zavarich_initializer = {
 }
 Colcha_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -705,9 +586,6 @@ Colcha_initializer = {
 }
 Rynn_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -806,9 +684,6 @@ Rynn_initializer = {
 }
 San_Leor_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -907,9 +782,6 @@ San_Leor_initializer = {
 }
 Numinal_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1008,9 +880,6 @@ Numinal_initializer = {
 }
 Viridia_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
@@ -1109,9 +978,6 @@ Viridia_initializer = {
 }
 Asylus_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre

@@ -1,9 +1,6 @@
 #МИРЫ ХРАМЫ И ТД
 Ophellia_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -93,9 +90,6 @@ Ophellia_initializer = {
 }
 Macharia_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -184,9 +178,6 @@ Macharia_initializer = {
 }
 Ultimacharia_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos }
 	
 	planet = {
@@ -275,9 +266,6 @@ Ultimacharia_initializer = {
 }
 PaxArgentius_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos }
 	
 	planet = {
@@ -366,9 +354,6 @@ PaxArgentius_initializer = {
 }
 Avignor_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -457,9 +442,6 @@ Avignor_initializer = {
 }
 Dimmamar_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -548,9 +530,6 @@ Dimmamar_initializer = {
 }
 Heletine_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -639,9 +618,6 @@ Heletine_initializer = {
 }
 Espandor_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos }
 	
 	planet = {
@@ -730,9 +706,6 @@ Espandor_initializer = {
 }
 Astorgius_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -821,9 +794,6 @@ Astorgius_initializer = {
 }
 Prassium_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos_station }
 	
 	planet = {
@@ -910,11 +880,88 @@ Prassium_initializer = {
 		home_planet = no
 	}
 }
+Raikan_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Ecclesiarchy_gos_station }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 Ropeofhope_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-	}
 	flags = { Ecclesiarchy_gos }
 	
 	planet = {

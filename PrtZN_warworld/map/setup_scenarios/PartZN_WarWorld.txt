@@ -166,8 +166,8 @@ system = { id = "139" name = "Sarum"			position = { x = 345.1563 y = -326.9907 }
 system = { id = "140" name = "Burnscour"		position = { x = 372.4055 y = -321.3138 } initializer = Burnscour_initializer }
 system = { id = "141" name = "Zayth"			position = { x = 391.707 y = -338.3445 } initializer = Zayth_initializer } #МИР_ВОЙНЫ_ХАОСА
 system = { id = "142" name = "Ntharis"			position = { x = 407.6024 y = -322.4492 } initializer = Ntharis_initializer } 
-system = { id = "143" name = "Iniquity"			position = { x = 414.4146 y = -300.8769 } initializer = Iniquity_initializer }
-system = { id = "144" name = "Ramein"			position = { x = 435.9869 y = -319.043 } initializer = Ramein_initializer } 
+system = { id = "143" name = "Iniquity"			position = { x = 408.4146 y = -300.8769 } initializer = Iniquity_initializer }
+system = { id = "144" name = "Ramein"			position = { x = 427.9869 y = -319.043 } initializer = Ramein_initializer } 
 system = { id = "145" name = "Footfall"			position = { x = 392.8424 y = -311.0953 } initializer = Footfall_initializer }
 system = { id = "146" name = "Tanika"			position = { x = 383.7593 y = -237.2955 } initializer = Tanika_initializer }
 system = { id = "147" name = "Kinbriar"			position = { x = 398.5193 y = -211.1817 } initializer = Kinbriar_initializer } 
@@ -698,15 +698,14 @@ system = { id = "666" name = "Drondii" 			position = { x = 331.1347 y = 33.1964 
 system = { id = "667" name = "Obsidus" 			position = { x = 317.8856 y = 53.07018 } initializer = Obsidus_initializer }
 system = { id = "668" name = "Viracon"			position = { x = -42.24917 y = 217.4208 } initializer = Viracon_initializer }
 system = { id = "669" name = "Dutonis" 			position = { x = 47.66145 y = -338.5846 } initializer = Dutonis_initializer }
+system = { id = "670" name = "Kalf"				position = { x = 427.4146 y = -297.8769 } }
+system = { id = "671" name = "Kulth"			position = { x = 436.9869 y = -315.043 } } 
+system = { id = "672" name = "Karacallia"		position = { x = 449.4146 y = -319.8769 } }
+system = { id = "673" name = "Lukius"			position = { x = 444.8969 y = -305.043 } } 
+system = { id = "674" name = "Orbiana"			position = { x = 455.4146 y = -331.1769 } }
+system = { id = "675" name = "Maesa"			position = { x = 458.7869 y = -311.000 } }
 
-nebula = {
-	name = "Eye Of Terror"
-	position = {
-		x = 311.3224
-		y = -193.1686
-	}
-	radius = 30
-}
+nebula = { name = "Eye Of Terror" position = {	x = 311.3224 y = -193.1686 } radius = 30 }
 nebula = {
 	name = "Siren's Storm"
 	position = {
@@ -1040,6 +1039,17 @@ nebula = {
  add_hyperlane = { from = "142" to = "145" }
  add_hyperlane = { from = "144" to = "143" }
  add_hyperlane = { from = "144" to = "142" }
+ add_hyperlane = { from = "144" to = "671" }
+ add_hyperlane = { from = "143" to = "670" }
+ add_hyperlane = { from = "671" to = "670" }
+ add_hyperlane = { from = "671" to = "672" }
+ add_hyperlane = { from = "671" to = "673" }
+ add_hyperlane = { from = "672" to = "674" }
+ add_hyperlane = { from = "672" to = "675" }
+ add_hyperlane = { from = "672" to = "673" }
+ add_hyperlane = { from = "670" to = "673" }
+ add_hyperlane = { from = "674" to = "675" }
+ add_hyperlane = { from = "674" to = "510" }
  add_hyperlane = { from = "135" to = "145" }
  add_hyperlane = { from = "136" to = "145" }
  add_hyperlane = { from = "136" to = "137" }
