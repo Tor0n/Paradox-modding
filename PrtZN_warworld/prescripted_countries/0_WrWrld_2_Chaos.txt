@@ -111,7 +111,7 @@ Death_Guard = {
 	room = "Nurgle_room" #organic_room
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_reanimated_armies" "civic_police_state" "civic_toxic_baths" }
+	civics = { "civic_reanimated_armies" "civic_fanatic_purifiers" "civic_toxic_baths" } #civic_police_state было ещё, заменил его на поборников
 	government = "gov_military_dictatorship"
 	origin = "origin_chaos"
 	
@@ -190,7 +190,7 @@ World_Eaters = {
 	room = "Khorne_room" #personality_honorbound_warriors_room
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_warrior_culture" "civic_slaver_guilds" "civic_corvee_system" }
+	civics = { "civic_warrior_culture" "civic_fanatic_purifiers" "civic_corvee_system" }
 	government = "gov_martial_dictatorship"
 	origin = "origin_chaos"
 	
@@ -428,7 +428,7 @@ Word_Bearers = {
 	room = "Chaos_room" #personality_evangelizing_zealots_room
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_dystopian_society" "civic_death_cult" "civic_memorialist" }
+	civics = { "civic_dystopian_society" "civic_death_cult" "civic_fanatic_purifiers" }
 	government = "gov_theocratic_dictatorship"
 	origin = "origin_chaos"
 	
@@ -475,6 +475,275 @@ Word_Bearers = {
 	}
 	advisor_voice_type = "l_militarist"
 	spawn_as_fallen = no
+}
+"Железные воины"=
+{
+	key="Железные воины"
+	ship_prefix=
+	{
+		key="ship_prefix_chaos"
+	}
+	species=
+	{
+		class="HUM"
+		portrait="xevil"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_chaos"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_chaos"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_chaos"
+		}
+		name_list="HUMAN3"
+		gender=male
+		trait="trait_extremely_adaptive"
+		trait="trait_deviants"
+		trait="trait_unruly"
+		trait="trait_decadent"
+		trait="trait_wasteful"
+		trait="trait_resilient"
+		trait="trait_nomadic"
+		trait="trait_quick_learners"
+		trait="trait_humanoid_jinxed"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Железные воины"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Железные воины"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	#flag="empire_the_Alpha_Legion"
+	government="gov_military_dictatorship"
+	advisor_voice_type="l_militarist"
+	planet_name=
+	{
+		key="Медренгард"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Медренгард"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="chaos_01"
+	city_graphical_culture="chaos_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Chaos"
+			file="CA_IronWarriors.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_8.dds"
+		}
+		colors=
+		{
+			"yellow" #dark_steel
+			"dark_steel" #yellow
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Пертурабо"
+				literal=yes
+			}
+		}
+		portrait="xevil_male_03"
+		texture=0
+		evolution_mask=0
+		attachment=6
+		clothes=17
+		ruler_title=
+		{
+			key="Примарх"
+			literal=yes
+		}
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_erudite_explorers_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_militarist"
+	ethic="ethic_materialist"
+	civics=
+	{
+		"civic_relentless_industrialists"
+		"civic_corvee_system"
+		"civic_distinguished_admiralty"
+	}
+	origin="origin_chaos"
+}
+"Повелители ночи"=
+{
+	key="Повелители ночи"
+	ship_prefix=
+	{
+		key="ship_prefix_chaos"
+	}
+	species=
+	{
+		class="HUM"
+		portrait="xevil"
+		species_name=
+		{
+			key="PRESCRIPTED_species_name_chaos"
+		}
+		species_plural=
+		{
+			key="PRESCRIPTED_species_plural_chaos"
+		}
+		species_adjective=
+		{
+			key="PRESCRIPTED_species_adjective_chaos"
+		}
+		name_list="HUMAN3"
+		gender=male
+		trait="trait_extremely_adaptive"
+		trait="trait_deviants"
+		trait="trait_unruly"
+		trait="trait_decadent"
+		trait="trait_wasteful"
+		trait="trait_resilient"
+		trait="trait_nomadic"
+		trait="trait_quick_learners"
+		trait="trait_humanoid_jinxed"
+		trait="trait_traditional"
+	}
+	name=
+	{
+		key="Повелители ночи"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Повелители ночи"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_dictatorial"
+	#flag="empire_the_Alpha_Legion"
+	government="gov_military_dictatorship"
+	advisor_voice_type="l_authoritarian"
+	planet_name=
+	{
+		key="Придумать"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Придумать"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="chaos_02"
+	city_graphical_culture="chaos_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_Chaos"
+			file="CA_NightLords.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors=
+		{
+			"red" 
+			"shadow_blue"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Конрад Кёрз"
+				literal=yes
+			}
+		}
+		portrait="xevil_male_04"
+		texture=0
+		evolution_mask=0
+		attachment=5
+		clothes=8
+		ruler_title=
+		{
+			key="Примарх"
+			literal=yes
+		}
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_slaving_despots_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_fanatic_militarist"
+	civics=
+	{
+		"civic_cutthroat_politics"
+		"civic_police_state"
+		"civic_corvee_system"
+	}
+	origin="origin_chaos"
 }
 Alpha_Legion = {
 	name = "name_alpha_legion"
