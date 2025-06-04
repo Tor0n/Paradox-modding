@@ -140,7 +140,7 @@ Death_Guard = {
 		colors = {
 			"teal"
 			"sick_green"
-			"black"
+			"null" #black
 			"null"
 		}
 	}
@@ -428,7 +428,7 @@ Word_Bearers = {
 	room = "Chaos_room" #personality_evangelizing_zealots_room
 	
 	authority = "auth_dictatorial"
-	civics = { "civic_dystopian_society" "civic_death_cult" "civic_fanatic_purifiers" }
+	civics = { "civic_dystopian_society" "civic_fanatic_purifiers" "civic_exalted_priesthood" }
 	government = "gov_theocratic_dictatorship"
 	origin = "origin_chaos"
 	
@@ -457,7 +457,7 @@ Word_Bearers = {
 		colors = {
 			"dark_red"
 			"red"
-			"black"
+			"null" #black
 			"null"
 		}
 	}
@@ -568,7 +568,7 @@ Word_Bearers = {
 		{
 			"yellow" #dark_steel
 			"dark_steel" #yellow
-			"black"
+			"null" #black
 			"null"
 		}
 	}
@@ -1612,9 +1612,9 @@ Bloodbath = {
 			file = "inverted_v.dds"
 		}
 		colors = {
-			"black"
-			"red"
-			"black"
+			"red" 		#black
+			"black" 	#red
+			"black" 	#black
 			"null"
 		}
 	}

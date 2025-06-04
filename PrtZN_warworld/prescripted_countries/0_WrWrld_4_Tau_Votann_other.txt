@@ -1,0 +1,477 @@
+# Тау #
+Tau_Federation = {
+	name = "name_tau_federation"
+	adjective = "PRESCRIPTED_adjective_tau_federation"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_tau_federation"
+	
+	species = {
+		class = "REP"
+		portrait = "rep2"
+		name = "PRESCRIPTED_species_name_tau"
+		plural ="PRESCRIPTED_species_plural_tau"
+		adjective = "PRESCRIPTED_species_adjective_tau"
+		name_list = "REP1"
+		trait = "trait_intelligent"
+		trait = "trait_weak"
+		trait = "trait_nomadic"
+		trait = "trait_charismatic"
+		trait = "trait_solitary"
+		trait = "trait_fleeting"
+	}
+	
+	room = "personality_migrating_flock_room"
+	
+	
+	authority = "auth_democratic"
+	civics = { "civic_shared_burden" "civic_free_haven" "civic_meritocracy" }
+	government = "gov_communal_parity"
+	
+	ethic = "ethic_fanatic_egalitarian"
+	ethic = "ethic_xenophile"
+	ethic = "ethic_materialist"
+	
+	origin = "origin_Tau"
+	flag = empire_the_Tau_Federation
+	
+	planet_name = "planet_name_tau"
+	planet_class = "pc_arid"
+	system_name = "system_name_tau"
+	#initializer = "Tau_initializer"
+	
+	graphical_culture = "reptilian_01"
+	city_graphical_culture = "tau_01" #reptilian_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_other"
+			file = "tau_emblem.dds"
+		}
+		background = {
+			category = "backgrounds" 	#category = "backgrounds"
+			file = "diagonal.dds"	 	#file = "00_solid.dds"
+		}
+		colors = {
+			"dark_orange" #sky_blue
+			"sky_blue" #turquoise
+			"null" #turquoise
+			"null"
+		}
+	}
+	ruler ={
+		name = "PRESCRIPTED_ruler_name_tau"
+		gender = male
+		portrait = "rep2"
+		texture = 0
+		attachment = 1
+		clothes = 0
+		trait = "leader_trait_principled"
+		leader_class = official
+	}
+	spawn_as_fallen = no
+}
+"Федерация Фарсайта"=
+{
+	key="Федерация Фарсайта"
+	ship_prefix=
+	{
+		key="Тау."
+		literal=yes
+	}
+	species=
+	{
+		class="REP"
+		portrait="rep2"
+		species_name=
+		{
+			key="Тау"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Тау"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Тауситск"
+			literal=yes
+		}
+		name_list="REP1"
+		gender=not_set
+		trait="trait_intelligent"
+		trait="trait_weak"
+		trait="trait_nomadic"
+		trait="trait_charismatic"
+		trait="trait_solitary"
+		trait="trait_fleeting"
+	}
+	name=
+	{
+		key="Федерация Фарсайта"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Федерация Фарсайта"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_democratic"
+	government="gov_communal_parity"
+	planet_name=
+	{
+		key="не знаю ещё"
+		literal=yes
+	}
+	planet_class="pc_arid"
+	system_name=
+	{
+		key="не знаю еще"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="reptilian_01"
+	city_graphical_culture="tau_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_other"
+			file="Tau_FarsightEnclave.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_12.dds"
+		}
+		colors=
+		{
+			"black"
+			"red"
+			"black"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Фарсайт"
+				literal=yes
+			}
+		}
+		portrait="rep2"
+		texture=3
+		evolution_mask=0
+		attachment=0
+		clothes=3
+		trait="trait_ruler_warlike"
+		leader_class="commander"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_migrating_flock_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_egalitarian"
+	ethic="ethic_xenophile"
+	ethic="ethic_materialist"
+	civics=
+	{
+		"civic_shared_burden"
+		"civic_free_haven"
+		"civic_meritocracy"
+	}
+	origin="origin_default"
+	flag = empire_the_Farsight
+}
+"Лиги Вотанна"=
+{
+	key="Лиги Вотанна"
+	ship_prefix=
+	{
+		key="Вотанн"
+		literal=yes
+	}
+	species=
+	{
+		class="HUM"
+		portrait="humanoid_hp_11"
+		species_name=
+		{
+			key="Кин"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Кины"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Кинск"
+			literal=yes
+		}
+		name_list="HUM2"
+		gender=not_set
+		trait="trait_incubator"
+		trait="trait_very_strong"
+		trait="trait_sedentary"
+		trait="trait_quarrelsome"
+		trait="trait_slow_learners"
+	}
+	name=
+	{
+		key="Лиги Вотанна"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Лиги Вотанна"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_oligarchic"
+	government="gov_executive_committee"
+	planet_name=
+	{
+		key="Crimson Gulf"
+		literal=yes
+	}
+	planet_class="pc_alpine"
+	system_name=
+	{
+		key="Crimson Gulf"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="slaanesh_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_other"
+			file="LeagueOfVotann.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_56.dds"
+		}
+		colors=
+		{
+			"white"
+			"light_turquoise"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Монак Ник"
+				literal=yes
+			}
+		}
+		portrait="humanoid_hp_11"
+		texture=0
+		evolution_mask=0
+		attachment=11
+		clothes=4
+		trait="trait_ruler_industrialist"
+		leader_class="scientist"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="cybernetics_room"
+	spawn_enabled=always
+	ethic="ethic_egalitarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_militarist"
+	ethic="ethic_materialist"
+	civics=
+	{
+		"civic_heroic_tales"
+		"civic_functional_architecture"
+		"civic_mining_guilds"
+	}
+	origin="origin_mechanists"
+	flag = empire_the_Votann
+}
+"Доминат Северан"=
+{
+	key="Доминат Северан"
+	ship_prefix=
+	{
+		key="Северан."
+		literal=yes
+	}
+	species=
+	{
+		class="ANCIENT"
+		portrait="space_romans"
+		species_name=
+		{
+			key="Человек"
+			literal=yes
+		}
+		species_plural=
+		{
+			key="Люди"
+			literal=yes
+		}
+		species_adjective=
+		{
+			key="Человеческ"
+			literal=yes
+		}
+		name_list="HUMAN3"
+		gender=not_set
+		trait="trait_human"
+	}
+	name=
+	{
+		key="Доминат Северан"
+		literal=yes
+	}
+	adjective=
+	{
+		key="%ADJ%"
+		variables=
+		{
+			
+			{
+				key="adjective"
+				value=
+				{
+					key="Доминат Северан"
+					literal=yes
+				}
+			}
+ 
+		}
+	}
+	authority="auth_imperial"
+	government="gov_divine_empire"
+	advisor_voice_type="l_authoritarian"
+	planet_name=
+	{
+		key="Культх"
+		literal=yes
+	}
+	planet_class="pc_continental"
+	system_name=
+	{
+		key="Культх"
+		literal=yes
+	}
+	initializer=""
+	graphical_culture="wain_05"
+	city_graphical_culture="romaneagles_01"
+	empire_flag=
+	{
+		icon=
+		{
+			category="Warhammer_other"
+			file="hist-roman-eagle4.dds"
+		}
+		background=
+		{
+			category="backgrounds"
+			file="flag_BG_10.dds"
+		}
+		colors=
+		{
+			"red"
+			"dark_brown"
+			"null"
+			"null"
+		}
+	}
+	ruler=
+	{
+		gender=male
+		name=
+		{
+			full_names=
+			{
+				key="Северус XIII"
+				literal=yes
+			}
+		}
+		portrait="space_romans_male_01"
+		texture=0
+		evolution_mask=0
+		attachment=88
+		clothes=4
+		ruler_title=
+		{
+			key="Император"
+			literal=yes
+		}
+		heir_title=
+		{
+			key="Наследник"
+			literal=yes
+		}
+		ruler_title_female=
+		{
+			key="Императрица"
+			literal=yes
+		}
+		heir_title_female=
+		{
+			key="Наследница"
+			literal=yes
+		}
+		trait="trait_ruler_charismatic"
+		leader_class="official"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_decadent_hierarchy_room"
+	spawn_enabled=always
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	civics=
+	{
+		"civic_aristocratic_elite"
+		"civic_imperial_cult"
+		"civic_nationalistic_zeal"
+	}
+	origin="origin_default"
+	flag = empire_the_Severan_Dominate
+}
