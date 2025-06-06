@@ -11,7 +11,7 @@
 Tirathain_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -199,7 +199,7 @@ Syph_initializer = {
 Biterold_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -282,7 +282,7 @@ Biterold_initializer = {
 Vespasia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -365,7 +365,7 @@ Vespasia_initializer = {
 Pykman_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -448,7 +448,7 @@ Pykman_initializer = {
 Quilan_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -553,7 +553,7 @@ Quilan_initializer = {
 Ohma_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -636,7 +636,7 @@ Ohma_initializer = {
 Cegorachi_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -683,7 +683,8 @@ Cegorachi_initializer = {
 	}
 	
 	planet = {
-		class = "pc_ocean"
+		#class = "pc_ocean"
+		class = "pc_toxic"
 
 		orbit_distance = 65
 		orbit_angle = 45
@@ -691,14 +692,14 @@ Cegorachi_initializer = {
 		has_ring = yes
 		change_orbit = 4
 
-		flags = { Aldari_world }	
+		#flags = { Aldari_world }	
 		
 		init_effect = {
 			prevent_anomaly = yes
 		} 
 
 		moon = {
-			class = "pc_barren_cold"
+			class = "pc_barren"
 			orbit_distance = 15
 			size = { min = 8 max = 12 }
 		}
@@ -741,7 +742,7 @@ Cegorachi_initializer = {
 Cnath_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -846,7 +847,7 @@ Cnath_initializer = {
 Rhidhol_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -951,7 +952,7 @@ Rhidhol_initializer = {
 Rianoen_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1056,7 +1057,7 @@ Rianoen_initializer = {
 Sheol_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1139,7 +1140,7 @@ Sheol_initializer = {
 Siat_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1222,7 +1223,7 @@ Siat_initializer = {
 Areadnnil_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1233,7 +1234,7 @@ Areadnnil_initializer = {
 
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Areadnnil
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -1331,7 +1332,7 @@ Areadnnil_initializer = {
 Eqhai_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1436,7 +1437,7 @@ Eqhai_initializer = {
 Esthea_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1541,7 +1542,7 @@ Esthea_initializer = {
 Mirienh_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1646,7 +1647,7 @@ Mirienh_initializer = {
 Myrandias_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1751,7 +1752,7 @@ Myrandias_initializer = {
 Valos_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1834,7 +1835,7 @@ Valos_initializer = {
 Oliel_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	
 	flags = { Aldari_gos }
@@ -1938,7 +1939,7 @@ Oliel_initializer = {
 UpsidheKa_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2043,7 +2044,7 @@ UpsidheKa_initializer = {
 Zodiac_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2126,7 +2127,7 @@ Zodiac_initializer = {
 Hyiak_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2209,7 +2210,7 @@ Hyiak_initializer = {
 Tesla_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2292,7 +2293,7 @@ Tesla_initializer = {
 Ishariel_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2397,7 +2398,7 @@ Ishariel_initializer = {
 Birmingham_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2480,7 +2481,7 @@ Birmingham_initializer = {
 Svehlin_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2585,7 +2586,7 @@ Svehlin_initializer = {
 Naitoc_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2690,7 +2691,7 @@ Naitoc_initializer = {
 Athelaq_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt

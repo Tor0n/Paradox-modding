@@ -2,7 +2,7 @@
 Adraith_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -85,7 +85,7 @@ Adraith_initializer = {
 Eidolon_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -170,7 +170,7 @@ Eidolon_initializer = {
 Xana_II_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -260,7 +260,7 @@ Xana_II_initializer = {
 Medrengard_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -350,7 +350,7 @@ Medrengard_initializer = {
 Demia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -448,7 +448,7 @@ Maelstro_initializer = {
 	flags = { Black_Legion_gos_station }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Maelstro
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -531,7 +531,7 @@ Maelstro_initializer = {
 Crimsonova_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -699,7 +699,7 @@ Cthonia_warp_initializer = {
 Plague_initializer = {                          ### ГОТОВАЯ СИСТЕМА
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -789,7 +789,7 @@ Plague_initializer = {                          ### ГОТОВАЯ СИСТЕМ�
 Sanctia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -821,7 +821,8 @@ Sanctia_initializer = {
 	}
 	
 	planet = {
-		class = "pc_nuked"
+		#class = "pc_nuked"
+		class = "pc_toxic"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -829,7 +830,7 @@ Sanctia_initializer = {
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Chaos_war_world }
+		#flags = { Chaos_war_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -887,7 +888,7 @@ Sorrowfall_initializer = {
 	flags = { Death_Guard_gos_station }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Sorrowfall
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -971,7 +972,7 @@ Sorrowfall_initializer = {
 Haytor_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1156,7 +1157,7 @@ Crystallax_initializer = {
 Bodt_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1251,7 +1252,7 @@ Bodt_initializer = {
 Razlivanova_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1341,7 +1342,7 @@ Razlivanova_initializer = {
 Exotia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1436,7 +1437,7 @@ Exotia_initializer = {
 Formund_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -1589,7 +1590,7 @@ Sortiarius_initializer = {
 	max_instances = 1
 	flags = { Thousand_Sons_gos_station }
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Sortiarius
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -1674,7 +1675,7 @@ Sortiarius_initializer = {
 Prospero_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1769,7 +1770,7 @@ Prospero_initializer = {
 Purgatoria_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1859,7 +1860,7 @@ Purgatoria_initializer = {
 Aggaros_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1954,7 +1955,7 @@ Aggaros_initializer = {
 Praesidia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2044,7 +2045,7 @@ Praesidia_initializer = {
 Chondax_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2134,7 +2135,7 @@ Chondax_initializer = {
 Mortain_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2224,7 +2225,7 @@ Mortain_initializer = {
 Magma_Codelian_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2317,7 +2318,7 @@ Magnus_Storm_initializer = {
 	flags = { Thousand_Sons_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Magnus_Storm
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -2387,7 +2388,7 @@ Magnus_Storm_initializer = {
 Fulgrimia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -2482,7 +2483,7 @@ Fulgrimia_initializer = {
 Dharrovar_initializer = { #Горный мир, есть луна-кузница, вроде в той же системе
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -2514,7 +2515,8 @@ Dharrovar_initializer = { #Горный мир, есть луна-кузница
 	}
 	
 	planet = {
-		class = "pc_alpine"
+		#class = "pc_alpine"
+		class = "pc_toxic"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -2522,7 +2524,7 @@ Dharrovar_initializer = { #Горный мир, есть луна-кузница
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Chaos_fallen_world }
+		#flags = { Chaos_fallen_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2573,7 +2575,7 @@ Dharrovar_initializer = { #Горный мир, есть луна-кузница
 Sicarus_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -2668,7 +2670,7 @@ Sicarus_initializer = {
 Croatoa_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -2700,7 +2702,8 @@ Croatoa_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tropical"
+		#class = "pc_tropical"
+		class = "pc_toxic"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -2708,7 +2711,7 @@ Croatoa_initializer = {
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Chaos_fallen_world }
+		#flags = { Chaos_fallen_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2852,7 +2855,7 @@ Thranix_initializer = {
 Orestes_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -2942,7 +2945,7 @@ Orestes_initializer = {
 Atria_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3032,7 +3035,7 @@ Atria_initializer = {
 Ghodri_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3122,7 +3125,7 @@ Ghodri_initializer = {
 Balcarhsa_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3212,7 +3215,7 @@ Balcarhsa_initializer = {
 Cando_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3302,7 +3305,7 @@ Cando_initializer = {
 Khur_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3392,7 +3395,7 @@ Khur_initializer = {
 Kdask_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -3487,7 +3490,7 @@ Kdask_initializer = {
 Darkhold_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3577,7 +3580,7 @@ Darkhold_initializer = {
 Colchis_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3670,7 +3673,7 @@ Precipice_initializer = {
 	flags = { Word_Bearers_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Precipice
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -3753,7 +3756,7 @@ Precipice_initializer = {
 Sarcosa_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3843,7 +3846,7 @@ Sarcosa_initializer = {
 Ogris_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -3933,7 +3936,7 @@ Ogris_initializer = {
 Syban_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4029,7 +4032,7 @@ Syban_initializer = {
 Silentia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		#generate_home_system_resources = yes
+		##generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4124,7 +4127,7 @@ Silentia_initializer = {
 Morda_Prime_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4221,7 +4224,7 @@ Ordex_initializer = {
 	flags = { Alpha_Legion_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_Ordex
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4305,7 +4308,7 @@ Warp1_initializer = {
 	flags = { Black_Legion_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_1
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4367,7 +4370,7 @@ Warp2_initializer = {
 	flags = { Word_Bearers_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_2
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4429,7 +4432,7 @@ Warp3_initializer = {
 	flags = { Word_Bearers_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_3
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4491,7 +4494,7 @@ Warp4_initializer = {
 	flags = { Word_Bearers_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_4
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4553,7 +4556,7 @@ Warp5_initializer = {
 	flags = { Death_Guard_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_5
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4615,7 +4618,7 @@ Warp6_initializer = {
 	flags = { Death_Guard_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_6
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4677,7 +4680,7 @@ Warp7_initializer = {
 	flags = { Death_Guard_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_7
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4739,7 +4742,7 @@ Warp8_initializer = {
 	flags = { World_Eaters_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_8
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4801,7 +4804,7 @@ Warp9_initializer = {
 	flags = { World_Eaters_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_9
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4863,7 +4866,7 @@ Warp10_initializer = {
 	flags = { World_Eaters_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_10
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4925,7 +4928,7 @@ Warp11_initializer = {
 	flags = { Alpha_Legion_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_11
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
@@ -4987,7 +4990,7 @@ Warp12_initializer = {
 	flags = { Alpha_Legion_gos }
 	max_instances = 1
 	init_effect = {
-		generate_home_system_resources = yes
+		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_12
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}

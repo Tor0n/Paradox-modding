@@ -214,12 +214,14 @@ World_Eaters = {
 		}
 		background = {
 			category = "backgrounds"
-			file = "flag_BG_32.dds"
+			file = "diagonal.dds" #flag_BG_32
 		}
 		colors = {
-			"red"
 			"yellow"
-			"black"
+			"red"
+			#"red" 
+			#"yellow"
+			"null" #black
 			"null"
 		}
 	}

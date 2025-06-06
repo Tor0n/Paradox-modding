@@ -128,15 +128,16 @@ Grisgrease_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tundra"
-
+		#class = "pc_tundra"
+		class = "pc_shrouded"
+		
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 19
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Chaos_demon_world }
+		#flags = { Chaos_demon_world }
 		
 		init_effect = {
 			prevent_anomaly = yes

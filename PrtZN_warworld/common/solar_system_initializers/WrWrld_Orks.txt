@@ -1,5 +1,5 @@
 # ОРОЧЬИ МИРЫ
-Jurn_initializer = {
+Cornucopia_initializer = {
 	class = "rl_starting_stars"
 	
 	flags = { Goffs_gos_station } #empire_home_system
@@ -91,10 +91,10 @@ Jurn_initializer = {
 		home_planet = no
 	}
 }
-Adransa_initializer = {
+Jurn_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Goffs_gos }
+	flags = { Blood_Axes_gos_station } #empire_home_system
 
 	max_instances = 1
 	init_effect = { }
@@ -138,8 +138,9 @@ Adransa_initializer = {
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = 21
+		size = 25
 		has_ring = no
+		#starting_planet = yes
 		#change_orbit = 4
 		flags = { Orc_world }
 		
@@ -182,9 +183,101 @@ Adransa_initializer = {
 		home_planet = no
 	}
 }
+Adransa_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Blood_Axes_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+	
+	planet = {
+		#class = "pc_savannah"
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = no
+		#change_orbit = 4
+		#flags = { Orc_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 Vrun_initializer = {
 	class = "rl_starting_stars"
-	flags = { Goffs_gos }
+	flags = { Blood_Axes_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -719,7 +812,7 @@ Cilix_initializer = {
 Golgotha_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Evil_Sunz_gos_station }
+	flags = { Goffs_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -810,7 +903,7 @@ Golgotha_initializer = {
 Barac_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Blood_Axes_gos_station }
+	flags = { Goffs_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -901,7 +994,7 @@ Barac_initializer = {
 Sulairn_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Blood_Axes_gos }
+	flags = { Goffs_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -941,7 +1034,8 @@ Sulairn_initializer = {
 	}
 	
 	planet = {
-		class = "pc_tundra"
+		#class = "pc_tundra"
+		class = "pc_barren_cold"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1087,7 +1181,7 @@ Vacuna_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Snakebites_gos_station }
+	flags = { Evil_Sunz_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1637,6 +1731,96 @@ Bork_initializer = {
 		home_planet = no
 	}
 }
+Drathonis_initializer = {
+	class = "rl_starting_stars"
+	flags = { Snakebites_gos_station }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+	
+	planet = {
+		class = "pc_arid"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = no
+		#change_orbit = 4
+		flags = { Orc_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 # ПУСТЫЕ СИСТЕМЫ
 Eydolim_initializer = {
 	class = "rl_starting_stars"
@@ -1721,7 +1905,7 @@ Eydolim_initializer = {
 Aleusis_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Goffs_gos }
+	flags = { Blood_Axes_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1794,86 +1978,10 @@ Aleusis_initializer = {
 		home_planet = no
 	}
 }
-Phobian_initializer = {
+Ordex_Thaag_initializer = {
 	class = "rl_starting_stars"
-
-	flags = { Goffs_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
 	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		#change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
-Skaroth_initializer = {
-	class = "rl_starting_stars"
-
-	flags = { Goffs_gos }
+	flags = { Blood_Axes_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2795,7 +2903,7 @@ Grave_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Snakebites_gos }
+	flags = { Evil_Sunz_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2871,7 +2979,7 @@ Grave_initializer = {
 Cardrim_initializer = {
 	class = "rl_starting_stars"
 
-	flags = { Blood_Axes_gos }
+	flags = { Goffs_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -3495,6 +3603,82 @@ Jagga_initializer = {
 		home_planet = no
 	}
 }
+Bellicas_initializer = {
+	class = "rl_starting_stars"
+
+	flags = { Evil_Sunz_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
 Aspen_initializer = {
 	class = "rl_starting_stars"
 
@@ -3503,7 +3687,7 @@ Aspen_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Snakebites_gos }
+	flags = { Evil_Sunz_gos }
 
 	max_instances = 1
 	init_effect = { }
