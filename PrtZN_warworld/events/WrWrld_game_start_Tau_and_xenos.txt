@@ -2252,3 +2252,89 @@ country_event = { #Barghesi
 		}
 	}
 }
+# Votann
+country_event = {
+	id = WrWrld_game_start.119
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Votann_gos
+	}
+	immediate = {
+		save_global_event_target_as = Votann_evnt_trgt_country
+		communication_with_all = yes
+		
+		add_resource = { energy = 45000	}
+		add_resource = { minerals = 17500 }
+		add_resource = { food = 17500 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1400 }
+		add_resource = { rare_crystals = 900 }
+		add_resource = { exotic_gases = 900 }
+		
+		give_technology_votann = yes
+		add_tradition_votann = yes
+		
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = Votann_gos
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Votann_world
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			# else = {
+				# limit = {
+					# has_star_flag = Tau_gos_station
+			    # }
+				# create_starbase = {
+					# owner = ROOT
+					# size = starbase_starfortress
+					# module = shipyard
+					# module = shipyard
+					# module = gun_battery
+					# module = missile_battery
+					# module = hangar_bay
+					module = anchorage 
+					
+					# building = crew_quarters
+					# building = target_uplink_computer
+					building = hydroponics_bay
+				# }
+			# }
+			every_system_planet = {
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Votann_world			
+			        }
+				    create_colony = { owner = ROOT }
+					while = { count = 3 add_district_and_planet_size_if_needed_effect = { district = district_city } }
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+				    while = {
+				    	count = 16                            
+				    	create_pop = { species = owner_main_species }
+					}
+					while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_generator } }
+					while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_mining } }
+					while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_farming } }
+				}
+			}
+		}
+	}
+}
