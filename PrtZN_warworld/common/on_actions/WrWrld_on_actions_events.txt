@@ -287,6 +287,12 @@ on_game_start_country = {
 	events = { WrWrld_wormhole.2 }
 }
 
+on_press_begin = {
+	events = {
+		WrWrld_diplomacy.1
+	}
+}
+
 on_colony_3_years_old = {
 	events = {
 		WrWrld_genestealer_assimilation.1

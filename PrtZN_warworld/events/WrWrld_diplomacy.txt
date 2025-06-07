@@ -1,0 +1,27 @@
+namespace = WrWrld_diplomacy
+
+event = {
+	id = WrWrld_diplomacy.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		event = { id = WrWrld_diplomacy.2 days = 4 }
+	}
+}
+
+event = {
+	id = WrWrld_diplomacy.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		
+		
+		
+		event_target:Votann_evnt_trgt_country = {
+			communication_with_all = yes
+		}
+	}
+}
