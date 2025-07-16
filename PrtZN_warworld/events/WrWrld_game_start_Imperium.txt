@@ -2205,6 +2205,40 @@ country_event = { #Eastern_Fringe
 					}
 				}
 				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Ultramarines_Agri_world_desert			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					add_building = building_capital
+				    add_building = building_precinct_house
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    add_building = building_hydroponics_farm
+				    #add_building = building_hydroponics_farm
+				    #add_building = building_hydroponics_farm
+				    add_building = building_food_processing_center 					
+				    while = {
+				    	count = 22
+				    	create_pop = { species = owner_main_species }
+					}
+				}
+				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
