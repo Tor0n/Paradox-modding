@@ -1,4 +1,4 @@
-Lanorra_initializer = {
+Odeum_initializer = {
 	class = "sc_g"
 	flags = { empire_home_system }
 	usage = custom_empire
@@ -122,16 +122,18 @@ Lanorra_initializer = {
 		home_planet = no
 	}
 }
-Porteus_initializer = {
-	class = "sc_g"
+Strixis_empty_initializer = {
+	#class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
 	
-	usage = custom_empire
-	flags = { Cythor_Fiends_gos }
-	
-	init_effect = {
-		#generate_home_system_resources = no
-	}
-	
+	flags = { Strixis_gos }
+
+	max_instances = 1
+	init_effect = { }
+
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -139,58 +141,44 @@ Porteus_initializer = {
 			prevent_anomaly = yes
 		}
 	}
-
-	planet = {
-		class = pc_molten
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-	}
-	
-	planet = {
-		count = { min = 1 max = 3 }
-		class = pc_asteroid
-		orbit_distance = 0
-		orbit_angle = { min = 40 max = 100 }
-	}
-	
-	planet = {
-		class = pc_toxic
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-	}
 	
     planet = {
-		class = pc_barren
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 25 }
 		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
 	}
-	
+
 	planet = {
-		class = pc_arctic
+		class = "pc_barren"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = 23
-		has_ring = yes
-		starting_planet = yes
-		#modifiers = none
-		
-		#flags = {}
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
 	}
-	
+
 	planet = {
 		class = "pc_barren_cold"
 
@@ -198,30 +186,22 @@ Porteus_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 25 }
 		has_ring = no
+
+		home_planet = no
 	}
 
 	planet = {
-		class = pc_gas_giant
+		class = "pc_crystal_asteroid"
 
-		orbit_distance = 45
+		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
+		size = { 8 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
 	}
 	
-	planet = {
-		class = pc_gas_giant
-		
-		orbit_distance = 20
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-
-		moon = {
-			count = { min = 0 max = 3 }
-			class = random_non_colonizable
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-		}
-	}
 }
 Amarah_initializer = {
 	class = "rl_starting_stars"
@@ -316,7 +296,7 @@ Amarah_initializer = {
 		home_planet = no
 	}
 }
-Appollonia_initializer = {
+RakGol_cap_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		#generate_home_system_resources = no
@@ -407,6 +387,70 @@ Appollonia_initializer = {
 		change_orbit = 12
 
 		home_planet = no
+	}
+}
+RakGol_empty_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { RakGol_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		size = { min = @star_size_min max = @star_size_max }
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
 	}
 }
 Grendel_initializer = {
@@ -694,7 +738,7 @@ Arsta_initializer = {
 		has_ring = no
 	}
 }
-Sveen_initializer = {
+Slogth_cap_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		#generate_home_system_resources = no
@@ -786,6 +830,89 @@ Sveen_initializer = {
 
 		home_planet = no
 	}
+}
+Slogth_empty_initializer = {
+	#class = "rl_starting_stars"
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Slogth_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_crystal_asteroid"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { 8 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}	
 }
 #################################
 Stygia_initializer = {
@@ -1388,5 +1515,106 @@ Loqiit_initializer = {
 		change_orbit = 12
 
 		home_planet = no
+	}
+}
+Porteus_initializer = {
+	class = "sc_g"
+	
+	usage = custom_empire
+	flags = { Cythor_Fiends_gos }
+	
+	init_effect = {
+		#generate_home_system_resources = no
+	}
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = pc_molten
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		count = { min = 1 max = 3 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+	
+	planet = {
+		class = pc_toxic
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+    planet = {
+		class = pc_barren
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = pc_arctic
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = yes
+		starting_planet = yes
+		#modifiers = none
+		
+		#flags = {}
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = pc_gas_giant
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+	}
+	
+	planet = {
+		class = pc_gas_giant
+		
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+
+		moon = {
+			count = { min = 0 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
 	}
 }

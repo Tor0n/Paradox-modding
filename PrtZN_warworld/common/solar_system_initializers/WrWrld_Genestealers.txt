@@ -6,7 +6,7 @@ Vigilance_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Cult_Hydraic_gos_station }
+	flags = { Twisted_Helix_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -173,18 +173,19 @@ NewGidlam_initializer = {
 		home_planet = no
 	}
 }
-Kendrax_initializer = {
+ChancherVale_initializer = {
 	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
+	init_effect = {
+		#generate_home_system_resources = no
 	}
-	
 	flags = { Pauper_Princes_gos_station }
-
-	max_instances = 1
-	init_effect = { }
-
+	
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 60
+	#}
+	
+	
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -192,57 +193,70 @@ Kendrax_initializer = {
 			prevent_anomaly = yes
 		}
 	}
-	
-    planet = {
-		class = "pc_toxic"
+
+	planet = {
+		class = "pc_molten"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
+		size = { min = 15 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 	
 	planet = {
-		class = "pc_savannah"
+		class = "pc_toxic"
 
-		orbit_distance = 65
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = 22
+		size = { min = 15 max = 25 }
 		has_ring = no
+		change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_ocean"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		change_orbit = 4
 		starting_planet = yes
 		
-		flags = { Corinis_world }
+		flags = { Imperium_Hive_civ_world }	
 		
 		init_effect = {
 			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
+			add_deposit = d_dust_caverns 
+			add_deposit = d_bubbling_swamp
+			add_deposit = d_crystalline_caverns
 		}
 	}
 
 	planet = {
 		class = "pc_barren"
 
-		orbit_distance = 28
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 15 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
-
+	
 	planet = {
 		class = "pc_barren_cold"
 
-		orbit_distance = 30
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
+		size = { min = 15 max = 25 }
 		has_ring = no
 
 		home_planet = no
@@ -251,9 +265,9 @@ Kendrax_initializer = {
 	planet = {
 		class = "pc_gas_giant"
 
-		orbit_distance = 30
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
+		size = { min = 25 max = 45 }
 		has_ring = no
 		change_orbit = 12
 
@@ -790,7 +804,7 @@ Quistorol_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Blessed_Wormlings_gos_station }
+	flags = { Star_Kindred_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -877,7 +891,7 @@ Rapture_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Cult_Hydraic_gos }
+	flags = { Twisted_Helix_gos }
 
 	max_instances = 1
 	init_effect = { }

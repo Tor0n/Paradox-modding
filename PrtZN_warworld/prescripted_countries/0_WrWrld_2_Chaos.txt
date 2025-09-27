@@ -13,16 +13,7 @@ Black_Legion = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Chaos_room" #personality_slaving_despots_room
@@ -96,16 +87,7 @@ Death_Guard = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Nurgle_room" #organic_room
@@ -175,16 +157,7 @@ World_Eaters = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Khorne_room" #personality_honorbound_warriors_room
@@ -256,16 +229,7 @@ Thousand_Sons = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	room = "personality_evangelizing_zealots_room"
 	
@@ -335,16 +299,7 @@ Emperors_Children = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Slaneesh_room" #personality_slaving_despots_room
@@ -415,16 +370,7 @@ Word_Bearers = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Chaos_room" #personality_evangelizing_zealots_room
@@ -478,79 +424,27 @@ Word_Bearers = {
 	advisor_voice_type = "l_militarist"
 	spawn_as_fallen = no
 }
-"Железные воины"=
-{
-	key="Железные воины"
-	ship_prefix=
-	{
-		key="ship_prefix_chaos"
+Iron_Warriors = {
+	ship_prefix = "ship_prefix_chaos"
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_chaos"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="xevil"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_chaos"
-		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_chaos"
-		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_chaos"
-		}
-		name_list="HUMAN3"
-		gender=male
-		trait="trait_extremely_adaptive"
-		trait="trait_deviants"
-		trait="trait_unruly"
-		trait="trait_decadent"
-		trait="trait_wasteful"
-		trait="trait_resilient"
-		trait="trait_nomadic"
-		trait="trait_quick_learners"
-		trait="trait_humanoid_jinxed"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Железные воины"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Железные воины"
-					literal=yes
-				}
-			}
- 
-		}
-	}
+	name = "name_iron_warriors"
+	adjective = "PRESCRIPTED_adjective_iron_warriors"
 	authority="auth_dictatorial"
-	#flag="empire_the_Alpha_Legion"
+	flag="empire_the_Iron_Warriors"
 	government="gov_military_dictatorship"
 	advisor_voice_type="l_militarist"
-	planet_name=
-	{
-		key="Медренгард"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Медренгард"
-		literal=yes
-	}
+	planet_name = "planet_name_medrengard"
+	planet_class = "pc_continental"
+	system_name = "system_name_medrengard"
 	initializer=""
 	graphical_culture="chaos_01"
 	city_graphical_culture="chaos_01"
@@ -613,79 +507,27 @@ Word_Bearers = {
 	}
 	origin="origin_chaos"
 }
-"Повелители ночи"=
-{
-	key="Повелители ночи"
-	ship_prefix=
-	{
-		key="ship_prefix_chaos"
+Night_Lords = {
+	ship_prefix = "ship_prefix_chaos"
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = male
+		trait = "trait_chaos"
 	}
-	species=
-	{
-		class="HUM"
-		portrait="xevil"
-		species_name=
-		{
-			key="PRESCRIPTED_species_name_chaos"
-		}
-		species_plural=
-		{
-			key="PRESCRIPTED_species_plural_chaos"
-		}
-		species_adjective=
-		{
-			key="PRESCRIPTED_species_adjective_chaos"
-		}
-		name_list="HUMAN3"
-		gender=male
-		trait="trait_extremely_adaptive"
-		trait="trait_deviants"
-		trait="trait_unruly"
-		trait="trait_decadent"
-		trait="trait_wasteful"
-		trait="trait_resilient"
-		trait="trait_nomadic"
-		trait="trait_quick_learners"
-		trait="trait_humanoid_jinxed"
-		trait="trait_traditional"
-	}
-	name=
-	{
-		key="Повелители ночи"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Повелители ночи"
-					literal=yes
-				}
-			}
- 
-		}
-	}
+	name = "name_night_lords"
+	adjective = "PRESCRIPTED_adjective_night_lords"
 	authority="auth_dictatorial"
-	#flag="empire_the_Alpha_Legion"
+	flag="empire_the_Night_Lords"
 	government="gov_military_dictatorship"
 	advisor_voice_type="l_authoritarian"
-	planet_name=
-	{
-		key="Придумать"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Придумать"
-		literal=yes
-	}
+	planet_name = "planet_name_nightmare"
+	planet_class = "pc_continental"
+	system_name = "system_name_nightmare"
 	initializer=""
 	graphical_culture="chaos_02"
 	city_graphical_culture="chaos_01"
@@ -763,16 +605,7 @@ Alpha_Legion = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "personality_peaceful_traders_room"
@@ -844,16 +677,7 @@ Mechanicum_Cyclothrathe = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "cybernetics_room"
@@ -928,16 +752,7 @@ Mechanicum_Samech = {
 		name_list = "HUMAN3"
 		gender = not_set
 		trait = "trait_cybernetic"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "cybernetics_room"
@@ -1009,16 +824,7 @@ Blood_Pact = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "scrappy_room"
@@ -1089,16 +895,7 @@ Admonition = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "scrappy_room"
@@ -1170,16 +967,7 @@ Land_Chaos = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Chaos_room" #personality_evangelizing_zealots_room
@@ -1251,16 +1039,7 @@ Conjurers_of_Fear = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "necroids_room"
@@ -1332,16 +1111,7 @@ Barbed_Chalice = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Slaneesh_room" #personality_slaving_despots_room
@@ -1411,16 +1181,7 @@ Brothrhd_Knife = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "personality_evangelizing_zealots_room"
@@ -1491,16 +1252,7 @@ Givers_of_Life = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Nurgle_room" #personality_spiritual_seekers_room
@@ -1572,16 +1324,7 @@ Bloodbath = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "Khorne_room" #personality_honorbound_warriors_room
@@ -1649,16 +1392,7 @@ Stigmartus = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room="personality_fanatic_purifier_room"
@@ -1730,16 +1464,7 @@ Penumbral = {
 		species_adjective = "PRESCRIPTED_species_adjective_chaos"
 		name_list = "HUMAN3"
 		gender = not_set
-		trait = "trait_extremely_adaptive"
-		trait = "trait_deviants"
-		trait = "trait_unruly"
-		trait = "trait_decadent"
-		trait = "trait_wasteful"
-		trait = "trait_resilient"
-		trait = "trait_nomadic"
-		trait = "trait_quick_learners"
-		trait = "trait_humanoid_jinxed"
-		trait = "trait_traditional"
+		trait = "trait_chaos"
 	}
 	
 	room = "necroids_room"
@@ -1755,9 +1480,9 @@ Penumbral = {
 	
 	flag = empire_the_Penumbral
 	
-	planet_name = "planet_name_gladius"
+	planet_name = "planet_name_cairn"
 	planet_class = "pc_continental"
-	system_name = "system_name_gladius"
+	system_name = "system_name_cairn"
 	#initializer = ""
 	
 	graphical_culture = "chaos_02"

@@ -267,7 +267,7 @@ Valhalla_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Ultima_Segmentum_gos }
+	flags = { Ultima_Segmentum_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -400,31 +400,31 @@ Cerada_initializer = {
 		}
 	}
 	planet = {
-		class = "pc_arctic"
-
+		#class = "pc_arctic" 
+		class = "pc_barren_cold"
 		orbit_distance = 60
 		orbit_angle = { min = 90 max = 270 }
 		size = 22
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Imperium_Mining_world }
+		#flags = { Imperium_Mining_world }
 		
-		init_effect = {
-			prevent_anomaly = yes
-			add_deposit = d_rich_mountain #Богатая гора 3
-			add_deposit = d_mineral_fields #Минеральные поля 1
-			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
-			#add_deposit = d_submerged_ore_veins #Подводные залежи 3
-			add_deposit = d_veiny_cliffs #Залежи на склонах 1
-			add_deposit = d_prosperous_mesa #Плато с рудой 2
-			
-			add_deposit = d_ore_rich_caverns #Богатые пещеры 2
-			add_deposit = d_veiny_cliffs #Залежи на склонах 1
-			add_deposit = d_prosperous_mesa #Плато с рудой 2
-			add_deposit = d_rich_mountain #Богатая гора 3
-			add_deposit = d_mineral_fields #Минеральные поля 1
-		} 
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#	add_deposit = d_rich_mountain #Богатая гора 3
+		#	add_deposit = d_mineral_fields #Минеральные поля 1
+		#	add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+		#	#add_deposit = d_submerged_ore_veins #Подводные залежи 3
+		#	add_deposit = d_veiny_cliffs #Залежи на склонах 1
+		#	add_deposit = d_prosperous_mesa #Плато с рудой 2
+		#	
+		#	add_deposit = d_ore_rich_caverns #Богатые пещеры 2
+		#	add_deposit = d_veiny_cliffs #Залежи на склонах 1
+		#	add_deposit = d_prosperous_mesa #Плато с рудой 2
+		#	add_deposit = d_rich_mountain #Богатая гора 3
+		#	add_deposit = d_mineral_fields #Минеральные поля 1
+		#} 
 
 		moon = {
 			class = "pc_barren_cold"

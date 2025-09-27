@@ -257,7 +257,7 @@ Xana_II_initializer = {
 		home_planet = no
 	}
 }
-Medrengard_initializer = {
+Temporia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		#generate_home_system_resources = yes
@@ -743,6 +743,12 @@ Plague_initializer = {                          ### ГОТОВАЯ СИСТЕМ�
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -786,97 +792,6 @@ Plague_initializer = {                          ### ГОТОВАЯ СИСТЕМ�
 		home_planet = no
 	}
 }
-Sanctia_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		##generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Black_Legion_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		#class = "pc_nuked"
-		class = "pc_toxic"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 16
-		has_ring = no
-		change_orbit = 4
-		
-		#flags = { Chaos_war_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 Sorrowfall_initializer = {
 	class = "rl_starting_stars"
 	
@@ -888,8 +803,7 @@ Sorrowfall_initializer = {
 	flags = { Death_Guard_gos_station }
 	max_instances = 1
 	init_effect = {
-		#generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Sorrowfall
+		save_global_event_target_as = wormhole_warp_6_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -1069,7 +983,7 @@ Crystallax_initializer = {
 	flags = { Death_Guard_gos_station }
 	max_instances = 1
 	init_effect = {
-		save_global_event_target_as = wormhole_Crystallax
+		save_global_event_target_as = wormhole_warp_5_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -1534,7 +1448,7 @@ Somnium_Stars_initializer = {                         #####            ГОТО�
 	flags = { World_Eaters_gos }
 	max_instances = 1
 	init_effect = {
-		save_global_event_target_as = wormhole_Somnium_Stars
+		save_global_event_target_as = wormhole_warp_8_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -1589,11 +1503,11 @@ Sortiarius_initializer = {
 	}
 	max_instances = 1
 	flags = { Thousand_Sons_gos_station }
-	init_effect = {
-		##generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Sortiarius
-		spawn_natural_wormhole = { bypass_type = wormhole }
-	}
+	#init_effect = {
+	#	##generate_home_system_resources = yes
+	#	save_global_event_target_as = wormhole_Sortiarius
+	#	spawn_natural_wormhole = { bypass_type = wormhole }
+	#}
 
 	planet = {
 		class = star
@@ -1767,17 +1681,19 @@ Prospero_initializer = {
 		home_planet = no
 	}
 }
-Purgatoria_initializer = {
+Appollonia_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_39_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Thousand_Sons_gos }
+	flags = { Thousand_Sons_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -1802,7 +1718,7 @@ Purgatoria_initializer = {
 	}
 	
 	planet = {
-		class = "pc_desert"
+		class = "pc_tundra"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -1860,7 +1776,9 @@ Purgatoria_initializer = {
 Aggaros_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
-		##generate_home_system_resources = yes
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_40_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1952,366 +1870,6 @@ Aggaros_initializer = {
 		home_planet = no
 	}
 }
-Praesidia_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Thousand_Sons_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
-Chondax_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Thousand_Sons_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
-Mortain_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Thousand_Sons_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
-Magma_Codelian_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Thousand_Sons_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
 Magnus_Storm_initializer = {
 	class = "rl_starting_stars"
 	
@@ -2319,7 +1877,7 @@ Magnus_Storm_initializer = {
 	max_instances = 1
 	init_effect = {
 		#generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Magnus_Storm
+		save_global_event_target_as = wormhole_warp_37_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -2480,97 +2038,6 @@ Fulgrimia_initializer = {
 		home_planet = no
 	}
 }
-Dharrovar_initializer = { #Горный мир, есть луна-кузница, вроде в той же системе
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Black_Legion_gos_station }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		#class = "pc_alpine"
-		class = "pc_toxic"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 18
-		has_ring = no
-		change_orbit = 4
-		
-		#flags = { Chaos_fallen_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 #############################################################
 Sicarus_initializer = {
 	class = "rl_starting_stars"
@@ -2667,20 +2134,19 @@ Sicarus_initializer = {
 		home_planet = no
 	}
 }
-Croatoa_initializer = {
+Memlock_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Black_Legion_gos_station }
-
+	flags = { Word_Bearers_gos }
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		save_global_event_target_as = wormhole_warp_29_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star
@@ -2691,7 +2157,7 @@ Croatoa_initializer = {
 	}
 	
     planet = {
-		class = "pc_toxic"
+		class = "pc_shrouded"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -2700,63 +2166,41 @@ Croatoa_initializer = {
 
 		home_planet = no
 	}
-	
-	planet = {
-		#class = "pc_tropical"
-		class = "pc_toxic"
 
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 18
-		has_ring = no
-		change_orbit = 4
-		
-		#flags = { Chaos_fallen_world }
-		
+}
+Igaro_initializer = {
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Word_Bearers_gos }
+	max_instances = 1
+	init_effect = {
+		save_global_event_target_as = wormhole_warp_30_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
 		init_effect = {
 			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
 		}
 	}
+	
+    planet = {
+		class = "pc_shrouded"
 
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
+		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
+		size = { min = 18 max = 25 }
 		has_ring = no
 
 		home_planet = no
 	}
 
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
 }
 Thranix_initializer = {
 	class = "rl_starting_stars"
@@ -2768,7 +2212,7 @@ Thranix_initializer = {
 	flags = { Word_Bearers_gos_station }
 	max_instances = 1
 	init_effect = {
-		save_global_event_target_as = wormhole_Thranix
+		save_global_event_target_as = wormhole_warp_2_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -3392,191 +2836,6 @@ Khur_initializer = {
 		home_planet = no
 	}
 }
-Kdask_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		##generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Word_Bearers_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_relic"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 19
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_demon_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_shrouded"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-			init_effect = {
-				clear_deposits = yes
-				prevent_anomaly = yes
-				add_deposit = d_zro_deposit_1
-			}
-		}
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Darkhold_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Word_Bearers_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
 Colchis_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -3674,7 +2933,7 @@ Precipice_initializer = {
 	max_instances = 1
 	init_effect = {
 		#generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Precipice
+		save_global_event_target_as = wormhole_warp_3_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -4028,6 +3287,177 @@ Syban_initializer = {
 		home_planet = no
 	}
 }
+Daxos_Gemini_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_32_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135
+	}
+	flags = { Emperors_Children_gos }
+	max_instances = 1
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_relic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_fallen_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Holshct_initializer = {
+	class = "rl_starting_stars"
+	#init_effect = { #generate_home_system_resources = no }
+	flags = { Emperors_Children_gos }
+
+	max_instances = 1
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
 ##############################################################
 Silentia_initializer = {
 	class = "rl_starting_stars"
@@ -4134,7 +3564,7 @@ Morda_Prime_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Alpha_Legion_gos }
+	flags = { Night_Lords_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -4221,11 +3651,12 @@ Ordex_initializer = {
 		type = rocky_asteroid_belt
 		radius = 135
 	}
-	flags = { Alpha_Legion_gos }
+	flags = { Night_Lords_gos }
 	max_instances = 1
 	init_effect = {
 		#generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Ordex
+		#save_global_event_target_as = wormhole_Ordex
+		save_global_event_target_as = wormhole_warp_17_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
@@ -4295,6 +3726,195 @@ Ordex_initializer = {
 		size = { min = 25 max = 50 }
 		has_ring = no
 		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Kdask_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		##generate_home_system_resources = yes
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Night_Lords_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_relic"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_demon_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Darkhold_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+	}
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = 112 #Distance from system centre
+	#}
+	
+	flags = { Night_Lords_gos }
+
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_18_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		
+		home_planet = no 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
 
 		home_planet = no
 	}
@@ -4992,6 +4612,1990 @@ Warp12_initializer = {
 	init_effect = {
 		#generate_home_system_resources = yes
 		save_global_event_target_as = wormhole_warp_12
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp13_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Alpha_Legion_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_13
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp14_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Alpha_Legion_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_14
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp15_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Alpha_Legion_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_15
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp16_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Alpha_Legion_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_16
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp17_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Night_Lords_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_17
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp18_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Night_Lords_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_18
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp19_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Night_Lords_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_19
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp20_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Night_Lords_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_20
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp21_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Iron_Warriors_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_21
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp22_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Iron_Warriors_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_22
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp23_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Iron_Warriors_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_23
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp24_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Iron_Warriors_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_24
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp25_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Iron_Warriors_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_25
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp26_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { World_Eaters_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_26
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp27_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { World_Eaters_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_27
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp28_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { World_Eaters_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_28
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp29_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Word_Bearers_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_29
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp30_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Word_Bearers_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_30
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp31_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Word_Bearers_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_31
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp32_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Emperors_Children_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_32
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp33_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Emperors_Children_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_33
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp34_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Emperors_Children_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_34
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp35_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Emperors_Children_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_35
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp36_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Emperors_Children_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_36
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp37_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Thousand_Sons_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_37
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp38_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Thousand_Sons_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_38
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp39_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Thousand_Sons_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_39
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp40_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Thousand_Sons_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_40
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp41_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Thousand_Sons_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_41
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp42_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Death_Guard_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_42
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp43_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Death_Guard_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_43
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = { prevent_anomaly = yes }
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 18 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+}
+Warp44_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Death_Guard_gos }
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_44
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 

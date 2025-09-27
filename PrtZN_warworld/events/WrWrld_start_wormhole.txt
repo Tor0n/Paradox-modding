@@ -9,12 +9,12 @@ country_event = {
 		has_country_flag = Commorragh_gos
 	}
 	immediate = {
-		event_target:wormhole_Gaptyria = { link_wormholes = event_target:wormhole_Daeconc }
-		event_target:wormhole_Sorrow = { link_wormholes = event_target:wormhole_Mirth }
-		event_target:wormhole_Zero = { link_wormholes = event_target:wormhole_Preyspire }
-		event_target:wormhole_Elindrhakh = { link_wormholes = event_target:wormhole_Quaijinn }
-		event_target:wormhole_Woe = { link_wormholes = event_target:wormhole_Areadnnil }
-		event_target:wormhole_Pain = { link_wormholes = event_target:wormhole_Necris }
+		event_target:wormhole_druchii_6 = { link_wormholes = event_target:wormhole_druchii_6_out }
+		event_target:wormhole_druchii_1 = { link_wormholes = event_target:wormhole_druchii_1_out }
+		event_target:wormhole_druchii_2 = { link_wormholes = event_target:wormhole_druchii_2_out }
+		event_target:wormhole_druchii_3 = { link_wormholes = event_target:wormhole_druchii_3_out }
+		event_target:wormhole_druchii_4 = { link_wormholes = event_target:wormhole_druchii_4_out }
+		event_target:wormhole_druchii_5 = { link_wormholes = event_target:wormhole_druchii_5_out }
 	}
 }
 
@@ -25,28 +25,66 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			has_country_flag = Thousand_Sons_gos
 			has_country_flag = Black_Legion_gos
 			has_country_flag = Death_Guard_gos
+			has_country_flag = Thousand_Sons_gos
 			has_country_flag = World_Eaters_gos
+			has_country_flag = Emperors_Children_gos
 			has_country_flag = Word_Bearers_gos
 			has_country_flag = Alpha_Legion_gos
+			has_country_flag = Night_Lords_gos
+			has_country_flag = Iron_Warriors_gos
 		}
 	}
 	immediate = {
 		event_target:wormhole_Sortiarius = { link_wormholes = event_target:wormhole_Magnus_Storm }
 		event_target:wormhole_Cthonia = { link_wormholes = event_target:wormhole_Terror_Eye }
 		event_target:wormhole_warp_1 = { link_wormholes = event_target:wormhole_Maelstro }
-		event_target:wormhole_warp_2 = { link_wormholes = event_target:wormhole_Precipice }
-		event_target:wormhole_warp_3 = { link_wormholes = event_target:wormhole_Mundanus }
-		event_target:wormhole_warp_4 = { link_wormholes = event_target:wormhole_Thranix }
-		event_target:wormhole_warp_5 = { link_wormholes = event_target:wormhole_Khardoom }
-		event_target:wormhole_warp_6 = { link_wormholes = event_target:wormhole_Sorrowfall }
-		event_target:wormhole_warp_7 = { link_wormholes = event_target:wormhole_Crystallax }
-		event_target:wormhole_warp_8 = { link_wormholes = event_target:wormhole_Somnium_Stars }
-		event_target:wormhole_warp_9 = { link_wormholes = event_target:wormhole_Erenon }
-		event_target:wormhole_warp_10 = { link_wormholes = event_target:wormhole_Fools_Door }
-		event_target:wormhole_warp_11 = { link_wormholes = event_target:wormhole_Ordex }
-		event_target:wormhole_warp_12 = { link_wormholes = event_target:wormhole_Naduesh }
+		event_target:wormhole_warp_2 = { link_wormholes = event_target:wormhole_warp_2_out }
+		event_target:wormhole_warp_3 = { link_wormholes = event_target:wormhole_warp_3_out }
+		event_target:wormhole_warp_4 = { link_wormholes = event_target:wormhole_warp_4_out }
+		
+		event_target:wormhole_warp_5 = { link_wormholes = event_target:wormhole_warp_5_out }
+		event_target:wormhole_warp_6 = { link_wormholes = event_target:wormhole_warp_6_out }
+		event_target:wormhole_warp_7 = { link_wormholes = event_target:wormhole_warp_7_out }
+		
+		event_target:wormhole_warp_8 = { link_wormholes = event_target:wormhole_warp_8_out }
+		event_target:wormhole_warp_9 = { link_wormholes = event_target:wormhole_warp_9_out }
+		event_target:wormhole_warp_10 = { link_wormholes = event_target:wormhole_warp_10_out }
+		event_target:wormhole_warp_11 = { link_wormholes = event_target:wormhole_warp_11_out }
+		event_target:wormhole_warp_12 = { link_wormholes = event_target:wormhole_warp_12_out }
+		event_target:wormhole_warp_13 = { link_wormholes = event_target:wormhole_warp_13_out }
+		event_target:wormhole_warp_14 = { link_wormholes = event_target:wormhole_warp_14_out }
+		event_target:wormhole_warp_15 = { link_wormholes = event_target:wormhole_warp_15_out }
+		event_target:wormhole_warp_16 = { link_wormholes = event_target:wormhole_warp_16_out }
+		event_target:wormhole_warp_17 = { link_wormholes = event_target:wormhole_warp_17_out }
+		event_target:wormhole_warp_18 = { link_wormholes = event_target:wormhole_warp_18_out }
+		event_target:wormhole_warp_19 = { link_wormholes = event_target:wormhole_warp_19_out }
+		event_target:wormhole_warp_20 = { link_wormholes = event_target:wormhole_warp_20_out } #потом лучше в Porteus перенести, а куторов сдвинуть севернее
+		event_target:wormhole_warp_21 = { link_wormholes = event_target:wormhole_warp_21_out }
+		event_target:wormhole_warp_22 = { link_wormholes = event_target:wormhole_warp_22_out }
+		event_target:wormhole_warp_23 = { link_wormholes = event_target:wormhole_warp_23_out }
+		event_target:wormhole_warp_24 = { link_wormholes = event_target:wormhole_warp_24_out }
+		event_target:wormhole_warp_25 = { link_wormholes = event_target:wormhole_warp_25_out }
+		event_target:wormhole_warp_26 = { link_wormholes = event_target:wormhole_warp_26_out }
+		event_target:wormhole_warp_27 = { link_wormholes = event_target:wormhole_warp_27_out }
+		event_target:wormhole_warp_28 = { link_wormholes = event_target:wormhole_warp_28_out }
+		event_target:wormhole_warp_29 = { link_wormholes = event_target:wormhole_warp_29_out }
+		event_target:wormhole_warp_30 = { link_wormholes = event_target:wormhole_warp_30_out }
+		event_target:wormhole_warp_31 = { link_wormholes = event_target:wormhole_warp_31_out }
+		event_target:wormhole_warp_32 = { link_wormholes = event_target:wormhole_warp_32_out }
+		event_target:wormhole_warp_33 = { link_wormholes = event_target:wormhole_warp_33_out }
+		event_target:wormhole_warp_34 = { link_wormholes = event_target:wormhole_warp_34_out }
+		event_target:wormhole_warp_35 = { link_wormholes = event_target:wormhole_warp_35_out }
+		event_target:wormhole_warp_36 = { link_wormholes = event_target:wormhole_warp_36_out }
+		event_target:wormhole_warp_37 = { link_wormholes = event_target:wormhole_warp_37_out }
+		event_target:wormhole_warp_38 = { link_wormholes = event_target:wormhole_warp_38_out }
+		event_target:wormhole_warp_39 = { link_wormholes = event_target:wormhole_warp_39_out }
+		event_target:wormhole_warp_40 = { link_wormholes = event_target:wormhole_warp_40_out }
+		event_target:wormhole_warp_41 = { link_wormholes = event_target:wormhole_warp_41_out }
+		
+		event_target:wormhole_warp_42 = { link_wormholes = event_target:wormhole_warp_42_out }
+		event_target:wormhole_warp_43 = { link_wormholes = event_target:wormhole_warp_43_out }
+		event_target:wormhole_warp_44 = { link_wormholes = event_target:wormhole_warp_44_out }
 	}
 }

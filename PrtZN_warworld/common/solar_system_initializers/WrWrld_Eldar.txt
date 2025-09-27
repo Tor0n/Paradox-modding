@@ -32,7 +32,7 @@ Ursulia_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 24
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		deposit_blockers = none
 		modifiers = none
 		
@@ -113,7 +113,7 @@ Iathglas_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 24
 		has_ring = no
-		change_orbit = 4
+		starting_planet = yes
 		deposit_blockers = none
 		modifiers = none
 		
@@ -164,10 +164,10 @@ Iathglas_initializer = {
 #*---------------*#
 #взято из federations_initializers инициализатор void_dweller_system
 #используется эвент void_dweller_home_planet_setup из папки scripted_effects, файл 01_start_of_game_effects
-Zandros_initializer = {
+Ulthwe_initializer = {
 	class = rl_starting_stars
 	#usage = origin
-	flags = { empire_home_system Eldar_gos Eldar_Habitat Eldar_Capital }
+	flags = { empire_home_system Eldar_gos Eldar_Habitat } #Eldar_Capital
 	
 	init_effect = {
 		#generate_home_system_resources = yes
@@ -216,10 +216,19 @@ Zandros_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
-			starting_planet = yes
+			size = 16
+			#starting_planet = yes
 			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat } #Центральный хабитат тут
 			deposit_blockers = none
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
 		}
 	}
 	planet = {
@@ -306,9 +315,18 @@ Kaelor_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
+			size = 16
 			flags = { habitat }
 			deposit_blockers = none
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
 		}
 		
 	}
@@ -323,7 +341,7 @@ Kaelor_initializer = {
 		
 	}
 }
-Ilkaithe_initializer = {
+Il_Kaithe_initializer = {
 	class = "rl_starting_stars"
 	#asteroid_belt = {
 	#	type = rocky_asteroid_belt
@@ -373,9 +391,99 @@ Ilkaithe_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
+			size = 16
 			flags = { habitat }
 			deposit_blockers = none
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
+		}
+	}
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = yes
+	}
+}
+Saim_Hann_initializer = {
+	class = "rl_starting_stars"
+	#asteroid_belt = {
+	#	type = rocky_asteroid_belt
+	#	radius = { min = 105 max 195 }
+	#}
+	
+	init_effect = {
+		#generate_home_system_resources = yes
+	}
+	
+	flags = { Eldar_gos Eldar_Habitat }
+
+	#max_instances = 1
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 17 }
+		has_ring = no
+
+		
+	}
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		has_ring = no
+
+		
+	}
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 24 }
+		has_ring = no
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 16
+			flags = { habitat }
+			deposit_blockers = none
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
 		}
 	}
 	planet = {
@@ -435,14 +543,18 @@ Alaitoc_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
+			size = 16
 			flags = { habitat }
 			deposit_blockers = none
-			#init_effect = {
-			#	prevent_anomaly = yes
-			#	#add_deposit = d_lichen_fields #лишайниковые поля 1
-			#	add_deposit = d_bountiful_plains #изобильные равнины 1
-		    #}
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
 		}
 	}
 	planet = {
@@ -475,7 +587,7 @@ Alaitoc_initializer = {
 Iyanden_initializer = {
 	class = rl_starting_stars
 	#usage = origin
-	flags = { empire_home_system Ynnari_gos Ynnari_Habitat Eldar_Capital }
+	flags = { empire_home_system Eldar_gos Eldar_Habitat }
 	
 	init_effect = {
 		#generate_home_system_resources = yes
@@ -524,10 +636,19 @@ Iyanden_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
+			size = 21
 			starting_planet = yes
 			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat } #Центральный хабитат тут
 			deposit_blockers = none
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
 		}
 	}
 	planet = {
@@ -600,12 +721,17 @@ Mymeara_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
+			size = 16
 			flags = { habitat }
-			#init_effect = {
-			#	prevent_anomaly = yes
-			#	add_deposit = d_hab_dark_matter_3 
-		    #}
+			init_effect = {
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
+			}
 		}
 	}
 	planet = {
@@ -646,7 +772,7 @@ Lugganath_initializer = {
 		#generate_home_system_resources = yes
 	}
 	
-	flags = { Eldar_gos Eldar_Habitat }
+	flags = { Ynnari_gos Ynnari_Habitat }
 
 	#max_instances = 1
 	
@@ -709,12 +835,18 @@ Lugganath_initializer = {
 			class = pc_habitat
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
-			size = 6
+			size = 16
 			flags = { habitat }
 			init_effect = {
-				prevent_anomaly = yes
+				#prevent_anomaly = yes
+				set_planet_entity = {
+					entity = ccraftworld_01_entity
+					#atmosphere_color = hsv { 0.89 0.89 0.56 }
+					#atmosphere_intensity = 0.5
+					#atmosphere_width = 0.5
+				}
 				add_deposit = d_payback_habitat_research 
-		    }
+			}
 		}
 	}
 }

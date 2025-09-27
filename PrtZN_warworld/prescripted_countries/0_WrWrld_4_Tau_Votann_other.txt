@@ -49,16 +49,28 @@ Tau_Federation = {
 			category = "Warhammer_other"
 			file = "tau_emblem.dds"
 		}
-		background = {
-			category = "backgrounds" 	#category = "backgrounds"
-			file = "diagonal.dds"	 	#file = "00_solid.dds"
+		background=
+		{
+			category="backgrounds"
+			file="circle.dds"
 		}
-		colors = {
-			"dark_orange" #sky_blue
-			"sky_blue" #turquoise
-			"null" #turquoise
+		colors=
+		{
+			"dark_orange"
+			"light_orange"
+			"null"
 			"null"
 		}
+		#background = {
+		#	category = "backgrounds" 	#category = "backgrounds"
+		#	file = "diagonal.dds"	 	#file = "00_solid.dds"
+		#}
+		#colors = {
+		#	"dark_orange" #sky_blue
+		#	"sky_blue" #turquoise
+		#	"null" #turquoise
+		#	"null"
+		#}
 	}
 	ruler ={
 		name = "PRESCRIPTED_ruler_name_tau"

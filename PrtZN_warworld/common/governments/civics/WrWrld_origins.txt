@@ -113,7 +113,7 @@ origin_astartes = {
 
 	description = ""
 	
-	traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
+	#traits = { trait = trait_perfected_genes } # без этого ломается, либо убрать идеальные гены у расы
 	
 	# has_secondary_species = {  }
 
@@ -188,8 +188,8 @@ origin_eldar = {
 	icon = "gfx/interface/icons/origins/origins_soulkeepers.dds"
 	picture = GFX_origin_void_dwellers
 	
-	starting_colony = pc_habitat
-	habitability_preference = pc_habitat
+	#starting_colony = pc_habitat
+	#habitability_preference = pc_habitat
 	# preferred_planet_class_neighbor = no
 	# initializers = {  }
 	# max_once_global = yes
@@ -247,7 +247,7 @@ origin_exodite = {
 	flags = { origin_start }
 	modifier = { 
 		#leader_lifespan_add = 350
-		#planet_sensor_range_add = 2
+		planet_sensor_range_add = 1
 		ship_speed_mult = 0.1	
 	}
 
@@ -290,7 +290,7 @@ origin_commorragh = {
 
 	description = ""
 	
-	traits = { trait = trait_venerable }
+	#traits = { trait = trait_venerable }
 	
 	# has_secondary_species = {  }
 

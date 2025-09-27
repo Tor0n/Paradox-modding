@@ -90,6 +90,10 @@ Cadia_initializer = {
 Molech_initializer = {
 	class = "rl_starting_stars"
 	flags = { Ultima_Segmentum_gos }
+	init_effect = {
+		save_global_event_target_as = wormhole_warp_10_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 	
 	planet = {
 		class = star

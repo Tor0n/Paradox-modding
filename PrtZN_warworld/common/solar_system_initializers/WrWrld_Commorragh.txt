@@ -87,7 +87,7 @@ Sorrow_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Sorrow
+		save_global_event_target_as = wormhole_druchii_1
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
@@ -178,7 +178,7 @@ Zero_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Zero
+		save_global_event_target_as = wormhole_druchii_2
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
@@ -266,7 +266,7 @@ Elindrhakh_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Elindrhakh
+		save_global_event_target_as = wormhole_druchii_3
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
@@ -352,11 +352,11 @@ Elindrhakh_initializer = {
 }
 Adversity_initializer = {
 	class = "rl_starting_stars"
-	init_effect = {
-		generate_home_system_resources = yes
-		#save_global_event_target_as = wormhole_Adversity
-		spawn_natural_wormhole = { bypass_type = wormhole }
-	}
+	#init_effect = {
+	#	generate_home_system_resources = yes
+	#	save_global_event_target_as = wormhole_druchii_4
+	#	spawn_natural_wormhole = { bypass_type = wormhole }
+	#}
 	
 	flags = { Commorragh_portal }
 
@@ -442,7 +442,7 @@ Woe_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Woe
+		save_global_event_target_as = wormhole_druchii_4
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
@@ -530,7 +530,7 @@ Pain_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Pain
+		save_global_event_target_as = wormhole_druchii_5
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	
@@ -618,7 +618,7 @@ Gaptyria_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		generate_home_system_resources = yes
-		save_global_event_target_as = wormhole_Gaptyria
+		save_global_event_target_as = wormhole_druchii_6
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 	

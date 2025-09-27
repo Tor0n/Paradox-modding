@@ -521,8 +521,8 @@ Mechanicus = {
 	
 	room = "machine_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	authority = "auth_corporate"
+	civics = { "civic_mechanicus" } #"civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" #civic_galactic_curators
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -595,8 +595,8 @@ Ryza = {
 	
 	room = "machine_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_warrior_culture" }
+	authority = "auth_corporate"
+	civics = { "civic_mechanicus" } #"civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_warrior_culture"
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -669,8 +669,8 @@ Metalica = {
 	
 	room = "machine_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	authority = "auth_corporate"
+	civics = { "civic_mechanicus" } #"civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" #civic_galactic_curators
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -743,8 +743,8 @@ Graia = {
 	
 	room = "machine_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_shadow_council" }
+	authority = "auth_corporate"
+	civics = { "civic_mechanicus" } #"civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_shadow_council"
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -817,8 +817,8 @@ Lucius = {
 	
 	room = "machine_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" } #civic_galactic_curators
+	authority = "auth_corporate"
+	civics = { "civic_mechanicus" } #"civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_memory_vault" #civic_galactic_curators
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -891,8 +891,8 @@ Triplex_Phall = {
 	
 	room = "machine_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_distinguished_admiralty" }
+	authority = "auth_corporate"
+	civics = { "civic_mechanicus" } #"civic_fanatic_purifiers" "civic_relentless_industrialists" "civic_distinguished_admiralty"
 	government = "gov_purity_order"
 	origin = "origin_mechanicus"
 	
@@ -959,7 +959,7 @@ Ultramarines = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_perfected_genes"
+		#trait = "trait_perfected_genes"
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	
@@ -1032,7 +1032,7 @@ Black_Templars = {
 		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list = "HUMAN3"
 		gender = male
-		trait = "trait_perfected_genes"
+		#trait = "trait_perfected_genes"
 		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
 	}
 	

@@ -28,7 +28,7 @@ Cult_Four_ArmEmpr = {
 	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_subsumed_will" } #"civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic"
 	government = "gov_devouring_swarm"
 	origin = "origin_corinis"
 	
@@ -105,7 +105,7 @@ Hivecult = {
 	
 	authority = "auth_hive_mind"
 	government = "gov_devouring_swarm"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_strength_of_legions" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_strength_of_legions" } #"civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_strength_of_legions"
 	origin = "origin_corinis"
 	
 	ethic = "ethic_gestalt_consciousness"
@@ -180,7 +180,7 @@ Rusted_Claw = {
 	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_ascetic" } #"civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic"
 	government = "gov_devouring_swarm"
 	origin = "origin_corinis"
 	
@@ -202,12 +202,12 @@ Rusted_Claw = {
 			file = "RustedClaw.dds"
 		}
 		background = {
-			category = "backgrounds"
-			file = "stripes.dds"
+			category="backgrounds"
+			file="rounded_middle.dds"
 		}
 		colors = {
-			"dark_orange"
-			"yellow"
+			"orange"
+			"dark_red"
 			"null"
 			"null"
 		}
@@ -257,7 +257,7 @@ Bladed_Cog = {
 	
 	authority = "auth_hive_mind"
 	government = "gov_devouring_swarm"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascensionists" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_ascensionists" } #"civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascensionists"
 	origin = "origin_corinis"
 	
 	ethic = "ethic_gestalt_consciousness"
@@ -330,7 +330,7 @@ Pauper_Princes = {
 	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_ascetic" } #"civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_ascetic"
 	government = "gov_devouring_swarm"
 	origin = "origin_corinis"
 	
@@ -338,9 +338,9 @@ Pauper_Princes = {
 	
 	flag =  empire_the_Pauper_Princes
 	
-	planet_name = "planet_name_kendrax"
+	planet_name = "planet_name_chanchervale"
 	planet_class = "pc_alpine"
-	system_name = "system_name_kendrax"
+	system_name = "system_name_chanchervale"
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
@@ -406,7 +406,7 @@ Twisted_Helix = {
 	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_toxic_baths" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_natural_neural_network" } #"civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_toxic_baths"
 	government = "gov_devouring_swarm"
 	origin = "origin_corinis"
 	
@@ -414,9 +414,9 @@ Twisted_Helix = {
 	
 	flag =  empire_the_Twisted_Helix
 	
-	planet_name = "planet_name_uralek"
+	planet_name = "planet_name_vejovium"
 	planet_class = "pc_alpine"
-	system_name = "system_name_uralek"
+	system_name = "system_name_vejovium"
 	#initializer = ""
 	
 	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
@@ -440,80 +440,6 @@ Twisted_Helix = {
 	}
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_twisted_helix"
-		gender = male
-		portrait = "nec1"
-		texture = 2
-		evolution_mask = 0
-		attachment = 0
-		clothes = 0
-		ruler_title = "ruler_title_patriarch"
-		trait = "trait_ruler_logistic_understanding"
-		leader_class = commander
-	}
-	advisor_voice_type = "l_hivemind"
-	spawn_as_fallen = no
-}
-Cult_Hydraic = {
-	name = "name_cult_hydraic"
-	adjective = "PRESCRIPTED_adjective_cult_hydraic"
-	
-	ship_prefix = "ship_prefix_genestealer"
-	
-	species = {
-		class = "NECROID"
-		portrait = "nec1"
-		species_name = "PRESCRIPTED_species_name_genestealer"
-		species_plural = "PRESCRIPTED_species_plural_genestealer"
-		species_adjective = "PRESCRIPTED_species_adjective_genestealer"
-		name_list = "FUN2"
-		gender = male
-		trait = "trait_hive_mind"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_talented"
-		trait = "trait_quick_learners"
-		trait = "trait_slow_breeders"
-		trait = "trait_repugnant"
-		trait = "trait_strong"
-		trait = "trait_sedentary"
-	}
-	
-	spawn_enabled = always
-	ignore_portrait_duplication = no
-	room = "Imperium_room" #organic_room
-	
-	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_subspace_ephapse" "civic_hive_subsumed_will" }
-	government = "gov_devouring_swarm"
-	origin = "origin_corinis"
-	
-	ethic = "ethic_gestalt_consciousness"
-	
-	flag =  empire_the_Cult_Hydraic
-	
-	planet_name = "planet_name_vigilance"
-	planet_class = "pc_alpine"
-	system_name = "system_name_vigilance"
-	#initializer = ""
-	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "gothic_01" #humanoid_01
-	empire_flag = {
-		icon = {
-			category = "Warhammer_GeneStealer"
-			file = "SonsofJormungander.dds"
-		}
-		background = {
-			category = "backgrounds"
-			file = "circle.dds"
-		}
-		colors = {
-			"orange"
-			"blue"
-			"black"
-			"null"
-		}
-	}
-	ruler = {
-		name = "PRESCRIPTED_ruler_name_cult_hydraic"
 		gender = male
 		portrait = "nec1"
 		texture = 2
@@ -556,7 +482,7 @@ Star_Kindred = {
 	room = "Imperium_room" #organic_room
 	
 	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_divided_attention" "civic_hive_one_mind" }
+	civics = { "civic_hive_bodysnatcher" "civic_hive_familiar_face" "civic_hive_subsumed_will" } #"civic_hive_upkeep_twister" "civic_hive_divided_attention" "civic_hive_one_mind"
 	government = "gov_devouring_swarm"
 	origin = "origin_corinis"
 	
@@ -600,80 +526,4 @@ Star_Kindred = {
 	}
 	advisor_voice_type = "l_hivemind"
 	spawn_as_fallen = no	
-}
-Blessed_Wormlings = {
-	name = "name_blessed_wormlings"
-	adjective = "PRESCRIPTED_adjective_blessed_wormlings"
-	spawn_enabled = always
-	ignore_portrait_duplication = no
-	
-	ship_prefix = "ship_prefix_genestealer"
-	
-	species = {
-		class = "NECROID"
-		portrait = "nec1"
-		species_name = "PRESCRIPTED_species_name_genestealer"
-		species_plural = "PRESCRIPTED_species_plural_genestealer"
-		species_adjective = "PRESCRIPTED_species_adjective_genestealer"
-		name_list = "FUN2"
-		gender = male
-		trait = "trait_hive_mind"
-		trait = "trait_extremely_adaptive"
-		trait = "trait_talented"
-		trait = "trait_quick_learners"
-		trait = "trait_slow_breeders"
-		trait = "trait_repugnant"
-		trait = "trait_strong"
-		trait = "trait_sedentary"
-	}
-	
-	room = "Imperium_room" #organic_room
-	
-	authority = "auth_hive_mind"
-	civics = { "civic_hive_upkeep_twister" "civic_hive_ascetic" "civic_memory_vault_hive" }
-	government = "gov_devouring_swarm"
-	origin = "origin_corinis"
-	
-	ethic = "ethic_gestalt_consciousness"
-	
-	flag =  empire_the_Blessed_Wormlings
-	
-	planet_name = "planet_name_quistorol"
-	planet_class = "pc_alpine"
-	system_name = "system_name_quistorol"
-	#initializer = ""
-	
-	graphical_culture = "gothic_01" #gothic_01 вернуть как только удастся починить
-	city_graphical_culture = "gothic_01" #humanoid_01
-	
-	empire_flag = {
-		icon = {
-			category = "Warhammer_GeneStealer"
-			file = "Innerwyrm.dds"
-		}
-		background = {
-			category = "backgrounds"
-			file = "rounded_middle.dds"
-		}
-		colors = {
-			"blue"
-			"shadow_teal"
-			"null" #black
-			"null"
-		}
-	}
-	ruler = {
-		name = "PRESCRIPTED_ruler_name_blessed_wormlings"
-		gender = male
-		portrait = "nec1"
-		texture = 2
-		evolution_mask = 0
-		attachment = 0
-		clothes = 0
-		ruler_title = "ruler_title_patriarch"
-		trait = "trait_ruler_logistic_understanding"
-		leader_class = commander
-	}
-	advisor_voice_type = "l_hivemind"
-	spawn_as_fallen = no
 }

@@ -31,10 +31,10 @@ Eldar_Empire = {
 	
 	flag = empire_the_Eldar
 	
-	planet_name = "planet_name_zandros"
+	planet_name = "planet_name_ulthwe"
 	planet_class = "pc_continental"
-	system_name = "system_name_maiden"
-	initializer = "Zandros_initializer"
+	system_name = "system_name_ulthwe"
+	#initializer = "Ulthwe_initializer"
 	
 	graphical_culture = "eldar_01" #humanoid_01
 	city_graphical_culture = "eldar_01" #avian_01
@@ -230,14 +230,7 @@ Commorragh = {
 		plural = "PRESCRIPTED_species_plural_drukhari"
 		adjective = "PRESCRIPTED_species_adjective_drukhari"
 		name_list = "HUM1"
-		trait = "trait_venerable"
-		trait = "trait_solitary"
-		trait = "trait_deviants"
-		trait = "trait_decadent"
-		trait = "trait_strong"
-		trait = "trait_nomadic"
-		trait = "trait_wasteful"
-		trait = "trait_slow_breeders"
+		trait = "trait_drukhar"
 	}
 	
 	room = "personality_slaving_despots_room"
@@ -257,6 +250,74 @@ Commorragh = {
 	planet_class = "pc_continental"
 	system_name = "system_name_agrin"
 	initializer = "Commorragh_initializer"
+	
+	graphical_culture = "darkeldar_01" #necroid_01
+	city_graphical_culture = "drukhari_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Eldar"
+			file = "drukhari_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_12.dds"
+		}
+		colors = {
+			"medium_steel"
+			"shadow_teal"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_commorragh"
+		gender = male
+		portrait="druchii_male_03"
+		texture=4
+		evolution_mask=0
+		attachment=10
+		clothes=1
+		trait="trait_ruler_eye_for_talent"
+		leader_class="commander"
+	}
+	spawn_as_fallen = no
+}
+Children_of_Thorns = {
+	name = "name_children_of_thorns"
+	adjective = "PRESCRIPTED_adjective_children_of_thorns"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_children_of_thorns"
+	
+	species = {
+		class = "HUM"
+		portrait = "druchii"
+		name = "PRESCRIPTED_species_name_drukhari"
+		plural = "PRESCRIPTED_species_plural_drukhari"
+		adjective = "PRESCRIPTED_species_adjective_drukhari"
+		name_list = "HUM1"
+		trait = "trait_drukhar"
+	}
+	
+	room = "personality_slaving_despots_room"
+	
+	authority = "auth_imperial"
+	civics = { "civic_barbaric_despoilers" "civic_pompous_purists" "civic_warrior_culture" }
+	government = "gov_bandit_kingdom"
+	origin = "origin_commorragh"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flag = empire_the_Commorragh
+	
+	planet_name = "planet_name_commorragh"
+	planet_class = "pc_continental"
+	system_name = "system_name_agrin"
+	#initializer = "Commorragh_initializer"
 	
 	graphical_culture = "darkeldar_01" #necroid_01
 	city_graphical_culture = "drukhari_01" #necroid_01

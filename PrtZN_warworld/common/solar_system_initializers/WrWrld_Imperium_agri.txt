@@ -689,10 +689,14 @@ San_Leor_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Segmentum_Tempestus_gos }
+	flags = { Ultima_Segmentum_gos_station }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_11_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star

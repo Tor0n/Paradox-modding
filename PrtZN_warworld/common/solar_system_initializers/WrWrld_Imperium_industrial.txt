@@ -96,7 +96,11 @@ Piscina_initializer = {
 	flags = { Segmentum_Obscurus_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_22_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star
@@ -180,7 +184,7 @@ Vostroya_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Segmentum_Obscurus_gos }
+	flags = { Segmentum_Obscurus_gos_station }
 
 	max_instances = 1
 	init_effect = { }

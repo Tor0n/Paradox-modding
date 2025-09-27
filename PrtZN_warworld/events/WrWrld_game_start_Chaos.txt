@@ -1,7 +1,8 @@
 namespace = WrWrld_game_start
+namespace = WrWrld_game_start_chaos_legion
 
 country_event = { #Black_Legion
-	id = WrWrld_game_start.19
+	id = WrWrld_game_start_chaos_legion.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -34,130 +35,7 @@ country_event = { #Black_Legion
 		add_resource = { rare_crystals = 1000 }
 		add_resource = { exotic_gases = 1000 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
+		give_technology_chaos_legion = yes
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -436,7 +314,7 @@ country_event = { #Black_Legion
 	}
 }
 country_event = { #Death_Guard
-	id = WrWrld_game_start.20
+	id = WrWrld_game_start_chaos_legion.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -460,130 +338,7 @@ country_event = { #Death_Guard
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
+		give_technology_chaos_legion = yes
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -857,7 +612,7 @@ country_event = { #Death_Guard
 	}
 }
 country_event = { #World_Eaters
-	id = WrWrld_game_start.21
+	id = WrWrld_game_start_chaos_legion.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -881,131 +636,7 @@ country_event = { #World_Eaters
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
+		give_technology_chaos_legion = yes
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -1275,7 +906,7 @@ country_event = { #World_Eaters
 	}
 }
 country_event = { #Thousand_Sons
-	id = WrWrld_game_start.22
+	id = WrWrld_game_start_chaos_legion.4
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1299,130 +930,7 @@ country_event = { #Thousand_Sons
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
+		give_technology_chaos_legion = yes
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -1696,7 +1204,7 @@ country_event = { #Thousand_Sons
 	}
 }
 country_event = { #Emperors_Children
-	id = WrWrld_game_start.23
+	id = WrWrld_game_start_chaos_legion.5
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1720,131 +1228,8 @@ country_event = { #Emperors_Children
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
+		give_technology_chaos_legion = yes
 
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -2124,7 +1509,7 @@ country_event = { #Emperors_Children
 	}
 }
 country_event = { #Word_Bearers
-	id = WrWrld_game_start.24
+	id = WrWrld_game_start_chaos_legion.6
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2148,130 +1533,7 @@ country_event = { #Word_Bearers
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
+		give_technology_chaos_legion = yes		
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -2549,7 +1811,7 @@ country_event = { #Word_Bearers
 	}
 }
 country_event = { #Alpha_Legion
-	id = WrWrld_game_start.25
+	id = WrWrld_game_start_chaos_legion.7
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2573,130 +1835,7 @@ country_event = { #Alpha_Legion
 		add_resource = { rare_crystals = 520 }
 		add_resource = { exotic_gases = 520 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_gene_seed_purification } #Космодесант
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		give_technology = { tech = tech_wormhole_stabilization } #Стабилизация червоточин
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
+		give_technology_chaos_legion = yes
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -2763,6 +1902,620 @@ country_event = { #Alpha_Legion
 			else = {
 				limit = {
 					has_star_flag = Alpha_Legion_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Night_Lords
+	id = WrWrld_game_start_chaos_legion.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Night_Lords_gos
+	}
+	immediate = {
+		save_global_event_target_as = Night_Lords_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 35000	}
+		add_resource = { minerals = 2500 }
+		add_resource = { food = 2500 }
+		add_resource = { consumer_goods = 2000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1750 }
+		add_resource = { rare_crystals = 520 }
+		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos_legion = yes
+		
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		add_seen_bypass_type = wormhole
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Night_Lords_gos
+					has_star_flag = Night_Lords_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Night_Lords_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Night_Lords_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Iron_Warriors
+	id = WrWrld_game_start_chaos_legion.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Iron_Warriors_gos
+	}
+	immediate = {
+		save_global_event_target_as = Iron_Warriors_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 35000	}
+		add_resource = { minerals = 2500 }
+		add_resource = { food = 2500 }
+		add_resource = { consumer_goods = 2000 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1750 }
+		add_resource = { rare_crystals = 520 }
+		add_resource = { exotic_gases = 520 }
+		#НАУКА
+		give_technology_chaos_legion = yes
+		
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		add_seen_bypass_type = wormhole
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Iron_Warriors_gos
+					has_star_flag = Iron_Warriors_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Iron_Warriors_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Iron_Warriors_gos_station
 			    }
 				create_starbase = {
 					owner = ROOT
@@ -3893,127 +3646,6 @@ country_event = { #Blood_Pact
 		add_resource = { exotic_gases = 300 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -4315,128 +3947,7 @@ country_event = { #Admonition
 		add_resource = { exotic_gases = 100 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
+				
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -4732,128 +4243,7 @@ country_event = { #Chaos
 		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
+				
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -5209,128 +4599,7 @@ country_event = { #Conjurers_of_Fear
 		add_resource = { exotic_gases = 100 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
+				
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -5634,128 +4903,7 @@ country_event = { #Barbed_Chalice
 		add_resource = { exotic_gases = 300 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
+				
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -6060,127 +5208,6 @@ country_event = { #Brothrhd_Knife
 		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -6488,128 +5515,7 @@ country_event = { #Givers_of_Life
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
 		#НАУКА
-		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
+		give_technology_chaos = yes	
 		
 		#ТРАДИЦИИ С СТАРТА
 		
@@ -6902,127 +5808,7 @@ country_event = { #Bloodbath
 		}
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
 
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -7302,128 +6088,7 @@ country_event = { #Stigmartus
 		add_resource = { exotic_gases = 100 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
 
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -7719,128 +6384,7 @@ country_event = { #Penumbral
 		add_resource = { exotic_gases = 300 }
 		#НАУКА
 		give_technology_chaos = yes
-		#СОЦ НАУКА
-		give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-		give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-		give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-		give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-		give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-
-		give_technology = { tech = tech_colonization_2 } #Приспособляемость
-		give_technology = { tech = tech_colonization_3 } #Приспособляемость
-		give_technology = { tech = tech_colonization_4 } #Приспособляемость
-		give_technology = { tech = tech_colonization_5 } #Приспособляемость
-		give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-		give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-		
-		give_technology = { tech = tech_neural_implants } #Просто импланты
-		give_technology = { tech = tech_artificial_moral_codes } #Только для обычных органиков
-		give_technology = { tech = tech_synthetic_thought_patterns } #Только для обычных органиков
-		give_technology = { tech = tech_penal_colonies } #Только для обычных органиков
-		
-		give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-		give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-
-		give_technology = { tech = tech_hyper_drive_2 } #гипер двигатель
-		give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-		give_technology = { tech = tech_combat_training } #Усиление обычной армии
-		give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-		give_technology = { tech = tech_centralized_command } #Военная академия
-		give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-		give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-		give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-		give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-		give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-		give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-		give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-		give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-		give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-		give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-		give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-		
-		#ФИЗ НАУКА
-		give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-		give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-		give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-		give_technology = { tech = tech_power_hub_2 }
-		give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-		give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-		give_technology = { tech = tech_encryption_1 } 
-		give_technology = { tech = tech_decryption_1 }
-		give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-
-		#ИНЖ НАУКА
-		give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-		give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-		give_technology = { tech = tech_mineral_purification_1 } #Усилитель эффективности шахтёров
-		give_technology = { tech = tech_mineral_purification_2 }
-		
-		give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-		give_technology = { tech = tech_starbase_5 } # Цитадель
-		give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-		#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-		give_technology = { tech = tech_housing_1 }
-		
-		give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-		give_technology = { tech = tech_space_mining_1 }
-		give_technology = { tech = tech_space_mining_2 }
-		give_technology = { tech = tech_space_mining_3 }
-		give_technology = { tech = tech_space_mining_4 } #Для хаоситов это чисто для баланса и поэтому спорно и можно удалить в теории
-		give_technology = { tech = tech_mining_1 }
-		give_technology = { tech = tech_mining_2 }
-
-		#Прочие науки
-		give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-		give_technology = { tech = tech_exotic_gases } #Создание газа
-		give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-		give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-		give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-		give_technology = { tech = tech_volatile_motes } #Создание пылинок
-		give_technology = { tech = tech_mine_betharian }
-		give_technology = { tech = tech_mine_zro }
-		give_technology = { tech = tech_mine_dark_matter }
-		
-		#ОРУЖИЕ
-		give_technology = { tech = tech_lasers_2 } #Лазеры
-		give_technology = { tech = tech_lasers_3 }
-		give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-		give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-		give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-		give_technology = { tech = tech_fusion_power } #Реактор 2
-		give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-		give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-		give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-		give_technology = { tech = tech_shields_2 } #Щиты 2
-		give_technology = { tech = tech_shields_3 }
-		
-		give_technology = { tech = tech_strike_craft_2 }
-		give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-		give_technology = { tech = tech_mass_drivers_3 }
-		give_technology = { tech = tech_energy_lance_1 }
-		give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-		give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-		give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-		give_technology = { tech = tech_destroyers } #Эсминец
-		give_technology = { tech = tech_cruisers } #Крейсер
-		give_technology = { tech = tech_battleships } #Линкор
-		give_technology = { tech = tech_titans } #Титан
-		give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-		give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-		give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-		give_technology = { tech = tech_thrusters_3 }
-		
-		
+				
 		#ТРАДИЦИИ С СТАРТА
 		
 		#add_tradition = tr_supremacy_adopt
@@ -8280,6 +6824,20 @@ country_event = { #Chaos
 			#set_name = random # Fixes some naming issues
 		}
 		event_target:Alpha_Legion_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Iron_Warriors_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Night_Lords_evnt_trgt_country = {
 			join_alliance = {
 				who = root
 				override_requirements = yes

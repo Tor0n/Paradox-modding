@@ -623,10 +623,58 @@ Salvation_Gamma_initializer = {
 		home_planet = no
 	}
 }
-Dregruk_initializer = {
+Mirth_initializer = {
 	class = "rl_starting_stars"
 	
 	flags = { Bad_Moons_gos }
+	max_instances = 1
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 14 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = yes
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 14 max = 30 }
+		has_ring = yes
+
+		home_planet = no
+	}
+
+}
+Dregruk_initializer = {
+	class = "rl_starting_stars"
+	
+	flags = { Bad_Moons_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -2749,7 +2797,11 @@ Elusia_initializer = {
 	flags = { Snakebites_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_20_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
 
 	planet = {
 		class = star
@@ -3204,6 +3256,162 @@ Perdus_initializer = {
 		home_planet = no
 	}
 }
+Iap_initializer = {
+	class = "rl_starting_stars"
+
+	flags = { Deathskulls_gos }
+
+	max_instances = 1
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_41_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Duralium_initializer = {
+	class = "rl_starting_stars"
+
+	flags = { Deathskulls_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
 Trusk_initializer = {
 	class = "rl_starting_stars"
 
@@ -3455,7 +3663,7 @@ Quaijinn_initializer = {
 	max_instances = 1
 	init_effect = {
 		#generate_home_system_resources = no
-		save_global_event_target_as = wormhole_Quaijinn
+		save_global_event_target_as = wormhole_druchii_6_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
