@@ -1,0 +1,930 @@
+namespace = WrWrld_game_start
+namespace = WrWrld_game_start_tau_votann_severan
+
+@create_pop_watch_fort_station = 15
+
+country_event = { #Tau
+	id = WrWrld_game_start_tau_votann_severan.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Tau_gos
+	}
+	immediate = {
+		save_global_event_target_as = Tau_evnt_trgt_country
+		owner = {
+			country_event = { id = WrWrld_Tau_species.1 }
+		}
+		communication_with_all = yes
+		
+		add_resource = { energy = 45000	}
+		add_resource = { minerals = 17500 }
+		add_resource = { food = 17500 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1400 }
+		add_resource = { rare_crystals = 900 }
+		add_resource = { exotic_gases = 900 }
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		
+		give_technology_tau = yes
+		
+		add_tradition = tr_expansion_galactic_ambition
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		add_tradition = tr_expansion_courier_network
+		add_tradition = tr_expansion_reach_for_the_stars
+		add_tradition = tr_expansion_finish     #Расширение
+		
+		add_tradition = tr_discovery_adopt     #Изучение
+		add_tradition = tr_discovery_science_division
+		add_tradition = tr_discovery_polytechnic_education
+		add_tradition = tr_discovery_faith_in_science
+		
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		#add_tradition = tr_prosperity_adopt
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_harmony_adopt     #Гармония
+		add_tradition = tr_harmony_mind_and_body
+		add_tradition = tr_harmony_the_greater_good
+		add_tradition = tr_harmony_utopian_dream
+		
+		#add_tradition = tr_unyielding_resistance_is_frugal
+		#add_tradition = tr_unyielding_never_surrender
+		#add_tradition = tr_unyielding_bulwark_of_harmony
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
+		
+		#add_tradition = tr_diplomacy_adopt     #Дипломатия
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Tau_gos
+					has_star_flag = Tau_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Tau_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Tau_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tau_fourth_sphere_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_capital
+				    add_building = building_fortress
+				    add_building = building_planetary_shield_generator				
+				    while = {
+				    	count = 16                            
+				    	create_pop = {
+				    		species = owner_main_species
+							ethos = { ethic = "ethic_xenophobe" }
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tolku_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					save_global_event_target_as = Nicassar_World
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+                    add_building = building_commercial_zone
+					add_building = building_bureaucratic_1
+					add_building = building_bureaucratic_1
+					add_building = building_autochthon_monument		
+                    add_building = building_research_lab_1
+                    add_building = building_research_lab_1					
+					add_building = building_chemical_plant					
+				    while = {
+				    	count = 11                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 26
+				    	create_pop = {
+				    		species = event_target:nicassar_species
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Vespid_World			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					save_global_event_target_as = Vespid_World
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_system_capital 
+				    add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_ministry_production
+					add_building = building_commercial_zone						
+				    while = {
+				    	count = 7 #29
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 26 #29
+				    	create_pop = {
+				    		species = event_target:vespid_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Kelshan_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					save_global_event_target_as = Kroot_World
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_factory_1	
+					add_building = building_chemical_plant
+                    add_building = building_ministry_production
+					add_building = building_archaeo_refinery
+					add_building = building_research_lab_1
+				    while = {
+				    	count = 9                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 30 
+				    	create_pop = {
+				    		species = event_target:kroot_species
+				    	}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Firios_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_fortress
+				    add_building = building_foundry_1	
+					add_building = building_archaeo_refinery
+					add_building = building_ministry_production
+					add_building = building_chemical_plant					
+				    while = {
+				    	count = 23                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 5 
+				    	create_pop = {
+				    		species = event_target:kroot_species
+				    	}
+					}
+					while = {
+				    	count = 8 
+				    	create_pop = {
+				    		species = event_target:tarellian_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:nicassar_species
+				    	}
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Viorla_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_system_capital
+					add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_military_academy
+				    add_building = building_foundry_1	
+					add_building = building_chemical_plant
+					add_building = building_ministry_production
+					add_building = building_hydroponics_farm					
+				    while = {
+				    	count = 37                            
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tau_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_system_capital 
+				    add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_commercial_zone					
+				    while = {
+				    	count = 29
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					while = {
+						count = 21
+						create_pop = {species = owner_main_species}
+					}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_ministry_production
+				    #add_building = building_foundry_1
+				    #add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_bureaucratic_1
+					add_building = building_autochthon_monument		
+                    add_building = building_research_lab_1
+					add_building = building_hydroponics_farm
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Farsight
+	id = WrWrld_game_start_tau_votann_severan.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Farsight_gos
+	}
+	immediate = {
+		save_global_event_target_as = Farsight_evnt_trgt_country
+		communication_with_all = yes
+		
+		add_resource = { energy = 45000	}
+		add_resource = { minerals = 17500 }
+		add_resource = { food = 17500 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1400 }
+		add_resource = { rare_crystals = 900 }
+		add_resource = { exotic_gases = 900 }
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		give_technology_tau = yes
+		
+		add_tradition = tr_expansion_galactic_ambition
+		add_tradition = tr_expansion_colonization_fever
+		add_tradition = tr_expansion_a_new_life
+		add_tradition = tr_expansion_courier_network
+		add_tradition = tr_expansion_reach_for_the_stars
+		add_tradition = tr_expansion_finish     #Расширение
+		
+		add_tradition = tr_discovery_adopt     #Изучение
+		add_tradition = tr_discovery_science_division
+		add_tradition = tr_discovery_polytechnic_education
+		add_tradition = tr_discovery_faith_in_science
+		
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		#add_tradition = tr_prosperity_adopt
+		add_tradition = tr_prosperity_sct
+		add_tradition = tr_prosperity_administrative_operations
+		add_tradition = tr_prosperity_public_works
+		add_tradition = tr_prosperity_interstellar_franchising
+		add_tradition = tr_prosperity_pursuit_of_profit
+		add_tradition = tr_prosperity_finish     #Процветание
+		
+		add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		#add_tradition = tr_adaptability_appropriation
+		#add_tradition = tr_adaptability_finish     #Адаптация
+		
+		add_tradition = tr_harmony_adopt     #Гармония
+		add_tradition = tr_harmony_mind_and_body
+		add_tradition = tr_harmony_the_greater_good
+		add_tradition = tr_harmony_utopian_dream
+		
+		#add_tradition = tr_unyielding_resistance_is_frugal
+		#add_tradition = tr_unyielding_never_surrender
+		#add_tradition = tr_unyielding_bulwark_of_harmony
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
+		
+		#add_tradition = tr_diplomacy_adopt     #Дипломатия
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Farsight_gos
+					has_star_flag = Farsight_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Farsight_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Farsight_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Tau_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_system_capital 
+				    add_building = building_planetary_shield_generator
+					add_building = building_fortress
+					add_building = building_commercial_zone					
+				    while = {
+				    	count = 29
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					while = {
+						count = 21
+						create_pop = {species = owner_main_species}
+					}
+					#add_building = building_system_capital
+				    #add_building = building_hall_judgment
+				    #add_building = building_hall_judgment
+				    add_building = building_ministry_production
+				    #add_building = building_foundry_1
+				    #add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_bureaucratic_1
+					add_building = building_autochthon_monument		
+                    add_building = building_research_lab_1
+					add_building = building_hydroponics_farm
+				}
+			}
+		}
+	}
+}
+
+# Votann
+country_event = {
+	id = WrWrld_game_start_tau_votann_severan.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { has_country_flag = Votann_gos }
+	
+	immediate = {
+		save_global_event_target_as = Votann_evnt_trgt_country
+		#communication_with_all = yes
+		
+		add_resource = { energy = 45000	}
+		add_resource = { minerals = 17500 }
+		add_resource = { food = 17500 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1400 }
+		add_resource = { rare_crystals = 900 }
+		add_resource = { exotic_gases = 900 }
+		
+		give_technology_votann = yes
+		add_tradition_votann = yes
+		
+		every_system = {
+			limit = {
+				has_star_flag = Votann_gos
+			}
+			if = {
+				limit = { has_star_flag = Votann_gos }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+				every_system_planet = {
+					if = {
+						limit = { is_colonizable = no }
+						create_deposits_stations = yes
+					}
+					if = {
+						limit = { 
+							is_colonizable = yes
+							has_planet_flag = Votann_world			
+						}
+						create_colony = { owner = ROOT }
+						while = { count = 3 add_district_and_planet_size_if_needed_effect = { district = district_city } }
+						add_building = building_system_capital
+						add_building = building_planetary_shield_generator
+						add_building = building_fortress
+						while = {
+							count = 16                            
+							create_pop = { species = owner_main_species }
+						}
+						while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_generator } }
+						while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_mining } }
+						while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_farming } }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Severan_Dominate
+	id = WrWrld_game_start_tau_votann_severan.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Severan_Dominate_gos
+	}
+	immediate = {
+		save_global_event_target_as = Severan_Dominate_evnt_trgt_country
+		#owner = {
+		#	country_event = { id = WrWrld_Tau_species.1 }
+		#}
+		communication_with_all = yes
+		
+		add_resource = { energy = 17500	}
+		add_resource = { minerals = 17500 }
+		add_resource = { food = 17500 }
+		add_resource = { consumer_goods = 5500 }
+		add_resource = { alloys = 4500	}
+		add_resource = { volatile_motes = 1400 }
+		add_resource = { rare_crystals = 900 }
+		add_resource = { exotic_gases = 900 }
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
+		#}
+		give_technology_imperium = yes
+		add_tradition_imperium = yes
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Severan_Dominate_gos
+					has_star_flag = Severan_Dominate_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Severan_Dominate_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Severan_Dominate_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Severan_Dominate_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    while = {
+				    	count = 32
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    while = {
+				    	count = 16
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					}
+					while = {
+						count = 6
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+				}
+			}
+		}
+	}
+}

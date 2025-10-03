@@ -120,6 +120,9 @@
  ship_prefix_worlds_aldari: "Exodites."
  ship_prefix_commorragh: "Drukhari."
  ship_prefix_tau_federation: "T'au."
+ ship_prefix_farsight_federation: "Farsight."
+ ship_prefix_leagues_of_votann: "Votann."
+ ship_prefix_severan_dominate: "Severan Dominate."
  ######################################################################################
  ship_prefix_ork: "Ork."
  # ship_prefix_blood_axes: "XYZ"
@@ -248,11 +251,17 @@
  name_night_lords: "Night Lords"
  PRESCRIPTED_adjective_night_lords: "Night Lords"
  
- name_mechanicum_cyclothrathe: "Mechanicum Cyclothrathe"
- PRESCRIPTED_adjective_mechanicum_cyclothrathe: "Mechanicum"
+ name_mechanicum_sarum: "Sarum"                         #Mechanicum Sarum
+ PRESCRIPTED_adjective_mechanicum_sarum: "Sarum"
  
- name_mechanicum_samech: "Mechanicum Samech"
- PRESCRIPTED_adjective_mechanicum_samech: "Mechanicum"
+ name_mechanicum_samech: "Samech"                       #Mechanicum Samech
+ PRESCRIPTED_adjective_mechanicum_samech: "Samech"
+ 
+ name_mechanicum_cyclothrathe: "Cyclothrathe"           #Mechanicum Cyclothrathe
+ PRESCRIPTED_adjective_mechanicum_cyclothrathe: "Cyclothrathe"
+ 
+ name_mechanicum_ordex_thaag: "Ordex-Thaag"             #Mechanicum Ordex-Thaag
+ PRESCRIPTED_adjective_mechanicum_ordex_thaag: "Ordex-Thaag"
  
  name_blood_pact: "Blood Pact"
  PRESCRIPTED_adjective_blood_pact: "Blood Pact"
@@ -296,8 +305,29 @@
  name_commorragh: "Commorragh"
  PRESCRIPTED_adjective_commorragh: "Commorragh"
  
+ name_void_dragons: "Void Dragons"
+ PRESCRIPTED_adjective_void_dragons: "Void Dragons"
+ 
+ name_sunblitz_brotherhood: "Sunblitz Brotherhood"
+ PRESCRIPTED_adjective_sunblitz_brotherhood: "Sunblitz Brotherhood"
+ 
+ name_sky_raiders: "Sky Raiders"
+ PRESCRIPTED_adjective_sky_raiders: "Sky Raiders"
+ 
+ name_children_of_thorns: "Children of Thorns"
+ PRESCRIPTED_adjective_children_of_thorns: "Children of Thorns"
+ 
  name_tau_federation: "T'au Federation"
  PRESCRIPTED_adjective_tau_federation: "T'au"
+ 
+ name_farsight_federation: "Farsight Federation"
+ PRESCRIPTED_adjective_farsight_federation: "Farsight"
+ 
+ name_leagues_of_votann: "Leagues of Votann"
+ PRESCRIPTED_adjective_leagues_of_votann: "Leagues of Votann"
+ 
+ name_severan_dominate: "Severan Dominate"
+ PRESCRIPTED_adjective_severan_dominate: "Severan Dominate"
  
  name_blood_axes: "Blood Axes"
  PRESCRIPTED_adjective_blood_axes: "Blood Axes"
@@ -439,9 +469,13 @@
  PRESCRIPTED_ruler_name_thousand_sons: "Magnus"
  PRESCRIPTED_ruler_name_emperors_children: "Fulgrim"
  PRESCRIPTED_ruler_name_word_bearers: "Lorgar"
+ PRESCRIPTED_ruler_name_iron_warriors: "Perturabo"
  PRESCRIPTED_ruler_name_alpha_legion: "Alpharius"
- PRESCRIPTED_ruler_name_mechanicum_cyclothrathe: "Spurius Cepasius"
+ PRESCRIPTED_ruler_name_night_lords: "Zso Sahaal"
+ PRESCRIPTED_ruler_name_mechanicum_sarum: "Redjak"
  PRESCRIPTED_ruler_name_mechanicum_samech: "Koris Grigoris"
+ PRESCRIPTED_ruler_name_mechanicum_cyclothrathe: "Spurius Cepasius"
+ PRESCRIPTED_ruler_name_mechanicum_ordex_thaag: "Astamorkhus Grine-Theta"
  PRESCRIPTED_ruler_name_blood_pact: "Urlock"
  PRESCRIPTED_ruler_name_admonition: "Urmal"
  PRESCRIPTED_ruler_name_land_chaos: "Gall Hattius"
@@ -453,13 +487,23 @@
  PRESCRIPTED_ruler_name_stigmartus: "Elak Sarda"
  PRESCRIPTED_ruler_name_penumbral: "Ivano Karosan"
  # Aeldar и Tau #
- ruler_title_leader_male: "Leader"
- ruler_title_leader_female: "Leader"
+ ruler_title_leader_male: "Ruler"
+ ruler_title_leader_female: "Ruler"
+ ruler_title_ruler_lord_male: "Lord"
+ ruler_title_ruler_lord_female: "Lord"
+ ruler_title_archont: "Archont"
  PRESCRIPTED_ruler_name_eldar: "Eldrad Ulthran"
  PRESCRIPTED_ruler_name_ynnari: "Yvraine"
  PRESCRIPTED_ruler_name_aldari: "Hephanir"
- PRESCRIPTED_ruler_name_commorragh: "Arhra"
+ PRESCRIPTED_ruler_name_commorragh: "Asdrubael Vect"
+ PRESCRIPTED_ruler_name_Saaraina: "Saaraina"
+ PRESCRIPTED_ruler_name_Phaendris: "Phaendris"
+ PRESCRIPTED_ruler_name_Ulthyr_Ellarion: "Ulthyr Ellarion"
+ PRESCRIPTED_ruler_name_mother_of_shadows: "Mother of shadows"
  PRESCRIPTED_ruler_name_tau: "Aun'Va"
+ PRESCRIPTED_ruler_name_farsight: "Shas'O Vior'la Shovah Kais Mont'yr"
+ PRESCRIPTED_ruler_name_votann: "Monac Nick"
+ PRESCRIPTED_ruler_name_severan_dominate: "Severus XIII"
  # Orks #
  ruler_title_warboss: "Warboss"
  PRESCRIPTED_ruler_name_blood_axes: "Gorsnik Magash"
@@ -528,13 +572,15 @@
  planet_name_plague_planet: "Plague Planet"
  planet_name_bodt: "Bodt"
  planet_name_sortiarius: "Sortiarius"
- planet_name_fulgrimworld: "Fulgrimworld"
+ planet_name_callax: "Callax"
  planet_name_sicarus: "Sicarus"
  planet_name_silent: "Silent"
  planet_name_nightmare: "Nightmare"
  planet_name_medrengard: "Medrengard"
- planet_name_cyclothrathe: "Cyclothrathe"
+ planet_name_sarum: "Sarum"
  planet_name_samech: "Samech"
+ planet_name_cyclothrathe: "Cyclothrathe"
+ planet_name_ordex_thaag: "Ordex-Thaag"
  planet_name_gereon: "Gereon"
  planet_name_atoma_prime: "Atoma Prime"
  planet_name_carpathia: "Carpathia"
@@ -549,7 +595,14 @@
  planet_name_iyanden: "Iathglas"
  planet_name_tirathain: "Tirathain"
  planet_name_commorragh: "Commorragh"
+ planet_name_vinors: "Vinors"
+ planet_name_eldanesh: "Eldanesh"
+ planet_name_hellion: "Hellion"
+ planet_name_agrin: "Agrin"
  planet_name_tau: "T'au"
+ planet_name_farsight: "Tinekla"
+ planet_name_votann: "Crimson Gulf"
+ planet_name_severan_dominate: "Karacallia"
  planet_name_calverna: "Calverna"
  planet_name_Cornucopia: "Cornucopia"
  planet_name_hephastine: "Hephastine"
@@ -616,8 +669,10 @@
  system_name_silentia: "Silentia"
  system_name_nightmare: "Nightmare"
  system_name_medrengard: "Medrengard"
- system_name_cyclothrathe: "Cyclothrathe"
+ system_name_sarum: "Sarum"
  system_name_samech: "Samech"
+ system_name_cyclothrathe: "Cyclothrathe"
+ system_name_ordex_thaag: "Ordex-Thaag"
  system_name_gereon: "Gereon"
  system_name_moebian: "Moebian"
  system_name_carpathia: "Carpathia"

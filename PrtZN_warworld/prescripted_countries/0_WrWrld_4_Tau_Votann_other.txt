@@ -25,13 +25,14 @@ Tau_Federation = {
 	room = "personality_migrating_flock_room"
 	
 	
-	authority = "auth_democratic"
+	authority="auth_oligarchic"
+	government="gov_communal_parity"
 	civics = { "civic_shared_burden" "civic_free_haven" "civic_meritocracy" }
-	government = "gov_communal_parity"
 	
-	ethic = "ethic_fanatic_egalitarian"
-	ethic = "ethic_xenophile"
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_militarist"
 	ethic = "ethic_materialist"
+	ethic = "ethic_xenophile"
 	
 	origin = "origin_Tau"
 	flag = empire_the_Tau_Federation
@@ -84,77 +85,29 @@ Tau_Federation = {
 	}
 	spawn_as_fallen = no
 }
-"Федерация Фарсайта"=
-{
-	key="Федерация Фарсайта"
-	ship_prefix=
-	{
-		key="Тау."
-		literal=yes
+Farsight_federation = {
+	name = "name_farsight_federation"
+	adjective = "PRESCRIPTED_adjective_farsight_federation"
+	ship_prefix = "ship_prefix_farsight_federation"
+	species = {
+		class = "REP"
+		portrait = "rep2"
+		name = "PRESCRIPTED_species_name_tau"
+		plural ="PRESCRIPTED_species_plural_tau"
+		adjective = "PRESCRIPTED_species_adjective_tau"
+		name_list = "REP1"
+		trait = "trait_intelligent"
+		trait = "trait_weak"
+		trait = "trait_nomadic"
+		trait = "trait_charismatic"
+		trait = "trait_solitary"
+		trait = "trait_fleeting"
 	}
-	species=
-	{
-		class="REP"
-		portrait="rep2"
-		species_name=
-		{
-			key="Тау"
-			literal=yes
-		}
-		species_plural=
-		{
-			key="Тау"
-			literal=yes
-		}
-		species_adjective=
-		{
-			key="Тауситск"
-			literal=yes
-		}
-		name_list="REP1"
-		gender=not_set
-		trait="trait_intelligent"
-		trait="trait_weak"
-		trait="trait_nomadic"
-		trait="trait_charismatic"
-		trait="trait_solitary"
-		trait="trait_fleeting"
-	}
-	name=
-	{
-		key="Федерация Фарсайта"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Федерация Фарсайта"
-					literal=yes
-				}
-			}
- 
-		}
-	}
-	authority="auth_democratic"
+	authority="auth_oligarchic"
 	government="gov_communal_parity"
-	planet_name=
-	{
-		key="не знаю ещё"
-		literal=yes
-	}
-	planet_class="pc_arid"
-	system_name=
-	{
-		key="не знаю еще"
-		literal=yes
-	}
+	planet_name = "planet_name_farsight"
+	planet_class = "pc_arid"
+	system_name = "planet_name_farsight"
 	initializer=""
 	graphical_culture="reptilian_01"
 	city_graphical_culture="tau_01"
@@ -181,14 +134,7 @@ Tau_Federation = {
 	ruler=
 	{
 		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Фарсайт"
-				literal=yes
-			}
-		}
+		name = "PRESCRIPTED_ruler_name_farsight"
 		portrait="rep2"
 		texture=3
 		evolution_mask=0
@@ -201,26 +147,23 @@ Tau_Federation = {
 	ignore_portrait_duplication=no
 	room="personality_migrating_flock_room"
 	spawn_enabled=always
-	ethic="ethic_fanatic_egalitarian"
-	ethic="ethic_xenophile"
-	ethic="ethic_materialist"
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_materialist"
+	ethic = "ethic_xenophile"
 	civics=
 	{
 		"civic_shared_burden"
 		"civic_free_haven"
 		"civic_meritocracy"
 	}
-	origin="origin_default"
+	origin="origin_farsight"
 	flag = empire_the_Farsight
 }
-"Лиги Вотанна"=
-{
-	key="Лиги Вотанна"
-	ship_prefix=
-	{
-		key="Вотанн"
-		literal=yes
-	}
+Leagues_of_Votann = {
+	name = "name_leagues_of_votann"
+	adjective = "PRESCRIPTED_adjective_leagues_of_votann"
+	ship_prefix = "ship_prefix_leagues_of_votann"
 	species=
 	{
 		class="HUM"
@@ -248,44 +191,14 @@ Tau_Federation = {
 		trait="trait_quarrelsome"
 		trait="trait_slow_learners"
 	}
-	name=
-	{
-		key="Лиги Вотанна"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Лиги Вотанна"
-					literal=yes
-				}
-			}
- 
-		}
-	}
 	authority="auth_oligarchic"
 	government="gov_executive_committee"
-	planet_name=
-	{
-		key="Crimson Gulf"
-		literal=yes
-	}
-	planet_class="pc_alpine"
-	system_name=
-	{
-		key="Crimson Gulf"
-		literal=yes
-	}
+	planet_name = "planet_name_votann"
+	planet_class = "pc_alpine"
+	system_name = "planet_name_votann"
 	initializer=""
 	graphical_culture="mammalian_01"
-	city_graphical_culture="slaanesh_01"
+	city_graphical_culture="reptilian_01"
 	empire_flag=
 	{
 		icon=
@@ -309,14 +222,7 @@ Tau_Federation = {
 	ruler=
 	{
 		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Монак Ник"
-				literal=yes
-			}
-		}
+		name = "PRESCRIPTED_ruler_name_votann"
 		portrait="humanoid_hp_11"
 		texture=0
 		evolution_mask=0
@@ -342,73 +248,27 @@ Tau_Federation = {
 	origin="origin_mechanists"
 	flag = empire_the_Votann
 }
-"Доминат Северан"=
-{
-	key="Доминат Северан"
-	ship_prefix=
-	{
-		key="Северан."
-		literal=yes
-	}
+Severan_Dominate = {
+	name = "name_severan_dominate"
+	adjective = "PRESCRIPTED_adjective_severan_dominate"
+	ship_prefix = "ship_prefix_severan_dominate"
 	species=
 	{
 		class="ANCIENT"
 		portrait="space_romans"
-		species_name=
-		{
-			key="Человек"
-			literal=yes
-		}
-		species_plural=
-		{
-			key="Люди"
-			literal=yes
-		}
-		species_adjective=
-		{
-			key="Человеческ"
-			literal=yes
-		}
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
 		name_list="HUMAN3"
 		gender=not_set
 		trait="trait_human"
 	}
-	name=
-	{
-		key="Доминат Северан"
-		literal=yes
-	}
-	adjective=
-	{
-		key="%ADJ%"
-		variables=
-		{
-			
-			{
-				key="adjective"
-				value=
-				{
-					key="Доминат Северан"
-					literal=yes
-				}
-			}
- 
-		}
-	}
 	authority="auth_imperial"
 	government="gov_divine_empire"
 	advisor_voice_type="l_authoritarian"
-	planet_name=
-	{
-		key="Культх"
-		literal=yes
-	}
-	planet_class="pc_continental"
-	system_name=
-	{
-		key="Культх"
-		literal=yes
-	}
+	planet_name = "planet_name_severan_dominate"
+	planet_class = "pc_continental"
+	system_name = "planet_name_severan_dominate"
 	initializer=""
 	graphical_culture="wain_05"
 	city_graphical_culture="romaneagles_01"
@@ -435,39 +295,32 @@ Tau_Federation = {
 	ruler=
 	{
 		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Северус XIII"
-				literal=yes
-			}
-		}
+		name = "PRESCRIPTED_ruler_name_severan_dominate"
 		portrait="space_romans_male_01"
 		texture=0
 		evolution_mask=0
 		attachment=88
 		clothes=4
-		ruler_title=
-		{
-			key="Император"
-			literal=yes
-		}
-		heir_title=
-		{
-			key="Наследник"
-			literal=yes
-		}
-		ruler_title_female=
-		{
-			key="Императрица"
-			literal=yes
-		}
-		heir_title_female=
-		{
-			key="Наследница"
-			literal=yes
-		}
+		#ruler_title=
+		#{
+		#	key="Император"
+		#	literal=yes
+		#}
+		#heir_title=
+		#{
+		#	key="Наследник"
+		#	literal=yes
+		#}
+		#ruler_title_female=
+		#{
+		#	key="Императрица"
+		#	literal=yes
+		#}
+		#heir_title_female=
+		#{
+		#	key="Наследница"
+		#	literal=yes
+		#}
 		trait="trait_ruler_charismatic"
 		leader_class="official"
 	}

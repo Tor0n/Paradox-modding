@@ -1,0 +1,481 @@
+namespace = WrWrld_game_start
+namespace = WrWrld_game_start_small_xenos
+
+@create_pop_watch_fort_station = 15
+
+country_event = { #Xenos Texian
+	id = WrWrld_game_start_small_xenos.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Texian_gos
+	}
+	immediate = {
+		save_global_event_target_as = Texian_evnt_trgt_country
+		communication_with_all = yes
+		#
+		add_resource = { energy = 18900	}
+		add_resource = { minerals = 9500 }
+		add_resource = { food = 9500 }
+		add_resource = { consumer_goods = 6500 }
+		add_resource = { alloys = 14500	}
+		
+		give_technology_texian = yes
+		
+		add_tradition = tr_mercantile_trickle_up_economics
+		add_tradition = tr_mercantile_adaptive_economic_policies
+		add_tradition = tr_mercantile_commercial_enterprise
+		add_tradition = tr_mercantile_marketplace_of_better_ideas
+		add_tradition = tr_mercantile_insider_trading
+		add_tradition = tr_mercantile_finish     #Меркантилизм
+		
+		every_system = {
+			limit = {
+				has_star_flag = Texian_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = Texian_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Xenos Qorl
+	id = WrWrld_game_start_small_xenos.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Qorl_gos
+	}
+	immediate = {
+		save_global_event_target_as = Qorl_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start_small_xenos.102 days = 4 }
+		}
+		#
+		add_resource = { energy = 9000	}
+		add_resource = { alloys = 12500 }
+		
+		give_technology_qorl = yes
+		
+		add_tradition = tr_synchronicity_adopt
+		#add_tradition = tr_synchronicity_adopt
+		#add_tradition = tr_synchronicity_adopt
+	}
+}
+country_event = { #Xenos Slogth
+	id = WrWrld_game_start_small_xenos.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Slogth_gos
+	}
+	immediate = {
+		save_global_event_target_as = Slogth_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start_small_xenos.103 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 } #узнать что это
+		}
+		#add_resource = { energy = 25000	}
+		add_resource = { alloys = 14000	}
+		
+		give_technology_slogth = yes
+		
+		add_tradition = tr_domination_adopt
+		
+		every_system = {
+			limit = {
+				has_star_flag = Slogth_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = Slogth_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Xenos Rak'Gol
+	id = WrWrld_game_start_small_xenos.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = RakGol_gos
+	}
+	immediate = {
+		save_global_event_target_as = RakGol_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start_small_xenos.104 days = 4 }
+		}
+		add_resource = { energy = 5000	}
+		add_resource = { alloys = 14000	}
+		
+		give_technology_rakgol = yes
+		
+		add_tradition = tr_cybernetics_adopt
+		add_tradition = tr_supremacy_adopt
+		
+		every_system = {
+			limit = {
+				has_star_flag = RakGol_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = RakGol_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Xenos Barghesi
+	id = WrWrld_game_start_small_xenos.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Barghesi_gos
+	}
+	immediate = {
+		save_global_event_target_as = Barghesi_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start_small_xenos.105 days = 4 }
+		}
+		add_resource = { energy = 5000	}
+		add_resource = { alloys = 12500	}
+		give_technology_barghesi = yes
+
+		add_tradition = tr_cybernetics_adopt
+		add_tradition = tr_supremacy_adopt
+		every_system = {
+			limit = {
+				has_star_flag = Barghesi_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = Barghesi_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Xenos Strixis
+	id = WrWrld_game_start_small_xenos.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Strixis_gos
+	}
+	immediate = {
+		save_global_event_target_as = Strixis_evnt_trgt_country
+		communication_with_all = yes
+		#
+		#add_resource = { energy = 25000 }
+		add_resource = { alloys = 7200 }
+		give_technology_strixis = yes
+		
+		add_tradition = tr_mercantile_trickle_up_economics
+		add_tradition = tr_mercantile_adaptive_economic_policies
+		add_tradition = tr_mercantile_commercial_enterprise
+		add_tradition = tr_mercantile_marketplace_of_better_ideas
+		add_tradition = tr_mercantile_insider_trading
+		add_tradition = tr_mercantile_finish     #Меркантилизм
+		
+		every_system = {
+			limit = {
+				has_star_flag = Strixis_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = Strixis_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Xenos Sardonit
+	id = WrWrld_game_start_small_xenos.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Sardonit_gos
+	}
+	immediate = {
+		save_global_event_target_as = Sardonit_evnt_trgt_country
+		communication_with_all = yes
+		#
+		#add_resource = { energy = 25000	}
+		add_resource = { alloys = 9000	}
+		give_technology_sardonit = yes
+		add_tradition = tr_discovery_adopt
+		every_system = {
+			limit = {
+				has_star_flag = Sardonit_gos
+			}
+			if = {
+				limit = {
+				    has_star_flag = Sardonit_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Cythor_Fiends
+	id = WrWrld_game_start_small_xenos.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Cythor_Fiends_gos
+	}
+	immediate = {
+		save_global_event_target_as = Cythor_Fiends_evnt_trgt_country
+		communication_with_all = yes
+		add_resource = { energy = 5000 }
+		add_resource = { minerals = 3000 }
+		#add_resource = { food = 100 }
+		add_resource = { consumer_goods = 1000 }
+		add_resource = { alloys = 10000 }
+		add_resource = { volatile_motes = 100 }
+		add_resource = { rare_crystals = 1000 }
+		add_resource = { exotic_gases = 100 }
+		# нижние две строки смотри в common\scripted_effects\WrWrld_start_of_game_effects
+		# оба скриптовых эффекта описаны там, просто дублируются строки в обычном эвенте
+		give_technology_cythor_fiends = yes #техи
+		add_tradition_cythor_fiends = yes #традиции
+		
+		every_system = {
+			#в целом других систем у них и нет
+			limit = {
+				OR = {
+					has_star_flag = Cythor_Fiends_gos
+					has_star_flag = Cythor_Fiends_gos_station
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+			}
+		}
+	}
+}
+country_event = { #Qorl
+	id = WrWrld_game_start_small_xenos.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Qorl_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Slogth
+	id = WrWrld_game_start_small_xenos.103
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Slogth_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Barbed_Chalice_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Rakgol
+	id = WrWrld_game_start_small_xenos.104
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = RakGol_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Mechanicum_Cyclothrathe_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Barghesi
+	id = WrWrld_game_start_small_xenos.105
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Barghesi_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Stigmartus_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}

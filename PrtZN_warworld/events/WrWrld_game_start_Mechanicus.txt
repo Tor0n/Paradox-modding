@@ -16,9 +16,6 @@ country_event = { #Mechanicus
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.201 days = 2 }
-		#}
-		#owner = {
 		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
 		#}
 		communication_with_all = yes
@@ -32,45 +29,6 @@ country_event = { #Mechanicus
 		
 		give_technology_mechanicus = yes
 		add_tradition_mechanicus = yes
-		
-		#modify_species = {
-		#	species = this
-		#	add_trait = trait_auto_mod_cyborg #trait_cyborg_ritualistic_implants
-		#	#add_traits_at_start_of_list = yes
-		#}
-		#change_species = event_target:mechanicus_species
-		
-		modify_species = {
-			species = owner_main_species
-			#name = Сервитор			#species_name_servitor
-			#plural = Сервиторы		#species_plural_servitor
-			#adjective = Сервиторыск	#species_adjective_servitor
-			add_trait = trait_nerve_stapled
-			#add_trait = trait_limited_cybernetic
-			add_trait = trait_auto_mod_cyborg #trait_auto_mod_biological trait_auto_mod_cyborg
-			#delete_trait = trait_cybernetic
-			effect = { save_global_event_target_as = mecha_servitor_species }
-		}
-		modify_species = {
-			species = owner_main_species #this
-			#add_trait = trait_cybernetic
-			#add_trait = trait_cyborg_ritualistic_implants
-			add_trait = trait_cyborg_enhanced_memory
-			add_trait = trait_cyborg_learning_algorithms
-			add_trait = trait_cyborg_integrated_weaponry
-			add_trait = trait_cyborg_efficient_processors
-			add_trait = trait_cyborg_streamlined_protocols
-			#add_traits_at_start_of_list = yes
-			effect = { save_global_event_target_as = tech_priests_species }
-		}
-		
-		# owner_main_species = {
-			# rename_species = {
-				# name = random #PRESCRIPTED_species_name_mechanicus
-				#plural = PRESCRIPTED_species_plural_mechanicus
-				#adjective = PRESCRIPTED_species_adjective_humans1
-			# }
-		# }
 
 		every_system = {
 			limit = {
@@ -144,15 +102,11 @@ country_event = { #Mechanicus
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    #while = {
-				    #	count = 65
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
+				    while = {
 				    	count = 65
-				    	create_pop = { species = event_target:tech_priests_species }
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 					while = {
 						count = 7
@@ -181,18 +135,10 @@ country_event = { #Mechanicus
 				    add_building = building_planetary_shield_generator	
 					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 4
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 8
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 5
@@ -218,19 +164,11 @@ country_event = { #Mechanicus
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 23
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -248,19 +186,11 @@ country_event = { #Mechanicus
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 18
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -284,18 +214,10 @@ country_event = { #Mechanicus
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 2
+				    	count = 12
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 4 #3
@@ -325,18 +247,10 @@ country_event = { #Mechanicus
 				    #add_building = building_archaeo_refinery
 				    add_building = building_slave_processing					
 				    while = {
-				    	count = 20 #было 40
+				    	count = 40 
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 8
@@ -360,9 +274,6 @@ country_event = { #Ryza
 		owner = {
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.202 days = 2 }
-		#}
 		#owner = {
 		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
 		#}
@@ -451,15 +362,11 @@ country_event = { #Ryza
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    #while = {
-				    #	count = 65
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
+				    while = {
 				    	count = 65
-				    	create_pop = { species = event_target:tech_priests_species }
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 					while = {
 						count = 7
@@ -488,18 +395,10 @@ country_event = { #Ryza
 				    add_building = building_planetary_shield_generator	
 					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 4
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 8
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 5
@@ -525,19 +424,11 @@ country_event = { #Ryza
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 23
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -555,19 +446,11 @@ country_event = { #Ryza
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 18
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -591,18 +474,10 @@ country_event = { #Ryza
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 2
+				    	count = 12
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 4 #3
@@ -632,18 +507,10 @@ country_event = { #Ryza
 				    #add_building = building_archaeo_refinery
 				    add_building = building_slave_processing					
 				    while = {
-				    	count = 20 #было 40
+				    	count = 40 
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 8
@@ -667,9 +534,6 @@ country_event = { #Metalica
 		owner = {
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.202 days = 2 }
-		#}
 		#owner = {
 		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
 		#}
@@ -757,15 +621,11 @@ country_event = { #Metalica
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    #while = {
-				    #	count = 65
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
+				    while = {
 				    	count = 65
-				    	create_pop = { species = event_target:tech_priests_species }
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 					while = {
 						count = 7
@@ -794,18 +654,10 @@ country_event = { #Metalica
 				    add_building = building_planetary_shield_generator	
 					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 4
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 8
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 5
@@ -831,19 +683,11 @@ country_event = { #Metalica
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 23
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -861,19 +705,11 @@ country_event = { #Metalica
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 18
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -897,18 +733,10 @@ country_event = { #Metalica
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 2
+				    	count = 12
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 4 #3
@@ -938,18 +766,10 @@ country_event = { #Metalica
 				    #add_building = building_archaeo_refinery
 				    add_building = building_slave_processing					
 				    while = {
-				    	count = 20 #было 40
+				    	count = 40 
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 8
@@ -973,9 +793,6 @@ country_event = { #Graia
 		owner = {
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.204 days = 2 }
-		#}
 		#owner = {
 		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
 		#}
@@ -1063,15 +880,11 @@ country_event = { #Graia
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    #while = {
-				    #	count = 65
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
+				    while = {
 				    	count = 65
-				    	create_pop = { species = event_target:tech_priests_species }
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 					while = {
 						count = 7
@@ -1100,18 +913,10 @@ country_event = { #Graia
 				    add_building = building_planetary_shield_generator	
 					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 4
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 8
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 5
@@ -1137,19 +942,11 @@ country_event = { #Graia
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 23
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -1167,19 +964,11 @@ country_event = { #Graia
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 18
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -1203,18 +992,10 @@ country_event = { #Graia
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 2
+				    	count = 12
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 4 #3
@@ -1244,18 +1025,10 @@ country_event = { #Graia
 				    #add_building = building_archaeo_refinery
 				    add_building = building_slave_processing					
 				    while = {
-				    	count = 20 #было 40
+				    	count = 40 
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 8
@@ -1279,9 +1052,6 @@ country_event = { #Lucius
 		owner = {
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.205 days = 2 }
-		#}
 		#owner = {
 		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
 		#}
@@ -1369,15 +1139,11 @@ country_event = { #Lucius
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    #while = {
-				    #	count = 65
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
+				    while = {
 				    	count = 65
-				    	create_pop = { species = event_target:tech_priests_species }
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 					while = {
 						count = 7
@@ -1406,18 +1172,10 @@ country_event = { #Lucius
 				    add_building = building_planetary_shield_generator	
 					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 4
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 8
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 5
@@ -1443,19 +1201,11 @@ country_event = { #Lucius
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 23
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -1473,19 +1223,11 @@ country_event = { #Lucius
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 18
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -1509,18 +1251,10 @@ country_event = { #Lucius
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 2
+				    	count = 12
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 4 #3
@@ -1550,18 +1284,10 @@ country_event = { #Lucius
 				    #add_building = building_archaeo_refinery
 				    add_building = building_slave_processing					
 				    while = {
-				    	count = 20 #было 40
+				    	count = 40 
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 8
@@ -1585,9 +1311,6 @@ country_event = { #Triplex_Phall
 		owner = {
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.206 days = 2 }
-		#}
 		#owner = {
 		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
 		#}
@@ -1675,15 +1398,11 @@ country_event = { #Triplex_Phall
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    #while = {
-				    #	count = 65
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
+				    while = {
 				    	count = 65
-				    	create_pop = { species = event_target:tech_priests_species }
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
 					}
 					while = {
 						count = 7
@@ -1712,18 +1431,10 @@ country_event = { #Triplex_Phall
 				    add_building = building_planetary_shield_generator	
 					add_building = building_coordinated_fulfillment_center_1					
 				    while = {
-				    	count = 4
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 8
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 5
@@ -1749,19 +1460,11 @@ country_event = { #Triplex_Phall
 				    add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 28
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 23
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -1779,19 +1482,11 @@ country_event = { #Triplex_Phall
 				    add_building = building_capital   	
 				    add_building = building_precinct_house 
 				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 3
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
 					while = {
-				    	count = 2
+				    	count = 23
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 18
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 12
@@ -1815,18 +1510,10 @@ country_event = { #Triplex_Phall
 				    add_building = building_energy_grid				
 					#add_building = building_stronghold	
 					while = {
-				    	count = 1
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 2
+				    	count = 12
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 9
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 4 #3
@@ -1856,18 +1543,10 @@ country_event = { #Triplex_Phall
 				    #add_building = building_archaeo_refinery
 				    add_building = building_slave_processing					
 				    while = {
-				    	count = 20 #было 40
+				    	count = 40 
 				    	create_pop = {
 				    		species = owner_main_species
 				    	}
-					}
-					while = {
-				    	count = 16
-				    	create_pop = { species = event_target:tech_priests_species }
-					}
-					while = {
-				    	count = 4
-				    	create_pop = { species = event_target:mecha_servitor_species }
 					}
 					while = {
 						count = 8
@@ -1889,94 +1568,6 @@ country_event = { #Imperium
 	immediate = {
 		communication_with_all = yes
 		#для Фикса попов
-	}
-}
-
-country_event = { #Imperium
-	id = WrWrld_game_start_mechanicus.201
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Mechanicus_gos
-	}
-	immediate = {
-		communication_with_all = yes
-		# Вассализация
-		set_subject_of = {
-			who = event_target:Imperium_evnt_trgt_country
-			preset = preset_mechanicus
-		}
-	}
-}
-country_event = { #Imperium
-	id = WrWrld_game_start_mechanicus.202
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		OR = {
-			has_country_flag = Ryza_gos
-			has_country_flag = Metalica_gos
-		}
-	}
-	immediate = {
-		communication_with_all = yes
-		# Вассализация
-		set_subject_of = {
-			who = event_target:Ultima_Segmentum_evnt_trgt_country
-			preset = preset_mechanicus
-		}
-	}
-}
-country_event = { #Imperium
-	id = WrWrld_game_start_mechanicus.204
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Graia_gos
-	}
-	immediate = {
-		communication_with_all = yes
-		# Вассализация
-		set_subject_of = {
-			who = event_target:Segmentum_Tempestus_evnt_trgt_country
-			preset = preset_mechanicus
-		}
-	}
-}
-country_event = { #Imperium
-	id = WrWrld_game_start_mechanicus.205
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Lucius_gos
-	}
-	immediate = {
-		communication_with_all = yes
-		# Вассализация
-		set_subject_of = {
-			who = event_target:Segmentum_Obscurus_evnt_trgt_country
-			preset = preset_mechanicus
-		}
-	}
-}
-country_event = { #Imperium
-	id = WrWrld_game_start_mechanicus.206
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Triplex_Phall_gos
-	}
-	immediate = {
-		communication_with_all = yes
-		# Вассализация
-		set_subject_of = {
-			who = event_target:Eastern_Fringe_evnt_trgt_country
-			preset = preset_mechanicus
-		}
+		change_dominant_species = { species = event_target:Mechanicus_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }

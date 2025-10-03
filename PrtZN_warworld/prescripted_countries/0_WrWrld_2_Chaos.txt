@@ -315,9 +315,9 @@ Emperors_Children = {
 	
 	flag = empire_the_Emperors_Children
 	
-	planet_name = "planet_name_fulgrimworld"
+	planet_name = "planet_name_callax"
 	planet_class = "pc_continental"
-	system_name = "system_name_fulgrimia"
+	system_name = "planet_name_callax"
 	#initializer = ""
 	
 	graphical_culture = "chaos_01"
@@ -471,24 +471,13 @@ Iron_Warriors = {
 	ruler=
 	{
 		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Пертурабо"
-				literal=yes
-			}
-		}
+		name = "PRESCRIPTED_ruler_name_iron_warriors"
 		portrait="xevil_male_03"
 		texture=0
 		evolution_mask=0
 		attachment=6
 		clothes=17
-		ruler_title=
-		{
-			key="Примарх"
-			literal=yes
-		}
+		ruler_title = "ruler_title_astartes"
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -554,24 +543,17 @@ Night_Lords = {
 	ruler=
 	{
 		gender=male
-		name=
-		{
-			full_names=
-			{
-				key="Конрад Кёрз"
-				literal=yes
-			}
-		}
+		name = "PRESCRIPTED_ruler_name_night_lords"
 		portrait="xevil_male_04"
 		texture=0
 		evolution_mask=0
 		attachment=5
 		clothes=8
-		ruler_title=
-		{
-			key="Примарх"
-			literal=yes
-		}
+		#ruler_title=
+		#{
+		#	key="Примарх"
+		#	literal=yes
+		#}
 		trait="trait_ruler_warlike"
 		leader_class="commander"
 	}
@@ -660,6 +642,155 @@ Alpha_Legion = {
 	advisor_voice_type = "l_militarist"
 	spawn_as_fallen = no
 }
+Mechanicum_Sarum = {
+	name = "name_mechanicum_sarum"
+	adjective = "PRESCRIPTED_adjective_mechanicum_sarum"
+	spawn_as_fallen = no
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_chaos"
+	}
+	
+	room = "cybernetics_room"
+	
+	authority = "auth_corporate"
+	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_permanent_employment" }
+	government = "gov_megacorporation"
+	origin = "origin_mechanicum"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_materialist"
+	ethic = "ethic_xenophobe"
+	
+	flag = empire_the_Mechanicum_Sarum
+	
+	planet_name = "planet_name_sarum"
+	planet_class = "pc_continental"
+	system_name = "system_name_sarum"
+	#initializer = ""
+	
+	graphical_culture = "chaos_01"
+	city_graphical_culture = "chaos_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "flag_mechanicum_2.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_19.dds"
+		}
+		colors = {
+			"intense_red"
+			"dark_brown"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_mechanicum_sarum"
+		gender = male
+		portrait="xevil_male_03"
+		texture=0
+		evolution_mask=0
+		attachment=12
+		clothes=4
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		#heir_title_female = "Святая"
+		trait="trait_ruler_charismatic"
+		leader_class="official"
+	}
+	advisor_voice_type = "l_the_technocrat"
+}
+Mechanicum_Samech = {
+	name = "name_mechanicum_samech"
+	adjective = "PRESCRIPTED_adjective_mechanicum_samech"
+	spawn_as_fallen = no
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_cybernetic"
+		trait = "trait_chaos"
+	}
+	
+	room = "cybernetics_room"
+	
+	authority = "auth_corporate"
+	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_indentured_assets" } #"civic_relentless_industrialists" "civic_cutthroat_politics" "civic_corvee_system"
+	government = "gov_megacorporation"
+	origin = "origin_mechanicum"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_materialist"
+	
+	flag = empire_the_Mechanicum_Samech
+	
+	planet_name = "planet_name_samech"
+	planet_class = "pc_continental"
+	system_name = "system_name_samech"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "chaos_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "flag_mechanicum_1.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_19.dds"
+		}
+		colors = {
+			"dark_brown"
+			"red"
+			"black" #black
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_mechanicum_samech"
+		gender = male
+		portrait = "xevil_male_05"
+		texture = 0
+		evolution_mask = 0
+		attachment = 8
+		clothes = 9
+		ruler_title = "ruler_title_mechanicus"
+		ruler_title_female = "ruler_title_mechanicus"
+		#heir_title_female = "Святая"
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_the_technocrat"
+}
 Mechanicum_Cyclothrathe = {
 	name = "name_mechanicum_cyclothrathe"
 	adjective = "PRESCRIPTED_adjective_mechanicum_cyclothrathe"
@@ -682,9 +813,9 @@ Mechanicum_Cyclothrathe = {
 	
 	room = "cybernetics_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_relentless_industrialists" "civic_technocracy" "civic_shadow_council" }
-	government = "gov_technocratic_dictatorship"
+	authority = "auth_corporate"
+	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_task_delegation_corporate" } #"civic_relentless_industrialists" "civic_technocracy" "civic_shadow_council"
+	government = "gov_megacorporation"
 	origin = "origin_mechanicum"
 	
 	ethic = "ethic_authoritarian"
@@ -704,7 +835,7 @@ Mechanicum_Cyclothrathe = {
 	empire_flag = {
 		icon = {
 			category = "Warhammer_Chaos"
-			file = "flag_chaos_28.dds"
+			file = "flag_mechanicum_Cyclothrathe.dds"
 		}
 		background = {
 			category = "backgrounds"
@@ -734,9 +865,9 @@ Mechanicum_Cyclothrathe = {
 	advisor_voice_type = "l_the_technocrat"
 	spawn_as_fallen = no
 }
-Mechanicum_Samech = {
-	name = "name_mechanicum_samech"
-	adjective = "PRESCRIPTED_adjective_mechanicum_samech"
+Mechanicum_Ordex_Thaag = {
+	name = "name_mechanicum_ordex_thaag"
+	adjective = "PRESCRIPTED_adjective_mechanicum_ordex_thaag"
 	spawn_as_fallen = no
 	spawn_enabled = always
 	ignore_portrait_duplication = no
@@ -757,54 +888,54 @@ Mechanicum_Samech = {
 	
 	room = "cybernetics_room"
 	
-	authority = "auth_dictatorial"
-	civics = { "civic_relentless_industrialists" "civic_cutthroat_politics" "civic_corvee_system" }
-	government = "gov_totalitarian_regime"
+	authority = "auth_corporate"
+	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_corporate_scavengers" }
+	government = "gov_megacorporation"
 	origin = "origin_mechanicum"
 	
 	ethic = "ethic_authoritarian"
-	ethic = "ethic_militarist"
-	ethic = "ethic_fanatic_materialist"
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_materialist"
 	
-	flag = empire_the_Mechanicum_Samech
+	flag = empire_the_Mechanicum_Ordex_Thaag
 	
-	planet_name = "planet_name_samech"
+	planet_name = "planet_name_ordex_thaag"
 	planet_class = "pc_continental"
-	system_name = "system_name_samech"
+	system_name = "system_name_ordex_thaag"
 	#initializer = ""
 	
-	graphical_culture = "chaos_02"
+	graphical_culture = "chaos_01"
 	city_graphical_culture = "chaos_01" #necroid_01
 	
 	empire_flag = {
 		icon = {
 			category = "Warhammer_Chaos"
-			file = "flag_mechanicus_26.dds"
+			file = "flag_mechanicum_3.dds"
 		}
 		background = {
 			category = "backgrounds"
-			file = "flag_BG_19.dds"
+			file = "flag_BG_38.dds"
 		}
 		colors = {
-			"intense_red"
-			"dark_brown"
-			"black"
+			"red"
+			"beige"
+			"null"
 			"null"
 		}
 	}
 	ruler = {
-		name = "PRESCRIPTED_ruler_name_mechanicum_samech"
-		gender = male
-		portrait = "xevil_male_05"
-		texture = 0
-		evolution_mask = 0
-		attachment = 8
-		clothes = 9
+		name = "PRESCRIPTED_ruler_name_mechanicum_ordex_thaag"
+		gender = female
+		portrait="xevil_female_06"
+		texture=0
+		evolution_mask=0
+		attachment=11
+		clothes=25
 		ruler_title = "ruler_title_mechanicus"
 		ruler_title_female = "ruler_title_mechanicus"
 		#heir_title_female = "Святая"
-		trait = "leader_trait_spark_of_genius"
-		leader_class = scientist
+		trait="leader_trait_fleet_organizer"
+		leader_class="commander"
 	}
 	advisor_voice_type = "l_the_technocrat"
 }

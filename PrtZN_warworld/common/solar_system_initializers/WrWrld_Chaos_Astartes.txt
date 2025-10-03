@@ -883,96 +883,6 @@ Sorrowfall_initializer = {
 		home_planet = no
 	}
 }
-Haytor_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Death_Guard_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_nuked"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 16
-		has_ring = no
-		change_orbit = 4
-		
-		flags = { Chaos_war_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-}
 Crystallax_initializer = {
 	class = "rl_starting_stars"
 	asteroid_belt = {
@@ -1943,7 +1853,7 @@ Magnus_Storm_initializer = {
 	}
 }
 #############################################################
-Fulgrimia_initializer = {
+Callax_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		##generate_home_system_resources = yes
@@ -2145,40 +2055,6 @@ Memlock_initializer = {
 	max_instances = 1
 	init_effect = {
 		save_global_event_target_as = wormhole_warp_29_out
-		spawn_natural_wormhole = { bypass_type = wormhole }
-	}
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_shrouded"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-}
-Igaro_initializer = {
-	class = "rl_starting_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Word_Bearers_gos }
-	max_instances = 1
-	init_effect = {
-		save_global_event_target_as = wormhole_warp_30_out
 		spawn_natural_wormhole = { bypass_type = wormhole }
 	}
 
@@ -3298,7 +3174,7 @@ Daxos_Gemini_initializer = {
 		type = rocky_asteroid_belt
 		radius = 135
 	}
-	flags = { Emperors_Children_gos }
+	flags = { Emperors_Children_gos_station }
 	max_instances = 1
 
 	planet = {
@@ -3740,7 +3616,7 @@ Kdask_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Night_Lords_gos }
+	flags = { Alpha_Legion_gos } #Night_Lords_gos
 
 	max_instances = 1
 	init_effect = { }
@@ -3835,7 +3711,7 @@ Darkhold_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Night_Lords_gos }
+	flags = { Alpha_Legion_gos } #Night_Lords_gos
 
 	max_instances = 1
 	init_effect = {

@@ -1,0 +1,3316 @@
+namespace = WrWrld_game_start
+namespace = WrWrld_game_start_chaos_mechanicum
+
+country_event = { #Blood_Pact
+	id = WrWrld_game_start.32
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Blood_Pact_gos
+	}
+	immediate = {
+		save_global_event_target_as = Blood_Pact_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 17500	}
+		add_resource = { minerals = 4500 }
+		add_resource = { food = 4500 }
+		add_resource = { consumer_goods = 2500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 300 }
+		add_resource = { exotic_gases = 300 }
+		#НАУКА
+		give_technology_chaos = yes
+		
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Blood_Pact_gos
+					has_star_flag = Blood_Pact_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Blood_Pact_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Blood_Pact_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Admonition
+	id = WrWrld_game_start.33
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Admonition_gos
+	}
+	immediate = {
+		save_global_event_target_as = Admonition_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 4500	}
+		add_resource = { minerals = 2500 }
+		add_resource = { food = 2500 }
+		add_resource = { consumer_goods = 1200 }
+		add_resource = { alloys = 6500	}
+		add_resource = { volatile_motes = 300 }
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
+		#НАУКА
+		give_technology_chaos = yes
+				
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		#add_tradition = tr_domination_workplace_motivators
+		#add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Admonition_gos
+					has_star_flag = Admonition_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Admonition_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Admonition_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Chaos
+	id = WrWrld_game_start.34
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Chaos_gos
+	}
+	immediate = {
+		save_global_event_target_as = Chaos_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 4500	}
+		add_resource = { minerals = 2500 }
+		add_resource = { food = 4500 }
+		add_resource = { consumer_goods = 2500 }
+		add_resource = { alloys = 7500	}
+		add_resource = { volatile_motes = 700 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
+				
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		#add_tradition = tr_psionics_adopt
+		#add_tradition = tr_psionics_mind_readers     #Псионика
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Chaos_gos
+					has_star_flag = Chaos_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Chaos_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Chaos_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+				if = {                                         ### КУЗНЯ ХАОСА ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_forge_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_housing
+					#	}
+					#}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_arms_industry
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_arcology_civilian_industry
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_arcology_administrative
+					#	}
+					#}
+				    add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_autochthon_monument
+					add_building = building_chemical_plant 	
+					add_building = building_ministry_production					
+				    while = {
+				    	count = 18
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 30
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Conjurers_of_Fear
+	id = WrWrld_game_start.35
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Conjurers_of_Fear_gos
+	}
+	immediate = {
+		save_global_event_target_as = Conjurers_of_Fear_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.122 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 4500	}
+		add_resource = { minerals = 1500 }
+		add_resource = { food = 1500 }
+		add_resource = { consumer_goods = 1000 }
+		add_resource = { alloys = 6500	}
+		add_resource = { volatile_motes = 400 }
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
+		#НАУКА
+		give_technology_chaos = yes
+				
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_psionics_adopt
+		add_tradition = tr_psionics_mind_readers     #Псионика
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Conjurers_of_Fear_gos
+					has_star_flag = Conjurers_of_Fear_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Conjurers_of_Fear_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Conjurers_of_Fear_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Barbed_Chalice
+	id = WrWrld_game_start.36
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Barbed_Chalice_gos
+	}
+	immediate = {
+		save_global_event_target_as = Barbed_Chalice_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.122 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 7500 }
+		add_resource = { food = 7500 }
+		add_resource = { consumer_goods = 4500 }
+		add_resource = { alloys = 8500	}
+		add_resource = { volatile_motes = 700 }
+		add_resource = { rare_crystals = 300 }
+		add_resource = { exotic_gases = 300 }
+		#НАУКА
+		give_technology_chaos = yes
+				
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_psionics_adopt
+		add_tradition = tr_psionics_mind_readers     #Псионика
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Barbed_Chalice_gos
+					has_star_flag = Barbed_Chalice_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Barbed_Chalice_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Barbed_Chalice_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				### МИР ДЕМОНОВ ###
+				if = {
+				    limit = {
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Brothrhd_Knife
+	id = WrWrld_game_start.37
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Brothrhd_Knife_gos
+	}
+	immediate = {
+		save_global_event_target_as = Brothrhd_Knife_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 4500 }
+		add_resource = { food = 4500 }
+		add_resource = { consumer_goods = 2500 }
+		add_resource = { alloys = 10000	}
+		add_resource = { volatile_motes = 700 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
+		#НАУКА
+		give_technology_chaos = yes
+		
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_aptitude_adopt
+		add_tradition = tr_aptitude_the_empire_needs_you
+		add_tradition = tr_aptitude_specialist_training
+		add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Brothrhd_Knife_gos
+					has_star_flag = Brothrhd_Knife_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Brothrhd_Knife_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Brothrhd_Knife_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Givers_of_Life
+	id = WrWrld_game_start.38
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Givers_of_Life_gos
+	}
+	immediate = {
+		save_global_event_target_as = Givers_of_Life_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 5000 }
+		add_resource = { minerals = 2500 }
+		add_resource = { food = 2500 }
+		add_resource = { consumer_goods = 1000 }
+		add_resource = { alloys = 4000	}
+		add_resource = { volatile_motes = 400 }
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
+		#НАУКА
+		give_technology_chaos = yes	
+		
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
+		
+		
+		add_tradition = tr_aptitude_adopt
+		
+		add_tradition = tr_domination_colonial_viceroys
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Givers_of_Life_gos
+					has_star_flag = Givers_of_Life_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Givers_of_Life_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Givers_of_Life_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Bloodbath
+	id = WrWrld_game_start.39
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Bloodbath_gos
+	}
+	immediate = {
+		save_global_event_target_as = Bloodbath_evnt_trgt_country
+		communication_with_all = yes
+		add_resource = { energy = 9500	}
+		add_resource = { minerals = 3500 }
+		add_resource = { food = 3500 }
+		add_resource = { consumer_goods = 2500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 900 }
+		add_resource = { rare_crystals = 170 }
+		add_resource = { exotic_gases = 170 }
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		#НАУКА
+		give_technology_chaos = yes
+
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		#add_tradition = tr_unyielding_never_surrender
+		#add_tradition = tr_unyielding_bulwark_of_harmony
+		#add_tradition = tr_unyielding_defensive_zeal
+		#add_tradition = tr_unyielding_fortress_doctrine
+		#add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Bloodbath_gos
+					has_star_flag = Bloodbath_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Bloodbath_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Bloodbath_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					building = crew_quarters
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { is_colonizable = no}
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = { species = owner_main_species }
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Stigmartus
+	id = WrWrld_game_start.40
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Stigmartus_gos
+	}
+	immediate = {
+		save_global_event_target_as = Stigmartus_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.134 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 5000	}
+		add_resource = { minerals = 2000 }
+		add_resource = { food = 2000 }
+		add_resource = { consumer_goods = 1000 }
+		add_resource = { alloys = 2500	}
+		add_resource = { volatile_motes = 267 }
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
+		#НАУКА
+		give_technology_chaos = yes
+
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_domination_colonial_viceroys
+		add_tradition = tr_domination_imperious_architecture
+		add_tradition = tr_domination_grand_council
+		add_tradition = tr_domination_judgment_corps
+		add_tradition = tr_domination_workplace_motivators
+		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
+		
+		#add_tradition = tr_adaptability_adopt
+		add_tradition = tr_adaptability_recycling
+		add_tradition = tr_adaptability_survival_fittest
+		add_tradition = tr_adaptability_environmental_diversification
+		add_tradition = tr_adaptability_adaptive_ecology
+		add_tradition = tr_adaptability_appropriation
+		add_tradition = tr_adaptability_finish     #Адаптация
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Stigmartus_gos
+					has_star_flag = Stigmartus_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Stigmartus_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Stigmartus_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #Penumbral
+	id = WrWrld_game_start.41
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Penumbral_gos
+	}
+	immediate = {
+		save_global_event_target_as = Penumbral_evnt_trgt_country
+		communication_with_all = yes
+		owner = {
+			country_event = { id = WrWrld_game_start.122 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start.601 days = 5 }
+		}
+		establish_communications_no_message = event_target:shroudwalker_enclave_country
+		#
+		add_resource = { energy = 15000	}
+		add_resource = { minerals = 3500 }
+		add_resource = { food = 3500 }
+		add_resource = { consumer_goods = 3000 }
+		add_resource = { alloys = 11500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 300 }
+		add_resource = { exotic_gases = 300 }
+		#НАУКА
+		give_technology_chaos = yes
+				
+		#ТРАДИЦИИ С СТАРТА
+		
+		#add_tradition = tr_supremacy_adopt
+		add_tradition = tr_supremacy_fleet_logistical_corps
+		add_tradition = tr_supremacy_master_shipwrights
+		add_tradition = tr_supremacy_war_games
+		add_tradition = tr_supremacy_overwhelming_force
+		add_tradition = tr_supremacy_great_game
+		add_tradition = tr_supremacy_finish     #Превосходство
+		
+		add_tradition = tr_unyielding_resistance_is_frugal
+		add_tradition = tr_unyielding_never_surrender
+		add_tradition = tr_unyielding_bulwark_of_harmony
+		add_tradition = tr_unyielding_defensive_zeal
+		add_tradition = tr_unyielding_fortress_doctrine
+		add_tradition = tr_unyielding_finish     #Упорство
+		
+		add_tradition = tr_subterfuge_information_security
+		add_tradition = tr_subterfuge_nda
+		add_tradition = tr_subterfuge_operational_security
+		add_tradition = tr_subterfuge_double_agents
+		add_tradition = tr_subterfuge_shadow_recruits
+		add_tradition = tr_subterfuge_finish     #Махинации
+		
+		add_tradition = tr_psionics_adopt
+		add_tradition = tr_psionics_mind_readers     #Псионика
+		
+		#
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Penumbral_gos
+					has_star_flag = Penumbral_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Penumbral_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Penumbral_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
+					create_deposits_stations = yes
+				}
+				if = {                                         ### МИР ДЕМОНОВ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_demon_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_fortress	
+					add_building = building_fortress					
+				    add_building = building_factory_1	
+					add_building = building_foundry_1
+					#add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis
+					add_building = building_temple #building_holotemple	
+					add_building = building_energy_grid					
+				    while = {
+				    	count = 38
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 3
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### ПАДШИЙ МИР ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_fallen_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    #add_building = building_planetary_shield_generator 
+					add_building = building_stronghold  
+					#add_building = building_fortress					
+					#add_building = building_necrophage_elevation_chamber
+					#add_building = building_temple	
+					add_building = building_food_processing_center	
+					add_building = building_mineral_purification_plant
+					add_building = building_foundry_1					
+				    while = {
+				    	count = 13
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 21
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					#while = {
+					#	count = 2
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_industrial
+					#	}
+					#}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_generator
+						}
+					}
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_farming
+						}
+					}
+				}
+				if = {                                         ### МИР ВОЙНЫ ###
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Chaos_war_world			
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+				    while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    add_building = building_capital 
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress  
+					add_building = building_fortress
+				    add_building = building_foundry_1
+				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
+					add_building = building_temple						
+				    while = {
+				    	count = 4
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+				    	count = 12
+				    	create_pop = {
+				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    	}
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_industrial
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_generator
+					#	}
+					#}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_mining
+						}
+					}
+					#while = {
+					#	count = 1
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
+				}
+			}
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start.127
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		change_dominant_species = { species = event_target:Thousand_Sons_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start.127
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		change_dominant_species = { species = event_target:Mechanicum_Samech_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start.134
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		change_dominant_species = { species = event_target:Chaos_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #Chaos
+	id = WrWrld_game_start.419
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Black_Legion_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Qorl_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Barghesi_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { #Chaos
+	id = WrWrld_game_start.319
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Black_Legion_gos
+	}
+	immediate = {
+		communication_with_all = yes
+		federation = {
+			set_federation_type = hegemony_federation #military_federation
+			set_federation_leader = root
+			set_name = random
+			#set_federation_law = succession_term_years_20
+			add_federation_experience = 600
+			add_cohesion = 100
+		}
+		event_target:Death_Guard_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:World_Eaters_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Thousand_Sons_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Emperors_Children_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Word_Bearers_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Alpha_Legion_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Iron_Warriors_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Night_Lords_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Mechanicum_Cyclothrathe_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Mechanicum_Samech_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Blood_Pact_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Admonition_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Chaos_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Conjurers_of_Fear_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Barbed_Chalice_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Brothrhd_Knife_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Givers_of_Life_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Stigmartus_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Bloodbath_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+		event_target:Penumbral_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
+		}
+	}
+}

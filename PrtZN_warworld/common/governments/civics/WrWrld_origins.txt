@@ -297,6 +297,46 @@ origin_commorragh = {
 	advanced_start = yes
 	random_weight = { base = 0 }
 }
+origin_corsair = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_corsair.dds"
+	picture = GFX_origin_void_dwellers
+	
+	#starting_colony = pc_habitat
+	#habitability_preference = pc_habitat
+	# preferred_planet_class_neighbor = no
+	# initializers = {  }
+	# max_once_global = yes
+	# non_colonizable_planet_class_neighbor = yes
+	
+	playable = { always = yes }
+	potential = { always = yes }
+	possible = {
+	}
+	
+	flags = { origin_start }
+	modifier = {
+		ship_sensor_range_add = 2
+		ship_speed_mult = 0.20	
+		country_naval_cap_mult = 0.33
+		monthly_trades_energy_produces_add = 25
+		monthly_trades_alloys_produces_add = 32
+		monthly_trades_consumer_goods_produces_add = 15
+	}
+
+	description = ""
+	
+	traits = { 
+		trait = trait_psionic 
+		#trait = trait_venerable
+	}
+	#traits = { trait = trait_void_dweller_1 }
+	
+	# has_secondary_species = {  }
+
+	advanced_start = yes
+	random_weight = { base = 0 }
+}
 origin_Tau = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_greatergood.dds"
@@ -321,7 +361,7 @@ origin_Tau = {
 		}
 	}
 	#starting_colony = pc_gaia
-	habitability_preference = pc_arid
+	#habitability_preference = pc_arid
 	preferred_planet_class_neighbor = no
 	modifier = {
 		# pop_amenities_usage_mult = -0.1
@@ -329,8 +369,8 @@ origin_Tau = {
 		# colony_start_num_pops_add = -1
 		#country_leader_pool_size = -1
 		#country_subject_technology_sharing_mult = 0.75
-		external_leader_pool_add = 1
-		force_disparity_fire_rate_mult = 0.5
+		#external_leader_pool_add = 1
+		#force_disparity_fire_rate_mult = 0.5
 		country_produces_mult = 0.1
 		country_unity_produces_mult = 0.1
 		# pop_factions_produces_mult = 0.1
@@ -343,6 +383,74 @@ origin_Tau = {
 		#trade_value_mult = 0.02
 		#country_trade_fee = -0.01
 		#country_trade_attractiveness = 1
+		country_official_cap_add = -1
+		country_commander_cap_add = -1
+		country_scientist_cap_add = -1
+		species_leader_exp_gain = 0.25
+	}
+	# traits = { trait = trait_tau } TODO
+	# has_secondary_species = {
+		# title = civic_syncretic_evolution_secondary_species
+		# traits = {
+			# # trait = trait_syncretic_proles
+			# #trait = trait_unruly
+		# }
+	# }
+	#description = "origin_tooltip_greatergood_effects"
+	description = ""
+	flags = { "custom_start_screen" "humanoid" "tau_empire" }
+	advanced_start = no
+	random_weight = { base = 0.5 }
+}
+origin_farsight = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_greatergood.dds"
+	picture = GFX_evt_greatergood
+	# max_once_global = yes
+	playable = { has_utopia = yes }
+	possible = {
+		# value = auth_tau # WH40K
+		ethics = {
+			OR = {
+				value = ethic_fanatic_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+			OR = {
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+		}
+	}
+	#starting_colony = pc_gaia
+	#habitability_preference = pc_arid
+	preferred_planet_class_neighbor = no
+	modifier = {
+		# pop_amenities_usage_mult = -0.1
+		# planet_pops_consumer_goods_upkeep_mult = -0.1
+		# colony_start_num_pops_add = -1
+		#country_leader_pool_size = -1
+		#country_subject_technology_sharing_mult = 0.75
+		#external_leader_pool_add = 1
+		#force_disparity_fire_rate_mult = 0.5
+		country_produces_mult = 0.1
+		country_unity_produces_mult = 0.1
+		# pop_factions_produces_mult = 0.1
+		diplo_weight_mult = 0.25
+		#diplomacy_upkeep_mult = -1
+		pop_happiness = 0.1 # Compare broken_shackles_war_03
+		pop_government_ethic_attraction = 0.25
+		#country_border_friction_mult = -1
+		#monthly_trades_energy_produces_add = 1
+		#trade_value_mult = 0.02
+		#country_trade_fee = -0.01
+		#country_trade_attractiveness = 1
+		country_official_cap_add = 1
+		country_commander_cap_add = 1
+		country_scientist_cap_add = 1
 	}
 	# traits = { trait = trait_tau } TODO
 	# has_secondary_species = {

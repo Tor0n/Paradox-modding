@@ -1,8 +1,9 @@
 namespace = WrWrld_game_start
+namespace = WrWrld_game_start_aeldari
 
 #Eldar
 country_event = {
-	id = WrWrld_game_start.50
+	id = WrWrld_game_start_aeldari.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -11,7 +12,7 @@ country_event = {
 	}
 	immediate = {
 		save_global_event_target_as = Eldar_evnt_trgt_country
-		#owner = { country_event = { id = WrWrld_game_start.151 days = 1 } }
+		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
@@ -144,7 +145,7 @@ country_event = {
 }
 #Ynnari
 country_event = {
-	id = WrWrld_game_start.51
+	id = WrWrld_game_start_aeldari.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -153,7 +154,7 @@ country_event = {
 	}
 	immediate = {
 		save_global_event_target_as = Ynnari_evnt_trgt_country
-		#owner = { country_event = { id = WrWrld_game_start.151 days = 1 } }
+		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
 		communication_with_all = yes
 		add_resource = { energy = 5000	}
 		add_resource = { minerals = 5000 }
@@ -284,10 +285,9 @@ country_event = {
 		}
 	}
 }
-#52 Арлекины
-#Экзодиты 1
+# Арлекины
 country_event = {
-	id = WrWrld_game_start.53
+	id = WrWrld_game_start_aeldari.4
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -396,13 +396,11 @@ country_event = {
 		}
 	}
 }
-#54 Экзодиты 2
-#55 Экзодиты 3
-#56 Корсары
-#57 Корсары
+# Экзодиты 2
+# Экзодиты 3
 #Commorragh
 country_event = {
-	id = WrWrld_game_start.58
+	id = WrWrld_game_start_aeldari.7
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -413,7 +411,7 @@ country_event = {
 		save_global_event_target_as = Commorragh_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.458 days = 4 }
+			country_event = { id = WrWrld_game_start_aeldari.407 days = 4 }
 		}
 		add_resource = { energy = 12000	}
 		add_resource = { minerals = 7500 }
@@ -488,7 +486,323 @@ country_event = {
 	}
 }
 country_event = {
-	id = WrWrld_game_start.151
+	id = WrWrld_game_start_aeldari.8        #Void_Dragons
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Void_Dragons_gos
+	}
+	immediate = {
+		save_global_event_target_as = Void_Dragons_evnt_trgt_country
+		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		communication_with_all = yes
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 7000 }
+		add_resource = { food = 14000 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 17500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 400 }
+		add_resource = { exotic_gases = 400 }
+		
+		give_technology_eldar = yes
+		add_tradition_eldar = yes
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Void_Dragons_gos
+					has_star_flag = Void_Dragons_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Void_Dragons_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Void_Dragons_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+				if = {
+					limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+			}
+			#*-/ врата \-*#
+			if = {
+				limit = {
+					has_star_flag = Eldar_gateway
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.9        #Sunblitz_Brotherhood
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Sunblitz_Brotherhood_gos
+	}
+	immediate = {
+		save_global_event_target_as = Sunblitz_Brotherhood_evnt_trgt_country
+		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		communication_with_all = yes
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 7000 }
+		add_resource = { food = 14000 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 17500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 400 }
+		add_resource = { exotic_gases = 400 }
+		
+		give_technology_eldar = yes
+		add_tradition_eldar = yes
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Sunblitz_Brotherhood_gos
+					has_star_flag = Sunblitz_Brotherhood_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Sunblitz_Brotherhood_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Sunblitz_Brotherhood_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+				if = {
+					limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+			}
+			#*-/ врата \-*#
+			if = {
+				limit = {
+					has_star_flag = Eldar_gateway
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.10        #Sky_Raiders
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Sky_Raiders_gos
+	}
+	immediate = {
+		save_global_event_target_as = Sky_Raiders_evnt_trgt_country
+		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		communication_with_all = yes
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 7000 }
+		add_resource = { food = 14000 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 17500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 400 }
+		add_resource = { exotic_gases = 400 }
+		
+		give_technology_eldar = yes
+		add_tradition_eldar = yes
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Sky_Raiders_gos
+					has_star_flag = Sky_Raiders_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Sky_Raiders_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Sky_Raiders_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+				if = {
+					limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+			}
+			#*-/ врата \-*#
+			if = {
+				limit = {
+					has_star_flag = Eldar_gateway
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.11        #Children_of_Thorns
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = Children_of_Thorns_gos
+	}
+	immediate = {
+		save_global_event_target_as = Children_of_Thorns_evnt_trgt_country
+		owner = { country_event = { id = WrWrld_game_start_aeldari.102 days = 1 } }
+		communication_with_all = yes
+		add_resource = { energy = 25000	}
+		add_resource = { minerals = 7000 }
+		add_resource = { food = 14000 }
+		add_resource = { consumer_goods = 9500 }
+		add_resource = { alloys = 17500	}
+		add_resource = { volatile_motes = 1000 }
+		add_resource = { rare_crystals = 400 }
+		add_resource = { exotic_gases = 400 }
+		
+		give_technology_commorragh = yes
+		add_tradition_commorragh = yes
+		
+		every_system = {
+			limit = {
+				or = {
+					has_star_flag = Children_of_Thorns_gos
+					has_star_flag = Children_of_Thorns_gos_station
+				}
+			}
+			if = {
+				limit = {
+				    has_star_flag = Children_of_Thorns_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Children_of_Thorns_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = missile_battery
+					module = hangar_bay
+					#module = anchorage 
+					
+					building = crew_quarters
+					building = target_uplink_computer
+					#building = hydroponics_bay
+				}
+			}
+			every_system_planet = {
+				if = {
+					limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+			}
+			#*-/ врата \-*#
+			if = {
+				limit = {
+					has_star_flag = Eldar_gateway
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.101
 	hide_window = yes
 	is_triggered_only = yes
 	
@@ -496,9 +810,18 @@ country_event = {
 		change_dominant_species = { species = event_target:Aldari_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
+country_event = {
+	id = WrWrld_game_start_aeldari.102
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		change_dominant_species = { species = event_target:Commorragh_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
 #Commorragh
 country_event = {
-	id = WrWrld_game_start.458
+	id = WrWrld_game_start_aeldari.407
 	hide_window = yes
 	is_triggered_only = yes
 

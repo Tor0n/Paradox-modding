@@ -23,6 +23,7 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start_imperium.7
     }
+	##########################################################################################
 	events = {
         WrWrld_game_start_mechanicus.1 	#Механикус
     }
@@ -41,6 +42,7 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start_mechanicus.6 	#Механикус
     }
+	##########################################################################################
 	events = {
         WrWrld_game_start_space_marines.1 	#Ультрамарины
     }
@@ -62,6 +64,7 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start_space_marines.7 	#Храмовники
     }
+	##########################################################################################
 	events = {
         WrWrld_game_start_chaos_legion.1 # Чёрный легион
     }
@@ -89,12 +92,20 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start_chaos_legion.9 # Железные воины
     }
+	##########################################################################################
 	events = {
-        WrWrld_game_start.27 #Циклотрат
+        WrWrld_game_start_chaos_mechanicum.1 #Сарум
     }
 	events = {
-        WrWrld_game_start.28 #Самех
+        WrWrld_game_start_chaos_mechanicum.2 #Самех
     }
+	events = {
+        WrWrld_game_start_chaos_mechanicum.3 #Циклотрат
+    }
+	events = {
+        WrWrld_game_start_chaos_mechanicum.4 #Ордекс-Тааг
+    }
+	##########################################################################################
 	events = {
         WrWrld_game_start.32 # Кровавый Пакт
     }
@@ -125,21 +136,48 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start.41 # Полутень
     }
+	##########################################################################################
 	events = {
-        WrWrld_game_start.50 # Эльдар
+        WrWrld_game_start_aeldari.1 # Эльдар
     }
 	events = {
-        WrWrld_game_start.51 # Эльдар
+        WrWrld_game_start_aeldari.2 # Иннари
+    }
+	#Резерв под возможных Арлекинов в WrWrld_game_start_aeldari.3
+	events = {
+        WrWrld_game_start_aeldari.4 # Экзодиты 
+    }
+	#Резерв под возможных экзодитов при разделении в WrWrld_game_start_aeldari.5
+	#Резерв под возможных экзодитов при разделении в WrWrld_game_start_aeldari.6
+	events = {
+        WrWrld_game_start_aeldari.7 # Комморра
     }
 	events = {
-        WrWrld_game_start.53 # Экзодиты 1
+        WrWrld_game_start_aeldari.8 # Драконы пустоты
     }
 	events = {
-        WrWrld_game_start.58 # Коморра
+        WrWrld_game_start_aeldari.9 # Санблицы
     }
 	events = {
-        WrWrld_game_start.59 # ТАУ
+        WrWrld_game_start_aeldari.10 # Небесные рейдеры
     }
+	events = {
+        WrWrld_game_start_aeldari.11 # Дети шипов
+    }
+	##########################################################################################
+	events = {
+        WrWrld_game_start_tau_votann_severan.1 # ТАУ
+    }
+	events = {
+        WrWrld_game_start_tau_votann_severan.2 # Фарсайт
+    }
+	events = {
+        WrWrld_game_start_tau_votann_severan.3 # Вотанны
+    }
+	events = {
+        WrWrld_game_start_tau_votann_severan.4 # Доминат
+    }
+	##########################################################################################
 	events = {
         WrWrld_game_start.60 # Орки
     }
@@ -158,6 +196,7 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start.65 # Орки
     }
+	##########################################################################################
 	events = {
         WrWrld_game_start.66 # Генокрады
     }
@@ -185,6 +224,7 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start.74 # Генокрады
     }
+	##########################################################################################
 	events = {
         WrWrld_game_start.75 # Токты
     }
@@ -212,29 +252,30 @@ on_game_start_country = {
 	events = {
         WrWrld_game_start.83 # Саркони
     }
+	##########################################################################################
 	events = {
-        WrWrld_game_start.84 # Тексианцы
+        WrWrld_game_start_small_xenos.1 # Тексианцы
     }
 	events = {
-        WrWrld_game_start.85
+        WrWrld_game_start_small_xenos.2 # Qorl
     }
 	events = {
-        WrWrld_game_start.86
+        WrWrld_game_start_small_xenos.3 # Slogth
     }
 	events = {
-        WrWrld_game_start.87
+        WrWrld_game_start_small_xenos.4 # Rak'Gol
     }
 	events = {
-        WrWrld_game_start.88
+        WrWrld_game_start_small_xenos.5 # Barghesi
     }
 	events = {
-        WrWrld_game_start.89
+        WrWrld_game_start_small_xenos.6 # Strixis
     }
 	events = {
-        WrWrld_game_start.90
+        WrWrld_game_start_small_xenos.7 # Sardonit
     }
 	events = {
-        WrWrld_game_start.91
+        WrWrld_game_start_small_xenos.8 # Cythor_Fiends
     }
 	#events = {
     #    WrWrld_game_start.100
@@ -305,11 +346,11 @@ on_colony_3_years_old = {
 	}
 }
 
-on_decade_pulse = {
-	events = {
-		WrWrld_chaos_events.1 #Крестовый поход после 998
-	}
-}
+#on_decade_pulse = {                                              ###Я переделал на прямым указанием в днях у чёрного легиона
+#	events = {
+#		WrWrld_chaos_events.1 #Крестовый поход после 998
+#	}
+#}
 
 # empire_init_capital_planet = {
 	# events = {

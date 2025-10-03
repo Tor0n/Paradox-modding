@@ -148,14 +148,14 @@ Carnac_initializer = {
 	}
 	
 	planet = {
-		class = "pc_nuked"
-
+		#class = "pc_nuked"
+		class = "pc_barren_cold"
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
 		#change_orbit = 4
-		flags = { Nigilah_world }
+		#flags = { Nigilah_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
