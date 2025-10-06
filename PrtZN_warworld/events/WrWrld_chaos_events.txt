@@ -21,6 +21,7 @@ country_event = {
 		name =  black_crusades.a
 		add_resource = { alloys = 14000	}
 		#add_resource = { energy = 4000 }
+		create_fleet_from_naval_cap = 0.3
 		event_target:Death_Guard_evnt_trgt_country = {
 			country_event = { id = WrWrld_chaos_events.2 days = 1 }
 		}
@@ -36,13 +37,25 @@ country_event = {
 		event_target:Word_Bearers_evnt_trgt_country = {
 			country_event = { id = WrWrld_chaos_events.2 days = 1 }
 		}
+		event_target:Iron_Warriors_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
 		event_target:Alpha_Legion_evnt_trgt_country = {
 			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Night_Lords_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Mechanicum_Sarum_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Mechanicum_Samech_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
 		}
 		event_target:Mechanicum_Cyclothrathe_evnt_trgt_country = {
 			country_event = { id = WrWrld_chaos_events.3 days = 2 }
 		}
-		event_target:Mechanicum_Samech_evnt_trgt_country = {
+		event_target:Mechanicum_Ordex_Thaag_evnt_trgt_country = {
 			country_event = { id = WrWrld_chaos_events.3 days = 2 }
 		}
 		event_target:Blood_Pact_evnt_trgt_country = {
@@ -101,6 +114,7 @@ country_event = {
 	option = {
 		name =  black_crusades.a
 		add_resource = { alloys = 12000	}
+		create_fleet_from_naval_cap = 0.2
 	}
 }
 country_event = {
@@ -118,5 +132,8 @@ country_event = {
 	option = {
 		name =  black_crusades.a
 		add_resource = { alloys = 8250	}
+		create_fleet_from_naval_cap = 0.1
 	}
 }
+
+#set_truce = { target = Alpha_Legion_evnt_trgt_country type = wg_WrWrld_total_pregalcom_war }

@@ -6,7 +6,7 @@ create_imperium_cruiser_fleet = {
 		effect = {
 			set_owner = prev.owner
 			while = {
-				count = 10
+				count = 1 #
 				create_imperium_cruiser = yes
 			}
 			random_list = {

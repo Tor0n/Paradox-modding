@@ -1,4 +1,263 @@
 #Миры Легионов Астартес Хаоса
+#Столичный сектор и пустые системы
+Terror_Eye_initializer = {
+	class = sc_black_hole
+	name = "NAME_Great_Wound"
+
+	usage = misc_system_init
+	usage_odds = {
+		base = 90000
+		modifier = {
+			factor = 0
+			has_star_flag = empire_cluster
+		}
+		modifier = {
+			factor = 0
+			is_bottleneck_system = yes
+		}
+	}
+	flags = { great_wound shroudwalker_enclave_system enclave Black_Legion_gos_station }
+	max_instances = 1
+	init_effect = {
+		save_global_event_target_as = wormhole_Terror_Eye
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		size = 40
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_deposit = d_dark_matter_deposit_10
+			create_ambient_object = {
+				type = "space_storm_1"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_1"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_2"
+		orbit_distance = 0
+		orbit_angle = 210
+		size = 20
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_3"
+		orbit_distance = 0
+		orbit_angle = 75
+		size = 10
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = 10
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_4"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 20
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_5"
+		orbit_distance = 0
+		orbit_angle = 200
+		size = 15
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = 5
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_6"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 15
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_7"
+		orbit_distance = 0
+		orbit_angle = 130
+		size = 20
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_8"
+		orbit_distance = 0
+		orbit_angle = 245
+		size = 10
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = 10
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_9"
+		orbit_distance = 0
+		orbit_angle = 110
+		size = 20
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+
+	change_orbit = 10
+
+	planet = {
+		class = "pc_black_hole"
+		name = "NAME_Subspace_Rupture_10"
+		orbit_distance = 0
+		orbit_angle = 170
+		size = 10
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = yes
+		home_planet = no
+		flags = { ignore_startup_effect }
+		init_effect = {
+			set_planet_flag = shroudwalker_enclave_planet
+			save_event_target_as = shroudwalker_enclave_planet
+			clear_deposits = yes
+			prevent_anomaly = yes
+			if = {
+				limit = {
+					NOT = {
+						exists = event_target:shroudwalker_enclave_country
+					}
+				}
+				create_species = {
+					homeworld = this
+					name = random
+					class = SHROUDWALKER
+					namelist = NECROID1
+					portrait = random
+					traits = {
+						ideal_planet_class = pc_habitat
+						trait = trait_psionic
+						trait = random_traits
+					}
+				}
+				last_created_species = {
+					save_event_target_as = shroudwalker_enclave_species
+				}
+				create_shroudwalker_enclave_country = yes
+				solar_system = {
+					save_global_event_target_as = shroudwalker_enclave_system
+				}
+			}
+			else = {
+				event_target:shroudwalker_enclave_country = {
+					create_shroudwalker_enclave_starbase = yes
+				}
+			}
+			add_deposit = d_zro_deposit_5
+		}
+	}
+
+	#planet = {
+	#	class = "pc_gas_giant"
+#
+	#	orbit_distance = 35
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = { min = 25 max = 50 }
+	#	has_ring = yes
+	#	change_orbit = 12
+#
+	#	home_planet = no
+	#}
+}
 Adraith_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -473,15 +732,15 @@ Maelstro_initializer = {
 	}
 	
 	planet = {
-		class = "pc_city"
-
+		#class = "pc_city"
+		class = "pc_molten"
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 21
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Chaos_forge_world }
+		#flags = { Chaos_forge_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -527,93 +786,14 @@ Maelstro_initializer = {
 
 		home_planet = no
 	}
-}
-Crimsonova_initializer = {
-	class = "rl_starting_stars"
-	init_effect = {
-		#generate_home_system_resources = yes
-	}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Black_Legion_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
 	planet = {
 		class = "pc_frozen"
 
-		orbit_distance = 45
+		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
+		size = { min = 10 max = 20 }
 		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
+		change_orbit = 12
 
 		home_planet = no
 	}
@@ -792,7 +972,104 @@ Plague_initializer = {                          ### ГОТОВАЯ СИСТЕМ�
 		home_planet = no
 	}
 }
-Sorrowfall_initializer = {
+Sabatine_initializer = {
+	class = "rl_starting_stars"
+	init_effect = {
+		#generate_home_system_resources = yes
+		save_global_event_target_as = wormhole_warp_44_out
+		spawn_natural_wormhole = { bypass_type = wormhole }
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Death_Guard_gos_station }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_desert"
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Chaos_demon_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		} 
+
+		moon = {
+			class = "pc_shrouded"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_shrouded"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Vermidium_initializer = {
 	class = "rl_starting_stars"
 	
 	asteroid_belt = {
@@ -967,6 +1244,70 @@ Crystallax_initializer = {
 
 	planet = {
 		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Sorrowfall_initializer = {
+	class = "rl_starting_stars"
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Death_Guard_gos_station }
+	max_instances = 1
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 14 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }

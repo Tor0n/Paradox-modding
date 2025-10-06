@@ -1,5 +1,27 @@
 namespace = WrWrld_game_start
 
+country_event = {
+	id = WrWrld_game_start.0
+	title = "WrWrld_game_start.0.name"
+	desc = "WrWrld_game_start.0.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	option = {
+		name =  WrWrld_game_start.0.a
+	}
+	#option = {
+	#	name =   WrWrld_game_start.0.b
+	#	add_resource = { energy = 2000 }
+	#}
+}
+
 country_event = { #Bug fix через костыль
 	id = WrWrld_game_start.601
 	hide_window = yes
