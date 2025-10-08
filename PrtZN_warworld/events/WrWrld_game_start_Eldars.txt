@@ -575,6 +575,9 @@ country_event = {
 	immediate = {
 		save_global_event_target_as = Sunblitz_Brotherhood_evnt_trgt_country
 		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		owner = {
+			country_event = { id = WrWrld_game_start_aeldari.409 days = 4 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 7000 }
@@ -654,6 +657,9 @@ country_event = {
 	immediate = {
 		save_global_event_target_as = Sky_Raiders_evnt_trgt_country
 		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		owner = {
+			country_event = { id = WrWrld_game_start_aeldari.410 days = 4 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 7000 }
@@ -733,6 +739,9 @@ country_event = {
 	immediate = {
 		save_global_event_target_as = Children_of_Thorns_evnt_trgt_country
 		owner = { country_event = { id = WrWrld_game_start_aeldari.102 days = 1 } }
+		owner = {
+			country_event = { id = WrWrld_game_start_aeldari.411 days = 4 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 7000 }
@@ -840,6 +849,31 @@ country_event = {
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
 		#declare_war = {
 		#	target = event_target:Eldar_evnt_trgt_country
 		#	#name = <optional war name>
@@ -851,9 +885,34 @@ country_event = {
 		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		#}
 		declare_war = {
-			target = event_target:Tau_evnt_trgt_country
+			target = event_target:Void_Dragons_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
 			target = event_target:Texian_evnt_trgt_country
@@ -892,6 +951,62 @@ country_event = {
 		}
 		declare_war = {
 			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.409
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Commorragh_gos
+	#}
+	immediate = {
+        communication_with_all = yes
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.410
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Commorragh_gos
+	#}
+	immediate = {
+        communication_with_all = yes
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.411
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Commorragh_gos
+	#}
+	immediate = {
+        communication_with_all = yes
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}

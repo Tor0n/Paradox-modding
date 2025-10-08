@@ -1,9 +1,10 @@
 namespace = WrWrld_game_start
+namespace = WrWrld_game_start_ork
 
 @create_pop_watch_fort_station = 15
 
 country_event = { #Orc
-	id = WrWrld_game_start.60
+	id = WrWrld_game_start_ork.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -14,7 +15,7 @@ country_event = { #Orc
 		save_global_event_target_as = Blood_Axes_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.460 days = 4 }
+			country_event = { id = WrWrld_game_start_ork.460 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 12500 }
@@ -338,7 +339,7 @@ country_event = { #Orc
 	}
 }
 country_event = { #Orc
-	id = WrWrld_game_start.61
+	id = WrWrld_game_start_ork.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -349,7 +350,7 @@ country_event = { #Orc
 		save_global_event_target_as = Goffs_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.460 days = 4 }
+			country_event = { id = WrWrld_game_start_ork.460 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 12500 }
@@ -673,7 +674,7 @@ country_event = { #Orc
 	}
 }
 country_event = { #Orc
-	id = WrWrld_game_start.62
+	id = WrWrld_game_start_ork.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -684,7 +685,7 @@ country_event = { #Orc
 		save_global_event_target_as = Evil_Sunz_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.460 days = 4 }
+			country_event = { id = WrWrld_game_start_ork.460 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 12500 }
@@ -1008,7 +1009,7 @@ country_event = { #Orc
 	}
 }
 country_event = { #Orc
-	id = WrWrld_game_start.63
+	id = WrWrld_game_start_ork.4
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1019,7 +1020,7 @@ country_event = { #Orc
 		save_global_event_target_as = Deathskulls_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.460 days = 4 }
+			country_event = { id = WrWrld_game_start_ork.460 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 12500 }
@@ -1343,7 +1344,7 @@ country_event = { #Orc
 	}
 }
 country_event = { #Orc
-	id = WrWrld_game_start.64
+	id = WrWrld_game_start_ork.5
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1354,7 +1355,7 @@ country_event = { #Orc
 		save_global_event_target_as = Bad_Moons_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.460 days = 4 }
+			country_event = { id = WrWrld_game_start_ork.460 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 12500 }
@@ -1678,7 +1679,7 @@ country_event = { #Orc
 	}
 }
 country_event = { #Orc
-	id = WrWrld_game_start.65
+	id = WrWrld_game_start_ork.6
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1689,7 +1690,7 @@ country_event = { #Orc
 		save_global_event_target_as = Snakebites_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.460 days = 4 }
+			country_event = { id = WrWrld_game_start_ork.460 days = 4 }
 		}
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 12500 }
@@ -2013,7 +2014,7 @@ country_event = { #Orc
 	}
 }
 country_event = { #Orc
-	id = WrWrld_game_start.460
+	id = WrWrld_game_start_ork.460
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2033,6 +2034,31 @@ country_event = { #Orc
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
@@ -2045,7 +2071,7 @@ country_event = { #Orc
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
@@ -2053,9 +2079,44 @@ country_event = { #Orc
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Tau_evnt_trgt_country
+			target = event_target:Void_Dragons_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
 			target = event_target:Nigilah_evnt_trgt_country
@@ -2084,6 +2145,36 @@ country_event = { #Orc
 		}
 		declare_war = {
 			target = event_target:Cult_Four_ArmEmpr_gos
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Hivecult_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Rusted_Claw_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Bladed_Cog_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Pauper_Princes_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Twisted_Helix_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Star_Kindred_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2129,5 +2220,756 @@ country_event = { #Orc
 		}
 		
 		change_dominant_species = { species = event_target:Snakebites_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.701
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		set_truce = { target = Hivecult_evnt_trgt_country }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.702
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.703
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		set_truce = { target = Hivecult_evnt_trgt_country type = war }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.704
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		set_truce = { target = event_target:Hivecult_evnt_trgt_country type = war }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.705
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		set_truce = { target = Hivecult_evnt_trgt_country type = none }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.706
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		set_truce = { target = event_target:Hivecult_evnt_trgt_country type = none }
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.707
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		Hivecult_evnt_trgt_country = {
+			set_truce = { target = Blood_Axes_evnt_trgt_country type = war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.708
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		event_target:Hivecult_evnt_trgt_country = {
+			set_truce = { target = Blood_Axes_evnt_trgt_country type = war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.709
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		Hivecult_evnt_trgt_country = {
+			set_truce = { target = event_target:Blood_Axes_evnt_trgt_country type = war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.710
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		event_target:Hivecult_evnt_trgt_country = {
+			set_truce = { target = event_target:Blood_Axes_evnt_trgt_country type = war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.711
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		Hivecult_evnt_trgt_country = {
+			set_truce = { target = war type = wg_WrWrld_total_pregalcom_war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.712
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		event_target:Hivecult_evnt_trgt_country = {
+			set_truce = { target = war type = wg_WrWrld_total_pregalcom_war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.713
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		Hivecult_evnt_trgt_country = {
+			set_truce = { target = wg_WrWrld_total_pregalcom_war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.714
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		event_target:Hivecult_evnt_trgt_country = {
+			set_truce = { target = wg_WrWrld_total_pregalcom_war }
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.800
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.801
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war = {
+			limit = {
+				OR = {
+					has_country_flag = Imperium_gos
+					has_country_flag = Blood_Axes_gos
+				}
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.802
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		OR = {
+			has_country_flag = Imperium_gos
+			has_country_flag = Blood_Axes_gos
+		}
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.803
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war = {
+			limit = {
+				OR = {
+					has_country_flag = Hivecult_gos
+					has_country_flag = Blood_Axes_gos
+				}
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.804
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		OR = {
+			has_country_flag = Hivecult_gos
+			has_country_flag = Blood_Axes_gos
+		}
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.805
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		OR = {
+			event_target:Hivecult_evnt_trgt_country
+			event_target:Blood_Axes_evnt_trgt_country
+		}
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.806
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		OR = {
+			has_country_flag = Hivecult_gos
+			has_country_flag = Blood_Axes_gos
+		}
+		war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.807
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		OR = {
+			event_target:Hivecult_evnt_trgt_country
+			event_target:Blood_Axes_evnt_trgt_country
+		}
+		war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.808
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war_participant = { 
+			limit = { 
+				has_country_flag = Hivecult_gos
+				has_country_flag = Blood_Axes_gos
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+			} 
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.809
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war_participant = { 
+			limit = { 
+				OR = {
+					has_country_flag = Hivecult_gos
+					has_country_flag = Blood_Axes_gos
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+			} 
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.810
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		#remove_country_flag = declared_crisis
+		#save_event_target_as = former_crisis
+		random_war = {
+			limit = {
+				using_war_goal = {
+					type = wg_WrWrld_total_pregalcom_war
+					owner = event_target:Hivecult_evnt_trgt_country
+				}
+			}
+			every_war_participant = {
+				limit = {
+					NOT = { is_same_value = event_target:Hivecult_evnt_trgt_country }
+				}
+			}
+			every_war_participant = {
+				prev = {
+					remove_war_participant = prev
+				}
+			}
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.811
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		#remove_country_flag = declared_crisis
+		#save_event_target_as = former_crisis
+		random_war = {
+			limit = {
+				using_war_goal = {
+					type = wg_WrWrld_total_pregalcom_war
+					owner = event_target:Blood_Axes_evnt_trgt_country
+				}
+			}
+			every_war_participant = {
+				limit = {
+					NOT = { is_same_value = event_target:Blood_Axes_evnt_trgt_country }
+				}
+			}
+			every_war_participant = {
+				prev = {
+					remove_war_participant = prev
+				}
+			}
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.812
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		#remove_country_flag = declared_crisis
+		#save_event_target_as = former_crisis
+		random_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = event_target:Hivecult_evnt_trgt_country
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = event_target:Blood_Axes_evnt_trgt_country
+					}
+				}
+			}
+			every_war_participant = {
+				limit = {
+					NOT = { is_same_value = event_target:Hivecult_evnt_trgt_country }
+				}
+			}
+			every_war_participant = {
+				prev = {
+					remove_war_participant = prev
+				}
+			}
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.813
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war = {
+			limit = {
+				every_war_participant = {
+					limit = {
+						OR = {
+							has_country_flag = Hivecult_gos
+							has_country_flag = Blood_Axes_gos
+						}
+					}
+				}
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.814
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		every_war = {
+			limit = {
+				every_war_participant = {
+					limit = {
+						OR = {
+							event_target:Hivecult_evnt_trgt_country
+							event_target:Blood_Axes_evnt_trgt_country
+						}
+					}
+				}
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.815
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		random_war = {
+			limit = {
+				using_war_goal = {
+					type = wg_WrWrld_total_pregalcom_war
+					owner = event_target:Hivecult_evnt_trgt_country
+				}
+			}
+			every_war_participant = {
+				limit = {
+					NOT = { is_same_value = event_target:Hivecult_evnt_trgt_country }
+				}
+			}
+			every_war_participant = {
+				prev = {
+					remove_war_participant = prev
+				}
+			}
+		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_ork.816
+	hide_window = yes
+	is_triggered_only = yes
+
+	#immediate = {
+	#	set_truce = { target = event_target:Hivecult_evnt_trgt_country }
+	#}
+	immediate = {
+		random_war = {
+			limit = {
+				using_war_goal = {
+					type = wg_WrWrld_total_pregalcom_war
+					owner = event_target:Blood_Axes_evnt_trgt_country
+				}
+			}
+			every_war_participant = {
+				limit = {
+					NOT = { is_same_value = event_target:Blood_Axes_evnt_trgt_country }
+				}
+			}
+			every_war_participant = {
+				prev = {
+					remove_war_participant = prev
+				}
+			}
+		}
 	}
 }

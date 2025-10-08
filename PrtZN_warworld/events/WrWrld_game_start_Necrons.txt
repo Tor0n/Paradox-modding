@@ -1,9 +1,10 @@
 namespace = WrWrld_game_start
+namespace = WrWrld_game_start_necron
 
 @create_pop_watch_fort_station = 15
 
 country_event = { #Tokt
-	id = WrWrld_game_start.75
+	id = WrWrld_game_start_necron.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -14,8 +15,11 @@ country_event = { #Tokt
 		save_global_event_target_as = Tokt_evnt_trgt_country
 		communication_with_all = yes
 		#owner = {
-		#	country_event = { id = WrWrld_game_start.475 days = 4 }
+		#	country_event = { id = WrWrld_game_start_necron.475 days = 4 }
 		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
 		add_resource = { energy = 250	}
 		add_resource = { minerals = 300 }
 		add_resource = { alloys = 200	}
@@ -207,7 +211,7 @@ country_event = { #Tokt
 	}
 }
 country_event = { #Agdagat
-	id = WrWrld_game_start.76
+	id = WrWrld_game_start_necron.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -218,8 +222,11 @@ country_event = { #Agdagat
 		save_global_event_target_as = Agdagat_evnt_trgt_country
 		communication_with_all = yes
 		#owner = {
-		#	country_event = { id = WrWrld_game_start.476 days = 4 }
+		#	country_event = { id = WrWrld_game_start_necron.476 days = 4 }
 		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
 		add_resource = { energy = 200	}
 		add_resource = { minerals = 100 }
 		add_resource = { alloys = 100	}
@@ -409,7 +416,7 @@ country_event = { #Agdagat
 	}
 }
 country_event = { #Sayteh
-	id = WrWrld_game_start.77
+	id = WrWrld_game_start_necron.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -420,10 +427,13 @@ country_event = { #Sayteh
 		save_global_event_target_as = Sayteh_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.377 days = 3 }
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start.477 days = 4 }
+			country_event = { id = WrWrld_game_start_necron.377 days = 3 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.477 days = 4 }
 		}
 		add_resource = { energy = 750	}
 		add_resource = { minerals = 450 }
@@ -623,7 +633,7 @@ country_event = { #Sayteh
 	}
 }
 country_event = { #Nigilah
-	id = WrWrld_game_start.78
+	id = WrWrld_game_start_necron.4
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -634,8 +644,11 @@ country_event = { #Nigilah
 		save_global_event_target_as = Nigilah_evnt_trgt_country
 		communication_with_all = yes
 		#owner = {
-		#	country_event = { id = WrWrld_game_start.478 days = 4 }
+		#	country_event = { id = WrWrld_game_start_necron.478 days = 4 }
 		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
 		add_resource = { energy = 1000	}
 		add_resource = { minerals = 700 }
 		add_resource = { alloys = 100	}
@@ -826,7 +839,7 @@ country_event = { #Nigilah
 	}
 }
 country_event = { #Kardenat
-	id = WrWrld_game_start.79
+	id = WrWrld_game_start_necron.5
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -837,8 +850,11 @@ country_event = { #Kardenat
 		save_global_event_target_as = Kardenat_evnt_trgt_country
 		communication_with_all = yes
 		#owner = {
-		#	country_event = { id = WrWrld_game_start.479 days = 4 }
+		#	country_event = { id = WrWrld_game_start_necron.479 days = 4 }
 		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
 		add_resource = { energy = 350	}
 		add_resource = { minerals = 150 }
 		add_resource = { alloys = 300	}
@@ -1024,7 +1040,7 @@ country_event = { #Kardenat
 	}
 }
 country_event = { #Oryskar
-	id = WrWrld_game_start.80
+	id = WrWrld_game_start_necron.6
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1035,10 +1051,10 @@ country_event = { #Oryskar
 		save_global_event_target_as = Oryskar_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.380 days = 3 }
+			country_event = { id = WrWrld_game_start_necron.380 days = 3 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start.480 days = 4 }
+			country_event = { id = WrWrld_game_start_necron.480 days = 4 }
 		}
 		add_resource = { energy = 3000	}
 		add_resource = { minerals = 1000 }
@@ -1232,7 +1248,7 @@ country_event = { #Oryskar
 	}
 }
 country_event = { #Mefrit
-	id = WrWrld_game_start.81
+	id = WrWrld_game_start_necron.7
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1243,7 +1259,10 @@ country_event = { #Mefrit
 		save_global_event_target_as = Mefrit_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.481 days = 4 }
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.481 days = 4 }
 		}
 		add_resource = { energy = 2500	}
 		add_resource = { minerals = 400 }
@@ -1440,8 +1459,8 @@ country_event = { #Mefrit
 		}
 	}
 }
-country_event = { #Nephrekh
-	id = WrWrld_game_start.82
+country_event = { #Nephrekh - Nekfist
+	id = WrWrld_game_start_necron.8
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1452,7 +1471,10 @@ country_event = { #Nephrekh
 		save_global_event_target_as = Nephrekh_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.482 days = 4 }
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.482 days = 4 }
 		}
 		add_resource = { energy = 2000	}
 		add_resource = { minerals = 750 }
@@ -1639,7 +1661,7 @@ country_event = { #Nephrekh
 	}
 }
 country_event = { #Sarkoni
-	id = WrWrld_game_start.83
+	id = WrWrld_game_start_necron.9
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1650,7 +1672,10 @@ country_event = { #Sarkoni
 		save_global_event_target_as = Sarkoni_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.483 days = 4 }
+			country_event = { id = WrWrld_game_start_necron.100 days = 1 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_necron.483 days = 4 }
 		}
 		add_resource = { energy = 700	}
 		add_resource = { minerals = 500 }
@@ -1836,8 +1861,20 @@ country_event = { #Sarkoni
 		}
 	}
 }
+country_event = { #
+	id = WrWrld_game_start_necron.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		change_dominant_species = { species = event_target:Oryskar_evnt_trgt_country.owner_main_species change_all = yes }
+	}
+}
 country_event = { #Tokt
-	id = WrWrld_game_start.475
+	id = WrWrld_game_start_necron.475
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1884,7 +1921,7 @@ country_event = { #Tokt
 	}
 }
 country_event = { #Agdagat
-	id = WrWrld_game_start.476
+	id = WrWrld_game_start_necron.476
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1931,7 +1968,7 @@ country_event = { #Agdagat
 	}
 }
 country_event = { #Sayteh
-	id = WrWrld_game_start.377
+	id = WrWrld_game_start_necron.377
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1955,17 +1992,10 @@ country_event = { #Sayteh
 			}
 			#set_name = random # Fixes some naming issues
 		}
-		event_target:Agdagat_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
 	}
 }
 country_event = { #Sayteh
-	id = WrWrld_game_start.477
+	id = WrWrld_game_start_necron.477
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1980,7 +2010,32 @@ country_event = { #Sayteh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Brothrhd_Knife_evnt_trgt_country
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -1997,7 +2052,7 @@ country_event = { #Sayteh
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
@@ -2005,12 +2060,57 @@ country_event = { #Sayteh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Tau_evnt_trgt_country
+			target = event_target:Void_Dragons_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
 			target = event_target:Cult_Four_ArmEmpr_gos
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Rusted_Claw_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Star_Kindred_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2062,7 +2162,7 @@ country_event = { #Sayteh
 	}
 }
 country_event = { #Nigilah
-	id = WrWrld_game_start.478
+	id = WrWrld_game_start_necron.478
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2119,7 +2219,7 @@ country_event = { #Nigilah
 	}
 }
 country_event = { #Kardenat
-	id = WrWrld_game_start.479
+	id = WrWrld_game_start_necron.479
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2139,14 +2239,44 @@ country_event = { #Kardenat
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
@@ -2154,12 +2284,52 @@ country_event = { #Kardenat
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Orc_evnt_trgt_country
+			target = event_target:Void_Dragons_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Korinis_evnt_trgt_country
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Snakebites_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Star_Kindred_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2171,7 +2341,7 @@ country_event = { #Kardenat
 	}
 }
 country_event = { #Oryskar
-	id = WrWrld_game_start.380
+	id = WrWrld_game_start_necron.380
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2187,6 +2357,13 @@ country_event = { #Oryskar
 			#set_federation_law = succession_term_years_20
 			add_federation_experience = 600
 			add_cohesion = 100
+		}
+		event_target:Agdagat_evnt_trgt_country = {
+			join_alliance = {
+				who = root
+				override_requirements = yes
+			}
+			#set_name = random # Fixes some naming issues
 		}
 		event_target:Nigilah_evnt_trgt_country = {
 			join_alliance = {
@@ -2205,7 +2382,7 @@ country_event = { #Oryskar
 	}
 }
 country_event = { #Oryskar
-	id = WrWrld_game_start.480
+	id = WrWrld_game_start_necron.480
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2219,7 +2396,32 @@ country_event = { #Oryskar
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Penumbral_evnt_trgt_country
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2236,7 +2438,7 @@ country_event = { #Oryskar
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
@@ -2244,12 +2446,72 @@ country_event = { #Oryskar
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Tau_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Hivecult_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Bladed_Cog_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Rusted_Claw_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cult_Four_ArmEmpr_gos
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Twisted_Helix_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Star_Kindred_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2306,7 +2568,7 @@ country_event = { #Oryskar
 	}
 }
 country_event = { #Mefrit
-	id = WrWrld_game_start.481
+	id = WrWrld_game_start_necron.481
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2321,7 +2583,32 @@ country_event = { #Mefrit
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Conjurers_of_Fear_evnt_trgt_country
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2336,12 +2623,52 @@ country_event = { #Mefrit
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Tau_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Commorragh_evnt_trgt_country
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
@@ -2413,7 +2740,7 @@ country_event = { #Mefrit
 	}
 }
 country_event = { #Nephrekh
-	id = WrWrld_game_start.482
+	id = WrWrld_game_start_necron.482
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2433,6 +2760,31 @@ country_event = { #Nephrekh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
@@ -2443,12 +2795,52 @@ country_event = { #Nephrekh
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
@@ -2500,7 +2892,7 @@ country_event = { #Nephrekh
 	}
 }
 country_event = { #Sarkoni
-	id = WrWrld_game_start.483
+	id = WrWrld_game_start_necron.483
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2515,7 +2907,32 @@ country_event = { #Sarkoni
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Barbed_Chalice_evnt_trgt_country
+			target = event_target:Chaos_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
@@ -2525,7 +2942,47 @@ country_event = { #Sarkoni
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}

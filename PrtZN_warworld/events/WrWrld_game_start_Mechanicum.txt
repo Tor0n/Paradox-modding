@@ -264,6 +264,9 @@ country_event = { #Mechanicum_Samech
 		save_global_event_target_as = Mechanicum_Samech_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
+			country_event = { id = WrWrld_game_start_chaos_mechanicum.100 days = 1 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
@@ -639,7 +642,7 @@ country_event = { #Mechanicum_Cyclothrathe
 		save_global_event_target_as = Mechanicum_Cyclothrathe_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.127 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_mechanicum.100 days = 1 }
 		}
 		owner = {
 			country_event = { id = WrWrld_game_start.601 days = 5 }
@@ -893,6 +896,9 @@ country_event = { #Mechanicum_Ordex_Thaag
 		save_global_event_target_as = Mechanicum_Ordex_Thaag_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
+			country_event = { id = WrWrld_game_start_chaos_mechanicum.100 days = 1 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
@@ -1135,7 +1141,7 @@ country_event = { #Mechanicum_Ordex_Thaag
 }
 
 country_event = { #
-	id = WrWrld_game_start.127
+	id = WrWrld_game_start_chaos_mechanicum.100
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1143,277 +1149,6 @@ country_event = { #
 	#	has_country_flag = 
 	#}
 	immediate = {
-		change_dominant_species = { species = event_target:Thousand_Sons_evnt_trgt_country.owner_main_species change_all = yes }
-	}
-}
-country_event = { #
-	id = WrWrld_game_start.127
-	hide_window = yes
-	is_triggered_only = yes
-
-	#trigger = {
-	#	has_country_flag = 
-	#}
-	immediate = {
-		change_dominant_species = { species = event_target:Mechanicum_Samech_evnt_trgt_country.owner_main_species change_all = yes }
-	}
-}
-country_event = { #
-	id = WrWrld_game_start.134
-	hide_window = yes
-	is_triggered_only = yes
-
-	#trigger = {
-	#	has_country_flag = 
-	#}
-	immediate = {
-		change_dominant_species = { species = event_target:Chaos_evnt_trgt_country.owner_main_species change_all = yes }
-	}
-}
-country_event = { #Chaos
-	id = WrWrld_game_start.419
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Black_Legion_gos
-	}
-	immediate = {
-		communication_with_all = yes
-		declare_war = {
-			target = event_target:Imperium_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Eldar_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Ynnari_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Aldari_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Tau_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Sayteh_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Tokt_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Agdagat_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
-		}
-		declare_war = {
-			target = event_target:Texian_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Qorl_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		#declare_war = {
-		#	target = event_target:RakGol_evnt_trgt_country
-		#	#name = <optional war name>
-		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		#}
-		#declare_war = {
-		#	target = event_target:Barghesi_evnt_trgt_country
-		#	#name = <optional war name>
-		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		#}
-		declare_war = {
-			target = event_target:Strixis_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Sardonit_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-		declare_war = {
-			target = event_target:Cythor_Fiends_evnt_trgt_country
-			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
-		}
-	}
-}
-country_event = { #Chaos
-	id = WrWrld_game_start.319
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Black_Legion_gos
-	}
-	immediate = {
-		communication_with_all = yes
-		federation = {
-			set_federation_type = hegemony_federation #military_federation
-			set_federation_leader = root
-			set_name = random
-			#set_federation_law = succession_term_years_20
-			add_federation_experience = 600
-			add_cohesion = 100
-		}
-		event_target:Death_Guard_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:World_Eaters_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Thousand_Sons_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Emperors_Children_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Word_Bearers_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Alpha_Legion_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Iron_Warriors_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Night_Lords_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Mechanicum_Cyclothrathe_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Mechanicum_Samech_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Blood_Pact_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Admonition_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Chaos_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Conjurers_of_Fear_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Barbed_Chalice_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Brothrhd_Knife_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Givers_of_Life_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Stigmartus_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Bloodbath_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Penumbral_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
+		change_dominant_species = { species = event_target:Mechanicum_Sarum_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }

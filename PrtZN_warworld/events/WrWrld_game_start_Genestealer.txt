@@ -1,9 +1,10 @@
 namespace = WrWrld_game_start
+namespace = WrWrld_game_start_genestealer
 
 @create_pop_watch_fort_station = 15
 
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.66
+	id = WrWrld_game_start_genestealer.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -14,10 +15,10 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Cult_Four_ArmEmpr_evnt_trgt_country
 		communication_with_all = yes
 		#owner = {
-		#	country_event = { id = WrWrld_game_start.366 days = 3 }
+		#	country_event = { id = WrWrld_game_start_genestealer.366 days = 3 }
 		#}
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -362,7 +363,7 @@ country_event = { #Genestealer - Коринис
 	}
 }
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.67
+	id = WrWrld_game_start_genestealer.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -373,7 +374,7 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Hivecult_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -718,7 +719,7 @@ country_event = { #Genestealer - Коринис
 	}
 }
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.68
+	id = WrWrld_game_start_genestealer.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -729,7 +730,7 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Rusted_Claw_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -1045,7 +1046,7 @@ country_event = { #Genestealer - Коринис
 	}
 }
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.69
+	id = WrWrld_game_start_genestealer.4
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1056,7 +1057,7 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Bladed_Cog_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -1218,6 +1219,7 @@ country_event = { #Genestealer - Коринис
 		modify_species = {
 			species = this
 			add_trait = trait_cybernetic #trait_cyborg_ritualistic_implants
+			add_trait = trait_mechanicus
 			#add_traits_at_start_of_list = yes
 		}
 		#change_species = event_target:mechanicus_species
@@ -1408,7 +1410,7 @@ country_event = { #Genestealer - Коринис
 	}
 }
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.70
+	id = WrWrld_game_start_genestealer.5
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1419,7 +1421,7 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Pauper_Princes_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -1764,7 +1766,7 @@ country_event = { #Genestealer - Коринис
 	}
 }
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.71
+	id = WrWrld_game_start_genestealer.6
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1775,7 +1777,7 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Twisted_Helix_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -2120,334 +2122,7 @@ country_event = { #Genestealer - Коринис
 	}
 }
 country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.72
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = Cult_Hydraic_gos
-	}
-	immediate = {
-		save_global_event_target_as = Cult_Hydraic_evnt_trgt_country
-		communication_with_all = yes
-		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
-		}
-		add_resource = { energy = 20000	}
-		add_resource = { minerals = 12500 }
-		add_resource = { food = 12500 }
-		add_resource = { alloys = 12500	}
-		hidden_effect = { 
-			#Соц наука
-			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-			give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-			give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-			#give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-			
-			give_technology = { tech = tech_colonization_2 } #Приспособляемость
-			give_technology = { tech = tech_colonization_3 } #Приспособляемость
-			give_technology = { tech = tech_colonization_4 } #Приспособляемость
-			give_technology = { tech = tech_colonization_5 } #Приспособляемость
-			give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-			
-			#give_technology = { tech = tech_tracking_implants } # Эдикт на отслеживаемые импланты
-			#give_technology = { tech = tech_neural_implants } #Просто импланты
-			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
-			give_technology = { tech = tech_collective_production_methods } #Только для органических гештальтов
-			
-			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-			
-			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
-			give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-			give_technology = { tech = tech_combat_training } #Усиление обычной армии
-			give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-			give_technology = { tech = tech_centralized_command } #Военная академия
-			give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-			give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-			give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-			give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-			give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-			give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-			#give_technology = { tech = tech_adaptive_bureaucracy } #Баф бюрократии
-			#give_technology = { tech = tech_effective_bureaucracy } #Баф бюрократии
-			#give_technology = { tech = tech_colonial_bureaucracy } #Баф бюрократии + постройка
-			#give_technology = { tech = tech_galactic_bureaucracy } #Баф бюрократии + постройка
-			
-			#Псих наука
-			give_technology = { tech = tech_lasers_2 } #Лазеры
-			give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-			give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-			give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-			give_technology = { tech = tech_fusion_power } #Реактор 2
-			give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-			give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-			give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-			give_technology = { tech = tech_shields_2 } #Щиты 2
-			
-			give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-			give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-			give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-			give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-			give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-			give_technology = { tech = tech_encryption_1 } 
-			give_technology = { tech = tech_encryption_2 } 
-			give_technology = { tech = tech_decryption_1 }
-			give_technology = { tech = tech_decryption_2 }
-			give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		    give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-			
-			#Инж наука
-			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-			give_technology = { tech = tech_energy_lance_1 }
-			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-			give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-			give_technology = { tech = tech_destroyers } #Эсминец
-			give_technology = { tech = tech_cruisers } #Крейсер
-			give_technology = { tech = tech_battleships } #Линкор
-			#give_technology = { tech = tech_titans } #Титан
-			give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-			#give_technology = { tech = tech_thrusters_3 }
-			
-			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-			#give_technology = { tech = tech_starbase_5 } # Цитадель
-			#give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-			#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-			give_technology = { tech = tech_housing_1 }
-			
-			#give_technology = { tech = tech_habitat_1 } #Хабитат
-			give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-			give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-			give_technology = { tech = tech_mineral_purification_1 } #Здание для шахтёров
-			#give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-			give_technology = { tech = tech_space_mining_1 }
-			give_technology = { tech = tech_space_mining_2 }
-			give_technology = { tech = tech_space_mining_3 }
-			give_technology = { tech = tech_mining_1 }
-			give_technology = { tech = tech_mining_2 }
-			
-			#Прочие науки
-			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-			give_technology = { tech = tech_exotic_gases } #Создание газа
-			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-			give_technology = { tech = tech_volatile_motes } #Создание пылинок
-			give_technology = { tech = tech_archaeo_refinery }
-			give_technology = { tech = tech_mine_betharian }
-		}		
-		
-		add_tradition = tr_expansion_galactic_ambition
-		add_tradition = tr_expansion_colonization_fever
-		add_tradition = tr_expansion_a_new_life
-		add_tradition = tr_expansion_courier_network
-		add_tradition = tr_expansion_reach_for_the_stars
-		add_tradition = tr_expansion_finish     #Расширение
-		
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
-		
-		add_tradition = tr_synchronicity_adopt     #Синхронность
-		add_tradition = tr_synchronicity_integrated_preservation
-		add_tradition = tr_synchronicity_kinship_gestalt
-		add_tradition = tr_synchronicity_collective_reasoning
-		add_tradition = tr_synchronicity_cloned_organs
-		
-		add_tradition = tr_supremacy_adopt     #Превосходство
-		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_aptitude_adopt     #Про лидеров
-		
-		add_tradition = tr_unyielding_adopt     #Упорство
-		
-		every_system = {
-			limit = {
-				or = {
-					has_star_flag = Cult_Hydraic_gos
-					has_star_flag = Cult_Hydraic_gos_station
-				}
-			}
-			if = {
-				limit = {
-				    has_star_flag = Cult_Hydraic_gos
-			    }
-				create_starbase = {
-					owner = ROOT
-					size = starbase_outpost
-				}
-			}
-			else = {
-				limit = {
-					has_star_flag = Cult_Hydraic_gos_station
-			    }
-				create_starbase = {
-					owner = ROOT
-					size = starbase_starfortress
-					module = shipyard
-					module = shipyard
-					module = gun_battery
-					module = missile_battery
-					module = gun_battery
-					#module = anchorage 
-					
-					building = crew_quarters
-					building = target_uplink_computer
-					building = hydroponics_bay
-				}
-			}
-			every_system_planet = { 
-			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
-					create_deposits_stations = yes
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Corinis_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_hive
-						}
-					}
-				    add_building = building_hive_capital 
-				    add_building = building_spawning_pool
-				    add_building = building_planetary_shield_generator 
-				    add_building = building_hive_warren                #building_hive_node
-				    add_building = building_sentinel_posts
-				    add_building = building_stronghold
-				    add_building = building_food_processing_center	
-				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-				if = {
-					limit = {
-						is_capital = yes
-					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_hive
-						}
-					}
-				    add_building = building_hive_capital 
-				    add_building = building_spawning_pool
-				    add_building = building_planetary_shield_generator 
-				    add_building = building_hive_warren                #building_hive_node
-				    add_building = building_sentinel_posts
-				    add_building = building_stronghold
-				    add_building = building_food_processing_center	
-				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-			}
-		}
-	}
-}
-country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.73
+	id = WrWrld_game_start_genestealer.7
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2458,7 +2133,7 @@ country_event = { #Genestealer - Коринис
 		save_global_event_target_as = Star_Kindred_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
+			country_event = { id = WrWrld_game_start_genestealer.466 days = 4 }
 		}
 		add_resource = { energy = 20000	}
 		add_resource = { minerals = 12500 }
@@ -2802,364 +2477,9 @@ country_event = { #Genestealer - Коринис
 		}
 	}
 }
-country_event = { #Genestealer - Коринис
-	id = WrWrld_game_start.74
-	hide_window = yes
-	is_triggered_only = yes
 
-	trigger = {
-		has_country_flag = Blessed_Wormlings_gos
-	}
-	immediate = {
-		save_global_event_target_as = Blessed_Wormlings_evnt_trgt_country
-		communication_with_all = yes
-		owner = {
-			country_event = { id = WrWrld_game_start.466 days = 4 }
-		}
-		add_resource = { energy = 20000	}
-		add_resource = { minerals = 12500 }
-		add_resource = { food = 12500 }
-		add_resource = { alloys = 12500	}
-		hidden_effect = { 
-			#Соц наука
-			give_technology = { tech = tech_eco_simulation } #Бонус производительности для фермеров 2
-			give_technology = { tech = tech_gene_crops } #Бонус производительности для фермеров 3
-			give_technology = { tech = tech_hydroponics } #Гидропонные фермы
-			give_technology = { tech = tech_food_processing_1 } #Центр обработки пищи
-			#give_technology = { tech = tech_food_processing_2 } #Центр обработки пищи
-			
-			give_technology = { tech = tech_colonization_2 } #Приспособляемость
-			give_technology = { tech = tech_colonization_3 } #Приспособляемость
-			give_technology = { tech = tech_colonization_4 } #Приспособляемость
-			give_technology = { tech = tech_colonization_5 } #Приспособляемость
-			give_technology = { tech = tech_integrated_cybernetics } #Приспособляемость
-			give_technology = { tech = tech_tomb_world_adaption } #Приспособляемость
-			
-			#give_technology = { tech = tech_tracking_implants } # Эдикт на отслеживаемые импланты
-			#give_technology = { tech = tech_neural_implants } #Просто импланты
-			give_technology = { tech = tech_unity_of_purpose } #Только для гештальтов
-			give_technology = { tech = tech_collective_production_methods } #Только для органических гештальтов
-			
-			give_technology = { tech = tech_dangerous_wildlife } #Очистка квадратов и тд
-			give_technology = { tech = tech_dense_jungle } #Очистка квадратов и тд
-			
-			#give_technology = { tech = tech_gene_seed_purification } #Космодесант
-			give_technology = { tech = tech_ground_defense_planning } #Усиление обычной армии
-			give_technology = { tech = tech_combat_training } #Усиление обычной армии
-			give_technology = { tech = tech_global_defense_grid } #Вторая крепость-форпост для планеты
-			give_technology = { tech = tech_centralized_command } #Военная академия
-			give_technology = { tech = tech_interstellar_fleet_traditions } #Космическая Военная академия для станций
-			give_technology = { tech = tech_doctrine_fleet_size_1 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_2 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_3 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_4 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_fleet_size_5 } #Предел управляемости +
-			give_technology = { tech = tech_doctrine_navy_size_1 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_2 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_3 } #Увеличение численности флота
-			give_technology = { tech = tech_doctrine_navy_size_4 } #Увеличение численности флота
-			give_technology = { tech = tech_galactic_ambitions } #Увеличение числа космических баз
-			give_technology = { tech = tech_manifest_destiny } #Увеличение числа космических баз
-			
-			give_technology = { tech = tech_planetary_unification } #Необходимо для дальнейших исследований
-			give_technology = { tech = tech_colonial_centralization } #Планитарная столица и новые полицейские участки
-			give_technology = { tech = tech_galactic_administration } #Открытие столицы новой
-			give_technology = { tech = tech_planetary_infrastructure_1 } #Слот под сооружение и скорость развития колонии
-			give_technology = { tech = tech_planetary_infrastructure_2 } #Слот под сооружение и скорость развития колонии
-			give_technology = { tech = tech_global_production_strategy } #Министерство продукции
-			#give_technology = { tech = tech_adaptive_bureaucracy } #Баф бюрократии
-			#give_technology = { tech = tech_effective_bureaucracy } #Баф бюрократии
-			#give_technology = { tech = tech_colonial_bureaucracy } #Баф бюрократии + постройка
-			#give_technology = { tech = tech_galactic_bureaucracy } #Баф бюрократии + постройка
-			
-			#Псих наука
-			give_technology = { tech = tech_lasers_2 } #Лазеры
-			give_technology = { tech = tech_plasma_1 } #Плазма оружие 1
-			give_technology = { tech = tech_plasma_2 } #Плазма оружие 2
-			give_technology = { tech = tech_plasma_3 } #Плазма оружие 3
-			give_technology = { tech = tech_fusion_power } #Реактор 2
-			give_technology = { tech = tech_cold_fusion_power } #Реактор 3
-			give_technology = { tech = tech_reactor_boosters_2 } #Дополнительный реактор 2
-			give_technology = { tech = tech_reactor_boosters_3 } #Дополнительный реактор 3
-			give_technology = { tech = tech_shields_2 } #Щиты 2
-			
-			give_technology = { tech = tech_ftl_inhibitor } #Блокиратор пролёта чрез систему
-			give_technology = { tech = tech_planetary_shield_generator } #Планетарный генератор щита
-			give_technology = { tech = tech_power_hub_1 } #Здание для усиления добычи энергии
-			give_technology = { tech = tech_space_science_1 } # Наука от космических станций
-			give_technology = { tech = tech_space_science_2 } # Наука от космических станций
-			give_technology = { tech = tech_encryption_1 } 
-			give_technology = { tech = tech_encryption_2 } 
-			give_technology = { tech = tech_decryption_1 }
-			give_technology = { tech = tech_decryption_2 }
-			give_technology = { tech = tech_power_plant_2 } #Увеличение добычи энергетиками
-		    give_technology = { tech = tech_power_plant_3 } #Увеличение добычи энергетиками
-			
-			#Инж наука
-			give_technology = { tech = tech_mass_drivers_2 } #2 пушки или как их там
-			give_technology = { tech = tech_energy_lance_1 }
-			give_technology = { tech = tech_kinetic_artillery_1 } #Кинетик артиллерия
-			give_technology = { tech = tech_flak_batteries_2 } #зенитки 
-			give_technology = { tech = tech_torpedoes_1 } #Торпеды			
-			give_technology = { tech = tech_destroyers } #Эсминец
-			give_technology = { tech = tech_cruisers } #Крейсер
-			give_technology = { tech = tech_battleships } #Линкор
-			#give_technology = { tech = tech_titans } #Титан
-			give_technology = { tech = tech_ship_armor_2 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_3 } #Броня корабля
-			give_technology = { tech = tech_ship_armor_4 } #Броня корабля
-			give_technology = { tech = tech_thrusters_2 } #Улучшенный двигатель
-			#give_technology = { tech = tech_thrusters_3 }
-			
-			give_technology = { tech = tech_starbase_3 } #Космическая база новый уровень
-			give_technology = { tech = tech_starbase_4 } #Космическая база новый уровень
-			#give_technology = { tech = tech_starbase_5 } # Цитадель
-			#give_technology = { tech = tech_modular_engineering } #Удешевление строительства
-			#give_technology = { tech = tech_space_defense_station_improvement } #Удешевление строительства
-			give_technology = { tech = tech_housing_1 }
-			
-			#give_technology = { tech = tech_habitat_1 } #Хабитат
-			give_technology = { tech = tech_alloys_1 } #Бонус производства стали
-			give_technology = { tech = tech_advanced_metallurgy_1 } #Бонус производства стали
-			give_technology = { tech = tech_mineral_purification_1 } #Здание для шахтёров
-			#give_technology = { tech = tech_powered_exoskeletons } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
-			give_technology = { tech = tech_space_mining_1 }
-			give_technology = { tech = tech_space_mining_2 }
-			give_technology = { tech = tech_space_mining_3 }
-			give_technology = { tech = tech_mining_1 }
-			give_technology = { tech = tech_mining_2 }
-			
-			#Прочие науки
-			give_technology = { tech = tech_mine_exotic_gases } #Добыча газа
-			give_technology = { tech = tech_exotic_gases } #Создание газа
-			give_technology = { tech = tech_mine_rare_crystals } #Добыча кристаллов
-			give_technology = { tech = tech_rare_crystals } #Создание кристаллов
-			give_technology = { tech = tech_mine_volatile_motes } #Добыча пылинок
-			give_technology = { tech = tech_volatile_motes } #Создание пылинок
-			give_technology = { tech = tech_archaeo_refinery }
-			give_technology = { tech = tech_mine_betharian }
-		}		
-		
-		add_tradition = tr_expansion_galactic_ambition
-		add_tradition = tr_expansion_colonization_fever
-		add_tradition = tr_expansion_a_new_life
-		add_tradition = tr_expansion_courier_network
-		add_tradition = tr_expansion_reach_for_the_stars
-		add_tradition = tr_expansion_finish     #Расширение
-		
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
-		
-		add_tradition = tr_synchronicity_adopt     #Синхронность
-		add_tradition = tr_synchronicity_integrated_preservation
-		add_tradition = tr_synchronicity_kinship_gestalt
-		add_tradition = tr_synchronicity_collective_reasoning
-		add_tradition = tr_synchronicity_cloned_organs
-		
-		add_tradition = tr_supremacy_adopt     #Превосходство
-		
-		add_tradition = tr_subterfuge_information_security
-		add_tradition = tr_subterfuge_nda
-		add_tradition = tr_subterfuge_operational_security
-		add_tradition = tr_subterfuge_double_agents
-		add_tradition = tr_subterfuge_shadow_recruits
-		add_tradition = tr_subterfuge_finish     #Махинации
-		
-		add_tradition = tr_aptitude_adopt     #Про лидеров
-		
-		add_tradition = tr_unyielding_adopt     #Упорство
-		
-		every_system = {
-			limit = {
-				or = {
-					has_star_flag = Blessed_Wormlings_gos
-					has_star_flag = Blessed_Wormlings_gos_station
-				}
-			}
-			if = {
-				limit = { exists = starbase }
-					starbase = {
-						if = {
-							limit = {
-								is_owned_by = root
-							}
-						if = {
-							limit = { exists = starbase } #has_starbase_size = starbase_outpost
-							set_starbase_size = starbase_starfortress
-							set_starbase_module = {
-								slot = 1
-								module = shipyard
-							}
-							set_starbase_module = {
-								slot = 2
-								module = shipyard
-							}
-							set_starbase_module = {
-								slot = 3
-								module = gun_battery
-							}
-							set_starbase_module = {
-								slot = 4
-								module = gun_battery
-							}
-							set_starbase_module = {
-								slot = 5
-								module = gun_battery
-							}
-							set_starbase_module = {
-								slot = 6
-								module = gun_battery
-							}
-						}
-					}
-				}
-			}
-			else = {
-				limit = {
-					has_star_flag = Blessed_Wormlings_gos_station
-			    }
-				create_starbase = {
-					owner = ROOT
-					size = starbase_starfortress
-					module = shipyard
-					module = shipyard
-					module = gun_battery
-					module = missile_battery
-					module = gun_battery
-					#module = anchorage 
-					
-					building = crew_quarters
-					building = target_uplink_computer
-					building = hydroponics_bay
-				}
-			}
-			every_system_planet = { 
-			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
-				    limit = { 
-			            is_colonizable = no		
-			        }
-				    # create_mining_station = {
-				    	# owner = ROOT
-		    	    # }
-					# create_research_station = {
-				    	# owner = ROOT
-		    	    # }
-					create_deposits_stations = yes
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Corinis_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_hive
-						}
-					}
-				    add_building = building_hive_capital 
-				    add_building = building_spawning_pool
-				    add_building = building_planetary_shield_generator 
-				    add_building = building_hive_warren                #building_hive_node
-				    add_building = building_sentinel_posts
-				    add_building = building_stronghold
-				    add_building = building_food_processing_center	
-				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-				if = {
-					limit = {
-						is_capital = yes
-					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_hive
-						}
-					}
-				    add_building = building_hive_capital 
-				    add_building = building_spawning_pool
-				    add_building = building_planetary_shield_generator 
-				    add_building = building_hive_warren                #building_hive_node
-				    add_building = building_sentinel_posts
-				    add_building = building_stronghold
-				    add_building = building_food_processing_center	
-				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 32                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_generator
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_mining
-						}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_farming
-						}
-					}
-				}
-			}
-		}
-	}
-}
 country_event = { #Феда генокрадов
-	id = WrWrld_game_start.366
+	id = WrWrld_game_start_genestealer.366
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3236,7 +2556,7 @@ country_event = { #Феда генокрадов
 	}
 }
 country_event = { #Genestealer
-	id = WrWrld_game_start.466
+	id = WrWrld_game_start_genestealer.466
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -3251,24 +2571,49 @@ country_event = { #Genestealer
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
-			target = event_target:Mechanicum_Samech_evnt_trgt_country
+			target = event_target:Chaos_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Ynnari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Commorragh_evnt_trgt_country
@@ -3276,9 +2621,44 @@ country_event = { #Genestealer
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
-			target = event_target:Tau_evnt_trgt_country
+			target = event_target:Void_Dragons_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
 			target = event_target:Blood_Axes_evnt_trgt_country

@@ -16,7 +16,7 @@ country_event = { #Mechanicus
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
 		#}
 		communication_with_all = yes
 		add_resource = { energy = 25000 }
@@ -275,7 +275,7 @@ country_event = { #Ryza
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
 		#}
 		communication_with_all = yes
 		add_resource = { energy = 25000 }
@@ -535,7 +535,7 @@ country_event = { #Metalica
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
 		#}
 		communication_with_all = yes
 		add_resource = { energy = 25000 }
@@ -794,7 +794,7 @@ country_event = { #Graia
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
 		#}
 		communication_with_all = yes
 		add_resource = { energy = 25000 }
@@ -1053,7 +1053,7 @@ country_event = { #Lucius
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
 		#}
 		communication_with_all = yes
 		add_resource = { energy = 25000 }
@@ -1312,7 +1312,7 @@ country_event = { #Triplex_Phall
 			country_event = { id = WrWrld_game_start_mechanicus.102 days = 1 }
 		}
 		#owner = {
-		#	country_event = { id = WrWrld_game_start_mechanicus.601 days = 5 }
+		#	country_event = { id = WrWrld_game_start.601 days = 5 }
 		#}
 		communication_with_all = yes
 		add_resource = { energy = 25000 }
@@ -1562,9 +1562,9 @@ country_event = { #Imperium
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = {
-		has_country_flag = Mechanicus_gos
-	}
+	#trigger = {
+	#	has_country_flag = Mechanicus_gos
+	#}
 	immediate = {
 		communication_with_all = yes
 		#для Фикса попов

@@ -14,7 +14,7 @@ country_event = { #Black_Legion
 		save_global_event_target_as = Black_Legion_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.122 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_legion.301 days = 3 }
@@ -55,8 +55,8 @@ country_event = { #Black_Legion
 		add_tradition = tr_unyielding_fortress_doctrine
 		add_tradition = tr_unyielding_finish     #Упорство
 		
-		add_tradition = tr_psionics_adopt
-		add_tradition = tr_psionics_mind_readers     #Псионика
+		#add_tradition = tr_psionics_adopt
+		#add_tradition = tr_psionics_mind_readers     #Псионика
 		
 		add_tradition = tr_domination_colonial_viceroys
 		add_tradition = tr_domination_imperious_architecture
@@ -326,7 +326,7 @@ country_event = { #Death_Guard
 		save_global_event_target_as = Death_Guard_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.122 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_legion.302 days = 3 }
@@ -630,7 +630,7 @@ country_event = { #World_Eaters
 		save_global_event_target_as = World_Eaters_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.134 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_legion.303 days = 3 }
@@ -929,9 +929,9 @@ country_event = { #Thousand_Sons
 	immediate = {
 		save_global_event_target_as = Thousand_Sons_evnt_trgt_country
 		communication_with_all = yes
-		owner = {
-			country_event = { id = WrWrld_game_start.122 days = 1 }
-		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start.122 days = 1 }
+		#}
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_legion.304 days = 3 }
 		}
@@ -1234,7 +1234,7 @@ country_event = { #Emperors_Children
 		save_global_event_target_as = Emperors_Children_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.122 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_legion.305 days = 3 }
@@ -1545,7 +1545,7 @@ country_event = { #Word_Bearers
 		save_global_event_target_as = Word_Bearers_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.134 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
@@ -1847,7 +1847,7 @@ country_event = { #Alpha_Legion
 		save_global_event_target_as = Alpha_Legion_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.134 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_legion.307 days = 3 }
@@ -2160,7 +2160,7 @@ country_event = { #Night_Lords
 		save_global_event_target_as = Night_Lords_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.134 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
@@ -2467,7 +2467,7 @@ country_event = { #Iron_Warriors
 		save_global_event_target_as = Iron_Warriors_evnt_trgt_country
 		communication_with_all = yes
 		owner = {
-			country_event = { id = WrWrld_game_start.134 days = 1 }
+			country_event = { id = WrWrld_game_start_chaos_legion.101 days = 1 }
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
@@ -2763,7 +2763,7 @@ country_event = { #Iron_Warriors
 	}
 }
 country_event = { #
-	id = WrWrld_game_start.127
+	id = WrWrld_game_start_chaos_legion.101
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -2771,31 +2771,7 @@ country_event = { #
 	#	has_country_flag = 
 	#}
 	immediate = {
-		change_dominant_species = { species = event_target:Thousand_Sons_evnt_trgt_country.owner_main_species change_all = yes }
-	}
-}
-country_event = { #
-	id = WrWrld_game_start.127
-	hide_window = yes
-	is_triggered_only = yes
-
-	#trigger = {
-	#	has_country_flag = 
-	#}
-	immediate = {
-		change_dominant_species = { species = event_target:Mechanicum_Samech_evnt_trgt_country.owner_main_species change_all = yes }
-	}
-}
-country_event = { #
-	id = WrWrld_game_start.134
-	hide_window = yes
-	is_triggered_only = yes
-
-	#trigger = {
-	#	has_country_flag = 
-	#}
-	immediate = {
-		change_dominant_species = { species = event_target:Chaos_evnt_trgt_country.owner_main_species change_all = yes }
+		change_dominant_species = { species = event_target:Black_Legion_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Chaos
@@ -3055,22 +3031,62 @@ country_event = { #Chaos
 		declare_war = {
 			target = event_target:Eldar_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Ynnari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
 		declare_war = {
 			target = event_target:Tau_evnt_trgt_country
 			#name = <optional war name>
-			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
 		declare_war = {
 			target = event_target:Sayteh_evnt_trgt_country

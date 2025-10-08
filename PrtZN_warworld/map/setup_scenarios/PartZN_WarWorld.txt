@@ -845,6 +845,7 @@ system = { id = "817" name = "Valos"			position = { x = -420.0915 y = 341.0944 }
 system = { id = "818" name = "Myrandias"		position = { x = -453.0176 y = 330.876 } initializer = Myrandias_initializer }
 system = { id = "819" name = "Repentance 2"		position = { x = -356.5000 y = 366.0000 } }
 system = { id = "820" name = "Sorrowfall" position = { x = -212.5 y = -291.283 } initializer = Sorrowfall_initializer }
+system = { id = "821" name = "Iax"			position = { x = -369.5 y = 237.1 } }
 
 #add_hyperlane = { from = "0" to = "0" }
  add_hyperlane = { from = "184" to = "814" }
@@ -862,11 +863,14 @@ system = { id = "820" name = "Sorrowfall" position = { x = -212.5 y = -291.283 }
  add_hyperlane = { from = "820" to = "411" }
  add_hyperlane = { from = "818" to = "473" }
  add_hyperlane = { from = "473" to = "475" }
- add_hyperlane = { from = "0" to = "0" }
+ add_hyperlane = { from = "821" to = "532" }
+ add_hyperlane = { from = "821" to = "506" }
+ add_hyperlane = { from = "821" to = "465" }
  
 
 #system = { id = "532" name = "Arsta"			position = { x = -392.2997 y = 222.2854 } initializer = Arsta_initializer }
 #system = { id = "469" name = "Iathglas"			position = { x = -347.4271 y = 252.0545 } initializer = Iathglas_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Ynnari_start } } } 
+#system = { id = "506" name = "Grendel"			position = { x = -385.1655 y = 247.2854 } initializer = Grendel_initializer spawn_weight = { base = 0 modifier = { add = 10000 has_country_flag = Barghesi_start } } }
 
 #system = { id = "410" name = "Sorrowfall" position = { x = -195.2859 y = -278.1692 } initializer = Sorrowfall_initializer } #МИР_ВОЙНЫ_ХАОСА
 #system = { id = "411" name = "Haytor" position = { x = -230.4827 y = -304.283 } initializer = Haytor_initializer } #МИР_ВОЙНЫ_ХАОСА
@@ -876,24 +880,24 @@ system = { id = "820" name = "Sorrowfall" position = { x = -212.5 y = -291.283 }
 #system = { id = "474" name = "Myrandias"		position = { x = -453.0176 y = 300.876 } initializer = Myrandias_initializer }
 #system = { id = "501" name = "Repentance"		position = { x = -324.0000 y = 381.0000 } initializer = Repentance_initializer }
 
-nebula = { name = "Eye Of Terror" position = {	x = 311.3224 y = -193.1686 } radius = 30 }
-nebula = { name = "Siren's Storm" position = { x = 103.5 y = 206.25 } radius = 30 }
-nebula = { name = "Storm of the Emperor Wrath" position = { x = -53.0 y = -283.5 } radius = 38 }
-nebula = { name = "Maelstrom" position = { x = 4.0 y = -18.0 } radius = 30 }
-nebula = { name = "Malfactus" position = { x = -226.0 y = -377.0 } radius = 30 }
-nebula = { name = "Somnium Stars" position = { x = -426.0 y = -147.0 } radius = 25 }
-nebula = { name = "Hadex Anomaly" position = { x = -412.0 y = 183.0 } radius = 30 }
-nebula = { name = "The Storm of Magnus" position = { x = 92.8237 y = -38.5538 } radius = 15 }
-nebula = { name = "Storms of Judgement" position = { x = 292.0 y = 273.0 } radius = 30 }
-nebula = { name = "Gates of Fire" position = { x = 346.0 y = -12.0 } radius = 15 }
-nebula = { name = "Koronus Expanse" position = { x = 434.7324 y = -397.0555 } radius = 30 }
-nebula = { name = "Celtor's Flux" position = { x = -82.0 y = 270.0 } radius = 20 }
-nebula = { name = "Heart of Darkness" position = { x = -214.8741 y = 75.6292 } radius = 20 }	
-nebula = { name = "Von Grothe's Rapidity" position = { x = -353.4210 y = 126.5743 } radius = 15 }
-nebula = { name = "Inferno Reach" position = { x = -114.2562 y = 169.9793 } radius = 18 }
-nebula = { name = "Perfidian Gap" position = { x = -183.7139 y = -120.6888 } radius = 35 }
-nebula = { name = "Daemon's Maw" position = { x = -402.0 y = -292.0 } radius = 30 }
-nebula = { name = "Bleak Coil" position = { x = 168.5 y = -287.0 } radius = 30 }
+#nebula = { name = "Eye Of Terror" position = {	x = 311.3224 y = -193.1686 } radius = 30 }
+#nebula = { name = "Siren's Storm" position = { x = 103.5 y = 206.25 } radius = 30 }
+#nebula = { name = "Storm of the Emperor Wrath" position = { x = -53.0 y = -283.5 } radius = 38 }
+#nebula = { name = "Maelstrom" position = { x = 4.0 y = -18.0 } radius = 30 }
+#nebula = { name = "Malfactus" position = { x = -226.0 y = -377.0 } radius = 30 }
+#nebula = { name = "Somnium Stars" position = { x = -426.0 y = -147.0 } radius = 25 }
+#nebula = { name = "Hadex Anomaly" position = { x = -412.0 y = 183.0 } radius = 30 }
+#nebula = { name = "The Storm of Magnus" position = { x = 92.8237 y = -38.5538 } radius = 15 }
+#nebula = { name = "Storms of Judgement" position = { x = 292.0 y = 273.0 } radius = 30 }
+#nebula = { name = "Gates of Fire" position = { x = 346.0 y = -12.0 } radius = 15 }
+#nebula = { name = "Koronus Expanse" position = { x = 434.7324 y = -397.0555 } radius = 30 }
+#nebula = { name = "Celtor's Flux" position = { x = -82.0 y = 270.0 } radius = 20 }
+#nebula = { name = "Heart of Darkness" position = { x = -214.8741 y = 75.6292 } radius = 20 }	
+#nebula = { name = "Von Grothe's Rapidity" position = { x = -353.4210 y = 126.5743 } radius = 15 }
+#nebula = { name = "Inferno Reach" position = { x = -114.2562 y = 169.9793 } radius = 18 }
+#nebula = { name = "Perfidian Gap" position = { x = -183.7139 y = -120.6888 } radius = 35 }
+#nebula = { name = "Daemon's Maw" position = { x = -402.0 y = -292.0 } radius = 30 }
+#nebula = { name = "Bleak Coil" position = { x = 168.5 y = -287.0 } radius = 30 }
 #										#
  add_hyperlane = { from = "0" to = "7" }
  add_hyperlane = { from = "0" to = "6" }

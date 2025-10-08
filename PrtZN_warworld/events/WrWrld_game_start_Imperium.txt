@@ -21,9 +21,9 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_start_fleet.1 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		
 		communication_with_all = yes
 		
@@ -39,35 +39,7 @@ country_event = { #Imperium
 		give_technology_imperium = yes
 		add_tradition_imperium = yes
 		
-		#modify_species = {
-		#	species = owner_main_species
-		#	name = Сервитор			#species_name_servitor
-		#	plural = Сервиторы		#species_plural_servitor
-		#	adjective = Сервиторыск	#species_adjective_servitor
-		#	add_trait = trait_nerve_stapled
-		#	add_trait = trait_limited_cybernetic
-		#	add_trait = trait_auto_mod_biological #trait_auto_mod_biological trait_auto_mod_cyborg
-		#	effect = { save_global_event_target_as = servitor_species }
-		#}
-		#modify_species = {
-		#	species = owner_main_species
-		#	name = Огрин
-		#	plural = Огрины
-		#	adjective = Огринск
-		#	add_trait = trait_syncretic_proles
-		#	add_trait = trait_very_strong
-		#	add_trait = trait_presapient_earthbound
-		#	effect = { save_global_event_target_as = ogryn_species }
-		#}
-		#modify_species = {
-		#	species = owner_main_species
-		#	name = Псайкер
-		#	plural = Псайкеры
-		#	adjective = Псайкерск
-		#	add_trait = trait_psionic
-		#	add_trait = trait_stargazer
-		#	effect = { save_global_event_target_as = psyker_species }
-		#}
+		create_fleet_from_naval_cap = 0.15
 		
 		every_system = {
 			limit = {
@@ -596,9 +568,9 @@ country_event = { #Segmentum_Obscurus
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.202 days = 2 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_start_fleet.1 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
@@ -1085,9 +1057,9 @@ country_event = { #Ultima_Segmentum
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.203 days = 2 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		#owner = {
 		#	country_event = { id = WrWrld_start_fleet.1 }
 		#}
@@ -1577,9 +1549,9 @@ country_event = { #Segmentum_Tempestus
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.204 days = 2 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_start_fleet.1 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
@@ -2074,9 +2046,9 @@ country_event = { #Eastern_Fringe
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.205 days = 2 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		#owner = {
 		#	country_event = { id = WrWrld_start_fleet.1 }
 		#}
@@ -2563,9 +2535,9 @@ country_event = { #Manachean_Commonwealth
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.206 days = 2 }
 		}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
@@ -2904,12 +2876,12 @@ country_event = { #Ecclesiarchy
 	}
 	immediate = {
 	    save_global_event_target_as = Ecclesiarchy_evnt_trgt_country
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_imperium.207 days = 2 }
-		#}
-		#owner = {
-		#	country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.207 days = 2 }
+		}
+		owner = {
+			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
+		}
 		communication_with_all = yes
 		add_resource = { energy = 15000 }
 		add_resource = { minerals = 4500 }
@@ -3968,13 +3940,12 @@ country_event = { #Imperium
 	immediate = {
 		communication_with_all = yes
 		# Вассализация
-		set_subject_of = {
-			who = event_target:Imperium_evnt_trgt_country
-			preset = preset_ecclesiarchy
-		}
+		#set_subject_of = {
+		#	who = event_target:Imperium_evnt_trgt_country
+		#	preset = preset_ecclesiarchy
+		#}
 		
-		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
-		
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }	
 	}
 }
 country_event = { #Federation
@@ -4087,41 +4058,6 @@ country_event = { #Federation
 			}
 			#set_name = random # Fixes some naming issues
 		}
-		event_target:Dark_Angels_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Imperial_Fists_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Blood_Angels_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Salamanders_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
-		event_target:Space_Wolves_evnt_trgt_country = {
-			join_alliance = {
-				who = root
-				override_requirements = yes
-			}
-			#set_name = random # Fixes some naming issues
-		}
 		event_target:Black_Templars_evnt_trgt_country = {
 			join_alliance = {
 				who = root
@@ -4146,6 +4082,11 @@ country_event = { #Imperium
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
 		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
 		#declare_war = {
 		#	target = event_target:Eldar_evnt_trgt_country
 		#	#name = <optional war name>
@@ -4153,6 +4094,26 @@ country_event = { #Imperium
 		#}
 		declare_war = {
 			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}

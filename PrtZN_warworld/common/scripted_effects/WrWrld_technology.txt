@@ -1848,6 +1848,8 @@ give_technology_tau = {
 			give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
 			give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
 			give_technology = { tech = tech_space_science_3 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_4 message = no } # Наука от космических станций
+			give_technology = { tech = tech_space_science_5 message = no } # Наука от космических станций
 			give_technology = { tech = tech_encryption_1 message = no } 
 			give_technology = { tech = tech_decryption_1 message = no }
 			give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
@@ -1882,9 +1884,17 @@ give_technology_tau = {
 			give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
 			give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
 			give_technology = { tech = tech_robotic_workers message = no } #Возможность строить роботов
+			give_technology = { tech = tech_droid_workers message = no }
+			give_technology = { tech = tech_synthetic_workers message = no }
+			give_technology = { tech = tech_synthetic_leaders message = no }
+			give_technology = { tech = tech_robot_assembly_complex message = no }
+			give_technology = { tech = tech_space_construction message = no }
+			give_technology = { tech = tech_construction_templates message = no }
 			give_technology = { tech = tech_space_mining_1 message = no }
 			give_technology = { tech = tech_space_mining_2 message = no }
 			give_technology = { tech = tech_space_mining_3 message = no }
+			give_technology = { tech = tech_space_mining_4 message = no }
+			give_technology = { tech = tech_space_mining_5 message = no }
 			give_technology = { tech = tech_mining_1 message = no }
 			give_technology = { tech = tech_mining_2 message = no }
 			give_technology = { tech = tech_mining_3 message = no }
@@ -1912,14 +1922,14 @@ give_technology_votann = {
 	give_technology = { tech = tech_gene_crops message = no } #Бонус производительности для фермеров 3
 	give_technology = { tech = tech_hydroponics message = no } #Гидропонные фермы
 	give_technology = { tech = tech_food_processing_1 message = no } #Центр обработки пищи
-	#give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
+	give_technology = { tech = tech_food_processing_2 message = no } #Центр обработки пищи
 	
 	give_technology = { tech = tech_colonization_2 message = no } #Приспособляемость
 	give_technology = { tech = tech_colonization_3 message = no } #Приспособляемость
 	give_technology = { tech = tech_colonization_4 message = no } #Приспособляемость
 	give_technology = { tech = tech_colonization_5 message = no } #Приспособляемость
 	give_technology = { tech = tech_integrated_cybernetics message = no } #Приспособляемость
-	#give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
+	give_technology = { tech = tech_tomb_world_adaption message = no } #Приспособляемость
 	
 	#give_technology = { tech = tech_tracking_implants message = no } # Эдикт на отслеживаемые импланты
 	give_technology = { tech = tech_neural_implants message = no } #Просто импланты
@@ -1961,24 +1971,30 @@ give_technology_votann = {
 	
 	# Физ наука #
 	give_technology = { tech = tech_lasers_2					message = no } #Лазеры
+	give_technology = { tech = tech_lasers_3					message = no } #Лазеры
 	give_technology = { tech = tech_plasma_1					message = no } #Плазма оружие 1
 	give_technology = { tech = tech_plasma_2					message = no } #Плазма оружие 2
 	give_technology = { tech = tech_plasma_3					message = no } #Плазма оружие 3
 	give_technology = { tech = tech_fusion_power				message = no } #Реактор 2
 	give_technology = { tech = tech_cold_fusion_power			message = no } #Реактор 3
 	#	Для прыжкового двигателя	########################################################################################################################## ОБРАТИ ВНИМАНИЕ
-	#give_technology = { tech = tech_antimatter_power message = no } #Реактор 4
-	#give_technology = { tech = tech_zero_point_power message = no } #Реактор 5
+	give_technology = { tech = tech_antimatter_power message = no } #Реактор 4
+	give_technology = { tech = tech_zero_point_power message = no } #Реактор 5
 	#################################
 	give_technology = { tech = tech_reactor_boosters_2			message = no } #Дополнительный реактор 2
 	give_technology = { tech = tech_reactor_boosters_3			message = no } #Дополнительный реактор 3
 	give_technology = { tech = tech_shields_2					message = no } #Щиты 2
+	give_technology = { tech = tech_shields_3					message = no } #Щиты 3
+	give_technology = { tech = tech_shields_4					message = no } #Щиты 4
 	
 	give_technology = { tech = tech_ftl_inhibitor				message = no } #Блокиратор пролёта чрез систему
 	give_technology = { tech = tech_planetary_shield_generator	message = no } #Планетарный генератор щита
 	give_technology = { tech = tech_power_hub_1 message = no } #Здание для усиления добычи энергии
 	give_technology = { tech = tech_space_science_1 message = no } # Наука от космических станций
 	give_technology = { tech = tech_space_science_2 message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_3 message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_4 message = no } # Наука от космических станций
+	give_technology = { tech = tech_space_science_5 message = no } # Наука от космических станций
 	give_technology = { tech = tech_encryption_1 message = no } 
 	give_technology = { tech = tech_decryption_1 message = no }
 	give_technology = { tech = tech_power_plant_2 message = no } #Увеличение добычи энергетиками
@@ -1989,6 +2005,7 @@ give_technology_votann = {
 	
 	# Инж наука #
 	give_technology = { tech = tech_mass_drivers_2 message = no } #2 пушки или как их там
+	give_technology = { tech = tech_mass_drivers_3 message = no }
 	give_technology = { tech = tech_energy_lance_1 message = no }
 	give_technology = { tech = tech_kinetic_artillery_1 message = no } #Кинетик артиллерия
 	give_technology = { tech = tech_flak_batteries_2 message = no } #зенитки 
@@ -2009,17 +2026,28 @@ give_technology_votann = {
 	#give_technology = { tech = tech_modular_engineering message = no } #Удешевление строительства
 	#give_technology = { tech = tech_space_defense_station_improvement message = no } #Удешевление строительства
 	give_technology = { tech = tech_housing_1 message = no }
+	give_technology = { tech = tech_housing_2 message = no }
 	
 	#give_technology = { tech = tech_habitat_1 } #Хабитат
 	give_technology = { tech = tech_alloys_1 message = no } #Бонус производства стали
 	give_technology = { tech = tech_advanced_metallurgy_1 message = no } #Бонус производства стали
 	give_technology = { tech = tech_mineral_purification_1 message = no } #Здание для шахтёров
 	give_technology = { tech = tech_powered_exoskeletons message = no } #Экзоскелеты ТОЛЬКО ДЛЯ ОБЫЧНЫХ ОРГАНИКОВ
+	give_technology = { tech = tech_robotic_workers message = no } #Возможность строить роботов
+	give_technology = { tech = tech_droid_workers message = no }
+	give_technology = { tech = tech_synthetic_workers message = no }
+	give_technology = { tech = tech_synthetic_leaders message = no }
+	give_technology = { tech = tech_robot_assembly_complex message = no }
+	give_technology = { tech = tech_space_construction message = no }
+	give_technology = { tech = tech_construction_templates message = no }
 	give_technology = { tech = tech_space_mining_1 message = no }
 	give_technology = { tech = tech_space_mining_2 message = no }
-	#give_technology = { tech = tech_space_mining_3 message = no }
+	give_technology = { tech = tech_space_mining_3 message = no }
+	give_technology = { tech = tech_space_mining_4 message = no }
+	give_technology = { tech = tech_space_mining_5 message = no }
 	give_technology = { tech = tech_mining_1 message = no }
 	give_technology = { tech = tech_mining_2 message = no }
+	give_technology = { tech = tech_mining_3 message = no }
 	
 	#для зон
 	give_technology = { tech = tech_society_2 message = no }
@@ -2027,9 +2055,14 @@ give_technology_votann = {
 	give_technology = { tech = tech_physics_2 message = no }
 	
 	#Прочие науки
-	give_technology_rare_res = yes
+	give_technology = { tech = tech_mine_exotic_gases message = no } #Добыча газа
+	give_technology = { tech = tech_exotic_gases message = no } #Создание газа
+	give_technology = { tech = tech_mine_rare_crystals message = no } #Добыча кристаллов
+	give_technology = { tech = tech_rare_crystals message = no } #Создание кристаллов
+	give_technology = { tech = tech_mine_volatile_motes message = no } #Добыча пылинок
+	give_technology = { tech = tech_volatile_motes message = no } #Создание пылинок
 	give_technology = { tech = tech_archaeo_refinery message = no }
-	#give_technology = { tech = tech_mine_betharian message = no }
+	give_technology = { tech = tech_mine_betharian message = no }
 }
 add_tradition_votann = {
 	optimize_memory

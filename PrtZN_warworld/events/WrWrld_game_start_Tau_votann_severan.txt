@@ -518,6 +518,9 @@ country_event = { #Farsight
 		add_resource = { rare_crystals = 900 }
 		add_resource = { exotic_gases = 900 }
 		owner = {
+			country_event = { id = WrWrld_game_start_tau_votann_severan.102 days = 1 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		give_technology_tau = yes
@@ -926,5 +929,17 @@ country_event = { #Severan_Dominate
 				}
 			}
 		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_tau_votann_severan.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		change_dominant_species = { species = event_target:Tau_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }

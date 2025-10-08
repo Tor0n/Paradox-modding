@@ -13,6 +13,9 @@ country_event = { #Ultramarines
 	immediate = {
 	    save_global_event_target_as = Ultramarines_evnt_trgt_country
 		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.100 days = 1 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start_space_marines.201 days = 2 }
 		}
 		communication_with_all = yes
@@ -699,6 +702,9 @@ country_event = { #Black_Templars
 	immediate = {
 	    save_global_event_target_as = Black_Templars_evnt_trgt_country
 		owner = {
+			country_event = { id = WrWrld_game_start_space_marines.100 days = 1 }
+		}
+		owner = {
 			country_event = { id = WrWrld_game_start_space_marines.211 days = 2 }
 		}
 		communication_with_all = yes
@@ -835,6 +841,18 @@ country_event = { #Black_Templars
 				}
 			}
 		}
+	}
+}
+country_event = { #
+	id = WrWrld_game_start_space_marines.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = 
+	#}
+	immediate = {
+		change_dominant_species = { species = event_target:Imperium_evnt_trgt_country.owner_main_species change_all = yes }
 	}
 }
 country_event = { #Imperium
