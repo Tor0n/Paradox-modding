@@ -158,15 +158,9 @@ country_event = { #Mechanicum_Sarum
 					add_building = building_temple #building_holotemple	
 					add_building = building_energy_grid					
 				    while = {
-				    	count = 38
+				    	count = 41
 				    	create_pop = {
 				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 3
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
 					while = {
@@ -235,16 +229,10 @@ country_event = { #Mechanicum_Sarum
 					#add_building = building_autochthon_monument
 					add_building = building_chemical_plant 	
 					add_building = building_ministry_production					
-				    #while = {
-				    #	count = 18
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
-				    	count = 20
+				    while = {
+				    	count = 18
 				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    		species = owner_main_species
 				    	}
 					}
 				}
@@ -421,12 +409,6 @@ country_event = { #Mechanicum_Samech
 				    	}
 					}
 					while = {
-				    	count = 3
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
-					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
@@ -476,15 +458,9 @@ country_event = { #Mechanicum_Samech
 					add_building = building_mineral_purification_plant
 					add_building = building_foundry_1					
 				    while = {
-				    	count = 13
+				    	count = 31
 				    	create_pop = {
 				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 21
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
 					#while = {
@@ -535,15 +511,9 @@ country_event = { #Mechanicum_Samech
 				    #add_building = building_necrophage_elevation_chamber #building_necrophage_house_of_apotheosis 	
 					add_building = building_temple						
 				    while = {
-				    	count = 4
+				    	count = 16
 				    	create_pop = {
 				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 12
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
 					while = {
@@ -613,16 +583,10 @@ country_event = { #Mechanicum_Samech
 					#add_building = building_autochthon_monument
 					add_building = building_chemical_plant 	
 					add_building = building_ministry_production					
-				    #while = {
-				    #	count = 18
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
-				    	count = 20
+				    while = {
+				    	count = 18
 				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    		species = owner_main_species
 				    	}
 					}
 				}
@@ -790,15 +754,9 @@ country_event = { #Mechanicum_Cyclothrathe
 					add_building = building_mineral_purification_plant
 					add_building = building_foundry_1					
 				    while = {
-				    	count = 5
+				    	count = 34
 				    	create_pop = {
 				    		species = owner_main_species
-				    	}
-					}
-					while = {
-				    	count = 29
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
 				    	}
 					}
 					#while = {
@@ -867,16 +825,10 @@ country_event = { #Mechanicum_Cyclothrathe
 					#add_building = building_autochthon_monument
 					add_building = building_chemical_plant 	
 					add_building = building_ministry_production					
-				    #while = {
-				    #	count = 18
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
-				    	count = 20
+				    while = {
+				    	count = 18
 				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    		species = owner_main_species
 				    	}
 					}
 				}
@@ -1050,12 +1002,6 @@ country_event = { #Mechanicum_Ordex_Thaag
 				    	}
 					}
 					while = {
-				    	count = 3
-				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
-				    	}
-					}
-					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_industrial
@@ -1122,16 +1068,10 @@ country_event = { #Mechanicum_Ordex_Thaag
 					#add_building = building_autochthon_monument
 					add_building = building_chemical_plant 	
 					add_building = building_ministry_production					
-				    #while = {
-				    #	count = 18
-				    #	create_pop = {
-				    #		species = owner_main_species
-				    #	}
-					#}
-					while = {
-				    	count = 20
+				    while = {
+				    	count = 18
 				    	create_pop = {
-				    		species = event_target:Imperium_evnt_trgt_country = { owner_main_species } #event_target:human
+				    		species = owner_main_species
 				    	}
 					}
 				}
