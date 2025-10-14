@@ -97,15 +97,36 @@ country_event = { #Tokt
 			limit = {
 				OR = {
 					has_star_flag = Tokt_gos
-					AND = { owner = { has_country_flag = Tokt_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Tokt_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Tokt_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Tokt_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = {
@@ -303,15 +324,36 @@ country_event = { #Agdagat
 			limit = {
 				OR = {
 					has_star_flag = Agdagat_gos
-					AND = { owner = { has_country_flag = Agdagat_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Agdagat_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Agdagat_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Agdagat_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = {
@@ -518,15 +560,36 @@ country_event = { #Sayteh
 			limit = {
 				OR = {
 					has_star_flag = Sayteh_gos
-					AND = { owner = { has_country_flag = Sayteh_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Sayteh_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Sayteh_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Sayteh_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = {
@@ -725,15 +788,36 @@ country_event = { #Nigilah
 			limit = {
 				OR = {
 					has_star_flag = Nigilah_gos
-					AND = { owner = { has_country_flag = Nigilah_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Nigilah_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Nigilah_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Nigilah_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 
@@ -926,15 +1010,36 @@ country_event = { #Kardenat
 			limit = {
 				OR = {
 					has_star_flag = Kardenat_gos
-					AND = { owner = { has_country_flag = Kardenat_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Kardenat_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Kardenat_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Kardenat_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 
@@ -1132,15 +1237,36 @@ country_event = { #Oryskar
 			limit = {
 				OR = {
 					has_star_flag = Oryskar_gos
-					AND = { owner = { has_country_flag = Oryskar_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Oryskar_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Oryskar_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Oryskar_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 
@@ -1340,15 +1466,36 @@ country_event = { #Mefrit
 			limit = {
 				OR = {
 					has_star_flag = Mefrit_gos
-					AND = { owner = { has_country_flag = Mefrit_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Mefrit_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Mefrit_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Mefrit_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 
@@ -1545,15 +1692,36 @@ country_event = { #Nephrekh - Nekfist
 			limit = {
 				OR = {
 					has_star_flag = Nephrekh_gos
-					AND = { owner = { has_country_flag = Nephrekh_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Nephrekh_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Nephrekh_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Nephrekh_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 
@@ -1748,15 +1916,36 @@ country_event = { #Sarkoni
 			limit = {
 				OR = {
 					has_star_flag = Sarkoni_gos
-					AND = { owner = { has_country_flag = Sarkoni_gos } is_capital_system = yes } #после добавления инициализатора столицы изменить
+					has_star_flag = Sarkoni_gos_station
 				}
-				
 			}
 			if = {
-				limit = { is_capital_system = no } #после добавления инициализатора столицы изменить
+				limit = {
+				    has_star_flag = Sarkoni_gos
+			    }
 				create_starbase = {
-				owner = ROOT
-				size = starbase_outpost
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Sarkoni_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
 				}
 			}
 			every_system_planet = { 

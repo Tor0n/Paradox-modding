@@ -43,6 +43,12 @@ Vigilance_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -130,6 +136,12 @@ NewGidlam_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -406,6 +418,12 @@ Feinminster_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = forge_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -493,6 +511,12 @@ Uralek_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -667,6 +691,12 @@ Gleptid_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_planet_02_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -841,6 +871,12 @@ Quistorol_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -880,93 +916,6 @@ Quistorol_initializer = {
 		size = { min = 25 max = 50 }
 		has_ring = no
 		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Rapture_initializer = {
-	class = "rl_starting_stars"
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Twisted_Helix_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
 
 		home_planet = no
 	}

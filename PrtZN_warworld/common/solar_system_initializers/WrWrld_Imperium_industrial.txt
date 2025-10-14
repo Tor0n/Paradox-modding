@@ -482,6 +482,12 @@ Cantaix_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = industrial_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -569,6 +575,12 @@ Nimbosa_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = industrial_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {

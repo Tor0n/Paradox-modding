@@ -500,6 +500,12 @@ Moebian_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1242,96 +1248,6 @@ Grisgrease_initializer = {
 		home_planet = no
 	}
 }
-Strife_initializer = {
-	class = "rl_starting_stars"
-	#init_effect = {
-	#	generate_home_system_resources = yes
-	#}
-	#asteroid_belt = {
-	#	type = rocky_asteroid_belt
-	#	radius = 112 #Distance from system centre
-	#}
-	
-	flags = { Barbed_Chalice_gos }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_molten"
-
-		orbit_distance = 35
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-		
-		home_planet = no 
-	}
-
-	planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_frozen"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 25 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 45 }
-		has_ring = no
-		#change_orbit = 12
-
-		home_planet = no
-	}
-}
 Moriorim_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
@@ -1463,6 +1379,12 @@ Kantakkha_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = forge_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1710,7 +1632,7 @@ Gildarift_initializer = {
 	}
 	
     planet = {
-		class = "pc_toxic"
+		class = "pc_molten"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1721,15 +1643,15 @@ Gildarift_initializer = {
 	}
 	
 	planet = {
-		class = "pc_arid"
-
+		#class = "pc_arid"
+		class = "pc_toxic"
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 16
 		has_ring = no
 		change_orbit = 4
 		
-		flags = { Chaos_war_world }
+		#flags = { Chaos_war_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -1823,6 +1745,12 @@ Matarakh_initializer = { #Пустыня, шахтерский мир
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemon_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2008,6 +1936,12 @@ Nune_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2072,7 +2006,7 @@ Mackense_initializer = {
 	}
 	
     planet = {
-		class = "pc_toxic"
+		class = "pc_molten"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -2083,8 +2017,8 @@ Mackense_initializer = {
 	}
 	
 	planet = {
-		class = "pc_arid"
-
+		#class = "pc_arid"
+		class = "pc_toxic"
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 18
@@ -2092,7 +2026,7 @@ Mackense_initializer = {
 		#change_orbit = 4
 		#starting_planet = yes
 		
-		flags = { Chaos_war_world }
+		#flags = { Chaos_war_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2490,6 +2424,12 @@ Basts_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_continental_02_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2683,6 +2623,12 @@ Follax_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = shrine_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2762,6 +2708,12 @@ Ahitupia_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_continental_01_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -3080,6 +3032,12 @@ Prestigus_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -3171,6 +3129,12 @@ Mortarius_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -3266,6 +3230,12 @@ Tremert_initializer = {			#Должна бть кузня  Хаоса вроде
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_continental_01_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -3352,10 +3322,16 @@ Malefactis_initializer = {
 		has_ring = no
 		starting_planet = yes
 		
-		#flags = { Chaos_fallen_world }
+		flags = { Chaos_fallen_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_continental_02_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -4804,6 +4780,12 @@ Rigant_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = advancecity_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -5015,6 +4997,12 @@ Carpathia_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_02_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -5100,6 +5088,12 @@ Cairn_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = advancexenocity_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -5190,6 +5184,12 @@ Derovire_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_arid_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -5641,6 +5641,16 @@ Burnscour_initializer = {
 		flags = { Chaos_war_world }
 		
 		home_planet = no 
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
+		} 
 	}
 
 	planet = {
@@ -5717,7 +5727,7 @@ Zayth_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -5820,6 +5830,12 @@ Pranagar_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -5864,107 +5880,6 @@ Pranagar_initializer = {
 		size = { min = 25 max = 50 }
 		has_ring = no
 		change_orbit = 12
-
-		home_planet = no
-	}
-}
-Credence_initializer = {
-	class = "rl_starting_stars"
-	#init_effect = {
-	#	generate_home_system_resources = no
-	#}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 135 #Distance from system centre
-	}
-	
-	flags = { Barbed_Chalice_gos_station }
-
-	max_instances = 1
-	init_effect = { }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	}
-	
-    planet = {
-		class = "pc_barren"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 10 max = 20 }
-		has_ring = no
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 65
-		orbit_angle = { min = 90 max = 270 }
-		size = 18
-		has_ring = no
-		change_orbit = 4
-		
-		#flags = { Chaos_fallen_world }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		} 
-
-		moon = {
-			class = "pc_barren_cold"
-			orbit_distance = 15
-			size = { min = 8 max = 12 }
-		}
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 10 max = 18 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 20 max = 40 }
-		has_ring = no
-
-		home_planet = no
-	}
-
-	planet = {
-		class = "pc_gas_giant"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 50 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 2 max = 4 }
-		has_ring = no
 
 		home_planet = no
 	}

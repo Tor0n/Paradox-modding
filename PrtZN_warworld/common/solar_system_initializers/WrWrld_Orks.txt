@@ -54,6 +54,12 @@ Cornucopia_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -146,6 +152,12 @@ Jurn_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -328,6 +340,12 @@ Vrun_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -419,6 +437,12 @@ Calverna_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = forge_ring3_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -820,6 +844,12 @@ Cilix_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -911,6 +941,12 @@ Golgotha_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1002,6 +1038,12 @@ Helvault_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1279,6 +1321,12 @@ Gorkamorka_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1560,6 +1608,12 @@ Mekwod_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1740,6 +1794,12 @@ Drathonis_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -2016,7 +2076,9 @@ Cassan_initializer = {
 	flags = { Bad_Moons_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 
 	planet = {
 		class = star
@@ -2092,7 +2154,9 @@ Helfi_initializer = {
 	flags = { Bad_Moons_gos }
 
 	max_instances = 1
-	init_effect = { }
+	init_effect = {
+		generate_home_system_resources = yes
+	}
 
 	planet = {
 		class = star
@@ -2548,6 +2612,158 @@ Ponwander_initializer = {
 	}
 }
 Abyss_initializer = {
+	class = "rl_starting_stars"
+
+	flags = { Bad_Moons_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Pikcha_initializer = {
+	class = "rl_starting_stars"
+
+	flags = { Bad_Moons_gos }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_molten"
+
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+		#change_orbit = 4
+		
+		
+		#init_effect = {
+		#	prevent_anomaly = yes
+		#} 
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 45 }
+		has_ring = no
+		#change_orbit = 12
+
+		home_planet = no
+	}
+}
+Kphra_initializer = {
 	class = "rl_starting_stars"
 
 	flags = { Bad_Moons_gos }
@@ -3450,6 +3666,12 @@ Octarius_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = orkworld_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 

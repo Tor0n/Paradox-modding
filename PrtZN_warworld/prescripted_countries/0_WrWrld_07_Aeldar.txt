@@ -1,0 +1,287 @@
+Eldar_Empire = {
+	name = "name_eldar_empire"
+	adjective = "PRESCRIPTED_adjective_eldar_empire"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_eldar_empire"
+	
+	species = {
+		class = "HUM"
+		portrait = "eldar"
+		name = "PRESCRIPTED_species_name_eldar"
+		plural = "PRESCRIPTED_species_plural_eldar"
+		adjective = "PRESCRIPTED_species_adjective_eldar"
+		name_list = "HUM1"
+		trait = "trait_psionic"
+		trait = "trait_aeldar"
+	}
+	
+	room = "personality_ruthless_capitalists_room"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_catalytic_processing" "civic_heroic_tales" "civic_memory_vault" }
+	government = "gov_theocratic_oligarchy"
+	origin = "origin_eldar"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flag = empire_the_Eldar
+	
+	planet_name = "planet_name_ulthwe"
+	planet_class = "pc_continental"
+	system_name = "system_name_ulthwe"
+	#initializer = "Ulthwe_initializer"
+	
+	graphical_culture = "eldar_01" #humanoid_01
+	city_graphical_culture = "eldar_01" #avian_01
+	
+	empire_flag = {
+		icon = {
+			category="Warhammer_Eldar"
+			file="CraftworldAeldari.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_15.dds"
+		}
+		colors = {
+			"dark_teal"
+			"intense_blue"
+			"null" #pink
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_eldar"
+		gende = male
+		portrait = "eldar_male_03"
+		texture = 1
+		evolution_mask = 0
+		attachment = 6
+		clothes = 0
+		ruler_title = "ruler_title_ruler_male"
+		ruler_title_female = "ruler_title_ruler_female"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Ynnari = {
+	name = "name_ynnari"
+	adjective = "PRESCRIPTED_adjective_ynnari"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ynnari"
+	
+	species = {
+		class = "HUM"
+		portrait = "eldar"
+		species_name = "PRESCRIPTED_species_name_eldar"
+		species_plural = "PRESCRIPTED_species_plural_eldar"
+		species_adjective = "PRESCRIPTED_species_adjective_eldar"
+		name_list = "HUM1"
+		gender = not_set
+		trait = "trait_psionic"
+		trait = "trait_aeldar"
+	}
+	
+	room = "personality_fanatic_befrienders_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_catalytic_processing" "civic_memory_vault" "civic_ascensionists" }
+	government = "gov_theocratic_dictatorship"
+	origin = "origin_eldar"
+	
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Ynnari
+	
+	planet_name = "planet_name_iyanden"
+	planet_class = "pc_continental"
+	system_name = "system_name_iyanden"
+	#initializer = ""
+	
+	graphical_culture = "eldar_01" #humanoid_01
+	city_graphical_culture = "eldar_01" #avian_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Eldar"
+			file = "Ynnari.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "rounded_middle.dds"
+		}
+		colors = {
+			"turquoise"
+			"light_indigo"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ynnari"
+		gender = female
+		portrait = "eldar_female_01"
+		texture = 1
+		evolution_mask = 0
+		attachment = 5
+		clothes = 4
+		ruler_title = "ruler_title_ruler_male"
+		ruler_title_female = "ruler_title_ruler_female"
+		trait = "trait_ruler_charismatic"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Worlds_Aldari = {
+	name = "name_worlds_aldari"
+	adjective = "PRESCRIPTED_adjective_worlds_aldari"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_worlds_aldari"
+	species = {
+		class = "HUM"
+		portrait = "eldar"
+		name = "PRESCRIPTED_species_name_eldar"				#PRESCRIPTED_species_name_exodites
+		plural = "PRESCRIPTED_species_plural_eldar"			#PRESCRIPTED_species_plural_exodites
+		adjective = "PRESCRIPTED_species_adjective_eldar"	#PRESCRIPTED_species_adjective_exodites
+		name_list = "HUM1"
+		trait = "trait_psionic"
+		trait = "trait_aeldar"
+	}
+	
+	room = "personality_spiritual_seekers_room"
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_inwards_perfection" "civic_environmentalist" "civic_catalytic_processing" }
+	government = "gov_theocratic_oligarchy"
+	origin = "origin_exodite"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_pacifist"
+	ethic = "ethic_spiritualist"
+	
+	flag = empire_the_Aldari
+	
+	planet_name = "planet_name_tirathain"
+	planet_class = "pc_tropical"
+	system_name = "system_name_exoda"
+	#initializer=""
+	
+	graphical_culture = "eldar_01" #molluscoid_01
+	city_graphical_culture = "eldar_01" #avian_01
+	
+	empire_flag = {
+		icon = {
+			category = "zoological"
+			file = "flag_zoological_20.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_10.dds"
+		}
+		colors = {
+			"sick_green"
+			"toxic_green"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "HUM1_CHR_Hephanir"
+		gender = male
+		portrait = "eldar_male_01"
+		texture = 1
+		evolution_mask = 0
+		attachment = 4
+		clothes = 3
+		ruler_title = "ruler_title_leader_male"
+		ruler_title_female = "ruler_title_leader_female"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
+	}
+	advisor_voice_type = "l_pacifist"
+	spawn_as_fallen = no
+}
+Commorragh = {
+	name = "name_commorragh"
+	adjective = "PRESCRIPTED_adjective_commorragh"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_commorragh"
+	
+	species = {
+		class = "HUM"
+		portrait = "druchii"
+		name = "PRESCRIPTED_species_name_drukhari"
+		plural = "PRESCRIPTED_species_plural_drukhari"
+		adjective = "PRESCRIPTED_species_adjective_drukhari"
+		name_list = "HUM1"
+		trait = "trait_drukhar"
+	}
+	
+	room = "personality_slaving_despots_room"
+	
+	authority = "auth_imperial"
+	civics = { "civic_barbaric_despoilers" "civic_cutthroat_politics" "civic_warrior_culture" }
+	government = "gov_bandit_kingdom"
+	origin = "origin_commorragh"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flag = empire_the_Commorragh
+	
+	planet_name = "planet_name_commorragh"
+	planet_class = "pc_continental"
+	system_name = "system_name_agrin"
+	initializer = "Commorragh_initializer"
+	
+	graphical_culture = "darkeldar_01" #necroid_01
+	city_graphical_culture = "drukhari_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Eldar"
+			file = "KabalBlackHeart.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_12.dds"
+		}
+		colors = {
+			"shadow_teal" 
+			"shadow_steel"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_commorragh"
+		gender = male
+		portrait="druchii_male_03"
+		texture=4
+		evolution_mask=0
+		attachment=10
+		clothes=1
+		ruler_title = "ruler_title_archont"
+		ruler_title_female = "ruler_title_archont"
+		trait="trait_ruler_eye_for_talent"
+		leader_class="commander"
+	}
+	spawn_as_fallen = no
+}

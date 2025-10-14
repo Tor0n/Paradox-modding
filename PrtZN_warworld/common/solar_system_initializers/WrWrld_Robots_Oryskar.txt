@@ -61,6 +61,12 @@ Thanatos_initializer = {
 			prevent_anomaly = yes
 			#add_deposit = d_nanites_deposit
 			#add_deposit = d_living_metal_deposit
+			set_planet_entity = {
+				entity = tomb_planet_04_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -108,7 +114,7 @@ Icharus_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Oryskar_gos }
+	flags = { Oryskar_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -161,6 +167,12 @@ Icharus_initializer = {
 			prevent_anomaly = yes
 			#add_deposit = d_nanites_deposit
 			#add_deposit = d_living_metal_deposit
+			set_planet_entity = {
+				entity = tomb_planet_05_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -208,7 +220,7 @@ Draven_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Oryskar_gos }
+	flags = { Oryskar_gos_station }
 
 	max_instances = 1
 	init_effect = { }
@@ -261,6 +273,12 @@ Draven_initializer = {
 			prevent_anomaly = yes
 			#add_deposit = d_nanites_deposit
 			#add_deposit = d_living_metal_deposit
+			set_planet_entity = {
+				entity = tomb_planet_05_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 

@@ -27,11 +27,20 @@ Commorragh_initializer = {
 		has_ring = no
         flags = { Commorragh_world }
 		home_planet = no
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = advancexenocity_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
+		}
 	}
 	
 	planet = {
-		class = "pc_continental"
-
+		#class = "pc_continental"
+		class = "pc_relic"
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 24
@@ -39,11 +48,17 @@ Commorragh_initializer = {
 		change_orbit = 4
 		deposit_blockers = none
 		modifiers = none
-		
+		starting_planet = yes
 		flags = { Commorragh_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = advancexenocity_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		}
 		
 		home_planet = yes
@@ -58,6 +73,15 @@ Commorragh_initializer = {
 		has_ring = yes
         flags = { Commorragh_world }
 		home_planet = no
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = advancexenocity_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
+		}
 	}
 
 	planet = {
@@ -69,6 +93,15 @@ Commorragh_initializer = {
 		has_ring = no
         flags = { Commorragh_world }
 		home_planet = no
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = advancexenocity_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
+		}
 	}
 
 	planet = {

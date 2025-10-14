@@ -1,0 +1,713 @@
+# Хаоситы #
+Blood_Pact = {
+	name = "name_blood_pact"
+	adjective = "PRESCRIPTED_adjective_blood_pact"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_warrior_culture" "civic_cutthroat_politics" "civic_scavengers" }
+	government = "gov_martial_dictatorship"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flag = empire_the_Blood_Pact
+	
+	planet_name = "planet_name_gereon"
+	planet_class = "pc_continental"
+	system_name = "system_name_gereon"
+	#initializer = ""
+	
+	graphical_culture = "chaos_01"
+	city_graphical_culture = "chaos_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "khorne_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"red"
+			"dark_red"
+			"red"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_blood_pact"
+		gender = male
+		portrait = "xevil_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 4
+		clothes = 11
+		ruler_title = "ruler_title_gaur"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Admonition = {
+	name = "name_admonition"
+	adjective = "PRESCRIPTED_adjective_admonition"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "scrappy_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_toxic_baths" "civic_distinguished_admiralty" "civic_scavengers" }
+	government = "gov_military_dictatorship"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_spiritualist"
+	
+	flag = empire_the_Admonition
+	
+	planet_name = "planet_name_atoma_prime"
+	planet_class = "pc_continental"
+	system_name = "system_name_moebian"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "chaos_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "nurgle_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"sick_green"
+			"shadow_green"
+			"black" #black
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_admonition"
+		gender = female
+		portrait = "xevil_female_02"
+		texture = 0
+		evolution_mask = 0
+		attachment = 5
+		clothes = 3
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Land_Chaos = {
+	name = "name_land_chaos"
+	adjective = "PRESCRIPTED_adjective_land_chaos"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "Chaos_room" #personality_evangelizing_zealots_room
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_slaver_guilds" "civic_distinguished_admiralty" "civic_death_cult" }
+	government = "gov_grim_council"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Land_Chaos
+	
+	planet_name = "planet_name_vessos"
+	planet_class = "pc_continental"
+	system_name = "system_name_vessos"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "chaos_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "chaosun.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors  = {
+			"burgundy"
+			"dark_red"
+			"dark_red"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_land_chaos"
+		gender = male
+		portrait = "xevil_male_02"
+		texture = 0
+		evolution_mask = 0
+		attachment = 12
+		clothes = 20
+		ruler_title = "ruler_title_ruler_male"
+		ruler_title_female = "ruler_title_ruler_female"
+		trait = "leader_trait_principled"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Conjurers_of_Fear = {
+	name = "name_conjurers_of_fear"
+	adjective = "PRESCRIPTED_adjective_conjurers_of_fear"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "necroids_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_distinguished_admiralty" "civic_shadow_council" "civic_death_cult" }
+	government = "gov_dimensional_covenant"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Conjurers_of_Fear
+	
+	planet_name = "planet_name_kantakkha"
+	planet_class = "pc_continental"
+	system_name = "system_name_kantakkha"
+	#initializer = ""
+	
+	graphical_culture = "chaos_01"
+	city_graphical_culture = "tzeentch_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "tzeentch_emblem2.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "sinus.dds"
+		}
+		colors = {
+			"intense_blue"
+			"light_blue"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_conjurers_of_fear"
+		gender = female
+		portrait = "xevil_female_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 6
+		clothes = 8
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Barbed_Chalice = {
+	name = "name_barbed_chalice"
+	adjective = "PRESCRIPTED_adjective_barbed_chalice"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "Slaneesh_room" #personality_slaving_despots_room
+	
+	authority = "auth_imperial"
+	civics = { "civic_aristocratic_elite" "civic_pleasure_seekers" "civic_distinguished_admiralty" }
+	government = "gov_star_empire"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Barbed_Chalice
+	
+	planet_name = "planet_name_carpathia"
+	planet_class = "pc_continental"
+	system_name = "system_name_carpathia"
+	#initializer = ""
+	
+	graphical_culture = "chaos_01"
+	city_graphical_culture = "Chaos_Cultists_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "slaanesh_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "double_hemispheres.dds"
+		}
+		colors = {
+			"light_pink"
+			"bright_purple"
+			"light_pink"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_barbed_chalice"
+		gender = male
+		portrait = "xevil_male_06"
+		texture = 0
+		evolution_mask = 0
+		attachment = 6
+		clothes = 15
+		trait = "trait_ruler_industrialist"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Brothrhd_Knife = {
+	name = "name_brothrhd_knife"
+	adjective = "PRESCRIPTED_adjective_brothrhd_knife"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "personality_evangelizing_zealots_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_warrior_culture" "civic_exalted_priesthood" "civic_slaver_guilds" }
+	government = "gov_martial_dictatorship"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Brothrhd_Knife
+	
+	planet_name = "planet_name_stolia"
+	planet_class = "pc_continental"
+	system_name = "system_name_stolia"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "Chaos_Cultists_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "flag_chaos_21.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "rounded_middle.dds"
+		}
+		colors = {
+			"dark_brown"
+			"khaki_brown"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		gender = male
+		name = "PRESCRIPTED_ruler_name_brothrhd_knife"
+		portrait = "xevil_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 9
+		clothes = 14
+		#heir_title_female = "Святая"
+		trait = "leader_trait_principled"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Givers_of_Life = {
+	name = "name_givers_of_life"
+	adjective = "PRESCRIPTED_adjective_givers_of_life"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "Nurgle_room" #personality_spiritual_seekers_room
+	
+	authority = "auth_oligarchic"
+	civics = { "civic_toxic_baths" "civic_exalted_priesthood" "civic_reanimated_armies" }
+	government = "gov_holy_tribunal"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Givers_of_Life
+	
+	planet_name = "planet_name_tremert"
+	planet_class = "pc_continental"
+	system_name = "system_name_tremert"
+	#initializer = ""
+	
+	graphical_culture = "chaos_01"
+	city_graphical_culture = "nurgle_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "nurgle_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_10.dds"
+		}
+		colors = {
+			"swamp_green"
+			"dark_green"
+			"swamp_green" #black
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_givers_of_life"
+		gender = male
+		portrait = "xevil_male_04"
+		texture = 0
+		evolution_mask = 0
+		attachment = 11
+		clothes = 21
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
+		trait = "trait_ruler_charismatic"
+		leader_class = official
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Bloodbath = {
+	name = "name_bloodbath"
+	adjective = "PRESCRIPTED_adjective_bloodbath"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "Khorne_room" #personality_honorbound_warriors_room
+	
+	authority = "auth_dictatorial"
+	government = "gov_martial_dictatorship"
+	civics = { "civic_warrior_culture" "civic_scavengers" "civic_distinguished_admiralty" }
+	origin = "origin_chaos"
+	
+	ethic = "ethic_fanatic_authoritarian"
+	ethic = "ethic_fanatic_militarist"
+	
+	flag = empire_the_Bloodbath
+	
+	planet_name = "planet_name_jedathra"
+	planet_class = "pc_continental"
+	system_name = "system_name_jedathra"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "Chaos_Cultists_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "khorne_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "inverted_v.dds"
+		}
+		colors = {
+			"red" 		#black
+			"black" 	#red
+			"black" 	#black
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_bloodbath"
+		gender = male
+		portrait = "xevil_male_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 7
+		clothes = 18
+		#heir_title_female = "Святая"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Stigmartus = {
+	name = "name_stigmartus"
+	adjective = "PRESCRIPTED_adjective_stigmartus"
+	spawn_enabled = always
+	ship_prefix = "ship_prefix_chaos"
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room="personality_fanatic_purifier_room"
+	
+	authority = "auth_imperial"
+	civics = { "civic_imperial_cult" "civic_aristocratic_elite" "civic_warrior_culture" }
+	government = "gov_divine_empire"
+	origin="origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Stigmartus
+	
+	planet_name = "planet_name_khazant"
+	planet_class = "pc_continental"
+	system_name = "system_name_khazant"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "Chaos_Cultists_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "ChaosSpaceMarines.dds"           #chaosun.dds
+		}
+		background = {
+			category = "backgrounds"
+			file = "diagonal.dds"
+		}
+		colors = {
+			"burgundy"
+			"pink"
+			"pink" #black
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_stigmartus"
+		gender = male
+		portrait = "xevil_male_05"
+		texture = 0
+		evolution_mask = 0
+		attachment = 12
+		clothes = 20
+		ruler_title = "ruler_title_ruler_male"
+		ruler_title_female = "ruler_title_ruler_female"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Penumbral = {
+	name = "name_penumbral"
+	adjective = "PRESCRIPTED_adjective_penumbral"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_chaos."
+	
+	species = {
+		class = "HUM"
+		portrait = "xevil"
+		species_name = "PRESCRIPTED_species_name_chaos"
+		species_plural = "PRESCRIPTED_species_plural_chaos"
+		species_adjective = "PRESCRIPTED_species_adjective_chaos"
+		name_list = "HUMAN3"
+		gender = not_set
+		trait = "trait_chaos"
+	}
+	
+	room = "necroids_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_philosopher_king" "civic_cutthroat_politics" "civic_memory_vault" }
+	government = "gov_elective_monarchy"
+	origin = "origin_chaos"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_spiritualist"
+	
+	flag = empire_the_Penumbral
+	
+	planet_name = "planet_name_cairn"
+	planet_class = "pc_continental"
+	system_name = "system_name_cairn"
+	#initializer = ""
+	
+	graphical_culture = "chaos_02"
+	city_graphical_culture = "Chaos_Cultists_01" #necroid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer_Chaos"
+			file = "tzeentch_emblem.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "vertical.dds"
+		}
+		colors = {
+			"blue"
+			"shadow_steel"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_penumbral"
+		gender = male
+		portrait = "xevil_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 0
+		clothes = 13
+		ruler_title = "ruler_title_high_priest_male"
+		ruler_title_female = "ruler_title_high_priest_female"
+		trait = "leader_trait_spark_of_genius"
+		leader_class = scientist
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}

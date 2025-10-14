@@ -62,6 +62,12 @@ Avellorn_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -257,7 +263,7 @@ Juno_initializer = {
 	}
 
 	planet = {
-		class = "pc_continental"
+		class = "pc_nuked"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -272,6 +278,12 @@ Juno_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -303,6 +315,99 @@ Juno_initializer = {
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 25 max = 45 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Vigilus_initializer = { #Мир-улий, мир войны, мир-Страж
+	class = "rl_starting_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Segmentum_Obscurus_gos_station }
+
+	max_instances = 1
+	init_effect = { }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_toxic"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+	
+	planet = {
+		class = "pc_relic" #Desert or arid may be
+
+		orbit_distance = 65
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		change_orbit = 4
+		
+		flags = { Imperium_Hive_civ_world } #Chaos_war_world
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
+		} 
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 15
+			size = { min = 8 max = 12 }
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 2 max = 4 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
 		has_ring = no
 		change_orbit = 12
 
@@ -372,6 +477,12 @@ Methalor_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = mega_hive_01_entity #mmmega_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -472,6 +583,12 @@ Verghast_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = mega_hive_01_entity #mmmega_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -672,6 +789,12 @@ Lavantia_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = hive_continental_02_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -772,6 +895,12 @@ Moltova_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = hive_tundra_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -872,6 +1001,12 @@ Boucherin_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1072,6 +1207,12 @@ NeoBaku_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1172,6 +1313,12 @@ Targus_initializer = {
 			add_deposit = d_dust_caverns 
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1381,7 +1528,7 @@ Lastrati_initializer = {
 			add_deposit = d_bubbling_swamp
 			add_deposit = d_crystalline_caverns
 			set_planet_entity = {
-				entity = hive_planet_01_entity
+				entity = super_hive_01_entity
 				atmosphere_color = hsv { 0.89 0.89 0.56 }
 				atmosphere_intensity = 0.5
 				atmosphere_width = 0.5
@@ -1484,6 +1631,12 @@ Mordian_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = hive_arid_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1569,7 +1722,7 @@ Coronis_initializer = {
 	}
 
 	planet = {
-		class = "pc_tropical"
+		class = "pc_arid"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
@@ -1581,6 +1734,12 @@ Coronis_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = shrine_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1618,7 +1777,7 @@ Coronis_initializer = {
 		home_planet = no
 	}
 }
-Krongar_initializer = {
+Footfall_initializer = {
 	class = "rl_starting_stars"
 	init_effect = {
 		#generate_home_system_resources = no
@@ -1678,6 +1837,12 @@ Krongar_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1755,11 +1920,7 @@ Formaprime_initializer = {
 		size = { min = 15 max = 25 }
 		has_ring = no
 		change_orbit = 4
-		
-		
-		#init_effect = {
-		#	prevent_anomaly = yes
-		#} 
+
 	}
 
 	planet = {
@@ -1775,6 +1936,12 @@ Formaprime_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -1875,6 +2042,12 @@ Rassios_initializer = {
 			add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -2075,6 +2248,12 @@ CruachMhorn_initializer = {
 			add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
+			set_planet_entity = {
+				entity = hive_continental_01_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -2175,6 +2354,12 @@ Dhol_initializer = {
 			add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
+			set_planet_entity = {
+				entity = mega_hive_01_entity #mmmega_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -2275,6 +2460,12 @@ Agathon_initializer = {
 			add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
+			set_planet_entity = {
+				entity = hive_arid_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		}
 	}
 
@@ -2370,12 +2561,18 @@ Saran_Luxor_initializer = {
 		
 		flags = { Imperium_Hive_merch_world }	
 		
-		#init_effect = {
-		#	prevent_anomaly = yes
+		init_effect = {
+			prevent_anomaly = yes
 		#	add_deposit = d_dust_desert #пустыня пылинок
 		#	#add_deposit = d_dust_caverns
 		#	#add_deposit = d_dust_caverns
-		#} 
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
+		} 
 	}
 
 	planet = {
@@ -2475,6 +2672,12 @@ Blackreach_initializer = {
 			add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -2575,6 +2778,12 @@ Manachea_initializer = {
 			#add_deposit = d_dust_desert #пустыня пылинок
 			#add_deposit = d_dust_caverns
 			#add_deposit = d_dust_caverns
+			set_planet_entity = {
+				entity = hive_tundra_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -2775,6 +2984,12 @@ Necromunda_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = mega_hive_01_entity #mmmega_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 
@@ -2970,7 +3185,7 @@ Ichar_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_planet_entity = {
-				entity = sssuper_hive_01_entity
+				entity = mega_hive_01_entity #mmmega_hive_01_entity
 				atmosphere_color = hsv { 0.89 0.89 0.56 }
 				atmosphere_intensity = 0.5
 				atmosphere_width = 0.5
@@ -3072,6 +3287,12 @@ Cephian_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = mega_hive_01_entity #mmmega_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 	}
 

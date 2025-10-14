@@ -88,6 +88,52 @@ country_event = {
 		event_target:Penumbral_evnt_trgt_country = {
 			country_event = { id = WrWrld_chaos_events.3 days = 2 }
 		}
+		####### Оповещение для империума
+		event_target:Imperium_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Segmentum_Obscurus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ultima_Segmentum_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Segmentum_Tempestus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Eastern_Fringe_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Manachean_Commonwealth_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ecclesiarchy_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Mechanicus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ryza_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Metalica_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Graia_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Lucius_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Triplex_Phall_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ultramarines_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Black_Templars_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
 	}
 	#option = {
 	#	name =  black_crusades.b
@@ -137,3 +183,191 @@ country_event = {
 }
 
 #set_truce = { target = Alpha_Legion_evnt_trgt_country type = wg_WrWrld_total_pregalcom_war }
+
+country_event = {
+	id = WrWrld_chaos_events.09							#Для империума оповещение
+	title = "black_crusades.name"
+	desc = "black_crusades_imp.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_red_alert
+	location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  black_crusades_imp.a
+	}
+}
+
+country_event = {
+	id = WrWrld_chaos_events.10							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_hyperlane = { from = <system> to = <system> }
+		#remove_hyperlane = { from = "332" to = "677" }
+		#remove_hyperlane = { from = "677" to = "332" }
+		
+		#remove_hyperlane = { from = "676" to = "354" }
+		#remove_hyperlane = { from = "354" to = "676" }
+		#remove_hyperlane = { from = "676" to = "256" }
+		#remove_hyperlane = { from = "256" to = "676" }
+		#remove_hyperlane = { from = "676" to = "255" }
+		#remove_hyperlane = { from = "255" to = "676" }
+		
+		#remove_hyperlane = { from = "680" to = "353" }
+		#remove_hyperlane = { from = "353" to = "680" }
+		#remove_hyperlane = { from = "680" to = "675" }
+		#remove_hyperlane = { from = "675" to = "680" }
+		every_system = {
+			limit = {
+				has_star_flag = Test_rift_in
+			}
+			remove_hyperlane = { from = this to = root.Test_rift_out }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+		#add_resource = { alloys = 8250	}
+		#create_fleet_from_naval_cap = 0.1
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.11							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = {
+				has_star_flag = Test_rift_in
+			}
+			remove_hyperlane = { from = this to = root.Test_rift_out }
+			limit = { has_hyperlane_to = prev }
+			remove_hyperlane = { from = this to = prev }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.12							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = { has_hyperlane_to = prev }
+			remove_hyperlane = { from = this to = prev }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.13							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = { 
+				has_star_flag = Test_rift
+				has_hyperlane_to = Test_rift 
+			}
+			remove_hyperlane = { from = this to = this }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.14							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_hyperlane = { from = <system> to = <system> }
+		remove_hyperlane = { from = "332" to = "677" }
+		remove_hyperlane = { from = "677" to = "332" }
+		
+		remove_hyperlane = { from = "676" to = "354" }
+		remove_hyperlane = { from = "354" to = "676" }
+		remove_hyperlane = { from = "676" to = "256" }
+		remove_hyperlane = { from = "256" to = "676" }
+		remove_hyperlane = { from = "676" to = "255" }
+		remove_hyperlane = { from = "255" to = "676" }
+		
+		remove_hyperlane = { from = "680" to = "353" }
+		remove_hyperlane = { from = "353" to = "680" }
+		remove_hyperlane = { from = "680" to = "675" }
+		remove_hyperlane = { from = "675" to = "680" }
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.15							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_hyperlane = { from = <system> to = <system> }
+		limit = { 
+				has_star_flag = Test_rift
+				has_hyperlane_to = Test_rift 
+		}
+		remove_hyperlane = { from = "332" to = "677" }
+		remove_hyperlane = { from = "677" to = "332" }
+		
+		remove_hyperlane = { from = "676" to = "354" }
+		remove_hyperlane = { from = "354" to = "676" }
+		remove_hyperlane = { from = "676" to = "256" }
+		remove_hyperlane = { from = "256" to = "676" }
+		remove_hyperlane = { from = "676" to = "255" }
+		remove_hyperlane = { from = "255" to = "676" }
+		
+		remove_hyperlane = { from = "680" to = "353" }
+		remove_hyperlane = { from = "353" to = "680" }
+		remove_hyperlane = { from = "680" to = "675" }
+		remove_hyperlane = { from = "675" to = "680" }
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}

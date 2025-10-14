@@ -1,0 +1,145 @@
+Ultramarines = {
+	name = "name_ultramarines"
+	adjective = "PRESCRIPTED_adjective_ultramarines"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_ultramarines"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		#trait = "trait_perfected_genes"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
+	}
+	
+	room = "Space_marine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_philosopher_king" "civic_distinguished_admiralty" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flag = empire_the_Ultramarines
+	
+	planet_name = "planet_name_macragge"
+	planet_class = "pc_continental"
+	system_name = "system_name_macragge"
+	#initializer = ""
+	
+	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "gothic_01" #humanoid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "game-40k-ultramarines.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "double_triangles.dds"
+		}
+		colors= {
+			"blue"
+			"light_blue"
+			"blue"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_ultramarines"
+		gender = male
+		portrait = "imperium_male_01"
+		texture = 0
+		evolution_mask = 0
+		attachment = 45
+		clothes = 9
+		ruler_title = "ruler_title_astartes"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "leader_trait_fleet_organizer"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_militarist"
+	spawn_as_fallen = no
+}
+Black_Templars = {
+	name = "name_black_templars"
+	adjective = "PRESCRIPTED_adjective_black_templars"
+	spawn_enabled = always
+	ignore_portrait_duplication = no
+	
+	ship_prefix = "ship_prefix_astartes"
+	
+	species = {
+		class = "HUM"
+		portrait = "imperium"
+		species_name = "PRESCRIPTED_species_name_humans1"
+		species_plural = "PRESCRIPTED_species_plural_humans1"
+		species_adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN3"
+		gender = male
+		#trait = "trait_perfected_genes"
+		trait = "trait_human" #trait_extremely_adaptive trait_resilient trait_deviants trait_unruly trait_traditional trait_decadent
+	}
+	
+	room = "Space_marine_room"
+	
+	authority = "auth_dictatorial"
+	civics = { "civic_fanatic_purifiers" "civic_heroic_tales" "civic_warrior_culture" }
+	government = "gov_purity_order"
+	origin = "origin_astartes"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_fanatic_militarist"
+	
+	flag = empire_the_Black_Templars
+	
+	planet_name = "planet_name_isis"
+	planet_class = "pc_continental"
+	system_name = "system_name_isis"
+	#initializer = ""
+	
+	graphical_culture = "aod_01" #aod_01 вернуть как только удастся починить
+	city_graphical_culture = "genestealer_01" #humanoid_01
+	
+	empire_flag = {
+		icon = {
+			category = "Warhammer"
+			file = "BlackTemplar.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "flag_BG_12.dds"
+		}
+		colors = {
+			"white"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_black_templars"
+		gender = male
+		portrait = "imperium_male_03"
+		texture = 0
+		evolution_mask = 0
+		attachment = 20
+		clothes = 4
+		ruler_title = "ruler_title_magister"
+		ruler_title_female = "ruler_title_astartes"
+		trait = "trait_ruler_warlike"
+		leader_class = commander
+	}
+	advisor_voice_type = "l_xenophobe"
+	spawn_as_fallen = no
+}

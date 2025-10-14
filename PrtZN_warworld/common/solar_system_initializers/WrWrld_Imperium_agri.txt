@@ -42,7 +42,7 @@ Dentor_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			#add_deposit = d_lichen_fields #лишайниковые поля 1
+			add_deposit = d_lichen_fields #лишайниковые поля 1
 			add_deposit = d_bountiful_plains #изобильные равнины 1
 			#add_deposit = d_rugged_woods #суровый лес 3
 			add_deposit = d_green_hills #зелёные холмы 1
@@ -53,6 +53,12 @@ Dentor_initializer = {
 			#add_deposit = d_teeming_reef #рифы какие-то 3
 			
 			add_deposit = d_fertile_lands #плодородные земли 4 
+			set_planet_entity = {
+				entity = agri_planet_03_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -155,6 +161,12 @@ Khai_Zahn_initializer = {
 			#add_deposit = d_teeming_reef #рифы какие-то 3
 			
 			add_deposit = d_fertile_lands #плодородные земли 4 
+			set_planet_entity = {
+				entity = agri_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -252,7 +264,13 @@ Ntharis_initializer = {
 			add_deposit = d_black_soil #чернозём 6
 			#add_deposit = d_teeming_reef #рифы какие-то 3
 			
-			add_deposit = d_fertile_lands #плодородные земли 4 
+			add_deposit = d_fertile_lands #плодородные земли 4
+			set_planet_entity = {
+				entity = agri_planet_02_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}			
 		} 
 
 		moon = {
@@ -349,6 +367,12 @@ Zavarich_initializer = {
 			add_deposit = d_fertile_lands #плодородные земли 4 
 			add_deposit = d_black_soil #чернозём 6
 			#add_deposit = d_teeming_reef #рифы какие-то 3 
+			set_planet_entity = {
+				entity = agri_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -428,7 +452,7 @@ Rynn_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_ocean"
 
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
@@ -553,6 +577,12 @@ San_Leor_initializer = {
 			#add_deposit = d_teeming_reef #рифы какие-то 3
 			
 			#add_deposit = d_fertile_lands #плодородные земли 4 
+			set_planet_entity = {
+				entity = agri_planet_02_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -633,7 +663,7 @@ Numinal_initializer = {
 		orbit_distance = 65
 		orbit_angle = { min = 90 max = 270 }
 		size = 23
-		has_ring = no
+		has_ring = yes #Да, прям есть кольцо именно у мира Numinal
 		change_orbit = 4
 		
 		flags = { Imperium_Agri_world }
@@ -749,6 +779,12 @@ Viridia_initializer = {
 			#add_deposit = d_teeming_reef #рифы какие-то 3
 			
 			add_deposit = d_fertile_lands #плодородные земли 4 
+			set_planet_entity = {
+				entity = agri_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -847,6 +883,12 @@ Asylus_initializer = {
 			#add_deposit = d_teeming_reef #рифы какие-то 3
 			
 			add_deposit = d_fertile_lands #плодородные земли 4 
+			set_planet_entity = {
+				entity = agri_planet_02_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {

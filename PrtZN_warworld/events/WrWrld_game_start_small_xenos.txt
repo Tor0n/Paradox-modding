@@ -361,17 +361,52 @@ country_event = { #Cythor_Fiends
 			country_event = { id = WrWrld_game_start_small_xenos.108 days = 4 }
 		}
 		every_system = {
-			#в целом других систем у них и нет
 			limit = {
-				OR = {
+				or = {
 					has_star_flag = Cythor_Fiends_gos
 					has_star_flag = Cythor_Fiends_gos_station
 				}
 			}
-			every_system_planet = {
-			    ### ПОСТРОЙКА СТАНЦИЙ ###
-				if = {
-				    limit = { is_colonizable = no }
+			if = {
+				limit = {
+				    has_star_flag = Cythor_Fiends_gos
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_outpost
+				}
+			}
+			else = {
+				limit = {
+					has_star_flag = Cythor_Fiends_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					#module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					#building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = { 
+			    if = {                                         ### ПОСТРОЙКА СТАНЦИЙ ###
+				    limit = { 
+			            is_colonizable = no		
+			        }
+				    # create_mining_station = {
+				    	# owner = ROOT
+		    	    # }
+					# create_research_station = {
+				    	# owner = ROOT
+		    	    # }
 					create_deposits_stations = yes
 				}
 			}

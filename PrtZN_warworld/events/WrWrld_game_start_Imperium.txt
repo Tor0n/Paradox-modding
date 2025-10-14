@@ -39,7 +39,7 @@ country_event = { #Imperium
 		give_technology_imperium = yes
 		add_tradition_imperium = yes
 		
-		create_fleet_from_naval_cap = 0.15
+		create_fleet_from_naval_cap = 0.10
 		
 		every_system = {
 			limit = {
@@ -4064,6 +4064,9 @@ country_event = { #Federation
 				override_requirements = yes
 			}
 			#set_name = random # Fixes some naming issues
+		}
+		federation = {
+			set_federation_type = hegemony_federation #military_federation
 		}
 	}
 }

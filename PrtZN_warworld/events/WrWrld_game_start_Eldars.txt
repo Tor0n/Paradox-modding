@@ -285,7 +285,7 @@ country_event = {
 		}
 	}
 }
-# Арлекины
+# 3 место под Арлекины
 country_event = {
 	id = WrWrld_game_start_aeldari.4
 	hide_window = yes
@@ -393,6 +393,17 @@ country_event = {
 					}
 				}
 			}
+			#*-/ врата \-*#
+			if = {
+				limit = {
+					has_star_flag = Eldar_gateway
+				}
+				spawn_megastructure = {
+					type = gateway_final
+					graphical_culture = ROOT
+					orbit_distance = 265
+				}
+			}
 		}
 	}
 }
@@ -496,6 +507,7 @@ country_event = {
 	immediate = {
 		save_global_event_target_as = Void_Dragons_evnt_trgt_country
 		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		owner = { country_event = { id = WrWrld_game_start_aeldari.408 days = 4 } }
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 7000 }
@@ -951,6 +963,28 @@ country_event = {
 		}
 		declare_war = {
 			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = {
+	id = WrWrld_game_start_aeldari.409
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Commorragh_gos
+	#}
+	immediate = {
+        communication_with_all = yes
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}

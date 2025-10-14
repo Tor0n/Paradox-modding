@@ -301,7 +301,7 @@ Adraith_initializer = {
 		has_ring = no
 		#starting_planet = yes
 		
-		flags = { Chaos_demon_world }
+		#flags = { Chaos_demon_world }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -388,6 +388,12 @@ Eidolon_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_02_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 	}
@@ -473,6 +479,12 @@ Xana_II_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = forge_ring3_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -563,6 +575,12 @@ Temporia_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemont_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -834,7 +852,15 @@ Cthonia_warp_initializer = {
 		size = 19
 		starting_planet = yes
 		
-		init_effect = { prevent_anomaly = yes } 
+		init_effect = { 
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemont_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
+		} 
 
 		moon = {
 			class = "pc_shrouded"
@@ -1021,6 +1047,12 @@ Sabatine_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1206,6 +1238,12 @@ Crystallax_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1244,6 +1282,70 @@ Crystallax_initializer = {
 
 	planet = {
 		class = "pc_gas_giant"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 25 max = 50 }
+		has_ring = no
+		change_orbit = 12
+
+		home_planet = no
+	}
+}
+Gunnar_initializer = {
+	class = "rl_starting_stars"
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 135 #Distance from system centre
+	}
+	
+	flags = { Death_Guard_gos }
+	max_instances = 1
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+    planet = {
+		class = "pc_barren"
+
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 25 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 28
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 14 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 15 max = 30 }
+		has_ring = no
+
+		home_planet = no
+	}
+
+	planet = {
+		class = "pc_frozen"
 
 		orbit_distance = 30
 		orbit_angle = { min = 90 max = 270 }
@@ -1329,7 +1431,6 @@ Bodt_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	#flags = { Emperors_Children_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -1366,6 +1467,12 @@ Bodt_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemon_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1551,6 +1658,12 @@ Exotia_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemon_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1789,6 +1902,12 @@ Sortiarius_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -1884,6 +2003,12 @@ Prospero_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_01_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2449,8 +2574,6 @@ Callax_initializer = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
 	}
-	
-	#flags = { Emperors_Children_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -2487,6 +2610,12 @@ Callax_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_02_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2583,6 +2712,12 @@ Sicarus_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_02_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2711,6 +2846,12 @@ Thranix_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemon_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -2807,6 +2948,12 @@ Nepthys_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = shrine_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -3793,6 +3940,12 @@ Syban_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemonn_planet_02_entity
+				#atmosphere_color = hsv { 0.89 0.89 0.56 }
+				#atmosphere_intensity = 0.5
+				#atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -3887,6 +4040,12 @@ Daxos_Gemini_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_02_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -4022,8 +4181,6 @@ Silentia_initializer = {
 		type = rocky_asteroid_belt
 		radius = 135 #Distance from system centre
 	}
-	
-	#flags = { Emperors_Children_gos }
 
 	max_instances = 1
 	init_effect = { }
@@ -4818,6 +4975,12 @@ Sherilax_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_02_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {
@@ -5180,6 +5343,12 @@ Kdask_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = daemons_planet_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		} 
 
 		moon = {

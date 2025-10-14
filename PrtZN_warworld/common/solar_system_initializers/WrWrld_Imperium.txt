@@ -64,7 +64,7 @@ Terra_initializer = {
 		class = "pc_city"
 		orbit_distance = 25
 		orbit_angle = 120
-		size = 25 #18
+		size = 18 #18
 		starting_planet = yes
 		has_ring = no
 		deposit_blockers = none
@@ -74,16 +74,22 @@ Terra_initializer = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = super_hive_01_entity
+				atmosphere_color = hsv { 0.89 0.89 0.56 }
+				atmosphere_intensity = 0.5
+				atmosphere_width = 0.5
+			}
 		}
 
 		moon = {
 			name = "NAME_Luna"
-			class = "pc_arctic"
+			class = "pc_barren_cold"   #pc_arctic
 			size = 5
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
-			flags = { Imperium_Moon_world }	
+			#flags = { Imperium_Moon_world }	
 		}
 	}
 
@@ -93,14 +99,14 @@ Terra_initializer = {
 		class = "pc_city"
 		orbit_distance = 25
 		orbit_angle = 60
-		size = 16 #13
+		size = 15 #13
 		has_ring = no
 		flags = { Imperium_Forge_Ecumenopolis Mars }
 
 		init_effect = {
 			prevent_anomaly = yes 
 			set_planet_entity = {
-				entity = forgeee_planet_01_entity
+				entity = forge_ring2_01_entity
 				atmosphere_color = hsv { 0.89 0.89 0.56 }
 				atmosphere_intensity = 0.5
 				atmosphere_width = 0.5
