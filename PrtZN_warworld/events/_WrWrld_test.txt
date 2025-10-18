@@ -1,0 +1,17 @@
+namespace = WrWrld_test
+
+event = {
+	id = WrWrld_test.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = { has_star_flag = Test_rift_in }
+			save_global_event_target_as = test_rift_1
+			every_neighbor_system = {
+				remove_hyperlane = { from = test_rift_1 to = this }
+			}
+		}
+	}
+}
