@@ -1,0 +1,235 @@
+namespace = WrWrld_votann_events
+	
+country_event = {
+	id = WrWrld_votann_events.10							#Изменение господствующей лиги
+	title = "WrWrld_votann_events.10.name"
+	desc = "WrWrld_votann_events.10.desc"
+	picture = GFX_evt_grand_speech #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_votann_events.10.a 							#Великая Турийская Лига - АИ
+		owner = { country_event = { id = WrWrld_votann_events.12 years = 7 } }
+		create_fleet_from_naval_cap = 0.15
+	}
+	option = {
+		name =  WrWrld_votann_events.10.b 							#Кронуская Гегемония - АИ
+		change_country_flag = {
+			icon = {
+				category="Warhammer_other"
+				file="KronusHegemony.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_13.dds"
+			}
+			colors={
+				"light_orange"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_materialist"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			#authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_distinguished_admiralty" civic = "civic_warrior_culture" civic = "civic_citizen_service" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		owner = { country_event = { id = WrWrld_votann_events.12 years = 3 } }
+		create_fleet_from_naval_cap = 0.15
+	}
+	option = {
+		name =  WrWrld_votann_events.10.c 							#Транс-Гиперианский Альянс - АИ
+		change_country_flag = {
+			icon = {
+				category="Warhammer_other"
+				file="TransHyperianAlliance.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_17.dds"
+			}
+			colors={
+				"grey"
+				"intense_orange"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_egalitarian"
+		shift_ethic = "ethic_xenophile"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_materialist"
+		change_government = {
+			#authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_distinguished_admiralty" civic = "civic_scavengers" civic = "civic_idealistic_foundation" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		owner = { country_event = { id = WrWrld_votann_events.12 years = 12 } }
+	}
+	option = {
+		name =  WrWrld_votann_events.10.d 							#Урани-Суртрские Регулы - АИ
+		change_country_flag = {
+			icon = {
+				category="Warhammer_other"
+				file="UraniSyrtrRegulates.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"dark_green"
+				"green"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_egalitarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			#authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_citizen_service" civic = "civic_environmentalist" civic = "civic_warrior_culture" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		owner = { country_event = { id = WrWrld_votann_events.12 years = 8 } }
+		# У них есть древнее спящее ядро, они ждут его пробуждения, он даст что-то очень мощное им, какие-нибудь технологии, что сильно повлияют на кинов
+		owner = { country_event = { id = WrWrld_votann_events.13 years = 39 } }
+		create_fleet_from_naval_cap = 0.1
+	}
+	option = {
+		name =  WrWrld_votann_events.10.e 							#Ймырский Конгломерат - АИ
+		change_country_flag = {
+			icon = {
+				category="Warhammer_other"
+				file="YmyrConglomerate.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_4.dds"
+			}
+			colors={
+				"light_blue"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_fanatic_materialist"
+		change_government = {
+			#authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_crafters" civic = "civic_meritocracy" civic = "civic_technocracy" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		owner = { country_event = { id = WrWrld_votann_events.12 years = 10 } }
+	}
+	option = {
+		name =  WrWrld_votann_events.10.f 							#Промышленный Комплекс Гуло и Серан-Токская Торговая Лига - за укрепление союза с тау, станут жертвой империума
+		change_country_flag = {
+			icon = {
+				category="Warhammer_other"
+				file="GhuyloIndustrialComplex.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_20.dds"
+			}
+			colors={
+				"beige"
+				"orange"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_egalitarian"
+		shift_ethic = "ethic_xenophile"
+		shift_ethic = "ethic_fanatic_materialist"
+		change_government = {
+			#authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_mining_guilds" civic = "civic_merchant_guilds" civic = "civic_functional_architecture" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		event_target:Ultima_Segmentum_gos = { country_event = { id = WrWrld_votann_events.11 years = 2 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_votann_events.11						#
+	title = "WrWrld_votann_events.11.name"
+	desc = "WrWrld_votann_events.11.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_votann_events.11.a 							#
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = {
+	id = WrWrld_votann_events.12						#
+	title = "WrWrld_votann_events.12.name"
+	desc = "WrWrld_votann_events.12.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_votann_events.12.a 							#
+		declare_war = {
+			target = event_target:Ultima_Segmentum_gos
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = {
+	id = WrWrld_votann_events.13						#
+	title = "WrWrld_votann_events.13.name"
+	desc = "WrWrld_votann_events.13.desc"
+	picture = GFX_evt_grand_speech #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_votann_events.13.a 							#
+		give_technology = { tech = tech_new_numbers		message = yes }	
+		give_technology = { tech = tech_trinary_computing		message = yes }	
+		give_technology = { tech = tech_atmospheric_orbital_mechanics 		message = yes }	
+		give_technology = { tech = tech_compact_living		message = yes }	
+		give_technology = { tech = tech_alien_topography		message = yes }	
+		give_technology = { tech = tech_xeno_aesthetics		message = yes }	
+		give_technology = { tech = tech_lost_building_methods 		message = yes }	
+		give_technology = { tech = tech_supreme_alloy 		message = yes }	
+		give_technology = { tech = tech_ordered_retreat 		message = yes }	
+		give_technology = { tech = tech_temple_of_transportation 		message = yes }	
+		give_technology = { tech = tech_identity_copy		message = yes }	
+		give_technology = { tech = tech_identity_fusion		message = yes }	
+		give_technology = { tech = tech_identity_initialization 		message = yes }	
+		give_technology = { tech = tech_gargantuan_evolution 		message = yes }	
+	}
+}

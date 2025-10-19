@@ -1,0 +1,193 @@
+namespace = WrWrld_severan_events
+	
+country_event = {
+	id = WrWrld_severan_events.10							#Гражданское общество или нет
+	title = "WrWrld_severan_events.10.name"
+	desc = "WrWrld_severan_events.10.desc"
+	picture = GFX_evt_grand_speech #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_severan_events.10.a
+		add_modifier = {
+			modifier = severan_civil_society
+			months = 179
+			#days = -1
+		}
+		hidden_effect = { country_event = { id = WrWrld_severan_events.11 months = 90 } }
+	}
+	option = {
+		name =  WrWrld_severan_events.10.b
+		hidden_effect = { country_event = { id = WrWrld_severan_events.11 months = 90 } }
+	}
+}
+country_event = {
+	id = WrWrld_severan_events.11							#Попытка продавить свой авторитаризм 
+	title = "WrWrld_severan_events.11.name"
+	desc = "WrWrld_severan_events.11.desc"
+	picture = GFX_evt_grand_speech #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_severan_events.11.a 
+		#попытка продавить свой курс - Демократия
+		trigger = { 
+			has_modifier = severan_civil_society 
+		}
+		hidden_effect = { country_event = { id = WrWrld_severan_events.12 days = 21 } }
+	}
+	option = {
+		name =  WrWrld_severan_events.11.b
+		#не решится - Олигархия
+		trigger = { 
+			has_modifier = severan_civil_society 
+		}
+		hidden_effect = {
+			country_event = { id = WrWrld_severan_events.13 days = 21 }
+		}
+	}
+	option = {
+		name =  WrWrld_severan_events.11.a
+		#попытка продавить свой курс - Империя
+		trigger = { 
+			NOT = {
+				has_modifier = severan_civil_society 
+			}
+		}
+		hidden_effect = {
+			change_country_flag = {
+				icon = {
+					category="Warhammer_other"
+					file="hist-roman-eagle3.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "flag_BG_10.dds"
+				}
+				colors={
+					"red"
+					"dark_brown"
+					"null"
+					"null"
+				}
+			}
+			shift_ethic = "ethic_fanatic_authoritarian"
+			shift_ethic = "ethic_militarist"
+			shift_ethic = "ethic_spiritualist"
+			change_government = {
+				authority = auth_imperial #auth_imperial
+				civics = { civic = "civic_imperial_cult" civic = "civic_police_state" civic = "civic_aristocratic_elite" }
+				cooldown = no
+				#remove_invalid_civics = yes
+			}
+		}
+	}
+	option = {
+		name =  WrWrld_severan_events.11.b
+		#не решится - Статус КВО
+		trigger = { 
+			NOT = {
+				has_modifier = severan_civil_society 
+			}
+		}
+		country_event = { id = WrWrld_severan_events.10 months = 90 }
+	}
+}
+country_event = {
+	id = WrWrld_severan_events.12							#Революция - демократия
+	title = "WrWrld_severan_events.12.name"
+	desc = "WrWrld_severan_events.12.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_planetary_riot
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_severan_events.12.a                       #Гаснущее солнце
+		set_empire_name = "Severan_republic_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_other"
+				file="hist-roman-eagle1.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_10.dds"
+			}
+			colors={
+				"red"
+				"dark_brown"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_egalitarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		change_government = {
+			authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_idealistic_foundation" civic = "civic_meritocracy" civic = "civic_nationalistic_zeal" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		add_modifier = {
+			modifier = severan_civil_society
+			days = -1
+		}
+	}
+}
+country_event = {
+	id = WrWrld_severan_events.13							#Уступки - Олигархия
+	title = "WrWrld_severan_events.13.name"
+	desc = "WrWrld_severan_events.13.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_celebration
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_severan_events.13.a                       #
+		set_empire_name = "Severan_republic_name"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_other"
+				file = "hist-roman-eagle2.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_10.dds"
+			}
+			colors={
+				"red"
+				"dark_brown"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_oligarchic #auth_imperial
+			civics = { civic = "civic_citizen_service" civic = "civic_crowdsourcing" civic = "civic_byzantine_bureaucracy" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		add_modifier = {
+			modifier = severan_civil_society
+			days = -1
+		}
+	}
+}

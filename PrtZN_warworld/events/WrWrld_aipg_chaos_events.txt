@@ -1,0 +1,1414 @@
+namespace = WrWrld_chaos_events
+namespace = WrWrld_death_guard
+namespace = WrWrld_world_eaters
+namespace = WrWrld_thousand_sons
+namespace = WrWrld_emperors_children
+namespace = WrWrld_alpha_legion
+
+country_event = {
+	id = WrWrld_chaos_events.1
+	title = "black_crusades.name"
+	desc = "black_crusades.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+
+	#trigger = {
+	#	years_passed > 29
+	#	has_country_flag = Black_Legion_gos
+	#}
+	
+	#immediate = {
+	#	#add_resource = { alloys = 14000 }
+	#}
+	option = {
+		name =  black_crusades.a
+		add_resource = { alloys = 14000	}
+		#add_resource = { energy = 4000 }
+		create_fleet_from_naval_cap = 0.3
+		event_target:Death_Guard_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:World_Eaters_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Thousand_Sons_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Emperors_Children_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Word_Bearers_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Iron_Warriors_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Alpha_Legion_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Night_Lords_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.2 days = 1 }
+		}
+		event_target:Mechanicum_Sarum_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Mechanicum_Samech_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Mechanicum_Cyclothrathe_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Mechanicum_Ordex_Thaag_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Blood_Pact_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Admonition_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Chaos_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Conjurers_of_Fear_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Barbed_Chalice_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Brothrhd_Knife_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Givers_of_Life_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Stigmartus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Bloodbath_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		event_target:Penumbral_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.3 days = 2 }
+		}
+		####### Оповещение для империума
+		event_target:Imperium_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Segmentum_Obscurus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ultima_Segmentum_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Segmentum_Tempestus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Eastern_Fringe_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Manachean_Commonwealth_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ecclesiarchy_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Mechanicus_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ryza_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Metalica_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Graia_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Lucius_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Triplex_Phall_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Ultramarines_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		event_target:Black_Templars_evnt_trgt_country = {
+			country_event = { id = WrWrld_chaos_events.09 days = 3 }
+		}
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_chaos_chaos_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_chaos_chaos_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+	#option = {
+	#	name =  black_crusades.b
+	#	add_resource = { energy = 2000 }
+	#}
+	#after = {
+	#	# Effects that are applied after option is chosen.
+	#	# Will generate a tooltip in addition the tooltip of every option, unless hidden_effect is used.
+	#	add_resource = { alloys = 14000	}
+	#}
+}
+country_event = {
+	id = WrWrld_chaos_events.2 							#Для другого космодесанта
+	title = "black_crusades.name"
+	desc = "black_crusades.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+	
+	#immediate = {
+	#	#add_resource = { alloys = 14000 }
+	#}
+	option = {
+		name =  black_crusades.a
+		add_resource = { alloys = 12000	}
+		create_fleet_from_naval_cap = 0.2
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_chaos_chaos_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_chaos_chaos_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.3 							#Для повстанцев
+	title = "black_crusades.name"
+	desc = "black_crusades.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+	
+	#immediate = {
+	#	#add_resource = { alloys = 14000 }
+	#}
+	option = {
+		name =  black_crusades.a
+		add_resource = { alloys = 8250	}
+		create_fleet_from_naval_cap = 0.1
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_chaos_chaos_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_chaos_chaos_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+	}
+}
+
+#set_truce = { target = Alpha_Legion_evnt_trgt_country type = wg_WrWrld_total_pregalcom_war }
+
+country_event = {
+	id = WrWrld_chaos_events.09							#Для империума оповещение
+	title = "black_crusades.name"
+	desc = "black_crusades_imp.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_red_alert
+	location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  black_crusades_imp.a
+	}
+}
+
+country_event = {
+	id = WrWrld_chaos_events.10							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_hyperlane = { from = <system> to = <system> }
+		#remove_hyperlane = { from = "332" to = "677" }
+		#remove_hyperlane = { from = "677" to = "332" }
+		
+		#remove_hyperlane = { from = "676" to = "354" }
+		#remove_hyperlane = { from = "354" to = "676" }
+		#remove_hyperlane = { from = "676" to = "256" }
+		#remove_hyperlane = { from = "256" to = "676" }
+		#remove_hyperlane = { from = "676" to = "255" }
+		#remove_hyperlane = { from = "255" to = "676" }
+		
+		#remove_hyperlane = { from = "680" to = "353" }
+		#remove_hyperlane = { from = "353" to = "680" }
+		#remove_hyperlane = { from = "680" to = "675" }
+		#remove_hyperlane = { from = "675" to = "680" }
+		every_system = {
+			limit = {
+				has_star_flag = Test_rift_in
+			}
+			remove_hyperlane = { from = this to = root.Test_rift_out }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+		#add_resource = { alloys = 8250	}
+		#create_fleet_from_naval_cap = 0.1
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.11							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = {
+				has_star_flag = Test_rift_in
+			}
+			remove_hyperlane = { from = this to = root.Test_rift_out }
+			limit = { has_hyperlane_to = prev }
+			remove_hyperlane = { from = this to = prev }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.12							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = { has_hyperlane_to = prev }
+			remove_hyperlane = { from = this to = prev }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.13							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_system = {
+			limit = { 
+				has_star_flag = Test_rift
+				has_hyperlane_to = Test_rift 
+			}
+			remove_hyperlane = { from = this to = this }
+		}
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.14							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_hyperlane = { from = <system> to = <system> }
+		remove_hyperlane = { from = "332" to = "677" }
+		remove_hyperlane = { from = "677" to = "332" }
+		
+		remove_hyperlane = { from = "676" to = "354" }
+		remove_hyperlane = { from = "354" to = "676" }
+		remove_hyperlane = { from = "676" to = "256" }
+		remove_hyperlane = { from = "256" to = "676" }
+		remove_hyperlane = { from = "676" to = "255" }
+		remove_hyperlane = { from = "255" to = "676" }
+		
+		remove_hyperlane = { from = "680" to = "353" }
+		remove_hyperlane = { from = "353" to = "680" }
+		remove_hyperlane = { from = "680" to = "675" }
+		remove_hyperlane = { from = "675" to = "680" }
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+country_event = {
+	id = WrWrld_chaos_events.15							#Тысяча сынов
+	title = "Grear_rift_summon.name"
+	desc = "Grear_rift_summon.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	immediate = {
+		#remove_hyperlane = { from = <system> to = <system> }
+		limit = { 
+				has_star_flag = Test_rift
+				has_hyperlane_to = Test_rift 
+		}
+		remove_hyperlane = { from = "332" to = "677" }
+		remove_hyperlane = { from = "677" to = "332" }
+		
+		remove_hyperlane = { from = "676" to = "354" }
+		remove_hyperlane = { from = "354" to = "676" }
+		remove_hyperlane = { from = "676" to = "256" }
+		remove_hyperlane = { from = "256" to = "676" }
+		remove_hyperlane = { from = "676" to = "255" }
+		remove_hyperlane = { from = "255" to = "676" }
+		
+		remove_hyperlane = { from = "680" to = "353" }
+		remove_hyperlane = { from = "353" to = "680" }
+		remove_hyperlane = { from = "680" to = "675" }
+		remove_hyperlane = { from = "675" to = "680" }
+	}
+	option = {
+		name =  Grear_rift_summon.a
+	}
+}
+
+
+
+#Ангрон
+#Кхарн, если он покажет себя слабо, две из его групп смогут занять его место
+#Ярость Ангрона
+#Убийцы жизни
+#Коссолакс и изгнанники
+
+#Приверженцы Черепа - сам демон чемпион Кхорна
+
+#Гладиаторский отряд 331 - старый цвет пожирателей, слаженые, есть уклон в традиции
+#Огненные всадники в союзе с Мясники Пустоты
+#Канос Девораторес
+#Кровожадные Напивающиеся Кровью
+#Освященные - бывшие Несущие слово - религиозный душок
+#Собиратели черепов
+#Наглые мясники имеют спиритуалистический уклон
+
+
+country_event = {
+	id = WrWrld_world_eaters.20						#Первая проверка Ангрона на успешность/пригодность		- 20 лет - 40 лет
+	title = "WrWrld_world_eaters.20.name"
+	desc = "WrWrld_world_eaters.20.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	trigger = { 
+		#num_empires < 50
+		num_owned_planets < 3
+		controlled_systems < 9
+		event_target:World_Eaters_evnt_trgt_country = { 
+			NOT = {
+				has_country_flag = Angron_was_bad_at_war_flag
+			}
+		} 
+	}
+
+	option = {
+		name =  WrWrld_world_eaters.20.a 					#
+		owner = { country_event = { id = WrWrld_world_eaters.21 } }
+		set_country_flag = Angron_was_bad_at_war_flag
+	}
+}
+
+country_event = {
+	id = WrWrld_world_eaters.21						#Выборы в пожирателях миров
+	title = "WrWrld_world_eaters.21.name"
+	desc = "WrWrld_world_eaters.21.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_world_eaters.21.a 					#Кхарн
+		set_empire_name = "Butcherhorde_name"
+		create_fleet_from_naval_cap = 0.2
+		kill_leader = {
+			show_notification = yes
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_29.dds"
+			}
+			colors={
+				"yellow"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		hidden_effect = { owner = { country_event = { id = WrWrld_world_eaters.23 years = 12 } } }
+	}
+	option = {
+		name =  WrWrld_world_eaters.21.b 					#Собиратель Черепов У'Зхул
+		trigger = { 
+			event_target:Bloodbath_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Skullsworn_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="khorne_emblem.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_15.dds"
+			}
+			colors={
+				"yellow"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		set_empire_name = "Skullsworn_name"
+		create_fleet_from_naval_cap = 0.2
+		kill_leader = {
+			show_notification = yes
+		}
+		set_country_flag = Skullsworn_flag
+	}
+	option = {
+		name =  WrWrld_world_eaters.21.c 					#Коссолакс
+		create_fleet_from_naval_cap = 0.2
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_world_eaters.21.d 					#А что если меньшая сила с новым подходом?
+		create_fleet_from_naval_cap = 0.1
+		owner = { country_event = { id = WrWrld_world_eaters.22 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_world_eaters.22						#Выбор нового подхода
+	title = "WrWrld_world_eaters.22.name"
+	desc = "WrWrld_world_eaters.22.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_world_eaters.22.a 					#Гладиаторский отряд 331
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_4.dds"
+			}
+			colors={
+				"blue"
+				"white"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_spiritualist"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_efficient_bureaucracy" civic = "civic_heroic_tales" }
+			cooldown = no
+		}
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_world_eaters.22.b 					#Огненные всадники в союзе с Мясниками Пустоты https://wh40k.lexicanum.com/wiki/Bloodstorm_Helm
+		trigger = { 
+			event_target:Bloodbath_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Fire_Riders_Voidbutchers_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"khaki_brown"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_distinguished_admiralty" civic = "civic_cutthroat_politics" }
+			cooldown = no
+		}
+		set_empire_name = "Fire_Riders_Voidbutchers_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		set_country_flag = Fire_Riders_Voidbutchers_flag
+	}
+	option = {
+		name =  WrWrld_world_eaters.22.c 					#Наглые мясники
+		trigger = { 
+			event_target:Bloodbath_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Brazen_Butchers_flag
+				}
+			} 
+		}
+		set_empire_name = "Brazen_Butchers_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		set_country_flag = Brazen_Butchers_flag
+	}
+	option = {
+		name =  WrWrld_world_eaters.22.d 					#Кровожадные Напивающиеся Кровью
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "double_hemispheres.dds"
+			}
+			colors={
+				"light_turquoise"
+				"orange"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_fanatic_purifiers" civic = "civic_dystopian_society" }
+			cooldown = no
+		}
+		set_empire_name = "Bloodgorged_name"
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_world_eaters.22.e 					#Канос Девораторес  -  друг Фабия Байла
+		trigger = { 
+			event_target:Bloodbath_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Canos_Devoratores_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="human"
+				file="flag_human_1.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_49.dds"
+			}
+			colors={
+				"dark_red"
+				"ship_steel"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_fanatic_materialist"
+		change_government = {
+			civics = { civic = "civic_genetic_identification" civic = "civic_toxic_baths" civic = "civic_technocracy" }
+			cooldown = no
+		}
+		set_empire_name = "Canos_Devoratores_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		set_country_flag = Canos_Devoratores_flag
+	}
+}
+
+country_event = {
+	id = WrWrld_world_eaters.23						#Выборы у Кхарна
+	title = "WrWrld_world_eaters.23.name"
+	desc = "WrWrld_world_eaters.23.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	trigger = { 
+		#num_empires < 50
+		num_owned_planets < 3
+		controlled_systems < 9
+	}
+	
+	option = {
+		name =  WrWrld_world_eaters.23.a 					#
+		set_empire_name = "Lifeslayers_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_34.dds"
+			}
+			colors={
+				"red"
+				"khaki_brown"
+				"null"
+				"null"
+			}
+		}
+		kill_leader = {
+			show_notification = yes
+		}
+		create_fleet_from_naval_cap = 0.1
+		#Убийцы жизни
+	}
+	option = {
+		name =  WrWrld_world_eaters.23.b 					#
+		set_empire_name = "Angrons_Fury_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_6.dds"
+			}
+			colors={
+				"medium_steel"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		kill_leader = {
+			show_notification = yes
+		}
+		create_fleet_from_naval_cap = 0.1
+		#Ярость Ангрона
+	}
+}
+
+country_event = {
+	id = WrWrld_world_eaters.24						#Выборы в кровавой бане - 24 год
+	title = "WrWrld_world_eaters.24.name"
+	desc = "WrWrld_world_eaters.24.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_world_eaters.24.a 					#
+		#Сохранить
+		create_fleet_from_naval_cap = 0.2
+	}
+	option = {
+		name =  WrWrld_world_eaters.24.b 					#
+		trigger = { 
+			event_target:World_Eaters_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Skullsworn_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="khorne_emblem.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_15.dds"
+			}
+			colors={
+				"yellow"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		set_country_flag = Skullsworn_flag
+		set_empire_name = "Skullsworn_name"
+		create_fleet_from_naval_cap = 0.5
+		#Поклявшиеся Черепам
+	}
+	option = {
+		name =  WrWrld_world_eaters.24.c 					#
+		set_empire_name = "Skulltakers_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="Skulltakers_pad.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "vertical.dds"
+			}
+			colors={
+				"dark_orange"
+				"intense_orange"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_fanatic_purifiers" civic = "civic_scavengers" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.1
+		#Собиратели черепов
+	}
+	option = {
+		name =  WrWrld_world_eaters.24.d 					#
+		change_country_flag = {
+			icon = {
+				category="toxoid"
+				file="toxoid_03.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_45.dds"
+			}
+			colors={
+				"bright_yellow"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_spiritualist"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_fanatic_purifiers" civic = "civic_exalted_priesthood" }
+			cooldown = no
+		}
+		set_empire_name = "The_Sanctified_name"
+		create_fleet_from_naval_cap = 0.2
+		#Освящённые
+	}
+	option = {
+		name =  WrWrld_world_eaters.24.e 					#
+		trigger = { 
+			event_target:World_Eaters_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Canos_Devoratores_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="human"
+				file="flag_human_1.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_49.dds"
+			}
+			colors={
+				"dark_red"
+				"ship_steel"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_fanatic_materialist"
+		change_government = {
+			civics = { civic = "civic_genetic_identification" civic = "civic_toxic_baths" civic = "civic_technocracy" }
+			cooldown = no
+		}
+		set_empire_name = "Canos_Devoratores_name"
+		set_country_flag = Canos_Devoratores_flag
+		create_fleet_from_naval_cap = 0.2
+		#Канос Девораторес - друг Фабия Байла
+	}
+	option = {
+		name =  WrWrld_world_eaters.24.f 					#
+		trigger = { 
+			event_target:World_Eaters_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Brazen_Butchers_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"red"
+				"orange"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_spiritualist"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_fanatic_purifiers" civic = "civic_ascensionists" }
+			cooldown = no
+		}
+		set_empire_name = "Brazen_Butchers_name"
+		set_country_flag = Brazen_Butchers_flag
+		create_fleet_from_naval_cap = 0.2
+		#Наглые мясники
+	}
+	option = {
+		name =  WrWrld_world_eaters.24.g 					#
+		trigger = { 
+			event_target:World_Eaters_evnt_trgt_country = { 
+				NOT = {
+					has_country_flag = Fire_Riders_Voidbutchers_flag
+				}
+			} 
+		}
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_WorldEaters.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"khaki_brown"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_distinguished_admiralty" civic = "civic_cutthroat_politics" }
+			cooldown = no
+		}
+		set_empire_name = "Fire_Riders_Voidbutchers_name"
+		set_country_flag = Fire_Riders_Voidbutchers_flag
+		create_fleet_from_naval_cap = 0.2
+		#Огненные всадники
+	}
+}
+
+
+
+
+
+
+country_event = {
+	id = WrWrld_thousand_sons.22						#Королевство Колдунов
+	title = "WrWrld_thousand_sons.22.name"
+	desc = "WrWrld_thousand_sons.22.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.22.a 					#Королевство Колдунов
+		set_empire_name = "Kingdom_of_the_Sorcerers_name"
+	}
+}
+
+
+
+#Консорциум Фабия Бала - Украл реликвию Нурглитов на рост и тераформацию и те напали на него за это - Bile_Icon
+#Безупречные Люция Вечного
+#Конклав Феникса - Эйдолона(Lord Commander Primus) 	+ Сверкающее мириады			- В союзе с Абаддоном и ждёт возвращения Фулгрима, чтобы вернуть легиону славу
+#Безупречное воинство FlawlessHost
+#Констриктус
+#Погребальный хор
+#
+country_event = {
+	id = WrWrld_emperors_children.10						#Объяснение
+	title = "WrWrld_emperors_children.10.name"
+	desc = "WrWrld_emperors_children.10.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_emperors_children.10.a 							#
+	}
+}
+
+country_event = {
+	id = WrWrld_emperors_children.11						#Выборы
+	title = "WrWrld_emperors_children.11.name"
+	desc = "WrWrld_emperors_children.11.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_emperors_children.11.a 							#Конклав Феникса Эйдолона
+		event_target:Emperors_Children_evnt_trgt_country = { country_event = { id = WrWrld_emperors_children.12 years = 4 } } #Реформация в детей императора
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 30 } }
+	}
+	option = {
+		name =  WrWrld_emperors_children.11.b 							#Консорциум Фабия Бала
+		set_empire_name = "Fabius_Bile_Consortium_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="Bile_Icon.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"intense_purple"
+				"khaki_brown"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_fanatic_materialist"
+		change_government = {
+			civics = { civic = "civic_genetic_identification" civic = "civic_technocracy" civic = "civic_reanimated_armies" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.06
+		owner = { country_event = { id = WrWrld_emperors_children.13 years = 5 } }
+		owner = { country_event = { id = WrWrld_emperors_children.15 years = 9 } }
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 45 } }
+	}
+	option = {
+		name =  WrWrld_emperors_children.11.c 							#Безупречные Люция Вечного
+		set_empire_name = "Faultless_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_EmperorsChildren.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"intense_pink"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_distinguished_admiralty" civic = "civic_fanatic_purifiers" civic = "civic_warrior_culture" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.06
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 30 } }
+	}
+	option = {
+		name =  WrWrld_emperors_children.11.d 							#Безупречное воинство
+		set_empire_name = "Flawless_Host_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="FlawlessHost.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"khaki_brown"
+				"intense_purple"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_pleasure_seekers" civic = "civic_crusader_spirit" civic = "civic_pompous_purists" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.12
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 26 } }
+	}
+	option = {
+		name =  WrWrld_emperors_children.11.e 							#Констриктус
+		set_empire_name = "Konstrictus_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="slaanesh_emblem.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"faded_blue"
+				"indigo"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_barbaric_despoilers" civic = "civic_crafters" civic = "civic_relentless_industrialists" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.06
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 30 } }
+	}
+	option = {
+		name =  WrWrld_emperors_children.11.f 							#Погребальный хор
+		set_empire_name = "Threnodic_Choir_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="slaanesh_emblem.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"indigo"
+				"yellow"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_distinguished_admiralty" civic = "civic_technocracy" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.06
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 30 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_emperors_children.12						#Реформация в детей императора
+	title = "WrWrld_emperors_children.12.name"
+	desc = "WrWrld_emperors_children.12.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_emperors_children.12.a 					#Реформация в детей императора 
+		set_empire_name = "Emperors_Children_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_EmperorsChildren.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"intense_pink"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		change_government = {
+			civics = { civic = "civic_distinguished_admiralty" civic = "civic_ascensionists" civic = "civic_death_cult" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.3
+	}
+}
+
+country_event = {
+	id = WrWrld_emperors_children.13						#Фабий Байл - Кража реликвии и война
+	title = "WrWrld_emperors_children.13.name"
+	desc = "WrWrld_emperors_children.13.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_emperors_children.13.a 					# 
+		steal_relic = { target = event_target:Death_Guard_evnt_trgt_country relic = r_the_last_baol }
+		event_target:Death_Guard_evnt_trgt_country = { country_event = { id = WrWrld_emperors_children.14 days = 2 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_emperors_children.14						#Фабий Байл - Кража реликвии и война - Ивент для гвардии смерти
+	title = "WrWrld_emperors_children.14.name"
+	desc = "WrWrld_emperors_children.14.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_emperors_children.14.a 					#
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+
+country_event = {
+	id = WrWrld_emperors_children.15						#Фабий Байл - Создание Новых людей
+	title = "WrWrld_emperors_children.15.name"
+	desc = "WrWrld_emperors_children.15.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_emperors_children.15.a 					# 
+		modify_species = {
+			species = this
+			add_trait = trait_new_men 
+			#add_traits_at_start_of_list = yes
+		}
+	}
+}
+
+country_event = {
+	id = WrWrld_emperors_children.100						#Домен Слаанеш
+	title = "WrWrld_emperors_children.100.name"
+	desc = "WrWrld_emperors_children.100.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	#trigger = {
+	#	#num_empires < 50
+	#	num_owned_planets < 6
+	#	controlled_systems < 40
+	#}
+	
+	option = {
+		name =  WrWrld_emperors_children.100.a 					#готовы
+		trigger = { 
+			#num_empires < 50
+			num_owned_planets > 6
+			controlled_systems > 60
+		}
+		set_empire_name = "Domain_of_Slaanesh_name"
+		#event_target:new_country = { set_player = event_target:old_country }
+		#event_target:Barbed_Chalice_evnt_trgt_country = { set_player = event_target:Emperors_Children_evnt_trgt_country }
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+	option = {
+		name =  WrWrld_emperors_children.100.b 					#не готовы
+		trigger = { 
+			#num_empires > 50
+			num_owned_planets < 6
+			controlled_systems < 60
+		}
+		owner = { country_event = { id = WrWrld_emperors_children.100 years = 7 } }
+	}
+}
+
+#num_empires > 3
+#num_owned_planets < 8
+#controlled_systems < 3
+
+country_event = {
+	id = WrWrld_alpha_legion.12						#Конфликт Альфа-Легиона и Абаддона
+	title = "WrWrld_alpha_legion.12.name"
+	desc = "WrWrld_alpha_legion.12.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_alpha_legion.12.a 					# 
+		event_target:Black_Legion_evnt_trgt_country = { country_event = { id = WrWrld_alpha_legion.13 days = 12 } }
+	}
+	option = {
+		name =  WrWrld_alpha_legion.12.b 					# 
+		event_target:Black_Legion_evnt_trgt_country = { country_event = { id = WrWrld_alpha_legion.13 years = 12 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_alpha_legion.13						#Конфликт Альфа-Легиона и Абаддона 		-  Ивент для Абаддона
+	title = "WrWrld_alpha_legion.13.name"
+	desc = "WrWrld_alpha_legion.13.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_alpha_legion.13.a 					# 
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		add_resource = { energy = -650	}
+		add_resource = { minerals = -650 }
+		add_resource = { food = -750 }
+		add_resource = { consumer_goods = -400 }
+		add_resource = { alloys = -500	}
+	}
+	option = {
+		name =  WrWrld_alpha_legion.13.b 					# 
+		add_resource = { energy = -650	}
+		add_resource = { minerals = -650 }
+		add_resource = { food = -750 }
+		add_resource = { consumer_goods = -400 }
+		add_resource = { alloys = -500	}
+	}
+}

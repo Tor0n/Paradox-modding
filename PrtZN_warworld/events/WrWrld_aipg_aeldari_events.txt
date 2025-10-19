@@ -1,0 +1,518 @@
+namespace = WrWrld_aeldari_events
+namespace = WrWrld_drukhari_events
+
+country_event = {
+	id = WrWrld_aeldari_events.5							#Помощь Кворлам       -    Qorl_evnt_trgt_country
+	title = "WrWrld_aeldari_events.5.name"
+	desc = "WrWrld_aeldari_events.5.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	trigger = {
+		Qorl_evnt_trgt_country = {
+			exists = yes
+		}
+		Imperium_evnt_trgt_country = {
+			exists = yes
+		}
+	}
+	
+	option = {
+		name =  WrWrld_aeldari_events.5.a
+		event_target:Eldar_evnt_trgt_country = { country_event = { id = WrWrld_aeldari_events.5 years = 4 } }
+	}
+	option = {
+		name =  WrWrld_aeldari_events.5.b
+		add_resource = { alloys = -3500	}
+		event_target:Qorl_evnt_trgt_country = { country_event = { id = WrWrld_aeldari_events.6 days = 21 } }
+	}
+}
+country_event = {
+	id = WrWrld_aeldari_events.6							#Помощь Кворлам - Ивент у самих Кворлов
+	title = "WrWrld_aeldari_events.6.name"
+	desc = "WrWrld_aeldari_events.6.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_aeldari_events.6.a                       #Спасибо
+		create_fleet_from_naval_cap = 0.1
+	}
+	option = {
+		name =  WrWrld_aeldari_events.6.b                       #Спасибо, можете ещё раз помочь через время?
+		create_fleet_from_naval_cap = 0.1
+		event_target:Eldar_evnt_trgt_country = { country_event = { id = WrWrld_aeldari_events.5 years = 4 } }
+	}
+}
+
+#Кабал Чёрного Сердца - превосходство через информацию и полный просчёт всех вариантов заранее, а также постоянное стремление к наращиванию власти
+#Кабал Гаснущего Солнца - аристократия, втайне от всех владеют мощнейшим артефактом для уничтожения звёзд и планет
+#Кабал Властелинов Железного Шипа - аристократия, будут полагаться на производство военной техники, дать им бонус к производству сплавов, и небольшие бонусы на все военные сферы.
+#Кабал Ядовитого Языка - аристократия, полагаются на хитрость и предусмотрительность, в общем всех хитрее переигрывают.
+#Кабал Освежёванного Черепа - имеют самый лучший флот и лучше всех владеют превосходством в воздухе, больше всего бонусов на космический флот значит, любят скорость также
+#Кабал Обсидиановой Розы - полагается на идеальность во всём, делает самое лучшее оружие(+к всем военным статам), ведут войну против эльдар и экзодитов
+#Кабал Сломанной Печати - запугивают успешнее всех даже до нападения, бонус к урону по морали
+#Кабал Предсмертной Ненависти - ведут войну против эльдар, экзодитов и особенно ненавидят иннари. Они стремятся истребить всех альдари и поработить сущность, которая возникнет из их праха, затем размыть грань между жизнью и смертью, буквально добиться полного бессмертия. Наверное их лучше стоит сделать поборниками также, и дать им что-то про эзотерику из нового длс про покров.
+#Отсечённые
+#Пророки плоти
+
+country_event = {
+	id = WrWrld_drukhari_events.5							#Дети шипов - преображение
+	title = "children_of_thorns.5.name"
+	desc = "children_of_thorns.5.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  children_of_thorns.5.a                       # Меняемся к нашим идеям
+		#set_empire_name = "name_commorragh"
+		shift_ethic = "ethic_fanatic_egalitarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		change_government = {
+			authority = auth_democratic #auth_imperial
+			civics = { civic = "civic_barbaric_despoilers" civic = "civic_idealistic_foundation" civic = "civic_pleasure_seekers" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+	}
+}
+	
+country_event = {
+	id = WrWrld_drukhari_events.10							#Ошибка векта
+	title = "Commorragh_new_Archon.10.name"
+	desc = "Commorragh_new_Archon.10.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  Commorragh_new_Archon.10.a
+	}
+	option = {
+		name =  Commorragh_new_Archon.10.b
+		hidden_effect = { country_event = { id = WrWrld_drukhari_events.11 days = 12 } }
+	}
+}
+country_event = {
+	id = WrWrld_drukhari_events.11							#Начало краха и выбор одной из коалиций
+	title = "Commorragh_new_Archon.11.name"
+	desc = "Commorragh_new_Archon.11.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_planetary_riot
+	#location = FROM
+
+	is_triggered_only = yes
+	#immediate = {
+	#	#add_static_war_exhaustion = {
+	#		#attacker = <country>
+	#		location = capital_scope
+	#		value_for_planet_destruction = 0.4
+	#		#value_for_planet_destruction = <0.0-1.0>/<variable> #scales the amount of war exhaustion that is added
+	#	}
+	#}
+	
+	option = {
+		name =  Commorragh_new_Archon.11.a 
+		#Аристократы: Гаснущее солнце, Железный шип, Ядовитый язык
+		country_event = { id = WrWrld_drukhari_events.12 days = 32 }
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.11.b
+		#Совершенные: Освежёванный Череп, Обсидиановая Роза, Сломанная Печать
+		country_event = { id = WrWrld_drukhari_events.13 days = 32 }
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.11.c
+		#Новая сила и новая идея о устройстве общества: Предсмертная Ненависть, Отсечённые, Пророки Плоти
+		country_event = { id = WrWrld_drukhari_events.14 days = 32 }
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+}
+country_event = {
+	id = WrWrld_drukhari_events.12							#Грызня между победившей коалиции и кто станет победителем    -    Аристократы
+	title = "Commorragh_new_Archon.12.name"
+	desc = "Commorragh_new_Archon.12.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  Commorragh_new_Archon.12.a                       #Гаснущее солнце
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalDyingSun.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"intense_red"
+				"blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		change_government = {
+			authority = auth_imperial #auth_imperial
+			civics = { civic = "civic_aristocratic_elite" civic = "civic_genetic_identification" civic = "civic_heroic_tales" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		create_ship_design = { design = "NAME_Crisis_Star_Eater" }
+		add_ship_design = last_created_design
+		capital_scope = {
+			create_fleet = {
+				settings = {
+					spawn_debris = no
+					can_change_composition = no
+					uses_naval_capacity = no
+				}
+				effect = {
+					set_owner = root
+					create_ship = {
+						name = NAME_Crisis_Star_Eater_1
+						design = "NAME_Crisis_Star_Eater"
+					}
+					set_location = {
+						target = prev
+						distance = 20
+						angle = 0
+					}
+					set_fleet_stance = passive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 350
+				}
+			}
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.12.b                       #Железный шип
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalIronThorn.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"light_blue"
+				"dark_steel"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		change_government = {
+			authority = auth_imperial #auth_imperial
+			civics = { civic = "civic_aristocratic_elite" civic = "civic_relentless_industrialists" civic = "civic_distinguished_admiralty" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.12.c                       #Ядовитый язык
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalPoisonedTongue.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"teal"
+				"dark_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		change_government = {
+			authority = auth_imperial #auth_imperial
+			civics = { civic = "civic_aristocratic_elite" civic = "civic_cutthroat_politics" civic = "civic_barbaric_despoilers" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+	}
+}
+country_event = {
+	id = WrWrld_drukhari_events.13							#Грызня между победившей коалиции и кто станет победителем    -    Совершенные
+	title = "Commorragh_new_Archon.13.name"
+	desc = "Commorragh_new_Archon.13.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  Commorragh_new_Archon.13.a                       #Освежёванный Череп
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalFlayedSkull.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"red_orange"
+				"intense_red"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_xenophobe"
+		change_government = {
+			authority = auth_dictatorial #auth_imperial
+			civics = { civic = "civic_barbaric_despoilers" civic = "civic_distinguished_admiralty" civic = "civic_warrior_culture" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.13.b                       #Обсидиановая Роза
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalObsidianRose.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"grey"
+				"dark_brown"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		change_government = {
+			authority = auth_dictatorial #auth_imperial
+			civics = { civic = "civic_crafters" civic = "civic_efficient_bureaucracy" civic = "civic_functional_architecture" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.13.c                       #Сломанная Печать
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalBrokenSigil.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"turquoise"
+				"light_turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_dictatorial #auth_imperial
+			civics = { civic = "civic_barbaric_despoilers" civic = "civic_cutthroat_politics" civic = "civic_dystopian_society" } #Или дистопию заменить на рабские гильдии?
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+	}
+}
+country_event = {
+	id = WrWrld_drukhari_events.14							#Грызня между победившей коалиции и кто станет победителем    -    Новое устройство общества
+	title = "Commorragh_new_Archon.14.name"
+	desc = "Commorragh_new_Archon.14.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  Commorragh_new_Archon.14.a                       #Предсмертная Ненависть
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalLastHatred.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"shadow_purple"
+				"indigo"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_dictatorial #auth_imperial
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_reanimated_armies" civic = "civic_ascensionists" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#Сделать вызов ивента по итогу которого Бессмертие будет для друкхарей, чтоб прям ну вообще вообще было невозможно убить лидера этой страны.
+	}
+	option = {
+		name =  Commorragh_new_Archon.14.b                       #Отсечённые
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "KabalSevered.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"frog_green"
+				"satin_burgundy"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		change_government = {
+			authority = auth_dictatorial #auth_imperial
+			civics = { civic = "civic_dystopian_society" civic = "civic_cutthroat_politics" civic = "civic_barbaric_despoilers" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+	}
+	option = {
+		name =  Commorragh_new_Archon.14.c                       #Пророки Плоти
+		#set_empire_name = "Severed_test_example"
+		change_country_flag = {
+			icon = {
+				category = "Warhammer_Eldar"
+				file = "ProphetsFlesh.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"green"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_materialist"
+		change_government = {
+			authority = auth_dictatorial #auth_imperial
+			civics = { civic = "civic_reanimated_armies" civic = "civic_toxic_baths" civic = "civic_genetic_identification" }
+			cooldown = no
+			#remove_invalid_civics = yes
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#Модификатор на бонус к науке и здоровью армии, продолжительности жизни
+	}
+}
