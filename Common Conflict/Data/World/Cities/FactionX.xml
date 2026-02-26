@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<city actionsTitle="GUI/Edicts">
+	<actions>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumInfantryProductionEdict"
+				requiredUpgrade="FactionX/InfantryProductionEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumInfantryProductionEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumVehicleProductionEdict"
+				requiredUpgrade="FactionX/VehicleProductionEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumVehicleProductionEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumGrowthEdict"
+				requiredUpgrade="FactionX/GrowthEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumGrowthEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumFoodEdict"
+				requiredUpgrade="FactionX/FoodEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumFoodEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseFoodScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>		
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumOreEdict"
+				requiredUpgrade="FactionX/OreEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumOreEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseOreScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>		
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumEnergyEdict"
+				requiredUpgrade="FactionX/EnergyEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumEnergyEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseEnergyScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumResearchEdict"
+				requiredUpgrade="FactionX/ResearchEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumResearchEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseResearchScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>		
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumLoyaltyEdict"
+				requiredUpgrade="FactionX/LoyaltyEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumLoyaltyEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseLoyaltyScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumAircraftProductionEdict"
+				requiredUpgrade="FactionX/AircraftProductionEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumAircraftProductionEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="AstraMilitarumDefenseEdict"
+				requiredUpgrade="FactionX/DefenseEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="AstraMilitarumDefenseEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+	</actions>
+	<traits>
+		<trait name="ImperialSplendour" requiredUpgrade="FactionX/ImperialSplendour"/>
+	</traits>
+</city>
