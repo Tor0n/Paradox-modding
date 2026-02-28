@@ -26,7 +26,7 @@
 			</model>
 		</weapon>
 		<weapon name="HeavyBolter" count="2"
-				requiredUpgrade="AstraMilitarum/AdditionalHeavyBolters">
+				requiredUpgrade="FactionX/AdditionalHeavyBolters">
 			<model>
 				<projectileWeapon mesh="Weapons/AstraMilitarum/LemanRussBattleTankHeavyBolters"
 						material="Weapons/AstraMilitarum/LemanRussBattleTankHeavyBolters"
@@ -87,7 +87,7 @@
 		</move>
 		<createSmokeScreen cooldown="10"
 				icon="Traits/SmokeScreen"
-				requiredUpgrade="AstraMilitarum/SmokeLauncher">
+				requiredUpgrade="FactionX/SmokeLauncher">
 			<model>
 				<action sound="Actions/SmokeScreen"/>
 			</model>
@@ -109,18 +109,18 @@
 		</createSmokeScreen>
 		<useWeapon weaponSlotName="HunterKillerMissile"
 				cooldown="10"
-				requiredUpgrade="AstraMilitarum/HunterKillerMissile">
+				requiredUpgrade="FactionX/HunterKillerMissile">
 			<model>
 				<action beginFire="0.1" endFire="1.0"/>
 			</model>
 		</useWeapon>
 	</actions>
 	<traits>
-		<trait name="CamoNetting" requiredUpgrade="AstraMilitarum/CamoNetting"/>
-		<trait name="DozerBlade" requiredUpgrade="AstraMilitarum/DozerBlade"/>
-		<trait name="ExtraVehicleArmour" requiredUpgrade="AstraMilitarum/ExtraVehicleArmour"/>
-		<trait name="RecoveryGear" requiredUpgrade="AstraMilitarum/RecoveryGear"/>
-		<trait name="RelicPlating" requiredUpgrade="AstraMilitarum/RelicPlating"/>
+		<trait name="CamoNetting" requiredUpgrade="FactionX/CamoNetting"/>
+		<trait name="DozerBlade" requiredUpgrade="FactionX/DozerBlade"/>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="FactionX/ExtraVehicleArmour"/>
+		<trait name="RecoveryGear" requiredUpgrade="FactionX/RecoveryGear"/>
+		<trait name="RelicPlating" requiredUpgrade="FactionX/RelicPlating"/>
 		<trait name="Tank"/>
 		<trait name="Vehicle"/>
 	</traits>

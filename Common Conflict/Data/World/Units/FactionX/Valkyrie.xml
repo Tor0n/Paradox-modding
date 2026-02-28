@@ -43,7 +43,7 @@
 			</model>
 		</weapon>
 		<weapon name="HeavyBolter" count="2"
-				requiredUpgrade="AstraMilitarum/AdditionalHeavyBolters">
+				requiredUpgrade="FactionX/AdditionalHeavyBolters">
 			<model>
 				<projectileWeapon mesh="Weapons/AstraMilitarum/ValkyrieHeavyBolters"
 						material="Weapons/AstraMilitarum/HydraHeavyBolter"
@@ -124,9 +124,8 @@
 		</jink>
 	</actions>
 	<traits>
-		<trait name="ExtraVehicleArmour" requiredUpgrade="AstraMilitarum/ExtraVehicleArmour"/>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="FactionX/ExtraVehicleArmour"/>
 		<trait name="Flyer"/>
-		<!-- <trait name="Hover"/> -->
 		<trait name="Transport"/>
 		<trait name="Vehicle"/>
 	</traits>

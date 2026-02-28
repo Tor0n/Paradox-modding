@@ -27,7 +27,7 @@
 			</model>
 		</weapon>
 		<weapon name="HeavyBolter"
-				requiredUpgrade="AstraMilitarum/AdditionalHeavyBolters">
+				requiredUpgrade="FactionX/AdditionalHeavyBolters">
 			<model>
 				<projectileWeapon mesh="Weapons/AstraMilitarum/RogalDornBattleTankBolterL"
 						material="Units/AstraMilitarum/RogalDornBattleTank"
@@ -36,7 +36,7 @@
 			</model>
 		</weapon>
 		<weapon name="HeavyBolter"
-				requiredUpgrade="AstraMilitarum/AdditionalHeavyBolters">
+				requiredUpgrade="FactionX/AdditionalHeavyBolters">
 			<model>
 				<projectileWeapon mesh="Weapons/AstraMilitarum/RogalDornBattleTankBolterR"
 						material="Units/AstraMilitarum/RogalDornBattleTank"
@@ -50,14 +50,14 @@
 				<missileWeapon muzzleBone="Hull_Shake"/>
 			</model>	
 		</weapon>
-		<weapon name="None" enabled="0" requiredUpgrade="AstraMilitarum/SmokeLauncher">
+		<weapon name="None" enabled="0" requiredUpgrade="FactionX/SmokeLauncher">
 			<model>
 				<weapon mesh="Weapons/AstraMilitarum/RogalDornBattleTankSmokeLauncherL"
 						material="Units/AstraMilitarum/RogalDornBattleTank"
 						bone="Flare_L"/>
 			</model>
 		</weapon>
-		<weapon name="None" enabled="0" requiredUpgrade="AstraMilitarum/SmokeLauncher">
+		<weapon name="None" enabled="0" requiredUpgrade="FactionX/SmokeLauncher">
 			<model>
 				<weapon mesh="Weapons/AstraMilitarum/RogalDornBattleTankSmokeLauncherR"
 						material="Units/AstraMilitarum/RogalDornBattleTank"
@@ -110,7 +110,7 @@
 		</move>
 		<createSmokeScreen cooldown="10"
 				icon="Traits/SmokeScreen"
-				requiredUpgrade="AstraMilitarum/SmokeLauncher">
+				requiredUpgrade="FactionX/SmokeLauncher">
 			<model>
 				<action sound="Actions/SmokeScreen"/>
 			</model>
@@ -132,17 +132,18 @@
 		</createSmokeScreen>
 		<useWeapon weaponSlotName="HunterKillerMissile"
 				cooldown="10"
-				requiredUpgrade="AstraMilitarum/HunterKillerMissile">
+				requiredUpgrade="FactionX/HunterKillerMissile">
 			<model>
 				<action beginFire="0.1" endFire="1.0"/>
 			</model>
 		</useWeapon>
 	</actions>
 	<traits>
-		<trait name="CamoNetting" requiredUpgrade="AstraMilitarum/CamoNetting"/>
-		<trait name="ExtraVehicleArmour" requiredUpgrade="AstraMilitarum/ExtraVehicleArmour"/>
-		<trait name="RecoveryGear" requiredUpgrade="AstraMilitarum/RecoveryGear"/>
-		<trait name="RelicPlating" requiredUpgrade="AstraMilitarum/RelicPlating"/>
+		<trait name="CamoNetting" requiredUpgrade="FactionX/CamoNetting"/>
+		<trait name="DozerBlade" requiredUpgrade="FactionX/DozerBlade"/>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="FactionX/ExtraVehicleArmour"/>
+		<trait name="RecoveryGear" requiredUpgrade="FactionX/RecoveryGear"/>
+		<trait name="RelicPlating" requiredUpgrade="FactionX/RelicPlating"/>
 		<trait name="Tank"/>
 		<trait name="Vehicle"/>
 	</traits>

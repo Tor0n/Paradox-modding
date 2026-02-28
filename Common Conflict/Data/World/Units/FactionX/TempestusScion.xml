@@ -86,20 +86,20 @@
 			</model>
 		</move>
 		<throwGrenade weaponSlotName="FragGrenade" cooldown="10"
-				requiredUpgrade="AstraMilitarum/FragGrenade">
+				requiredUpgrade="FactionX/FragGrenade">
 			<model>
 				<action animation="Units/AstraMilitarum/TempestusScionGrenade"
 						beginFire="0.833333333333"/>
 			</model>
 		</throwGrenade>
 		<throwGrenade weaponSlotName="KrakGrenade" cooldown="10"
-				requiredUpgrade="AstraMilitarum/KrakGrenade">
+				requiredUpgrade="FactionX/KrakGrenade">
 			<model>
 				<action animation="Units/AstraMilitarum/TempestusScionGrenade"
 						beginFire="0.833333333333"/>
 			</model>				
 		</throwGrenade>
-		<mediPack cooldown="10" requiredUpgrade="AstraMilitarum/MediPack">
+		<mediPack cooldown="10" requiredUpgrade="FactionX/MediPack">
 			<model>
 				<action bone="ChestBone"
 						sound="Actions/Heal"/>
@@ -126,7 +126,7 @@
 			</beginTargets>
 		</mediPack>
 		<markerlight cooldown="1"
-				name="FactionX/Markerlight">
+				name="Markerlight">
 			<model>
 				<action animation=""
 						sound="Actions/Markerlight"/>
@@ -156,8 +156,8 @@
 		</markerlight>
 	</actions>
 	<traits>
-		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="FactionX/ExtraInfantryArmour"/>
 		<trait name="MoveThroughCover"/>
-		<trait name="VoxCaster" requiredUpgrade="AstraMilitarum/VoxCaster"/>
+		<trait name="VoxCaster" requiredUpgrade="FactionX/VoxCaster"/>
 	</traits>
 </unit>

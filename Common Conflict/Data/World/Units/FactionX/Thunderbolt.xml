@@ -30,7 +30,7 @@
 			</model>
 		</weapon>			
 		<weapon name="SkystrikeMissile" count="2"
-				requiredUpgrade="AstraMilitarum/SkystrikeMissile">
+				requiredUpgrade="FactionX/SkystrikeMissile">
 			<model>
 				<missileWeapon muzzleBone="Hull"
 						fireInterval="0.8"/>
@@ -130,7 +130,7 @@
 		<dispenseChaff consumedActionPoints="0" consumedMovement="0"
 		 		requiredActionPoints="0"
 				cooldown="5"
-				requiredUpgrade="AstraMilitarum/ChaffLauncher">
+				requiredUpgrade="FactionX/ChaffLauncher">
 			<model>
 				<action sound="Actions/SmokeScreen"/>
 			</model>
@@ -152,7 +152,7 @@
 		</dispenseChaff>
 	</actions>
 	<traits>
-		<trait name="ExtraVehicleArmour" requiredUpgrade="AstraMilitarum/ExtraVehicleArmour"/>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="FactionX/ExtraVehicleArmour"/>
 		<trait name="Flyer"/>
 		<trait name="Vehicle"/>
 	</traits>

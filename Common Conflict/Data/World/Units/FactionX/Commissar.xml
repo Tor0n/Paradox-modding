@@ -108,14 +108,14 @@
 			</model>
 		</move>
 		<throwGrenade weaponSlotName="FragGrenade" cooldown="10"
-				requiredUpgrade="AstraMilitarum/FragGrenade">
+				requiredUpgrade="FactionX/FragGrenade">
 			<model>
 				<action animation="Units/AstraMilitarum/LordCommissarGrenade"
 						beginFire="0.9"/>
 			</model>				
 		</throwGrenade>
 		<throwGrenade weaponSlotName="KrakGrenade" cooldown="10"
-				requiredUpgrade="AstraMilitarum/KrakGrenade">
+				requiredUpgrade="FactionX/KrakGrenade">
 			<model>
 				<action animation="Units/AstraMilitarum/LordCommissarGrenade"
 						beginFire="0.9"/>
@@ -129,7 +129,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait name="Discipline"/>
+										<addTrait name="FactionX/Discipline"/>
 									</effects>
 								</modifier>
 							</modifiers>

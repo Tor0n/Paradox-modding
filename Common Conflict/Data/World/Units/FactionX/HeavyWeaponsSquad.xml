@@ -95,14 +95,14 @@
 		<cycleWeapon interfaceSound="Interface/CycleWeapon" 
 				weaponSlotNames="KrakMissileLauncher FragMissileLauncher"/>
 		<throwGrenade weaponSlotName="FragGrenade" cooldown="10"
-				requiredUpgrade="AstraMilitarum/FragGrenade">
+				requiredUpgrade="FactionX/FragGrenade">
 			<model>
 				<action	animation="Units/AstraMilitarum/HeavyWeaponsSquadGrenade"
 						beginFire="0.666666666667"/>
 			</model>		
 		</throwGrenade>
 		<throwGrenade weaponSlotName="KrakGrenade" cooldown="10"
-				requiredUpgrade="AstraMilitarum/KrakGrenade">
+				requiredUpgrade="FactionX/KrakGrenade">
 			<model>
 				<action	animation="Units/AstraMilitarum/HeavyWeaponsSquadGrenade"
 						beginFire="0.666666666667"/>
@@ -111,6 +111,6 @@
 	</actions>
 	<traits>
 		<trait name="Bulky"/>
-		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="FactionX/ExtraInfantryArmour"/>
 	</traits>
 </unit>

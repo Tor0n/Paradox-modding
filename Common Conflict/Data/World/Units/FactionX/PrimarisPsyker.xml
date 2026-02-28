@@ -97,7 +97,7 @@
 			</model>		
 		</move>
 		<throwGrenade cooldown="10" weaponSlotName="FragGrenade"
-				requiredUpgrade="AstraMilitarum/FragGrenade">
+				requiredUpgrade="FactionX/FragGrenade">
 			<model>
 				<action animation="Units/AstraMilitarum/PrimarisPsykerGrenade"
 						beginFire="0.55"/>
@@ -128,12 +128,11 @@
 				</target>
 			</beginTargets>
 		</sciersGaze>
-		<psychicMaelstrom cooldown="5"
-				elite="1"
-				levelUpPriority="1"
+		<psychicMaelstrom cooldownMin="5"
+				cooldownMax="3"
 				psychicPower="1"
 				rank="-1"
-				rankMax="0"
+				rankMax="3"
 				weaponSlotName="PsychicMaelstrom">
 			<model>
 				<action sound="Actions/PsychicBuff"/>
