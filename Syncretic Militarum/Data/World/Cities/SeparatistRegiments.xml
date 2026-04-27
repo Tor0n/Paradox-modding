@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<city actionsTitle="GUI/Edicts">
+	<actions>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsInfantryProductionEdict"
+				requiredUpgrade="SeparatistRegiments/InfantryProductionEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsInfantryProductionEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsVehicleProductionEdict"
+				requiredUpgrade="SeparatistRegiments/VehicleProductionEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsVehicleProductionEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsGrowthEdict"
+				requiredUpgrade="SeparatistRegiments/GrowthEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsGrowthEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsFoodEdict"
+				requiredUpgrade="SeparatistRegiments/FoodEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsFoodEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseFoodScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>		
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsOreEdict"
+				requiredUpgrade="SeparatistRegiments/OreEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsOreEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseOreScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>		
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsEnergyEdict"
+				requiredUpgrade="SeparatistRegiments/EnergyEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsEnergyEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseEnergyScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsResearchEdict"
+				requiredUpgrade="SeparatistRegiments/ResearchEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsResearchEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseResearchScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>		
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsLoyaltyEdict"
+				requiredUpgrade="SeparatistRegiments/LoyaltyEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsLoyaltyEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+			<strategyModifiers>
+				<modifier>
+					<effects>
+						<increaseLoyaltyScore base="1.0"/>
+					</effects>
+				</modifier>
+			</strategyModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsAircraftProductionEdict"
+				requiredUpgrade="SeparatistRegiments/AircraftProductionEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsAircraftProductionEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+		<tactic cooldown="10"
+				durationInSeconds="0.1"
+				interfaceSound="Interface/Edict"
+				name="SeparatistRegimentsDefenseEdict"
+				requiredUpgrade="SeparatistRegiments/DefenseEdict">
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="30"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<actorModifiers>
+				<modifier>
+					<effects>
+						<addTrait duration="10" name="SeparatistRegiments/SeparatistRegimentsDefenseEdict"/>
+					</effects>
+				</modifier>
+			</actorModifiers>
+		</tactic>
+	</actions>
+	<traits>
+		<trait name="ImperialSplendour" requiredUpgrade="SeparatistRegiments/ImperialSplendour"/>
+	</traits>
+</city>

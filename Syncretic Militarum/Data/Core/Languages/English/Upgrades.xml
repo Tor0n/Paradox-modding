@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <language>
-
 	<!-- Buildings -->
 	<entry name="FactionX/Aircraft" value="<string name='Buildings/FactionX/Aircraft'/>"/>
 	<entry name="FactionX/AircraftDescription" value="<string name='Buildings/FactionX/AircraftDescription'/>"/>
@@ -202,4 +201,207 @@
 	<entry name="FactionX/VoxCaster" value="<string name='Traits/VoxCaster'/>"/>
 	<entry name="FactionX/VoxCasterDescription" value="Reduces the morale loss for Guardsmen and Tempestus Scions."/>
 	<entry name="FactionX/VoxCasterFlavor" value="<string name='Traits/VoxCasterFlavor'/>"/>
+	
+	<!-- SeparatistRegiments -->
+	<!-- Buildings -->
+	<entry name="SeparatistRegiments/Aircraft" value="<string name='Buildings/SeparatistRegiments/Aircraft'/>"/>
+	<entry name="SeparatistRegiments/AircraftDescription" value="<string name='Buildings/SeparatistRegiments/AircraftDescription'/>"/>
+	<entry name="SeparatistRegiments/AircraftFlavor" value="<string name='Buildings/SeparatistRegiments/AircraftFlavor'/>"/>
+	<entry name="SeparatistRegiments/Construction" value="<string name='Buildings/SeparatistRegiments/Construction'/>"/>
+	<entry name="SeparatistRegiments/ConstructionDescription" value="<string name='Buildings/SeparatistRegiments/ConstructionDescription'/>"/>
+	<entry name="SeparatistRegiments/ConstructionFlavor" value="<string name='Buildings/SeparatistRegiments/ConstructionFlavor'/>"/>
+	<entry name="SeparatistRegiments/Heroes" value="<string name='Buildings/SeparatistRegiments/Heroes'/>"/>
+	<entry name="SeparatistRegiments/HeroesDescription" value="<string name='Buildings/SeparatistRegiments/HeroesDescription'/>"/>
+	<entry name="SeparatistRegiments/HeroesFlavor" value="<string name='Buildings/SeparatistRegiments/HeroesFlavor'/>"/>
+	<entry name="SeparatistRegiments/Housing" value="<string name='Buildings/SeparatistRegiments/Housing'/>"/>
+	<entry name="SeparatistRegiments/HousingDescription" value="<string name='Buildings/SeparatistRegiments/HousingDescription'/>"/>
+	<entry name="SeparatistRegiments/HousingFlavor" value="<string name='Buildings/SeparatistRegiments/HousingFlavor'/>"/>
+	<entry name="SeparatistRegiments/Loyalty" value="<string name='Buildings/SeparatistRegiments/Loyalty'/>"/>
+	<entry name="SeparatistRegiments/LoyaltyDescription" value="<string name='Buildings/SeparatistRegiments/LoyaltyDescription'/>"/>
+	<entry name="SeparatistRegiments/LoyaltyFlavor" value="<string name='Buildings/SeparatistRegiments/LoyaltyFlavor'/>"/>
+	<entry name="SeparatistRegiments/Upgrades" value="<string name='Buildings/SeparatistRegiments/Upgrades'/>"/>
+	<entry name="SeparatistRegiments/UpgradesDescription" value="<string name='Buildings/SeparatistRegiments/UpgradesDescription'/>"/>
+	<entry name="SeparatistRegiments/UpgradesFlavor" value="<string name='Buildings/SeparatistRegiments/UpgradesFlavor'/>"/>
+	<entry name="SeparatistRegiments/Vehicles" value="<string name='Buildings/SeparatistRegiments/Vehicles'/>"/>
+	<entry name="SeparatistRegiments/VehiclesDescription" value="<string name='Buildings/SeparatistRegiments/VehiclesDescription'/>"/>
+	<entry name="SeparatistRegiments/VehiclesFlavor" value="<string name='Buildings/SeparatistRegiments/VehiclesFlavor'/>"/>
+	
+	<!-- Edicts -->
+	<entry name="SeparatistRegiments/AircraftProductionEdict" value="<string name='Actions/SeparatistRegimentsAircraftProductionEdict'/>"/>
+	<entry name="SeparatistRegiments/AircraftProductionEdictDescription" value="<string name='Actions/SeparatistRegimentsAircraftProductionEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/AircraftProductionEdictFlavor" value="<string name='Actions/SeparatistRegimentsAircraftProductionEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/DefenseEdict" value="<string name='Actions/SeparatistRegimentsDefenseEdict'/>"/>
+	<entry name="SeparatistRegiments/DefenseEdictDescription" value="<string name='Actions/SeparatistRegimentsDefenseEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/DefenseEdictFlavor" value="<string name='Actions/SeparatistRegimentsDefenseEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/EnergyEdict" value="<string name='Actions/SeparatistRegimentsEnergyEdict'/>"/>
+	<entry name="SeparatistRegiments/EnergyEdictDescription" value="<string name='Actions/SeparatistRegimentsEnergyEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/EnergyEdictFlavor" value="<string name='Actions/SeparatistRegimentsEnergyEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/FoodEdict" value="<string name='Actions/SeparatistRegimentsFoodEdict'/>"/>
+	<entry name="SeparatistRegiments/FoodEdictDescription" value="<string name='Actions/SeparatistRegimentsFoodEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/FoodEdictFlavor" value="<string name='Actions/SeparatistRegimentsFoodEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/GrowthEdict" value="<string name='Actions/SeparatistRegimentsGrowthEdict'/>"/>
+	<entry name="SeparatistRegiments/GrowthEdictDescription" value="<string name='Actions/SeparatistRegimentsGrowthEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/GrowthEdictFlavor" value="<string name='Actions/SeparatistRegimentsGrowthEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/InfantryProductionEdict" value="<string name='Actions/SeparatistRegimentsInfantryProductionEdict'/>"/>
+	<entry name="SeparatistRegiments/InfantryProductionEdictDescription" value="<string name='Actions/SeparatistRegimentsInfantryProductionEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/InfantryProductionEdictFlavor" value="<string name='Actions/SeparatistRegimentsInfantryProductionEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/LoyaltyEdict" value="<string name='Actions/SeparatistRegimentsLoyaltyEdict'/>"/>
+	<entry name="SeparatistRegiments/LoyaltyEdictDescription" value="<string name='Actions/SeparatistRegimentsLoyaltyEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/LoyaltyEdictFlavor" value="<string name='Actions/SeparatistRegimentsLoyaltyEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/OreEdict" value="<string name='Actions/SeparatistRegimentsOreEdict'/>"/>
+	<entry name="SeparatistRegiments/OreEdictDescription" value="<string name='Actions/SeparatistRegimentsOreEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/OreEdictFlavor" value="<string name='Actions/SeparatistRegimentsOreEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/ResearchEdict" value="<string name='Actions/SeparatistRegimentsResearchEdict'/>"/>
+	<entry name="SeparatistRegiments/ResearchEdictDescription" value="<string name='Actions/SeparatistRegimentsResearchEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/ResearchEdictFlavor" value="<string name='Actions/SeparatistRegimentsResearchEdictFlavor'/>"/>
+	<entry name="SeparatistRegiments/VehicleProductionEdict" value="<string name='Actions/SeparatistRegimentsVehicleProductionEdict'/>"/>
+	<entry name="SeparatistRegiments/VehicleProductionEdictDescription" value="<string name='Actions/SeparatistRegimentsVehicleProductionEdictDescription'/>"/>
+	<entry name="SeparatistRegiments/VehicleProductionEdictFlavor" value="<string name='Actions/SeparatistRegimentsVehicleProductionEdictFlavor'/>"/>
+		
+	<!-- Units -->
+	<entry name="SeparatistRegiments/Basilisk" value="<string name='Units/SeparatistRegiments/Basilisk'/>"/>
+	<entry name="SeparatistRegiments/BasiliskDescription" value="<string name='Units/SeparatistRegiments/BasiliskDescription'/>"/>
+	<entry name="SeparatistRegiments/BasiliskFlavor" value="<string name='Units/SeparatistRegiments/BasiliskFlavor'/>"/>
+	<entry name="SeparatistRegiments/Chimera" value="<string name='Units/SeparatistRegiments/Chimera'/>"/>
+	<entry name="SeparatistRegiments/ChimeraDescription" value="<string name='Units/SeparatistRegiments/ChimeraDescription'/>"/>
+	<entry name="SeparatistRegiments/ChimeraFlavor" value="<string name='Units/SeparatistRegiments/ChimeraFlavor'/>"/>
+	<entry name="SeparatistRegiments/Deathstrike" value="<string name='Units/SeparatistRegiments/Deathstrike'/>"/>
+	<entry name="SeparatistRegiments/DeathstrikeDescription" value="<string name='Units/SeparatistRegiments/DeathstrikeDescription'/>"/>
+	<entry name="SeparatistRegiments/DeathstrikeFlavor" value="<string name='Units/SeparatistRegiments/DeathstrikeFlavor'/>"/>
+	<entry name="SeparatistRegiments/DevilDog" value="<string name='Units/SeparatistRegiments/DevilDog'/>"/>
+	<entry name="SeparatistRegiments/DevilDogDescription" value="<string name='Units/SeparatistRegiments/DevilDogDescription'/>"/>
+	<entry name="SeparatistRegiments/DevilDogFlavor" value="<string name='Units/SeparatistRegiments/DevilDogFlavor'/>"/>
+	<entry name="SeparatistRegiments/FieldOrdnanceBattery" value="<string name='Units/SeparatistRegiments/FieldOrdnanceBattery'/>"/>
+	<entry name="SeparatistRegiments/FieldOrdnanceBatteryDescription" value="<string name='Units/SeparatistRegiments/FieldOrdnanceBatteryDescription'/>"/>
+	<entry name="SeparatistRegiments/FieldOrdnanceBatteryFlavor" value="<string name='Units/SeparatistRegiments/FieldOrdnanceBatteryFlavor'/>"/>
+	<entry name="SeparatistRegiments/HeavyWeaponsSquad" value="<string name='Units/SeparatistRegiments/HeavyWeaponsSquad'/>"/>
+	<entry name="SeparatistRegiments/HeavyWeaponsSquadDescription" value="<string name='Units/SeparatistRegiments/HeavyWeaponsSquadDescription'/>"/>
+	<entry name="SeparatistRegiments/HeavyWeaponsSquadFlavor" value="<string name='Units/SeparatistRegiments/HeavyWeaponsSquadFlavor'/>"/>
+	<entry name="SeparatistRegiments/Hydra" value="<string name='Units/SeparatistRegiments/Hydra'/>"/>
+	<entry name="SeparatistRegiments/HydraDescription" value="<string name='Units/SeparatistRegiments/HydraDescription'/>"/>
+	<entry name="SeparatistRegiments/HydraFlavor" value="<string name='Units/SeparatistRegiments/HydraFlavor'/>"/>
+	<entry name="SeparatistRegiments/LemanRussBattleTank" value="<string name='Units/SeparatistRegiments/LemanRussBattleTank'/>"/>
+	<entry name="SeparatistRegiments/LemanRussBattleTankDescription" value="<string name='Units/SeparatistRegiments/LemanRussBattleTankDescription'/>"/>
+	<entry name="SeparatistRegiments/LemanRussBattleTankFlavor" value="<string name='Units/SeparatistRegiments/LemanRussBattleTankFlavor'/>"/>
+	<entry name="SeparatistRegiments/Commissar" value="<string name='Units/SeparatistRegiments/Commissar'/>"/>
+	<entry name="SeparatistRegiments/CommissarDescription" value="<string name='Units/SeparatistRegiments/CommissarDescription'/>"/>
+	<entry name="SeparatistRegiments/CommissarFlavor" value="<string name='Units/SeparatistRegiments/CommissarFlavor'/>"/>
+	<entry name="SeparatistRegiments/MarauderBomber" value="<string name='Units/SeparatistRegiments/MarauderBomber'/>"/>
+	<entry name="SeparatistRegiments/MarauderBomberDescription" value="<string name='Units/SeparatistRegiments/MarauderBomberDescription'/>"/>
+	<entry name="SeparatistRegiments/MarauderBomberFlavor" value="<string name='Units/SeparatistRegiments/MarauderBomberFlavor'/>"/>
+	<entry name="SeparatistRegiments/PrimarisPsyker" value="<string name='Units/SeparatistRegiments/PrimarisPsyker'/>"/>
+	<entry name="SeparatistRegiments/PrimarisPsykerDescription" value="<string name='Units/SeparatistRegiments/PrimarisPsykerDescription'/>"/>
+	<entry name="SeparatistRegiments/PrimarisPsykerFlavor" value="<string name='Units/SeparatistRegiments/PrimarisPsykerFlavor'/>"/>
+	<entry name="SeparatistRegiments/Ratling" value="<string name='Units/SeparatistRegiments/Ratling'/>"/>
+	<entry name="SeparatistRegiments/RatlingDescription" value="<string name='Units/SeparatistRegiments/RatlingDescription'/>"/>
+	<entry name="SeparatistRegiments/RatlingFlavor" value="<string name='Units/SeparatistRegiments/RatlingFlavor'/>"/>
+	<entry name="SeparatistRegiments/RogalDornBattleTank" value="<string name='Units/SeparatistRegiments/RogalDornBattleTank'/>"/>
+	<entry name="SeparatistRegiments/RogalDornBattleTankDescription" value="<string name='Units/SeparatistRegiments/RogalDornBattleTankDescription'/>"/>
+	<entry name="SeparatistRegiments/RogalDornBattleTankFlavor" value="<string name='Units/SeparatistRegiments/RogalDornBattleTankFlavor'/>"/>
+	<entry name="SeparatistRegiments/ScoutSentinel" value="<string name='Units/SeparatistRegiments/ScoutSentinel'/>"/>
+	<entry name="SeparatistRegiments/ScoutSentinelDescription" value="<string name='Units/SeparatistRegiments/ScoutSentinelDescription'/>"/>
+	<entry name="SeparatistRegiments/ScoutSentinelFlavor" value="<string name='Units/SeparatistRegiments/ScoutSentinelFlavor'/>"/>
+	<entry name="SeparatistRegiments/TankCommander" value="<string name='Units/SeparatistRegiments/TankCommander'/>"/>
+	<entry name="SeparatistRegiments/TankCommanderDescription" value="<string name='Units/SeparatistRegiments/TankCommanderDescription'/>"/>
+	<entry name="SeparatistRegiments/TankCommanderFlavor" value="<string name='Units/SeparatistRegiments/TankCommanderFlavor'/>"/>
+	<entry name="SeparatistRegiments/TechpriestEnginseer" value="<string name='Units/SeparatistRegiments/TechpriestEnginseer'/>"/>
+	<entry name="SeparatistRegiments/TechpriestEnginseerDescription" value="<string name='Units/SeparatistRegiments/TechpriestEnginseerDescription'/>"/>
+	<entry name="SeparatistRegiments/TechpriestEnginseerFlavor" value="<string name='Units/SeparatistRegiments/TechpriestEnginseerFlavor'/>"/>
+	<entry name="SeparatistRegiments/TempestusScion" value="<string name='Units/SeparatistRegiments/TempestusScion'/>"/>
+	<entry name="SeparatistRegiments/TempestusScionDescription" value="<string name='Units/SeparatistRegiments/TempestusScionDescription'/>"/>
+	<entry name="SeparatistRegiments/TempestusScionFlavor" value="<string name='Units/SeparatistRegiments/TempestusScionFlavor'/>"/>
+	<entry name="SeparatistRegiments/Thunderbolt" value="<string name='Units/SeparatistRegiments/Thunderbolt'/>"/>
+	<entry name="SeparatistRegiments/ThunderboltDescription" value="<string name='Units/SeparatistRegiments/ThunderboltDescription'/>"/>
+	<entry name="SeparatistRegiments/ThunderboltFlavor" value="<string name='Units/SeparatistRegiments/ThunderboltFlavor'/>"/>
+	<entry name="SeparatistRegiments/Valkyrie" value="<string name='Units/SeparatistRegiments/Valkyrie'/>"/>
+	<entry name="SeparatistRegiments/ValkyrieDescription" value="<string name='Units/SeparatistRegiments/ValkyrieDescription'/>"/>
+	<entry name="SeparatistRegiments/ValkyrieFlavor" value="<string name='Units/SeparatistRegiments/ValkyrieFlavor'/>"/>
+	
+	<entry name="SeparatistRegiments/GunDrone" value="<string name='Units/SeparatistRegiments/GunDrone'/>"/>
+	<entry name="SeparatistRegiments/GunDroneDescription" value="Grants Enginseer the ability to deploy temporary basic combat drones."/>
+	<entry name="SeparatistRegiments/GunDroneFlavor" value="<string name='Units/SeparatistRegiments/GunDroneFlavor'/>"/>
+	<entry name="SeparatistRegiments/Whirlwind" value="<string name='Units/SeparatistRegiments/Whirlwind'/>"/>
+	<entry name="SeparatistRegiments/WhirlwindDescription" value="<string name='Units/SeparatistRegiments/WhirlwindDescription'/>"/>
+	<entry name="SeparatistRegiments/WhirlwindFlavor" value="<string name='Units/SeparatistRegiments/WhirlwindFlavor'/>"/>
+	
+
+	<!-- Other -->
+	<entry name="SeparatistRegiments/AdditionalHeavyBolters" value="Additional Heavy Bolters"/>
+	<entry name="SeparatistRegiments/AdditionalHeavyBoltersDescription" value="Grants Baneblades, Leman Russ Battle Tanks, Rogal Dorn Battle Tanks and Valkyries extra Heavy Bolters."/>
+	<entry name="SeparatistRegiments/AdditionalHeavyBoltersFlavor" value="<string name='Weapons/HeavyBolterFlavor'/>"/>
+	<entry name="SeparatistRegiments/AwakenTheMachine" value="<string name='Actions/AwakenTheMachine'/>"/>
+	<entry name="SeparatistRegiments/AwakenTheMachineDescription" value="Grants Techpriest Enginseers the ability to boost the damage of vehicles."/>
+	<entry name="SeparatistRegiments/AwakenTheMachineFlavor" value="<string name='Actions/AwakenTheMachineFlavor'/>"/>
+	<entry name="SeparatistRegiments/BlastDamage" value="<string name='Traits/SeparatistRegiments/BlastDamage'/>"/>
+	<entry name="SeparatistRegiments/BlastDamageDescription" value="Increases the armour penetration of grenade, missile and blast weapons."/>
+	<entry name="SeparatistRegiments/BlastDamageFlavor" value="<string name='Traits/SeparatistRegiments/BlastDamageFlavor'/>"/>
+	<entry name="SeparatistRegiments/BoltDamage" value="<string name='Traits/SeparatistRegiments/BoltDamage'/>"/>
+	<entry name="SeparatistRegiments/BoltDamageDescription" value="Increases the armour penetration of bolt weapons."/>
+	<entry name="SeparatistRegiments/BoltDamageFlavor" value="<string name='Traits/SeparatistRegiments/BoltDamageFlavor'/>"/>
+	<entry name="SeparatistRegiments/CamoNetting" value="<string name='Traits/CamoNetting'/>"/>
+	<entry name="SeparatistRegiments/CamoNettingDescription" value="Increases the ranged damage reduction of ground vehicles."/>
+	<entry name="SeparatistRegiments/CamoNettingFlavor" value="<string name='Traits/CamoNettingFlavor'/>"/>
+	<entry name="SeparatistRegiments/ChaffLauncher" value="Chaff Launcher"/>
+	<entry name="SeparatistRegiments/ChaffLauncherDescription" value="Grants Thunderbolts and Marauder Bombers the ability to launch chaffs that increase ranged damage reduction."/>
+	<entry name="SeparatistRegiments/ChaffLauncherFlavor" value="<string name='Actions/DispenseChaffFlavor'/>"/>
+	<entry name="SeparatistRegiments/CityTier2" value="<string name='Traits/SeparatistRegiments/CityTier2'/>"/>
+	<entry name="SeparatistRegiments/CityTier2Description" value="Increases the tile acquisition radius of cities."/>
+	<entry name="SeparatistRegiments/CityTier2Flavor" value="<string name='Traits/SeparatistRegiments/CityTier2Flavor'/>"/>
+	<entry name="SeparatistRegiments/CityTier3" value="<string name='Traits/SeparatistRegiments/CityTier3'/>"/>
+	<entry name="SeparatistRegiments/CityTier3Description" value="<string name='Upgrades/SeparatistRegiments/CityTier2Description'/>"/>
+	<entry name="SeparatistRegiments/CityTier3Flavor" value="<string name='Traits/SeparatistRegiments/CityTier3Flavor'/>"/>
+	<entry name="SeparatistRegiments/DozerBlade" value="<string name='Traits/DozerBlade'/>"/>
+	<entry name="SeparatistRegiments/DozerBladeDescription" value="Reduces the movement penalty for tanks in forests and imperial ruins."/>
+	<entry name="SeparatistRegiments/DozerBladeFlavor" value="<string name='Traits/DozerBladeFlavor'/>"/>
+	<entry name="SeparatistRegiments/ExtraInfantryArmour" value="<string name='Traits/ExtraInfantryArmour'/>"/>
+	<entry name="SeparatistRegiments/ExtraInfantryArmourDescription" value="Increases the armour of infantry."/>
+	<entry name="SeparatistRegiments/ExtraInfantryArmourFlavor" value="Most infantry in the 41st millenium are equipped with flak armour or its equivalent. If a commander wants their troops to have more than a slight chance of survival, they'll equip them with something closer to the Astra Militarum armaplas-derived carapace armour."/>
+	<entry name="SeparatistRegiments/ExtraVehicleArmour" value="<string name='Traits/ExtraVehicleArmour'/>"/>
+	<entry name="SeparatistRegiments/ExtraVehicleArmourDescription" value="Increases the armour of vehicles."/>
+	<entry name="SeparatistRegiments/ExtraVehicleArmourFlavor" value="Adding extra armour plates to tanks might be the height of heresy for Tech-Priests, but for the soldiers of the Astra Militarum it's the norm. Ablative plating or custom armour for dealing with particular weapons isn't unheard of."/>
+	<entry name="SeparatistRegiments/FragGrenade" value="<string name='Weapons/FragGrenade'/>"/>
+	<entry name="SeparatistRegiments/FragGrenadeDescription" value="Grants Attilan Rough Riders, Bullgryns, Field Ordnance Batteries, Guardsmen, Heavy Weapons Squads, Lord Commissars, Primaris Psykers, Techpriest Enginseers and Tempestus Scions the ability to throw anti-infantry grenades."/>
+	<entry name="SeparatistRegiments/FragGrenadeFlavor" value="<string name='Weapons/FragGrenadeFlavor'/>"/>
+	<entry name="SeparatistRegiments/HammerOfWrath" value="<string name='Actions/HammerOfWrath'/>"/>
+	<entry name="SeparatistRegiments/HammerOfWrathDescription" value="Grants Scout Sentinels, Attilan Rough Riders and Bullgryns the ability to perform more devastating attacks."/>
+	<entry name="SeparatistRegiments/HammerOfWrathFlavor" value="<string name='Actions/HammerOfWrathFlavor'/>"/>
+	<entry name="SeparatistRegiments/HunterKillerMissile" value="<string name='Weapons/HunterKillerMissile'/>"/>
+	<entry name="SeparatistRegiments/HunterKillerMissileDescription" value="Grants ground vehicles the ability to fire hunter-killer missiles."/>
+	<entry name="SeparatistRegiments/HunterKillerMissileFlavor" value="<string name='Weapons/HunterKillerMissileFlavor'/>"/>
+	<entry name="SeparatistRegiments/ImperialSplendour" value="<string name='Traits/ImperialSplendour'/>"/>
+	<entry name="SeparatistRegiments/ImperialSplendourDescription" value="Increases the influence of Astra Militarum cities."/>
+	<entry name="SeparatistRegiments/ImperialSplendourFlavor" value="<string name='Traits/ImperialSplendourFlavor'/>"/>
+	<entry name="SeparatistRegiments/ImperialStrongpoint" value="<string name='Units/SeparatistRegiments/ImperialStrongpoint'/>"/>
+	<entry name="SeparatistRegiments/ImperialStrongpointDescription" value="Grants Techpriest Enginseers the ability to construct fortifications with Heavy Bolters."/>
+	<entry name="SeparatistRegiments/ImperialStrongpointFlavor" value="<string name='Units/SeparatistRegiments/ImperialStrongpointFlavor'/>"/>
+	<entry name="SeparatistRegiments/KrakGrenade" value="<string name='Weapons/KrakGrenade'/>"/>
+	<entry name="SeparatistRegiments/KrakGrenadeDescription" value="Grants Field Ordnance Batteries, Guardsmen, Heavy Weapons Squads, Lord Commissars, Techpriest Enginseers and Tempestus Scions the ability to throw anti-armour grenades."/>
+	<entry name="SeparatistRegiments/KrakGrenadeFlavor" value="<string name='Weapons/KrakGrenadeFlavor'/>"/>
+	<entry name="SeparatistRegiments/LasDamage" value="<string name='Traits/SeparatistRegiments/LasDamage'/>"/>
+	<entry name="SeparatistRegiments/LasDamageDescription" value="Increases the armour penetration of las weapons."/>
+	<entry name="SeparatistRegiments/LasDamageFlavor" value="<string name='Traits/SeparatistRegiments/LasDamageFlavor'/>"/>
+	<entry name="SeparatistRegiments/MediPack" value="<string name='Actions/MediPack'/>"/>
+	<entry name="SeparatistRegiments/MediPackDescription" value="Grants Guardsmen and Tempestus Scions the ability to heal themselves during combat."/>
+	<entry name="SeparatistRegiments/MediPackFlavor" value="<string name='Actions/MediPackFlavor'/>"/>
+	<entry name="SeparatistRegiments/Misfortune" value="<string name='Actions/Misfortune'/>"/>
+	<entry name="SeparatistRegiments/MisfortuneDescription" value="Grants Wyrdvane Psykers the ability to curse enemy units so they take increased damage."/>
+	<entry name="SeparatistRegiments/MisfortuneFlavor" value="<string name='Actions/MisfortuneFlavor'/>"/>
+	<entry name="SeparatistRegiments/RecoveryGear" value="<string name='Traits/RecoveryGear'/>"/>
+	<entry name="SeparatistRegiments/RecoveryGearDescription" value="Increases the healing rate for ground vehicles."/>
+	<entry name="SeparatistRegiments/RecoveryGearFlavor" value="<string name='Traits/RecoveryGearFlavor'/>"/>
+	<entry name="SeparatistRegiments/RelicPlating" value="<string name='Traits/RelicPlating'/>"/>
+	<entry name="SeparatistRegiments/RelicPlatingDescription" value="Increases the witchfire damage reduction of ground vehicles."/>
+	<entry name="SeparatistRegiments/RelicPlatingFlavor" value="<string name='Traits/RelicPlatingFlavor'/>"/>
+	<entry name="SeparatistRegiments/SkystrikeMissile" value="<string name='Weapons/SkystrikeMissile'/>"/>
+	<entry name="SeparatistRegiments/SkystrikeMissileDescription" value="Grants Thunderbolts anti-air missiles."/>
+	<entry name="SeparatistRegiments/SkystrikeMissileFlavor" value="<string name='Weapons/SkystrikeMissileFlavor'/>"/>
+	<entry name="SeparatistRegiments/SmokeLauncher" value="<string name='Upgrades/SmokeLauncher'/>"/>
+	<entry name="SeparatistRegiments/SmokeLauncherDescription" value="<string name='Upgrades/SmokeLauncherDescription'/>"/>
+	<entry name="SeparatistRegiments/SmokeLauncherFlavor" value="<string name='Upgrades/SmokeLauncherFlavor'/>"/>
+	<entry name="SeparatistRegiments/TrainedSentinelPilots" value="<string name='Traits/TrainedSentinelPilots'/>"/>
+	<entry name="SeparatistRegiments/TrainedSentinelPilotsDescription" value="Increases the damage of Scout Sentinels."/>
+	<entry name="SeparatistRegiments/TrainedSentinelPilotsFlavor" value="<string name='Traits/TrainedSentinelPilotsFlavor'/>"/>
+	<entry name="SeparatistRegiments/VoxCaster" value="<string name='Traits/VoxCaster'/>"/>
+	<entry name="SeparatistRegiments/VoxCasterDescription" value="Reduces the morale loss for Guardsmen and Tempestus Scions."/>
+	<entry name="SeparatistRegiments/VoxCasterFlavor" value="<string name='Traits/VoxCasterFlavor'/>"/>
 </language>
