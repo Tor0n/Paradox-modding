@@ -12,7 +12,7 @@
 	</model>
 	<group size="3" rowSize="3" memberDeltaX="80" memberDeltaY="60"/>
 	<weapons>
-		<weapon name="TwinLinkedPulseCarbine">
+		<weapon name="MultiLaser">
 			<model>
 				<weapon muzzleBone="GunDroneMuzzle" muzzleCount="2"/>
 			</model>
@@ -92,7 +92,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addTrait duration="2" name="SeparatistRegiments/TargetAcquired"/>
+										<addTrait duration="1" name="SeparatistRegiments/TargetAcquired"/>
 									</effects>
 								</modifier>
 							</modifiers>
