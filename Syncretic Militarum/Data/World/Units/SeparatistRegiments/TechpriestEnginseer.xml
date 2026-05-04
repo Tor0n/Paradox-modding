@@ -300,6 +300,47 @@
 				</target>
 			</beginTargets>
 		</deployGunDrone>
+		<constructVoidShieldGenerator icon="Units/SeparatistRegiments/SiegeEarthshakerCannon"
+				name="SeparatistRegiments/DeployDrone"
+				requiredUpgrade="SeparatistRegiments/SiegeEarthshakerCannon"
+				cooldown="10">
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild"
+						sound="Actions/Construct"/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<oreCost base="80"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource"/>
+							<noFeatureCategory name="WireWeed"/>
+							<land/>
+							<noEnemyCity/>
+							<noUnit/>
+							<noFeature name="GravityWaves"/>
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="SeparatistRegiments/SiegeEarthshakerCannon"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</constructVoidShieldGenerator>
 	</actions>
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="SeparatistRegiments/ExtraInfantryArmour"/>

@@ -45,6 +45,81 @@
 	</music>
 	<quests>
 	</quests>
+	<actions>
+		<subvertCity cooldown="10"
+				costScalesWithPace="1"
+				name="SeparatistRegiments/SabotageCity"
+				requiredUpgrade="SeparatistRegiments/SabotageTactics">
+			<model>
+				<action sound="Actions/SubvertCity"/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="60"/>
+						<oreCost base="20"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<enemy/>
+							<trait name="Headquarters"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="City">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="SeparatistRegiments/SabotageCity" duration="10"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</subvertCity>
+		<purchasePopulation cooldown="1"
+				costScalesWithPace="1"
+				name="SeparatistRegiments/RecruitDefectors">
+			<model>
+				<action sound="Actions/Proselytise"/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="80"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<faction name="SeparatistRegiments"/>
+							<trait name="Headquarters"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="City">
+							<modifiers>
+								<modifier>
+									<effects>
+										<population add="1"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</purchasePopulation>
+	</actions>
 	<startingUnits>
 		<unit type="SeparatistRegiments/TechpriestEnginseer"/>
 		<unit type="SeparatistRegiments/Guardsman" count="3"/>

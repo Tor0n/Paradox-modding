@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<trait visibilityCategory="Building" category="Buff">
+<trait category="Debuff" icon="Actions/SeparatistRegiments/SabotageCity" visibilityCategory="Building">
 	<modifiers>
 		<modifier>
 			<conditions>
 				<building>
-					<type name="SeparatistRegiments/Influence"/>
+					<trait name="Headquarters"/>
 				</building>
 			</conditions>
 			<effects>
-				<influence mul="0.33"/>
+				<loyalty add="-3"/>
 			</effects>
 		</modifier>
-		<modifier>
+		<modifier requiredUpgrade="SeparatistRegiments/TotalSabotage">
 			<conditions>
 				<building>
-					<type name="SeparatistRegiments/Headquarters"/>
+					<trait name="Headquarters"/>
 				</building>
 			</conditions>
 			<effects>
-				<loyalty add="6"/>
+				<loyalty add="-1"/>
 			</effects>
 		</modifier>
 	</modifiers>
