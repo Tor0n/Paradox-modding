@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faction constructSound="Actions/Construct"
+		energy="1"
+		energyPooling="0.25"
+		food="1"
+		foodPooling="0.25"
+		influence="1"
+		loyalty="1"
+		ore="1"
+		playable="1"
+		production="1"
+		research="1"
+		startingEnergy="25"
+		startingFood="25"
+		startingInfluence="25"
+		startingOre="50"
+		startingRequisitions="0">
+	<music>
+		<track name="Music/AdeptusMechanicusBGM" dlc="Supplement9"/>
+		<track name="Music/AdeptusMechanicusTheme" dlc="Supplement9"/>
+		<mainTrack name="Music/AstraMilitarumBGM"/>
+		<track name="Music/AstraMilitarumTheme"/>
+		<track name="Music/BGM0"/>
+		<track name="Music/BGM1"/>
+		<track name="Music/ChaosSpaceMarinesBGM" dlc="Supplement3"/>
+		<track name="Music/ChaosSpaceMarinesTheme" dlc="Supplement3"/>
+		<track name="Music/EldarBGM" dlc="Supplement7"/>
+		<track name="Music/EldarTheme" dlc="Supplement7"/>
+		<track name="Music/MainBGM"/>
+		<track name="Music/MainTheme"/>
+		<track name="Music/NecronsBGM"/>
+		<track name="Music/NecronsTheme"/>
+		<track name="Music/OrksBGM"/>
+		<track name="Music/OrksTheme"/>
+		<track name="Music/SistersOfBattleBGM" dlc="Supplement11"/>
+		<track name="Music/SistersOfBattleTheme" dlc="Supplement11"/>
+		<track name="Music/SpaceMarinesBGM"/>
+		<track name="Music/SpaceMarinesTheme"/>
+		<track name="Music/TauBGM" dlc="Supplement5"/>
+		<track name="Music/TauTheme" dlc="Supplement5"/>
+		<track name="Music/TyranidsBGM" dlc="Supplement2"/>
+		<track name="Music/TyranidsTheme" dlc="Supplement2"/>
+	</music>
+	<quests>
+		
+	</quests>
+	<actions>
+		<markOfNurgle cooldown="1"
+				name="ChaosSpaceMarines/MarkOfNurgle"
+				requiredUpgrade="Chaosmilitia/MarkOfNurgle">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<faction name="Chaosmilitia"/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Vehicle"/>
+							<noTrait name="Chaosmilitia/MarkOfKhorne"/>
+							<noTrait name="Chaosmilitia/MarkOfNurgle"/>
+							<noTrait name="Chaosmilitia/MarkOfSlaanesh"/>
+							<noTrait name="Chaosmilitia/MarkOfTzeentch"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/MarkOfNurgle"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</markOfNurgle>
+		<markOfKhorne cooldown="1"
+				name="ChaosSpaceMarines/MarkOfKhorne"
+				requiredUpgrade="Chaosmilitia/MarkOfKhorne">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<faction name="Chaosmilitia"/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Psyker"/>
+							<noTrait name="Vehicle"/>
+							<noTrait name="Chaosmilitia/MarkOfKhorne"/>
+							<noTrait name="Chaosmilitia/MarkOfNurgle"/>
+							<noTrait name="Chaosmilitia/MarkOfSlaanesh"/>
+							<noTrait name="Chaosmilitia/MarkOfTzeentch"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/MarkOfKhorne"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</markOfKhorne>
+		<markOfSlaanesh cooldown="1"
+				name="ChaosSpaceMarines/MarkOfSlaanesh"
+				requiredUpgrade="Chaosmilitia/MarkOfSlaanesh">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Vehicle"/>
+							<faction name="Chaosmilitia"/>
+							<noTrait name="Chaosmilitia/MarkOfKhorne"/>
+							<noTrait name="Chaosmilitia/MarkOfNurgle"/>
+							<noTrait name="Chaosmilitia/MarkOfSlaanesh"/>
+							<noTrait name="Chaosmilitia/MarkOfTzeentch"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/MarkOfSlaanesh"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</markOfSlaanesh>
+		<markOfTzeentch cooldown="1"
+				name="ChaosSpaceMarines/MarkOfTzeentch"
+				requiredUpgrade="Chaosmilitia/MarkOfTzeentch">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Vehicle"/>
+							<faction name="Chaosmilitia"/>
+							<noTrait name="Chaosmilitia/MarkOfKhorne"/>
+							<noTrait name="Chaosmilitia/MarkOfNurgle"/>
+							<noTrait name="Chaosmilitia/MarkOfSlaanesh"/>
+							<noTrait name="Chaosmilitia/MarkOfTzeentch"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/MarkOfTzeentch"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</markOfTzeentch>
+		<iconOfVengeance cooldown="1"
+				name="ChaosSpaceMarines/IconOfVengeance"
+				requiredUpgrade="Chaosmilitia/IconOfVengeance">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<noTrait name="Fearless"/>
+						</unit>
+						<unit match="Any">
+							<trait name="Chaosmilitia/MarkOfKhorne"/>
+							<trait name="Chaosmilitia/MarkOfNurgle"/>
+							<trait name="Chaosmilitia/MarkOfSlaanesh"/>
+							<trait name="Chaosmilitia/MarkOfTzeentch"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Fearless"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</iconOfVengeance>
+		<iconOfWrath cooldown="1"
+				name="ChaosSpaceMarines/IconOfWrath"
+				requiredUpgrade="Chaosmilitia/IconOfWrath">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<trait name="Chaosmilitia/MarkOfKhorne"/>
+							<noTrait name="Chaosmilitia/IconOfWrath"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/IconOfWrath"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</iconOfWrath>
+		<iconOfDespair cooldown="1"
+				name="ChaosSpaceMarines/IconOfDespair"
+				requiredUpgrade="Chaosmilitia/IconOfDespair">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<trait name="Chaosmilitia/MarkOfNurgle"/>
+							<noTrait name="Chaosmilitia/IconOfDespair"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/IconOfDespair"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</iconOfDespair>
+		<iconOfExcess cooldown="1"
+				name="ChaosSpaceMarines/IconOfExcess"
+				requiredUpgrade="Chaosmilitia/IconOfExcess">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<trait name="Chaosmilitia/MarkOfSlaanesh"/>
+							<noTrait name="Chaosmilitia/IconOfExcess"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Chaosmilitia/IconOfExcess"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</iconOfExcess>
+		<iconOfFlame cooldown="1"
+				name="ChaosSpaceMarines/IconOfFlame"
+				requiredUpgrade="Chaosmilitia/IconOfFlame">
+			<model>
+				<action sound="Interface/MarkOfChaos"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="-1">
+					<conditions>
+						<unit>
+							<allied/>
+							<trait name="Chaosmilitia/MarkOfTzeentch"/>
+							<noTrait name="SoulBlaze"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="SoulBlaze"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</iconOfFlame>
+	</actions>
+	<startingUnits>
+		<unit type="Chaosmilitia/Guardsman" count="2"/>
+		<unit type="Chaosmilitia/ChaosCultist" count="3"/>
+	</startingUnits>
+</faction>
