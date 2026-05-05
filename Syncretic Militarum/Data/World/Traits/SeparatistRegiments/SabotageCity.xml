@@ -8,6 +8,8 @@
 				</building>
 			</conditions>
 			<effects>
+				<food mul="-0.05"/>
+				<ore mul="-0.05"/>
 				<loyalty add="-3"/>
 			</effects>
 		</modifier>
@@ -18,7 +20,10 @@
 				</building>
 			</conditions>
 			<effects>
-				<loyalty add="-1"/>
+				<food mul="-0.05"/>
+				<ore mul="-0.05"/>
+				<energy mul="-0.05"/>
+				<loyalty mul="-0.05"/>
 			</effects>
 		</modifier>
 	</modifiers>

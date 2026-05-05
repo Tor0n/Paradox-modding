@@ -43,7 +43,7 @@
 			<effects>
 				<armor base="8"/> <!-- %armor base armor=3+ -->
 				<oreUpkeep base="1.5"/> <!-- %oreUpkeep base tier=5 factor=1 -->
-				<energyCost base="15.0"/> <!-- %energyCost base tier=5 factor=0.5 -->
+				<energyCost base="20.0"/> <!-- %energyCost base tier=5 factor=0.5 -->
 				<hitpointsMax base="2.0"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
 				<meleeAccuracy base="6"/> <!-- %meleeAccuracy base weaponSkill=3 -->
 				<meleeAttacks base="1"/>
@@ -51,7 +51,7 @@
 				<!-- <meleeInitiative base="3"/> -->
 				<moraleMax base="10"/> <!-- %moraleMax base leadership=8 -->
 				<movementMax base="3"/>
-				<oreCost base="15.0"/> <!-- %oreCost base tier=5 factor=0.5 -->
+				<oreCost base="20.0"/> <!-- %oreCost base tier=5 factor=0.5 -->
 				<productionCost base="30.0"/> <!-- %productionCost base tier=5 factor=1 -->
 				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
 			</effects>
@@ -269,6 +269,13 @@
 				<action animation=""
 						sound="Actions/DeployDrone"/>
 			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<oreCost base="5"/>
+					</effects>
+				</modifier>
+			</modifiers>
 			<beginTargets>
 				<target rangeMax="1">
 					<conditions>
@@ -300,9 +307,9 @@
 				</target>
 			</beginTargets>
 		</deployGunDrone>
-		<constructVoidShieldGenerator icon="Units/SeparatistRegiments/SiegeEarthshakerCannon"
-				name="SeparatistRegiments/DeployDrone"
-				requiredUpgrade="SeparatistRegiments/SiegeEarthshakerCannon"
+		<constructVoidShieldGenerator icon="Units/SeparatistRegiments/SeparatistBulwark"
+				name="SeparatistRegiments/ConstructSeparatistBulwark"
+				requiredUpgrade="SeparatistRegiments/SeparatistBulwark"
 				cooldown="10">
 			<model>
 				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild"
@@ -311,7 +318,7 @@
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<oreCost base="80"/>
+						<oreCost base="160"/>
 					</effects>
 				</modifier>
 			</modifiers>
@@ -332,7 +339,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addUnit name="SeparatistRegiments/SiegeEarthshakerCannon"/>
+										<addUnit name="SeparatistRegiments/SeparatistBulwark"/>
 									</effects>
 								</modifier>
 							</modifiers>
