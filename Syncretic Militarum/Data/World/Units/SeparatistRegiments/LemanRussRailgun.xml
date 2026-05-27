@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<unit dlc="Supplement6">
+<unit>
 	<model>
-		<unit mesh="Units/AstraMilitarum/Chimera"
-				material="Units/AstraMilitarum/Chimera"
-				idleAnimation="Units/AstraMilitarum/ChimeraIdle"
-				idleAnimationCount="3"
-				idleContinuously="1"
+		<unit mesh="Units/AstraMilitarum/LemanRussBattleTank"
+				material="Units/AstraMilitarum/LemanRussBattleTank"
+				idleAnimation="Units/AstraMilitarum/LemanRussBattleTankIdle"
+				idleAnimationCount="2"
 				scale="1.3 1.3 1.3"
-				explosionsBone="Bone"
+				explosionsBone="Hull"
 				uvAnimated="1"/>
 	</model>
 	<weapons>
-		<weapon name="MultiLaser">
+		<weapon name="RailgunWithSolidShot">
 			<model>
-				<beamWeapon muzzleBone=".MultiLaserMuzzle" fireInterval="0.2"/>
+				<projectileWeapon mesh="Weapons/SeparatistRegiments/VanquisherCannon"
+						material="Weapons/SeparatistRegiments/VanquisherCannon"
+						bone=".BarrelAttachment"
+						muzzleBone="BarrelMuzzle0"
+						fireInterval="0.67"/>
 			</model>
 		</weapon>
-		<weapon name="HeavyBolter">
+		<weapon name="Lascannon">
 			<model>
-				<projectileWeapon muzzleBone=".HeavyBolterMuzzle"/>
+				<beamWeapon muzzleBone=".FrontTurretMuzzle0"
+						fireInterval="1.0"/>
 			</model>
 		</weapon>
-		<weapon name="LasgunArray" count="2">
+		<weapon name="HeavyBolter" count="2"
+				requiredUpgrade="SeparatistRegiments/AdditionalHeavyBolters">
 			<model>
-				<beamWeapon muzzleBone=".LasgunArrayMuzzle" muzzleCount="6"
-						effectFaceWeight="0"
-						cycleMuzzles="0"/>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/LemanRussBattleTankHeavyBolters"
+						material="Weapons/AstraMilitarum/LemanRussBattleTankHeavyBolters"
+						bone=".SideGunsAttachment"
+						muzzleBone="SideGunsMuzzle"
+						muzzleCount="2"/>
 			</model>
 		</weapon>
 		<weapon name="HunterKillerMissile" slotName="HunterKillerMissile"
 				enabled="0">
 			<model>
-				<missileWeapon muzzleBone="Bone"/>
+				<missileWeapon muzzleBone=".SmokeLaunchersAttachment"/>
 			</model>	
-		</weapon>		
+		</weapon>
 	</weapons>
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="5"/> <!-- %armor base armor=12/10/10 -->
-				<cargoSlots base="4"/> <!-- %cargoSlots base capacity=12 -->
-				<hitpointsMax base="24.0"/> <!-- %hitpointsMax base armor=12/10/10 wounds=3 -->
+				<armor base="9"/> <!-- %armor base armor=14/13/10 -->
+				<hitpointsMax base="48.0"/> <!-- %hitpointsMax base armor=14/13/10 wounds=3 -->
 				<moraleMax base="8"/> <!-- %moraleMax base leadership=7 -->
-				<movementMax base="5"/>
-				<oreUpkeep base="2.0"/> <!-- %oreUpkeep base tier=6 factor=1 -->
-				<oreCost base="45.0"/> <!-- %oreCost base tier=6 factor=1 -->
-				<productionCost base="36.0"/> <!-- %productionCost base tier=6 factor=1 -->
+				<movementMax base="3"/>
+				<oreUpkeep base="4.0"/>
+				<oreCost base="80.0"/> <!-- %oreCost base tier=8 factor=1 -->
+				<influenceCost base="20.0"/>
+				<productionCost base="48.0"/> <!-- %productionCost base tier=8 factor=1 -->
 				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
 			</effects>
 		</modifier>
@@ -60,14 +67,13 @@
 	<actions>
 		<attack>
 			<model>
-				<action animation="Units/AstraMilitarum/ChimeraAttack"
-						beginFire="0.77"
-						endFire="2.6"/>
+				<action animation="Units/AstraMilitarum/LemanRussBattleTankAttack"
+						beginFire="0.15" endFire="2.6"/>
 			</model>				
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/AstraMilitarum/ChimeraDie0"
+				<action animation="Units/AstraMilitarum/LemanRussBattleTankDie"
 						sound="Units/MediumVehicleDie"
 						soundCount="3"
 						soundDelay="0.2"/>
@@ -75,7 +81,7 @@
 		</die>
 		<move>
 			<model>
-				<action animation="Units/AstraMilitarum/ChimeraMove"
+				<action animation="Units/AstraMilitarum/LemanRussBattleTankMove"
 						sound="Units/AstraMilitarum/TankMove"
 						soundCount="3"/>
 			</model>
@@ -108,19 +114,16 @@
 			<model>
 				<action beginFire="0.1" endFire="1.0"/>
 			</model>
-		</useWeapon>		
+		</useWeapon>
 	</actions>
 	<traits>
-		<trait name="Amphibious"/>
 		<trait name="CamoNetting" requiredUpgrade="SeparatistRegiments/CamoNetting"/>
 		<trait name="DozerBlade" requiredUpgrade="SeparatistRegiments/DozerBlade"/>
 		<trait name="ExtraVehicleArmour" requiredUpgrade="SeparatistRegiments/ExtraVehicleArmour"/>
-		<trait name="MobileCommand"/>
 		<trait name="RecoveryGear" requiredUpgrade="SeparatistRegiments/RecoveryGear"/>
 		<trait name="RelicPlating" requiredUpgrade="SeparatistRegiments/RelicPlating"/>
 		<trait name="SeparatistRegiments/AdvancedTargetingSystem" requiredUpgrade="SeparatistRegiments/AdvancedTargetingSystem"/>
 		<trait name="Tank"/>
-		<trait name="Transport"/>
 		<trait name="Vehicle"/>
 	</traits>
 </unit>

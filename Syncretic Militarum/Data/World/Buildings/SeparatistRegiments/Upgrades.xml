@@ -29,10 +29,14 @@
 		<modifier>
 			<effects>
 				<increaseColonizersProductionScore base="1.0"/>
+				<increaseInfantryProductionScore base="1.0"/>
+				<increaseVehiclesProductionScore base="1.0"/>
 			</effects>
 		</modifier>
 	</strategyModifiers>
 	<actions>
 		<produceUnit unit="SeparatistRegiments/TechpriestEnginseer"/>
+		<produceUnit unit="SeparatistRegiments/FrontierScionPulse" requiredUpgrade="SeparatistRegiments/FrontierScion"/>
+		<produceUnit unit="SeparatistRegiments/LemanRussRailgun" requiredUpgrade="SeparatistRegiments/VehiclesReconfiguration"/>
 	</actions>
 </building>

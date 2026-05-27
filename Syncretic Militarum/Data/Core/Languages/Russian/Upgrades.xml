@@ -60,6 +60,9 @@
 	<entry name="SeparatistRegiments/VehicleProductionEdictFlavor" value="&lt;string name='Actions/SeparatistRegimentsVehicleProductionEdictFlavor'/&gt;"/>
 		
 	<!-- Units -->
+	<entry name="SeparatistRegiments/ArmouredSentinel" value="&lt;string name='Units/SeparatistRegiments/ArmouredSentinel'/&gt;"/>
+	<entry name="SeparatistRegiments/ArmouredSentinelDescription" value="&lt;string name='Units/SeparatistRegiments/ArmouredSentinelDescription'/&gt;"/>
+	<entry name="SeparatistRegiments/ArmouredSentinelFlavor" value="&lt;string name='Units/SeparatistRegiments/ArmouredSentinelFlavor'/&gt;"/>
 	<entry name="SeparatistRegiments/Basilisk" value="&lt;string name='Units/SeparatistRegiments/Basilisk'/&gt;"/>
 	<entry name="SeparatistRegiments/BasiliskDescription" value="&lt;string name='Units/SeparatistRegiments/BasiliskDescription'/&gt;"/>
 	<entry name="SeparatistRegiments/BasiliskFlavor" value="&lt;string name='Units/SeparatistRegiments/BasiliskFlavor'/&gt;"/>
@@ -87,9 +90,9 @@
 	<entry name="SeparatistRegiments/LemanRussBattleTank" value="&lt;string name='Units/SeparatistRegiments/LemanRussBattleTank'/&gt;"/>
 	<entry name="SeparatistRegiments/LemanRussBattleTankDescription" value="&lt;string name='Units/SeparatistRegiments/LemanRussBattleTankDescription'/&gt;"/>
 	<entry name="SeparatistRegiments/LemanRussBattleTankFlavor" value="&lt;string name='Units/SeparatistRegiments/LemanRussBattleTankFlavor'/&gt;"/>
-	<entry name="SeparatistRegiments/LordCommissar" value="&lt;string name='Units/SeparatistRegiments/LordCommissar'/&gt;"/>
-	<entry name="SeparatistRegiments/LordCommissarDescription" value="&lt;string name='Units/SeparatistRegiments/LordCommissarDescription'/&gt;"/>
-	<entry name="SeparatistRegiments/LordCommissarFlavor" value="&lt;string name='Units/SeparatistRegiments/LordCommissarFlavor'/&gt;"/>
+	<entry name="SeparatistRegiments/Commissar" value="&lt;string name='Units/SeparatistRegiments/Commissar'/&gt;"/>
+	<entry name="SeparatistRegiments/CommissarDescription" value="&lt;string name='Units/SeparatistRegiments/CommissarDescription'/&gt;"/>
+	<entry name="SeparatistRegiments/CommissarFlavor" value="&lt;string name='Units/SeparatistRegiments/CommissarFlavor'/&gt;"/>
 	<entry name="SeparatistRegiments/MarauderBomber" value="&lt;string name='Units/SeparatistRegiments/MarauderBomber'/&gt;"/>
 	<entry name="SeparatistRegiments/MarauderBomberDescription" value="&lt;string name='Units/SeparatistRegiments/MarauderBomberDescription'/&gt;"/>
 	<entry name="SeparatistRegiments/MarauderBomberFlavor" value="&lt;string name='Units/SeparatistRegiments/MarauderBomberFlavor'/&gt;"/>
@@ -127,9 +130,6 @@
 	<entry name="SeparatistRegiments/GunDrone" value="&lt;string name='Units/SeparatistRegiments/GunDrone'/&gt;"/>
 	<entry name="SeparatistRegiments/GunDroneDescription" value="Предоставляет Техножрецу возможность временно использовать боевые дроны."/>
 	<entry name="SeparatistRegiments/GunDroneFlavor" value="&lt;string name='Units/SeparatistRegiments/GunDroneFlavor'/&gt;"/>
-	<entry name="SeparatistRegiments/Whirlwind" value="&lt;string name='Units/SeparatistRegiments/Whirlwind'/&gt;"/>
-	<entry name="SeparatistRegiments/WhirlwindDescription" value="&lt;string name='Units/SeparatistRegiments/WhirlwindDescription'/&gt;"/>
-	<entry name="SeparatistRegiments/WhirlwindFlavor" value="&lt;string name='Units/SeparatistRegiments/WhirlwindFlavor'/&gt;"/>
 	
 
 	<!-- Other -->
@@ -227,5 +227,11 @@
 	<entry name="SeparatistRegiments/TotalSabotage" value="Тотальный саботаж"/>
 	<entry name="SeparatistRegiments/TotalSabotageDescription" value="Улучшает тактику саботажа: теперь навык также снижает производство энергии, сильнее уменьшает добычу руды и пищи, а также сильнее дестабилизирует обстановку во вражеском городе."/>
 	<entry name="SeparatistRegiments/TotalSabotageFlavor" value="Кажется наши диверсанты вошли во вкус и теперь способны обрушить всю инфраструктуру вражеского города за считанные дни. Энергосети гаснут, транспорт встаёт, логистика рассыпается. Враг не просто теряет ресурсы - он теряет волю к сопротивлению. Когда вокруг хаос, а солдаты голодны, мысли о верности уходят на второй план... А мы всегда готовы предложить выход."/>
-
+	<entry name="SeparatistRegiments/FrontierScion" value="Отпрыски фронтира"/>
+	<entry name="SeparatistRegiments/FrontierScionDescription" value="Элитная ударная пехота с трофейным вооружением."/>
+	<entry name="SeparatistRegiments/FrontierScionFlavor" value="«Фронтир» — так сепаратисты называют опасные пограничные миры, где каждый день — битва за выживание. Элитные разведчики и штурмовики, вооружённые трофейным оружием, взяли это имя как знак доблести. Ксенариты неустанно изучают захваченные образцы ксенотехнологий. Восстановить сложные системы с нуля им не под силу, но они научились чинить трофеи, адаптировать интерфейсы и обучать солдат обращению с ними. Каждый Отпрыски пограничья — живое доказательство того, что сепаратисты не боятся учиться у врага, чтобы выжить."/>
+	<entry name="SeparatistRegiments/VehiclesReconfiguration" value="Переоборудование техники"/>
+	<entry name="SeparatistRegiments/VehiclesReconfigurationDescription" value="Открывает возможность строить переоборудованную технику с трофейными ксенотехнология."/>
+	<entry name="SeparatistRegiments/VehiclesReconfigurationFlavor" value="Каждая переоборудованная модель техники — это маленькая победа над имперской догмой. Империум боится ксенотехнологий как ереси, мы же видим в них инструмент выживания. Любой трофей можно внедрить на имперское шасси. Враг молится. Мы переделываем. И побеждаем."/>
+	
 </language>
