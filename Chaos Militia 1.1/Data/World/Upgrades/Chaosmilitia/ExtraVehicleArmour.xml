@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="8" icon="Traits/ExtraVehicleArmour">
+	<requiredUpgrades>
+		<upgrade name="Chaosmilitia/Aircraft"/>
+		<upgrade name="Chaosmilitia/TankCommander"/>
+		<upgrade name="Chaosmilitia/Vehicles"/>
+	</requiredUpgrades>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseVehiclesScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+</upgrade>

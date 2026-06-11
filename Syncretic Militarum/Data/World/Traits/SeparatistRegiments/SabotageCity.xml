@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait category="Debuff" icon="Actions/SeparatistRegiments/SabotageCity" visibilityCategory="Building">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<building>
+					<trait name="Headquarters"/>
+				</building>
+			</conditions>
+			<effects>
+				<food mul="-0.05"/>
+				<ore mul="-0.05"/>
+				<loyalty add="-3"/>
+			</effects>
+		</modifier>
+		<modifier requiredUpgrade="SeparatistRegiments/TotalSabotage">
+			<conditions>
+				<building>
+					<trait name="Headquarters"/>
+				</building>
+			</conditions>
+			<effects>
+				<food mul="-0.05"/>
+				<ore mul="-0.05"/>
+				<energy mul="-0.05"/>
+				<loyalty mul="-0.05"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

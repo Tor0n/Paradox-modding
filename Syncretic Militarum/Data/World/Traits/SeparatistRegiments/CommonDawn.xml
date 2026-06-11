@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait visibilityCategory="Building" category="Buff">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<building>
+					<type name="SeparatistRegiments/Influence"/>
+				</building>
+			</conditions>
+			<effects>
+				<influence mul="0.33"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<conditions>
+				<building>
+					<type name="SeparatistRegiments/Headquarters"/>
+				</building>
+			</conditions>
+			<effects>
+				<loyalty add="6"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>
