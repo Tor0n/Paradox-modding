@@ -1,0 +1,62 @@
+#Defensive armies can't transport off the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+#ai_weight: as standard, but note that it pre-filters by whether the country can recruit this army (measuring by whether it is an assault army, whether it has the tech prereqs, and whether it passes potential_country)
+
+# Assault Armies
+assault_army = {
+	damage = 1.00
+	health = 1.00
+	morale = 1.00
+	morale_damage = 1.00
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 90
+	icon = GFX_army_type_assault
+	prerequisites = { "tech_assault_armies" }
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			minerals = 100
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 100
+			mult = @mineral_to_food_cost_ratio
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	show_tech_unlock_if = {
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+			has_origin = origin_shroud_forged
+		}
+	}
+	potential_country = {
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+			has_origin = origin_shroud_forged
+		}
+		is_wilderness_empire = no
+	}
+
+	ai_weight = {
+		base = 10000
+	}
+}

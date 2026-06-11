@@ -23,7 +23,7 @@ country_event = { #Black_Legion
 			country_event = { id = WrWrld_game_start_chaos_legion.401 days = 4 }
 		}
 		owner = {
-			country_event = { id = WrWrld_chaos_events.1 days = 10682 } #за 2 года до начала 999, вроде за это время ИИ как раз успеет сделать флот
+			country_event = { id = WrWrld_chaos_events.1 years = 30 } #за 2 года до начала 999, вроде за это время ИИ как раз успеет сделать флот  -  days = 10682
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
@@ -32,9 +32,9 @@ country_event = { #Black_Legion
 		add_resource = { food = 10000 }
 		add_resource = { consumer_goods = 7500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 10000 }
-		add_resource = { rare_crystals = 1000 }
-		add_resource = { exotic_gases = 1000 }
+		add_resource = { volatile_motes = 2000 }
+		add_resource = { rare_crystals = 500 }
+		add_resource = { exotic_gases = 500 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		
@@ -312,6 +312,7 @@ country_event = { #Black_Legion
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.3
 	}
 }
 country_event = { #Death_Guard
@@ -332,18 +333,23 @@ country_event = { #Death_Guard
 			country_event = { id = WrWrld_game_start_chaos_legion.302 days = 3 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start_chaos_legion.401 days = 4 }
+			country_event = { id = WrWrld_game_start_chaos_legion.402 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_death_guard.31 years = 41 } 
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_relic = r_the_last_baol #https://wh40k.lexicanum.com/wiki/Ark_Cornucontagious (потом переделать в лорный реликт, нужно для кражи фабием байлом)
+		#
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		
@@ -616,6 +622,7 @@ country_event = { #Death_Guard
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.0
 	}
 }
 country_event = { #World_Eaters
@@ -636,18 +643,27 @@ country_event = { #World_Eaters
 			country_event = { id = WrWrld_game_start_chaos_legion.303 days = 3 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start_chaos_legion.401 days = 4 }
+			country_event = { id = WrWrld_game_start_chaos_legion.403 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_world_eaters.20 years = 20 } 
+		}
+		owner = {
+			country_event = { id = WrWrld_world_eaters.20 years = 40 } 
+		}
+		owner = {
+			country_event = { id = WrWrld_world_eaters.100 years = 56 } 
 		}
 		#establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		#ТРАДИЦИИ С СТАРТА
@@ -916,6 +932,7 @@ country_event = { #World_Eaters
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #Thousand_Sons
@@ -936,18 +953,27 @@ country_event = { #Thousand_Sons
 			country_event = { id = WrWrld_game_start_chaos_legion.304 days = 3 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start_chaos_legion.401 days = 4 }
+			country_event = { id = WrWrld_game_start_chaos_legion.404 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_thousand_sons.5 months = 128 } 
+		}
+		owner = {
+			country_event = { id = WrWrld_thousand_sons.7 years = 27 } 
+		}
+		owner = {
+			country_event = { id = WrWrld_thousand_sons.100 years = 67 } 
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		
@@ -1220,6 +1246,7 @@ country_event = { #Thousand_Sons
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #Emperors_Children
@@ -1240,18 +1267,24 @@ country_event = { #Emperors_Children
 			country_event = { id = WrWrld_game_start_chaos_legion.305 days = 3 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start_chaos_legion.401 days = 4 }
+			country_event = { id = WrWrld_game_start_chaos_legion.405 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_emperors_children.10 days = 5 }
+		}
+		owner = {
+			country_event = { id = WrWrld_emperors_children.11 years = 26 } 
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 
@@ -1531,6 +1564,7 @@ country_event = { #Emperors_Children
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.3
 	}
 }
 country_event = { #Word_Bearers
@@ -1549,14 +1583,14 @@ country_event = { #Word_Bearers
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes		
 		
@@ -1833,6 +1867,7 @@ country_event = { #Word_Bearers
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.9
 	}
 }
 country_event = { #Alpha_Legion
@@ -1853,18 +1888,24 @@ country_event = { #Alpha_Legion
 			country_event = { id = WrWrld_game_start_chaos_legion.307 days = 3 }
 		}
 		owner = {
-			country_event = { id = WrWrld_game_start_chaos_legion.401 days = 4 }
+			country_event = { id = WrWrld_game_start_chaos_legion.407 days = 4 }
+		}
+		owner = {
+			country_event = { id = WrWrld_alpha_legion.12 months = 56 }
+		}
+		owner = {
+			country_event = { id = WrWrld_alpha_legion.35 years = 17 }
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		
@@ -2146,6 +2187,7 @@ country_event = { #Alpha_Legion
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #Night_Lords
@@ -2164,14 +2206,14 @@ country_event = { #Night_Lords
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		
@@ -2453,6 +2495,7 @@ country_event = { #Night_Lords
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.4
 	}
 }
 country_event = { #Iron_Warriors
@@ -2471,14 +2514,14 @@ country_event = { #Iron_Warriors
 		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 35000	}
+		add_resource = { energy = 5000	}
 		add_resource = { minerals = 2500 }
 		add_resource = { food = 2500 }
 		add_resource = { consumer_goods = 2000 }
-		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1750 }
-		add_resource = { rare_crystals = 520 }
-		add_resource = { exotic_gases = 520 }
+		add_resource = { alloys = 10500	}
+		add_resource = { volatile_motes = 500 }
+		add_resource = { rare_crystals = 200 }
+		add_resource = { exotic_gases = 200 }
 		#НАУКА
 		give_technology_chaos_legion = yes
 		
@@ -2760,6 +2803,7 @@ country_event = { #Iron_Warriors
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #
@@ -2856,7 +2900,7 @@ country_event = { #Chaos
 			#set_name = random # Fixes some naming issues
 		}
 		federation = {
-			set_federation_type = hegemony_federation #military_federation
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 		}
 	}
 }
@@ -2892,6 +2936,9 @@ country_event = { #Chaos
 			}
 			#set_name = random # Fixes some naming issues
 		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
+		}
 	}
 }
 country_event = { #Chaos
@@ -2925,6 +2972,9 @@ country_event = { #Chaos
 				override_requirements = yes
 			}
 			#set_name = random # Fixes some naming issues
+		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 		}
 	}
 }
@@ -2960,6 +3010,9 @@ country_event = { #Chaos
 			}
 			#set_name = random # Fixes some naming issues
 		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
+		}
 	}
 }
 country_event = { #Chaos
@@ -2987,6 +3040,9 @@ country_event = { #Chaos
 			}
 			#set_name = random # Fixes some naming issues
 		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
+		}
 	}
 }
 country_event = { #Chaos
@@ -3013,6 +3069,9 @@ country_event = { #Chaos
 				override_requirements = yes
 			}
 			#set_name = random # Fixes some naming issues
+		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 		}
 	}
 }
@@ -3111,11 +3170,656 @@ country_event = { #Chaos
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		#declare_war = {
+		#	target = event_target:Qorl_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Barghesi_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
 		declare_war = {
-			target = event_target:Qorl_evnt_trgt_country
+			target = event_target:Strixis_evnt_trgt_country
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
 		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { 											#Death_Guard_evnt_trgt_country
+	id = WrWrld_game_start_chaos_legion.402
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Black_Legion_gos
+	#}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_deathguard_imperium_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:Qorl_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Barghesi_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { 											#World_Eaters_evnt_trgt_country
+	id = WrWrld_game_start_chaos_legion.403
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Black_Legion_gos
+	#}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:Qorl_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Barghesi_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { 											#Thousand_Sons_evnt_trgt_country
+	id = WrWrld_game_start_chaos_legion.404
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Black_Legion_gos
+	#}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:Qorl_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Barghesi_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { 											#Emperors_Children_evnt_trgt_country
+	id = WrWrld_game_start_chaos_legion.405
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Black_Legion_gos
+	#}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:Qorl_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:RakGol_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		#declare_war = {
+		#	target = event_target:Barghesi_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
+		declare_war = {
+			target = event_target:Strixis_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sardonit_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Cythor_Fiends_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+}
+country_event = { 											#Alpha_Legion_evnt_trgt_country
+	id = WrWrld_game_start_chaos_legion.407
+	hide_window = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	has_country_flag = Black_Legion_gos
+	#}
+	immediate = {
+		communication_with_all = yes
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Eldar_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Ynnari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Aldari_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Commorragh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Void_Dragons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sunblitz_Brotherhood_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Sky_Raiders_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Children_of_Thorns_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Tau_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Farsight_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Votann_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Severan_Dominate_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		}
+		declare_war = {
+			target = event_target:Sayteh_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Tokt_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Agdagat_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war #cb_containment #cb_purification 
+		}
+		declare_war = {
+			target = event_target:Texian_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		#declare_war = {
+		#	target = event_target:Qorl_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		#}
 		#declare_war = {
 		#	target = event_target:RakGol_evnt_trgt_country
 		#	#name = <optional war name>

@@ -16,7 +16,7 @@ Terror_Eye_initializer = {
 			is_bottleneck_system = yes
 		}
 	}
-	flags = { great_wound shroudwalker_enclave_system enclave Black_Legion_gos_station }
+	flags = { great_wound shroudwalker_enclave_system enclave Black_Legion_gos_station Eye_Of_Terror_warp_storm } 
 	max_instances = 1
 	init_effect = {
 		save_global_event_target_as = wormhole_Terror_Eye
@@ -722,7 +722,7 @@ Maelstro_initializer = {
 		radius = 135
 	}
 	
-	flags = { Black_Legion_gos_station }
+	flags = { Black_Legion_gos_station Maelstrom_warp_storm }
 	max_instances = 1
 	init_effect = {
 		#generate_home_system_resources = yes
@@ -1809,7 +1809,7 @@ Somnium_Stars_initializer = {                         #####            ГОТО�
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { World_Eaters_gos }
+	flags = { World_Eaters_gos Somnium_Stars_warp_storm }
 	max_instances = 1
 	init_effect = {
 		save_global_event_target_as = wormhole_warp_8_out
@@ -2495,7 +2495,7 @@ Aggaros_initializer = {
 Magnus_Storm_initializer = {
 	class = "rl_starting_stars"
 	
-	flags = { Thousand_Sons_gos }
+	flags = { Thousand_Sons_gos Storm_Magnus_warp_storm }
 	max_instances = 1
 	init_effect = {
 		#generate_home_system_resources = yes
@@ -3457,7 +3457,7 @@ Khur_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Word_Bearers_gos }
+	flags = { Word_Bearers_gos Great_rift_small }
 
 	max_instances = 1
 	init_effect = { }
@@ -3547,7 +3547,7 @@ Colchis_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Word_Bearers_gos }
+	flags = { Word_Bearers_gos Great_rift_small }
 
 	max_instances = 1
 	init_effect = { }
@@ -4092,7 +4092,7 @@ Daxos_Gemini_initializer = {
 Holshct_initializer = {
 	class = "rl_starting_stars"
 	#init_effect = { #generate_home_system_resources = no }
-	flags = { Emperors_Children_gos }
+	flags = { Emperors_Children_gos Bleak_Coil_warp_storm }
 
 	max_instances = 1
 

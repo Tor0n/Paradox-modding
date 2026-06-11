@@ -229,6 +229,7 @@ country_event = { #Tokt
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.5
 	}
 }
 country_event = { #Agdagat
@@ -455,6 +456,7 @@ country_event = { #Agdagat
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.02
 	}
 }
 country_event = { #Sayteh
@@ -479,7 +481,7 @@ country_event = { #Sayteh
 		}
 		add_resource = { energy = 750	}
 		add_resource = { minerals = 450 }
-		add_resource = { alloys = 400	}
+		add_resource = { alloys = 900	}
 		add_resource = { volatile_motes = 100 }
 		add_resource = { rare_crystals = 50 }
 		add_resource = { exotic_gases = 50 }
@@ -693,6 +695,7 @@ country_event = { #Sayteh
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.03
 	}
 }
 country_event = { #Nigilah
@@ -714,7 +717,7 @@ country_event = { #Nigilah
 		}
 		add_resource = { energy = 1000	}
 		add_resource = { minerals = 700 }
-		add_resource = { alloys = 100	}
+		add_resource = { alloys = 400	}
 		add_resource = { volatile_motes = 200 }
 		add_resource = { rare_crystals = 100 }
 		add_resource = { exotic_gases = 100 }
@@ -920,6 +923,7 @@ country_event = { #Nigilah
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.01
 	}
 }
 country_event = { #Kardenat
@@ -941,7 +945,7 @@ country_event = { #Kardenat
 		}
 		add_resource = { energy = 350	}
 		add_resource = { minerals = 150 }
-		add_resource = { alloys = 300	}
+		add_resource = { alloys = 400	}
 		add_resource = { volatile_motes = 25 }
 		add_resource = { rare_crystals = 10 }
 		add_resource = { exotic_gases = 10 }
@@ -1142,6 +1146,7 @@ country_event = { #Kardenat
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.01
 	}
 }
 country_event = { #Oryskar
@@ -1371,6 +1376,7 @@ country_event = { #Oryskar
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.03
 	}
 }
 country_event = { #Mefrit
@@ -1604,6 +1610,7 @@ country_event = { #Mefrit
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.02
 	}
 }
 country_event = { #Nephrekh - Nekfist
@@ -1826,6 +1833,7 @@ country_event = { #Nephrekh - Nekfist
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.02
 	}
 }
 country_event = { #Sarkoni
@@ -2048,6 +2056,7 @@ country_event = { #Sarkoni
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.01
 	}
 }
 country_event = { #
@@ -2180,6 +2189,9 @@ country_event = { #Sayteh
 				override_requirements = yes
 			}
 			#set_name = random # Fixes some naming issues
+		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 		}
 	}
 }
@@ -2567,6 +2579,9 @@ country_event = { #Oryskar
 				override_requirements = yes
 			}
 			#set_name = random # Fixes some naming issues
+		}
+		federation = {
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 		}
 	}
 }

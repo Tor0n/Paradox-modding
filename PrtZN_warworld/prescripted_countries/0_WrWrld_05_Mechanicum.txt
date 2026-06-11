@@ -20,7 +20,7 @@ Mechanicum_Sarum = {
 		trait = "trait_chaos"
 	}
 	
-	room = "cybernetics_room"
+	room = "Dark_Mechanicum_room" #cybernetics_room
 	
 	authority = "auth_corporate"
 	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_dystopian_society" } #civic_permanent_employment
@@ -52,9 +52,9 @@ Mechanicum_Sarum = {
 			file = "flag_BG_19.dds"
 		}
 		colors = {
-			"intense_red"
 			"dark_brown"
-			"black"
+			"red"
+			"null" #black
 			"null"
 		}
 	}
@@ -95,7 +95,7 @@ Mechanicum_Samech = {
 		trait = "trait_chaos"
 	}
 	
-	room = "cybernetics_room"
+	room = "Dark_Mechanicum_room" #cybernetics_room
 	
 	authority = "auth_corporate"
 	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_indentured_assets" } #"civic_relentless_industrialists" "civic_cutthroat_politics" "civic_corvee_system"
@@ -126,9 +126,9 @@ Mechanicum_Samech = {
 			file = "flag_BG_19.dds"
 		}
 		colors = {
+			"intense_red"
 			"dark_brown"
-			"red"
-			"black" #black
+			"black"
 			"null"
 		}
 	}
@@ -168,7 +168,7 @@ Mechanicum_Cyclothrathe = {
 		trait = "trait_chaos"
 	}
 	
-	room = "cybernetics_room"
+	room = "Dark_Mechanicum_room" #cybernetics_room
 	
 	authority = "auth_corporate"
 	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_task_delegation_corporate" } #"civic_relentless_industrialists" "civic_technocracy" "civic_shadow_council"
@@ -243,7 +243,7 @@ Mechanicum_Ordex_Thaag = {
 		trait = "trait_chaos"
 	}
 	
-	room = "cybernetics_room"
+	room = "Dark_Mechanicum_room" #cybernetics_room
 	
 	authority = "auth_corporate"
 	civics = { "civic_mechanicum" "civic_corporate_relentless_industrialists" "civic_corporate_scavengers" }

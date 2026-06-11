@@ -26,9 +26,6 @@ country_event = { #Tau
 		add_resource = { volatile_motes = 1400 }
 		add_resource = { rare_crystals = 900 }
 		add_resource = { exotic_gases = 900 }
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 }
-		}
 		
 		give_technology_tau = yes
 		
@@ -494,6 +491,7 @@ country_event = { #Tau
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.4
 	}
 }
 
@@ -519,9 +517,6 @@ country_event = { #Farsight
 		add_resource = { exotic_gases = 900 }
 		owner = {
 			country_event = { id = WrWrld_game_start_tau_votann_severan.102 days = 1 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 }
 		}
 		give_technology_tau = yes
 		
@@ -731,43 +726,92 @@ country_event = {
 		
 		give_technology_votann = yes
 		add_tradition_votann = yes
-		
+		owner = {
+			country_event = { id = WrWrld_votann_events.10 years = 24 }
+		}
 		every_system = {
 			limit = {
-				has_star_flag = Votann_gos
+				OR = {
+					has_star_flag = Votann_gos
+					has_star_flag = Votann_gos_station
+				}
 			}
 			if = {
-				limit = { has_star_flag = Votann_gos }
+				limit = {
+				    has_star_flag = Votann_gos
+			    }
 				create_starbase = {
 					owner = ROOT
 					size = starbase_outpost
 				}
-				every_system_planet = {
-					if = {
-						limit = { is_colonizable = no }
-						create_deposits_stations = yes
+			}
+			else = {
+				limit = {
+					has_star_flag = Votann_gos_station
+			    }
+				create_starbase = {
+					owner = ROOT
+					size = starbase_starfortress
+					module = shipyard
+					module = shipyard
+					module = gun_battery
+					module = gun_battery
+					module = trading_hub
+					#module = detection_array #or: anchorage
+					
+					building = crew_quarters
+					building = fleet_academy
+					#building = listening_post
+					#building = offworld_trading_company
+				}
+			}
+			every_system_planet = {
+			    ### ПОСТРОЙКА СТАНЦИЙ ###
+				if = {
+				    limit = { is_colonizable = no }
+					create_deposits_stations = yes
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Votann_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+		    	    }
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-					if = {
-						limit = { 
-							is_colonizable = yes
-							has_planet_flag = Votann_world			
-						}
-						create_colony = { owner = ROOT }
-						while = { count = 3 add_district_and_planet_size_if_needed_effect = { district = district_city } }
-						add_building = building_system_capital
-						add_building = building_planetary_shield_generator
-						add_building = building_fortress
-						while = {
-							count = 16                            
-							create_pop = { species = owner_main_species }
-						}
-						while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_generator } }
-						while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_mining } }
-						while = { count = 2 add_district_and_planet_size_if_needed_effect = { district = district_farming } }
+				    add_building = building_major_capital   	
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_stronghold		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    while = {
+				    	count = 32
+				    	create_pop = {
+				    		species = owner_main_species
+				    	}
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.8 #было 0.5
 	}
 }
 
@@ -794,9 +838,9 @@ country_event = { #Severan_Dominate
 		add_resource = { volatile_motes = 1400 }
 		add_resource = { rare_crystals = 900 }
 		add_resource = { exotic_gases = 900 }
-		#owner = {
-		#	country_event = { id = WrWrld_game_start.601 days = 5 }
-		#}
+		owner = {
+			country_event = { id = WrWrld_severan_events.10 months = 90 }
+		}
 		give_technology_imperium = yes
 		add_tradition_imperium = yes
 		

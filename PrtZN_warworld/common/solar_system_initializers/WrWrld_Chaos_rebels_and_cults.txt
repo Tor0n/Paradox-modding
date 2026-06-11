@@ -501,7 +501,7 @@ Moebian_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_planet_entity = {
-				entity = super_hive_01_entity
+				entity = Hive_world_entity
 				atmosphere_color = hsv { 0.89 0.89 0.56 }
 				atmosphere_intensity = 0.5
 				atmosphere_width = 0.5
@@ -2671,7 +2671,7 @@ Ahitupia_initializer = {
 		radius = 135 #Distance from system centre
 	}
 	
-	flags = { Brothrhd_Knife_gos }
+	flags = { Brothrhd_Knife_gos Great_rift_small }
 
 	max_instances = 1
 	init_effect = { }
@@ -3033,7 +3033,7 @@ Prestigus_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_planet_entity = {
-				entity = super_hive_01_entity
+				entity = Hive_world_entity
 				atmosphere_color = hsv { 0.89 0.89 0.56 }
 				atmosphere_intensity = 0.5
 				atmosphere_width = 0.5
@@ -4016,7 +4016,7 @@ Celtor_initializer = {
 	#	radius = 112 #Distance from system centre
 	#}
 	
-	flags = { Bloodbath_gos }
+	flags = { Bloodbath_gos Celtor_warp_storm }
 
 	max_instances = 1
 	init_effect = { }
@@ -5645,7 +5645,7 @@ Burnscour_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			set_planet_entity = {
-				entity = super_hive_01_entity
+				entity = Hive_world_entity
 				atmosphere_color = hsv { 0.89 0.89 0.56 }
 				atmosphere_intensity = 0.5
 				atmosphere_width = 0.5

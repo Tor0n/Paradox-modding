@@ -18,34 +18,14 @@ Commorragh_initializer = {
 		}
 	}
 	
-    planet = {
-		class = "pc_relic"
-
-		orbit_distance = 45
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 18 max = 25 }
-		has_ring = no
-        flags = { Commorragh_world }
-		home_planet = no
-		init_effect = {
-			prevent_anomaly = yes
-			set_planet_entity = {
-				entity = advancexenocity_planet_01_entity
-				#atmosphere_color = hsv { 0.89 0.89 0.56 }
-				#atmosphere_intensity = 0.5
-				#atmosphere_width = 0.5
-			}
-		}
-	}
-	
 	planet = {
 		#class = "pc_continental"
 		class = "pc_relic"
-		orbit_distance = 65
+		orbit_distance = 60
 		orbit_angle = { min = 90 max = 270 }
-		size = 24
+		size = 110
 		has_ring = no
-		change_orbit = 4
+		#change_orbit = 4
 		deposit_blockers = none
 		modifiers = none
 		starting_planet = yes
@@ -53,6 +33,20 @@ Commorragh_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
+			add_deposit = d_city_ruins
+			add_deposit = d_city_ruins
+			add_deposit = d_city_ruins
+			add_deposit = d_city_ruins
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_searing_desert
+			add_deposit = d_frozen_gas_lake
+			add_deposit = d_underwater_vent
+			add_deposit = d_tempestous_mountain
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_rich_mountain
+			#add_deposit = d_shroudstone
+			#add_deposit = d_aura_blocker
 			set_planet_entity = {
 				entity = advancexenocity_planet_01_entity
 				#atmosphere_color = hsv { 0.89 0.89 0.56 }
@@ -63,58 +57,80 @@ Commorragh_initializer = {
 		
 		home_planet = yes
 	}
+	
+    #planet = {
+	#	class = "pc_relic"
+#
+	#	orbit_distance = 45
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = { min = 18 max = 25 }
+	#	has_ring = no
+    #    flags = { Commorragh_world }
+	#	home_planet = no
+	#	init_effect = {
+	#		prevent_anomaly = yes
+	#		set_planet_entity = {
+	#			entity = advancexenocity_planet_01_entity
+	#			#atmosphere_color = hsv { 0.89 0.89 0.56 }
+	#			#atmosphere_intensity = 0.5
+	#			#atmosphere_width = 0.5
+	#		}
+	#	}
+	#}
+	
+	
 
-	planet = {
-		class = "pc_relic"
+	#planet = {
+	#	class = "pc_relic"
+#
+	#	orbit_distance = 28
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = { min = 15 max = 30 }
+	#	has_ring = yes
+    #    flags = { Commorragh_world }
+	#	home_planet = no
+	#	init_effect = {
+	#		prevent_anomaly = yes
+	#		set_planet_entity = {
+	#			entity = advancexenocity_planet_01_entity
+	#			#atmosphere_color = hsv { 0.89 0.89 0.56 }
+	#			#atmosphere_intensity = 0.5
+	#			#atmosphere_width = 0.5
+	#		}
+	#	}
+	#}
 
-		orbit_distance = 28
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = yes
-        flags = { Commorragh_world }
-		home_planet = no
-		init_effect = {
-			prevent_anomaly = yes
-			set_planet_entity = {
-				entity = advancexenocity_planet_01_entity
-				#atmosphere_color = hsv { 0.89 0.89 0.56 }
-				#atmosphere_intensity = 0.5
-				#atmosphere_width = 0.5
-			}
-		}
-	}
+	#planet = {
+	#	class = "pc_relic"
+#
+	#	orbit_distance = 30
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = { min = 15 max = 30 }
+	#	has_ring = no
+    #    flags = { Commorragh_world }
+	#	home_planet = no
+	#	init_effect = {
+	#		prevent_anomaly = yes
+	#		set_planet_entity = {
+	#			entity = advancexenocity_planet_01_entity
+	#			#atmosphere_color = hsv { 0.89 0.89 0.56 }
+	#			#atmosphere_intensity = 0.5
+	#			#atmosphere_width = 0.5
+	#		}
+	#	}
+	#}
 
-	planet = {
-		class = "pc_relic"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-        flags = { Commorragh_world }
-		home_planet = no
-		init_effect = {
-			prevent_anomaly = yes
-			set_planet_entity = {
-				entity = advancexenocity_planet_01_entity
-				#atmosphere_color = hsv { 0.89 0.89 0.56 }
-				#atmosphere_intensity = 0.5
-				#atmosphere_width = 0.5
-			}
-		}
-	}
-
-	planet = {
-		class = "pc_barren_cold"
-
-		orbit_distance = 30
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 15 max = 30 }
-		has_ring = no
-		change_orbit = 12
-
-		home_planet = no
-	}
+	#planet = {
+	#	class = "pc_barren_cold"
+#
+	#	orbit_distance = 30
+	#	orbit_angle = { min = 90 max = 270 }
+	#	size = { min = 15 max = 30 }
+	#	has_ring = no
+	#	change_orbit = 12
+#
+	#	home_planet = no
+	#}
 }
 Sorrow_initializer = {
 	class = "rl_starting_stars"

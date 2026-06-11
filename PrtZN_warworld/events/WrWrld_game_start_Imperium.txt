@@ -21,9 +21,6 @@ country_event = { #Imperium
 		owner = {
 			country_event = { id = WrWrld_start_fleet.1 }
 		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		}
 		
 		communication_with_all = yes
 		
@@ -172,7 +169,7 @@ country_event = { #Imperium
 				    create_colony = { owner = ROOT }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
-					add_building = building_stronghold
+					#add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
 					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
@@ -209,7 +206,7 @@ country_event = { #Imperium
 				    add_building = building_foundry_1 #building_factory_1
 					add_building = building_ministry_production
 					add_building = building_fortress
-					add_building = building_stronghold	
+					#add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
@@ -239,7 +236,7 @@ country_event = { #Imperium
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -284,7 +281,7 @@ country_event = { #Imperium
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
 					#add_building = building_commercial_zone
@@ -328,7 +325,7 @@ country_event = { #Imperium
 				    add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
@@ -406,10 +403,10 @@ country_event = { #Imperium
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
 					add_building = building_stronghold	
-					add_building = building_stronghold 		
+					#add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
@@ -550,6 +547,7 @@ country_event = { #Imperium
 				#every_system_planet
 			# }
 		}
+		create_fleet_from_naval_cap = 0.25
 	}
 }
 country_event = { #Segmentum_Obscurus
@@ -567,9 +565,6 @@ country_event = { #Segmentum_Obscurus
 		#}
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.202 days = 2 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
 		}
 		communication_with_all = yes
 		add_resource = { energy = 4500 }
@@ -715,7 +710,7 @@ country_event = { #Segmentum_Obscurus
 				    create_colony = { owner = ROOT }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
-					add_building = building_stronghold
+					#add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
 					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
@@ -752,7 +747,7 @@ country_event = { #Segmentum_Obscurus
 				    add_building = building_foundry_1 #building_factory_1
 					add_building = building_ministry_production
 					add_building = building_fortress
-					add_building = building_stronghold	
+					#add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
@@ -782,7 +777,7 @@ country_event = { #Segmentum_Obscurus
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -827,7 +822,7 @@ country_event = { #Segmentum_Obscurus
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
 					#add_building = building_commercial_zone
@@ -871,7 +866,7 @@ country_event = { #Segmentum_Obscurus
 				    add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
@@ -949,10 +944,10 @@ country_event = { #Segmentum_Obscurus
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
 					add_building = building_stronghold	
-					add_building = building_stronghold 		
+					#add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
@@ -1039,6 +1034,7 @@ country_event = { #Segmentum_Obscurus
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.7
 	}
 }
 country_event = { #Ultima_Segmentum
@@ -1056,9 +1052,6 @@ country_event = { #Ultima_Segmentum
 		#}
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.203 days = 2 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
 		}
 		#owner = {
 		#	country_event = { id = WrWrld_start_fleet.1 }
@@ -1207,7 +1200,7 @@ country_event = { #Ultima_Segmentum
 				    create_colony = { owner = ROOT }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
-					add_building = building_stronghold
+					#add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
 					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
@@ -1244,7 +1237,7 @@ country_event = { #Ultima_Segmentum
 				    add_building = building_foundry_1 #building_factory_1
 					add_building = building_ministry_production
 					add_building = building_fortress
-					add_building = building_stronghold	
+					#add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
@@ -1274,7 +1267,7 @@ country_event = { #Ultima_Segmentum
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -1319,7 +1312,7 @@ country_event = { #Ultima_Segmentum
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
 					#add_building = building_commercial_zone
@@ -1363,7 +1356,7 @@ country_event = { #Ultima_Segmentum
 				    add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
@@ -1441,10 +1434,10 @@ country_event = { #Ultima_Segmentum
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
 					add_building = building_stronghold	
-					add_building = building_stronghold 		
+					#add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
@@ -1531,6 +1524,7 @@ country_event = { #Ultima_Segmentum
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #Segmentum_Tempestus
@@ -1548,9 +1542,6 @@ country_event = { #Segmentum_Tempestus
 		#}
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.204 days = 2 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
 		}
 		communication_with_all = yes
 		add_resource = { energy = 4500 }
@@ -1696,7 +1687,7 @@ country_event = { #Segmentum_Tempestus
 				    create_colony = { owner = ROOT }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
-					add_building = building_stronghold
+					#add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
 					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
@@ -1733,7 +1724,7 @@ country_event = { #Segmentum_Tempestus
 				    add_building = building_foundry_1 #building_factory_1
 					add_building = building_ministry_production
 					add_building = building_fortress
-					add_building = building_stronghold	
+					#add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
@@ -1763,7 +1754,7 @@ country_event = { #Segmentum_Tempestus
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -1808,7 +1799,7 @@ country_event = { #Segmentum_Tempestus
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
 					#add_building = building_commercial_zone
@@ -1852,7 +1843,7 @@ country_event = { #Segmentum_Tempestus
 				    add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
@@ -1930,10 +1921,10 @@ country_event = { #Segmentum_Tempestus
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
 					add_building = building_stronghold	
-					add_building = building_stronghold 		
+					#add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
@@ -1997,7 +1988,7 @@ country_event = { #Segmentum_Tempestus
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -2028,6 +2019,7 @@ country_event = { #Segmentum_Tempestus
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.37
 	}
 }
 country_event = { #Eastern_Fringe
@@ -2045,9 +2037,6 @@ country_event = { #Eastern_Fringe
 		#}
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.205 days = 2 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
 		}
 		#owner = {
 		#	country_event = { id = WrWrld_start_fleet.1 }
@@ -2196,7 +2185,7 @@ country_event = { #Eastern_Fringe
 				    create_colony = { owner = ROOT }
 				    add_building = building_major_capital   	
 					add_building = building_fortress
-					add_building = building_stronghold
+					#add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
 					add_building = building_hall_judgment 
 				    add_building = building_precinct_house 
@@ -2233,7 +2222,7 @@ country_event = { #Eastern_Fringe
 				    add_building = building_foundry_1 #building_factory_1
 					add_building = building_ministry_production
 					add_building = building_fortress
-					add_building = building_stronghold	
+					#add_building = building_stronghold	
 					add_building = building_mote_harvesters 	
 				    add_building = building_planetary_shield_generator					
 				    while = {
@@ -2263,7 +2252,7 @@ country_event = { #Eastern_Fringe
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -2308,7 +2297,7 @@ country_event = { #Eastern_Fringe
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
 					#add_building = building_commercial_zone
@@ -2352,7 +2341,7 @@ country_event = { #Eastern_Fringe
 				    add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
@@ -2430,10 +2419,10 @@ country_event = { #Eastern_Fringe
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
 					add_building = building_stronghold	
-					add_building = building_stronghold 		
+					#add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
@@ -2520,6 +2509,7 @@ country_event = { #Eastern_Fringe
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.3
 	}
 }
 country_event = { #Manachean_Commonwealth
@@ -2535,15 +2525,12 @@ country_event = { #Manachean_Commonwealth
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.206 days = 2 }
 		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
-		}
 		communication_with_all = yes
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
 		add_resource = { alloys = 10500	}
-		add_resource = { volatile_motes = 200 }
+		add_resource = { volatile_motes = 500 }
 		add_resource = { rare_crystals = 200 }
 		add_resource = { exotic_gases = 200 }
 		add_resource = { influence = 400 }
@@ -2675,7 +2662,7 @@ country_event = { #Manachean_Commonwealth
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -2719,7 +2706,7 @@ country_event = { #Manachean_Commonwealth
 				    add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
@@ -2821,7 +2808,7 @@ country_event = { #Manachean_Commonwealth
 				    add_building = building_precinct_house 	
 				    add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
-					add_building = building_stronghold		
+					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_planetary_shield_generator 
 					#add_building = building_commercial_zone
@@ -2864,6 +2851,7 @@ country_event = { #Manachean_Commonwealth
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.4
 	}
 }
 country_event = { #Ecclesiarchy
@@ -2878,9 +2866,6 @@ country_event = { #Ecclesiarchy
 	    save_global_event_target_as = Ecclesiarchy_evnt_trgt_country
 		owner = {
 			country_event = { id = WrWrld_game_start_imperium.207 days = 2 }
-		}
-		owner = {
-			country_event = { id = WrWrld_game_start_imperium.601 days = 5 }
 		}
 		communication_with_all = yes
 		add_resource = { energy = 15000 }
@@ -3076,10 +3061,10 @@ country_event = { #Ecclesiarchy
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
 					add_building = building_stronghold	
-					add_building = building_stronghold 		
+					#add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
@@ -3104,6 +3089,7 @@ country_event = { #Ecclesiarchy
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.25
 	}
 }
 country_event = { #Pops fix
@@ -3960,7 +3946,7 @@ country_event = { #Federation
 		communication_with_all = yes
 		
 		federation = {
-			set_federation_type = hegemony_federation #military_federation
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 			set_federation_leader = root
 			set_name = Imperium of Man
 			#set_federation_law = succession_term_years_20
@@ -4066,7 +4052,7 @@ country_event = { #Federation
 			#set_name = random # Fixes some naming issues
 		}
 		federation = {
-			set_federation_type = hegemony_federation #military_federation
+			set_federation_type = imperium_federation #hegemony_federation #military_federation
 		}
 	}
 }
@@ -4080,6 +4066,11 @@ country_event = { #Imperium
 	}
 	immediate = {
 		communication_with_all = yes
+		#declare_war = {
+		#	target = event_target:Black_Legion_evnt_trgt_country
+		#	#name = <optional war name>
+		#	attacker_war_goal = wg_WrWrld_total_pregalcom_war  
+		#}
 		declare_war = {
 			target = event_target:Tau_evnt_trgt_country
 			#name = <optional war name>

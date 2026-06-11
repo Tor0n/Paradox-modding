@@ -1,0 +1,120 @@
+#First is set to default
+#
+#	#type_key
+#	test_type = {
+#		#on_create, run everytime the federation type has been set
+#		on_create = {}
+#		#potential
+#		potential = {}
+#		#allowed
+#		allow = {}
+#		#levels
+#		levels = {
+#			#test level key
+#			test_level = {
+#			#perks for level
+#				perks = {
+#					test_perk_1
+#					test_perk_2
+#				}
+#			}
+#		}
+#	}
+
+@xp_to_level_2 = 1200
+@xp_to_level_3 = 2400
+@xp_to_level_4 = 4800
+@xp_to_level_5 = 9600
+
+imperium_federation = {
+	base_intel = 60
+	icon = "GFX_default_federation"
+	potential = {
+		host_has_dlc = Federations
+	}
+	ownership_limits = default
+	allow = {
+		federation_check_for_subject_trigger = yes
+		custom_tooltip = {
+			fail_text = requires_actor_not_barbaric_despoilers
+			NOT = { has_valid_civic = civic_barbaric_despoilers }
+		}
+	}
+	levels = {
+		level_1 = { # Starting rank
+			experience = @xp_to_level_2 # Experience until next rank
+			perks = {
+				hegemony_federation_passive  			#default_federation_passive или hegemony_federation_passive
+			}
+		}
+
+		level_2 = {
+			experience = @xp_to_level_3
+			perks = {
+				cohesion_join_1
+				extra_envoy_1
+				president_spiritualist_4
+			}
+		}
+
+		level_3 = {
+			experience = @xp_to_level_4
+			perks = {
+				job_output_1
+				trade_value_1
+				president_unity_1
+			}
+		}
+
+		level_4 = {
+			experience = @xp_to_level_5
+			perks = {
+				#make_spiritualist_1
+				diplomacy_upkeep_1
+				president_trade_value_1
+			}
+		}
+
+		level_5 = {
+			perks = {
+				federation_fleet_speed_1
+				federation_fleet_size_1
+				job_output_2
+			}
+		}
+	}
+	on_create = {
+		remove_federation_flag = enable_federation_cooldowns
+		set_federation_law = centralization_minimal
+		set_federation_law = succession_type_strongest_hegemony
+		set_federation_law = succession_power_diplomatic_weight
+		set_federation_law = fleet_contribution_none
+		set_federation_law = federation_build_fleets_only_leader
+		set_federation_law = vote_weight_equal
+		set_federation_law = declare_war_unanimous_vote
+		set_federation_law = invite_members_unanimous_vote
+		set_federation_law = kick_members_majority_vote
+		set_federation_law = free_migration_no
+		set_federation_law = treaties_separate_yes
+		set_federation_law = allow_subjects_to_join_no
+		set_federation_flag = enable_federation_cooldowns
+	}
+
+	ai_weight = {
+		base = 0
+		modifier = {
+			desc = federation_acceptance_hegemonic_imperialists
+			add = 20
+			from = {
+				has_ai_personality = hegemonic_imperialists
+			}
+		}
+		modifier = {
+			desc = federation_acceptance_slaving_despots
+			add = 20
+			from = {
+				has_ai_personality = slaving_despots
+			}
+		}
+	}
+}

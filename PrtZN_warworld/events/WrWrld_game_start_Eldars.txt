@@ -13,6 +13,7 @@ country_event = {
 	immediate = {
 		save_global_event_target_as = Eldar_evnt_trgt_country
 		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
+		owner = { country_event = { id = WrWrld_aeldari_events.5 years = 4 } }
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 14000 }
@@ -424,6 +425,7 @@ country_event = {
 		owner = {
 			country_event = { id = WrWrld_game_start_aeldari.407 days = 4 }
 		}
+		owner = { country_event = { id = WrWrld_drukhari_events.10 months = 206 } }
 		add_resource = { energy = 12000	}
 		add_resource = { minerals = 7500 }
 		add_resource = { food = 7500 }
@@ -449,37 +451,59 @@ country_event = {
 				}
 				if = {
 				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Commorragh_world			
+			            is_capital = yes			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+					remove_all_buildings = yes
 				    add_building = building_capital	
 				    add_building = building_hydroponics_farm	
-					add_building = building_slave_processing
+					add_building = building_hydroponics_farm	
+					add_building = building_medical_1
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_deposit = d_city_ruins
+					add_deposit = d_city_ruins
+					add_deposit = d_city_ruins
+					add_deposit = d_city_ruins
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_searing_desert
+					add_deposit = d_frozen_gas_lake
+					add_deposit = d_underwater_vent
+					add_deposit = d_tempestous_mountain
+					add_deposit = d_prosperous_mesa
+					add_deposit = d_ore_rich_caverns
+					add_deposit = d_rich_mountain
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_searing_desert
+					add_deposit = d_frozen_gas_lake
+					add_deposit = d_underwater_vent
+					add_deposit = d_tempestous_mountain
+					add_deposit = d_prosperous_mesa
+					add_deposit = d_ore_rich_caverns
+					add_deposit = d_rich_mountain
+					#add_deposit = d_shroudstone
+					#add_deposit = d_aura_blocker
 				    while = {
-				    	count = 29
+				    	count = 40
 				    	create_pop_group = { species = owner_main_species }
 					}
 					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_industrial
-						}
-					}
-					while = {
-						count = 4
+						count = 9
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_generator
 						}
 					}
 					while = {
-						count = 4
+						count = 7
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_mining
 						}
 					}
+					#while = {
+					#	count = 5
+					#	add_district_and_planet_size_if_needed_effect = {
+					#		district = district_farming
+					#	}
+					#}
 				}
 			}
 			#else = {
@@ -494,6 +518,7 @@ country_event = {
 			#}
 		}
 		add_seen_bypass_type = wormhole
+		create_fleet_from_naval_cap = 0.82
 	}
 }
 country_event = {
@@ -509,17 +534,17 @@ country_event = {
 		owner = { country_event = { id = WrWrld_game_start_aeldari.101 days = 1 } }
 		owner = { country_event = { id = WrWrld_game_start_aeldari.408 days = 4 } }
 		communication_with_all = yes
-		add_resource = { energy = 25000	}
-		add_resource = { minerals = 7000 }
-		add_resource = { food = 14000 }
-		add_resource = { consumer_goods = 9500 }
-		add_resource = { alloys = 17500	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 400 }
-		add_resource = { exotic_gases = 400 }
+		add_resource = { energy = 5000	}
+		add_resource = { minerals = 1000 }
+		add_resource = { food = 3500 }
+		add_resource = { consumer_goods = 1500 }
+		add_resource = { alloys = 6500	}
+		add_resource = { volatile_motes = 3000 }
+		add_resource = { rare_crystals = 120 }
+		add_resource = { exotic_gases = 120 }
 		
 		give_technology_eldar = yes
-		add_tradition_eldar = yes
+		add_tradition_corsars = yes
 		
 		every_system = {
 			limit = {
@@ -591,17 +616,17 @@ country_event = {
 			country_event = { id = WrWrld_game_start_aeldari.409 days = 4 }
 		}
 		communication_with_all = yes
-		add_resource = { energy = 25000	}
-		add_resource = { minerals = 7000 }
-		add_resource = { food = 14000 }
-		add_resource = { consumer_goods = 9500 }
-		add_resource = { alloys = 17500	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 400 }
-		add_resource = { exotic_gases = 400 }
+		add_resource = { energy = 2500	}
+		add_resource = { minerals = 700 }
+		add_resource = { food = 4000 }
+		add_resource = { consumer_goods = 950 }
+		add_resource = { alloys = 4500	}
+		add_resource = { volatile_motes = 300 }
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
 		
 		give_technology_eldar = yes
-		add_tradition_eldar = yes
+		add_tradition_corsars = yes
 		
 		every_system = {
 			limit = {
@@ -673,17 +698,17 @@ country_event = {
 			country_event = { id = WrWrld_game_start_aeldari.410 days = 4 }
 		}
 		communication_with_all = yes
-		add_resource = { energy = 25000	}
-		add_resource = { minerals = 7000 }
-		add_resource = { food = 14000 }
-		add_resource = { consumer_goods = 9500 }
-		add_resource = { alloys = 17500	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 400 }
-		add_resource = { exotic_gases = 400 }
+		add_resource = { energy = 900	}
+		add_resource = { minerals = 300 }
+		add_resource = { food = 700 }
+		add_resource = { consumer_goods = 250 }
+		add_resource = { alloys = 1000	}
+		add_resource = { volatile_motes = 200 }
+		add_resource = { rare_crystals = 100 }
+		add_resource = { exotic_gases = 100 }
 		
 		give_technology_eldar = yes
-		add_tradition_eldar = yes
+		add_tradition_corsars = yes
 		
 		every_system = {
 			limit = {
@@ -754,12 +779,13 @@ country_event = {
 		owner = {
 			country_event = { id = WrWrld_game_start_aeldari.411 days = 4 }
 		}
+		owner = { country_event = { id = WrWrld_drukhari_events.5 months = 504 } }
 		communication_with_all = yes
 		add_resource = { energy = 25000	}
 		add_resource = { minerals = 7000 }
 		add_resource = { food = 14000 }
 		add_resource = { consumer_goods = 9500 }
-		add_resource = { alloys = 17500	}
+		add_resource = { alloys = 9500	}
 		add_resource = { volatile_motes = 1000 }
 		add_resource = { rare_crystals = 400 }
 		add_resource = { exotic_gases = 400 }

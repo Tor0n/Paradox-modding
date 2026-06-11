@@ -8,6 +8,7 @@ country_event = {
 	location = FROM
 
 	is_triggered_only = yes
+	#fire_only_once = yes
 
 	trigger = {
 		is_ai = no
@@ -22,6 +23,7 @@ country_event = {
 	#}
 	option = {
 		name =  WrWrld_game_start.0.c
+		country_event = { id = WrWrld_game_start.11 }
 	}
 }
 country_event = {
@@ -44,7 +46,202 @@ country_event = {
 	option = {
 		name =  WrWrld_game_start.0.c
 	}
-	#Сделать кнопку воз
+	#Сделать кнопку возврата
+}
+
+country_event = {
+	id = WrWrld_game_start.11
+	title = "WrWrld_game_start.11.name"
+	desc = "WrWrld_game_start.11.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	option = {
+		name =  WrWrld_game_start.11.a
+		country_event = { id = WrWrld_game_start.12 }
+		set_global_flag = events_lore_canon_plus
+	}
+	option = {
+		name =  WrWrld_game_start.11.b
+		country_event = { id = WrWrld_game_start.12 }
+		set_global_flag = events_lore_canon
+	}
+	option = {
+		name =  WrWrld_game_start.11.c
+		country_event = { id = WrWrld_game_start.12 }
+		set_global_flag = events_lore_free_choice
+	}
+}
+
+country_event = {
+	id = WrWrld_game_start.12
+	title = "WrWrld_game_start.12.name"
+	desc = "WrWrld_game_start.12.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	location = FROM
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_ai = no
+	}
+	
+	option = {
+		name =  WrWrld_game_start.12.a
+	}
+	option = {
+		name =  WrWrld_game_start.12.b
+		every_system = {
+			limit = { 
+				OR = {
+					has_star_flag = Eye_Of_Terror_warp_storm 
+					has_star_flag = Maelstrom_warp_storm
+					has_star_flag = Somnium_Stars_warp_storm
+					has_star_flag = Sirens_Storm_warp_storm
+					has_star_flag = Storm_Emperor_Wrath_warp_storm
+					has_star_flag = Malfactus_warp_storm
+					has_star_flag = Hadex_warp_storm
+					has_star_flag = Storm_Magnus_warp_storm
+					has_star_flag = Judgement_warp_storm
+					has_star_flag = Gates_Fire_warp_storm
+					has_star_flag = Koronus_warp_storm
+					has_star_flag = Celtor_warp_storm
+					has_star_flag = Heart_Darkness_warp_storm
+					has_star_flag = Inferno_Reach_warp_storm
+					has_star_flag = Perfidian_Gap_warp_storm
+					has_star_flag = Daemon_Maw_warp_storm
+					has_star_flag = Bleak_Coil_warp_storm
+				}
+			}
+			if = {
+				limit = { has_star_flag = Eye_Of_Terror_warp_storm }
+				create_nebula = { 
+					name = "Eye Of Terror" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Maelstrom_warp_storm }
+				create_nebula = { 
+					name = "Maelstrom" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Somnium_Stars_warp_storm }
+				create_nebula = { 
+					name = "Somnium Stars" 
+					radius = 25 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Sirens_Storm_warp_storm }
+				create_nebula = { 
+					name = "Siren's Storm" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Storm_Emperor_Wrath_warp_storm }
+				create_nebula = { 
+					name = "Storm of the Emperor Wrath" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Malfactus_warp_storm }
+				create_nebula = { 
+					name = "Malfactus" 
+					radius = 40 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Hadex_warp_storm }
+				create_nebula = { 
+					name = "Hadex Anomaly" 
+					radius = 28 #30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Storm_Magnus_warp_storm }
+				create_nebula = { 
+					name = "The Storm of Magnus" 
+					radius = 15 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Judgement_warp_storm }
+				create_nebula = { 
+					name = "Storms of Judgement" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Gates_Fire_warp_storm }
+				create_nebula = { 
+					name = "Gates of Fire" 
+					radius = 15 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Koronus_warp_storm }
+				create_nebula = { 
+					name = "Koronus Expanse" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Celtor_warp_storm }
+				create_nebula = { 
+					name = "Celtor's Flux" 
+					radius = 25 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Heart_Darkness_warp_storm }
+				create_nebula = { 
+					name = "Heart of Darkness" 
+					radius = 20 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Inferno_Reach_warp_storm }
+				create_nebula = { 
+					name = "Inferno Reach" 
+					radius = 18 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Perfidian_Gap_warp_storm }
+				create_nebula = { 
+					name = "Perfidian Gap" 
+					radius = 25 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Daemon_Maw_warp_storm }
+				create_nebula = { 
+					name = "Daemon's Maw" 
+					radius = 30 
+				}
+			}
+			if = {
+				limit = { has_star_flag = Bleak_Coil_warp_storm }
+				create_nebula = { 
+					name = "Bleak Coil" 
+					radius = 25 
+				}
+			}
+		}
+	}
 }
 
 country_event = { #Bug fix через костыль

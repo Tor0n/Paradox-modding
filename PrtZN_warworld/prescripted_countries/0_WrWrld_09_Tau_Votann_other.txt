@@ -168,21 +168,9 @@ Leagues_of_Votann = {
 	{
 		class="HUM"
 		portrait="humanoid_hp_11"
-		species_name=
-		{
-			key="Кин"
-			literal=yes
-		}
-		species_plural=
-		{
-			key="Кины"
-			literal=yes
-		}
-		species_adjective=
-		{
-			key="Кинск"
-			literal=yes
-		}
+		species_name = "PRESCRIPTED_species_name_kin"
+		species_plural ="PRESCRIPTED_species_plural_kin"
+		species_adjective = "PRESCRIPTED_species_adjective_kin"
 		name_list="HUM2"
 		gender=not_set
 		trait="trait_incubator"
@@ -204,7 +192,7 @@ Leagues_of_Votann = {
 		icon=
 		{
 			category="Warhammer_other"
-			file="LeagueOfVotann.dds"
+			file="GreaterThurianLeague.dds"
 		}
 		background=
 		{
@@ -226,7 +214,7 @@ Leagues_of_Votann = {
 		portrait="humanoid_hp_11"
 		texture=0
 		evolution_mask=0
-		attachment=11
+		attachment=9
 		clothes=4
 		trait="trait_ruler_industrialist"
 		leader_class="scientist"
@@ -241,9 +229,9 @@ Leagues_of_Votann = {
 	ethic="ethic_materialist"
 	civics=
 	{
+		"civic_distinguished_admiralty"
+		"civic_merchant_guilds"
 		"civic_heroic_tales"
-		"civic_functional_architecture"
-		"civic_mining_guilds"
 	}
 	origin="origin_mechanists"
 	flag = empire_the_Votann
@@ -263,8 +251,8 @@ Severan_Dominate = {
 		gender=not_set
 		trait="trait_human"
 	}
-	authority="auth_imperial"
-	government="gov_divine_empire"
+	authority="auth_dictatorial"
+	government="gov_elective_monarchy"
 	advisor_voice_type="l_authoritarian"
 	planet_name = "planet_name_severan_dominate"
 	planet_class = "pc_continental"
@@ -328,14 +316,15 @@ Severan_Dominate = {
 	ignore_portrait_duplication=no
 	room="personality_decadent_hierarchy_room"
 	spawn_enabled=always
-	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_authoritarian"
+	ethic="ethic_xenophobe"
 	ethic="ethic_militarist"
 	ethic="ethic_spiritualist"
 	civics=
 	{
-		"civic_aristocratic_elite"
-		"civic_imperial_cult"
 		"civic_nationalistic_zeal"
+		"civic_philosopher_king"
+		"civic_crowdsourcing"
 	}
 	origin="origin_default"
 	flag = empire_the_Severan_Dominate

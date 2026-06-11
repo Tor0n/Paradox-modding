@@ -246,6 +246,7 @@ civic_hive_devouring_swarm = {
 			}
 			NOR = {
 				value = civic_hive_bodysnatcher
+				value = civic_hive_scorched_earth
 			}
 		}
 	}
@@ -296,8 +297,9 @@ civic_hive_empath = {
 	}
 	possible = {
 		civics = {
-			NOT = {
+			NOR = {
 				value = civic_hive_devouring_swarm
+				value = civic_hive_scorched_earth
 			}
 		}
 		origin = {
@@ -339,6 +341,7 @@ civic_hive_memorialist = {
 			NOR = {
 				value = civic_hive_devouring_swarm #Includes Terravore
 				value = civic_entropy_drinkers_hive_mind
+				value = civic_hive_scorched_earth
 			}
 		}
 		origin = {
@@ -368,6 +371,12 @@ civic_hive_catalytic_processing = {
 			NOR = {
 				value = origin_lithoid
 				value = origin_wilderness
+			}
+		}
+		preferred_planet_class = {
+			NOT = {
+				text = does_not_have_volcanic_homeworld
+				value = pc_volcanic
 			}
 		}
 	}
@@ -664,7 +673,10 @@ civic_hive_sovereign_guardianship = {
 	}
 	possible = {
 		civics = {
-			NOT = { value = civic_hive_devouring_swarm }
+			NOR = { 
+				value = civic_hive_devouring_swarm
+				value = civic_hive_scorched_earth
+			}
 		}
 	}
 
@@ -798,12 +810,16 @@ civic_hive_beastmasters = {
 	}
 	possible = {
 		origin = {
-			NOT = {
+			NOR = {
 				value = origin_progenitor_hive
+				value = origin_cosmic_dawn
 			}
 		}
 		civics = {
-			NOT = { value = civic_hive_stargazers }
+			NOR = {
+				value = civic_hive_stargazers
+				value = civic_hive_galvanic_symbiosis
+			}
 		}
 	}
 
@@ -972,7 +988,12 @@ civic_hive_familiar_face = {
 	}
 
 	possible = {
-		civics = { NOT = { value = civic_hive_devouring_swarm } }
+		civics = {
+			NOR = {
+				value = civic_hive_devouring_swarm
+				value = civic_hive_scorched_earth
+			}
+		}
 	}
 
 	modification = no
@@ -1101,6 +1122,7 @@ civic_hive_bodysnatcher = {
 			NOR = {
 				value = civic_hive_devouring_swarm
 				value = civic_hive_guided_sapience
+				value = civic_hive_scorched_earth
 			}
 		}
 		origin = {
@@ -1159,7 +1181,8 @@ civic_entropy_drinkers_hive_mind = {
 		}
 		origin = {
 			NOR = {
-				value = origin_mindwardens
+				value = origin_evolutionary_predators
+				value = origin_wilderness
 			}
 		}
 	}
@@ -1188,7 +1211,7 @@ civic_entropy_drinkers_hive_mind = {
 		planet_pop_assembly_mult = -0.1
 		leaders_upkeep_mult = -0.5
 		leader_lifespan_mult = 0.5
-		councilor_gestalt_growth_exp_gain = 0.25
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 	}
 }
 
@@ -1227,6 +1250,14 @@ civic_twisted_experimenters_hive_mind = {
 		}
 	}
 
+	possible = {
+		origin = {
+			NOT = {
+				value = origin_wilderness
+			}
+		}
+	}
+
 	modifier = {
 		councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
 	}
@@ -1248,6 +1279,7 @@ civic_hive_chosen = {
 		origin = {
 			NOR = {
 				value = origin_evolutionary_predators
+				value = origin_wilderness
 			}
 		}
 		civics = {
@@ -1257,12 +1289,150 @@ civic_hive_chosen = {
 
 	modifier = {
 		psionic_aura_intensity_add = 10
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 	}
 	custom_tooltip_with_modifiers = "civic_chosen_effects_additional"
 
 	modification = no
 	random_weight = { base = @civic_default_random_weight }
 	ai_weight = { base = @civic_default_random_weight }
+}
+
+####################################
+# Hive Mind - Infernal Civics
+####################################
+
+civic_hive_scorched_earth = {
+	playable = { has_infernals = yes }
+	ai_playable = { has_infernals = yes }
+	description = "civic_scorched_earth_effects"
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+		species_class = { value = INF }
+		civics = {
+			NOR = { 
+				value = civic_hive_devouring_swarm
+				value = civic_death_cult
+				value = civic_hive_empath
+				value = civic_hive_memorialist
+				value = civic_hive_familiar_face
+				value = civic_secret_societies
+				value = civic_hive_bodysnatcher
+			}
+			NOR = {
+				text = civic_tooltip_not_guardian
+				value = civic_sovereign_guardianship
+				value = civic_corporate_sovereign_guardianship
+				value = civic_hive_sovereign_guardianship
+				value = civic_machine_sovereign_guardianship
+			}
+			NOR = {
+				text = civic_tooltip_not_guided
+				value = civic_guided_sapience
+				value = civic_corporate_guided_sapience
+				value = civic_hive_guided_sapience
+				value = civic_machine_guided_sapience
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_syncretic_evolution
+				value = origin_common_ground
+				value = origin_hegemon
+				value = origin_tree_of_life
+				value = origin_toxic_knights
+				value = origin_broken_shackles
+				value = origin_here_be_dragons
+				value = origin_ocean_paradise
+				value = origin_fear_of_the_dark
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 1000
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Infernals Species Pack" }
+		}
+		modifier = {
+			factor = 0
+			blocks_disruptive_gameplay = yes
+		}
+	}
+	modifier = {
+		councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		ship_weapon_range_mult = 0.15
+		ship_armor_mult = 0.15
+		starbase_shipyard_build_speed_mult = 0.15
+		country_naval_cap_mult = 0.5
+		army_health = 0.4
+		category_materials_research_speed_mult = 0.5
+	}
+}
+
+civic_hive_world_forgers = {
+	modification = no
+	playable = { has_infernals = yes }
+	ai_playable = { has_infernals = yes }
+	description = "civic_world_forgers_gestalt_effects"
+	potential = { authority = { value = auth_hive_mind } }
+	possible = {
+		# this does not prevent the empire from rolling the bioship at random
+		# see 'ship_selection_weight' in biogenesis_01/02 definitions in 00_graphical_culture.txt
+		graphical_culture = {
+			NOR = {
+				text = graphical_culture_tooltip_not_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
+		civics = { NOT = { value = civic_hive_idyllic_bloom } }
+	}
+	modifier = {
+		pc_volcanic_max_districts_add = 3
+		pc_volcanic_habitability = 0.2
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+	}
+	removed_climate_labels = { TYPE_HEADER_03 }
+	added_climate_labels = { TYPE_HEADER_04 }
+	removed_planet_types = { pc_arctic pc_alpine pc_tundra }
+	added_planet_types = { pc_volcanic }
+}
+
+civic_hive_galvanic_symbiosis = {
+	modification = no
+	playable = { has_infernals = yes }
+	ai_playable = { has_infernals = yes }
+	description = "civic_hive_galvanic_symbiosis_effects"
+	potential = { authority = { value = auth_hive_mind } }
+	possible = {
+		species_class = { value = INF }
+		origin = {
+			NOR = {
+				value = origin_wilderness
+				value = origin_synthetic_fertility
+			}
+		}
+		civics = { 
+			NOT = {
+				value = civic_hive_beastmasters
+			}
+		}
+	}
+	modifier = {
+		planet_building_refund_mult = 0.75
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+	}
+	random_weight = {
+		base = @civic_rare_random_weight
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Infernals Species Pack" }
+		}
+	}
 }
 
 ##################
@@ -2119,8 +2289,16 @@ civic_machine_beastmasters = {
 	}
 	possible = {
 		civics = {
-			NOT = { value = civic_machine_terminator }
-			NOT = { value = civic_machine_exploration_protocol }
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_exploration_protocol
+				value = civic_machine_galvanic_symbiosis
+			}
+		}
+		origin = {
+			NOT = {
+				value = origin_cosmic_dawn
+			}
 		}
 	}
 	modification = no
@@ -2291,11 +2469,6 @@ civic_entropy_drinkers_machine = {
 				value = civic_machine_memorialist
 			}
 		}
-		origin = {
-			NOR = {
-				value = origin_mindwardens
-			}
-		}
 	}
 
 	modification = {
@@ -2323,7 +2496,7 @@ civic_entropy_drinkers_machine = {
 		planet_pop_assembly_mult = -0.1
 		leaders_upkeep_mult = -0.5
 		leader_lifespan_mult = 0.5
-		councilor_gestalt_growth_exp_gain = 0.25
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 	}
 }
 
@@ -2352,8 +2525,7 @@ civic_machine_chosen = {
 
 	possible = {
 		origin = {
-			NOR = {
-				value = origin_evolutionary_predators
+			NOT = {
 				value = origin_shroud_forged
 			}
 		}
@@ -2361,10 +2533,74 @@ civic_machine_chosen = {
 
 	modifier = {
 		psionic_aura_intensity_add = 10
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 	}
 	custom_tooltip_with_modifiers = "civic_chosen_effects_additional"
 
 	modification = no
 	random_weight = { base = @civic_default_random_weight }
 	ai_weight = { base = @civic_default_random_weight }
+}
+
+####################################
+# Machines - Infernal Civics
+####################################
+
+civic_machine_world_forgers = {
+	modification = no
+	playable = { has_infernals = yes }
+	ai_playable = { has_infernals = yes }
+	description = "civic_world_forgers_gestalt_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		# this does not prevent the empire from rolling the bioship at random
+		# see 'ship_selection_weight' in biogenesis_01/02 definitions in 00_graphical_culture.txt
+		graphical_culture = {
+			NOR = {
+				text = graphical_culture_tooltip_not_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
+		origin = {
+			NOT = {
+				value = origin_ocean_machines
+			}
+		}
+	}
+	modifier = {
+		pc_volcanic_max_districts_add = 3
+		pc_volcanic_habitability = 0.1
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+	}
+	removed_climate_labels = { TYPE_HEADER_03 }
+	added_climate_labels = { TYPE_HEADER_04 }
+	removed_planet_types = { pc_arctic pc_alpine pc_tundra }
+	added_planet_types = { pc_volcanic }
+	random_weight = { base = @civic_default_random_weight }
+}
+
+civic_machine_galvanic_symbiosis = {
+	modification = no
+	playable = { has_infernals = yes }
+	ai_playable = { has_infernals = yes }
+	description = "civic_machine_galvanic_symbiosis_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		origin = {
+			NOT = {
+				value = origin_synthetic_fertility
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_machine_beastmasters
+			}
+		}
+	}
+	modifier = {
+		planet_building_refund_mult = 0.75
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+	}
+	random_weight = { base = @civic_default_random_weight }
 }

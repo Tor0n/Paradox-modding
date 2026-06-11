@@ -44,15 +44,15 @@ trait_mechanicus = {
 	allowed_archetypes = { BIOLOGICAL }
 	tags = { organic positive habitability army ethic_attraction individual empire_size }
 	modifier = {
-		pop_bonus_workforce_mult = 0.05
-		pop_environment_tolerance = 0.2
-		pc_nuked_habitability = 0.4
+		#pop_bonus_workforce_mult = 0.05
+		#pop_environment_tolerance = 0.2
+		pc_nuked_habitability = 0.2
 		army_defense_damage_mult = 0.30
 		army_damage_mult = 1.0
 		enforcer_jobs_bonus_workforce_mult = 0.15
-		negative_leader_traits_species = -1
-		leaders_upkeep_mult = -0.25
-		species_leader_exp_gain = 0.20
+		#negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.10
+		species_leader_exp_gain = 0.12
 	}
 	resources = {
 		category = planet_pops
@@ -97,6 +97,36 @@ trait_chaos = {
 	}
 	slave_cost = {
 		energy = 1300
+	}
+}
+
+trait_new_men = {
+	cost = 2 # было 2
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	#opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive habitability army ethic_attraction individual empire_size }
+	modifier = {
+		#pop_environment_tolerance = 0.1
+		#pc_nuked_habitability = 0.1
+		pop_bonus_workforce_mult = 0.1
+		leader_lifespan_add = 760
+		species_leader_exp_gain = 0.10
+		army_damage_mult = 0.20
+		army_defense_damage_mult = 0.20
+		negative_leader_traits_species = 1
+	}
+	slave_cost = {
+		energy = 3500
 	}
 }
 

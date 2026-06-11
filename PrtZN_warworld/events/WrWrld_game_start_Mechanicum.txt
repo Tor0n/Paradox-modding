@@ -12,78 +12,20 @@ country_event = { #Mechanicum_Sarum
 	immediate = {
 		save_global_event_target_as = Mechanicum_Sarum_evnt_trgt_country
 		communication_with_all = yes
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 }
-		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 20000	}
-		add_resource = { minerals = 4500 }
-		add_resource = { food = 2500 }
-		add_resource = { consumer_goods = 3500 }
-		add_resource = { alloys = 13500	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 450 }
-		add_resource = { exotic_gases = 450 }
+		add_resource = { energy = 10000	}
+		add_resource = { minerals = 3500 }
+		add_resource = { food = 1500 }
+		add_resource = { consumer_goods = 1500 }
+		add_resource = { alloys = 6500	}
+		add_resource = { volatile_motes = 300 }
+		add_resource = { rare_crystals = 150 }
+		add_resource = { exotic_gases = 150 }
 		#НАУКА
 		give_technology_chaos_mechanicum = yes
-		
+		add_tradition_chaos_mechanicum = yes
 		#ТРАДИЦИИ С СТАРТА
-		
-		#add_tradition = tr_supremacy_adopt
-		add_tradition = tr_supremacy_fleet_logistical_corps
-		add_tradition = tr_supremacy_master_shipwrights
-		add_tradition = tr_supremacy_war_games
-		add_tradition = tr_supremacy_overwhelming_force
-		add_tradition = tr_supremacy_great_game
-		add_tradition = tr_supremacy_finish     #Превосходство
-		
-		add_tradition = tr_unyielding_resistance_is_frugal
-		add_tradition = tr_unyielding_never_surrender
-		add_tradition = tr_unyielding_bulwark_of_harmony
-		add_tradition = tr_unyielding_defensive_zeal
-		add_tradition = tr_unyielding_fortress_doctrine
-		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_prosperity_sct
-		add_tradition = tr_prosperity_administrative_operations
-		add_tradition = tr_prosperity_public_works
-		add_tradition = tr_prosperity_interstellar_franchising
-		add_tradition = tr_prosperity_pursuit_of_profit
-		add_tradition = tr_prosperity_finish     #Процветание
-		
-		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
-		
-		#add_tradition = tr_adaptability_adopt
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
-		
-		add_tradition = tr_cybernetics_transubstantiation_synthesis
-		add_tradition = tr_cybernetics_metabolic_reprocessing
-		add_tradition = tr_cybernetics_integrated_anatomy
-		add_tradition = tr_cybernetics_augmentation_overload
-		add_tradition = tr_cybernetics_modular_cybernetics
-		add_tradition = tr_cybernetics_finish     #Кибернетик
-		
-		add_tradition = tr_discovery_adopt     #Изучение
-		add_tradition = tr_discovery_science_division
-		add_tradition = tr_discovery_polytechnic_education
-		add_tradition = tr_discovery_faith_in_science
-		
-		#add_tradition = tr_aptitude_adopt
-		#add_tradition = tr_aptitude_the_empire_needs_you
-		#add_tradition = tr_aptitude_specialist_training
-		#add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		#
 		every_system = {
 			limit = {
 				or = {
@@ -254,81 +196,20 @@ country_event = { #Mechanicum_Samech
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_mechanicum.100 days = 1 }
 		}
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 }
-		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 20000	}
+		add_resource = { energy = 10000	}
 		add_resource = { minerals = 4500 }
-		add_resource = { food = 2500 }
-		add_resource = { consumer_goods = 3500 }
-		add_resource = { alloys = 13500	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 450 }
-		add_resource = { exotic_gases = 450 }
+		add_resource = { food = 1500 }
+		add_resource = { consumer_goods = 1500 }
+		add_resource = { alloys = 7500	}
+		add_resource = { volatile_motes = 3000 }
+		add_resource = { rare_crystals = 150 }
+		add_resource = { exotic_gases = 150 }
 		#НАУКА
 		give_technology_chaos_mechanicum = yes
-		give_technology = { tech = tech_nanite_transmutation message = no }
-		give_technology = { tech = tech_nanite_repair_system message = no } #Нанитовый ремонт
-		
-		
+		add_tradition_chaos_mechanicum = yes
 		#ТРАДИЦИИ С СТАРТА
-		
-		#add_tradition = tr_supremacy_adopt
-		add_tradition = tr_supremacy_fleet_logistical_corps
-		add_tradition = tr_supremacy_master_shipwrights
-		add_tradition = tr_supremacy_war_games
-		add_tradition = tr_supremacy_overwhelming_force
-		add_tradition = tr_supremacy_great_game
-		add_tradition = tr_supremacy_finish     #Превосходство
-		
-		add_tradition = tr_unyielding_resistance_is_frugal
-		add_tradition = tr_unyielding_never_surrender
-		add_tradition = tr_unyielding_bulwark_of_harmony
-		add_tradition = tr_unyielding_defensive_zeal
-		add_tradition = tr_unyielding_fortress_doctrine
-		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_prosperity_sct
-		add_tradition = tr_prosperity_administrative_operations
-		add_tradition = tr_prosperity_public_works
-		add_tradition = tr_prosperity_interstellar_franchising
-		add_tradition = tr_prosperity_pursuit_of_profit
-		add_tradition = tr_prosperity_finish     #Процветание
-		
-		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
-		
-		#add_tradition = tr_adaptability_adopt
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
-		
-		add_tradition = tr_cybernetics_transubstantiation_synthesis
-		add_tradition = tr_cybernetics_metabolic_reprocessing
-		add_tradition = tr_cybernetics_integrated_anatomy
-		add_tradition = tr_cybernetics_augmentation_overload
-		add_tradition = tr_cybernetics_modular_cybernetics
-		add_tradition = tr_cybernetics_finish     #Кибернетик
-		
-		add_tradition = tr_discovery_adopt     #Изучение
-		add_tradition = tr_discovery_science_division
-		add_tradition = tr_discovery_polytechnic_education
-		add_tradition = tr_discovery_faith_in_science
-		
-		#add_tradition = tr_aptitude_adopt
-		#add_tradition = tr_aptitude_the_empire_needs_you
-		#add_tradition = tr_aptitude_specialist_training
-		#add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		#
 		every_system = {
 			limit = {
 				or = {
@@ -608,78 +489,20 @@ country_event = { #Mechanicum_Cyclothrathe
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_mechanicum.100 days = 1 }
 		}
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 }
-		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
-		add_resource = { energy = 20000	}
-		add_resource = { minerals = 4500 }
-		add_resource = { food = 2500 }
-		add_resource = { consumer_goods = 3500 }
-		add_resource = { alloys = 13500	}
-		add_resource = { volatile_motes = 1000 }
-		add_resource = { rare_crystals = 450 }
-		add_resource = { exotic_gases = 450 }
+		add_resource = { energy = 2000	}
+		add_resource = { minerals = 1500 }
+		add_resource = { food = 500 }
+		add_resource = { consumer_goods = 500 }
+		add_resource = { alloys = 500	}
+		add_resource = { volatile_motes = 300 }
+		add_resource = { rare_crystals = 150 }
+		add_resource = { exotic_gases = 150 }
 		#НАУКА
 		give_technology_chaos_mechanicum = yes
-		
+		add_tradition_chaos_mechanicum = yes
 		#ТРАДИЦИИ С СТАРТА
-		
-		#add_tradition = tr_supremacy_adopt
-		add_tradition = tr_supremacy_fleet_logistical_corps
-		add_tradition = tr_supremacy_master_shipwrights
-		add_tradition = tr_supremacy_war_games
-		add_tradition = tr_supremacy_overwhelming_force
-		add_tradition = tr_supremacy_great_game
-		add_tradition = tr_supremacy_finish     #Превосходство
-		
-		add_tradition = tr_unyielding_resistance_is_frugal
-		add_tradition = tr_unyielding_never_surrender
-		add_tradition = tr_unyielding_bulwark_of_harmony
-		add_tradition = tr_unyielding_defensive_zeal
-		add_tradition = tr_unyielding_fortress_doctrine
-		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_prosperity_sct
-		add_tradition = tr_prosperity_administrative_operations
-		add_tradition = tr_prosperity_public_works
-		add_tradition = tr_prosperity_interstellar_franchising
-		add_tradition = tr_prosperity_pursuit_of_profit
-		add_tradition = tr_prosperity_finish     #Процветание
-		
-		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
-		
-		#add_tradition = tr_adaptability_adopt
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
-		
-		add_tradition = tr_cybernetics_transubstantiation_synthesis
-		add_tradition = tr_cybernetics_metabolic_reprocessing
-		add_tradition = tr_cybernetics_integrated_anatomy
-		add_tradition = tr_cybernetics_augmentation_overload
-		add_tradition = tr_cybernetics_modular_cybernetics
-		add_tradition = tr_cybernetics_finish     #Кибернетик
-		
-		add_tradition = tr_discovery_adopt     #Изучение
-		add_tradition = tr_discovery_science_division
-		add_tradition = tr_discovery_polytechnic_education
-		add_tradition = tr_discovery_faith_in_science
-		
-		#add_tradition = tr_aptitude_adopt
-		#add_tradition = tr_aptitude_the_empire_needs_you
-		#add_tradition = tr_aptitude_specialist_training
-		#add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		#
 		every_system = {
 			limit = {
 				or = {
@@ -834,6 +657,7 @@ country_event = { #Mechanicum_Cyclothrathe
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.1
 	}
 }
 country_event = { #Mechanicum_Ordex_Thaag
@@ -850,9 +674,6 @@ country_event = { #Mechanicum_Ordex_Thaag
 		owner = {
 			country_event = { id = WrWrld_game_start_chaos_mechanicum.100 days = 1 }
 		}
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 }
-		}
 		establish_communications_no_message = event_target:shroudwalker_enclave_country
 		#
 		add_resource = { energy = 20000	}
@@ -865,63 +686,8 @@ country_event = { #Mechanicum_Ordex_Thaag
 		add_resource = { exotic_gases = 450 }
 		#НАУКА
 		give_technology_chaos_mechanicum = yes
-		
+		add_tradition_chaos_mechanicum = yes
 		#ТРАДИЦИИ С СТАРТА
-		
-		#add_tradition = tr_supremacy_adopt
-		add_tradition = tr_supremacy_fleet_logistical_corps
-		add_tradition = tr_supremacy_master_shipwrights
-		add_tradition = tr_supremacy_war_games
-		add_tradition = tr_supremacy_overwhelming_force
-		add_tradition = tr_supremacy_great_game
-		add_tradition = tr_supremacy_finish     #Превосходство
-		
-		add_tradition = tr_unyielding_resistance_is_frugal
-		add_tradition = tr_unyielding_never_surrender
-		add_tradition = tr_unyielding_bulwark_of_harmony
-		add_tradition = tr_unyielding_defensive_zeal
-		add_tradition = tr_unyielding_fortress_doctrine
-		add_tradition = tr_unyielding_finish     #Упорство
-		
-		add_tradition = tr_prosperity_sct
-		add_tradition = tr_prosperity_administrative_operations
-		add_tradition = tr_prosperity_public_works
-		add_tradition = tr_prosperity_interstellar_franchising
-		add_tradition = tr_prosperity_pursuit_of_profit
-		add_tradition = tr_prosperity_finish     #Процветание
-		
-		add_tradition = tr_domination_colonial_viceroys
-		add_tradition = tr_domination_imperious_architecture
-		add_tradition = tr_domination_grand_council
-		add_tradition = tr_domination_judgment_corps
-		add_tradition = tr_domination_workplace_motivators
-		add_tradition = tr_domination_finish     #Господство(это про рабов и тд)
-		
-		#add_tradition = tr_adaptability_adopt
-		add_tradition = tr_adaptability_recycling
-		add_tradition = tr_adaptability_survival_fittest
-		add_tradition = tr_adaptability_environmental_diversification
-		add_tradition = tr_adaptability_adaptive_ecology
-		add_tradition = tr_adaptability_appropriation
-		add_tradition = tr_adaptability_finish     #Адаптация
-		
-		add_tradition = tr_cybernetics_transubstantiation_synthesis
-		add_tradition = tr_cybernetics_metabolic_reprocessing
-		add_tradition = tr_cybernetics_integrated_anatomy
-		add_tradition = tr_cybernetics_augmentation_overload
-		add_tradition = tr_cybernetics_modular_cybernetics
-		add_tradition = tr_cybernetics_finish     #Кибернетик
-		
-		add_tradition = tr_discovery_adopt     #Изучение
-		add_tradition = tr_discovery_science_division
-		add_tradition = tr_discovery_polytechnic_education
-		add_tradition = tr_discovery_faith_in_science
-		
-		#add_tradition = tr_aptitude_adopt
-		#add_tradition = tr_aptitude_the_empire_needs_you
-		#add_tradition = tr_aptitude_specialist_training
-		#add_tradition = tr_aptitude_champions_of_the_empire     #Про лидеров
-		#
 		every_system = {
 			limit = {
 				or = {

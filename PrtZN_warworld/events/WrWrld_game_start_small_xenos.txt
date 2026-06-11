@@ -19,7 +19,7 @@ country_event = { #Xenos Texian
 		add_resource = { minerals = 9500 }
 		add_resource = { food = 9500 }
 		add_resource = { consumer_goods = 6500 }
-		add_resource = { alloys = 14500	}
+		add_resource = { alloys = 7500	}
 		
 		give_technology_texian = yes
 		
@@ -52,6 +52,7 @@ country_event = { #Xenos Texian
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.8
 	}
 }
 country_event = { #Xenos Qorl
@@ -77,6 +78,7 @@ country_event = { #Xenos Qorl
 		add_tradition = tr_synchronicity_adopt
 		#add_tradition = tr_synchronicity_adopt
 		#add_tradition = tr_synchronicity_adopt
+		create_fleet_from_naval_cap = 1.0
 	}
 }
 country_event = { #Xenos Slogth
@@ -93,11 +95,8 @@ country_event = { #Xenos Slogth
 		owner = {
 			country_event = { id = WrWrld_game_start_small_xenos.103 days = 4 }
 		}
-		owner = {
-			country_event = { id = WrWrld_game_start.601 days = 5 } #узнать что это
-		}
 		#add_resource = { energy = 25000	}
-		add_resource = { alloys = 14000	}
+		add_resource = { alloys = 4000	}
 		
 		give_technology_slogth = yes
 		
@@ -131,6 +130,7 @@ country_event = { #Xenos Slogth
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.0
 	}
 }
 country_event = { #Xenos Rak'Gol
@@ -148,7 +148,7 @@ country_event = { #Xenos Rak'Gol
 			country_event = { id = WrWrld_game_start_small_xenos.104 days = 4 }
 		}
 		add_resource = { energy = 5000	}
-		add_resource = { alloys = 14000	}
+		add_resource = { alloys = 4000	}
 		
 		give_technology_rakgol = yes
 		
@@ -183,6 +183,7 @@ country_event = { #Xenos Rak'Gol
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.0
 	}
 }
 country_event = { #Xenos Barghesi
@@ -200,7 +201,7 @@ country_event = { #Xenos Barghesi
 			country_event = { id = WrWrld_game_start_small_xenos.105 days = 4 }
 		}
 		add_resource = { energy = 5000	}
-		add_resource = { alloys = 12500	}
+		add_resource = { alloys = 9500	}
 		give_technology_barghesi = yes
 
 		add_tradition = tr_cybernetics_adopt
@@ -233,6 +234,7 @@ country_event = { #Xenos Barghesi
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.3
 	}
 }
 country_event = { #Xenos Strixis
@@ -286,6 +288,7 @@ country_event = { #Xenos Strixis
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.5
 	}
 }
 country_event = { #Xenos Sardonit
@@ -332,6 +335,7 @@ country_event = { #Xenos Sardonit
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.8
 	}
 }
 country_event = { #Cythor_Fiends
@@ -411,6 +415,7 @@ country_event = { #Cythor_Fiends
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.0
 	}
 }
 country_event = { #Qorl

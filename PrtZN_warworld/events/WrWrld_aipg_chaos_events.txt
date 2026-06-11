@@ -437,7 +437,850 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = WrWrld_death_guard.31						#Проверка Мортариона
+	title = "WrWrld_death_guard.31.name"
+	desc = "WrWrld_death_guard.31.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	trigger = { 
+		#num_empires > 50
+		num_owned_planets < 6
+		#controlled_systems < 60
+	}
 
+	option = {
+		name =  WrWrld_death_guard.31.a 					#Оказался неудачный 
+		owner = { country_event = { id = WrWrld_death_guard.32 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.32						#Замена мортариона
+	title = "WrWrld_death_guard.32.name"
+	desc = "WrWrld_death_guard.32.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_death_guard.32.a 					#Гвардейцев, но предлагающих другой подход
+		owner = { country_event = { id = WrWrld_death_guard.33 } }
+	}
+	option = {
+		name =  WrWrld_death_guard.32.b 					#Гвардии нужно лишь сменить Мортариона, а остальное оставить как есть
+		owner = { country_event = { id = WrWrld_death_guard.34 } }
+	}
+	option = {
+		name =  WrWrld_death_guard.32.c 					#Поможет только полная замена гвардии кем-то другим
+		owner = { country_event = { id = WrWrld_death_guard.35 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.33						#Гвардейцев, но предлагающих другой подход
+	title = "WrWrld_death_guard.33.name"
+	desc = "WrWrld_death_guard.33.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_death_guard.33.a 					#Тиф https://wh40k.lexicanum.com/wiki/Typhus
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_fanatic_purifiers" civic = "civic_distinguished_admiralty" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.25
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.33.b 					#Гнойный Шрам https://wh40k.lexicanum.com/wiki/Festering_Scar
+		#set_empire_name = "death_guard_new_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		event_target:Imperium_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Segmentum_Obscurus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Ultima_Segmentum_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Segmentum_Tempestus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Eastern_Fringe_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Manachean_Commonwealth_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Ecclesiarchy_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Mechanicus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Ryza_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Metalica_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Graia_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Lucius_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Triplex_Phall_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Ultramarines_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		event_target:Black_Templars_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.36 } }
+		owner = { country_event = { id = WrWrld_death_guard.37 years = 22 } }
+		every_war = {
+			limit = {
+				OR = {
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_deathguard_imperium_war
+						owner = attacker
+					}
+					using_war_goal = {
+						type = wg_WrWrld_total_pregalcom_deathguard_imperium_war
+						owner = defender
+					}
+				}
+				#NOT = { #just in case
+				#	any_defender = {
+				#		is_same_value = root
+				#	}
+				#}
+			}
+			remove_war_participant = root
+		}
+		#Сделать ивент на перемирие с империумом
+	}
+	option = {
+		name =  WrWrld_death_guard.33.c 					#Любимые сыновья https://wh40k.lexicanum.com/wiki/Favoured_Sons#
+		set_empire_name = "Favoured_Sons_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_53.dds"
+			}
+			colors={
+				"sick_green"
+				"ship_steel"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_spiritualist"
+		#ethic="ethic_militarist"
+		#ethic="ethic_fanatic_spiritualist"
+		#ethic="ethic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_toxic_baths" civic = "civic_relentless_industrialists" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.10
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.33.d 					#Братство гнильцов https://wh40k.lexicanum.com/wiki/Rotworm_Brotherhood#
+		set_empire_name = "Rotworm_Brotherhood_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_53.dds"
+			}
+			colors={
+				"dark_teal"
+				"white"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_spiritualist"
+		#ethic="ethic_militarist"
+		#ethic="ethic_fanatic_spiritualist"
+		#ethic="ethic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_toxic_baths" civic = "civic_exalted_priesthood" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.10
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.33.e 					#Апостолы заражения https://wh40k.lexicanum.com/wiki/Apostles_of_Contagion
+		set_empire_name = "Apostles_of_Contagion_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="Apostles_of_Contagion_Livery.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_53.dds"
+			}
+			colors={
+				"desert_yellow"
+				"ochre_brown"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_spiritualist"
+		#ethic="ethic_militarist"
+		#ethic="ethic_fanatic_spiritualist"
+		#ethic="ethic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_toxic_baths" civic = "civic_death_cult" civic = "civic_exalted_priesthood" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.17
+		kill_leader = {
+			show_notification = yes
+		}
+		declare_war = {
+			target = event_target:Black_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		declare_war = {
+			target = event_target:Alpha_Legion_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
+		}
+		#Объявит войну даже другим хаоситам
+	}
+	option = {
+		name =  WrWrld_death_guard.33.f 					#Плодовитые https://wh40k.lexicanum.com/wiki/Fecund_Ones# 
+		#set_empire_name = "death_guard_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds" #Fecund_Ones
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_11.dds"
+			}
+			colors={
+				"intense_red"
+				"dark_green"
+				"null"
+				"null"
+			}
+		}
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_fanatic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_fanatic_purifiers" civic = "civic_slaver_guilds" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.10
+		kill_leader = {
+			show_notification = yes
+		}
+		event_target:Imperium_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Segmentum_Obscurus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Ultima_Segmentum_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Segmentum_Tempestus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Eastern_Fringe_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Manachean_Commonwealth_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Ecclesiarchy_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Mechanicus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Ryza_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Metalica_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Graia_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Lucius_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Triplex_Phall_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Ultramarines_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		event_target:Black_Templars_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.38 months = 57 } }
+		owner = { country_event = { id = WrWrld_death_guard.39 months = 57 } }
+		#Поразят агро-миры
+	}
+	option = {
+		name =  WrWrld_death_guard.33.g 					#Плачущий Легион https://wh40k.lexicanum.com/wiki/Weeping_Legion
+		set_empire_name = "Weeping_Legion_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_53.dds"
+			}
+			colors={
+				"sick_green"
+				"sun_green"
+				"null"
+				"null"
+			}
+		}
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_fanatic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_fanatic_purifiers" civic = "civic_police_state" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.16
+		kill_leader = {
+			show_notification = yes
+		}
+		event_target:Mechanicum_Sarum_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.40 months = 3 } }
+		event_target:Mechanicum_Samech_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.40 months = 3 } }
+		event_target:Mechanicum_Cyclothrathe_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.40 months = 3 } }
+		event_target:Mechanicum_Ordex_Thaag_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.40 months = 3 } }
+		owner = { country_event = { id = WrWrld_death_guard.41 months = 3 } }
+		#Ивент на сделку с Механикум и рейды по Механикус
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.34						#Гвардии нужно лишь сменить Мортариона, а остальное оставить как есть
+	title = "WrWrld_death_guard.34.name"
+	desc = "WrWrld_death_guard.34.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_death_guard.34.a 					#Лорды Тишины https://wh40k.lexicanum.com/wiki/Lords_of_Silence#
+		set_empire_name = "Lords_of_Silence_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"khaki_brown"
+				"toxic_green"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_spiritualist"
+		#ethic="ethic_militarist"
+		#ethic="ethic_fanatic_spiritualist"
+		#ethic="ethic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_fanatic_purifiers" civic = "civic_corvee_system" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.16
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.34.b 					#Испорченные https://wh40k.lexicanum.com/wiki/The_Tainted#
+		set_empire_name = "The_Tainted_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "double_hemispheres.dds"
+			}
+			colors={
+				"beige"
+				"dark_green"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_xenophobe"
+		shift_ethic = "ethic_spiritualist"
+		#ethic="ethic_xenophobe"
+		#ethic="ethic_spiritualist"
+		#ethic="ethic_militarist"
+		#ethic="ethic_authoritarian"
+		change_government = {
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_genetic_identification" civic = "civic_twisted_experimenters" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.10
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.34.c 					#Бледная Длань https://wh40k.lexicanum.com/wiki/Pallid_Hand#
+		set_empire_name = "Pallid_Hand_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"light_orange"
+				"desert_yellow"
+				"null"
+				"null"
+			}
+		}
+		create_fleet_from_naval_cap = 0.05
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.34.d 					#Гнилой хор https://wh40k.lexicanum.com/wiki/Putrid_Choir#
+		set_empire_name = "Putrid_Choir_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"teal"
+				"light_green"
+				"null"
+				"null"
+			}
+		}
+		create_fleet_from_naval_cap = 0.07
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.34.e 					#Трупоизготовители https://wh40k.lexicanum.com/wiki/Corpsemakers_%28Death_Guard%29#
+		set_empire_name = "Corpsemakers_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"grey"
+				"ochre_brown"
+				"null"
+				"null"
+			}
+		}
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_fanatic_purifiers" civic = "civic_toxic_baths" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.06
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.34.f 					#Гончие-падальщики https://wh40k.lexicanum.com/wiki/Carrion_Hounds#
+		set_empire_name = "Carrion_Hounds_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_DeathGuard.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "double_hemispheres.dds"
+			}
+			colors={
+				"frog_green"
+				"frog_green"
+				"null"
+				"null"
+			}
+		}
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_toxic_baths" civic = "civic_cutthroat_politics" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.09
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.35						#Поможет только полная замена гвардии кем-то другим
+	title = "WrWrld_death_guard.35.name"
+	desc = "WrWrld_death_guard.35.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_death_guard.35.a 					#Чистка https://wh40k.lexicanum.com/wiki/The_Purge#
+		set_empire_name = "The_Purge_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="Purge.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"moss_green"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		#ethic="ethic_fanatic_authoritarian"
+		#ethic="ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_distinguished_admiralty" civic = "civic_dystopian_society" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.25
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.35.b 					#Расколотые https://wh40k.lexicanum.com/wiki/The_Cleaved#
+		set_empire_name = "The_Cleaved_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CleavedSymbol.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_41.dds"
+			}
+			colors={
+				"dark_teal"
+				"light_grey"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_xenophobe"
+		#ethic="ethic_authoritarian"
+		#ethic="ethic_xenophobe"
+		#ethic="ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_distinguished_admiralty" civic = "civic_warrior_culture" civic = "civic_memorialist" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.10
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.35.c 					#Лорды распада https://wh40k.lexicanum.com/wiki/Lords_of_Decay
+		set_empire_name = "Lords_of_Decay_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="Lords_of_Decay_Badge.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_50.dds"
+			}
+			colors={
+				"moss_green"
+				"black"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic
+		#ethic="ethic_fanatic_authoritarian"
+		#ethic="ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_reanimated_armies" civic = "civic_fanatic_purifiers" civic = "civic_toxic_baths" }
+			cooldown = no
+		}
+		#create_fleet_from_naval_cap = 0.10
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.35.d 					#Дети Блейна https://wh40k.lexicanum.com/wiki/Children_of_Blain#
+		set_empire_name = "Children_of_Blain_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="nurgle_emblem.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_40.dds"
+			}
+			colors={
+				"pink_purple"
+				"dark_teal"
+				"null"
+				"null"
+			}
+		}
+		#ethic="ethic_fanatic_authoritarian"
+		#ethic="ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_toxic_baths" civic = "civic_scavengers" civic = "civic_entropy_drinkers" }
+			cooldown = no
+		}
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.36						#Оповещение для Империума
+	title = "WrWrld_death_guard.36.name"
+	desc = "WrWrld_death_guard.36.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+
+	option = {
+		name =  WrWrld_death_guard.36.a 
+	}
+}
+country_event = {
+	id = WrWrld_death_guard.37						#Снова война
+	title = "WrWrld_death_guard.37.name"
+	desc = "WrWrld_death_guard.37.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+
+	option = {
+		name =  WrWrld_death_guard.37.a 
+		declare_war = {
+			target = event_target:Imperium_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_deathguard_imperium_war #cb_containment #cb_purification 
+		}
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.38						#Оповещение для Империума
+	title = "WrWrld_death_guard.38.name"
+	desc = "WrWrld_death_guard.38.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+
+	option = {
+		name =  WrWrld_death_guard.38.a
+		add_modifier = {
+			modifier = Fecund_Ones_agro_worlds_corpse
+			years = 37
+			#days = -1
+		}
+	}
+}
+country_event = {
+	id = WrWrld_death_guard.39						#Оповещение для нас
+	title = "WrWrld_death_guard.39.name"
+	desc = "WrWrld_death_guard.39.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+
+	option = {
+		name =  WrWrld_death_guard.39.a 
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.40						#Оповещение для Механикум
+	title = "WrWrld_death_guard.40.name"
+	desc = "WrWrld_death_guard.40.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	#picture_event_data = {
+	#	portrait = from
+	#	room = from.ruler
+	#}
+
+	option = {
+		name =  WrWrld_death_guard.40.a 
+		add_resource = { energy = 650	}
+		add_resource = { minerals = 650 }
+		add_resource = { food = 750 }
+		add_resource = { consumer_goods = 400 }
+		add_resource = { alloys = 500	}
+		add_opinion_modifier = { who = event_target:Death_Guard_evnt_trgt_country modifier = opinion_agreement_with_the_Mechanicum }
+		from = {
+			add_opinion_modifier = { who = root modifier = opinion_agreement_with_the_Mechanicum }
+		}
+	}
+}
+country_event = {
+	id = WrWrld_death_guard.41						#Оповещение для нас
+	title = "WrWrld_death_guard.41.name"
+	desc = "WrWrld_death_guard.41.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+
+	option = {
+		name =  WrWrld_death_guard.41.a 
+		add_resource = { energy = -650	}
+		add_resource = { minerals = -650 }
+		add_resource = { food = -750 }
+		add_resource = { consumer_goods = -400 }
+		add_resource = { alloys = -500	}
+		event_target:Mechanicus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 50 } }
+		event_target:Ryza_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 50 } }
+		event_target:Metalica_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 50 } }
+		event_target:Graia_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 50 } }
+		event_target:Lucius_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 50 } }
+		event_target:Triplex_Phall_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 50 } }
+		
+		event_target:Mechanicus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 100 } }
+		event_target:Ryza_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 100 } }
+		event_target:Metalica_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 100 } }
+		event_target:Graia_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 100 } }
+		event_target:Lucius_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 100 } }
+		event_target:Triplex_Phall_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 100 } }
+		
+		event_target:Mechanicus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 170 } }
+		event_target:Ryza_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 170 } }
+		event_target:Metalica_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 170 } }
+		event_target:Graia_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 170 } }
+		event_target:Lucius_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 170 } }
+		event_target:Triplex_Phall_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 170 } }
+		
+		event_target:Mechanicus_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 310 } }
+		event_target:Ryza_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 310 } }
+		event_target:Metalica_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 310 } }
+		event_target:Graia_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 310 } }
+		event_target:Lucius_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 310 } }
+		event_target:Triplex_Phall_evnt_trgt_country = { country_event = { id = WrWrld_death_guard.42 months = 310 } }
+	}
+}
+country_event = {
+	id = WrWrld_death_guard.42						#Оповещение для Механикус о набегах
+	title = "WrWrld_death_guard.42.name"
+	desc = "WrWrld_death_guard.42.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+
+	option = {
+		name =  WrWrld_death_guard.42.a 
+		add_resource = { energy = -650	}
+		add_resource = { minerals = -650 }
+		add_resource = { food = -750 }
+		add_resource = { consumer_goods = -400 }
+		add_resource = { alloys = -500	}
+	}
+}
+
+country_event = {
+	id = WrWrld_death_guard.100						#Домен Нургла
+	title = "WrWrld_death_guard.100.name"
+	desc = "WrWrld_death_guard.100.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	#trigger = {
+	#	#num_empires < 50
+	#	num_owned_planets < 6
+	#	controlled_systems < 40
+	#}
+	
+	option = {
+		name =  WrWrld_death_guard.100.a 					#готовы
+		trigger = { 
+			#num_empires < 50
+			num_owned_planets > 8
+			controlled_systems > 60
+		}
+		set_empire_name = "Domain_of_Khorne_name"
+		#event_target:new_country = { set_player = event_target:old_country }
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+	option = {
+		name =  WrWrld_death_guard.100.b 					#не готовы
+		trigger = { 
+			#num_empires > 50
+			num_owned_planets < 8
+			controlled_systems < 60
+		}
+		owner = { country_event = { id = WrWrld_death_guard.100 years = 7 } }
+	}
+}
 
 #Ангрон
 #Кхарн, если он покажет себя слабо, две из его групп смогут занять его место
@@ -1004,10 +1847,677 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = WrWrld_world_eaters.100						#Домен Кхорна
+	title = "WrWrld_world_eaters.100.name"
+	desc = "WrWrld_world_eaters.100.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	#trigger = {
+	#	#num_empires < 50
+	#	num_owned_planets < 6
+	#	controlled_systems < 40
+	#}
+	
+	option = {
+		name =  WrWrld_world_eaters.100.a 					#готовы
+		trigger = { 
+			#num_empires < 50
+			num_owned_planets > 8
+			controlled_systems > 60
+		}
+		set_empire_name = "Domain_of_Khorne_name"
+		#event_target:new_country = { set_player = event_target:old_country }
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Thousand_Sons_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+	option = {
+		name =  WrWrld_world_eaters.100.b 					#не готовы
+		trigger = { 
+			#num_empires > 50
+			num_owned_planets < 8
+			controlled_systems < 60
+		}
+		owner = { country_event = { id = WrWrld_world_eaters.100 years = 7 } }
+	}
+}
 
 
 
 
+
+country_event = {
+	id = WrWrld_thousand_sons.5						#Ариман готовит новую рубрику
+	title = "WrWrld_thousand_sons.5.name"
+	desc = "WrWrld_thousand_sons.5.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.5.a 					#
+		#set_empire_name = "Kingdom_of_the_Sorcerers_name"
+	}
+}
+country_event = {
+	id = WrWrld_thousand_sons.7						#Ариман проводит новую рубрику
+	title = "WrWrld_thousand_sons.7.name"
+	desc = "WrWrld_thousand_sons.7.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.7.a 					# Магнус перехитрил Аримана
+		owner = { country_event = { id = WrWrld_thousand_sons.20 months = 55 } }
+		owner = { country_event = { id = WrWrld_thousand_sons.22 years = 7 } }
+		create_fleet_from_naval_cap = 0.12
+	}
+	option = {
+		name =  WrWrld_thousand_sons.7.b 					# Ариман вышел победителем
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_ThousandSons.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "vertical.dds"
+			}
+			colors={
+				"yellow"
+				"dark_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_shadow_council" civic = "civic_memory_vault" civic = "civic_philosopher_king" }
+			cooldown = no
+		}
+		set_empire_name = "Prodigal_Sons_name"
+		create_fleet_from_naval_cap = 0.4
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_thousand_sons.7.c 					# Вмешательство третьих сил
+		owner = { country_event = { id = WrWrld_thousand_sons.8 months = 5 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_thousand_sons.8						#Третьи силы вмешались
+	title = "WrWrld_thousand_sons.8.name"
+	desc = "WrWrld_thousand_sons.8.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.8.a 					# Аримановцы
+		#set_empire_name = "Kingdom_of_the_Sorcerers_name"
+		owner = { country_event = { id = WrWrld_thousand_sons.9 months = 1 } }
+	}
+	option = {
+		name =  WrWrld_thousand_sons.8.b 					# Магнусовцы
+		#set_empire_name = "Kingdom_of_the_Sorcerers_name"
+		owner = { country_event = { id = WrWrld_thousand_sons.10 months = 1 } }
+	}
+	option = {
+		name =  WrWrld_thousand_sons.8.c 					# Новенькие (уже смешарики(прикол только для русскоговорящих))
+		#set_empire_name = "Kingdom_of_the_Sorcerers_name"
+		owner = { country_event = { id = WrWrld_thousand_sons.11 months = 1 } }
+	}
+}
+
+country_event = {
+	id = WrWrld_thousand_sons.9						#Аримановцы
+	title = "WrWrld_thousand_sons.9.name"
+	desc = "WrWrld_thousand_sons.9.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.9.a 					# Серебряные Сыновья
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Time_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"medium_steel"
+				"blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_superstitious_beliefs" civic = "civic_mining_guilds" civic = "civic_police_state" }
+			cooldown = no
+		}
+		set_empire_name = "Silver_Sons_name"
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_thousand_sons.9.b 					# Багровые Сыны
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Duplicity_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"intense_red"
+				"red"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_ascensionists" civic = "civic_shadow_council" civic = "civic_reanimated_armies" }
+			cooldown = no
+		}
+		set_empire_name = "Crimson_Sons_name"
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_thousand_sons.9.c 					# Великий Орден Герметических Клинков
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Mutation_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "sinus.dds"
+			}
+			colors={
+				"yellow"
+				"ice_turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_memorialist" civic = "civic_death_cult" civic = "civic_heroic_tales" }
+			cooldown = no
+		}
+		set_empire_name = "Grand_Order_of_Hermetic_Blades_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.9.d 					# Варп-призраки
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Prophecy_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_4.dds"
+			}
+			colors={
+				"ochre_brown"
+				"light_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_ascensionists" civic = "civic_shadow_council" civic = "civic_reanimated_armies" }
+			cooldown = no
+		}
+		set_empire_name = "Warp_Gheists_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = WrWrld_thousand_sons.10						#Магнусовцы
+	title = "WrWrld_thousand_sons.10.name"
+	desc = "WrWrld_thousand_sons.10.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.10.a 					# Сектаи просперин
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Manipulation_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "pattern_01.dds"
+			}
+			colors={
+				"bright_yellow"
+				"dark_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_secret_societies" civic = "civic_shadow_council" civic = "civic_memorialist" }
+			cooldown = no
+		}
+		set_empire_name = "Sectai_Prosperine_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.10.b 					# Красное эхо
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Knowledge_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"yellow"
+				"light_turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_entropy_drinkers" civic = "civic_chosen" civic = "civic_distinguished_admiralty" }
+			cooldown = no
+		}
+		set_empire_name = "Red_Echo_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.10.c 					# Призма Судьбы
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Change_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"yellow"
+				"turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_warrior_culture" civic = "civic_cutthroat_politics" civic = "civic_dystopian_society" }
+			cooldown = no
+		}
+		set_empire_name = "Prism_of_Fate_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.10.d 					# Тизканское Воинство
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Magic_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "vertical.dds"
+			}
+			colors={
+				"white"
+				"light_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_superstitious_beliefs" civic = "civic_exalted_priesthood" civic = "civic_crusader_spirit" }
+			cooldown = no
+		}
+		set_empire_name = "Tizcan_Host_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.10.e 					# Рабы Магнуса
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Scheming_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_2.dds"
+			}
+			colors={
+				"yellow"
+				"light_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_shadow_council" civic = "civic_secret_societies" civic = "civic_cutthroat_politics" }
+			cooldown = no
+		}
+		set_empire_name = "Thralls_of_Magnus_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = WrWrld_thousand_sons.11						#Новенькие (уже смешарики(прикол только для русскоговорящих))
+	title = "WrWrld_thousand_sons.11.name"
+	desc = "WrWrld_thousand_sons.11.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.11.a 					# Измученные
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="Scourged.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "vertical.dds"
+			}
+			colors={
+				"dark_red"
+				"blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_spiritualist"
+		shift_ethic = "ethic_xenophobe"
+		change_government = {
+			civics = { civic = "civic_ascensionists" civic = "civic_shadow_council" civic = "civic_efficient_bureaucracy" }
+			cooldown = no
+		}
+		set_empire_name = "The_Scourged_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		create_fleet_from_naval_cap = 0.2
+	}
+	option = {
+		name =  WrWrld_thousand_sons.11.b 					# Сыны Циклопа
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_ThousandSons_old.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "vertical.dds"
+			}
+			colors={
+				"ochre_brown"
+				"light_turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_ascensionists" civic = "civic_crafters" civic = "civic_memory_vault" }
+			cooldown = no
+		}
+		set_empire_name = "Sons_of_the_Cyclops_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.11.c 					# Кристальные предвестники
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Scheming_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_2.dds"
+			}
+			colors={
+				"orange"
+				"indigo"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_secret_societies" civic = "civic_shadow_council" civic = "civic_twisted_experimenters" }
+			cooldown = no
+		}
+		set_empire_name = "Crystal_Harbingers_name"
+		kill_leader = {
+			show_notification = yes
+		}
+		
+	}
+	option = {
+		name =  WrWrld_thousand_sons.11.d 					# Отражённые
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="TS_Magic_cult.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_31.dds"
+			}
+			colors={
+				"bright_yellow"
+				"blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_militarist"
+		shift_ethic = "ethic_fanatic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_chosen" civic = "civic_memory_vault" }
+			cooldown = no
+		}
+		set_empire_name = "Reflected_Ones_name"
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+}
+
+#Аримановские хлопцы https://wh40k.lexicanum.com/wiki/Prodigal_Sons
+#Ариман - война с железными воинами, ивенты по поиску библиотеки Эльдар
+#Серебряные Сыновья https://wh40k.lexicanum.com/wiki/Silver_Sons
+#Багровые Сыны https://wh40k.lexicanum.com/wiki/Crimson_Sons_%28Warband%29
+#Великий Орден Герметических Клинков https://wh40k.lexicanum.com/wiki/Grand_Order_of_Hermetic_Blades#
+#Варп-призраки - Их лидер Незхад Аратос попробовал вернуть своих десантников к жизни, но у него не вышло(он ещё и умер) и те бесцельно скитаются по галактике https://wh40k.lexicanum.com/wiki/Warp_Gheists
+
+#Обычные
+#Сектаи просперин https://wh40k.lexicanum.com/wiki/Sectai_Prosperine
+#красное эхо https://wh40k.lexicanum.com/wiki/Sect_of_the_Red_Echo#
+#кристальные предвестники + https://wh40k.lexicanum.com/wiki/Crystal_Harbingers#
+#Призма Судьбы https://wh40k.lexicanum.com/wiki/Prism_of_Fate
+#Тизканское Воинство https://wh40k.lexicanum.com/wiki/Tizcan_Host
+#Рабы Магнуса https://wh40k.lexicanum.com/wiki/Thralls_of_Magnus
+#Отражённые + https://wh40k.lexicanum.com/wiki/Reflected_Ones
+
+#Особенные
+#Сыны Циклопа - друзьяшки Чёрного легиона и верные союзники Абаддона https://wh40k.lexicanum.com/wiki/Sons_of_the_Cyclops#
+#Измученные https://wh40k.lexicanum.com/wiki/The_Scourged
+
+country_event = {
+	id = WrWrld_thousand_sons.20						#Великий разлом
+	title = "WrWrld_thousand_sons.20.name"
+	desc = "WrWrld_thousand_sons.20.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_activating_unknown_technology #event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.20.a 	#Приступим и отправим всем оповещение
+		every_country = { country_event = { id = WrWrld_thousand_sons.21 days = 3 } }
+		every_system = {
+			limit = { 
+				OR = {
+					has_star_flag = Great_rift_big 
+					has_star_flag = Great_rift_small
+				}
+			}
+			if = {
+				limit = { has_star_flag = Great_rift_small }
+				star = {
+					create_ambient_object = {
+						type = "space_storm_1"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_ambient_object_flag = space_storm_object
+						set_location = {
+							target = prev
+							distance = 0
+							angle = random
+						}
+					}
+				}
+				create_nebula = { 
+					name = "   " 
+					radius = 15 
+					#effect = { add_modifier = { Great_rift_modifier } }
+				}
+				add_modifier = { Great_rift_modifier }
+			}
+			if = {
+				limit = { has_star_flag = Great_rift_big }
+				create_nebula = { 
+					name = "   " 
+					radius = 30 
+					#effect = { turbulent_nebula  }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = WrWrld_thousand_sons.21						#Оповещение
+	title = "WrWrld_thousand_sons.21.name"
+	desc = "WrWrld_thousand_sons.21.desc"
+	picture = GFX_evt_burning_settlement #pirate_armada treasure_trove_pirate_fleet
+	#show_sound = event_activating_unknown_technology #event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_thousand_sons.21.a 	#
+	}
+}
 
 country_event = {
 	id = WrWrld_thousand_sons.22						#Королевство Колдунов
@@ -1022,6 +2532,57 @@ country_event = {
 	option = {
 		name =  WrWrld_thousand_sons.22.a 					#Королевство Колдунов
 		set_empire_name = "Kingdom_of_the_Sorcerers_name"
+	}
+}
+
+country_event = {
+	id = WrWrld_thousand_sons.100						#Домен Тзинча
+	title = "WrWrld_thousand_sons.100.name"
+	desc = "WrWrld_thousand_sons.100.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	#trigger = {
+	#	#num_empires < 50
+	#	num_owned_planets < 6
+	#	controlled_systems < 40
+	#}
+	
+	option = {
+		name =  WrWrld_thousand_sons.100.a 					#готовы
+		trigger = { 
+			#num_empires < 50
+			num_owned_planets > 8
+			controlled_systems > 60
+		}
+		set_empire_name = "Domain_of_Tzeentch_name"
+		#event_target:new_country = { set_player = event_target:old_country }
+		declare_war = {
+			target = event_target:Emperors_Children_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:Death_Guard_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+		declare_war = {
+			target = event_target:World_Eaters_evnt_trgt_country
+			#name = <optional war name>
+			attacker_war_goal = wg_WrWrld_total_pregalcom_war 
+		}
+	}
+	option = {
+		name =  WrWrld_thousand_sons.100.b 					#не готовы
+		trigger = { 
+			#num_empires > 50
+			num_owned_planets < 8
+			controlled_systems < 60
+		}
+		owner = { country_event = { id = WrWrld_thousand_sons.100 years = 7 } }
 	}
 }
 
@@ -1323,7 +2884,7 @@ country_event = {
 		name =  WrWrld_emperors_children.100.a 					#готовы
 		trigger = { 
 			#num_empires < 50
-			num_owned_planets > 6
+			num_owned_planets > 8
 			controlled_systems > 60
 		}
 		set_empire_name = "Domain_of_Slaanesh_name"
@@ -1349,7 +2910,7 @@ country_event = {
 		name =  WrWrld_emperors_children.100.b 					#не готовы
 		trigger = { 
 			#num_empires > 50
-			num_owned_planets < 6
+			num_owned_planets < 8
 			controlled_systems < 60
 		}
 		owner = { country_event = { id = WrWrld_emperors_children.100 years = 7 } }
@@ -1359,6 +2920,26 @@ country_event = {
 #num_empires > 3
 #num_owned_planets < 8
 #controlled_systems < 3
+
+country_event = {
+	id = WrWrld_alpha_legion.1						#Введение в суть
+	title = "WrWrld_alpha_legion.1.name"
+	desc = "WrWrld_alpha_legion.1.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_mystic_reveal
+	#location = FROM
+
+	is_triggered_only = yes
+	#trigger = {
+	#	#num_empires < 50
+	#	num_owned_planets < 6
+	#	controlled_systems < 40
+	#}
+	
+	option = {
+		name =  WrWrld_alpha_legion.1.a 					#
+	}
+}
 
 country_event = {
 	id = WrWrld_alpha_legion.12						#Конфликт Альфа-Легиона и Абаддона
@@ -1410,5 +2991,362 @@ country_event = {
 		add_resource = { food = -750 }
 		add_resource = { consumer_goods = -400 }
 		add_resource = { alloys = -500	}
+	}
+}
+
+country_event = {
+	id = WrWrld_alpha_legion.35						#Выборы 1
+	title = "WrWrld_alpha_legion.35.name"
+	desc = "WrWrld_alpha_legion.35.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_alpha_legion.35.a 					#Альфарий? 
+		#Неожиданно, но сюда тоже впихнуть ветку ивентов и дать редчайший шанс привести Малала
+	}
+	option = {
+		name =  WrWrld_alpha_legion.35.b 					#Зубы Змеи
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"light_turquoise"
+				"dark_teal"
+				"null"
+				"null"
+			}
+		}
+		#ethic="ethic_authoritarian"
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_secret_societies" civic = "civic_efficient_bureaucracy" civic = "civic_shadow_council" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.14
+		kill_leader = {
+			show_notification = yes
+		}
+		owner = { country_event = { id = WrWrld_alpha_legion.36 years = 7 } }
+		#Сделать ивент где он вербует верующих и чиновников империума, а затем устраивает масштабную диверсию понижающую стабильность всего империума, либо даже пара планет рандомных перейдут под контроль альфа легиона
+	}
+	option = {
+		name =  WrWrld_alpha_legion.35.c 					#Кернакс Волдориус
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_53.dds"
+			}
+			colors={
+				"teal"
+				"dark_blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_xenophobe"
+		#ethic="ethic_authoritarian"
+		#ethic="ethic_xenophobe"
+		#ethic="ethic_militarist"
+		#ethic="ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_distinguished_admiralty" civic = "civic_shadow_council" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.1
+		kill_leader = {
+			show_notification = yes
+		}
+		owner = { country_event = { id = WrWrld_alpha_legion.37 years = 7 } }
+		#Сделать ивент где он партизанит против сегментума темпестус, воруя их ресурсы и может даже какая-то планета под его контроль перейдёт
+	}
+	option = {
+		name =  WrWrld_alpha_legion.35.d 					#Сыны гидры
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"intense_turquoise"
+				"turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_xenophile"
+		#ethic="ethic_xenophile"
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_secret_societies" civic = "civic_distinguished_admiralty" civic = "civic_cutthroat_politics" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.12
+		kill_leader = {
+			show_notification = yes
+		}
+		owner = { country_event = { id = WrWrld_alpha_legion.38 years = 7 } }
+		#Сделать ивент где он устраивает атаки на Ультрамар(указать что их ненавидит), может ресурсы ворует типо и тд, может также помирится с корсарами эльдар(Драконами пустоты и Детьми Шипов наверное)
+	}
+}
+
+country_event = {
+	id = WrWrld_alpha_legion.36						#Неовыборы
+	title = "WrWrld_alpha_legion.36.name"
+	desc = "WrWrld_alpha_legion.36.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_alpha_legion.36.a 					#Зубы Змеи
+	}
+	option = {
+		name =  WrWrld_alpha_legion.36.b 					#Затенённые
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"green"
+				"light_turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_xenophobe"
+		#ethic="ethic_authoritarian"
+		#ethic="ethic_xenophobe"
+		#ethic="ethic_militarist"
+		#ethic="ethic_spiritualist"
+		#change_government = {
+		#	civics = { civic = "civic_fanatic_purifiers" civic = "civic_distinguished_admiralty" civic = "civic_cutthroat_politics" }
+		#	cooldown = no
+		#}
+		create_fleet_from_naval_cap = 0.1
+		kill_leader = {
+			show_notification = yes
+		}
+	}
+	option = {
+		name =  WrWrld_alpha_legion.36.c 					#Расколотые разумные существа
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "diagonal.dds"
+			}
+			colors={
+				"sick_green"
+				"shadow_green"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_egalitarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		#ethic="ethic_fanatic_egalitarian"
+		#ethic="ethic_fanatic_militarist"
+		kill_leader = {
+			show_notification = yes
+		}
+		change_government = {
+			civics = { civic = "civic_shadow_council" civic = "civic_environmentalist" civic = "civic_shared_burden" }
+			cooldown = no
+		}
+	}
+}
+country_event = {
+	id = WrWrld_alpha_legion.37						#Неовыборы
+	title = "WrWrld_alpha_legion.37.name"
+	desc = "WrWrld_alpha_legion.37.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_alpha_legion.37.a 					#Кернакс Волдориус
+	}
+	option = {
+		name =  WrWrld_alpha_legion.37.b 					#Кинжалоклыки
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "flag_BG_12.dds"
+			}
+			colors={
+				"orange"
+				"turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		#ethic="ethic_xenophile"
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_fanatic_purifiers" civic = "civic_distinguished_admiralty" civic = "civic_technocracy" }
+			cooldown = no
+		}
+		create_fleet_from_naval_cap = 0.06
+		kill_leader = {
+			show_notification = yes
+		}
+		#Сделать ивент где он получает армию демонов для вторжений и вообще может получит какой-то особый типо новый демонический титул правления? 
+	}
+	option = {
+		name =  WrWrld_alpha_legion.37.c 					#Кающиеся Сыновья
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"blue"
+				"shadow_teal"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_spiritualist"
+		shift_ethic = "ethic_fanatic_militarist"
+		#ethic="ethic_xenophobe"
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_secret_societies" civic = "civic_shadow_council" civic = "civic_barbaric_despoilers" }
+			cooldown = no
+		}
+		kill_leader = {
+			show_notification = yes
+		}
+		#Сделать ивент где просто написать о них https://wh40k.lexicanum.com/wiki/Penitent_Sons
+	}
+}
+country_event = {
+	id = WrWrld_alpha_legion.38						#Неовыборы
+	title = "WrWrld_alpha_legion.38.name"
+	desc = "WrWrld_alpha_legion.38.desc"
+	picture = GFX_evt_pirate_armada #pirate_armada treasure_trove_pirate_fleet
+	show_sound = event_radio_chatter
+	#location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  WrWrld_alpha_legion.38.a 					#Сыны гидры
+	}
+	option = {
+		name =  WrWrld_alpha_legion.38.b 					#Изменённые
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"blue"
+				"blue"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_fanatic_militarist"
+		#ethic="ethic_fanatic_authoritarian"
+		#ethic="ethic_fanatic_militarist"
+		change_government = {
+			civics = { civic = "civic_cutthroat_politics" civic = "civic_distinguished_admiralty" civic = "civic_memorialist" }
+			cooldown = no
+		}
+		kill_leader = {
+			show_notification = yes
+		}
+		#Сделать ивент где написать о его целях и идеях https://wh40k.lexicanum.com/wiki/The_Redacted#
+		#Сделать ивент о его встрече с "омегоном" https://wh40k.lexicanum.com/wiki/Occam
+	}
+	option = {
+		name =  WrWrld_alpha_legion.38.c 					#Неверующие
+		#set_empire_name = "Alpha_Legion_new_name"
+		change_country_flag = {
+			icon = {
+				category="Warhammer_Chaos"
+				file="CA_AlphaLegion.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "circle.dds"
+			}
+			colors={
+				"ocean_turquoise"
+				"intense_turquoise"
+				"null"
+				"null"
+			}
+		}
+		shift_ethic = "ethic_authoritarian"
+		shift_ethic = "ethic_spiritualist"
+		shift_ethic = "ethic_fanatic_militarist"
+		#ethic="ethic_authoritarian"
+		#ethic="ethic_fanatic_militarist"
+		#ethic="ethic_spiritualist"
+		change_government = {
+			civics = { civic = "civic_secret_societies" civic = "civic_shadow_council" civic = "civic_barbaric_despoilers" }
+			cooldown = no
+		}
+		kill_leader = {
+			show_notification = yes
+		}
 	}
 }
