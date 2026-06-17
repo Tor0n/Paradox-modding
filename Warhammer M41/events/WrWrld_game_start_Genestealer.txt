@@ -259,16 +259,22 @@ country_event = { #Genestealer - Коринис
 			            is_colonizable = yes
                         has_planet_flag = Corinis_world			
 			        }
-				    create_colony = {
+					create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_hive
 						}
 					}
-				    add_building = building_hive_capital 
+				    #add_building = building_hive_capital 
 				    add_building = building_spawning_pool
 				    add_building = building_planetary_shield_generator 
 				    add_building = building_hive_warren                #building_hive_node
@@ -276,12 +282,6 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_stronghold
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 4
 						add_district_and_planet_size_if_needed_effect = {
@@ -301,7 +301,7 @@ country_event = { #Genestealer - Коринис
 						}
 					}
 					while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
@@ -360,6 +360,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #Genestealer - Коринис
@@ -716,6 +717,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.2
 	}
 }
 country_event = { #Genestealer - Коринис
@@ -1043,6 +1045,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.7
 	}
 }
 country_event = { #Genestealer - Коринис
@@ -1407,6 +1410,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 1.2
 	}
 }
 country_event = { #Genestealer - Коринис
@@ -1763,6 +1767,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #Genestealer - Коринис
@@ -2018,16 +2023,22 @@ country_event = { #Genestealer - Коринис
 			            is_colonizable = yes
                         has_planet_flag = Corinis_world			
 			        }
-				    create_colony = {
+					create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_hive
 						}
 					}
-				    add_building = building_hive_capital 
+				    #add_building = building_hive_capital 
 				    add_building = building_spawning_pool
 				    add_building = building_planetary_shield_generator 
 				    add_building = building_hive_warren                #building_hive_node
@@ -2035,12 +2046,6 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_stronghold
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 4
 						add_district_and_planet_size_if_needed_effect = {
@@ -2060,7 +2065,7 @@ country_event = { #Genestealer - Коринис
 						}
 					}
 					while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
@@ -2119,6 +2124,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.35
 	}
 }
 country_event = { #Genestealer - Коринис
@@ -2374,16 +2380,22 @@ country_event = { #Genestealer - Коринис
 			            is_colonizable = yes
                         has_planet_flag = Corinis_world			
 			        }
-				    create_colony = {
+					create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_hive
 						}
 					}
-				    add_building = building_hive_capital 
+				    #add_building = building_hive_capital 
 				    add_building = building_spawning_pool
 				    add_building = building_planetary_shield_generator 
 				    add_building = building_hive_warren                #building_hive_node
@@ -2391,12 +2403,6 @@ country_event = { #Genestealer - Коринис
 				    add_building = building_stronghold
 				    add_building = building_food_processing_center	
 				    add_building = building_chemical_plant					
-				    while = {
-				    	count = 65                            #но тут нужно и простой мир сделать где 65 будет
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 4
 						add_district_and_planet_size_if_needed_effect = {
@@ -2416,7 +2422,7 @@ country_event = { #Genestealer - Коринис
 						}
 					}
 					while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_farming
 						}
@@ -2475,6 +2481,7 @@ country_event = { #Genestealer - Коринис
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.35
 	}
 }
 

@@ -2491,7 +2491,8 @@ country_event = {
 					radius = 15 
 					#effect = { add_modifier = { Great_rift_modifier } }
 				}
-				add_modifier = { Great_rift_modifier }
+				create_Great_rift = yes
+				#add_modifier = { Great_rift_modifier }
 			}
 			if = {
 				limit = { has_star_flag = Great_rift_big }

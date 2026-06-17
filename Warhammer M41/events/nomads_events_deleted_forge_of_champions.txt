@@ -1,0 +1,327 @@
+#################
+# Nomads Events #
+#################
+
+# nomads.1   -  99	Reserved for important base events
+# nomads.100 - 499	Champions Forge Enclave
+# nomads.500 - 999	Heirs of the Khan Origin
+# nomads.1000-1500	Forever Cruise Origin
+# nomads.1505-1999	Nomadic Paragons
+# nomads.2000-2999  The Sacred Path
+# nomads.3000-3999  Contracts Functionality
+# nomads.4000-4999	Arkship Functionality
+# nomads.5000-5999	Civics
+# nomads.6000-6999	Contract Events
+# nomads.7000-7999	Forgotten Empires
+# nomads.8000-8100	Dyson Gun
+
+namespace = nomads
+
+#######################
+# CHAMPIONS FORGE ENCLAVE
+#######################
+
+# NOTE: any changes to these event IDs should be reflected in the has_champions_forge_event = {} scripted effect.
+
+# MAIN MENU
+
+# Champions Forge Main Menu
+country_event = {
+	id = nomads.100
+	title = "nomads.100.name"
+	desc = {
+		text = "nomads.100a.desc"
+		text = "nomads.100b.desc"
+		text = "nomads.100c.desc"
+	}
+	# desc_clear = yes
+	# option_clear = yes
+	event_message_type = ENCLAVE_DIPLOMACY
+	is_triggered_only = yes
+}
+
+# Champions Forge Enclave Ignore Diplomacy (after stealing from you or being attacked by you)
+# via on_custom_diplomacy | from = Champions Forge Enclave country
+country_event = {
+	id = nomads.105
+	title = "nomads.105.name"
+	desc = {
+		trigger = {
+			has_country_flag = enclave_champions_forge_encountered
+		}
+		text = "nomads.105.desc"
+	}
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = enclave_champions_forge_encountered }
+		}
+		text = "nomads.105.desc.unknown"
+	}
+	picture = GFX_evt_space_station
+	show_sound = event_radio_chatter
+	location = event_target:champions_forge_enclave_fleet
+	is_triggered_only = yes
+	event_message_type = ENCLAVE_DIPLOMACY
+}
+
+# Champions Forge Stop Invitations
+country_event = {
+	id = nomads.110
+	base = nomads.100
+	desc_clear = yes
+	option_clear = yes
+	desc = "nomads.110.desc"
+	event_message_type = ENCLAVE_DIPLOMACY
+
+	# Standard options
+	inline_script = enclaves/champions_forge_guardians_options
+}
+
+# Champions Forge Enable Invitations
+country_event = {
+	id = nomads.115
+	base = nomads.100
+	desc_clear = yes
+	option_clear = yes
+	desc = "nomads.115.desc"
+	event_message_type = ENCLAVE_DIPLOMACY
+
+	# Standard options
+	inline_script = enclaves/champions_forge_guardians_options
+}
+
+# Champions Forge Introduce a Paragon
+country_event = {
+	id = nomads.120
+	base = nomads.100
+	desc_clear = yes
+	option_clear = yes
+	desc = "nomads.120.desc"
+	event_message_type = ENCLAVE_DIPLOMACY
+}
+
+# Champions Forge Combat Briefing Renewal Reminder
+# Scheduled 10 years after a cfl_combat_data purchase
+country_event = {
+	id = nomads.125
+	title = "nomads.125.name"
+	desc = "nomads.125.desc"
+	picture = GFX_evt_champions_forge
+	show_sound = event_radio_chatter
+	location = event_target:champions_forge_enclave_fleet
+	is_triggered_only = yes
+	event_message_type = ENCLAVE_DIPLOMACY
+}
+
+# ESTABLISH COMMUNICATIONS
+
+# Champions Forge gatekeeper event
+# via on_custom_diplomacy | this = target country (player); from = country being contacted
+country_event = {
+	id = nomads.150
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# Communications established (establishing scopes)
+# via finish_first_contact_effect / action.11 / leviathans.98
+# this = enclave country
+country_event = {
+	id = nomads.155
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# Champions Forge Introduction
+# this = player country | from = Champions Forge Enclave country
+country_event = {
+	id = nomads.160
+	title = "nomads.100.name"
+	desc = "nomads.160.desc"
+	event_message_type = ENCLAVE_DIPLOMACY
+
+	is_triggered_only = yes
+}
+
+# Champions Forge invitation to tournament
+country_event = {
+	id = nomads.250
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# Hey Country, do you want to join the tournament?
+country_event = {
+	id = nomads.255
+	title = "nomads.255.name"
+	desc = {
+		text = "nomads.255.desc"
+		trigger = { NOT = { has_relic = r_cfl_trophy } }
+	}
+	desc = {
+		text = "nomads.255.desc.relic"
+		trigger = { has_relic = r_cfl_trophy }
+	}
+	picture = GFX_evt_champions_forge
+	show_sound = event_public_unrest
+	event_chain = champions_forge_tournament_chain
+	location = capital_scope.solar_system
+	is_triggered_only = yes
+}
+
+# Champions Forge start tournament
+system_event = {
+	id = nomads.260
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# Champions Forge set every champion country hostile to each other
+country_event = {
+	id = nomads.265
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# If any fleets are here we tell the owners that the fight isn't happening
+country_event = {
+	id = nomads.266
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# Notify countries that sent a team that the tournament starts now
+country_event = {
+	id = nomads.270
+	title = "nomads.270.name"
+	desc = "nomads.270.desc"
+	picture = GFX_evt_champions_forge
+	show_sound = event_public_unrest
+	location = event_target:champions_forge_enclave_system
+	event_chain = champions_forge_tournament_chain
+	is_triggered_only = yes
+
+}
+
+# Put a flag on the third, second, and first place teams.
+# Fired by: on_space_battle_over
+# This = owner of fleet 1 (winner)
+# From = owner of fleet 2 (loser)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+country_event = {
+	id = nomads.275
+	hide_window = yes
+	is_triggered_only = yes
+
+}
+
+# Notify the winning countries, return the fleets to their owners, and destroy the team countries
+system_event = {
+	id = nomads.280
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# Third place notification
+country_event = {
+	id = nomads.285
+	title = "nomads.285.name"
+	desc = "nomads.285.desc"
+	picture = GFX_evt_champions_forge
+	show_sound = event_public_unrest
+	location = event_target:champions_forge_enclave_system
+	event_chain = champions_forge_tournament_chain
+	is_triggered_only = yes
+}
+
+# Second place notification
+country_event = {
+	id = nomads.290
+	title = "nomads.290.name"
+	desc = "nomads.290.desc"
+	picture = GFX_evt_champions_forge
+	show_sound = event_public_unrest
+	location = event_target:champions_forge_enclave_system
+	event_chain = champions_forge_tournament_chain
+	is_triggered_only = yes
+
+}
+
+# First place notification
+country_event = {
+	id = nomads.295
+	title = "nomads.295.name"
+	desc = "nomads.295.desc"
+	picture = GFX_evt_champions_forge
+	show_sound = event_public_unrest
+	location = event_target:champions_forge_enclave_system
+	event_chain = champions_forge_tournament_chain
+	is_triggered_only = yes
+}
+
+# Losers notification
+country_event = {
+	id = nomads.305
+	title = "nomads.305.name"
+	desc = "nomads.305.desc"
+	picture = GFX_evt_champions_forge
+	show_sound = event_public_unrest
+	location = event_target:champions_forge_enclave_system
+	event_chain = champions_forge_tournament_chain
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = nomads.310
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+# CHAMPIONS FORGE LIVE! DESTROYED
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2 # can be invalid if damage is done via other methods (like scripted action)
+country_event = {
+	id = nomads.400
+	hide_window = yes
+
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = nomads.405
+	title = nomads.100.name
+	desc = {
+		text = nomads.405.desc
+		trigger = { NOT = { has_relic = r_cfl_trophy } }
+	}
+	desc = {
+		text = nomads.405.desc.relic
+		trigger = { has_relic = r_cfl_trophy }
+	}
+	location = event_target:champions_forge_destruction_system
+	picture = GFX_evt_arkship_crisis
+	show_sound = event_arkship_in_crisis
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = nomads.410
+	title = nomads.100.name
+	desc = {
+		text = nomads.410.desc
+		trigger = { NOT = { has_relic = r_cfl_trophy } }
+	}
+	desc = {
+		text = nomads.410.desc.relic
+		trigger = { has_relic = r_cfl_trophy }
+	}
+	location = event_target:champions_forge_destruction_system
+	picture = GFX_evt_arkship_crisis
+	show_sound = event_arkship_in_crisis
+	is_triggered_only = yes
+}
+

@@ -4933,8 +4933,8 @@ Tanika_initializer = {
 	}
 	
 	planet = {
-		class = "pc_continental"
-
+		#class = "pc_continental"
+		class = "pc_molten"
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 25 }
@@ -8757,8 +8757,8 @@ Loxar_initializer = {
 	}
 
 	planet = {
-		class = "pc_ocean"
-
+		#class = "pc_ocean"
+		class = "pc_barren_cold"
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 25 }
@@ -14683,8 +14683,8 @@ Jhanna_initializer = {
 	}
 	
 	planet = {
-		class = "pc_ocean"
-
+		#class = "pc_ocean"
+		class = "pc_barren"
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 15 max = 25 }
@@ -14694,7 +14694,7 @@ Jhanna_initializer = {
 	}
 
 	planet = {
-		class = "pc_barren"
+		class = "pc_barren_cold"
 
 		orbit_distance = 45
 		orbit_angle = { min = 90 max = 270 }

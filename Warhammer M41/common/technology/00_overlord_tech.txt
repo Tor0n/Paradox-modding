@@ -56,10 +56,7 @@ tech_quantum_catapult = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ascension_perk = ap_galactic_wonders_megacorp
-				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
-			}
+			has_galactic_wonders = yes
 		}
 		modifier = {
 			factor = 6
@@ -97,6 +94,7 @@ tech_orbital_ring_tier_1 = {
 
 	potential = {
 		has_overlord_dlc = yes
+		is_nomadic = no
 	}
 
 	# unlocks Orbital Ring, basically same weights as Habitats
@@ -138,8 +136,10 @@ tech_orbital_ring_tier_1 = {
 			factor = 1.25
 			has_tradition = tr_expansion_finish
 		}
+	}
 
-
+	modifier = {
+		country_starbase_capacity_add = 3
 	}
 
 	prereqfor_desc = {
@@ -195,11 +195,7 @@ tech_hyper_relays = {
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_megastructure = hyper_relay
-				has_megastructure = hyper_relay_ruined
-				has_megastructure = hyper_relay_restored
-			}
+			has_any_hyper_relay = yes
 		}
 		modifier = {
 			factor = 1.25

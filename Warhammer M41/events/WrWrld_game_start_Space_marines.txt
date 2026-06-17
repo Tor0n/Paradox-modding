@@ -84,9 +84,12 @@ country_event = { #Ultramarines
 			            is_colonizable = yes
                         has_planet_flag = Ultramarines_Agri_world_desert			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+				    upgrade_colony_shelter = yes
+				    create_pop_group = {
+						size = 2200
+						species = owner_main_species
+					}
 				    while = {
 						count = 4
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
@@ -99,7 +102,7 @@ country_event = { #Ultramarines
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
-					add_building = building_capital
+					#add_building = building_capital
 				    add_building = building_precinct_house
 				    add_building = building_hydroponics_farm
 				    add_building = building_hydroponics_farm
@@ -108,10 +111,6 @@ country_event = { #Ultramarines
 				    #add_building = building_hydroponics_farm
 				    #add_building = building_hydroponics_farm
 				    add_building = building_food_processing_center 					
-				    while = {
-				    	count = 22
-				    	create_pop = { species = owner_main_species }
-					}
 				}
 				if = {
 					limit = {
@@ -140,7 +139,7 @@ country_event = { #Ultramarines
 					#add_building = building_archaeo_refinery
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 				}
 			}
@@ -149,6 +148,7 @@ country_event = { #Ultramarines
 				#every_system_planet
 			# }
 		}
+		create_fleet_from_naval_cap = 0.2
 	}
 }
 country_event = { #Dark_Angels
@@ -841,6 +841,7 @@ country_event = { #Black_Templars
 				}
 			}
 		}
+		create_fleet_from_naval_cap = 0.6
 	}
 }
 country_event = { #

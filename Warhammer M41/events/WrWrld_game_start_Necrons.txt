@@ -150,15 +150,21 @@ country_event = { #Tokt
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -167,19 +173,13 @@ country_event = { #Tokt
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 61
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -189,16 +189,16 @@ country_event = { #Tokt
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -209,19 +209,17 @@ country_event = { #Tokt
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 40
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -377,15 +375,21 @@ country_event = { #Agdagat
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -394,19 +398,13 @@ country_event = { #Agdagat
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -416,16 +414,16 @@ country_event = { #Agdagat
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -436,19 +434,17 @@ country_event = { #Agdagat
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 30
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -614,34 +610,21 @@ country_event = { #Sayteh
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-				    	count = 66
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_energy_nexus
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -650,21 +633,32 @@ country_event = { #Sayteh
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -675,19 +669,17 @@ country_event = { #Sayteh
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 57
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -844,32 +836,21 @@ country_event = { #Nigilah
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-				    	count = 59
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_energy_nexus
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -878,21 +859,32 @@ country_event = { #Nigilah
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -903,19 +895,17 @@ country_event = { #Nigilah
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 40
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -1067,32 +1057,21 @@ country_event = { #Kardenat
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-				    	count = 39
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_energy_nexus
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -1101,21 +1080,32 @@ country_event = { #Kardenat
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -1126,19 +1116,17 @@ country_event = { #Kardenat
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 20
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -1295,34 +1283,21 @@ country_event = { #Oryskar
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-				    	count = 59
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_energy_nexus
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -1331,21 +1306,32 @@ country_event = { #Oryskar
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -1356,19 +1342,17 @@ country_event = { #Oryskar
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 40
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -1525,61 +1509,55 @@ country_event = { #Mefrit
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
-				    	count = 50
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_food_processing_center
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 2
+						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
-						count = 2
+						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -1590,19 +1568,17 @@ country_event = { #Mefrit
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 40
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -1752,34 +1728,21 @@ country_event = { #Nephrekh - Nekfist
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_nexus
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-				    	count = 34
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_energy_nexus
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -1788,21 +1751,32 @@ country_event = { #Nephrekh - Nekfist
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -1813,19 +1787,17 @@ country_event = { #Nephrekh - Nekfist
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 34
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts
@@ -1977,32 +1949,21 @@ country_event = { #Sarkoni
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
+					create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-				    	count = 30
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				    add_building = building_machine_major_capital          # building_machine_system_capital
-				    add_building = building_machine_assembly_complex  	
-				    add_building = building_fortress
-					add_building = building_fortress
-				    add_building = building_planetary_shield_generator	
-				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
-				    add_building = building_foundry_2
-				    add_building = building_archaeo_refinery	
-				    add_building = building_sentinel_posts
-					add_building = building_energy_nexus
-				    while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -2011,21 +1972,32 @@ country_event = { #Sarkoni
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
+					#add_building = building_machine_major_capital          # building_machine_system_capital
+				    add_building = building_machine_assembly_complex  	
+				    add_building = building_fortress
+					#add_building = building_fortress
+				    add_building = building_planetary_shield_generator	
+				    add_building = building_uplink_node
+				    #add_building = building_research_lab_2			
+				    add_building = building_foundry_2
+				    add_building = building_archaeo_refinery	
+				    add_building = building_sentinel_posts
+					add_building = building_energy_nexus
 				}
 				else_if = {
 					limit = {
 						is_capital = yes
 					}
-					remove_all_districts = yes
-					remove_all_buildings = yes
+					#remove_all_districts = yes
+					#remove_all_buildings = yes
 					while = {
 						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_nexus }
 					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 3
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = {
@@ -2036,19 +2008,17 @@ country_event = { #Sarkoni
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
-					while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					add_building = building_machine_major_capital          # building_machine_system_capital
+					#add_building = building_machine_major_capital          # building_machine_system_capital
 				    add_building = building_machine_assembly_complex  	
 				    add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 				    add_building = building_planetary_shield_generator	
 				    add_building = building_uplink_node
-				    add_building = building_research_lab_2			
+				    #add_building = building_research_lab_2			
 				    add_building = building_foundry_2
 				    add_building = building_archaeo_refinery	
 				    add_building = building_sentinel_posts

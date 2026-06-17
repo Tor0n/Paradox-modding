@@ -23,6 +23,30 @@ give_technology_rare_res = {
 	give_technology = { tech = tech_mine_volatile_motes	message = no }	#Добыча пылинок
 	give_technology = { tech = tech_volatile_motes		message = no }	#Создание пылинок
 }
+
+give_technology_for_nomads = {
+	optimize_memory
+	give_technology = { tech = tech_arkship_construction message = no }		
+	give_technology = { tech = tech_arkship_tier_2 message = no }		
+	give_technology = { tech = tech_arkship_tier_3 message = no }	
+	give_technology = { tech = tech_civilian_arkship message = no }	
+	give_technology = { tech = tech_science_arkship message = no }	
+	give_technology = { tech = tech_military_arkship message = no }	
+	give_technology = { tech = tech_arkship_planetary_refinery message = no }	
+	give_technology = { tech = tech_arkship_stellar_igniter message = no }	
+	give_technology = { tech = tech_arkship_system_scanner message = no }	
+	give_technology = { tech = tech_waystation_2 message = no }	
+	give_technology = { tech = tech_waystation_3 message = no }	
+	give_technology = { tech = tech_planetary_engineering message = no }	
+	give_technology = { tech = tech_dyson_gun message = no }	
+	give_technology = { tech = tech_arkship_tier_2 message = no }	
+	give_technology = { tech = tech_arkship_tier_2 message = no }	
+	give_technology = { tech = tech_arkship_tier_2 message = no }	
+	give_technology = { tech = tech_arkship_tier_2 message = no }	
+	give_technology = { tech = tech_arkship_tier_2 message = no }	
+	give_technology = { tech = tech_arkship_tier_2 message = no }	
+}
+
 ############################################
 # Стартовые технологии и традиции фракциям #
 ############################################

@@ -454,6 +454,12 @@ country_event = {
 			            is_capital = yes			
 			        }
 					remove_all_buildings = yes
+					while = {
+						count = 12
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
 				    add_building = building_capital	
 				    add_building = building_hydroponics_farm	
 					add_building = building_hydroponics_farm	

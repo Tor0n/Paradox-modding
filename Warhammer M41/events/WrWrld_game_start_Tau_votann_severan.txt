@@ -129,52 +129,16 @@ country_event = { #Tau
 				if = {
 				    limit = { 
 			            is_colonizable = yes
-                        has_planet_flag = Tau_fourth_sphere_world			
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_capital
-				    add_building = building_fortress
-				    add_building = building_planetary_shield_generator				
-				    while = {
-				    	count = 16                            
-				    	create_pop = {
-				    		species = owner_main_species
-							ethos = { ethic = "ethic_xenophobe" }
-				    	}
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
                         has_planet_flag = Tolku_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					save_global_event_target_as = Nicassar_World
 					while = {
-						count = 2
+						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_system_capital
+				    #add_building = building_system_capital
 					add_building = building_planetary_shield_generator
 					add_building = building_fortress
                     add_building = building_commercial_zone
@@ -184,21 +148,13 @@ country_event = { #Tau
                     add_building = building_research_lab_1
                     add_building = building_research_lab_1					
 					add_building = building_chemical_plant					
-				    while = {
-				    	count = 11                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 500
+						species = owner_main_species
 					}
-					while = {
-				    	count = 26
-				    	create_pop = {
-				    		species = event_target:nicassar_species
-				    	}
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					create_pop_group = {
+						size = 2000
+						species = event_target:nicassar_species
 					}
 					while = {
 						count = 1
@@ -212,42 +168,39 @@ country_event = { #Tau
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Vespid_World			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					save_global_event_target_as = Vespid_World
 					while = {
-						count = 1
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
 					}
-				    add_building = building_system_capital 
+				    #add_building = building_system_capital 
 				    add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_ministry_production
 					add_building = building_commercial_zone						
-				    while = {
-				    	count = 7 #29
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 100
+						species = owner_main_species
 					}
-					while = {
-				    	count = 26 #29
-				    	create_pop = {
-				    		species = event_target:vespid_species
-				    	}
-					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					create_pop_group = {
+						size = 2400
+						species = event_target:vespid_species
 					}
 					while = {
 						count = 4
@@ -257,21 +210,26 @@ country_event = { #Tau
 						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Kelshan_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					save_global_event_target_as = Kroot_World
 					while = {
-						count = 2
+						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_system_capital
+				    #add_building = building_system_capital
 					add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_factory_1	
@@ -279,21 +237,13 @@ country_event = { #Tau
                     add_building = building_ministry_production
 					add_building = building_archaeo_refinery
 					add_building = building_research_lab_1
-				    while = {
-				    	count = 9                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 100
+						species = owner_main_species
 					}
-					while = {
-				    	count = 30 
-				    	create_pop = {
-				    		species = event_target:kroot_species
-				    	}
-					}
-					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					create_pop_group = {
+						size = 1400
+						species = event_target:kroot_species
 					}
 					while = {
 						count = 1
@@ -306,6 +256,12 @@ country_event = { #Tau
 					while = {
 						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -313,14 +269,13 @@ country_event = { #Tau
 			            is_colonizable = yes
                         has_planet_flag = Firios_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
+						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_system_capital
+				    #add_building = building_system_capital
 					add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_fortress
@@ -328,33 +283,21 @@ country_event = { #Tau
 					add_building = building_archaeo_refinery
 					add_building = building_ministry_production
 					add_building = building_chemical_plant					
-				    while = {
-				    	count = 23                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 1000
+						species = owner_main_species
 					}
-					while = {
-				    	count = 5 
-				    	create_pop = {
-				    		species = event_target:kroot_species
-				    	}
+					create_pop_group = {
+						size = 400
+						species = event_target:kroot_species
 					}
-					while = {
-				    	count = 8 
-				    	create_pop = {
-				    		species = event_target:tarellian_species
-				    	}
+					create_pop_group = {
+						size = 700
+						species = event_target:tarellian_species
 					}
-					while = {
-				    	count = 3
-				    	create_pop = {
-				    		species = event_target:nicassar_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					create_pop_group = {
+						size = 200
+						species = event_target:nicassar_species
 					}
 					while = {
 						count = 1
@@ -367,6 +310,12 @@ country_event = { #Tau
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -374,14 +323,13 @@ country_event = { #Tau
 			            is_colonizable = yes
                         has_planet_flag = Viorla_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
+						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_system_capital
+				    #add_building = building_system_capital
 					add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_military_academy
@@ -389,15 +337,9 @@ country_event = { #Tau
 					add_building = building_chemical_plant
 					add_building = building_ministry_production
 					add_building = building_hydroponics_farm					
-				    while = {
-				    	count = 37                            
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+				    create_pop_group = {
+						size = 2100
+						species = owner_main_species
 					}
 					while = {
 						count = 3
@@ -407,34 +349,33 @@ country_event = { #Tau
 						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Tau_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 2
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
 					}
-				    add_building = building_system_capital 
+				    #add_building = building_system_capital 
 				    add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_commercial_zone					
-				    while = {
-				    	count = 29
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+				    create_pop_group = {
+						size = 2900
+						species = owner_main_species
 					}
 					while = {
 						count = 3
@@ -443,6 +384,12 @@ country_event = { #Tau
 					while = {
 						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -452,12 +399,8 @@ country_event = { #Tau
 					#remove_all_districts = yes
 					#remove_all_buildings = yes
 					while = {
-						count = 3
+						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 1
@@ -471,9 +414,9 @@ country_event = { #Tau
 						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
-					while = {
-						count = 21
-						create_pop = {species = owner_main_species}
+					create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
 					#add_building = building_system_capital
 				    #add_building = building_hall_judgment
@@ -515,9 +458,9 @@ country_event = { #Farsight
 		add_resource = { volatile_motes = 1400 }
 		add_resource = { rare_crystals = 900 }
 		add_resource = { exotic_gases = 900 }
-		owner = {
-			country_event = { id = WrWrld_game_start_tau_votann_severan.102 days = 1 }
-		}
+		#owner = {
+		#	country_event = { id = WrWrld_game_start_tau_votann_severan.102 days = 1 }
+		#}
 		give_technology_tau = yes
 		
 		add_tradition = tr_expansion_galactic_ambition
@@ -622,28 +565,25 @@ country_event = { #Farsight
 			            is_colonizable = yes
                         has_planet_flag = Tau_world			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 2
+						count = 4
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
 					}
-				    add_building = building_system_capital 
+				    #add_building = building_system_capital 
 				    add_building = building_planetary_shield_generator
 					add_building = building_fortress
 					add_building = building_commercial_zone					
-				    while = {
-				    	count = 29
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 2500
+						species = owner_main_species
 					}
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
 						count = 3
@@ -652,6 +592,12 @@ country_event = { #Farsight
 					while = {
 						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -663,10 +609,6 @@ country_event = { #Farsight
 					while = {
 						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
 					}
 					while = {
 						count = 1
@@ -776,25 +718,22 @@ country_event = {
 			            is_colonizable = yes
                         has_planet_flag = Votann_world
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_stronghold		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 					while = {
 						count = 3
@@ -807,6 +746,12 @@ country_event = {
 					while = {
 						count = 3
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
 					}
 				}
 			}
@@ -892,28 +837,28 @@ country_event = { #Severan_Dominate
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 5
+						count = 4
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house
-				    add_building = building_precinct_house					
+				    #add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
 					add_building = building_fortress
-					add_building = building_fortress
+					#add_building = building_fortress
 					add_building = building_stronghold
-					add_building = building_stronghold	
+					#add_building = building_stronghold	
 					add_building = building_stronghold 		
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 					while = {
 						count = 1
@@ -927,6 +872,12 @@ country_event = { #Severan_Dominate
 						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
 				}
 				if = {
 					limit = {
@@ -938,7 +889,7 @@ country_event = { #Severan_Dominate
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
@@ -956,16 +907,14 @@ country_event = { #Severan_Dominate
 					#add_building = building_chemical_plant
 					#add_building = building_crystal_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 16
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+				    create_pop_group = {
+						size = 1100
+						species = owner_main_species
 					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
+					#while = {
+					#	count = 6
+					#	add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					#}
 					while = {
 						count = 6
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
@@ -983,7 +932,7 @@ country_event = { #
 	#trigger = {
 	#	has_country_flag = 
 	#}
-	immediate = {
-		change_dominant_species = { species = event_target:Tau_evnt_trgt_country.owner_main_species change_all = yes }
-	}
+	#immediate = {
+	#	change_dominant_species = { species = event_target:Tau_evnt_trgt_country.owner_main_species change_all = yes }
+	#}
 }

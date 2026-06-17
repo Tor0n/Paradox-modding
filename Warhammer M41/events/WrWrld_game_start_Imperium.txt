@@ -27,16 +27,17 @@ country_event = { #Imperium
 		add_resource = { energy = 7500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 7900	}
-		add_resource = { volatile_motes = 200 }
-		add_resource = { rare_crystals = 200 }
-		add_resource = { exotic_gases = 200 }
+		add_resource = { consumer_goods = 6500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 100 }
 		
 		give_technology_imperium = yes
 		add_tradition_imperium = yes
 		
-		create_fleet_from_naval_cap = 0.10
+		#create_fleet_from_naval_cap = 0.10
 		
 		every_system = {
 			limit = {
@@ -85,15 +86,29 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter
+				    create_pop_group = {
+						size = 1400
+						species = owner_main_species
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_energy
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -101,33 +116,67 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter				
-				    while = {
-				    	count = 3
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+				    #add_building = building_colony_shelter				
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_factory_1
+					add_building = building_foundry_1
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 19
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_minerals
+						zone_slot = 3
+					}
+				    #add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 28
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 12
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					add_building = building_crystal_mines
+					add_building = building_mine_generic
+					add_building = building_mine_generic
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -135,18 +184,117 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital   	
-				    add_building = building_precinct_house 
-				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 21
-				    	create_pop = { species = owner_main_species }
-					}
-
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 11
+						count = 15
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_food
+						zone_slot = 3
+					}
+				    #add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+					add_building = building_commercial_zone
+					add_building = building_factory_1
+					add_building = building_foundry_1
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_fortress
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					#add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -154,11 +302,292 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter 					
-				    while = {
-				    	count = 1
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter 					
+				    create_pop_group = {
+						size = 850
+						species = owner_main_species
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_civ_world
+			        }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 9
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 2
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory
+						zone_slot = 1
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					#add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_planetary_shield_generator 
+					#add_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+					#add_building = building_gas_extractors
+					add_building = building_mote_harvesters
+					#add_building = building_crystal_mines
+					#add_building = building_archaeo_refinery  	
+					add_building = building_energy_nexus	
+					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone	
+					add_building = building_factory_1
+					add_building = building_factory_1
+					add_building = building_crystal_mines
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6300
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_unity
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					#add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_rareres_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 11
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_urban
+						zone_slot = 2
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+					add_building = building_fortress
+					#add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					#add_building = building_chemical_plant
+					add_building = building_chemical_plant
+					add_building = building_mote_harvesters
+					add_building = building_gas_extractors
+				    #add_building = building_refinery
+					add_building = building_crystal_mines
+					#add_building = building_crystal_plant
+					add_building = building_archaeo_refinery
+					#add_building = building_chemical_plant
+					add_building = building_planetary_shield_generator		
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 4100
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_ecumenopolis_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
+					while = {
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial_arcology
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade_arcology
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_hall_judgment 
+				    add_building = building_precinct_house
+				    #add_building = building_precinct_house					
+				    add_building = building_foundry_1
+				    add_building = building_factory_1
+					add_building = building_fortress
+					add_building = building_fortress		
+					add_building = building_planetary_shield_generator #building_research_lab_2
+					add_building = building_commercial_zone
+					add_building = building_ministry_production
+					add_building = building_autochthon_monument
+					#add_building = building_chemical_plant
+					#add_building = building_archaeo_refinery  					
+				    create_pop_group = {
+						size = 7300
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Moon_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = {
+							district = district_city
+						}
+					}
+				    #add_building = building_capital   	
+				    add_building = building_resource_silo	#building_precinct_house
+				    add_building = building_resource_silo 
+					add_building = building_resource_silo
+					add_building = building_resource_silo
+					add_building = building_resource_silo
+					add_building = building_resource_silo					
+				    create_pop_group = {
+						size = 600
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -166,8 +595,10 @@ country_event = { #Imperium
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Forge_Ecumenopolis			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_major_capital   	
+				    create_colony = { owner = ROOT species = root }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
+				    #add_building = building_major_capital   	
 					add_building = building_fortress
 					#add_building = building_stronghold
 				    add_building = building_planetary_shield_generator
@@ -182,306 +613,37 @@ country_event = { #Imperium
 					#add_building = building_production_center 
 				    #add_building = building_coordinated_fulfillment_center_2 
 				    #add_building = building_archaeo_refinery				
-				    while = {
-				    	count = 58
-				    	create_pop = { species = owner_main_species }
+				    create_pop_group = {
+						size = 7800
+						species = owner_main_species
 					}
 					while = {
 						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_world			
-			        }
-				    create_colony = { owner = ROOT }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_foundry_1 #building_factory_1
-					add_building = building_ministry_production
-					add_building = building_fortress
-					#add_building = building_stronghold	
-					add_building = building_mote_harvesters 	
-				    add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 30
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
 					}
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
 					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Hive_civ_world
-			        }
-				    create_colony = { owner = ROOT }
-					while = {
-						count = 3
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_factory_1 #building_factory_1
-					add_building = building_fortress
-					#add_building = building_stronghold		
-					#add_building = building_mote_harvesters
-					add_building = building_planetary_shield_generator 
-					#add_building = building_commercial_zone
-					add_building = building_hydroponics_farm
-					#add_building = building_gas_extractors
-					add_building = building_mote_harvesters
-					#add_building = building_crystal_mines
-					#add_building = building_archaeo_refinery  	
-					add_building = building_energy_nexus					
-				    while = {
-				    	count = 39
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Hive_merch_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
 					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    #add_building = building_factory_1 #building_factory_1
-					add_building = building_fortress
-					#add_building = building_stronghold		
-					#add_building = building_mote_harvesters
-					add_building = building_energy_nexus
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					add_building = building_autochthon_monument
-					add_building = building_planetary_shield_generator
-					#add_building = building_refinery
-					#add_building = building_chemical_plant
-					#add_building = building_crystal_plant
-					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Hive_rareres_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-					add_building = building_fortress
-					#add_building = building_stronghold		
-					#add_building = building_mote_harvesters
-					#add_building = building_chemical_plant
-					add_building = building_chemical_plant
-					add_building = building_mote_harvesters
-					add_building = building_mote_harvesters
-					add_building = building_gas_extractors
-				    #add_building = building_refinery
-					add_building = building_crystal_mines
-					#add_building = building_crystal_plant
-					add_building = building_archaeo_refinery
-					#add_building = building_chemical_plant
-					add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 31
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Hive_ecumenopolis_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_hall_judgment 
-				    add_building = building_precinct_house
-				    #add_building = building_precinct_house					
-				    add_building = building_foundry_1
-				    add_building = building_factory_1
-					add_building = building_fortress
-					add_building = building_fortress		
-					add_building = building_planetary_shield_generator #building_research_lab_2
-					add_building = building_commercial_zone
-					add_building = building_ministry_production
-					add_building = building_autochthon_monument
-					#add_building = building_chemical_plant
-					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 53
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Fortress_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress
-					#add_building = building_fortress
-					add_building = building_stronghold
-					add_building = building_stronghold	
-					#add_building = building_stronghold 		
-					#add_building = building_fortress #
-					#add_building = building_fortress #
-					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Moon_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
 					while = {
 						count = 2
-						add_district_and_planet_size_if_needed_effect = {
-							district = district_city
-						}
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
 					}
-				    add_building = building_capital   	
-				    add_building = building_resource_silo	#building_precinct_house
-				    add_building = building_resource_silo 
-					add_building = building_resource_silo
-					add_building = building_resource_silo
-					add_building = building_resource_silo
-					add_building = building_resource_silo					
-				    while = {
-				    	count = 6
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_foundry_arcology
+						zone_slot = 1
 					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_dead_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_colony_shelter   	
-				    add_building = building_precinct_house
-				    add_building = building_energy_grid				
-					#add_building = building_stronghold	
-				    while = {
-				    	count = 11
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4 #3
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory_arcology
+						zone_slot = 2
 					}
 				}
 				if = {
@@ -506,11 +668,11 @@ country_event = { #Imperium
 						count = 9
 						add_district_and_planet_size_if_needed_effect = { district = district_arcology_administrative }
 					}
-					while = {
-						count = 62
-						create_pop = {species = owner_main_species}
+					create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
-					add_building = building_system_capital
+					#add_building = building_system_capital
 				    add_building = building_hall_judgment
 				    add_building = building_hall_judgment
 				    add_building = building_military_academy
@@ -526,21 +688,20 @@ country_event = { #Imperium
 					#add_building = building_archaeo_refinery
 					add_building = building_slave_processing
 				}
-				if = {
-					limit = {
-						has_planet_flag = Mars
-					}
-					save_event_target_as = Mars
-					PREV = {
-						spawn_megastructure = {
-							type = orbital_ring
-							name = "NAME_Mars"
-							owner = root
-							planet = event_target:Mars
-						}
-					}
-					
-				}
+				#if = {
+				#	limit = {
+				#		has_planet_flag = Mars
+				#	}
+				#	save_event_target_as = Mars
+				#	PREV = {
+				#		spawn_megastructure = {
+				#			type = orbital_ring
+				#			name = "NAME_Mars"
+				#			owner = root
+				#			planet = event_target:Mars
+				#		}
+				#	}
+				#}
 			}
 			# if = {
 				# limit = { is_capital_system = yes }
@@ -570,10 +731,11 @@ country_event = { #Segmentum_Obscurus
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
+		add_resource = { consumer_goods = 6500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 200 }
-		add_resource = { rare_crystals = 200 }
-		add_resource = { exotic_gases = 200 }
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 400 }
 		
 		give_technology_imperium = yes
@@ -626,15 +788,29 @@ country_event = { #Segmentum_Obscurus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter
+				    create_pop_group = {
+						size = 1400
+						species = owner_main_species
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_energy
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -642,33 +818,67 @@ country_event = { #Segmentum_Obscurus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter				
-				    while = {
-				    	count = 3
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+				    #add_building = building_colony_shelter				
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_factory_1
+					add_building = building_foundry_1
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 19
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_minerals
+						zone_slot = 3
+					}
+				    #add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 28
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 12
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					add_building = building_crystal_mines
+					add_building = building_mine_generic
+					add_building = building_mine_generic
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -676,18 +886,117 @@ country_event = { #Segmentum_Obscurus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital   	
-				    add_building = building_precinct_house 
-				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 21
-				    	create_pop = { species = owner_main_species }
-					}
-
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 11
+						count = 15
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_food
+						zone_slot = 3
+					}
+				    #add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+					add_building = building_commercial_zone
+					add_building = building_factory_1
+					add_building = building_foundry_1
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_fortress
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					#add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -695,72 +1004,23 @@ country_event = { #Segmentum_Obscurus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter 					
-				    while = {
-				    	count = 1
-				    	create_pop = { species = owner_main_species }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_Ecumenopolis			
-			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_major_capital   	
-					add_building = building_fortress
-					#add_building = building_stronghold
-				    add_building = building_planetary_shield_generator
-					add_building = building_hall_judgment 
-				    add_building = building_precinct_house 
-				    add_building = building_foundry_2
-				    add_building = building_factory_2
-				    add_building = building_ministry_production  
-				    #add_building = building_research_lab_2
-					add_building = building_resource_silo
-					#add_building = building_bio_reactor
-					#add_building = building_production_center 
-				    #add_building = building_coordinated_fulfillment_center_2 
-				    #add_building = building_archaeo_refinery				
-				    while = {
-				    	count = 58
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter 					
+				    create_pop_group = {
+						size = 850
+						species = owner_main_species
 					}
 					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_world			
-			        }
-				    create_colony = { owner = ROOT }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_foundry_1 #building_factory_1
-					add_building = building_ministry_production
-					add_building = building_fortress
-					#add_building = building_stronghold	
-					add_building = building_mote_harvesters 	
-				    add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 30
-				    	create_pop = { species = owner_main_species }
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 				if = {
@@ -768,14 +1028,39 @@ country_event = { #Segmentum_Obscurus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Hive_civ_world
 			        }
-				    create_colony = { owner = ROOT }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 3
+						count = 9
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 2
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory
+						zone_slot = 1
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
-				    add_building = building_factory_1 #building_factory_1
+				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
@@ -786,24 +1071,17 @@ country_event = { #Segmentum_Obscurus
 					add_building = building_mote_harvesters
 					#add_building = building_crystal_mines
 					#add_building = building_archaeo_refinery  	
-					add_building = building_energy_nexus					
-				    while = {
-				    	count = 39
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					add_building = building_energy_nexus	
+					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone	
+					add_building = building_factory_1
+					add_building = building_factory_1
+					add_building = building_crystal_mines
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -813,42 +1091,59 @@ country_event = { #Segmentum_Obscurus
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 2
+						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_unity
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
 					add_building = building_autochthon_monument
 					add_building = building_planetary_shield_generator
 					#add_building = building_refinery
 					#add_building = building_chemical_plant
 					#add_building = building_crystal_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -858,12 +1153,38 @@ country_event = { #Segmentum_Obscurus
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 5
+						count = 11
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_urban
+						zone_slot = 2
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
 					#add_building = building_stronghold		
@@ -871,23 +1192,18 @@ country_event = { #Segmentum_Obscurus
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
 					add_building = building_mote_harvesters
-					add_building = building_mote_harvesters
 					add_building = building_gas_extractors
 				    #add_building = building_refinery
 					add_building = building_crystal_mines
 					#add_building = building_crystal_plant
 					add_building = building_archaeo_refinery
 					#add_building = building_chemical_plant
-					add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 31
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					add_building = building_planetary_shield_generator		
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 4100
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -897,16 +1213,39 @@ country_event = { #Segmentum_Obscurus
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
 					}
 					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial_arcology
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade_arcology
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
 				    add_building = building_precinct_house
 				    #add_building = building_precinct_house					
@@ -920,81 +1259,9 @@ country_event = { #Segmentum_Obscurus
 					add_building = building_autochthon_monument
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 53
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Fortress_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress
-					#add_building = building_fortress
-					add_building = building_stronghold
-					add_building = building_stronghold	
-					#add_building = building_stronghold 		
-					#add_building = building_fortress #
-					#add_building = building_fortress #
-					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_dead_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_colony_shelter   	
-				    add_building = building_precinct_house
-				    add_building = building_energy_grid				
-					#add_building = building_stronghold	
-				    while = {
-				    	count = 11
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4 #3
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 7300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1060,10 +1327,11 @@ country_event = { #Ultima_Segmentum
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
+		add_resource = { consumer_goods = 6500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 200 }
-		add_resource = { rare_crystals = 200 }
-		add_resource = { exotic_gases = 200 }
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 400 }
 		
 		give_technology_imperium = yes
@@ -1116,15 +1384,29 @@ country_event = { #Ultima_Segmentum
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter
+				    create_pop_group = {
+						size = 1400
+						species = owner_main_species
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_energy
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -1132,33 +1414,67 @@ country_event = { #Ultima_Segmentum
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter				
-				    while = {
-				    	count = 3
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+				    #add_building = building_colony_shelter				
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_factory_1
+					add_building = building_foundry_1
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 19
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_minerals
+						zone_slot = 3
+					}
+				    #add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 28
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 12
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					add_building = building_crystal_mines
+					add_building = building_mine_generic
+					add_building = building_mine_generic
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1166,18 +1482,117 @@ country_event = { #Ultima_Segmentum
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital   	
-				    add_building = building_precinct_house 
-				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 21
-				    	create_pop = { species = owner_main_species }
-					}
-
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 11
+						count = 15
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_food
+						zone_slot = 3
+					}
+				    #add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+					add_building = building_commercial_zone
+					add_building = building_factory_1
+					add_building = building_foundry_1
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_fortress
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					#add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1185,72 +1600,23 @@ country_event = { #Ultima_Segmentum
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter 					
-				    while = {
-				    	count = 1
-				    	create_pop = { species = owner_main_species }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_Ecumenopolis			
-			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_major_capital   	
-					add_building = building_fortress
-					#add_building = building_stronghold
-				    add_building = building_planetary_shield_generator
-					add_building = building_hall_judgment 
-				    add_building = building_precinct_house 
-				    add_building = building_foundry_2
-				    add_building = building_factory_2
-				    add_building = building_ministry_production  
-				    #add_building = building_research_lab_2
-					add_building = building_resource_silo
-					#add_building = building_bio_reactor
-					#add_building = building_production_center 
-				    #add_building = building_coordinated_fulfillment_center_2 
-				    #add_building = building_archaeo_refinery				
-				    while = {
-				    	count = 58
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter 					
+				    create_pop_group = {
+						size = 850
+						species = owner_main_species
 					}
 					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_world			
-			        }
-				    create_colony = { owner = ROOT }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_foundry_1 #building_factory_1
-					add_building = building_ministry_production
-					add_building = building_fortress
-					#add_building = building_stronghold	
-					add_building = building_mote_harvesters 	
-				    add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 30
-				    	create_pop = { species = owner_main_species }
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 				if = {
@@ -1258,14 +1624,39 @@ country_event = { #Ultima_Segmentum
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Hive_civ_world
 			        }
-				    create_colony = { owner = ROOT }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 3
+						count = 9
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 2
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory
+						zone_slot = 1
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
-				    add_building = building_factory_1 #building_factory_1
+				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
@@ -1276,24 +1667,17 @@ country_event = { #Ultima_Segmentum
 					add_building = building_mote_harvesters
 					#add_building = building_crystal_mines
 					#add_building = building_archaeo_refinery  	
-					add_building = building_energy_nexus					
-				    while = {
-				    	count = 39
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					add_building = building_energy_nexus	
+					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone	
+					add_building = building_factory_1
+					add_building = building_factory_1
+					add_building = building_crystal_mines
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1303,42 +1687,59 @@ country_event = { #Ultima_Segmentum
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 2
+						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_unity
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
 					add_building = building_autochthon_monument
 					add_building = building_planetary_shield_generator
 					#add_building = building_refinery
 					#add_building = building_chemical_plant
 					#add_building = building_crystal_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1348,12 +1749,38 @@ country_event = { #Ultima_Segmentum
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 5
+						count = 11
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_urban
+						zone_slot = 2
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
 					#add_building = building_stronghold		
@@ -1361,23 +1788,18 @@ country_event = { #Ultima_Segmentum
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
 					add_building = building_mote_harvesters
-					add_building = building_mote_harvesters
 					add_building = building_gas_extractors
 				    #add_building = building_refinery
 					add_building = building_crystal_mines
 					#add_building = building_crystal_plant
 					add_building = building_archaeo_refinery
 					#add_building = building_chemical_plant
-					add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 31
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					add_building = building_planetary_shield_generator		
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 4100
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1387,16 +1809,39 @@ country_event = { #Ultima_Segmentum
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
 					}
 					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial_arcology
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade_arcology
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
 				    add_building = building_precinct_house
 				    #add_building = building_precinct_house					
@@ -1410,81 +1855,9 @@ country_event = { #Ultima_Segmentum
 					add_building = building_autochthon_monument
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 53
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Fortress_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress
-					#add_building = building_fortress
-					add_building = building_stronghold
-					add_building = building_stronghold	
-					#add_building = building_stronghold 		
-					#add_building = building_fortress #
-					#add_building = building_fortress #
-					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_dead_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_colony_shelter   	
-				    add_building = building_precinct_house
-				    add_building = building_energy_grid				
-					#add_building = building_stronghold	
-				    while = {
-				    	count = 11
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4 #3
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 7300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1547,10 +1920,11 @@ country_event = { #Segmentum_Tempestus
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
+		add_resource = { consumer_goods = 6500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 200 }
-		add_resource = { rare_crystals = 200 }
-		add_resource = { exotic_gases = 200 }
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 400 }
 		
 		give_technology_imperium = yes
@@ -1603,15 +1977,29 @@ country_event = { #Segmentum_Tempestus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter
+				    create_pop_group = {
+						size = 1400
+						species = owner_main_species
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_energy
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -1619,33 +2007,67 @@ country_event = { #Segmentum_Tempestus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter				
-				    while = {
-				    	count = 3
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+				    #add_building = building_colony_shelter				
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_factory_1
+					add_building = building_foundry_1
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 19
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_minerals
+						zone_slot = 3
+					}
+				    #add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 28
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 12
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					add_building = building_crystal_mines
+					add_building = building_mine_generic
+					add_building = building_mine_generic
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1653,18 +2075,117 @@ country_event = { #Segmentum_Tempestus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital   	
-				    add_building = building_precinct_house 
-				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 21
-				    	create_pop = { species = owner_main_species }
-					}
-
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 11
+						count = 15
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_food
+						zone_slot = 3
+					}
+				    #add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+					add_building = building_commercial_zone
+					add_building = building_factory_1
+					add_building = building_foundry_1
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_fortress
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					#add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1672,72 +2193,23 @@ country_event = { #Segmentum_Tempestus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter 					
-				    while = {
-				    	count = 1
-				    	create_pop = { species = owner_main_species }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_Ecumenopolis			
-			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_major_capital   	
-					add_building = building_fortress
-					#add_building = building_stronghold
-				    add_building = building_planetary_shield_generator
-					add_building = building_hall_judgment 
-				    add_building = building_precinct_house 
-				    add_building = building_foundry_2
-				    add_building = building_factory_2
-				    add_building = building_ministry_production  
-				    #add_building = building_research_lab_2
-					add_building = building_resource_silo
-					#add_building = building_bio_reactor
-					#add_building = building_production_center 
-				    #add_building = building_coordinated_fulfillment_center_2 
-				    #add_building = building_archaeo_refinery				
-				    while = {
-				    	count = 58
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter 					
+				    create_pop_group = {
+						size = 850
+						species = owner_main_species
 					}
 					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_world			
-			        }
-				    create_colony = { owner = ROOT }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_foundry_1 #building_factory_1
-					add_building = building_ministry_production
-					add_building = building_fortress
-					#add_building = building_stronghold	
-					add_building = building_mote_harvesters 	
-				    add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 30
-				    	create_pop = { species = owner_main_species }
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 				if = {
@@ -1745,14 +2217,39 @@ country_event = { #Segmentum_Tempestus
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Hive_civ_world
 			        }
-				    create_colony = { owner = ROOT }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 3
+						count = 9
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 2
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory
+						zone_slot = 1
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
-				    add_building = building_factory_1 #building_factory_1
+				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
@@ -1763,24 +2260,17 @@ country_event = { #Segmentum_Tempestus
 					add_building = building_mote_harvesters
 					#add_building = building_crystal_mines
 					#add_building = building_archaeo_refinery  	
-					add_building = building_energy_nexus					
-				    while = {
-				    	count = 39
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					add_building = building_energy_nexus	
+					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone	
+					add_building = building_factory_1
+					add_building = building_factory_1
+					add_building = building_crystal_mines
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1790,42 +2280,59 @@ country_event = { #Segmentum_Tempestus
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 2
+						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_unity
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
 					add_building = building_autochthon_monument
 					add_building = building_planetary_shield_generator
 					#add_building = building_refinery
 					#add_building = building_chemical_plant
 					#add_building = building_crystal_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1835,12 +2342,38 @@ country_event = { #Segmentum_Tempestus
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 5
+						count = 11
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_urban
+						zone_slot = 2
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
 					#add_building = building_stronghold		
@@ -1848,23 +2381,18 @@ country_event = { #Segmentum_Tempestus
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
 					add_building = building_mote_harvesters
-					add_building = building_mote_harvesters
 					add_building = building_gas_extractors
 				    #add_building = building_refinery
 					add_building = building_crystal_mines
 					#add_building = building_crystal_plant
 					add_building = building_archaeo_refinery
 					#add_building = building_chemical_plant
-					add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 31
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					add_building = building_planetary_shield_generator		
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 4100
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -1874,16 +2402,39 @@ country_event = { #Segmentum_Tempestus
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
 					}
 					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial_arcology
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade_arcology
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
 				    add_building = building_precinct_house
 				    #add_building = building_precinct_house					
@@ -1897,81 +2448,9 @@ country_event = { #Segmentum_Tempestus
 					add_building = building_autochthon_monument
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 53
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Fortress_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress
-					#add_building = building_fortress
-					add_building = building_stronghold
-					add_building = building_stronghold	
-					#add_building = building_stronghold 		
-					#add_building = building_fortress #
-					#add_building = building_fortress #
-					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_dead_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_colony_shelter   	
-				    add_building = building_precinct_house
-				    add_building = building_energy_grid				
-					#add_building = building_stronghold	
-				    while = {
-				    	count = 11
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4 #3
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 7300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2045,10 +2524,11 @@ country_event = { #Eastern_Fringe
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
+		add_resource = { consumer_goods = 6500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 200 }
-		add_resource = { rare_crystals = 200 }
-		add_resource = { exotic_gases = 200 }
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 400 }
 		
 		give_technology_imperium = yes
@@ -2101,15 +2581,29 @@ country_event = { #Eastern_Fringe
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter
+				    create_pop_group = {
+						size = 1400
+						species = owner_main_species
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_energy
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -2117,33 +2611,67 @@ country_event = { #Eastern_Fringe
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter				
-				    while = {
-				    	count = 3
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+				    #add_building = building_colony_shelter				
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_factory_1
+					add_building = building_foundry_1
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 19
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_minerals
+						zone_slot = 3
+					}
+				    #add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 28
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 12
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					add_building = building_crystal_mines
+					add_building = building_mine_generic
+					add_building = building_mine_generic
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2151,18 +2679,117 @@ country_event = { #Eastern_Fringe
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital   	
-				    add_building = building_precinct_house 
-				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 21
-				    	create_pop = { species = owner_main_species }
-					}
-
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 11
+						count = 15
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_food
+						zone_slot = 3
+					}
+				    #add_building = building_capital   	
+				    add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+					add_building = building_commercial_zone
+					add_building = building_factory_1
+					add_building = building_foundry_1
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_fortress
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					#add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2170,72 +2797,23 @@ country_event = { #Eastern_Fringe
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Frontier_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter 					
-				    while = {
-				    	count = 1
-				    	create_pop = { species = owner_main_species }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_Ecumenopolis			
-			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_major_capital   	
-					add_building = building_fortress
-					#add_building = building_stronghold
-				    add_building = building_planetary_shield_generator
-					add_building = building_hall_judgment 
-				    add_building = building_precinct_house 
-				    add_building = building_foundry_2
-				    add_building = building_factory_2
-				    add_building = building_ministry_production  
-				    #add_building = building_research_lab_2
-					add_building = building_resource_silo
-					#add_building = building_bio_reactor
-					#add_building = building_production_center 
-				    #add_building = building_coordinated_fulfillment_center_2 
-				    #add_building = building_archaeo_refinery				
-				    while = {
-				    	count = 58
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter 					
+				    create_pop_group = {
+						size = 850
+						species = owner_main_species
 					}
 					while = {
-						count = 7
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Forge_world			
-			        }
-				    create_colony = { owner = ROOT }
-					while = {
-						count = 2
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house 	
-				    add_building = building_foundry_1 #building_factory_1
-					add_building = building_ministry_production
-					add_building = building_fortress
-					#add_building = building_stronghold	
-					add_building = building_mote_harvesters 	
-				    add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 30
-				    	create_pop = { species = owner_main_species }
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 2
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
 				if = {
@@ -2243,14 +2821,39 @@ country_event = { #Eastern_Fringe
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Hive_civ_world
 			        }
-				    create_colony = { owner = ROOT }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 3
+						count = 9
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 2
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory
+						zone_slot = 1
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
-				    add_building = building_factory_1 #building_factory_1
+				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
@@ -2261,24 +2864,17 @@ country_event = { #Eastern_Fringe
 					add_building = building_mote_harvesters
 					#add_building = building_crystal_mines
 					#add_building = building_archaeo_refinery  	
-					add_building = building_energy_nexus					
-				    while = {
-				    	count = 39
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					add_building = building_energy_nexus	
+					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone	
+					add_building = building_factory_1
+					add_building = building_factory_1
+					add_building = building_crystal_mines
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2288,42 +2884,59 @@ country_event = { #Eastern_Fringe
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 2
+						count = 8
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 5
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_unity
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
 					add_building = building_energy_nexus
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
-					#add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
 					add_building = building_autochthon_monument
 					add_building = building_planetary_shield_generator
 					#add_building = building_refinery
 					#add_building = building_chemical_plant
 					#add_building = building_crystal_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
-					}
-					while = {
-						count = 6
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2333,12 +2946,38 @@ country_event = { #Eastern_Fringe
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 5
+						count = 11
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_urban
+						zone_slot = 2
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
 					#add_building = building_stronghold		
@@ -2346,23 +2985,18 @@ country_event = { #Eastern_Fringe
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
 					add_building = building_mote_harvesters
-					add_building = building_mote_harvesters
 					add_building = building_gas_extractors
 				    #add_building = building_refinery
 					add_building = building_crystal_mines
 					#add_building = building_crystal_plant
 					add_building = building_archaeo_refinery
 					#add_building = building_chemical_plant
-					add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 31
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					add_building = building_planetary_shield_generator		
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 4100
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2372,16 +3006,39 @@ country_event = { #Eastern_Fringe
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
 					}
 					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial_arcology
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade_arcology
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
 				    add_building = building_precinct_house
 				    #add_building = building_precinct_house					
@@ -2395,81 +3052,9 @@ country_event = { #Eastern_Fringe
 					add_building = building_autochthon_monument
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 53
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_Fortress_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_major_capital   	
-				    add_building = building_precinct_house
-				    add_building = building_precinct_house					
-				    add_building = building_planetary_shield_generator 
-					add_building = building_fortress
-					#add_building = building_fortress
-					add_building = building_stronghold
-					add_building = building_stronghold	
-					#add_building = building_stronghold 		
-					#add_building = building_fortress #
-					#add_building = building_fortress #
-					#add_building = building_fortress #			
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
-					}
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_farming }
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_dead_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_colony_shelter   	
-				    add_building = building_precinct_house
-				    add_building = building_energy_grid				
-					#add_building = building_stronghold	
-				    while = {
-				    	count = 11
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4 #3
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 7300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2529,10 +3114,11 @@ country_event = { #Manachean_Commonwealth
 		add_resource = { energy = 4500 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 4000 }
-		add_resource = { alloys = 10500	}
-		add_resource = { volatile_motes = 500 }
-		add_resource = { rare_crystals = 200 }
-		add_resource = { exotic_gases = 200 }
+		add_resource = { consumer_goods = 6500 }
+		add_resource = { alloys = 14500	}
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 400 }
 		
 		give_technology_imperium = yes
@@ -2585,15 +3171,29 @@ country_event = { #Manachean_Commonwealth
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Civilised_world
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter
+				    create_pop_group = {
+						size = 1400
+						species = owner_main_species
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_energy
+						zone_slot = 1
 					}
 				}
 				if = {
@@ -2601,33 +3201,67 @@ country_event = { #Manachean_Commonwealth
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Industrial_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_colony_shelter				
-				    while = {
-				    	count = 4
-				    	create_pop = { species = owner_main_species }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+				    #add_building = building_colony_shelter				
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_building = building_precinct_house 
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_factory_1
+					add_building = building_foundry_1
 				}
 				if = {
 				    limit = { 
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Mining_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 19
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_minerals
+						zone_slot = 3
+					}
+				    #add_building = building_capital
 				    add_building = building_mineral_purification_plant
 				    add_building = building_precinct_house
-				    while = {
-				    	count = 26
-				    	create_pop = { species = owner_main_species }
-					}
-					while = {
-						count = 13
-						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					add_building = building_crystal_mines
+					add_building = building_mine_generic
+					add_building = building_mine_generic
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2635,16 +3269,140 @@ country_event = { #Manachean_Commonwealth
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Agri_world			
 			        }
-				    create_colony = { owner = ROOT }
-				    add_building = building_capital   	
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 15
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_food
+						zone_slot = 3
+					}
+				    #add_building = building_capital   	
 				    add_building = building_precinct_house 
-				    add_building = building_food_processing_center					
-				    while = {
-				    	count = 25
-				    	create_pop = { species = owner_main_species }
+				    add_building = building_food_processing_center
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_dead_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
-						count = 13
+						count = 4 #3
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_colony_shelter   	
+				    add_building = building_precinct_house
+					add_building = building_commercial_zone
+					add_building = building_factory_1
+					add_building = building_foundry_1
+				    add_building = building_energy_grid				
+					#add_building = building_stronghold	
+				    create_pop_group = {
+						size = 2400
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Fortress_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_fortress
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house
+				    add_building = building_precinct_house					
+				    add_building = building_planetary_shield_generator 
+					add_building = building_fortress
+					#add_building = building_fortress
+					add_building = building_stronghold
+					add_building = building_stronghold	
+					#add_building = building_stronghold 		
+					#add_building = building_fortress #
+					#add_building = building_fortress #
+					#add_building = building_fortress #			
+				    create_pop_group = {
+						size = 3200
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Frontier_world			
+			        }
+				    create_colony = { owner = ROOT species = root }
+				    #add_building = building_colony_shelter 					
+				    create_pop_group = {
+						size = 850
+						species = owner_main_species
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
 				}
@@ -2653,14 +3411,39 @@ country_event = { #Manachean_Commonwealth
 			            is_colonizable = yes
                         has_planet_flag = Imperium_Hive_civ_world
 			        }
-				    create_colony = { owner = ROOT }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 3
+						count = 9
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 4
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 2
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_factory
+						zone_slot = 1
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
-				    add_building = building_factory_1 #building_factory_1
+				    #add_building = building_factory_1 #building_factory_1
 					add_building = building_fortress
 					#add_building = building_stronghold		
 					#add_building = building_mote_harvesters
@@ -2671,24 +3454,79 @@ country_event = { #Manachean_Commonwealth
 					add_building = building_mote_harvesters
 					#add_building = building_crystal_mines
 					#add_building = building_archaeo_refinery  	
-					add_building = building_energy_nexus					
-				    while = {
-				    	count = 42
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
+					add_building = building_energy_nexus	
+					add_building = building_commercial_zone
+					#add_building = building_commercial_zone
+					#add_building = building_commercial_zone	
+					add_building = building_factory_1
+					add_building = building_factory_1
+					add_building = building_crystal_mines
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 6300
+						species = owner_main_species
+					}
+				}
+				if = {
+				    limit = { 
+			            is_colonizable = yes
+                        has_planet_flag = Imperium_Hive_merch_world
+			        }
+				    create_colony = {
+				    	owner = ROOT
+						species = root
+		    	    }
+					upgrade_colony_shelter = yes
+					while = {
+						count = 8
+						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
 					while = {
 						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
 					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
 					}
 					while = {
-						count = 4
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_unity
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
+				    add_building = building_precinct_house 	
+				    #add_building = building_factory_1 #building_factory_1
+					add_building = building_fortress
+					#add_building = building_stronghold		
+					#add_building = building_mote_harvesters
+					add_building = building_energy_nexus
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_commercial_zone
+					add_building = building_autochthon_monument
+					add_building = building_planetary_shield_generator
+					#add_building = building_refinery
+					#add_building = building_chemical_plant
+					#add_building = building_crystal_plant
+					#add_building = building_archaeo_refinery  					
+				    create_pop_group = {
+						size = 6200
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2698,12 +3536,38 @@ country_event = { #Manachean_Commonwealth
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					upgrade_colony_shelter = yes
 					while = {
-						count = 5
+						count = 11
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_urban
+						zone_slot = 2
+					}
+					while = {
+						count = 1
+						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_mining }
+					}
+					while = {
+						count = 3
+						add_district_and_planet_size_if_needed_effect = { district = district_farming }
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house 	
 					add_building = building_fortress
 					#add_building = building_stronghold		
@@ -2711,23 +3575,18 @@ country_event = { #Manachean_Commonwealth
 					#add_building = building_chemical_plant
 					add_building = building_chemical_plant
 					add_building = building_mote_harvesters
-					add_building = building_mote_harvesters
 					add_building = building_gas_extractors
 				    #add_building = building_refinery
 					add_building = building_crystal_mines
 					#add_building = building_crystal_plant
 					add_building = building_archaeo_refinery
 					#add_building = building_chemical_plant
-					add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 32
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
+					add_building = building_planetary_shield_generator		
+					add_building = building_hydroponics_farm
+					add_building = building_hydroponics_farm
+				    create_pop_group = {
+						size = 4100
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2737,16 +3596,39 @@ country_event = { #Manachean_Commonwealth
 			        }
 				    create_colony = {
 				    	owner = ROOT
+						species = root
 		    	    }
+					clear_deposits = yes
+					upgrade_colony_shelter = yes
 					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_arms_industry }
+						count = 7
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_housing }
 					}
 					while = {
-						count = 5
-						add_district_and_planet_size_if_needed_effect = { district = district_arcology_civilian_industry }
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_1 }
 					}
-				    add_building = building_major_capital   	
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_2 }
+					}
+					while = {
+						count = 2
+						add_district_and_planet_size_if_needed_effect = { district = district_arcology_urban_3 }
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_industrial_arcology
+						zone_slot = 1
+					}
+					add_zone = {
+						#replace = yes
+						#district = district_nexus
+						zone = zone_trade_arcology
+						zone_slot = 2
+					}
+				    #add_building = building_major_capital   	
 				    add_building = building_hall_judgment 
 				    add_building = building_precinct_house
 				    #add_building = building_precinct_house					
@@ -2760,38 +3642,9 @@ country_event = { #Manachean_Commonwealth
 					add_building = building_autochthon_monument
 					#add_building = building_chemical_plant
 					#add_building = building_archaeo_refinery  					
-				    while = {
-				    	count = 63
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-				}
-				if = {
-				    limit = { 
-			            is_colonizable = yes
-                        has_planet_flag = Imperium_dead_world
-			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
-					while = {
-						count = 1
-						add_district_and_planet_size_if_needed_effect = { district = district_city }
-					}
-				    add_building = building_colony_shelter   	
-				    add_building = building_precinct_house
-				    add_building = building_energy_grid				
-					#add_building = building_stronghold	
-				    while = {
-				    	count = 12
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
-					while = {
-						count = 4 #3
-						add_district_and_planet_size_if_needed_effect = { district = district_generator }
+				    create_pop_group = {
+						size = 7300
+						species = owner_main_species
 					}
 				}
 				if = {
@@ -2871,10 +3724,11 @@ country_event = { #Ecclesiarchy
 		add_resource = { energy = 15000 }
 		add_resource = { minerals = 4500 }
 		add_resource = { food = 5500 }
+		add_resource = { consumer_goods = 6500 }
 		add_resource = { alloys = 14500	}
-		add_resource = { volatile_motes = 1500 }
-		add_resource = { rare_crystals = 750 }
-		add_resource = { exotic_gases = 750 }
+		add_resource = { volatile_motes = 800 }
+		add_resource = { rare_crystals = 800 }
+		add_resource = { exotic_gases = 800 }
 		add_resource = { influence = 820 }
 		
 		give_technology_imperium = yes
@@ -2955,9 +3809,9 @@ country_event = { #Ecclesiarchy
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_farming }
 					}
-					while = {
-						count = 17
-						create_pop = {species = owner_main_species}
+					create_pop_group = {
+						size = 1700
+						species = owner_main_species
 					}
 					add_building = building_major_capital   	
 					add_building = building_autochthon_monument
@@ -2974,14 +3828,17 @@ country_event = { #Ecclesiarchy
 			            is_colonizable = yes
                         has_planet_flag = Ecclesiarchy_Cardinal	
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes			
+				    create_pop_group = {
+						size = 2700
+						species = owner_main_species
+					}
 					while = {
 						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+				    #add_building = building_major_capital   	
 					add_building = building_autochthon_monument
 					add_building = building_temple #building_holotemple 
 					add_building = building_fortress
@@ -2990,12 +3847,6 @@ country_event = { #Ecclesiarchy
 				    add_building = building_foundry_1
 				    add_building = building_factory_1
 				    #add_building = building_ministry_production  			
-				    while = {
-				    	count = 27
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 4
 						add_district_and_planet_size_if_needed_effect = { district = district_industrial }
@@ -3010,14 +3861,17 @@ country_event = { #Ecclesiarchy
 			            is_colonizable = yes
                         has_planet_flag = Ecclesiarchy_Shrine			
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+					create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes			
+				    create_pop_group = {
+						size = 2500
+						species = owner_main_species
+					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+				    #add_building = building_major_capital   	
 				    add_building = building_autochthon_monument
 					add_building = building_temple #building_holotemple 
 					add_building = building_precinct_house 	
@@ -3025,12 +3879,6 @@ country_event = { #Ecclesiarchy
 					#add_building = building_ministry_production
 					add_building = building_stronghold		
 				    add_building = building_planetary_shield_generator					
-				    while = {
-				    	count = 25
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 2
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
@@ -3049,14 +3897,17 @@ country_event = { #Ecclesiarchy
 			            is_colonizable = yes
                         has_planet_flag = Ecclesiarchy_Fortress_world
 			        }
-				    create_colony = {
-				    	owner = ROOT
-		    	    }
+				    create_colony = { owner = ROOT species = root }
+					upgrade_colony_shelter = yes			
+				    create_pop_group = {
+						size = 3300
+						species = owner_main_species
+					}
 					while = {
 						count = 5
 						add_district_and_planet_size_if_needed_effect = { district = district_city }
 					}
-				    add_building = building_major_capital   	
+				    #add_building = building_major_capital   	
 				    add_building = building_precinct_house
 				    add_building = building_precinct_house					
 				    add_building = building_planetary_shield_generator 
@@ -3068,12 +3919,6 @@ country_event = { #Ecclesiarchy
 					#add_building = building_fortress #
 					#add_building = building_fortress #
 					#add_building = building_fortress #			
-				    while = {
-				    	count = 33
-				    	create_pop = {
-				    		species = owner_main_species
-				    	}
-					}
 					while = {
 						count = 1
 						add_district_and_planet_size_if_needed_effect = { district = district_mining }
