@@ -1,0 +1,43 @@
+entity = {
+        name = "nomads_frontend_root_entity"
+        locator = { name = "loc" position = { 0.0 0.0 0.0 } }
+
+        attach = { loc = "nomads_frontend_attached_entity" }
+		
+    #    attach = { loc = "nomads_frontend_flow_attached_entity" }
+   #     attach = { loc = "nomads_frontend_flow_attached_entity" }
+  #      attach = { loc = "nomads_frontend_flow_attached_entity" }
+ #       attach = { loc = "nomads_frontend_flow_attached_entity" }
+#        attach = { loc = "nomads_frontend_flow_attached_entity" }
+
+    }
+    entity = {
+      name = "nomads_frontend_attached_entity"
+      pdxmesh = "nomads_frontend_mesh"
+
+      default_state = "idle"
+      state = { name = "idle"   animation = "idle" animation_speed = 1
+
+ }
+
+        scale = 1
+}
+	
+    entity = {
+      name = "nomads_frontend_flow_attached_entity"
+      pdxmesh = "nomads_frontend_background_flow_mesh"
+
+		
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= 0.15
+		uv_animation_direction 	= { 0.25 0.0 }
+	}
+
+        scale = 1
+    }
+    
+    animation = {
+    name = "nomads_frontend_idle_animation"
+    file = "nomads_frontend_idle.anim"
+    }
