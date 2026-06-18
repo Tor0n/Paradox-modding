@@ -450,6 +450,11 @@ country_event = {
 		#num_empires > 50
 		num_owned_planets < 6
 		#controlled_systems < 60
+		#OR = {
+		#	has_global_flag = events_lore_canon_plus
+		#	has_global_flag = events_lore_free_choice
+		#}
+		has_global_flag = events_lore_free_choice
 	}
 
 	option = {
@@ -1223,11 +1228,11 @@ country_event = {
 
 	option = {
 		name =  WrWrld_death_guard.42.a 
-		add_resource = { energy = -650	}
-		add_resource = { minerals = -650 }
-		add_resource = { food = -750 }
-		add_resource = { consumer_goods = -400 }
-		add_resource = { alloys = -500	}
+		add_resource = { energy = -6500	}
+		add_resource = { minerals = -6500 }
+		add_resource = { food = -7500 }
+		add_resource = { consumer_goods = -4000 }
+		add_resource = { alloys = -5000	}
 	}
 }
 
@@ -1245,6 +1250,12 @@ country_event = {
 	#	num_owned_planets < 6
 	#	controlled_systems < 40
 	#}
+	trigger = { 
+		OR = {
+			has_global_flag = events_lore_canon_plus
+			has_global_flag = events_lore_free_choice
+		}
+	}
 	
 	option = {
 		name =  WrWrld_death_guard.100.a 					#готовы
@@ -1317,6 +1328,11 @@ country_event = {
 				has_country_flag = Angron_was_bad_at_war_flag
 			}
 		} 
+		#OR = {
+		#	has_global_flag = events_lore_canon_plus
+		#	has_global_flag = events_lore_free_choice
+		#}
+		has_global_flag = events_lore_free_choice
 	}
 
 	option = {
@@ -1648,6 +1664,16 @@ country_event = {
 		name =  WrWrld_world_eaters.24.a 					#
 		#Сохранить
 		create_fleet_from_naval_cap = 0.2
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 	option = {
 		name =  WrWrld_world_eaters.24.b 					#
@@ -1861,6 +1887,12 @@ country_event = {
 	#	num_owned_planets < 6
 	#	controlled_systems < 40
 	#}
+	trigger = { 
+		OR = {
+			has_global_flag = events_lore_canon_plus
+			has_global_flag = events_lore_free_choice
+		}
+	}
 	
 	option = {
 		name =  WrWrld_world_eaters.100.a 					#готовы
@@ -1931,7 +1963,17 @@ country_event = {
 		name =  WrWrld_thousand_sons.7.a 					# Магнус перехитрил Аримана
 		owner = { country_event = { id = WrWrld_thousand_sons.20 months = 55 } }
 		owner = { country_event = { id = WrWrld_thousand_sons.22 years = 7 } }
-		create_fleet_from_naval_cap = 0.12
+		create_fleet_from_naval_cap = 0.35
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 	option = {
 		name =  WrWrld_thousand_sons.7.b 					# Ариман вышел победителем
@@ -1959,7 +2001,7 @@ country_event = {
 			cooldown = no
 		}
 		set_empire_name = "Prodigal_Sons_name"
-		create_fleet_from_naval_cap = 0.4
+		create_fleet_from_naval_cap = 0.7
 		kill_leader = {
 			show_notification = yes
 		}
@@ -2550,7 +2592,13 @@ country_event = {
 	#	num_owned_planets < 6
 	#	controlled_systems < 40
 	#}
-	
+	trigger = { 
+		OR = {
+			has_global_flag = events_lore_canon_plus
+			has_global_flag = events_lore_free_choice
+		}
+	}
+
 	option = {
 		name =  WrWrld_thousand_sons.100.a 					#готовы
 		trigger = { 
@@ -2625,6 +2673,16 @@ country_event = {
 		name =  WrWrld_emperors_children.11.a 							#Конклав Феникса Эйдолона
 		event_target:Emperors_Children_evnt_trgt_country = { country_event = { id = WrWrld_emperors_children.12 years = 4 } } #Реформация в детей императора
 		owner = { country_event = { id = WrWrld_emperors_children.100 years = 30 } }
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 	option = {
 		name =  WrWrld_emperors_children.11.b 							#Консорциум Фабия Бала
@@ -2880,6 +2938,12 @@ country_event = {
 	#	num_owned_planets < 6
 	#	controlled_systems < 40
 	#}
+	trigger = { 
+		OR = {
+			has_global_flag = events_lore_canon_plus
+			has_global_flag = events_lore_free_choice
+		}
+	}
 	
 	option = {
 		name =  WrWrld_emperors_children.100.a 					#готовы
@@ -2979,19 +3043,19 @@ country_event = {
 			#name = <optional war name>
 			attacker_war_goal = wg_WrWrld_total_pregalcom_chaos_chaos_war 
 		}
-		add_resource = { energy = -650	}
-		add_resource = { minerals = -650 }
-		add_resource = { food = -750 }
-		add_resource = { consumer_goods = -400 }
-		add_resource = { alloys = -500	}
+		add_resource = { energy = -6500	}
+		add_resource = { minerals = -6500 }
+		add_resource = { food = -6500 }
+		add_resource = { consumer_goods = -4000 }
+		add_resource = { alloys = -5000	}
 	}
 	option = {
 		name =  WrWrld_alpha_legion.13.b 					# 
-		add_resource = { energy = -650	}
-		add_resource = { minerals = -650 }
-		add_resource = { food = -750 }
-		add_resource = { consumer_goods = -400 }
-		add_resource = { alloys = -500	}
+		add_resource = { energy = -6500	}
+		add_resource = { minerals = -6500 }
+		add_resource = { food = -6500 }
+		add_resource = { consumer_goods = -4000 }
+		add_resource = { alloys = -5000	}
 	}
 }
 
@@ -3008,6 +3072,16 @@ country_event = {
 	option = {
 		name =  WrWrld_alpha_legion.35.a 					#Альфарий? 
 		#Неожиданно, но сюда тоже впихнуть ветку ивентов и дать редчайший шанс привести Малала
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 	option = {
 		name =  WrWrld_alpha_legion.35.b 					#Зубы Змеи

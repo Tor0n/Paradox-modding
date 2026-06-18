@@ -13,7 +13,17 @@ country_event = {
 	option = {
 		name =  WrWrld_votann_events.10.a 							#Великая Турийская Лига - АИ
 		owner = { country_event = { id = WrWrld_votann_events.12 years = 7 } }
-		create_fleet_from_naval_cap = 0.15
+		create_fleet_from_naval_cap = 0.35
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 	option = {
 		name =  WrWrld_votann_events.10.b 							#Кронуская Гегемония - АИ
@@ -43,7 +53,7 @@ country_event = {
 			#remove_invalid_civics = yes
 		}
 		owner = { country_event = { id = WrWrld_votann_events.12 years = 3 } }
-		create_fleet_from_naval_cap = 0.15
+		create_fleet_from_naval_cap = 0.35
 	}
 	option = {
 		name =  WrWrld_votann_events.10.c 							#Транс-Гиперианский Альянс - АИ
@@ -105,7 +115,7 @@ country_event = {
 		owner = { country_event = { id = WrWrld_votann_events.12 years = 8 } }
 		# У них есть древнее спящее ядро, они ждут его пробуждения, он даст что-то очень мощное им, какие-нибудь технологии, что сильно повлияют на кинов
 		owner = { country_event = { id = WrWrld_votann_events.13 years = 39 } }
-		create_fleet_from_naval_cap = 0.1
+		create_fleet_from_naval_cap = 0.2
 	}
 	option = {
 		name =  WrWrld_votann_events.10.e 							#Ймырский Конгломерат - АИ

@@ -22,6 +22,16 @@ country_event = {
 	option = {
 		name =  WrWrld_severan_events.10.b
 		hidden_effect = { country_event = { id = WrWrld_severan_events.11 months = 90 } }
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -85,6 +95,16 @@ country_event = {
 				civics = { civic = "civic_imperial_cult" civic = "civic_police_state" civic = "civic_aristocratic_elite" }
 				cooldown = no
 				#remove_invalid_civics = yes
+			}
+		}
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
 			}
 		}
 	}

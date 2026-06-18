@@ -455,7 +455,7 @@ country_event = {
 			        }
 					remove_all_buildings = yes
 					while = {
-						count = 12
+						count = 32
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_city
 						}
@@ -499,7 +499,7 @@ country_event = {
 						}
 					}
 					while = {
-						count = 7
+						count = 16
 						add_district_and_planet_size_if_needed_effect = {
 							district = district_mining
 						}

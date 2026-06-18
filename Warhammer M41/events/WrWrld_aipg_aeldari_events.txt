@@ -70,6 +70,12 @@ country_event = {
 	#location = FROM
 
 	is_triggered_only = yes
+	trigger = { 
+		OR = {
+			has_global_flag = events_lore_canon_plus
+			has_global_flag = events_lore_free_choice
+		}
+	}
 	
 	option = {
 		name =  children_of_thorns.5.a                       # Меняемся к нашим идеям
@@ -98,6 +104,16 @@ country_event = {
 	
 	option = {
 		name =  Commorragh_new_Archon.10.a
+		ai_chance = {
+			#factor = 100
+			modifier = {
+				factor = 10000
+				OR = {
+					has_global_flag = events_lore_canon_plus
+					has_global_flag = events_lore_canon
+				}
+			}
+		}
 	}
 	option = {
 		name =  Commorragh_new_Archon.10.b
