@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait category="Buff" icon="Actions/ChaosSpaceMarines/InfernalFusillade" alwaysVisible="1">
+	<modifiers>
+		<modifier visible="0">
+			<conditions>
+				<unit>
+					<notMovedThisTurn/>
+				</unit>
+				<weapon>
+					<trait name="BoltWeapon"/>
+				</weapon>
+				<encounterRange greater="0"/> <!-- This is to prevent the game from showing the "0.5 attack workaround" when you hover over their weapon in the case where the unit didn't move -->
+			</conditions>
+			<effects>
+				<rangedAttacks add="0.5"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<conditions>
+				<unit>
+					<movedThisTurn/>
+				</unit>
+				<weapon>
+					<trait name="BoltWeapon"/>
+				</weapon>
+				<encounterRange greater="1"/>
+			</conditions>
+			<effects>
+				<rangedAttacks add="1"/>
+			</effects>
+		</modifier>
+		<modifier visible="0">
+			<conditions>
+				<unit>
+					<movedThisTurn/>
+				</unit>
+				<weapon>
+					<trait name="BoltWeapon"/>
+				</weapon>
+				<encounterRange equal="1"/>
+			</conditions>
+			<effects>
+				<rangedAttacks add="0.5"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

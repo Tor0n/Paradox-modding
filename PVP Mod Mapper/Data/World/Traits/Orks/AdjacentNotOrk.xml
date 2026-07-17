@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait visible="0">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<unit>
+					<unitsInRange count="1" range="1">
+						<allied/>
+						<noFaction name="Orks"/>
+						<noTrait name="Artefact"/>
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</modifier>
+	</modifiers>
+</trait>
